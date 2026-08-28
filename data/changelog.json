@@ -1,0 +1,792 @@
+{
+ "meta": {
+  "file": "changelog.json",
+  "note": "Dead ends, changes in flight, and the questions still open. Check dead-ends before referring anyone.",
+  "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, WHAT CHANGED + SYNC CHECK tabs"
+ },
+ "groups": [
+  {
+   "id": "dead-ends",
+   "label": "DEAD ENDS - DO NOT REFER",
+   "entries": [
+    {
+     "date": "Aug 2026",
+     "what": "Trinity Place youth shelter is CLOSED",
+     "detail": "Eckerd Connects / CARING for Children closed the Trinity Place emergency youth shelter permanently in May 2022 after staffing shortages. It ran from 1992 and served about 4,500 youth. findhelp and other aggregators STILL list it with a working phone number. Do not refer. For a youth in crisis use RHA Mobile Crisis 1-888-573-1006.",
+     "source": "Eckerd Connects media statement; WLOS"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "Lael Kafsky has left CDSA",
+     "detail": "Effective 1/2/26. Gillan Gallagher-Zapherson took over the cases in January 2026. Her row is kept on POINT PEOPLE marked FORMER so nobody loses a week emailing a dead address.",
+     "source": "Direct email from CDSA"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "AHOPE main landline reported down",
+     "detail": "Homeward Bound / AHOPE 828-252-8883 was posted as temporarily out of service. Coordinated Entry runs through AHOPE, so go in person at 19 N Ann St if the call does not connect.",
+     "source": "Homeward Bound posting"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "Crossnore has no Buncombe respite beds",
+     "detail": "That is a straight answer from them, not a waitlist. Out-of-area placement is still possible by DSS referral.",
+     "source": "FFA-NC coach, via the respite guide"
+    }
+   ]
+  },
+  {
+   "id": "watch",
+   "label": "WATCH THESE - SYSTEM CHANGES IN FLIGHT",
+   "entries": [
+    {
+     "date": "Sep 2 2026",
+     "what": "Tranzmission support groups drop to a reduced placeholder schedule",
+     "detail": "Tranzmission is in financial difficulty and running a stewardship campaign. From 2 September only Transformers runs: virtually every Wednesday 6:30pm, in person the 4th Saturday at 2:30pm. The nonbinary/transfemme groups and Trans Table Tops are not on the modified schedule. Confirm before referring a family. Tranzmission groups are free and never ask for a suggested donation; another group has been mistaken for theirs.",
+     "source": "Tranzmission notice from Jasper Joy, 12 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "Talya Mazuz pantry Wednesday hours reinstated",
+     "detail": "Tranzmission's pantry restored Wednesday hours in August 2026 after a pause. Pantry updates come from willa@tranzmission.org.",
+     "source": "Tranzmission members pantry update, 6 Aug 2026"
+    },
+    {
+     "date": "Oct 1 2026",
+     "what": "Vaya Health and Partners Health Management consolidate",
+     "detail": "The two MCOs merge into the largest publicly governed managed care organisation in NC. Expect member numbers, care manager assignments and provider contracts to move. Confirm continuity before promising a family anything that depends on their current care manager.",
+     "source": "Vaya Provider Central"
+    },
+    {
+     "date": "Mid 2026",
+     "what": "HACA waitlists OPEN. The \"preferences are gone\" part is UNVERIFIED",
+     "detail": "Both the Housing Choice Voucher and public housing lists were open as of mid-2026, online only through RENTCafe, and the project-based list reopened 28 June 2026. VERIFIED. What is NOT verified: the claim that HACA removed ALL admissions preferences in its 2024 plan so that ranking is purely date and time, and that homelessness, DV, disability and veteran status no longer move anyone up. Do not repeat that to a family until someone confirms it. Waitlist status and preference policy: Caroline Logan, 828-239-3532, clogan@haca.org.",
+     "source": "HACA Admissions page, modified 26 May 2026"
+    },
+    {
+     "date": "Jul 2026",
+     "what": "Imagination Library reopened enrolment in 42 NC counties",
+     "detail": "New state budget funds reopened enrolment in counties that had paused. Buncombe enrolment runs through Literacy Together, imaginationlibrary@lit-together.org. Families can also register on the NC Smart Start site. First book takes 6-8 weeks. Twins enrol as one child and share the label.",
+     "source": "WUNC, 20 July 2026; Literacy Together"
+    },
+    {
+     "date": "Oct 17 2026",
+     "what": "FFA-NC Kinship Conference, Asheville",
+     "detail": "9am to 3pm, free, lunch provided, run with NCDHHS. Built for kinship caregivers AND the professionals supporting relatives with DSS involvement. Register through info@ffa-nc.org or 800-578-7770.",
+     "source": "FFA-NC"
+    },
+    {
+     "date": "Sep 30 2026",
+     "what": "FEMA Helene rental assistance deadline",
+     "detail": "Direct temporary housing and rental assistance for NC Helene survivors both run through 30 September 2026. Confirm any affected family status well before then. Call 211 for current disaster-housing intake.",
+     "source": "FEMA"
+    }
+   ]
+  },
+  {
+   "id": "added",
+   "label": "ADDED THIS ROUND",
+   "entries": [
+    {
+     "date": "Aug 2026",
+     "what": "NEW SECTION IX: Autism & Neurodivergence",
+     "detail": "53 entries in 11 need-blocks, built in the order a family actually walks it: first worry, medical diagnosis route, free school-evaluation route, OT and speech, ABA and behaviour support, keeping a child in their classroom, sensory-friendly places and camps, respite and disability funding, everyday life (dentists, haircuts, sleep, moving), Deaf and hard of hearing, and rights and advocacy. Pulled from rows already scattered across eight tabs plus this round of research. Same columns, dropdowns and filters as every other section tab.",
+     "source": "Consolidated from ALL RESOURCES + Aug 2026 sweep"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "Clearway Autism Services added, Seph Bartholomew as point of contact",
+     "detail": "Clinician-owned local ABA provider launched in WNC August 2025. Seph Bartholomew MS BCBA LBA, Co-Founder and Clinical Director, 919-607-4657, seph@clearwayautism.com, ClearwayAutism.com. Accepts Vaya Health; confirm which other plans are contracted now. He reached out first and replies same day. Added to Section II under home-based and community treatment, plus POINT PEOPLE and ALL RESOURCES.",
+     "source": "Direct email correspondence"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "POINT PEOPLE rebuilt and expanded",
+     "detail": "28 named people added across new DSS & Child Welfare, Early Childhood Partners, Housing and Our Child First Team groups. RESPONSIVE? entries normalised to the five dropdown values so the filter actually works.",
+     "source": "Gmail sweep, Drive, and web verification"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "Contact data filled across every tab",
+     "detail": "316 resource rows updated with verified phone, email, website, address or hours. Only blank cells were filled, nothing existing was overwritten. Every note added carries the tag \"Verified 8/2026.\"",
+     "source": "Gmail, Google Drive, and web research"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "Newly filled organisations",
+     "detail": "Meals on Wheels (Vance Goodman), Asheville Habitat and ARCHR (Joel Johnson), OnTrack WNC, Literacy Together and Imagination Library, SSA Asheville field office, Cenzontle Language Justice Cooperative, Sistas Caring 4 Sistas, Vaya Family Partners, Blue Ridge Pride, Youth OUTright, Campaign for Southern Equality, Colaborativa La Milpa, ALAS, Mountain Child Advocacy Center, Caiyalynn Burrell, All Souls Counseling, RHA Deaf Services, DSDHH Asheville, Pisgah Legal, Mediation Center of WNC, Helpmate, Family Justice Center, Our VOICE, Haywood Street, Eblen, Babies Need Bottoms, Blessing Barn, ABCCM, Working Wheels, NCWorks, We Rock the Spectrum, Best Bites, Blue Ridge Pediatric Dentistry, Great Smiles, MAHEC, Whole Family Therapy, Open Path, Pinnacle.",
+     "source": "Aug 2026 sweep"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "Adult Medicaid dental detail recovered",
+     "detail": "AMH Dental 7 McDowell St Ste 200, 828-676-3618, call FIRST MONDAY of the month at opening; walk-in urgent care Mon-Thu from 8am. MAHEC Dental 123 Hendersonville Rd, 828-252-4290, call FIRST FRIDAY, expect long holds. Functional Dentistry (Dr. Blake Kingsbury) 3 Doctors Park Ste C, 828-617-0380, adults only, opened Jan 2026, Medicaid acceptance is word of mouth only.",
+     "source": "Skylar's own Drive: Medicaid Adult Dental Asheville v3"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "LAST VERIFIED column added to every tab",
+     "detail": "Green date means confirmed in this sweep. Blank means nobody has checked it. That distinction is the difference between a directory and a rumour.",
+     "source": "Structural change"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "START now carries an owner and a review date",
+     "detail": "Maintainer named, quarterly review dates set, and editing rules written down so the file does not fork across colleagues.",
+     "source": "Structural change"
+    }
+   ]
+  },
+  {
+   "id": "open-questions",
+   "label": "STILL OPEN",
+   "entries": [
+    {
+     "date": "CLOSED",
+     "what": "RESOLVED: DSS prevention worker is Kelly Marler",
+     "detail": "kelly.marler@buncombecounty.org. She is the SOLE person in the Buncombe DSS prevention department, which matters for turnaround expectations. Placeholder row on POINT PEOPLE replaced with her details.",
+     "source": "Skylar, Aug 2026"
+    },
+    {
+     "date": "OPEN",
+     "what": "CONFLICT: Eblen Charities address",
+     "detail": "Web verification gives 23 Hamilton St. An older internal guide gives 52 Westgate Pkwy. Confirm before sending a family.",
+     "source": "Two internal sources disagree"
+    },
+    {
+     "date": "OPEN",
+     "what": "1,139 rows still NEVER VERIFIED",
+     "detail": "Now visible in yellow on every tab rather than hiding as a blank. Work the yellow down tab by tab. findhelp.org and 211 are the fastest verification route for the small mutual-aid, BIPOC-led, faith-based and seasonal programs that make up most of it.",
+     "source": "Verification research, Part 5"
+    },
+    {
+     "date": "OPEN",
+     "what": "RESPONSIVE? is still mostly empty",
+     "detail": "64 of 105 people have no responsiveness rating. This is the one thing in the file that cannot be Googled, and the reason it is worth more than a web search. Fill one in every time you make a call. Also: 279 resource rows have a name but no phone, email or website at all, so they cannot be acted on even when someone finds them.",
+     "source": "Ongoing"
+    },
+    {
+     "date": "OPEN",
+     "what": "Personal email addresses on POINT PEOPLE",
+     "detail": "Four teammates are listed with personal Gmail addresses under Our Child First Team. Fine in a private file, a different thing in a file that circulates. Decide deliberately before sharing.",
+     "source": "Judgement call for Skylar"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "Wee Trade Carolinas added",
+     "detail": "Foster Family Free Shop added under VIII, 12a. Clothing, and to ALL RESOURCES. Twice-yearly consignment sale at the WNC Ag Center, Fletcher NC. Fall '26 Foster Free Shop: Sun Aug 2, 8-9pm, registration and foster credentials required. connect@gratefulvillage.com.",
+     "source": "weetradecarolinas.com/foster, fetched directly"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "Kelly Marler added, DSS prevention gap closed",
+     "detail": "kelly.marler@buncombecounty.org. Sole staff member of the Buncombe DSS prevention department. Fastest door to voluntary in-home services before a case opens. Email direct, not the switchboard.",
+     "source": "Skylar"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "Brandi Hayes / PORT added",
+     "detail": "Buncombe Post Overdose Response Team. Brandi Hayes, PORT Peer Coordinator, brandi.hayes@buncombenc.gov, 828-785-9600. PORT line 828-772-1294. Community paramedic plus certified peer support, buprenorphine in the field up to five days, warm handoff to MAHEC OBOT. Person chooses their level of help and can call back the next day, so a referral is not coercive and does not route through DSS. Skylar reports she follows up fast for families in or affected by active use.",
+     "source": "Business card + buncombenc.gov"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "Rise Autism Therapy added",
+     "detail": "Toree Dillingham, info@riseautismtherapy.com. Small local ABA in home, school and community. Notable for a parent and family collaboration track offering BCBA coaching WITHOUT intensive direct hours, which is rare locally. Mon-Fri 9-4, fax 828-707-9497. No published phone.",
+     "source": "riseautismtherapy.com + Skylar"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "Already Autism Health added, with a caveat",
+     "detail": "Nicole Deters, Nicole.Deters@alreadyautismhealth.com. Medicaid-accepting ABA plus VIRTUAL assessments usually inside two weeks. The assessment uses the CARS, not the ADOS. That is the reason for the speed and it is a real trade-off: some school teams, specialists and plans weigh an ADOS-based report differently. Good for getting a family moving, or running alongside a TEACCH wait, rather than automatically instead of one.",
+     "source": "Skylar + alreadyautismhealth.com"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "Two clinical contacts added from business cards",
+     "detail": "Ilsa Mollenkopf MPT, pediatric PT at Huff Center Therapies, Mission Children's, cell 828-273-9508, ilsa.mollenkopf@msj.org. Katherine Hyde-Hensley PsyD LCMHC, perinatal psychologist at Healing Hearts Medical Family Therapy, 828-501-0743. Healing Hearts is built around medical trauma specifically, including NICU and birth trauma and compassion fatigue.",
+     "source": "Business cards"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "La Milpa now listed as a FOOD resource",
+     "detail": "It was already in here six times as immigration, housing and organizing. It is also the Casa de Apoyo Mutuo / Mercadito: free groceries, prepared meals and children's supplies at 528 Emma Rd, Wed / Fri / Sun 12-5pm, Spanish-leading, no ID and no status requirement. Added under VIII 5a. Food pantry and to Food - By Day for all three days. Under-described is its own kind of missing.",
+     "source": "Hola Carolina + Colaborativa La Milpa"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "Babies Need Bottoms corrected in 14 places",
+     "detail": "The directory had the org but not the door. Added the DIAPER LINE 1-888-892-1162 and nc211.org, which is how a family actually gets diapers: there is no walk-in warehouse, 211 routes them to the nearest partner agency. Also added babiesneedbottoms.org, PO Box 5171 Asheville 28813 (mailing only, NOT a pickup site), Meagan Lyon Leimena MSW MPH as Co-Executive Director, alicia@babiesneedbottoms.org as second contact, and the Amazon wish list a.co/aYtGxjI for donations.",
+     "source": "Meagan Lyon Leimena, direct"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "Whitney at FIRSTwnc added, and disambiguated",
+     "detail": "whitney@firstwnc.org, 828-277-1315, SUNSHINE Project contact, marked Very responsive. There were already TWO Whitneys in scope: this one at FIRSTwnc and a different Whitney at Madison County Smart Start (whitney@madisonss.org). Both rows now name their org in the person field so nobody emails the wrong one. Second FIRSTwnc contact is kate@firstwnc.org, useful for finding open childcare slots.",
+     "source": "Skylar + Gmail"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "NEVER VERIFIED now shows in yellow",
+     "detail": "Blank LAST VERIFIED cells were indistinguishable from \"fine\". Every unconfirmed row now reads NEVER VERIFIED on a yellow background. That is 1,139 rows of roughly 1,500. Uncomfortable and accurate.",
+     "source": "Structural change"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "VERIFIED BY column added to every tab",
+     "detail": "A date with no initials cannot be told apart from a stale one nobody updated. Rows confirmed in this sweep are marked SB.",
+     "source": "Structural change"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "NEW TAB: SYNC CHECK",
+     "detail": "Compares every section-tab entry against ALL RESOURCES and lists the disagreements. Also carries the duplication numbers: 926 section rows behind 396 distinct organisations, 226 of them on two or more tabs, 81 on four or more. Regenerate every review. If the list gets long, that is the signal to move to lookups.",
+     "source": "Structural change"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "Four real data bugs found and fixed by the sync check",
+     "detail": "Cenzontle: prose was sitting in the PHONE column on ESPANOL and the number disagreed across tabs; set to the verified 828-490-7643 in all five places. SUNSHINE Project: website read \"Monday.com\", corrected to firstwnc.org in three places. ConnectEd Circles: now leads with info@connectedcirclescommunity.com rather than a personal Gmail. Western Carolina Rescue Ministries: two live numbers in circulation, 828-254-1529 and 828-254-0471, flagged UNRESOLVED in the notes until someone calls both.",
+     "source": "SYNC CHECK"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "Second Spanish-language door added to Section IX",
+     "detail": "ConnectEd Circles was the only Spanish-language autism resource on the tab, which made one small organisation a single point of failure for every Spanish-speaking family. Added a row on interpreter rights at IEP meetings with Cenzontle, ALAS and La Milpa Consulta Tu Compa as accompaniment options.",
+     "source": "Structural change"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "Team block labelled INTERNAL",
+     "detail": "The Our Child First Team header on POINT PEOPLE now says outright that it holds personal email addresses and should be deleted before the file goes outside the team. Still a decision for Skylar, but no longer one that can be made by forgetting.",
+     "source": "Judgement flag"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "BUG: ConnectEd Circles email was wrong in the master",
+     "detail": "hello@connectedcircles.org does not exist. It was already in ALL RESOURCES before this round, and because the sync check treats the master as correct, I propagated it into Section IX rather than catching it. Corrected to info@connectedcirclescommunity.com and connectedcirclescommunity.com in 26 cells. LESSON: SYNC CHECK proves the copies MATCH, not that the master is RIGHT. Only a phone call or an email that lands does that.",
+     "source": "Skylar"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "BUG: coloured bars stopped short of the data",
+     "detail": "Adding LAST VERIFIED and VERIFIED BY pushed the tables two columns wider than the need bars and title bars, leaving a ragged unstyled gap down the right edge of every tab. 181 bars extended to full width.",
+     "source": "UI audit"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "BUG: SYNC CHECK summary sat below a filtered table",
+     "detail": "Filtering the conflict list would have scrambled the duplication numbers underneath it. Rebuilt with the summary on top and the filter scoped to the table only.",
+     "source": "UI audit"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "UX: colour legend added to START",
+     "detail": "Yellow, green dates, red stars, gold add-rows and the coloured need bars are now explained in one place instead of being learned by guessing.",
+     "source": "UI audit"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "UX: three tabs shared the same colour, ALL RESOURCES was black",
+     "detail": "RESPITE, ESPANOL and IV. Caregiver Support were all the same orange. The master tab was black, which reads as disabled. Recoloured so every tab is distinguishable at a glance.",
+     "source": "UI audit"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "UX: the file is now printable",
+     "detail": "Landscape, fit to one page wide, and the title and header rows repeat on every printed page. Home visits do not always have signal.",
+     "source": "UI audit"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "NOT DONE ON PURPOSE: lookup formulas",
+     "detail": "Recommended earlier, then rejected. In a file several non-technical people edit, formulas get pasted over and fail silently, which is worse than the drift they fix. SYNC CHECK catches drift without depending on a formula surviving. Trade-off: it only works if somebody regenerates it each review.",
+     "source": "Decision, Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "Icons added to every coded column",
+     "detail": "Colour alone was doing too much work: it is hard to hold in your head, and it disappears entirely for anyone colourblind or printing in black and white. Every coded value now carries a glyph as well as a colour. STATUS, RESPONSIVE?, SPANISH? and LAST VERIFIED were re-coded in 4,051 cells and the dropdowns and colour rules were updated to match, so filtering and the automatic row colouring still work.",
+     "source": "UX request"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "The key now travels with you",
+     "detail": "Row 3 of every tab carries the same one-line key. You no longer have to go back to START to remember what yellow meant.",
+     "source": "UX request"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "BUG: START navigation pointed at the wrong tabs",
+     "detail": "Inserting Section IX into the START list shifted the labels but not the underlying hyperlinks, so four links went to the wrong tab: IX opened RESPITE, RESPITE opened ESPANOL, ESPANOL opened Food - By Day, and Food - By Day opened ALL RESOURCES. ALL RESOURCES, WHAT CHANGED and SYNC CHECK had no link at all. All seven repaired. Section IX, WHAT CHANGED and SYNC CHECK were also missing a BACK TO START link.",
+     "source": "UI audit"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "Emoji replaced with universally-supported symbols",
+     "detail": "Checked the emoji against Unicode release history before trusting them. The coloured circles used for the Spanish column are Emoji 12.0, released March 2019, and sit in the supplementary plane: any machine or Office build older than that shows an empty box, and that column is the one Spanish-speaking families depend on most. Swapped the whole set for WGL4 and long-standing BMP characters, which ship inside Arial, Times New Roman, Verdana and the Mac system fonts and have done since the late 1990s.",
+     "source": "Unicode / Emoji version history, WGL4 spec"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "Symbols now carry colour as well as shape",
+     "detail": "Colour emoji ignore the cell font colour, so the icons were fighting the colour coding instead of reinforcing it. Text symbols take a colour, so ●●● Spanish-first is green, ●● bilingual is amber, ● interpreter is orange and ○ unknown is grey. Shape and colour now say the same thing twice, which is what makes it stick.",
+     "source": "Design fix"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "One shape family per column",
+     "detail": "► is start here, ★ is responsiveness, ● is level of Spanish support, ✔ and ‼ are verification. The star was previously doing double duty as both start here and responsiveness.",
+     "source": "Design fix"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "Also: everything now prints in black and white",
+     "detail": "Colour emoji print in colour or drop out. These print as clean monochrome glyphs, so a printed section tab still carries its full meaning on a home visit.",
+     "source": "Design fix"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "BUG: \"Age 3-5 (or school-age)\" was never a resource",
+     "detail": "It read like an organisation you could call but was a fragment of the row above it. It is actually the FREE school-district evaluation route. Retitled to \"Free school-district evaluation (age 3-5 or school-age)\" and given the real contacts: Buncombe EC Mindy Conner 828-255-5971, Asheville City EC Holly Sutter 828-350-6128. Fixed in all three places it appeared.",
+     "source": "Skylar"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "BUG: the navigator philosophy was filed as if it were 12 organisations",
+     "detail": "Rows like \"Families are the experts on their own lives\", \"Dignity-Centered Design\" and \"Always call ahead\" were sitting inside ALL RESOURCES with phone and Spanish columns attached, which inflated the resource count and put unclickable rows in front of anyone searching. All 12 lifted onto START where guidance belongs.",
+     "source": "UI audit"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "Emoji restored",
+     "detail": "Reverted from the typographic set at Skylar's call: modern Office and Google Sheets render these fine. Kept the discipline though, one symbol family per column and no reuse. 🎯 is start here, ⚡👍⏳ is responsiveness, 🟢🟡🟠 is Spanish support, ✅ and ⚠️ are verification, 🏁 is a finished row.",
+     "source": "Skylar"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "Every dropdown now allows a custom answer",
+     "detail": "Excel validation used to reject anything not on the list. Error alerts are switched off on every dropdown, so the list is a suggestion and a colleague can type whatever is actually true. Each list also ends with an explicit \"✏️ Other - type your own\" so nobody has to guess that it is allowed. Dropdowns were also extended to LAST VERIFIED, VERIFIED BY, SECTION, ORIGINAL SECTION and DAY.",
+     "source": "UX request"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "Crayola palette, one crayon per tab",
+     "detail": "Every tab had shared or repeated colours. Each now has its own named Crayola colour, used for the tab, the title bar and every need bar on it, so the colour tells you where you are: Blue for Child Development, Purple Heart for Child Behavior, Tropical Rain Forest for Child Health, Mango Tango for Caregiver Support, Maroon for Adult Education, Pacific Blue for Family Health, Plum for Adult Mental Health, Sepia for Concrete Needs, Green for Autism, Wild Strawberry for Respite, Scarlet for Crisis, Royal Purple for Point People, Neon Carrot for Food, Midnight Blue for All Resources, Red Violet for Espanol.",
+     "source": "UX request"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "Warrior Wellness Center integrated",
+     "detail": "A one-line stub, \"School-Based Health Centers,\" existed in II. Child Behavior and its ALL RESOURCES mirror with no phone or address. Enriched in place, and added as its own entry on III. Child Health under 1a (it can be a child's primary care provider with no established medical home). Direct line 828-233-2280, registration SBHCregistration@BRCHS.com, 20 Erwin Hills Rd. Open to students, staff AND their immediate families, not just kids.",
+     "source": "Skylar-provided research + Blue Ridge Health site + local coverage"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "BUG: the SBHC row had the wrong clinic's phone number",
+     "detail": "The master ALL RESOURCES row displayed the raw text \"tel:+18286982979\" instead of a formatted number, and that number belongs to Blue Ridge Health - Arden, not any school site. Replaced with the correct Erwin Middle line.",
+     "source": "Data audit while integrating"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "CORRECTION: Enka Middle is not \"planned,\" it has been open since 2024",
+     "detail": "The source document describes Enka Middle as a future expansion site. The federal 340B drug-pricing registry shows Blue Ridge Health - Enka Middle School has been ACTIVE since 7/1/2024, at 390 Asbury Rd, Candler. Noted in the Warrior Wellness Center entry so the outdated framing does not get repeated.",
+     "source": "340bopais.hrsa.gov registry"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "FLAGGED: a care limitation worth knowing before referring",
+     "detail": "Blue Ridge Health's own site states that, per NC House Bill 808 and Executive Order 14187, gender-affirming hormone therapy, puberty blockers and surgical referrals are not provided to minors at any of its locations, including this one. Recorded as a factual operating limitation, not a judgement, so a family needing that specific care gets routed elsewhere instead of hitting a wall after intake.",
+     "source": "brchs.com/services/school-based-health"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "BUG: POINT PEOPLE rebuild used the wrong column width and silently ate every category",
+     "detail": "The tab has 10 columns (through VERIFIED BY), but the rebuild script checked for a 9-column merge. Every category header failed to be recognised, dumped 123 rows including real category labels into one bucket, and a fresh rebuild would have shipped that way. Caught in verification before saving, not after. Rebuilt correctly: 106 people across 18 categories.",
+     "source": "Caught during this update"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "BUG, SERIOUS: 240 wrong phone numbers, emails and websites in ALL RESOURCES",
+     "detail": "The master tab had contact details stamped onto the WRONG rows, offset by exactly ten. Every one of the 240 raw \"tel:\" / \"mailto:\" / \"https:\" strings sitting in the PHONE, EMAIL and WEBSITE columns belonged to the organisation ten rows above it. A family calling The Little Gym would have reached a Latino workers cooperative; We Rock Care carried Community Action's number; the YMCA carried Isaac Dickson's. All 240 cleared. 23 rows had their real contact restored from the section tabs, and 26 websites were recovered from each row's own detail text. 227 correct numbers that had lost their click-to-dial link got it back.",
+     "source": "Data audit, 2 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "WHY SYNC CHECK MISSED IT, and what that means",
+     "detail": "SYNC CHECK reported 8 disagreements while at least 240 cells were wrong, because it compares the copies against the master and treats the master as correct. The bug WAS the master. Same lesson as the ConnectEd Circles email: SYNC CHECK proves the copies match, not that the master is right. Add a rule to the review: before running SYNC CHECK, scan ALL RESOURCES for any cell starting tel:, mailto: or http, since a raw URI in a data column always means a script wrote where a human would not.",
+     "source": "Data audit, 2 Aug 2026"
+    },
+    {
+     "date": "Oct 1 2026",
+     "what": "UPDATED: the merged MCO has a name, Vaya Partners",
+     "detail": "Vaya Health and Partners Health Management become VAYA PARTNERS on 1 October 2026, roughly 222,000 members across 47 counties. NCDHHS Secretary Devdutta Sangvai approved it 22 May 2026, subject to a readiness review. Until 1 Oct nothing changes: current member numbers, authorisations, care managers, billing, claims and contracting contacts all stay in place. Get continuity IN WRITING before 30 September for any family whose plan depends on it. Updated in 19 places.",
+     "source": "Vaya / Partners provider guidance, Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "CORRECTION: it is 90 CALENDAR days, not 90 days",
+     "detail": "The school evaluation deadline is 90 CALENDAR days from a written request (NC Policies 1503-2.3), and the clock does NOT stop for holidays, summer break or school closures. \"90 days\" reads as school days to a parent, which is a different and much longer promise. Corrected in 8 places.",
+     "source": "NC Policies 1503-2.3; Legal Aid of NC"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "NEW: Medicaid pays for diapers and pull-ups from age 3",
+     "detail": "This is the answer to the size 5+ question that Babies Need Bottoms (ages 0-3) cannot solve. NC Medicaid covers incontinence supplies from age 3 when medically necessary: needs a supporting diagnosis, a letter of medical necessity plus CMN or prior-auth, and a face-to-face visit in the last 6 months where the item was addressed. Comes through a DME vendor or pharmacy, not retail. Under EPSDT a denial for a child under 21 can be appealed. Added to VIII 11a, IX 9a and ALL RESOURCES.",
+     "source": "NC Medicaid DME policy, Aug 2026 check"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "NEW: NEMT, and the fact that the number depends on the plan",
+     "detail": "NC Medicaid Direct rides go through Land of Sky Transportation Resource Center 828-552-5486 (extension by last name), in-county 3 business days ahead, out-of-county 5 business days by 3pm, every trip on form DHB-5118 signed by the provider, mileage about $0.35. Vaya Total Care uses Modivcare 1-888-621-2084, 2 business days, pre-approval over 75 miles. Standard Plans book through their own broker (WellCare and Carolina Complete use MTM 1-844-784-8931). Added to VIII 17a and ALL RESOURCES.",
+     "source": "NC Medicaid Transportation guidance, Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "NEW: NC Medicaid Enrollment Broker 1-833-870-5500",
+     "detail": "The call that should come before all the others. Tells you which of the four plan types a family is on: Standard Plan, BH/IDD Tailored Plan (Buncombe = Vaya), NC Medicaid Direct (where DENTAL is billed), or the Children & Families Specialty Plan. Mon-Sat 7am-5pm. Say \"NC Medicaid Direct\" to a dental office, not the plan name. Added to VI 4a, III 5a and ALL RESOURCES.",
+     "source": "NC Medicaid, Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "NEW: the IEP escalation ladder, for when the school will not write it down",
+     "detail": "For the case where a team verbally agreed to a 1:1 aide and it appears in neither the IEP nor the Prior Written Notice. Prior Written Notice request, then IEP meeting request, then free NC Facilitated IEP, then free mediation (mediation@dpi.nc.gov), then state complaint (state_ec_complaints@dpi.nc.gov, within 1 year, findings in 60 calendar days), then due process at OAH (within 1 year, resolution meeting in 15 calendar days). NCDPI 984-236-2550. ECAC helps with all of it free but does not do legal representation; that is Disability Rights NC. Added to IX 11a and ALL RESOURCES.",
+     "source": "NCDPI dispute resolution; IDEA"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "NEW: Bluebell ABA, and a feeding / ARFID route",
+     "detail": "Bluebell ABA (Asheville) reports no waitlist and takes NC Medicaid, so it joins Already Autism Health as a fast door. Separately, pediatric feeding now has a route: Huff Center Therapies feeding and swallowing programme (physician referral required, fax 828-213-1625), plus Play Talk & Grow and Asheville Community Therapy Center for Medicaid SLP feeding. Red flags for same-week care are written into the row.",
+     "source": "Aug 2026 sweep"
+    },
+    {
+     "date": "Aug 14 2026",
+     "what": "DEADLINE: YMCA first-week after-school registration",
+     "detail": "School starts 24 Aug 2026 and YMCA registration for the first week closes 14 AUGUST. About $35 registration, Y-Access sliding scale, and they bill Buncombe DSS child care vouchers directly. Ask about staffing ratio and behaviour-support plan for a child with an IEP.",
+     "source": "YMCA of WNC, Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "FLAG: Buncombe DSS Child Care Subsidy is WAITLISTED",
+     "detail": "Priority goes to children in protective services and children who are homeless, and those can enrol now. Everyone else should still apply immediately, because the list is date-ordered and applying is what secures the slot. Noted on every subsidy row.",
+     "source": "Buncombe DSS, Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "RESOLVED: NC Lifespan Respite is $750, not $500",
+     "detail": "The current NCDHHS figure is up to $750 per calendar year, any age, no diagnosis and no waiver needed, professional referral only. The $500 figure came from an outdated voucher template. The \"amount conflicts, confirm\" flag on the RESPITE tab has been closed. With Eckerd/CARING this is one of only two respite doors that needs no waiver.",
+     "source": "NCDHHS Division of Aging"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "OPEN CONFLICT: Working Wheels car price and repair cap",
+     "detail": "This guide says a car is about $610 and the repair programme pays up to $1,200 with the participant paying 10%. An Aug 2026 check says the car is $628 and the participant share is capped at $100. Both are now shown side by side on all 7 rows rather than one silently winning. Ask for today's figures.",
+     "source": "Two sources disagree, 2 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "DOWNGRADED: the HACA \"all preferences removed\" claim",
+     "detail": "The waitlists being OPEN and RENTCafe-only is solid. The claim that HACA removed ALL admissions preferences in its 2024 plan, so that homelessness, DV, disability and veteran status no longer move anyone up, is NOT verified. That is a big thing to tell a family who is fleeing violence. Confirm with Caroline Logan, 828-239-3532, clogan@haca.org, before repeating it.",
+     "source": "Unverified, flagged 2 Aug 2026"
+    },
+    {
+     "date": "Sep 30 2026",
+     "what": "UPDATED: FEMA Helene housing, and the rent that is already running",
+     "detail": "Direct temporary housing and rental assistance both end 30 September 2026, month to month until then. Residents still in FEMA units after 29 March 2026 pay escalating rent: 25% of HUD Fair Market Rate in April-May, 50% in June-July, 75% in August-September. Treat 30 September as a hard exit date and move families toward permanent housing now, not in September.",
+     "source": "FEMA release, 16 March 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "FIXED: Healthy Blue Modivcare number was wrong in 10 cells",
+     "detail": "The guide listed 855-397-3604. That is Modivcare’s NC provider-network line. The MEMBER line is 855-397-3602. A family calling the old number would not have reached ride scheduling. Corrected on all five tabs.",
+     "source": "Healthy Blue handbook p.19, healthybluenc.com transportation page, Healthy Blue Provider Quick Reference Guide, NCDHHS NEMT fact sheet, 4 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "NEW: 12 non-medical rides a year on Vaya Total Care",
+     "detail": "Groceries, food banks, farmers markets, libraries, parks and gyms, legal aid, notaries, banks, post office, prenatal classes, job activities. 50 miles each way. Separate from NEMT. Previously this only existed as half a sentence inside the general Vaya row.",
+     "source": "vayahealth.com Vaya Total Care Perks page, verified 4 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "NEW: Healthy Blue Care Together is a SEPARATE plan with separate numbers",
+     "detail": "Foster care, adoption assistance and child-welfare involved children are usually on Care Together, not Healthy Blue Standard. Member Services 833-777-3611, crisis 833-597-3985. It carries CAREGIVER THERAPY, up to 12 sessions a year, which the Standard Plan does not.",
+     "source": "healthybluenc.com/children-families-specialty-plan, verified 4 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "NEW: EPSDT is now written out as an appeal lever, not just a diaper note",
+     "detail": "Under 21, a plan cannot deny on plan-policy limits alone. It must run an EPSDT review. No copays, no frequency limits, no per-day limits, and services can be delivered in school or community settings.",
+     "source": "Vaya handbook and Healthy Blue handbook, both verified 4 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "NEW: appeal clock, expedited appeals, and continuation of benefits",
+     "detail": "60 days to appeal, 30-day decision, 72 hours expedited, continuation of benefits if requested within 10 days, 120 days to a State Fair Hearing. Includes the warning that a family can be billed for continued services if the appeal is lost.",
+     "source": "Both member handbooks, verified 4 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "FLAG: the Sept 2025 Healthy Blue handbook is out of date on extra-benefit amounts",
+     "detail": "Handbook says $20 rideshare, $500 hotel, $500 moving expenses, 3 months WW. Live site says Uber gift card with no amount, no hotel figure, moving expenses replaced by housing insecurity help, 13 weeks WW. Do not quote the PDF to a family.",
+     "source": "healthybluenc.com/medicaid/benefits vs handbook p.22-23, 4 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "DO NOT ADD: Healthy Opportunities Pilots (HOP) is suspended",
+     "detail": "No new HOP authorisations and no HOP service delivery since 1 July 2025, for lack of General Assembly funding. NCDHHS still lists it as suspended. Impact Health was the WNC network lead. A June 2026 UNC study found HOP saved $164 per member per month, and waiver renewal talks continue, so this may come back. Until it does, do not refer a family to it.",
+     "source": "ncdhhs.gov Healthy Opportunities Pilots page and vayahealth.com HOP page, checked 4 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "FLAG: two different Ombudsman programs, do not confuse them",
+     "detail": "NC MEDICAID Ombudsman, 877-201-3750, is free independent help with plan denials and appeals. The LONG-TERM CARE Ombudsman at Land of Sky is a separate program for facility residents. Both handbooks say explicitly that these are distinct.",
+     "source": "Both member handbooks, 4 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "FIXED: POINT PEOPLE dropdowns stopped one row short",
+     "detail": "Validations covered rows 5 to 145 while data ran to 146. The last row had no working dropdowns. Extended to 146.",
+     "source": "Structural check, 4 Aug 2026"
+    },
+    {
+     "date": "CLOSED",
+     "what": "RESOLVED: ORIGINAL SECTION dropdown on ALL RESOURCES",
+     "detail": "Was: 464 of roughly 477 filled cells held subsection labels such as \"10.1 Paying for Childcare\" while the dropdown only offered the nine SNIFF sections, so the dropdown was decorative and the master could not be filtered by section. Fixed 4 Aug 2026 by adding a SNIFF SECTION column (O) with a working crosswalk and leaving ORIGINAL SECTION in place as provenance.",
+     "source": "Structural check, 4 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "STILL OPEN: 122 rows on ALL RESOURCES have no phone, email or website",
+     "detail": "A quarter of the master tab cannot be acted on without a separate search. Worst offenders are concept rows such as \"SSI/SSDI\" and \"Interpreting rights in hospitals and schools\" that were written as guidance rather than as contacts.",
+     "source": "Structural check, 4 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "BUG, REFERRAL-BREAKING: the guide told families to ask for \"(b)(3)\"",
+     "detail": "(b)(3) services were retired on 1 July 2023 and replaced by 1915(i). Four live cells told families and workers to ask a Vaya care coordinator for \"(b)(3) respite\" BY NAME. Under a Tailored Plan that authority no longer exists, so the request is likely to come back as a no that sounds like a denial of respite rather than a wrong word. Corrected in III. Child Health K84, IX. Autism B59/I59/K59, RESPITE B20/I20, and ALL RESOURCES L480.",
+     "source": "NC Medicaid 1915(i) pages; NCDHHS (b)(3) transition bulletins"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "NEW: 1915(i) is a respite door that does NOT need an Innovations slot",
+     "detail": "Five services including RESPITE, with NO institutional level-of-care test, for a serious mental health condition, severe SUD, I/DD or TBI. Using it does NOT cost a place on the Innovations Registry of Unmet Needs. Anyone who already HOLDS an Innovations or TBI Waiver slot is excluded. Not available on Standard Plans at all, which is a reason a Standard Plan family may want to move to the Tailored Plan. Route is Vaya 1-800-962-9003, ask the Tailored Care Manager for a 1915(i) independent assessment. Added to RESPITE, III. Child Health and ALL RESOURCES.",
+     "source": "medicaid.ncdhhs.gov/beneficiaries/1915i, page modified 8 Jan 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "NEW: In Lieu of Services, the alternatives to residential, PRTF and the ER",
+     "detail": "High-Fidelity Wraparound, Family-Centered Treatment, Child ACT, Enhanced Crisis Response, In-Home Therapy, Outpatient Plus, Rapid Care and Transitional Youth Services (16 to 21). Each is a documented step down from a placement or an ER trip, and families are almost never told they exist. Ask for them by name. A family can refuse an ILOS and demand the original service. Added to II. Child Behavior and ALL RESOURCES.",
+     "source": "Vaya member handbook v3.0, 20 Nov 2025, and vayahealth.com ILOS policy page"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "NEW: appointment access standards are contractual maximums, not suggestions",
+     "detail": "Mobile crisis 2 HOURS. MH or SUD urgent 24 hours. MH routine 14 days. SUD routine 48 HOURS. Well-child 14 days under 6 months, 30 days over. First prenatal 14 days, or 5 DAYS in the third trimester or a high-risk pregnancy. If a family is quoted longer, call Vaya and say the standard, then file a grievance. The 48-hour SUD standard is the strongest and least used.",
+     "source": "Vaya member handbook v3.0 Appointment Guide, verified 4 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "NEW: keeping an out-of-network provider for up to 180 days",
+     "detail": "Mid-course of treatment or an ongoing condition, explicitly including I/DD, a mental health diagnosis, SUD and TBI, buys up to 180 days with the existing provider. Pregnancy past 3 months runs through delivery plus 60 days postpartum. Scheduled surgery covers the procedure plus 90 days. Second opinions need no prior authorisation. Filed now because VAYA PARTNERS lands 1 Oct 2026 and networks will be redrawn.",
+     "source": "Vaya member handbook v3.0, verified 4 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "NEW: four more Vaya perks that were not in this guide",
+     "detail": "14 free home-delivered meals after a qualifying inpatient discharge (Mom's Meals). A GED voucher that pays the EXAM FEES, with a bilingual advisor and Spanish study materials. $10 gift card per flu or COVID shot, all ages, twice a plan year, plus $25 for a well-child visit for Innovations participants under 18. $100 toward home safety equipment DME will not cover, including door and motion sensors.",
+     "source": "vayahealth.com Vaya Total Care Perks, verified 4 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "FLAG: the Nov 2025 Vaya handbook is INCOMPLETE on perk eligibility",
+     "detail": "Meal delivery: the handbook says only \"fourteen meals\" and \"within one month\". The live site adds two conditions that will get a family denied, you must be participating in Tailored Care Management and must not be Innovations-eligible for meals, and it excludes ER visits and outpatient surgery from \"qualifying stay\". WeightWatchers: the handbook states no gate, the site requires age 18+ and a BMI of 25 or higher. The $25 wellness-visit incentive is on the site and NOT in the handbook at all. Work from the website, not the PDF.",
+     "source": "vayahealth.com perks page vs handbook p.39-40, 4 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "FLAG: the Vaya handbook prints the crisis line WRONG on its own back cover",
+     "detail": "The back cover reads 1-800-849-6147. Every other instance in the document, and the live website, read 1-800-849-6127. This guide already carries the correct 6127. Recorded so nobody \"corrects\" it from the PDF later.",
+     "source": "Vaya member handbook v3.0 back cover vs body and vayahealth.com"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "OPEN CONFLICT: Enrollment Broker hours",
+     "detail": "This guide and the Vaya handbook both say Mon to Sat, 7am to 5pm. NC Medicaid's own 1915(i) pages, modified 8 Jan 2026, say Mon to Fri, 7am to 7pm. Two state-adjacent sources disagree. Somebody has to call 1-833-870-5500 late on a weekday and again on a Saturday. Affects 10 cells.",
+     "source": "ncmedicaid vs Vaya handbook, 4 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "OPEN CONFLICT: Advance directive registry number, inside one document",
+     "detail": "The Vaya handbook gives 1-919-807-2167 in the advance directives section and 1-919-814-5400 in its own Important Phone Numbers list two pages later. 807-2167 is listed first in the new row. Free forms are at sosnc.gov/ahcdr either way.",
+     "source": "Vaya member handbook v3.0, p.70 vs p.71"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "BUG, STRUCTURAL: dropdown ranges stopped at the last data row on EVERY tab",
+     "detail": "Logged for POINT PEOPLE last round, but it was true across all 15 data tabs: every validation range ended exactly at the final filled row, so the next row typed by anyone would have had no dropdowns and no icons. Ranges now extended 20 rows past the new last row on every tab, so there is pre-validated room to grow.",
+     "source": "Structural check, 4 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "NEW: pharmacy rules, advance mental health instructions, and minor consent",
+     "detail": "72-HOUR bridge supply while a prior authorisation is decided, $4 copay cap, no copay at all under 21. A pharmacy can hand over the medicine and bill later. Advance Instruction for Mental Health Treatment is a free document naming what treatment a parent does and does not want and who speaks for them. And a minor can consent alone to STI treatment, pregnancy services, substance use help and help with emotional conditions.",
+     "source": "Vaya member handbook v3.0, verified 4 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "FIXED: ORIGINAL SECTION dropdown, without destroying the old labels",
+     "detail": "New column O on ALL RESOURCES, SNIFF SECTION, with a working 15-item dropdown. Every row is now crosswalked from its legacy label to a SNIFF section, so the master can finally be filtered the way the section tabs are organised. ORIGINAL SECTION (column K) is untouched and kept as provenance: it still says \"10.1 Paying for Childcare\" so you can trace where a row came from. The crosswalk is a STARTING POINT, not gospel. Anything that felt like a judgement call is fixable from the dropdown. 0 rows had no legacy label and default to the type-your-own option.",
+     "source": "Structural fix, 4 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "FIXED: STATUS column added to ALL RESOURCES",
+     "detail": "New column P, same eight-option dropdown as every section tab. The master was the one tab where you could not record that you had called someone, which meant work done from ALL RESOURCES left no trace.",
+     "source": "Structural fix, 4 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "NEW TAB: X. OTHER, everything the SNIFF does not ask about",
+     "detail": "12 need-blocks built from the rows that fit no SNIFF domain: call-first lines, MOTHERS (pregnancy, birth and the year after), legal, money and benefits and taxes, phones and internet, Deaf and hard-of-hearing access, disability rights and SSI, Black families, LGBTQ+ families and youth, immigrant and refugee families, joy and play, and time-limited seasonal programmes with deadlines. Same 13 columns and same dropdowns as every other section tab, so it needs no new habits. About 35 of these rows previously lived ONLY in the master and had no section tab home at all.",
+     "source": "Structural addition, 4 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "BUG PREVENTED: START hyperlinks are now rebuilt from the labels",
+     "detail": "Inserting Section IX last round shifted the START labels but not the underlying hyperlinks, so links pointed at the wrong tabs. Inserting Section X would have done it again. Every hyperlink in column B is now cleared and rewritten by matching the visible label to a sheet name, so a future insert cannot orphan them.",
+     "source": "Structural fix, 4 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "NEW: My Village Asheville, voluntary host families with no loss of custody",
+     "detail": "Church-volunteer host families care for children short term during a crisis while the parent keeps FULL legal custody and can ask for them home at any time. Average 4 to 6 weeks, range a day to a year. Free. A Community Coach also works with the parent on the parent's own goals. Referral line 828-357-7075, Mon-Fri 9-5, NOT 24/7. Added to RESPITE (Section 4, beside Angel's Watch), IV. Caregiver Support 6a, X. OTHER X.2 Mothers, and ALL RESOURCES.",
+     "source": "myvillageasheville.org, verified 17 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "FLAG: say the faith framing out loud BEFORE referring to My Village",
+     "detail": "It is an explicitly Christian organisation operating through local churches. Their own site says a family's views do not need to align with theirs to use the service, which is a fair and honest thing for them to publish, but the family should hear it from us before they walk in rather than discover it there. Also flagged: host families are volunteers, screened and trained, but NOT DSS-licensed foster homes. It is private and voluntary, so there is no DSS oversight and no Medicaid appeal route. IT DOES NOT REPLACE A REPORT where one is required.",
+     "source": "Judgement flag, 17 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "RESPITE tab is now TEN doors, not nine",
+     "detail": "The title said THE NINE DOORS. My Village Asheville is the tenth and sits in Section 4, Overnight and Crisis, next to Angel's Watch, because they are the same model: voluntary host care with no DSS custody. Title updated so the tab does not contradict its own contents.",
+     "source": "Structural fix, 17 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "SOURCE ERROR: the uploaded write-up dates the Asheville handover to July 2024",
+     "detail": "It was 7 JULY 2025. Alongside Families, which ran the Asheville chapter from 2022, transferred the site to My Village Ministries and refocused on Greater Charlotte. Emily Kemmann's announcement is dated 17 June 2025 and names 7 July. The Hickory site launched that autumn, not before. A year's error matters here because it changes how long this chapter has actually been running under its current name, which is about one year.",
+     "source": "alongsidefamilies.org transition announcement, 17 June 2025"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "SOURCE ERROR: Ascend Women's Center and MAPS are ONE organisation, not two",
+     "detail": "The write-up lists them as two separate referral partners. Mountain Area Pregnancy Services now operates as Ascend Women's Center: same organisation, help@ascendwc.org. Worth knowing separately: it is a faith-based pregnancy resource centre that provides free pregnancy testing, limited obstetric ultrasound, parenting classes and grief support, and it does NOT offer or refer for abortion. State that plainly to anyone weighing options, so the choice is informed. Neither is in this guide yet.",
+     "source": "findhelp.org, handsonasheville.org, MAPS/Ascend materials, 17 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "SOURCE ERROR: the write-up credits Clarvida with the Caiyalynn Burrell centre",
+     "detail": "Family Preservation Services of NC, later Clarvida, opened and ran it. As of 2026 it is operated by DAYMARK RECOVERY SERVICES, 16 beds, ages 6 to 17. This guide already carries the correct operator on II. Child Behavior and in the master, so no change was needed. Recorded so the write-up does not get used to \"correct\" a row that is already right.",
+     "source": "daymarkrecovery.org, CARF provider record, 17 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "DO NOT QUOTE: the 99.9% family preservation figure",
+     "detail": "It is My Village Ministries' own internal impact-report number, national and not Asheville-specific, and it counts children reunified at the end of a hosting. The write-up sets it against the under-50% foster care reunification rate as though they measure the same thing. They do not. A voluntary programme that screens its own referrals and only accepts families it judges suitable is selecting for the outcome it then reports; foster care reunification covers involuntary removals with no such filter. The model can be worth referring to without the number being evidence of anything. Describe what the programme DOES to families, not what it scores.",
+     "source": "Analytical flag, 17 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "STRUCTURAL: rows can now be inserted mid-tab without breaking the sheet",
+     "detail": "Previous rounds always appended new entries to the bottom of a tab, because openpyxl's insert_rows does not shift merged cells, data validations, hyperlinks or the autofilter, and using it silently corrupts the layout. These three entries were placed inside the correct existing need-blocks by snapshotting and rewriting the rows below the insertion point instead. That is why My Village sits beside Angel's Watch rather than in a bin at the end of the tab.",
+     "source": "Structural fix, 17 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "BUG: new verification dates were not in the LAST VERIFIED dropdown",
+     "detail": "The dropdown listed 1, 2 and 4 August only. Rows verified on 17 August displayed correctly but the date was not selectable, so the next person verifying today would have had to type it and would likely have typed a different format. Added 2026-08-17 to the list on all 16 tabs. THIS RECURS EVERY SWEEP: the dates are hardcoded in each validation string rather than read from a range, and the string has a 255-character ceiling before Excel silently truncates it. Currently well under. When it gets close, move the dates to a named range instead of adding more.",
+     "source": "Structural check, 17 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "BUG, REFERRAL-BREAKING: Play Talk & Grow street number was wrong",
+     "detail": "The guide said 10 Regent Park Blvd in seven cells across four tabs. It is 18 REGENT PARK BLVD, SUITE A, West Asheville 28806. A family driving to number 10 arrives at the wrong building with a child in the car. Corrected everywhere.",
+     "source": "playtalkandgrow.com, verified 17 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "BIG ONE: Play Talk & Grow takes MEDICAID and VAYA",
+     "detail": "Their pricing page carries the Medicaid, Vaya, AmeriHealth and UnitedHealthcare Community Plan logos. The row here was thin and unverified and never said so. That makes a full neurodiversity-affirming speech clinic reachable for families who assume private clinics are out of reach. CATCH: their intake form only offers Private Insurance or Self-Pay as options, so a family filling it in honestly will not find Medicaid anywhere. TELL THEM TO SAY MEDICAID ON THE PHONE. Free consultation with an actual SLP first, and they run benefits before anyone commits. Ages birth to 18. AAC, LAMP, Spelling to Communicate for minimally speaking kids, Natural Language Acquisition for gestalt processors, PROMPT for apraxia, feeding and swallowing, literacy and dyslexia, stuttering.",
+     "source": "playtalkandgrow.com/pricing, verified 17 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "FLAG: Play Talk & Grow contradicts itself on price, on one page",
+     "detail": "The pricing table says $215 evaluation and $90 per session. The FAQ lower down the SAME page says $195 and $80. Page last modified 22 May 2026. Ask which figure applies before the first appointment so a family is not surprised by $40 they did not plan for.",
+     "source": "playtalkandgrow.com/pricing, 17 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "NEW: Campfire Behavioral Health, ABA with NO WAITLIST and Spanish on site",
+     "detail": "Ages 2 to 21, 1:1, two-hour sessions. Adults 18+ served through the NC Innovations Waiver. Outdoor sessions, telehealth for rural families, neurofeedback via Asheville Neurowellness. On-site Spanish interpreter who is herself a parent of an autistic child. No waitlist is the headline in a county where waitlists are the whole problem. TWO CHECKS FIRST: their own funding panel lists six sources and all six read \"Private Pay\" while the FAQ says most sessions are covered by insurance, and Medicaid is never named. Ask whether they bill Vaya BEFORE a family gets attached. And the phone is a 253 area code, Washington State, so warn a family screening unknown numbers.",
+     "source": "campfireaba.info, verified 17 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "FLAG: ABA is contested, and this guide now holds providers on both sides",
+     "detail": "Many autistic adults and neurodiversity-affirming clinicians object to ABA. Play Talk & Grow, added in the same round, describes itself as explicitly rejecting compliance-based methods. Campfire is an ABA provider. Both are legitimate entries and this is a real disagreement among reasonable people, not a settled question. Give a parent both framings and the question already written at the top of IX block 5a: ask any provider how they handle a child saying no.",
+     "source": "Judgement flag, 17 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "TIME-CRITICAL: Campfire Community School opens 20 AUGUST 2026, funding window already shut",
+     "detail": "New private school for neurodivergent students, 1:1 behaviour technician per child, first day is two days after this entry was written. FOUR THINGS BEFORE ANY FAMILY MOVES A CHILD. (1) The 2026-27 OPPORTUNITY SCHOLARSHIP new-student application CLOSED 5pm Friday 14 August 2026. The school page still tells families to apply. (2) ESA+ REQUIRES AN ELIGIBILITY DETERMINATION FROM AN NC PUBLIC SCHOOL within the last three years, which makes the free BCS EC evaluation the DOOR to $9,000-$17,000, not an alternative to it. (3) Ask if they are a DIRECT PAYMENT or REIMBURSEMENT school: reimbursement means the family fronts a year of tuition, which no Child First family can do. Confirm DNPE and NCSEAA registration, which a brand new school may not hold yet. (4) PRIVATE ENROLMENT GIVES UP THE IEP: the IDEA entitlement to a free appropriate public education follows public enrolment. A privately enrolled child may get a services plan, which is far weaker and rationed across all private-school children. Not reversible mid-year. Still may be right for a child who is suffering. Family's call, with facts.",
+     "source": "campfireaba.info + k12.ncseaa.edu, verified 17 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "MISCATEGORISED: two pediatric-only rows sitting on the ADULT MENTAL HEALTH tab",
+     "detail": "Under VII block 2a, Individual counseling or therapy, which is an adult need, sat \"Speech therapy: Play Talk & Grow\" and \"Occupational therapy: independent pediatric OTs\". Every provider in both rows is pediatric only, Play Talk & Grow serves birth to 18. Both now marked with a warning triangle and a flag in NOTES rather than deleted, because it may have been deliberate. They already appear correctly on II. Child Behavior, III. Child Health and IX. Autism. RECOMMEND DELETING THEM FROM VII.",
+     "source": "Structural check, 17 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "DUPLICATE MERGED: two Play Talk & Grow rows on the IX tab",
+     "detail": "A thin unverified row already existed at IX block 4a. Rather than leave two rows for one clinic, the full verified entry was folded into the existing row and the duplicate cleared back to a blank gold row. Worth a habit: search a tab for the organisation name before adding, because the master and the section tabs name the same place differently.",
+     "source": "Structural fix, 17 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "NOT ADDED, and why: Camp Royall, and no OT was in the source material",
+     "detail": "Camp Royall (Autism Society of NC) is genuinely the largest autism-specific camp in the country but it is in Moncure near Pittsboro, roughly four hours away, at $1,850 a week residential or $750 a week day. Out of area and out of reach, so it was left out deliberately rather than overlooked. SEPARATELY: neither source document was an OT provider. Play Talk & Grow is speech, feeding and AAC. Campfire is ABA. The OT rows in this guide are still the same unverified list of independent practitioners on II, III and IX, and OT remains the weakest therapy coverage in the file.",
+     "source": "Scope note, 17 Aug 2026"
+    },
+    {
+     "date": "Aug 2026",
+     "what": "BUG: filters stopped short of the last row on five tabs",
+     "detail": "The autofilter range ended above the final rows on II. Child Behavior, V. Adult Education, VI. Family Health, VII. Adult Mental Health and VIII. Concrete Needs, by three to five rows each. Any entry below the cut was INVISIBLE TO EVERY FILTER: filter SPANISH? for Spanish-first sites and those rows silently vanish, which is the worst kind of bug because the tab looks like it is working. Pre-existing, not caused by this round. All filter ranges now extended to the true last row. Check this after any round that appends rows: openpyxl does not move the autofilter for you.",
+     "source": "Structural check, 17 Aug 2026"
+    },
+    {
+     "date": "",
+     "what": "+ add your own change here",
+     "detail": "",
+     "source": ""
+    }
+   ]
+  }
+ ],
+ "conflicts": [
+  {
+   "resource": "Western Carolina Rescue Ministries",
+   "field": "PHONE",
+   "tab": "VIII. Concrete Needs",
+   "sectionTabSays": "828-254-1529",
+   "masterSays": "828-254-0471"
+  }
+ ]
+}

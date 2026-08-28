@@ -1,0 +1,1355 @@
+{
+ "meta": {
+  "file": "community-resource-assessment.json",
+  "form": "Community_Resource_Assessment_Form_2.docx (Child First, Dec 2015)",
+  "generated": "2026-08-25",
+  "note": "84 service-type rows. `needs` crosswalks each row to SNIFF questions; `kw` are fallback keywords."
+ },
+ "sections": [
+  {
+   "id": "I",
+   "name": "Child Development and Early Education",
+   "band": "CHILD SERVICES"
+  },
+  {
+   "id": "II",
+   "name": "Child Mental Health",
+   "band": "CHILD SERVICES"
+  },
+  {
+   "id": "III",
+   "name": "Child Physical Health",
+   "band": "CHILD SERVICES"
+  },
+  {
+   "id": "IV",
+   "name": "Parent Support",
+   "band": "FAMILY SERVICES"
+  },
+  {
+   "id": "V",
+   "name": "Adult Education and Employment",
+   "band": "FAMILY SERVICES"
+  },
+  {
+   "id": "VI",
+   "name": "Family Health Services",
+   "band": "FAMILY SERVICES"
+  },
+  {
+   "id": "VII",
+   "name": "Adult Mental Health",
+   "band": "FAMILY SERVICES"
+  },
+  {
+   "id": "VIII",
+   "name": "Social Services and Other Concrete Needs",
+   "band": "FAMILY SERVICES"
+  }
+ ],
+ "rows": [
+  {
+   "id": "I.1",
+   "section": "I",
+   "num": "1",
+   "label": "Developmental screening",
+   "needs": [
+    "I:1a",
+    "I:6a",
+    "II:1a"
+   ],
+   "kw": [
+    "screening",
+    "ages and stages",
+    "asq",
+    "developmental screen"
+   ]
+  },
+  {
+   "id": "I.2",
+   "section": "I",
+   "num": "2",
+   "label": "Early intervention",
+   "needs": [
+    "I:2a"
+   ],
+   "kw": [
+    "cdsa",
+    "infant toddler",
+    "early intervention",
+    "itp"
+   ]
+  },
+  {
+   "id": "I.3",
+   "section": "I",
+   "num": "3",
+   "label": "School-based evaluation",
+   "needs": [
+    "I:3a",
+    "IX:3a"
+   ],
+   "kw": [
+    "school evaluation",
+    "child find",
+    "iep",
+    "exceptional children"
+   ]
+  },
+  {
+   "id": "I.4",
+   "section": "I",
+   "num": "4",
+   "label": "Special education classrooms",
+   "needs": [
+    "I:4a"
+   ],
+   "kw": [
+    "special education",
+    "preschool ec",
+    "self-contained"
+   ]
+  },
+  {
+   "id": "I.5",
+   "section": "I",
+   "num": "5",
+   "label": "Comprehensive developmental assessment (e.g., autism)",
+   "needs": [
+    "I:5a",
+    "IX:2a"
+   ],
+   "kw": [
+    "autism",
+    "ados",
+    "developmental assessment",
+    "diagnostic evaluation"
+   ]
+  },
+  {
+   "id": "I.6",
+   "section": "I",
+   "num": "6",
+   "label": "Infant/toddler care: Early Head Start, public, private",
+   "needs": [
+    "I:7a"
+   ],
+   "kw": [
+    "early head start",
+    "infant toddler care",
+    "childcare",
+    "child care"
+   ]
+  },
+  {
+   "id": "I.7",
+   "section": "I",
+   "num": "7",
+   "label": "Early care and education: Head Start, public, private",
+   "needs": [
+    "I:7a"
+   ],
+   "kw": [
+    "head start",
+    "nc pre-k",
+    "preschool",
+    "pre-k"
+   ]
+  },
+  {
+   "id": "I.8",
+   "section": "I",
+   "num": "8",
+   "label": "Kith and Kin or Family Friend and Neighbor care",
+   "needs": [],
+   "kw": [
+    "kinship",
+    "family friend and neighbor",
+    "ffn",
+    "subsidy",
+    "grandparent"
+   ]
+  },
+  {
+   "id": "I.9",
+   "section": "I",
+   "num": "9",
+   "label": "Developmental playgroup for parent and child together",
+   "needs": [
+    "I:8a"
+   ],
+   "kw": [
+    "playgroup",
+    "drop-in play",
+    "parent child play",
+    "play group"
+   ]
+  },
+  {
+   "id": "I.10",
+   "section": "I",
+   "num": "10",
+   "label": "After school/recreational programs",
+   "needs": [
+    "I:10a",
+    "I:11a"
+   ],
+   "kw": [
+    "after school",
+    "after-school",
+    "summer camp",
+    "recreation",
+    "ymca"
+   ]
+  },
+  {
+   "id": "I.11",
+   "section": "I",
+   "num": "11",
+   "label": "Library programs",
+   "needs": [],
+   "kw": [
+    "library",
+    "story time",
+    "storytime",
+    "buncombe county public librar"
+   ]
+  },
+  {
+   "id": "I.12",
+   "section": "I",
+   "num": "12",
+   "label": "Other developmental activities: music, gymnastics",
+   "needs": [
+    "I:11a"
+   ],
+   "kw": [
+    "music",
+    "gymnastics",
+    "dance",
+    "yoga",
+    "movement",
+    "swim"
+   ]
+  },
+  {
+   "id": "I.13",
+   "section": "I",
+   "num": "13",
+   "label": "Other",
+   "needs": [
+    "I:9a"
+   ],
+   "kw": [
+    "family resource center",
+    "community center",
+    "drop in"
+   ]
+  },
+  {
+   "id": "II.1",
+   "section": "II",
+   "num": "1",
+   "label": "Screening/evaluation for social-emotional and behavioral problems",
+   "needs": [
+    "II:1a",
+    "II:2a"
+   ],
+   "kw": [
+    "social emotional",
+    "behaviour screening",
+    "behavior screening",
+    "asq-se",
+    "devereux"
+   ]
+  },
+  {
+   "id": "II.2",
+   "section": "II",
+   "num": "2",
+   "label": "Mental health treatment: home, agency, community-based, early care and education, school, pediatric primary care",
+   "needs": [
+    "II:6a",
+    "II:7a",
+    "II:8a"
+   ],
+   "kw": [
+    "child therapy",
+    "play therapy",
+    "in-home therapy",
+    "intensive in-home",
+    "cpp",
+    "pcit"
+   ]
+  },
+  {
+   "id": "II.3",
+   "section": "II",
+   "num": "3",
+   "label": "Therapeutic classroom",
+   "needs": [
+    "II:4a"
+   ],
+   "kw": [
+    "therapeutic preschool",
+    "day treatment",
+    "therapeutic classroom"
+   ]
+  },
+  {
+   "id": "II.4",
+   "section": "II",
+   "num": "4",
+   "label": "Parent-child therapeutic group",
+   "needs": [
+    "II:5a"
+   ],
+   "kw": [
+    "parent child group",
+    "dyadic",
+    "circle of security",
+    "pcit",
+    "triple p"
+   ]
+  },
+  {
+   "id": "II.5",
+   "section": "II",
+   "num": "5",
+   "label": "Mental health consultation: early care and education, schools, home visiting, pediatric primary care, family support center",
+   "needs": [
+    "II:3a",
+    "IX:6a"
+   ],
+   "kw": [
+    "consultation",
+    "iecmhc",
+    "child care consultant",
+    "behaviour consult"
+   ]
+  },
+  {
+   "id": "II.6",
+   "section": "II",
+   "num": "6",
+   "label": "Psychiatric evaluation, child",
+   "needs": [
+    "II:9a"
+   ],
+   "kw": [
+    "child psychiatry",
+    "psychiatric evaluation",
+    "psychiatrist"
+   ]
+  },
+  {
+   "id": "II.7",
+   "section": "II",
+   "num": "7",
+   "label": "Psychiatric medication management",
+   "needs": [
+    "II:9a"
+   ],
+   "kw": [
+    "medication management",
+    "psychiatric medication",
+    "med management"
+   ]
+  },
+  {
+   "id": "II.8",
+   "section": "II",
+   "num": "8",
+   "label": "Emergency services",
+   "needs": [
+    "CRISIS:*"
+   ],
+   "kw": [
+    "crisis",
+    "mobile crisis",
+    "988",
+    "emergency"
+   ]
+  },
+  {
+   "id": "II.9",
+   "section": "II",
+   "num": "9",
+   "label": "Residential treatment",
+   "needs": [],
+   "kw": [
+    "residential",
+    "prtf",
+    "group home",
+    "level iii"
+   ]
+  },
+  {
+   "id": "II.10",
+   "section": "II",
+   "num": "10",
+   "label": "Hospitalization",
+   "needs": [],
+   "kw": [
+    "hospital",
+    "inpatient",
+    "mission",
+    "copestone"
+   ]
+  },
+  {
+   "id": "II.11",
+   "section": "II",
+   "num": "11",
+   "label": "Other",
+   "needs": [
+    "IX:1a"
+   ],
+   "kw": [
+    "parent to parent",
+    "first worry",
+    "where to start"
+   ]
+  },
+  {
+   "id": "III.1",
+   "section": "III",
+   "num": "1",
+   "label": "Pediatric primary care or medical home",
+   "needs": [
+    "III:1a"
+   ],
+   "kw": [
+    "pediatric",
+    "pediatrician",
+    "primary care",
+    "medical home",
+    "family medicine"
+   ]
+  },
+  {
+   "id": "III.2",
+   "section": "III",
+   "num": "2",
+   "label": "Medical specialist",
+   "needs": [
+    "III:2a"
+   ],
+   "kw": [
+    "specialist",
+    "cardiology",
+    "neurology",
+    "gastro",
+    "pulmonolog",
+    "olson huff"
+   ]
+  },
+  {
+   "id": "III.3",
+   "section": "III",
+   "num": "3",
+   "label": "Visiting nurses",
+   "needs": [
+    "III:6a"
+   ],
+   "kw": [
+    "visiting nurse",
+    "home health",
+    "nurse family partnership",
+    "public health nurse"
+   ]
+  },
+  {
+   "id": "III.4",
+   "section": "III",
+   "num": "4",
+   "label": "Dentist",
+   "needs": [
+    "III:3a"
+   ],
+   "kw": [
+    "dental",
+    "dentist",
+    "oral health"
+   ]
+  },
+  {
+   "id": "III.5",
+   "section": "III",
+   "num": "5",
+   "label": "Nutritionist",
+   "needs": [
+    "III:4a"
+   ],
+   "kw": [
+    "nutrition",
+    "dietitian",
+    "feeding",
+    "wic"
+   ]
+  },
+  {
+   "id": "III.6",
+   "section": "III",
+   "num": "6",
+   "label": "Health insurance, Medicaid",
+   "needs": [
+    "III:5a"
+   ],
+   "kw": [
+    "medicaid",
+    "health insurance",
+    "navigator",
+    "pathways",
+    "healthy blue",
+    "wellcare"
+   ]
+  },
+  {
+   "id": "III.7",
+   "section": "III",
+   "num": "7",
+   "label": "Other health department services: Healthy Start, WIC",
+   "needs": [
+    "VIII:4a"
+   ],
+   "kw": [
+    "health department",
+    "wic",
+    "healthy start",
+    "immunization"
+   ]
+  },
+  {
+   "id": "III.8",
+   "section": "III",
+   "num": "8",
+   "label": "Other",
+   "needs": [
+    "IX:4a"
+   ],
+   "kw": [
+    "occupational therapy",
+    "speech therapy",
+    "physical therapy",
+    "feeding therapy"
+   ]
+  },
+  {
+   "id": "IV.1",
+   "section": "IV",
+   "num": "1",
+   "label": "Information resources: information phone lines, hotlines",
+   "needs": [
+    "IV:1a",
+    "X:1"
+   ],
+   "kw": [
+    "211",
+    "hotline",
+    "warmline",
+    "help line",
+    "information and referral"
+   ]
+  },
+  {
+   "id": "IV.2",
+   "section": "IV",
+   "num": "2",
+   "label": "Parent phone support",
+   "needs": [
+    "IV:2a"
+   ],
+   "kw": [
+    "parent line",
+    "warmline",
+    "phone support",
+    "peer support"
+   ]
+  },
+  {
+   "id": "IV.3",
+   "section": "IV",
+   "num": "3",
+   "label": "Home visiting: Nurse-Family Partnership, PAT, Healthy Families, Healthy Start, Early Head Start, visiting nurses",
+   "needs": [
+    "IV:3a"
+   ],
+   "kw": [
+    "home visiting",
+    "nurse family partnership",
+    "parents as teachers",
+    "healthy families",
+    "welcome baby"
+   ]
+  },
+  {
+   "id": "IV.4",
+   "section": "IV",
+   "num": "4",
+   "label": "Parenting education or support group",
+   "needs": [
+    "IV:4a"
+   ],
+   "kw": [
+    "parenting class",
+    "parenting group",
+    "triple p",
+    "circle of security",
+    "support group"
+   ]
+  },
+  {
+   "id": "IV.5",
+   "section": "IV",
+   "num": "5",
+   "label": "Parent support and resource centers",
+   "needs": [
+    "IV:5a",
+    "IV:7a"
+   ],
+   "kw": [
+    "family resource center",
+    "parent resource",
+    "drop in center"
+   ]
+  },
+  {
+   "id": "IV.6",
+   "section": "IV",
+   "num": "6",
+   "label": "Respite care",
+   "needs": [
+    "IV:6a",
+    "IX:8a",
+    "RESPITE:*"
+   ],
+   "kw": [
+    "respite",
+    "childcare break",
+    "overnight care"
+   ]
+  },
+  {
+   "id": "IV.7",
+   "section": "IV",
+   "num": "7",
+   "label": "Homemaker",
+   "needs": [],
+   "kw": [
+    "homemaker",
+    "chore service",
+    "housekeeping",
+    "in-home aide"
+   ]
+  },
+  {
+   "id": "IV.8",
+   "section": "IV",
+   "num": "8",
+   "label": "Child Protective Services: Intensive Family Preservation, Family Reunification",
+   "needs": [],
+   "kw": [
+    "dss",
+    "child protective",
+    "cps",
+    "family preservation",
+    "reunification",
+    "social services"
+   ]
+  },
+  {
+   "id": "IV.9",
+   "section": "IV",
+   "num": "9",
+   "label": "Faith-based organizations",
+   "needs": [],
+   "kw": [
+    "church",
+    "ministry",
+    "faith",
+    "parish",
+    "catholic",
+    "baptist",
+    "methodist",
+    "synagogue",
+    "mosque"
+   ]
+  },
+  {
+   "id": "IV.10",
+   "section": "IV",
+   "num": "10",
+   "label": "Other",
+   "needs": [
+    "X:11"
+   ],
+   "kw": [
+    "belonging",
+    "play",
+    "joy",
+    "community"
+   ]
+  },
+  {
+   "id": "V.1",
+   "section": "V",
+   "num": "1",
+   "label": "GED/high school diploma",
+   "needs": [
+    "V:1a"
+   ],
+   "kw": [
+    "ged",
+    "high school equivalency",
+    "hise",
+    "adult high school"
+   ]
+  },
+  {
+   "id": "V.2",
+   "section": "V",
+   "num": "2",
+   "label": "English (ESL) class",
+   "needs": [
+    "V:2a"
+   ],
+   "kw": [
+    "esl",
+    "english class",
+    "english as a second language",
+    "ingles"
+   ]
+  },
+  {
+   "id": "V.3",
+   "section": "V",
+   "num": "3",
+   "label": "Computer training",
+   "needs": [
+    "V:3a"
+   ],
+   "kw": [
+    "computer",
+    "digital literacy",
+    "technology class"
+   ]
+  },
+  {
+   "id": "V.4",
+   "section": "V",
+   "num": "4",
+   "label": "Job training",
+   "needs": [
+    "V:4a"
+   ],
+   "kw": [
+    "job training",
+    "workforce",
+    "apprentice",
+    "vocational",
+    "goodwill"
+   ]
+  },
+  {
+   "id": "V.5",
+   "section": "V",
+   "num": "5",
+   "label": "Literacy classes",
+   "needs": [
+    "V:5a"
+   ],
+   "kw": [
+    "literacy",
+    "learning to read",
+    "tutoring",
+    "literacy council"
+   ]
+  },
+  {
+   "id": "V.6",
+   "section": "V",
+   "num": "6",
+   "label": "Citizenship classes",
+   "needs": [
+    "V:6a"
+   ],
+   "kw": [
+    "citizenship",
+    "naturalization",
+    "immigration class"
+   ]
+  },
+  {
+   "id": "V.7",
+   "section": "V",
+   "num": "7",
+   "label": "Other training programs, technical school, or college",
+   "needs": [
+    "V:7a"
+   ],
+   "kw": [
+    "community college",
+    "a-b tech",
+    "university",
+    "certificate"
+   ]
+  },
+  {
+   "id": "V.8",
+   "section": "V",
+   "num": "8",
+   "label": "Employment assistance",
+   "needs": [
+    "V:8a"
+   ],
+   "kw": [
+    "employment",
+    "job search",
+    "nc works",
+    "resume",
+    "hiring"
+   ]
+  },
+  {
+   "id": "V.9",
+   "section": "V",
+   "num": "9",
+   "label": "Other",
+   "needs": [
+    "X:5"
+   ],
+   "kw": [
+    "phone",
+    "internet",
+    "device",
+    "lifeline"
+   ]
+  },
+  {
+   "id": "VI.1",
+   "section": "VI",
+   "num": "1",
+   "label": "Medical doctor, caregiver or other family members",
+   "needs": [
+    "VI:1a"
+   ],
+   "kw": [
+    "adult primary care",
+    "family medicine",
+    "free clinic",
+    "doctor"
+   ]
+  },
+  {
+   "id": "VI.2",
+   "section": "VI",
+   "num": "2",
+   "label": "Medical specialists",
+   "needs": [
+    "VI:2a"
+   ],
+   "kw": [
+    "specialist",
+    "cardiology",
+    "neurology",
+    "orthopedic"
+   ]
+  },
+  {
+   "id": "VI.3",
+   "section": "VI",
+   "num": "3",
+   "label": "Prenatal care",
+   "needs": [
+    "VI:3a",
+    "X:2"
+   ],
+   "kw": [
+    "prenatal",
+    "obstetric",
+    "midwife",
+    "doula",
+    "pregnancy",
+    "birth"
+   ]
+  },
+  {
+   "id": "VI.4",
+   "section": "VI",
+   "num": "4",
+   "label": "Dentist",
+   "needs": [
+    "III:3a"
+   ],
+   "kw": [
+    "adult dental",
+    "dental",
+    "dentist"
+   ]
+  },
+  {
+   "id": "VI.5",
+   "section": "VI",
+   "num": "5",
+   "label": "Family health insurance: Medicaid, other",
+   "needs": [
+    "VI:4a"
+   ],
+   "kw": [
+    "medicaid",
+    "insurance",
+    "marketplace",
+    "aca",
+    "navigator"
+   ]
+  },
+  {
+   "id": "VI.6",
+   "section": "VI",
+   "num": "6",
+   "label": "Other",
+   "needs": [
+    "X:2"
+   ],
+   "kw": [
+    "postpartum",
+    "lactation",
+    "breastfeeding",
+    "fourth trimester"
+   ]
+  },
+  {
+   "id": "VII.1",
+   "section": "VII",
+   "num": "1",
+   "label": "Psychological evaluation",
+   "needs": [
+    "VII:1a"
+   ],
+   "kw": [
+    "psychological evaluation",
+    "psych eval",
+    "testing",
+    "assessment"
+   ]
+  },
+  {
+   "id": "VII.2",
+   "section": "VII",
+   "num": "2",
+   "label": "Psychiatric evaluation",
+   "needs": [
+    "VII:1a",
+    "VII:3a"
+   ],
+   "kw": [
+    "psychiatric evaluation",
+    "psychiatrist",
+    "psychiatry"
+   ]
+  },
+  {
+   "id": "VII.3",
+   "section": "VII",
+   "num": "3",
+   "label": "Medication management",
+   "needs": [
+    "VII:3a"
+   ],
+   "kw": [
+    "medication management",
+    "prescriber",
+    "psychiatric nurse"
+   ]
+  },
+  {
+   "id": "VII.4",
+   "section": "VII",
+   "num": "4",
+   "label": "Individual counseling or therapy",
+   "needs": [
+    "VII:2a"
+   ],
+   "kw": [
+    "therapy",
+    "counseling",
+    "therapist",
+    "counselor",
+    "emdr"
+   ]
+  },
+  {
+   "id": "VII.5",
+   "section": "VII",
+   "num": "5",
+   "label": "Group counseling or therapy",
+   "needs": [
+    "VII:4a"
+   ],
+   "kw": [
+    "group therapy",
+    "support group",
+    "dbt group",
+    "process group"
+   ]
+  },
+  {
+   "id": "VII.6",
+   "section": "VII",
+   "num": "6",
+   "label": "Couples, marital, or family counseling",
+   "needs": [
+    "VII:5a"
+   ],
+   "kw": [
+    "couples",
+    "marital",
+    "family therapy",
+    "family counseling"
+   ]
+  },
+  {
+   "id": "VII.7",
+   "section": "VII",
+   "num": "7",
+   "label": "Substance use treatment: outpatient, residential",
+   "needs": [
+    "VII:6a"
+   ],
+   "kw": [
+    "substance use",
+    "recovery",
+    "suboxone",
+    "mat",
+    "detox",
+    "aa",
+    "na",
+    "harm reduction"
+   ]
+  },
+  {
+   "id": "VII.8",
+   "section": "VII",
+   "num": "8",
+   "label": "Domestic violence counseling and safety planning, including shelters",
+   "needs": [
+    "VII:7a",
+    "VIII:8a"
+   ],
+   "kw": [
+    "domestic violence",
+    "helpmate",
+    "safety planning",
+    "dv shelter",
+    "abuse"
+   ]
+  },
+  {
+   "id": "VII.9",
+   "section": "VII",
+   "num": "9",
+   "label": "Other",
+   "needs": [
+    "CRISIS:*"
+   ],
+   "kw": [
+    "crisis",
+    "988",
+    "mobile crisis",
+    "peer respite"
+   ]
+  },
+  {
+   "id": "VIII.1",
+   "section": "VIII",
+   "num": "1",
+   "label": "TANF or cash assistance",
+   "needs": [
+    "VIII:1a"
+   ],
+   "kw": [
+    "tanf",
+    "work first",
+    "cash assistance",
+    "emergency assistance"
+   ]
+  },
+  {
+   "id": "VIII.2",
+   "section": "VIII",
+   "num": "2",
+   "label": "SSI, disability insurance",
+   "needs": [
+    "VIII:2a",
+    "X:7"
+   ],
+   "kw": [
+    "ssi",
+    "ssdi",
+    "disability",
+    "social security"
+   ]
+  },
+  {
+   "id": "VIII.3",
+   "section": "VIII",
+   "num": "3",
+   "label": "Food stamps/SNAP",
+   "needs": [
+    "VIII:3a"
+   ],
+   "kw": [
+    "snap",
+    "food stamps",
+    "ebt",
+    "fns"
+   ]
+  },
+  {
+   "id": "VIII.4",
+   "section": "VIII",
+   "num": "4",
+   "label": "WIC",
+   "needs": [
+    "VIII:4a"
+   ],
+   "kw": [
+    "wic",
+    "women infants children"
+   ]
+  },
+  {
+   "id": "VIII.5",
+   "section": "VIII",
+   "num": "5",
+   "label": "Food pantry",
+   "needs": [
+    "VIII:5a"
+   ],
+   "kw": [
+    "food pantry",
+    "food bank",
+    "free food",
+    "meal",
+    "manna"
+   ]
+  },
+  {
+   "id": "VIII.6",
+   "section": "VIII",
+   "num": "6",
+   "label": "Housing assistance",
+   "needs": [
+    "VIII:6a"
+   ],
+   "kw": [
+    "housing",
+    "rent",
+    "homeless",
+    "voucher",
+    "section 8",
+    "eviction"
+   ]
+  },
+  {
+   "id": "VIII.9",
+   "section": "VIII",
+   "num": "9",
+   "label": "Emergency shelters, family shelters",
+   "needs": [
+    "VIII:7a",
+    "VIII:8a"
+   ],
+   "kw": [
+    "shelter",
+    "emergency housing",
+    "motel voucher",
+    "transitional"
+   ]
+  },
+  {
+   "id": "VIII.10",
+   "section": "VIII",
+   "num": "10",
+   "label": "Child care financial assistance",
+   "needs": [
+    "VIII:9a"
+   ],
+   "kw": [
+    "child care subsidy",
+    "childcare voucher",
+    "scholarship",
+    "smart start"
+   ]
+  },
+  {
+   "id": "VIII.11",
+   "section": "VIII",
+   "num": "11",
+   "label": "Toys, books, equipment, furniture, child",
+   "needs": [
+    "VIII:10a",
+    "VIII:11a"
+   ],
+   "kw": [
+    "toys",
+    "books",
+    "car seat",
+    "crib",
+    "stroller",
+    "baby gear",
+    "dolly parton"
+   ]
+  },
+  {
+   "id": "VIII.12",
+   "section": "VIII",
+   "num": "12",
+   "label": "Clothing, child or family",
+   "needs": [
+    "VIII:12a"
+   ],
+   "kw": [
+    "clothing",
+    "clothes",
+    "coat",
+    "shoes",
+    "diaper"
+   ]
+  },
+  {
+   "id": "VIII.13",
+   "section": "VIII",
+   "num": "13",
+   "label": "Furniture, appliances, and home supplies",
+   "needs": [
+    "VIII:13a"
+   ],
+   "kw": [
+    "furniture",
+    "appliance",
+    "bed",
+    "mattress",
+    "household"
+   ]
+  },
+  {
+   "id": "VIII.14",
+   "section": "VIII",
+   "num": "14",
+   "label": "Utility assistance (heat/gas/electric)",
+   "needs": [
+    "VIII:14a"
+   ],
+   "kw": [
+    "utility",
+    "liheap",
+    "crisis intervention program",
+    "duke energy",
+    "water bill"
+   ]
+  },
+  {
+   "id": "VIII.15",
+   "section": "VIII",
+   "num": "15",
+   "label": "Immigration services",
+   "needs": [
+    "VIII:15a",
+    "X:10"
+   ],
+   "kw": [
+    "immigration",
+    "daca",
+    "asylum",
+    "refugee",
+    "undocumented",
+    "pisgah legal"
+   ]
+  },
+  {
+   "id": "VIII.16",
+   "section": "VIII",
+   "num": "16",
+   "label": "Legal assistance",
+   "needs": [
+    "VIII:16a",
+    "X:3"
+   ],
+   "kw": [
+    "legal",
+    "attorney",
+    "lawyer",
+    "pisgah legal",
+    "legal aid",
+    "custody"
+   ]
+  },
+  {
+   "id": "VIII.17",
+   "section": "VIII",
+   "num": "17",
+   "label": "Transportation assistance",
+   "needs": [
+    "VIII:17a"
+   ],
+   "kw": [
+    "transportation",
+    "bus",
+    "ride",
+    "gas card",
+    "medicaid transport",
+    "art"
+   ]
+  },
+  {
+   "id": "VIII.18",
+   "section": "VIII",
+   "num": "18",
+   "label": "Translation/Interpreter",
+   "needs": [
+    "VIII:18a",
+    "ESPANOL:*"
+   ],
+   "kw": [
+    "interpreter",
+    "translation",
+    "language access",
+    "bilingual",
+    "espanol"
+   ]
+  },
+  {
+   "id": "VIII.19",
+   "section": "VIII",
+   "num": "19",
+   "label": "Care coordination/case management",
+   "needs": [
+    "X:1"
+   ],
+   "kw": [
+    "care coordination",
+    "case management",
+    "care manager",
+    "navigator",
+    "community health worker"
+   ]
+  },
+  {
+   "id": "VIII.20",
+   "section": "VIII",
+   "num": "20",
+   "label": "Other",
+   "needs": [
+    "X:12"
+   ],
+   "kw": [
+    "seasonal",
+    "holiday",
+    "deadline",
+    "time-limited"
+   ]
+  }
+ ]
+}

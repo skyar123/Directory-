@@ -1,0 +1,797 @@
+{
+ "meta": {
+  "title": "WNC Family Resource Directory",
+  "version": "v20 app build",
+  "generated": "2026-08-25",
+  "owner": "Skylar Belt, FRP, Child First / NC-CFCR RHA Behavioral Health",
+  "sources": [
+   "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx (ALL RESOURCES + 12 section tabs + POINT PEOPLE)",
+   "Community_Resource_Assessment_Form_2.docx (Child First Community Resource Assessment, Dec 2015)",
+   "Carolina Pediatric Therapy research doc pasted in chat, 24 Aug 2026 (cites carolinapeds.com)"
+  ],
+  "note": "Section list and the SNIFF question taxonomy."
+ },
+ "sections": [
+  {
+   "id": "I",
+   "name": "Child Development & Early Education",
+   "hue": "#FFD9C7"
+  },
+  {
+   "id": "II",
+   "name": "Child Behavior & Emotions",
+   "hue": "#FFF0BF"
+  },
+  {
+   "id": "III",
+   "name": "Child Health",
+   "hue": "#C9F2DC"
+  },
+  {
+   "id": "IV",
+   "name": "Caregiver Support",
+   "hue": "#CFE6FF"
+  },
+  {
+   "id": "V",
+   "name": "Adult Education & Work",
+   "hue": "#D9DBFF"
+  },
+  {
+   "id": "VI",
+   "name": "Family Health",
+   "hue": "#EBD6FF"
+  },
+  {
+   "id": "VII",
+   "name": "Adult Mental Health",
+   "hue": "#FFD6E6"
+  },
+  {
+   "id": "VIII",
+   "name": "Concrete Needs",
+   "hue": "#DDEFC4"
+  },
+  {
+   "id": "IX",
+   "name": "Autism & Neurodivergence",
+   "hue": "#C4EEF0"
+  },
+  {
+   "id": "X",
+   "name": "Other",
+   "hue": "#FFE3B0"
+  },
+  {
+   "id": "CRISIS",
+   "name": "Crisis Now",
+   "hue": "#FFC2C2"
+  },
+  {
+   "id": "RESPITE",
+   "name": "Respite",
+   "hue": "#E4D9FF"
+  },
+  {
+   "id": "ESPANOL",
+   "name": "Espanol",
+   "hue": "#BFEDE6"
+  }
+ ],
+ "needs": [
+  {
+   "key": "I:1a",
+   "section": "I",
+   "code": "1a",
+   "label": "Developmental screening"
+  },
+  {
+   "key": "I:2a",
+   "section": "I",
+   "code": "2a",
+   "label": "Early intervention evaluation and services"
+  },
+  {
+   "key": "I:3a",
+   "section": "I",
+   "code": "3a",
+   "label": "School evaluation and services"
+  },
+  {
+   "key": "I:4a",
+   "section": "I",
+   "code": "4a",
+   "label": "Special education services"
+  },
+  {
+   "key": "I:5a",
+   "section": "I",
+   "code": "5a",
+   "label": "Comprehensive developmental assessment (outside provider)"
+  },
+  {
+   "key": "I:6a",
+   "section": "I",
+   "code": "6a",
+   "label": "Program that monitors my child's development"
+  },
+  {
+   "key": "I:7a",
+   "section": "I",
+   "code": "7a",
+   "label": "Child care or preschool (like Head Start)"
+  },
+  {
+   "key": "I:8a",
+   "section": "I",
+   "code": "8a",
+   "label": "Playgroup with other children and caregivers"
+  },
+  {
+   "key": "I:9a",
+   "section": "I",
+   "code": "9a",
+   "label": "Family or community centre I can drop into"
+  },
+  {
+   "key": "I:10a",
+   "section": "I",
+   "code": "10a",
+   "label": "After-school program"
+  },
+  {
+   "key": "I:11a",
+   "section": "I",
+   "code": "11a",
+   "label": "Recreational programs or summer camp"
+  },
+  {
+   "key": "I:your-medicaid-plan-alr",
+   "section": "I",
+   "code": "your-medicaid-plan-alr",
+   "label": "YOUR MEDICAID PLAN ALREADY PAYS FOR THIS (added 4 Aug 2026)"
+  },
+  {
+   "key": "II:1a",
+   "section": "II",
+   "code": "1a",
+   "label": "Screening for a behaviour or feelings problem"
+  },
+  {
+   "key": "II:2a",
+   "section": "II",
+   "code": "2a",
+   "label": "Assessment to understand my child's behaviour"
+  },
+  {
+   "key": "II:3a",
+   "section": "II",
+   "code": "3a",
+   "label": "Consult to help teachers understand my child"
+  },
+  {
+   "key": "II:4a",
+   "section": "II",
+   "code": "4a",
+   "label": "Special classroom for emotions or behaviour"
+  },
+  {
+   "key": "II:5a",
+   "section": "II",
+   "code": "5a",
+   "label": "Parent-child play, support, or parenting group"
+  },
+  {
+   "key": "II:6a",
+   "section": "II",
+   "code": "6a",
+   "label": "Home-based treatment for behaviour or feelings"
+  },
+  {
+   "key": "II:7a",
+   "section": "II",
+   "code": "7a",
+   "label": "Treatment in a mental health agency"
+  },
+  {
+   "key": "II:8a",
+   "section": "II",
+   "code": "8a",
+   "label": "Treatment in the community (early care, clinic, family centre)"
+  },
+  {
+   "key": "II:9a",
+   "section": "II",
+   "code": "9a",
+   "label": "Psychiatric evaluation for medication"
+  },
+  {
+   "key": "II:more-of-what-your-medi",
+   "section": "II",
+   "code": "more-of-what-your-medi",
+   "label": "MORE OF WHAT YOUR MEDICAID PLAN ALREADY PAYS FOR (added 4 Aug 2026)"
+  },
+  {
+   "key": "III:1a",
+   "section": "III",
+   "code": "1a",
+   "label": "Regular pediatrician or doctor for my child"
+  },
+  {
+   "key": "III:2a",
+   "section": "III",
+   "code": "2a",
+   "label": "Medical specialist for my child"
+  },
+  {
+   "key": "III:3a",
+   "section": "III",
+   "code": "3a",
+   "label": "Dentist"
+  },
+  {
+   "key": "III:4a",
+   "section": "III",
+   "code": "4a",
+   "label": "Nutritionist / food and growth support"
+  },
+  {
+   "key": "III:5a",
+   "section": "III",
+   "code": "5a",
+   "label": "Health insurance (Medicaid or private)"
+  },
+  {
+   "key": "III:6a",
+   "section": "III",
+   "code": "6a",
+   "label": "Visiting nurse / home health"
+  },
+  {
+   "key": "III:your-medicaid-plan-alr",
+   "section": "III",
+   "code": "your-medicaid-plan-alr",
+   "label": "YOUR MEDICAID PLAN ALREADY PAYS FOR THIS (added 4 Aug 2026)"
+  },
+  {
+   "key": "III:more-of-what-your-medi",
+   "section": "III",
+   "code": "more-of-what-your-medi",
+   "label": "MORE OF WHAT YOUR MEDICAID PLAN ALREADY PAYS FOR (added 4 Aug 2026)"
+  },
+  {
+   "key": "IV:1a",
+   "section": "IV",
+   "code": "1a",
+   "label": "A phone number I can call for information or referral"
+  },
+  {
+   "key": "IV:2a",
+   "section": "IV",
+   "code": "2a",
+   "label": "Parenting support on the telephone"
+  },
+  {
+   "key": "IV:3a",
+   "section": "IV",
+   "code": "3a",
+   "label": "Home-based individual parenting help"
+  },
+  {
+   "key": "IV:4a",
+   "section": "IV",
+   "code": "4a",
+   "label": "Parenting education or support group"
+  },
+  {
+   "key": "IV:5a",
+   "section": "IV",
+   "code": "5a",
+   "label": "Parent support and resource centre"
+  },
+  {
+   "key": "IV:6a",
+   "section": "IV",
+   "code": "6a",
+   "label": "Help getting a break - RESPITE"
+  },
+  {
+   "key": "IV:7a",
+   "section": "IV",
+   "code": "7a",
+   "label": "Drop-in centre to meet other families"
+  },
+  {
+   "key": "IV:your-medicaid-plan-alr",
+   "section": "IV",
+   "code": "your-medicaid-plan-alr",
+   "label": "YOUR MEDICAID PLAN ALREADY PAYS FOR THIS (added 4 Aug 2026)"
+  },
+  {
+   "key": "V:1a",
+   "section": "V",
+   "code": "1a",
+   "label": "GED class or help finishing high school"
+  },
+  {
+   "key": "V:2a",
+   "section": "V",
+   "code": "2a",
+   "label": "English (ESL) class"
+  },
+  {
+   "key": "V:3a",
+   "section": "V",
+   "code": "3a",
+   "label": "Computer training"
+  },
+  {
+   "key": "V:4a",
+   "section": "V",
+   "code": "4a",
+   "label": "Job training"
+  },
+  {
+   "key": "V:5a",
+   "section": "V",
+   "code": "5a",
+   "label": "Literacy class (learning to read and write)"
+  },
+  {
+   "key": "V:6a",
+   "section": "V",
+   "code": "6a",
+   "label": "Applying for citizenship or residency"
+  },
+  {
+   "key": "V:7a",
+   "section": "V",
+   "code": "7a",
+   "label": "Other training, technical school, or college"
+  },
+  {
+   "key": "V:8a",
+   "section": "V",
+   "code": "8a",
+   "label": "Help finding a new or better job"
+  },
+  {
+   "key": "V:your-medicaid-plan-alr",
+   "section": "V",
+   "code": "your-medicaid-plan-alr",
+   "label": "YOUR MEDICAID PLAN ALREADY PAYS FOR THIS (added 4 Aug 2026)"
+  },
+  {
+   "key": "V:more-of-what-your-medi",
+   "section": "V",
+   "code": "more-of-what-your-medi",
+   "label": "MORE OF WHAT YOUR MEDICAID PLAN ALREADY PAYS FOR (added 4 Aug 2026)"
+  },
+  {
+   "key": "VI:1a",
+   "section": "VI",
+   "code": "1a",
+   "label": "Medical doctor for me or another family member"
+  },
+  {
+   "key": "VI:2a",
+   "section": "VI",
+   "code": "2a",
+   "label": "Medical specialist for someone else in my family"
+  },
+  {
+   "key": "VI:3a",
+   "section": "VI",
+   "code": "3a",
+   "label": "Prenatal care"
+  },
+  {
+   "key": "VI:4a",
+   "section": "VI",
+   "code": "4a",
+   "label": "Health insurance for my family"
+  },
+  {
+   "key": "VI:your-medicaid-plan-alr",
+   "section": "VI",
+   "code": "your-medicaid-plan-alr",
+   "label": "YOUR MEDICAID PLAN ALREADY PAYS FOR THIS (added 4 Aug 2026)"
+  },
+  {
+   "key": "VI:more-of-what-your-medi",
+   "section": "VI",
+   "code": "more-of-what-your-medi",
+   "label": "MORE OF WHAT YOUR MEDICAID PLAN ALREADY PAYS FOR (added 4 Aug 2026)"
+  },
+  {
+   "key": "VII:1a",
+   "section": "VII",
+   "code": "1a",
+   "label": "Evaluation to understand worries, stress, pain, or sadness"
+  },
+  {
+   "key": "VII:2a",
+   "section": "VII",
+   "code": "2a",
+   "label": "Individual counseling or therapy"
+  },
+  {
+   "key": "VII:3a",
+   "section": "VII",
+   "code": "3a",
+   "label": "Psychiatric medication to help me feel better"
+  },
+  {
+   "key": "VII:4a",
+   "section": "VII",
+   "code": "4a",
+   "label": "Group counseling or therapy"
+  },
+  {
+   "key": "VII:5a",
+   "section": "VII",
+   "code": "5a",
+   "label": "Couples, marital, or family counseling"
+  },
+  {
+   "key": "VII:6a",
+   "section": "VII",
+   "code": "6a",
+   "label": "Substance use treatment"
+  },
+  {
+   "key": "VII:7a",
+   "section": "VII",
+   "code": "7a",
+   "label": "Help because I do not feel safe in my home"
+  },
+  {
+   "key": "VII:your-medicaid-plan-alr",
+   "section": "VII",
+   "code": "your-medicaid-plan-alr",
+   "label": "YOUR MEDICAID PLAN ALREADY PAYS FOR THIS (added 4 Aug 2026)"
+  },
+  {
+   "key": "VII:more-of-what-your-medi",
+   "section": "VII",
+   "code": "more-of-what-your-medi",
+   "label": "MORE OF WHAT YOUR MEDICAID PLAN ALREADY PAYS FOR (added 4 Aug 2026)"
+  },
+  {
+   "key": "VIII:1a",
+   "section": "VIII",
+   "code": "1a",
+   "label": "TANF or cash assistance"
+  },
+  {
+   "key": "VIII:2a",
+   "section": "VIII",
+   "code": "2a",
+   "label": "SSI - cash assistance for a disability"
+  },
+  {
+   "key": "VIII:3a",
+   "section": "VIII",
+   "code": "3a",
+   "label": "Food stamps (SNAP)"
+  },
+  {
+   "key": "VIII:4a",
+   "section": "VIII",
+   "code": "4a",
+   "label": "WIC - food support for my child"
+  },
+  {
+   "key": "VIII:5a",
+   "section": "VIII",
+   "code": "5a",
+   "label": "Food pantry"
+  },
+  {
+   "key": "VIII:6a",
+   "section": "VIII",
+   "code": "6a",
+   "label": "Housing assistance"
+  },
+  {
+   "key": "VIII:7a",
+   "section": "VIII",
+   "code": "7a",
+   "label": "Family shelter"
+  },
+  {
+   "key": "VIII:8a",
+   "section": "VIII",
+   "code": "8a",
+   "label": "Domestic violence shelter"
+  },
+  {
+   "key": "VIII:9a",
+   "section": "VIII",
+   "code": "9a",
+   "label": "Child care financial assistance"
+  },
+  {
+   "key": "VIII:10a",
+   "section": "VIII",
+   "code": "10a",
+   "label": "Toys or books"
+  },
+  {
+   "key": "VIII:11a",
+   "section": "VIII",
+   "code": "11a",
+   "label": "Equipment or furniture for my child"
+  },
+  {
+   "key": "VIII:12a",
+   "section": "VIII",
+   "code": "12a",
+   "label": "Clothing"
+  },
+  {
+   "key": "VIII:13a",
+   "section": "VIII",
+   "code": "13a",
+   "label": "Furniture, appliances, and home supplies"
+  },
+  {
+   "key": "VIII:14a",
+   "section": "VIII",
+   "code": "14a",
+   "label": "Help with utilities (heat, gas, electric)"
+  },
+  {
+   "key": "VIII:15a",
+   "section": "VIII",
+   "code": "15a",
+   "label": "Immigration services"
+  },
+  {
+   "key": "VIII:16a",
+   "section": "VIII",
+   "code": "16a",
+   "label": "Legal assistance"
+  },
+  {
+   "key": "VIII:17a",
+   "section": "VIII",
+   "code": "17a",
+   "label": "Transportation help"
+  },
+  {
+   "key": "VIII:18a",
+   "section": "VIII",
+   "code": "18a",
+   "label": "Translation or interpreter"
+  },
+  {
+   "key": "VIII:your-medicaid-plan-alr",
+   "section": "VIII",
+   "code": "your-medicaid-plan-alr",
+   "label": "YOUR MEDICAID PLAN ALREADY PAYS FOR THIS (added 4 Aug 2026)"
+  },
+  {
+   "key": "VIII:more-of-what-your-medi",
+   "section": "VIII",
+   "code": "more-of-what-your-medi",
+   "label": "MORE OF WHAT YOUR MEDICAID PLAN ALREADY PAYS FOR (added 4 Aug 2026)"
+  },
+  {
+   "key": "IX:1a",
+   "section": "IX",
+   "code": "1a",
+   "label": "First worry - where to start, before any label"
+  },
+  {
+   "key": "IX:2a",
+   "section": "IX",
+   "code": "2a",
+   "label": "Diagnostic evaluation - the medical route"
+  },
+  {
+   "key": "IX:3a",
+   "section": "IX",
+   "code": "3a",
+   "label": "Free school evaluation - no diagnosis needed, no cost"
+  },
+  {
+   "key": "IX:4a",
+   "section": "IX",
+   "code": "4a",
+   "label": "Therapy - occupational, speech, and feeding"
+  },
+  {
+   "key": "IX:5a",
+   "section": "IX",
+   "code": "5a",
+   "label": "ABA and behaviour support"
+  },
+  {
+   "key": "IX:6a",
+   "section": "IX",
+   "code": "6a",
+   "label": "Keeping a child in their classroom or childcare"
+  },
+  {
+   "key": "IX:7a",
+   "section": "IX",
+   "code": "7a",
+   "label": "Sensory-friendly places, camps, and recreation"
+  },
+  {
+   "key": "IX:8a",
+   "section": "IX",
+   "code": "8a",
+   "label": "Respite and disability-specific funding"
+  },
+  {
+   "key": "IX:9a",
+   "section": "IX",
+   "code": "9a",
+   "label": "Everyday life - dentists, haircuts, sleep, moving"
+  },
+  {
+   "key": "IX:10a",
+   "section": "IX",
+   "code": "10a",
+   "label": "Deaf, hard of hearing, and sensory difference"
+  },
+  {
+   "key": "IX:11a",
+   "section": "IX",
+   "code": "11a",
+   "label": "Rights, advocacy, and parent-to-parent"
+  },
+  {
+   "key": "IX:your-medicaid-plan-alr",
+   "section": "IX",
+   "code": "your-medicaid-plan-alr",
+   "label": "YOUR MEDICAID PLAN ALREADY PAYS FOR THIS (added 4 Aug 2026)"
+  },
+  {
+   "key": "IX:more-of-what-your-medi",
+   "section": "IX",
+   "code": "more-of-what-your-medi",
+   "label": "MORE OF WHAT YOUR MEDICAID PLAN ALREADY PAYS FOR (added 4 Aug 2026)"
+  },
+  {
+   "key": "X:1",
+   "section": "X",
+   "code": "1",
+   "label": "The call-first lines, for when you do not know where to start"
+  },
+  {
+   "key": "X:2",
+   "section": "X",
+   "code": "2",
+   "label": "Mothers: pregnancy, birth, and the year after"
+  },
+  {
+   "key": "X:3",
+   "section": "X",
+   "code": "3",
+   "label": "Legal help"
+  },
+  {
+   "key": "X:4",
+   "section": "X",
+   "code": "4",
+   "label": "Money, benefits, and taxes"
+  },
+  {
+   "key": "X:5",
+   "section": "X",
+   "code": "5",
+   "label": "Phones, internet, and devices"
+  },
+  {
+   "key": "X:6",
+   "section": "X",
+   "code": "6",
+   "label": "Deaf, hard of hearing, and communication access"
+  },
+  {
+   "key": "X:7",
+   "section": "X",
+   "code": "7",
+   "label": "Disability rights, advocacy, and SSI"
+  },
+  {
+   "key": "X:8",
+   "section": "X",
+   "code": "8",
+   "label": "Black families"
+  },
+  {
+   "key": "X:9",
+   "section": "X",
+   "code": "9",
+   "label": "LGBTQ+ families and youth"
+  },
+  {
+   "key": "X:10",
+   "section": "X",
+   "code": "10",
+   "label": "Immigrant, refugee, and newcomer families"
+  },
+  {
+   "key": "X:11",
+   "section": "X",
+   "code": "11",
+   "label": "Joy, play, and belonging"
+  },
+  {
+   "key": "X:12",
+   "section": "X",
+   "code": "12",
+   "label": "Time-limited and seasonal, watch the deadlines"
+  },
+  {
+   "key": "RESPITE:section-1-foster-adopt",
+   "section": "RESPITE",
+   "code": "section-1-foster-adopt",
+   "label": "SECTION 1 - FOSTER, ADOPTIVE, KINSHIP WITH AN OPEN DSS CASE (fastest, all free)"
+  },
+  {
+   "key": "RESPITE:section-2-programs-tha",
+   "section": "RESPITE",
+   "code": "section-2-programs-tha",
+   "label": "SECTION 2 - PROGRAMS THAT PAY FOR A BREAK"
+  },
+  {
+   "key": "RESPITE:section-3-structured-c",
+   "section": "RESPITE",
+   "code": "section-3-structured-c",
+   "label": "SECTION 3 - STRUCTURED CARE THAT COVERS YOUR DAY"
+  },
+  {
+   "key": "RESPITE:section-4-overnight-an",
+   "section": "RESPITE",
+   "code": "section-4-overnight-an",
+   "label": "SECTION 4 - OVERNIGHT AND CRISIS"
+  },
+  {
+   "key": "RESPITE:section-5-medicaid-and",
+   "section": "RESPITE",
+   "code": "section-5-medicaid-and",
+   "label": "SECTION 5 - MEDICAID AND DIAGNOSIS-BASED (slower, start now)"
+  },
+  {
+   "key": "RESPITE:more-of-what-your-medi",
+   "section": "RESPITE",
+   "code": "more-of-what-your-medi",
+   "label": "MORE OF WHAT YOUR MEDICAID PLAN ALREADY PAYS FOR (added 4 Aug 2026)"
+  },
+  {
+   "key": "ESPANOL:como-pedir-un-interpre",
+   "section": "ESPANOL",
+   "code": "como-pedir-un-interpre",
+   "label": "COMO PEDIR UN INTERPRETE  /  HOW TO ASK FOR AN INTERPRETER"
+  },
+  {
+   "key": "ESPANOL:servicios-en-espanol-p",
+   "section": "ESPANOL",
+   "code": "servicios-en-espanol-p",
+   "label": "SERVICIOS EN ESPANOL PRIMERO  /  SPANISH-FIRST AND LATINO-LED. Staff are Spanish speakers. Most ask no ID and no status.   (51 listed)"
+  },
+  {
+   "key": "ESPANOL:personal-bilingue-bili",
+   "section": "ESPANOL",
+   "code": "personal-bilingue-bili",
+   "label": "PERSONAL BILINGUE  /  BILINGUAL STAFF. The source says Spanish-speaking or bilingual staff are on site.   (46 listed)"
+  },
+  {
+   "key": "ESPANOL:interprete-disponible-",
+   "section": "ESPANOL",
+   "code": "interprete-disponible-",
+   "label": "INTERPRETE DISPONIBLE  /  INTERPRETER AVAILABLE. Ask when you call. Free at any federally funded program.   (25 listed)"
+  },
+  {
+   "key": "ESPANOL:your-medicaid-plan-alr",
+   "section": "ESPANOL",
+   "code": "your-medicaid-plan-alr",
+   "label": "YOUR MEDICAID PLAN ALREADY PAYS FOR THIS (added 4 Aug 2026)"
+  }
+ ]
+}
