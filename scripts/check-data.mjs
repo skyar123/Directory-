@@ -16,6 +16,7 @@ const sniff = read("sniff.json");
 const people = read("point-people.json");
 const cra = read("community-resource-assessment.json");
 const changelog = read("changelog.json");
+const food = read("food-by-day.json");
 
 const sectionIds = new Set(sniff.sections.map((s) => s.id));
 const needKeys = new Set(sniff.needs.map((n) => n.key));
@@ -37,6 +38,12 @@ for (const r of resources.resources) {
       note(`resource ${r.id} references unknown SNIFF question "${k}"`);
     }
   }
+}
+
+/* food schedule */
+for (const d of food.days) {
+  if (!d.sites.length) note(`food day ${d.day} has no sites`);
+  for (const s of d.sites) if (!s.place) note(`a site on ${d.day} has no name`);
 }
 
 /* people */
@@ -66,6 +73,7 @@ const counts = {
   "point people": people.people.length,
   "assessment rows": cra.rows.length,
   "changelog entries": changelog.groups.reduce((n, g) => n + g.entries.length, 0),
+  "food schedule rows": food.days.reduce((n, d) => n + d.sites.length, 0),
 };
 for (const [k, v] of Object.entries(counts)) console.log(`${String(v).padStart(5)}  ${k}`);
 

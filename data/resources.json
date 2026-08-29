@@ -10,7 +10,8 @@
    "Carolina Pediatric Therapy research doc pasted in chat, 24 Aug 2026 (cites carolinapeds.com)"
   ],
   "file": "resources.json",
-  "note": "One object per resource. `needs` are SNIFF question keys, `src` names where the fact came from."
+  "note": "One object per resource. `needs` are SNIFF question keys, `src` names where the fact came from.",
+  "count": 522
  },
  "sections": [
   {
@@ -968,7 +969,9 @@
     "II:*",
     "II:6a",
     "IV:*",
-    "IV:3a"
+    "IV:3a",
+    "IX:*",
+    "IX:3a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -1324,7 +1327,10 @@
    "vb": "",
    "sec": "I",
    "needs": [
-    "I:*"
+    "I:*",
+    "IX:*",
+    "IX:4a",
+    "IX:8a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -1349,7 +1355,8 @@
    "sec": "I",
    "needs": [
     "I:*",
-    "I:10a"
+    "I:10a",
+    "RESPITE:*"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -1408,7 +1415,9 @@
     "IV:3a",
     "IV:4a",
     "VII:*",
-    "VII:4a"
+    "VII:4a",
+    "IX:*",
+    "IX:5a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -1465,7 +1474,9 @@
     "II:2a",
     "VII:*",
     "VII:1a",
-    "VII:2a"
+    "VII:2a",
+    "IX:*",
+    "IX:2a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -1491,7 +1502,9 @@
    "needs": [
     "I:*",
     "I:3a",
-    "I:4a"
+    "I:4a",
+    "IX:*",
+    "IX:3a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -1551,7 +1564,9 @@
     "ESPANOL:interprete-disponible-",
     "I:*",
     "I:3a",
-    "I:4a"
+    "I:4a",
+    "IX:*",
+    "IX:3a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -1727,7 +1742,9 @@
     "III:*",
     "III:2a",
     "X:*",
-    "X:6"
+    "X:6",
+    "IX:*",
+    "IX:10a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -1786,7 +1803,10 @@
     "VII:*",
     "VII:5a",
     "VIII:*",
-    "VIII:9a"
+    "VIII:9a",
+    "IX:*",
+    "IX:8a",
+    "RESPITE:*"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -1844,7 +1864,9 @@
     "VIII:*",
     "VIII:18a",
     "X:*",
-    "X:6"
+    "X:6",
+    "IX:*",
+    "IX:10a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -1877,7 +1899,9 @@
     "III:2a",
     "III:5a",
     "VI:*",
-    "VI:4a"
+    "VI:4a",
+    "IX:*",
+    "IX:2a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -1933,7 +1957,9 @@
     "II:*",
     "II:2a",
     "VIII:*",
-    "VIII:17a"
+    "VIII:17a",
+    "IX:*",
+    "IX:4a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -1965,7 +1991,9 @@
     "VIII:*",
     "VIII:2a",
     "X:*",
-    "X:7"
+    "X:7",
+    "IX:*",
+    "IX:3a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -2160,7 +2188,9 @@
     "VIII:*",
     "VIII:18a",
     "X:*",
-    "X:6"
+    "X:6",
+    "IX:*",
+    "IX:10a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -2241,7 +2271,9 @@
     "III:*",
     "III:1a",
     "VII:*",
-    "VII:2a"
+    "VII:2a",
+    "IX:*",
+    "IX:4a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -2383,7 +2415,9 @@
     "I:*",
     "I:5a",
     "II:*",
-    "II:2a"
+    "II:2a",
+    "IX:*",
+    "IX:2a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -2478,7 +2512,9 @@
     "I:*",
     "I:1a",
     "I:2a",
-    "I:6a"
+    "I:6a",
+    "IX:*",
+    "IX:1a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -2510,7 +2546,10 @@
     "VIII:2a",
     "VIII:4a",
     "X:*",
-    "X:7"
+    "X:7",
+    "IX:*",
+    "IX:8a",
+    "RESPITE:*"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -2585,7 +2624,8 @@
    "vb": "",
    "sec": "IX",
    "needs": [
-    "IX:*"
+    "IX:*",
+    "IX:9a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -3075,7 +3115,8 @@
     "IV:*",
     "IV:4a",
     "VII:*",
-    "VII:4a"
+    "VII:4a",
+    "RESPITE:*"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -6914,7 +6955,8 @@
    "sec": "IV",
    "needs": [
     "VI:*",
-    "VI:2a"
+    "VI:2a",
+    "RESPITE:*"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -6939,7 +6981,8 @@
    "sec": "IV",
    "needs": [
     "IV:*",
-    "IV:6a"
+    "IV:6a",
+    "RESPITE:*"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -11637,7 +11680,9 @@
    "needs": [
     "III:*",
     "III:2a",
-    "III:3a"
+    "III:3a",
+    "IX:*",
+    "IX:9a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -12150,7 +12195,8 @@
    "sec": "II",
    "needs": [
     "II:*",
-    "II:7a"
+    "II:7a",
+    "RESPITE:*"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -13821,7 +13867,8 @@
    "vb": "SB",
    "sec": "VI",
    "needs": [
-    "VI:*"
+    "VI:*",
+    "III:*"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -13845,7 +13892,9 @@
    "vb": "SB",
    "sec": "IX",
    "needs": [
-    "IX:*"
+    "IX:*",
+    "IX:3a",
+    "IX:11a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -14003,7 +14052,8 @@
     "IV:*",
     "IV:your-medicaid-plan-alr",
     "VIII:*",
-    "VIII:your-medicaid-plan-alr"
+    "VIII:your-medicaid-plan-alr",
+    "RESPITE:*"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -14462,7 +14512,11 @@
    "vb": "SB",
    "sec": "RESPITE",
    "needs": [
-    "RESPITE:*"
+    "RESPITE:*",
+    "IV:*",
+    "IV:6a",
+    "X:*",
+    "X:2"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -14703,6 +14757,300 @@
    "vb": "",
    "src": "Carolina Pediatric Therapy research doc pasted in chat, 24 Aug 2026 (cites carolinapeds.com). UNVERIFIED by phone.",
    "note": "NOT YET CALLED. Addresses, prices, and service list come from the pasted research doc, not from a call. Confirm intake, waitlist, Medicaid, and Spanish before giving to a family.",
+   "new": true
+  },
+  {
+   "id": "child-find-age-3-and-over",
+   "n": "Child Find (age 3 and over)",
+   "pp": "Kara Lauffer (BCS); Zachary Cohen (ACS)",
+   "sp": "🟠 Interpreter available",
+   "spd": "",
+   "ph": "828-255-5983 / 828-774-8785",
+   "em": "karen.lauffer@bcsemail.org",
+   "w": "",
+   "d": "The school district must find and evaluate any child suspected of a disability, whether or not they attend that district and whether or not they are in any preschool. Request it in writing.",
+   "a": "Buncombe County Schools / Asheville City Schools",
+   "h": "",
+   "os": "IX. Autism & Neurodivergence",
+   "t": "",
+   "lv": "2026-08-01",
+   "vb": "SB",
+   "sec": "IX",
+   "needs": [
+    "IX:*",
+    "IX:1a"
+   ],
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, IX. Autism & Neurodivergence tab",
+   "note": "Put the request in writing and date it. The 90-CALENDAR-day clock starts from the written request, not the phone call. It does not pause for holidays, summer break or school closures (NC Policies 1503-2.3).",
+   "new": true
+  },
+  {
+   "id": "easterseals-port-health",
+   "n": "Easterseals PORT Health",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "",
+   "ph": "",
+   "em": "",
+   "w": "easterseals.com",
+   "d": "One-to-one specialised respite for children with developmental disabilities and complex behavioural needs. Serves Buncombe and Madison.",
+   "a": "",
+   "h": "",
+   "os": "IX. Autism & Neurodivergence",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "IX",
+   "needs": [
+    "IX:*",
+    "IX:8a"
+   ],
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, IX. Autism & Neurodivergence tab",
+   "note": "Requires a qualifying diagnosis and a psychological evaluation, so start it early.",
+   "new": true
+  },
+  {
+   "id": "monarch",
+   "n": "Monarch",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "",
+   "ph": "",
+   "em": "",
+   "w": "monarchnc.org",
+   "d": "State-funded and waiver-based respite, in-home and out-of-home, for children with intellectual or developmental disabilities or serious emotional disturbance. Staff trained in de-escalation and following the individual support plan.",
+   "a": "",
+   "h": "",
+   "os": "IX. Autism & Neurodivergence",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "IX",
+   "needs": [
+    "IX:*",
+    "IX:8a"
+   ],
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, IX. Autism & Neurodivergence tab",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "haircuts",
+   "n": "Haircuts",
+   "pp": "Casey Smith; Veronica Coit; Sandy",
+   "sp": "⚪ Not listed - ask",
+   "spd": "",
+   "ph": "828-329-9391 / 828-298-2887",
+   "em": "",
+   "w": "",
+   "d": "Westside Shears, Casey Smith and Veronica Coit (828-329-9391). Custom Cuts and Color, Sandy (828-298-2887).",
+   "a": "",
+   "h": "",
+   "os": "IX. Autism & Neurodivergence",
+   "t": "",
+   "lv": "2026-08-01",
+   "vb": "SB",
+   "sec": "IX",
+   "needs": [
+    "IX:*",
+    "IX:9a"
+   ],
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, IX. Autism & Neurodivergence tab",
+   "note": "Community recommendations from other parents, not a formal list. Call ahead and say what the child needs.",
+   "new": true
+  },
+  {
+   "id": "asl-teletherapy",
+   "n": "ASL teletherapy",
+   "pp": "",
+   "sp": "🟠 Interpreter available",
+   "spd": "",
+   "ph": "",
+   "em": "",
+   "w": "deafcounseling.com",
+   "d": "National Deaf Therapy, Deaf Counseling Center, and My Deaf Therapy (explicitly LGBTQIA+ affirming). Therapy delivered in ASL by Deaf clinicians.",
+   "a": "Telehealth",
+   "h": "",
+   "os": "IX. Autism & Neurodivergence",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "IX",
+   "needs": [
+    "IX:*",
+    "IX:10a"
+   ],
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, IX. Autism & Neurodivergence tab",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "catherine-faherty",
+   "n": "Catherine Faherty",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "",
+   "ph": "",
+   "em": "caterina.faherty@gmail.com",
+   "w": "",
+   "d": "Autism consultant and author. Worked with Skylar on a Transition Object System.",
+   "a": "Independent",
+   "h": "",
+   "os": "IX. Autism & Neurodivergence",
+   "t": "",
+   "lv": "2026-08-01",
+   "vb": "SB",
+   "sec": "IX",
+   "needs": [
+    "IX:*",
+    "IX:11a"
+   ],
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, IX. Autism & Neurodivergence tab",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "buncombe-county-dss-respite-foster-homes",
+   "n": "Buncombe County DSS respite foster homes",
+   "pp": "",
+   "sp": "🟠 Interpreter available",
+   "spd": "",
+   "ph": "828-250-5868",
+   "em": "familiesforkids@buncombecounty.org",
+   "w": "",
+   "d": "Already-licensed foster families who provide respite. Faster than arranging privately. Covers overnights.",
+   "a": "40 Coxe Ave, Mon-Fri 8am-5pm",
+   "h": "",
+   "os": "RESPITE",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "RESPITE",
+   "needs": [
+    "RESPITE:*"
+   ],
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, RESPITE tab",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "buncombe-county-kinship-support-group",
+   "n": "Buncombe County Kinship Support Group",
+   "pp": "Sharon Fish",
+   "sp": "🟠 Interpreter available",
+   "spd": "",
+   "ph": "",
+   "em": "luv4kin@gmail.com",
+   "w": "",
+   "d": "Twice-monthly peer group. Members know who currently has openings. No application at all.",
+   "a": "Skyland UMC, South Buncombe",
+   "h": "",
+   "os": "RESPITE",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "RESPITE",
+   "needs": [
+    "RESPITE:*"
+   ],
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, RESPITE tab",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "crossnore-communities-for-children",
+   "n": "Crossnore Communities for Children",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "",
+   "ph": "866-892-6213",
+   "em": "referrals@crossnore.org",
+   "w": "",
+   "d": "Licensed respite foster parents, a few hours up to a multi-week stay. No beds in the Buncombe area right now - that is a straight answer, not a waitlist.",
+   "a": "Referral from a DSS worker, social worker, or FRP",
+   "h": "",
+   "os": "RESPITE",
+   "t": "",
+   "lv": "2026-08-01",
+   "vb": "SB",
+   "sec": "RESPITE",
+   "needs": [
+    "RESPITE:*"
+   ],
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, RESPITE tab",
+   "note": "Verified 8/2026. No respite beds in the Buncombe area currently.",
+   "new": true
+  },
+  {
+   "id": "suicide-crisis-lifeline",
+   "n": "Suicide & Crisis Lifeline",
+   "pp": "",
+   "sp": "",
+   "spd": "",
+   "ph": "988",
+   "em": "",
+   "w": "",
+   "d": "Any mental health crisis, for any age.",
+   "a": "",
+   "h": "24/7, call or text",
+   "os": "CRISIS NOW",
+   "t": "Crisis, 24/7",
+   "lv": "",
+   "vb": "",
+   "sec": "CRISIS",
+   "needs": [
+    "CRISIS:*"
+   ],
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, CRISIS NOW tab",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "healthy-blue-behavioral-health-crisis-line",
+   "n": "Healthy Blue Behavioral Health Crisis Line",
+   "pp": "",
+   "sp": "",
+   "spd": "",
+   "ph": "844-594-5076",
+   "em": "",
+   "w": "",
+   "d": "For families on the Healthy Blue Standard Plan. Thoughts of hurting yourself or others, severe stress, anxiety, any behavioral health crisis. Free. TTY 711.",
+   "a": "",
+   "h": "24/7",
+   "os": "CRISIS NOW",
+   "t": "Crisis, 24/7",
+   "lv": "2026-08-04",
+   "vb": "SB",
+   "sec": "CRISIS",
+   "needs": [
+    "CRISIS:*"
+   ],
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, CRISIS NOW tab",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "healthy-blue-care-together-crisis-line",
+   "n": "Healthy Blue Care Together Crisis Line",
+   "pp": "",
+   "sp": "",
+   "spd": "",
+   "ph": "833-597-3985",
+   "em": "",
+   "w": "",
+   "d": "For children and youth in foster care, adoption assistance or child-welfare involvement. Different plan, different number from regular Healthy Blue. TTY 711.",
+   "a": "",
+   "h": "24/7",
+   "os": "CRISIS NOW",
+   "t": "Crisis, 24/7",
+   "lv": "2026-08-04",
+   "vb": "SB",
+   "sec": "CRISIS",
+   "needs": [
+    "CRISIS:*"
+   ],
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, CRISIS NOW tab",
+   "note": "",
    "new": true
   }
  ]

@@ -128,3 +128,8 @@ html,body{margin:0;padding:0;background:#FFFDF8;}
 .wnc .editor{display:grid;gap:10px;margin-top:12px;padding:12px;border:2px dashed var(--line);border-radius:12px;background:#fff;}
 .wnc li.dead{border-left:4px solid #B0271F;padding-left:10px;margin-bottom:10px;}
 .wnc li.dead strong{color:#B0271F;}
+.wnc .internal-tag{display:inline-block;vertical-align:middle;margin-left:8px;font-family:'Atkinson Hyperlegible',system-ui,sans-serif;
+ font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#B0271F;
+ background:#FFE9E9;border:2px solid #B0271F;border-radius:8px;padding:2px 7px;}
+.wnc .handling{margin:0 0 14px;padding:10px 12px;border-left:4px solid #B0271F;border-radius:0 10px 10px 0;
+ background:#FFF4F4;color:#2E2740;font-size:13px;line-height:1.5;}

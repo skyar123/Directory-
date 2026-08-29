@@ -8,6 +8,7 @@ import sniffFile from "../data/sniff.json";
 import peopleFile from "../data/point-people.json";
 import craFile from "../data/community-resource-assessment.json";
 import changelogFile from "../data/changelog.json";
+import foodFile from "../data/food-by-day.json";
 
 const DEEP = {
   I: "#B4552B", II: "#8F6A05", III: "#1E7A55", IV: "#1F5F9E", V: "#4A4BA8",
@@ -51,6 +52,7 @@ export const CRA_SECTIONS = craFile.sections.map((c) => ({
 export const CRA = craFile.rows;
 
 export const CHANGELOG = changelogFile;
+export const FOOD = foodFile;
 
 export const TODAY = new Date().toISOString().slice(0, 10);
 export const norm = (s) => (s || "").toLowerCase().replace(/[^a-z0-9 ]+/g, " ");

@@ -3,8 +3,9 @@
   "file": "point-people.json",
   "generated": "2026-08-25",
   "note": "RESPONSIVE? is the column that matters.",
-  "internalNote": "Entries with internal:true are the Child First team's personal addresses. The workbook marks this block 'delete before sharing outside the team'. The app hides them from exports unless you opt in.",
-  "count": 105
+  "internalNote": "Entries with internal:true are the Child First team's personal addresses. The whole directory is an internal staff tool, so the app shows them. Strip them before anything derived from this file goes outside the team.",
+  "count": 105,
+  "internalUseOnly": true
  },
  "people": [
   {

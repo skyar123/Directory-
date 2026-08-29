@@ -1,7 +1,7 @@
 import { useState, useMemo } from "react";
 import {
   META, SECTIONS, SECBY, NEEDS, BASE, PEOPLE, PEOPLE_META,
-  CRA, CRA_SECTIONS, CHANGELOG, TODAY, norm,
+  CRA, CRA_SECTIONS, CHANGELOG, FOOD, TODAY, norm,
 } from "./data.js";
 import { useStore } from "./storage.js";
 import { score } from "./search.js";
@@ -13,6 +13,7 @@ const VIEWS = [
   ["find", "Find", "🔍"],
   ["sniff", "By SNIFF question", "📋"],
   ["assessment", "Community assessment", "🧩"],
+  ["food", "Food by day", "🥣"],
   ["changed", "What changed", "🚩"],
   ["gaps", "What is missing", "🕳️"],
   ["people", "Point people", "📞"],
@@ -28,7 +29,7 @@ export default function App() {
   const [openId, setOpenId] = useState("");
   const [openNeed, setOpenNeed] = useState("");
   const [craSec, setCraSec] = useState("I");
-  const [showInternal, setShowInternal] = useState(false);
+  const [foodDay, setFoodDay] = useState(FOOD.days[0].day);
   const [toast, setToast] = useState("");
 
   const say = (m) => { setToast(m); setTimeout(() => setToast(""), 2600); };
@@ -134,14 +135,14 @@ export default function App() {
     }),
   }, null, 1));
 
-  const exportPeople = () => {
-    const list = showInternal ? PEOPLE : PEOPLE.filter((p) => !p.internal);
-    download("point-people.json", JSON.stringify({
-      meta: { ...PEOPLE_META, exported: new Date().toISOString(), count: list.length,
-        includesInternal: showInternal },
-      people: list,
-    }, null, 1));
-  };
+  const exportPeople = () => download("point-people.json", JSON.stringify({
+    meta: {
+      ...PEOPLE_META, exported: new Date().toISOString(), count: PEOPLE.length,
+      internalUseOnly: true,
+      handling: "Contains the Child First team's personal addresses. Internal use only.",
+    },
+    people: PEOPLE,
+  }, null, 1));
 
   const exportCsv = () => {
     const cols = ["id", "name", "sec", "origSection", "point", "phone", "email", "web",
@@ -180,7 +181,6 @@ export default function App() {
   }, []);
 
   const deadEnds = CHANGELOG.groups.find((g) => g.id === "dead-ends");
-  const visiblePeople = showInternal ? PEOPLE : PEOPLE.filter((p) => !p.internal);
 
   return (
     <div className="wnc">
@@ -188,7 +188,7 @@ export default function App() {
         <div className="brand">
           <span className="mark">🌈</span>
           <div>
-            <h1>WNC Family Resource Directory</h1>
+            <h1>WNC Family Resource Directory <span className="internal-tag">Internal use only</span></h1>
             <p>
               {resources.length} resources, in the order the SNIFF asks.{" "}
               {saving && <em>{saving}</em>}
@@ -343,6 +343,53 @@ export default function App() {
         </section>
       )}
 
+      {view === "food" && (
+        <section className="pane">
+          <p className="lede">
+            Where a family can eat today. A site shows up on every day it serves, so the same
+            name repeats down the week.
+          </p>
+          <p className="handling">
+            ⚠️ Most of these have never been verified, and pantry hours move. Call before you send
+            anyone. {FOOD.meta.src}
+          </p>
+          <div className="filters">
+            {FOOD.days.map((d) => (
+              <Chip key={d.day} bg="#DDEFC4" fg="#55731F" active={foodDay === d.day}
+                onClick={() => setFoodDay(d.day)}>
+                {d.day} <strong>{d.sites.length}</strong>
+              </Chip>
+            ))}
+          </div>
+          {FOOD.days.filter((d) => d.day === foodDay).map((d) => (
+            <div key={d.day} className="need-block">
+              <h2 style={{ color: "#55731F" }}>
+                <span className="h-ic" style={{ background: "#DDEFC4" }}>🥣</span> {d.day}
+              </h2>
+              <div className="cards">
+                {d.sites.map((s, i) => (
+                  <article key={i} className="card" style={{ borderLeftColor: "#55731F" }}>
+                    <div className="card-head" style={{ cursor: "default" }}>
+                      <span className="card-icon" style={{ background: "#DDEFC4" }}>🥣</span>
+                      <span className="card-title">
+                        <strong>{s.place}</strong>
+                        <span className="card-sub">{s.when}</span>
+                      </span>
+                    </div>
+                    <div className="card-badges">
+                      {s.lv
+                        ? <span className="badge ok">✅ {s.lv}</span>
+                        : <span className="badge warn">⚠️ never verified</span>}
+                      {s.goodToKnow && <span className="badge sp">{s.goodToKnow}</span>}
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </div>
+          ))}
+        </section>
+      )}
+
       {view === "changed" && (
         <section className="pane">
           <p className="lede">
@@ -430,7 +477,7 @@ export default function App() {
 
           <h3>Point people you have never heard back from</h3>
           <ul className="plain">
-            {visiblePeople
+            {PEOPLE
               .filter((p) => /No response|Slow|Unknown|never|Not tried/i.test(p.resp || "") || !p.resp)
               .map((p, i) => (
                 <li key={i}>
@@ -447,20 +494,13 @@ export default function App() {
           <p className="lede">
             A named person answers faster than a general line. Responsiveness is the whole value of this list.
           </p>
-          <div className="filters">
-            <Chip bg="#FFE9E9" fg="#B0271F" active={showInternal} onClick={() => setShowInternal((v) => !v)}
-              title={PEOPLE_META.internalNote}>
-              {showInternal ? "🔓 showing" : "🔒 hiding"} the internal team block
-            </Chip>
-          </div>
-          {!showInternal && (
-            <p className="tiny">
-              {PEOPLE.filter((p) => p.internal).length} Child First team entries are hidden. The workbook
-              marks them personal addresses, delete before sharing outside the team.
-            </p>
-          )}
+          <p className="handling">
+            🔒 Includes the Child First team block: {PEOPLE.filter((p) => p.internal).length} personal
+            addresses, marked <span className="badge warn">internal</span>. Fine to use here. Strip them
+            before any of this goes to someone outside the team.
+          </p>
           <div className="people">
-            {visiblePeople.map((p, i) => (
+            {PEOPLE.map((p, i) => (
               <div key={i} className="person">
                 <div className="person-top">
                   <strong>{p.n}</strong>
@@ -488,6 +528,11 @@ export default function App() {
         <section className="pane">
           <p className="lede">
             Your edits live in this browser. Export before you rely on them anywhere else.
+          </p>
+          <p className="handling">
+            🔒 Internal use only. These exports carry point people's direct lines and the team's
+            personal addresses, and the notes say who is slow to answer and who to route around.
+            That is staff information, not a public directory.
           </p>
           <div className="row-btns">
             <button className="btn ok-btn" onClick={exportJson}>Download resources.json</button>

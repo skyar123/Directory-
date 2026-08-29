@@ -1,9 +1,18 @@
 # WNC Family Resource Directory
 
+**Internal staff tool. Not for public distribution.**
+
 Resource directory for Child First families in Buncombe County and Western NC,
 organised in the order the SNIFF asks its questions.
 
 Maintained by Skylar Belt, Family Resource Partner, Child First / NC-CFCR RHA Behavioral Health.
+
+This is a working tool for the team, not a public directory. It carries point
+people's direct lines, the Child First team's personal addresses, and candid
+notes about who answers and who to route around. Keep the build behind
+whatever the team already uses; do not put `dist/` on a public URL. Anything
+derived from it that goes outside the team needs the team block stripped
+first.
 
 ## Running it
 
@@ -21,11 +30,12 @@ working offline once loaded — nothing is fetched at runtime.
 
 | File | What it holds |
 |---|---|
-| `data/resources.json` | 510 resources. Each carries `needs` (SNIFF question keys), `sec` (section), and `src` (where the fact came from). |
+| `data/resources.json` | 522 resources. Each carries `needs` (SNIFF question keys), `sec` (section), and `src` (where the fact came from). |
 | `data/sniff.json` | The 13 sections and the 119 SNIFF questions the directory is ordered by. |
 | `data/point-people.json` | 105 named humans, with how fast each one answers. |
 | `data/community-resource-assessment.json` | The 84 rows of the Child First Community Resource Assessment, crosswalked to SNIFF questions. |
 | `data/changelog.json` | Dead ends, changes in flight, and the 106 questions still open. |
+| `data/food-by-day.json` | The weekly pantry and free-meal schedule, by day. |
 | `src/` | The app. Reads the data, edits it, exports it back. |
 | `scripts/` | The importers that built `data/`, kept so its provenance is reproducible. |
 
@@ -41,6 +51,21 @@ came from. `lv` is the date it was last verified and `vb` is who verified it.
 
 Edits live in the browser's localStorage until you export them. Clearing site
 data loses them, so export before you rely on them anywhere else.
+
+## Where the data came from
+
+The workbook calls its ALL RESOURCES tab the master, and the first build of
+this app took it at its word. It is not complete. The twelve section tabs and
+CRISIS NOW carry rows that never reached it, so `scripts/import-section-tabs.py`
+pulls them across: 12 resources that were missing outright, including 988, RHA
+Mobile Crisis and the DSS report line, and 53 existing resources that gained a
+SNIFF question or opening hours they did not have.
+
+The same organisation appears on several tabs, worded to suit the question it
+sits under — the workbook's own SYNC CHECK counts 236 organisations on two or
+more tabs. So rows are matched on phone, email and website, not just name, and
+a row that matches something already here contributes its question rather than
+becoming a second copy.
 
 ## Check the dead ends before you refer anyone
 
@@ -64,12 +89,13 @@ Trinity Place is the clearest case: closed since 2022, still published.
 - **RESPITE.** Respite
 - **ESPANOL.** Espanol
 
-## A note on the team block
+## The team block
 
-`point-people.json` marks the Child First team entries `internal: true`. Those
-are personal email addresses and the workbook says to remove them before sharing
-outside the team. The app hides them by default and leaves them out of the
-point-people export unless you switch them on.
+`point-people.json` marks the Child First team entries `internal: true` and the
+app badges them. Because the tool is internal, it shows them rather than making
+you switch them on — but they are personal addresses, and the workbook says to
+remove them before sharing outside the team. `point-people.json` exports stamp
+`internalUseOnly: true` so the file still says so once it has left the app.
 
 ## Sources in this build
 

@@ -1,0 +1,359 @@
+{
+ "meta": {
+  "file": "food-by-day.json",
+  "note": "Weekly pantry and free-meal schedule. A site appears on every day it serves. Most rows are unverified: call before sending a family.",
+  "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, Food - By Day tab"
+ },
+ "days": [
+  {
+   "day": "Monday",
+   "sites": [
+    {
+     "place": "12 Baskets Cafe",
+     "when": "11am-1pm (610 Haywood Rd)",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Food for Fairview",
+     "when": "3:30-6pm (1357 E Charlotte Hwy, lower level of community center)",
+     "goodToKnow": "Evening",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Swannanoa Communities Together",
+     "when": "9am-6:30pm (2121 US 70, bilingual, free fridges)",
+     "goodToKnow": "Spanish, Evening, No ID",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Valley Hope Church community meal",
+     "when": "5:30-6:30pm (115 Rockdale Ave, Swannanoa)",
+     "goodToKnow": "Evening",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "BEAR Closet Weaverville UMC",
+     "when": "1st/3rd Mondays 5-7pm",
+     "goodToKnow": "Evening",
+     "lv": "",
+     "vb": ""
+    }
+   ]
+  },
+  {
+   "day": "Tuesday",
+   "sites": [
+    {
+     "place": "12 Baskets",
+     "when": "11am-1pm",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Foster Adventist Church breakfast + pantry",
+     "when": "8:30-10am (375 Hendersonville Rd, 828-274-2014)",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Trinity of Fairview",
+     "when": "9am-1pm (646 Concord Rd, Fletcher, 828-628-1188)",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Blessing Barn",
+     "when": "10am-2pm (2492 US-70, Swannanoa)",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "UNETE / Bounty & Soul Latino market",
+     "when": "3:30-5pm (55 Adams Hill Rd)",
+     "goodToKnow": "Spanish",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Blunt Kitchen hot meals",
+     "when": "4-6pm (120 Alexander Pl, Swannanoa)",
+     "goodToKnow": "Evening",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Food Connection Fairview",
+     "when": "3-5pm (Food Lion, 1350 Charlotte Hwy)",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    }
+   ]
+  },
+  {
+   "day": "Wednesday",
+   "sites": [
+    {
+     "place": "12 Baskets",
+     "when": "11am-1pm",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Haywood Street Welcome Table lunch",
+     "when": "10am-1pm (297 Haywood St; LGBTQ+ safe)",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Catholic Charities client-choice pantry",
+     "when": "12:30-4pm (50 Orange St; call ahead 828-255-0146; Spanish-speaking staff)",
+     "goodToKnow": "Spanish",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Salvation Army",
+     "when": "1:30-3:30pm (204 Haywood St; every 30 days)",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Biltmore Church of God",
+     "when": "4:30-6pm (1390 Sweeten Creek Rd)",
+     "goodToKnow": "Evening",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Oakley Baptist",
+     "when": "12:15pm",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Food Connection Leicester",
+     "when": "5-6pm (Bell UMC, 17 Mayrand Rd; evening option)",
+     "goodToKnow": "Evening",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "MANNA Mobile Market at A-B Tech",
+     "when": "4th Wed 11am-12:30pm (71 Fernihurst Dr)",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Feed the People free dinner",
+     "when": "5:30-7:30pm (corner of Oakwood St and Haywood Rd; also free clothing, harm reduction kits, first aid, menstrual products)",
+     "goodToKnow": "Evening",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Casa de Apoyo Mutuo / Mercadito (La Milpa)",
+     "when": "12-5pm (528 Emma Rd)",
+     "goodToKnow": "Spanish-leading, No ID, Groceries + prepared meals + kids supplies",
+     "lv": "2026-08-01",
+     "vb": "SB"
+    }
+   ]
+  },
+  {
+   "day": "Thursday",
+   "sites": [
+    {
+     "place": "12 Baskets",
+     "when": "11am-1pm",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Montmorenci UMC",
+     "when": "10am-2pm (89 Old Candler Town Rd, Candler)",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "St. Vincent de Paul at St. Barnabas",
+     "when": "11am-2pm (109 Crescent Hill Dr, Arden, 828-684-6098)",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Beverly Hills Baptist",
+     "when": "2nd/4th Thu (777 Tunnel Rd)",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Blessing Barn",
+     "when": "10am-2pm",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Food Connection Candler",
+     "when": "3-5pm (Francis Asbury UMC, 725 Asbury Rd)",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Asheville Christian Refugee Ministry",
+     "when": "by appointment 10am-6pm (104 Eastside Dr #308, Black Mountain; diapers, formula, household supplies; welcoming to Latino families)",
+     "goodToKnow": "Spanish, Evening",
+     "lv": "",
+     "vb": ""
+    }
+   ]
+  },
+  {
+   "day": "Friday",
+   "sites": [
+    {
+     "place": "12 Baskets",
+     "when": "11am-1pm",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Food Connection Weaverville",
+     "when": "11am-1pm (Victory Fellowship, 450 Aiken Rd)",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Swannanoa Communities Together",
+     "when": "9am-6:30pm",
+     "goodToKnow": "Evening",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Casa de Apoyo Mutuo / Mercadito (La Milpa)",
+     "when": "12-5pm (528 Emma Rd)",
+     "goodToKnow": "Spanish-leading, No ID, Groceries + prepared meals + kids supplies",
+     "lv": "2026-08-01",
+     "vb": "SB"
+    }
+   ]
+  },
+  {
+   "day": "Saturday",
+   "sites": [
+    {
+     "place": "Avery's Creek UMC",
+     "when": "9-11:45am (874 Glenn Bridge Rd SE, Arden, 828-684-3027; fits working parents)",
+     "goodToKnow": "Weekend",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Calvary Episcopal",
+     "when": "8-11am (2840 Hendersonville Rd)",
+     "goodToKnow": "Weekend",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "12 Baskets brunch",
+     "when": "10am-12pm",
+     "goodToKnow": "Weekend",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Food Connection Swannanoa",
+     "when": "10-11:30am (Art Space Charter, 2030 US 70)",
+     "goodToKnow": "Weekend",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "MANNA",
+     "when": "Saturday drive-thru market (Church of the Nazarene, 385 Hazel Mill Rd; call first)",
+     "goodToKnow": "Weekend",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Pandemic of Love free veggie delivery: text name + address to",
+     "when": "757-528-6793",
+     "goodToKnow": "Weekend",
+     "lv": "",
+     "vb": ""
+    }
+   ]
+  },
+  {
+   "day": "Sunday",
+   "sites": [
+    {
+     "place": "12 Baskets brunch",
+     "when": "10am-12pm",
+     "goodToKnow": "Weekend",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Haywood Street breakfast",
+     "when": "8:30-10:30am",
+     "goodToKnow": "Weekend",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Emmanuel Lutheran",
+     "when": "11am-1pm (51 Wilburn Pl)",
+     "goodToKnow": "Weekend",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "The Red Door (Church of the Advocate) meal",
+     "when": "2pm + basics/shoes closet 2-3pm (60 Church St)",
+     "goodToKnow": "Weekend",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "ABIPA Free",
+     "when": "Sunday Shop 4th Sunday 3-6pm (220 Continuum Dr, Fletcher)",
+     "goodToKnow": "Evening, Weekend",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Casa de Apoyo Mutuo / Mercadito (La Milpa)",
+     "when": "12-5pm (528 Emma Rd)",
+     "goodToKnow": "Spanish-leading, No ID, Groceries + prepared meals + kids supplies",
+     "lv": "2026-08-01",
+     "vb": "SB"
+    }
+   ]
+  }
+ ]
+}
