@@ -62,6 +62,9 @@ html, body {
   padding-bottom: 72px;
   -webkit-font-smoothing: antialiased;
   font-variant-numeric: tabular-nums;
+  /* source strings are long unbroken filenames; without this they push the
+     whole page sideways on a narrow phone */
+  overflow-wrap: break-word;
 }
 .wnc * { box-sizing: border-box; }
 
@@ -203,11 +206,13 @@ html, body {
 
 /* ------------------------------------------------------------------- cards */
 
-.cards { display: flex; flex-direction: column; gap: 8px; }
+.cards { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
 .inset { margin: 6px 0 16px; }
 
 .card {
   position: relative;
+  min-width: 0;
+  overflow-wrap: anywhere;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface);
@@ -228,7 +233,7 @@ html, body {
   border: 0; background: transparent; font: inherit; text-align: left;
   cursor: pointer; padding: 0; color: inherit;
 }
-.card-title { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.card-title { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; overflow-wrap: anywhere; }
 .card-title strong { font-size: 15.5px; font-weight: 600; line-height: 1.35; }
 .card-sub {
   font-size: 12px; color: var(--ink-2);
@@ -262,6 +267,7 @@ html, body {
 .card-actions { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; align-items: center; }
 .act {
   display: inline-flex; align-items: center; gap: 6px;
+  min-width: 0; overflow-wrap: anywhere;
   font-size: 13px; font-weight: 500;
   padding: 5px 10px;
   border-radius: var(--radius-sm);
@@ -395,6 +401,8 @@ a.act.link { color: var(--accent-ink); }
   display: inline-flex; align-items: center; gap: 7px;
 }
 .cov-label:hover { color: var(--ink); }
+.cov-count { margin-left: auto; padding-left: 10px; font-size: 12px; color: var(--ink-3);
+  font-variant-numeric: tabular-nums; white-space: nowrap; }
 .cov-label .dot { width: 7px; height: 7px; border-radius: 50%; flex: 0 0 auto; }
 .cov-tiles { display: flex; flex-wrap: wrap; gap: 3px; flex: 1; }
 .tile {
@@ -506,6 +514,7 @@ li.dead strong { color: var(--alert); }
 /* ------------------------------------------------------------------ people */
 
 .people { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; }
+.person { min-width: 0; overflow-wrap: anywhere; }
 .person {
   border: 1px solid var(--line); border-radius: var(--radius);
   padding: 14px 16px; background: var(--surface); box-shadow: var(--shadow);
@@ -559,13 +568,48 @@ li.dead strong { color: var(--alert); }
   .pane { padding: 18px 16px; }
   .brand h1 { font-size: 17px; }
   .cra-selects { grid-template-columns: 1fr; }
-  .people { grid-template-columns: 1fr; }
+  .people { grid-template-columns: minmax(0, 1fr); }
   .searchbar { max-width: none; }
   /* thumbs, not cursors */
   .act, .btn { padding: 8px 12px; min-height: 38px; }
   .tab { padding: 10px 11px 12px; }
   .chip { font-size: 13px; padding: 8px 13px; min-height: 36px; }
+  /* iOS zooms the whole page when a focused input is under 16px */
+  .searchbar input,
+  .field input, .field textarea, .field select { font-size: 16px; }
+  /* the header is sticky, so every pixel here is a pixel of results lost */
+  .top { padding: 10px 16px 0; }
+  .searchbar { margin: 10px 0 8px; }
+  .searchbar input { padding-top: 9px; padding-bottom: 9px; }
+  .brand p { font-size: 12.5px; }
   .clear { width: 32px; height: 32px; }
+  .pill { padding: 8px 12px; font-size: 13px; }
+  /* 24px squares are not a touch target */
+  .tile { width: 34px; height: 34px; font-size: 12px; }
+  .cov-tiles { gap: 5px; }
+  .cov-label { min-height: 34px; font-size: 13px; align-items: center; }
+  .coverage { padding: 12px; gap: 0; }
+  /* 84 numbered squares is a desktop overview; on a phone it buried the rows
+     it is meant to summarise. The per-section count says the same thing. */
+  .cov-tiles { display: none; }
+  .cov-band { padding: 0; border-bottom: 1px solid var(--line); }
+  .cov-band:last-child { border-bottom: 0; }
+  .cov-label { flex: 1 1 auto; width: 100%; padding: 10px 2px; }
+  .stat-grid { grid-template-columns: repeat(auto-fit, minmax(132px, 1fr)); }
+}
+
+/* landscape phone: the sticky header was taking half the screen, leaving
+   almost no room for the results it sits above */
+@media (max-height: 500px) and (min-width: 480px) {
+  .top { padding: 8px 16px 0; display: grid; grid-template-columns: auto 1fr;
+         grid-template-areas: "brand search" "tabs tabs"; gap: 0 16px; align-items: center; }
+  .brand { grid-area: brand; }
+  .brand p { display: none; }
+  .brand h1 { font-size: 15px; }
+  .mark { width: 28px; height: 28px; }
+  .searchbar { grid-area: search; margin: 0; }
+  .tabs { grid-area: tabs; margin-top: 6px; }
+  .pane { padding-top: 14px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import {
   META, SECTIONS, SECBY, NEEDS, BASE, PEOPLE, PEOPLE_META,
   CRA, CRA_SECTIONS, CHANGELOG, FOOD, TODAY, norm,
@@ -44,6 +44,12 @@ export default function App() {
   const [craSec, setCraSec] = useState("I");
   const [foodDay, setFoodDay] = useState(FOOD.days[0].day);
   const [toast, setToast] = useState("");
+  const tabsRef = useRef(null);
+
+  useEffect(() => {
+    const el = tabsRef.current?.querySelector(".tab-on");
+    el?.scrollIntoView({ block: "nearest", inline: "center" });
+  }, [view]);
 
   const say = (m) => { setToast(m); setTimeout(() => setToast(""), 2600); };
 
@@ -218,7 +224,7 @@ export default function App() {
             aria-label="Search resources" />
           {q && <button className="clear" onClick={() => setQ("")} aria-label="Clear search">×</button>}
         </div>
-        <nav className="tabs">
+        <nav className="tabs" ref={tabsRef}>
           {VIEWS.map(([id, label]) => (
             <button key={id} className={"tab" + (view === id ? " tab-on" : "")} onClick={() => setView(id)}
               aria-current={view === id ? "page" : undefined}>
@@ -303,8 +309,8 @@ export default function App() {
       {view === "assessment" && (
         <section className="pane">
           <p className="lede">
-            The {CRA.length} rows of the Child First Community Resource Assessment. Solid tiles are rows
-            you have filled. Empty tiles are gaps in the service system here.
+            The {CRA.length} rows of the Child First Community Resource Assessment. The summary below
+            counts the rows you have filled in each section. The rest are gaps in the service system here.
           </p>
 
           <div className="coverage">
@@ -313,6 +319,11 @@ export default function App() {
                 <button className="cov-label" onClick={() => setCraSec(cs.id)}>
                   <span className="dot" style={{ background: cs.deep }} />
                   {cs.id}. {cs.name}
+                  <span className="cov-count">
+                    {CRA.filter((r) => r.section === cs.id && coverage[r.id].conf > 0).length}
+                    {" of "}
+                    {CRA.filter((r) => r.section === cs.id).length}
+                  </span>
                 </button>
                 <div className="cov-tiles">
                   {CRA.filter((r) => r.section === cs.id).map((r) => {
