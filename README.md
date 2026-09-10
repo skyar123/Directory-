@@ -24,19 +24,22 @@ npm run check    # validate data/ before committing an export
 ```
 
 `dist/` is plain static files. Any static host will serve it, and the app keeps
-working offline once loaded — nothing is fetched at runtime.
+working offline once loaded — nothing is fetched at runtime. The typeface
+(Inter) is bundled rather than pulled from a CDN, so it renders the same behind
+a firewall as it does outside one.
 
 ## Files
 
 | File | What it holds |
 |---|---|
-| `data/resources.json` | 522 resources. Each carries `needs` (SNIFF question keys), `sec` (section), and `src` (where the fact came from). |
+| `data/resources.json` | 523 resources. Each carries `needs` (SNIFF question keys), `sec` (section), and `src` (where the fact came from). |
 | `data/sniff.json` | The 13 sections and the 119 SNIFF questions the directory is ordered by. |
 | `data/point-people.json` | 105 named humans, with how fast each one answers. |
 | `data/community-resource-assessment.json` | The 84 rows of the Child First Community Resource Assessment, crosswalked to SNIFF questions. |
 | `data/changelog.json` | Dead ends, changes in flight, and the 106 questions still open. |
 | `data/food-by-day.json` | The weekly pantry and free-meal schedule, by day. |
 | `src/` | The app. Reads the data, edits it, exports it back. |
+| `src/styles.css` | The whole design system: tokens at the top, then components. |
 | `scripts/` | The importers that built `data/`, kept so its provenance is reproducible. |
 
 ## How a change gets in

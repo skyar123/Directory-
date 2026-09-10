@@ -6,19 +6,32 @@ import {
 import { useStore } from "./storage.js";
 import { score } from "./search.js";
 import { Chip } from "./components/bits.jsx";
+import Icon, { Logo } from "./components/Icon.jsx";
 import ResourceCard from "./components/ResourceCard.jsx";
 import CraRow from "./components/CraRow.jsx";
 
 const VIEWS = [
-  ["find", "Find", "🔍"],
-  ["sniff", "By SNIFF question", "📋"],
-  ["assessment", "Community assessment", "🧩"],
-  ["food", "Food by day", "🥣"],
-  ["changed", "What changed", "🚩"],
-  ["gaps", "What is missing", "🕳️"],
-  ["people", "Point people", "📞"],
-  ["data", "Data and repo", "📦"],
+  ["find", "Find"],
+  ["sniff", "By SNIFF question"],
+  ["assessment", "Community assessment"],
+  ["food", "Food by day"],
+  ["changed", "What changed"],
+  ["gaps", "What is missing"],
+  ["people", "Point people"],
+  ["data", "Data and repo"],
 ];
+
+/* "RESPONSIVE? is the column that matters", per the file's own note */
+const RESP = {
+  "⚡ Very responsive": ["Very responsive", "resp-fast"],
+  "👍 Responsive": ["Responsive", "resp-ok"],
+  "⚪ Not tried yet": ["Not tried yet", "resp-none"],
+};
+function RespBadge({ value }) {
+  if (!value) return <span className="badge resp-unknown">Responsiveness unknown</span>;
+  const [label, cls] = RESP[value] || [value.replace(/^[^\w]+/, ""), "resp-ok"];
+  return <span className={"badge " + cls}>{label}</span>;
+}
 
 export default function App() {
   const { state, setState, ready, saving, clear } = useStore();
@@ -47,7 +60,10 @@ export default function App() {
       .filter((x) => x.s > 0)
       .filter((x) => !secFilter || x.r.sec === secFilter)
       .filter((x) => !onlyGaps || !x.r.phone || !x.r.web || !x.r.verified);
-    list.sort((a, b) => b.s - a.s || a.r.name.localeCompare(b.r.name));
+    list.sort((a, b) =>
+      b.s - a.s
+      || (b.r.startHere ? 1 : 0) - (a.r.startHere ? 1 : 0)
+      || a.r.name.localeCompare(b.r.name));
     return list.map((x) => x.r);
   }, [resources, terms, secFilter, onlyGaps]);
 
@@ -186,7 +202,7 @@ export default function App() {
     <div className="wnc">
       <header className="top">
         <div className="brand">
-          <span className="mark">🌈</span>
+          <span className="mark"><Logo /></span>
           <div>
             <h1>WNC Family Resource Directory <span className="internal-tag">Internal use only</span></h1>
             <p>
@@ -196,15 +212,17 @@ export default function App() {
           </div>
         </div>
         <div className="searchbar">
+          <Icon name="search" className="search-ic" size={16} />
           <input value={q} onChange={(e) => { setQ(e.target.value); if (view !== "find") setView("find"); }}
             placeholder="Search: diapers, autism eval, rent, interpreter, Black Mountain"
             aria-label="Search resources" />
           {q && <button className="clear" onClick={() => setQ("")} aria-label="Clear search">×</button>}
         </div>
         <nav className="tabs">
-          {VIEWS.map(([id, label, ic]) => (
-            <button key={id} className={"tab" + (view === id ? " tab-on" : "")} onClick={() => setView(id)}>
-              <span>{ic}</span> {label}
+          {VIEWS.map(([id, label]) => (
+            <button key={id} className={"tab" + (view === id ? " tab-on" : "")} onClick={() => setView(id)}
+              aria-current={view === id ? "page" : undefined}>
+              {label}
             </button>
           ))}
         </nav>
@@ -215,23 +233,22 @@ export default function App() {
       {view === "find" && (
         <section className="pane">
           <div className="filters">
-            <Chip bg="#F4EFE6" fg="#2E2740" active={!secFilter} onClick={() => setSecFilter("")}>
-              All sections
-            </Chip>
+            <Chip active={!secFilter} onClick={() => setSecFilter("")}>All sections</Chip>
             {SECTIONS.map((s) => (
-              <Chip key={s.id} bg={s.hue} fg={s.deep} active={secFilter === s.id}
+              <Chip key={s.id} dot={s.deep} active={secFilter === s.id}
                 onClick={() => setSecFilter(secFilter === s.id ? "" : s.id)}>
-                {s.icon} {s.id}. {s.name}
+                {s.id}. {s.name}
               </Chip>
             ))}
-            <Chip bg="#FFE9E9" fg="#B0271F" active={onlyGaps} onClick={() => setOnlyGaps((v) => !v)}>
-              🕳️ needs work only
+            <Chip active={onlyGaps} onClick={() => setOnlyGaps((v) => !v)}
+              title="Only entries missing a phone or website, or never verified">
+              Needs work only
             </Chip>
           </div>
           <p className="count">{results.length} showing</p>
           <div className="cards">
             {results.slice(0, 260).map((r) => (
-              <ResourceCard key={r.id} r={r} open={openId === r.id}
+              <ResourceCard key={r.id} r={r} open={openId === r.id} showGaps={onlyGaps}
                 onToggle={() => setOpenId(openId === r.id ? "" : r.id)}
                 onEdit={(k, v) => edit(r.id, k, v)} onVerify={() => verify(r.id)} />
             ))}
@@ -249,8 +266,10 @@ export default function App() {
           </p>
           {SECTIONS.filter((s) => needsBySection[s.id]).map((s) => (
             <div key={s.id} className="need-block">
-              <h2 style={{ color: s.deep }}>
-                <span style={{ background: s.hue }} className="h-ic">{s.icon}</span> {s.id}. {s.name}
+              <h2>
+                <span className="dot" style={{ background: s.deep }} />
+                {s.id}. {s.name}
+                <span className="need-n">{needsBySection[s.id].length} questions</span>
               </h2>
               {needsBySection[s.id].map((n) => {
                 const hits = resources.filter((r) => r.needs.includes(n.key));
@@ -258,15 +277,15 @@ export default function App() {
                 return (
                   <div key={n.key} className="need">
                     <button className="need-head" onClick={() => setOpenNeed(isOpen ? "" : n.key)}
-                      style={{ background: isOpen ? s.hue : "transparent" }}>
-                      <span className="need-code" style={{ color: s.deep }}>{n.code}</span>
-                      <span>{n.label}</span>
-                      <span className="need-n" style={{ color: s.deep }}>{hits.length}</span>
+                      aria-expanded={isOpen ? "true" : "false"}>
+                      <span className="need-code">{n.code}</span>
+                      <span className="need-label">{n.label}</span>
+                      <span className="need-n">{hits.length}</span>
                     </button>
                     {isOpen && (
                       <div className="cards inset">
                         {hits.map((r) => (
-                          <ResourceCard key={r.id} r={r} open={openId === r.id} compact
+                          <ResourceCard key={r.id} r={r} open={openId === r.id}
                             onToggle={() => setOpenId(openId === r.id ? "" : r.id)}
                             onEdit={(k, v) => edit(r.id, k, v)} onVerify={() => verify(r.id)} />
                         ))}
@@ -291,8 +310,9 @@ export default function App() {
           <div className="coverage">
             {CRA_SECTIONS.map((cs) => (
               <div key={cs.id} className="cov-band">
-                <button className="cov-label" style={{ color: cs.deep }} onClick={() => setCraSec(cs.id)}>
-                  {cs.icon} {cs.id}. {cs.name}
+                <button className="cov-label" onClick={() => setCraSec(cs.id)}>
+                  <span className="dot" style={{ background: cs.deep }} />
+                  {cs.id}. {cs.name}
                 </button>
                 <div className="cov-tiles">
                   {CRA.filter((r) => r.section === cs.id).map((r) => {
@@ -300,8 +320,7 @@ export default function App() {
                     return (
                       <button key={r.id} className={c.conf > 0 ? "tile full" : "tile none"}
                         title={r.section + "." + r.num + " " + r.label}
-                        style={{ background: c.conf > 0 ? cs.hue : "transparent",
-                          borderColor: cs.deep, color: cs.deep }}
+                        style={c.conf > 0 ? { background: cs.deep } : undefined}
                         onClick={() => setCraSec(cs.id)}>
                         {r.num}
                       </button>
@@ -314,9 +333,9 @@ export default function App() {
 
           <div className="filters">
             {CRA_SECTIONS.map((cs) => (
-              <Chip key={cs.id} bg={cs.hue} fg={cs.deep} active={craSec === cs.id}
+              <Chip key={cs.id} dot={cs.deep} active={craSec === cs.id}
                 onClick={() => setCraSec(cs.id)}>
-                {cs.icon} {cs.id}. {cs.name}
+                {cs.id}. {cs.name}
               </Chip>
             ))}
           </div>
@@ -350,7 +369,7 @@ export default function App() {
             name repeats down the week.
           </p>
           <p className="handling">
-            ⚠️ Most of these have never been verified, and pantry hours move. Call before you send
+            Most of these have never been verified, and pantry hours move. Call before you send
             anyone. {FOOD.meta.src}
           </p>
           <div className="filters">
@@ -364,22 +383,25 @@ export default function App() {
           {FOOD.days.filter((d) => d.day === foodDay).map((d) => (
             <div key={d.day} className="need-block">
               <h2 style={{ color: "#55731F" }}>
-                <span className="h-ic" style={{ background: "#DDEFC4" }}>🥣</span> {d.day}
+                <span className="dot" style={{ background: "#55731F" }} />
+                {d.day}
+                <span className="need-n">{d.sites.length} sites</span>
               </h2>
               <div className="cards">
                 {d.sites.map((s, i) => (
-                  <article key={i} className="card" style={{ borderLeftColor: "#55731F" }}>
+                  <article key={i} className="card" style={{ "--sec": "#55731F" }}>
                     <div className="card-head" style={{ cursor: "default" }}>
-                      <span className="card-icon" style={{ background: "#DDEFC4" }}>🥣</span>
                       <span className="card-title">
                         <strong>{s.place}</strong>
-                        <span className="card-sub">{s.when}</span>
+                        <span className="card-sub">
+                          <Icon name="clock" size={13} />{s.when}
+                        </span>
                       </span>
                     </div>
                     <div className="card-badges">
                       {s.lv
-                        ? <span className="badge ok">✅ {s.lv}</span>
-                        : <span className="badge warn">⚠️ never verified</span>}
+                        ? <span className="badge ok">Verified {s.lv}</span>
+                        : <span className="badge warn">Never verified</span>}
                       {s.goodToKnow && <span className="badge sp">{s.goodToKnow}</span>}
                     </div>
                   </article>
@@ -398,9 +420,9 @@ export default function App() {
           </p>
           {CHANGELOG.groups.map((g) => (
             <div key={g.id} className="need-block">
-              <h2 style={{ color: g.id === "dead-ends" ? "#B0271F" : "#2E2740" }}>
-                {g.id === "dead-ends" ? "🚫" : g.id === "watch" ? "👀" : g.id === "added" ? "✨" : "❓"}{" "}
-                {g.label} <span className="need-n">{g.entries.length}</span>
+              <h2 style={g.id === "dead-ends" ? { color: "var(--alert)" } : undefined}>
+                {g.label}
+                <span className="need-n">{g.entries.length}</span>
               </h2>
               <ul className="plain">
                 {g.entries.map((e, i) => (
@@ -417,8 +439,9 @@ export default function App() {
 
           {!!CHANGELOG.conflicts.length && (
             <div className="need-block">
-              <h2 style={{ color: "#B0271F" }}>
-                ⚠️ Copies that disagree <span className="need-n">{CHANGELOG.conflicts.length}</span>
+              <h2 style={{ color: "var(--alert)" }}>
+                Copies that disagree
+                <span className="need-n">{CHANGELOG.conflicts.length}</span>
               </h2>
               <ul className="plain">
                 {CHANGELOG.conflicts.map((c, i) => (
@@ -445,8 +468,8 @@ export default function App() {
               ["No website", gapStats.web, "#9A6410"], ["No address", gapStats.address, "#1F5F9E"],
               ["No hours", gapStats.hours, "#7038A8"], ["No point person", gapStats.point, "#157C86"]]
               .map(([l, v, c]) => (
-                <div key={l} className="stat" style={{ borderColor: c }}>
-                  <strong style={{ color: c }}>{v}</strong><span>{l}</span>
+                <div key={l} className="stat" style={{ "--stat": c }}>
+                  <strong>{v}</strong><span>{l}</span>
                 </div>
               ))}
           </div>
@@ -467,9 +490,9 @@ export default function App() {
             {CRA.filter((r) => coverage[r.id].conf === 0).map((r) => {
               const cs = CRA_SECTIONS.find((c) => c.id === r.section);
               return (
-                <button key={r.id} className="gap-item" style={{ borderColor: cs.deep, color: cs.deep }}
+                <button key={r.id} className="gap-item"
                   onClick={() => { setCraSec(r.section); setView("assessment"); }}>
-                  <span className="cra-num" style={{ background: cs.hue }}>{r.id}</span> {r.label}
+                  <span className="cra-num" style={{ color: cs.deep }}>{r.id}</span> {r.label}
                 </button>
               );
             })}
@@ -481,8 +504,8 @@ export default function App() {
               .filter((p) => /No response|Slow|Unknown|never|Not tried/i.test(p.resp || "") || !p.resp)
               .map((p, i) => (
                 <li key={i}>
-                  {p.n} {p.org ? "· " + p.org : ""}{" "}
-                  {p.resp ? "· " + p.resp : "· responsiveness unknown"}
+                  <RespBadge value={p.resp} /> <strong>{p.n}</strong>
+                  {p.org ? " · " + p.org : ""}
                 </li>
               ))}
           </ul>
@@ -495,7 +518,7 @@ export default function App() {
             A named person answers faster than a general line. Responsiveness is the whole value of this list.
           </p>
           <p className="handling">
-            🔒 Includes the Child First team block: {PEOPLE.filter((p) => p.internal).length} personal
+            Includes the Child First team block: {PEOPLE.filter((p) => p.internal).length} personal
             addresses, marked <span className="badge warn">internal</span>. Fine to use here. Strip them
             before any of this goes to someone outside the team.
           </p>
@@ -504,17 +527,21 @@ export default function App() {
               <div key={i} className="person">
                 <div className="person-top">
                   <strong>{p.n}</strong>
-                  {p.resp && <span className="badge sp">{p.resp}</span>}
+                  <RespBadge value={p.resp} />
                   {p.internal && <span className="badge warn">internal</span>}
                 </div>
                 <p className="tiny">{[p.role, p.org].filter(Boolean).join(" · ")}</p>
                 <div className="card-actions">
                   {p.ph && (
                     <a className="act call" href={"tel:" + p.ph.replace(/[^0-9]/g, "").slice(0, 11)}>
-                      📞 {p.ph}
+                      <Icon name="phone" size={14} />{p.ph}
                     </a>
                   )}
-                  {p.em && <a className="act link" href={"mailto:" + p.em}>✉️ {p.em}</a>}
+                  {p.em && (
+                    <a className="act link" href={"mailto:" + p.em}>
+                      <Icon name="mail" size={14} />{p.em}
+                    </a>
+                  )}
                 </div>
                 {p.notes && <p className="detail">{p.notes}</p>}
                 <p className="tiny src">{p.grp}{p.lv ? " · verified " + p.lv : ""}</p>
@@ -530,7 +557,7 @@ export default function App() {
             Your edits live in this browser. Export before you rely on them anywhere else.
           </p>
           <p className="handling">
-            🔒 Internal use only. These exports carry point people's direct lines and the team's
+            <strong>Internal use only.</strong> These exports carry point people's direct lines and the team's
             personal addresses, and the notes say who is slow to answer and who to route around.
             That is staff information, not a public directory.
           </p>

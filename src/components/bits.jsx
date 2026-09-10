@@ -1,15 +1,16 @@
-export function Chip({ children, bg, fg, onClick, active, title }) {
+export function Chip({ children, dot, onClick, active, title }) {
   return (
     <button className={"chip" + (active ? " chip-on" : "")} onClick={onClick} title={title}
-      style={{ background: active ? fg : bg, color: active ? "#fff" : fg, borderColor: fg }}>
+      aria-pressed={active ? "true" : "false"}>
+      {dot && <span className="dot" style={{ background: dot }} />}
       {children}
     </button>
   );
 }
 
 export function VerifyBadge({ r }) {
-  if (r.verified) return <span className="badge ok">✅ {r.verified}</span>;
-  return <span className="badge warn">⚠️ never verified</span>;
+  if (r.verified) return <span className="badge ok">Verified {r.verified}</span>;
+  return <span className="badge warn">Never verified</span>;
 }
 
 export function MissingBits({ r }) {
@@ -20,7 +21,7 @@ export function MissingBits({ r }) {
   if (!r.hours) gaps.push("hours");
   if (!r.point) gaps.push("point person");
   if (!gaps.length) return null;
-  return <span className="badge gap">missing {gaps.join(", ")}</span>;
+  return <span className="badge gap">No {gaps.join(", ")}</span>;
 }
 
 export function Field({ label, value, onChange, area }) {

@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-import { SECBY, CRA_SECTIONS } from "../data.js";
+import { CRA_SECTIONS } from "../data.js";
 import { Field } from "./bits.jsx";
 import { craCandidates } from "../search.js";
 
@@ -13,12 +13,12 @@ export default function CraRow({ row, resources, entry, onEntry, onCopy }) {
   const auto = cands.filter((c) => !attach.includes(c.r.id) && !detach.includes(c.r.id)).slice(0, 14);
 
   return (
-    <div className="cra-row" style={{ borderLeftColor: s.deep }}>
+    <div className="cra-row" style={{ "--sec": s.deep }}>
       <button className="cra-head" onClick={() => setOpen((v) => !v)}>
-        <span className="cra-num" style={{ background: s.hue, color: s.deep }}>{row.section}.{row.num}</span>
+        <span className="cra-num" style={{ color: s.deep }}>{row.section}.{row.num}</span>
         <span className="cra-label">{row.label}</span>
-        <span className="cra-count" style={{ color: confirmed.length ? s.deep : "#B0271F" }}>
-          {confirmed.length ? confirmed.length + " confirmed" : "not filled"}
+        <span className={"cra-count" + (confirmed.length ? " done" : "")}>
+          {confirmed.length ? confirmed.length + " confirmed" : "Not filled"}
         </span>
       </button>
 
@@ -52,7 +52,7 @@ export default function CraRow({ row, resources, entry, onEntry, onCopy }) {
           <ul className="pill-list">
             {confirmed.map((r) => (
               <li key={r.id}>
-                <span className="pill on" style={{ background: SECBY[r.sec].hue, color: SECBY[r.sec].deep }}>
+                <span className="pill on">
                   {r.name}
                   <button onClick={() => onEntry({ ...entry, attach: attach.filter((x) => x !== r.id) })}
                     aria-label={"Remove " + r.name}>×</button>
@@ -68,7 +68,7 @@ export default function CraRow({ row, resources, entry, onEntry, onCopy }) {
           <ul className="pill-list">
             {auto.map(({ r, why }) => (
               <li key={r.id}>
-                <button className="pill" style={{ borderColor: SECBY[r.sec].deep, color: SECBY[r.sec].deep }}
+                <button className="pill"
                   title={why + " · " + (r.phone || "no phone on file")}
                   onClick={() => onEntry({ ...entry, attach: [...attach, r.id] })}>
                   + {r.name}

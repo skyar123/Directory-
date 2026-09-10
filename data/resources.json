@@ -11,7 +11,7 @@
   ],
   "file": "resources.json",
   "note": "One object per resource. `needs` are SNIFF question keys, `src` names where the fact came from.",
-  "count": 522
+  "count": 523
  },
  "sections": [
   {
@@ -1484,7 +1484,7 @@
   },
   {
    "id": "free-school-district-evaluation-age-3-5-or-s",
-   "n": "🎯 Free school-district evaluation (age 3-5 or school-age)",
+   "n": "Free school-district evaluation (age 3-5 or school-age)",
    "pp": "",
    "sp": "⚪ Not listed - ask",
    "spd": "Not stated in the source. Ask when you call.",
@@ -1508,7 +1508,8 @@
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
-   "new": false
+   "new": false,
+   "start": true
   },
   {
    "id": "angel-s-watch",
@@ -11410,8 +11411,8 @@
     "III:*",
     "III:3a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; cross-reference added 2026-09-10",
+   "note": "Not the same as Dental on Livingston, the WNCCHS urgent dental site that opened in this same building in Aug 2026 on a different line (828-285-0622 ext 8903).",
    "new": false
   },
   {
@@ -11862,8 +11863,8 @@
    "needs": [
     "VI:*"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; cross-reference added 2026-09-10",
+   "note": "Since Aug 2026 this same line also books the new Dental on Livingston site at ABCCM, 155 Livingston St, three days a week.",
    "new": false
   },
   {
@@ -14219,7 +14220,7 @@
   },
   {
    "id": "1915-i-services-medicaid-respite-without-wai",
-   "n": "🎯 1915(i) services - Medicaid respite without waiting out Innovations",
+   "n": "1915(i) services - Medicaid respite without waiting out Innovations",
    "pp": "",
    "sp": "🟠 Interpreter available",
    "spd": "Federally or publicly funded: a free qualified interpreter must be provided on request. Ask for one when you call.",
@@ -14242,11 +14243,12 @@
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
-   "new": false
+   "new": false,
+   "start": true
   },
   {
    "id": "in-lieu-of-services-the-alternatives-to-resi",
-   "n": "🎯 In Lieu of Services - the alternatives to residential, PRTF and the ER",
+   "n": "In Lieu of Services - the alternatives to residential, PRTF and the ER",
    "pp": "",
    "sp": "🟠 Interpreter available",
    "spd": "Federally or publicly funded: a free qualified interpreter must be provided on request. Ask for one when you call.",
@@ -14267,7 +14269,8 @@
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
-   "new": false
+   "new": false,
+   "start": true
   },
   {
    "id": "free-meals-delivered-after-a-hospital-stay-m",
@@ -14296,7 +14299,7 @@
   },
   {
    "id": "vaya-pays-for-the-ged-exam-fees-included-ged",
-   "n": "🎯 Vaya pays for the GED, exam fees included (GEDWorks)",
+   "n": "Vaya pays for the GED, exam fees included (GEDWorks)",
    "pp": "",
    "sp": "🟠 Interpreter available",
    "spd": "Federally or publicly funded: a free qualified interpreter must be provided on request. Ask for one when you call.",
@@ -14317,7 +14320,8 @@
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
-   "new": false
+   "new": false,
+   "start": true
   },
   {
    "id": "10-for-a-flu-or-covid-shot-25-for-a-well-chi",
@@ -14371,7 +14375,7 @@
   },
   {
    "id": "how-fast-the-plan-is-required-to-get-you-see",
-   "n": "🎯 How fast the plan is REQUIRED to get you seen",
+   "n": "How fast the plan is REQUIRED to get you seen",
    "pp": "",
    "sp": "🟠 Interpreter available",
    "spd": "Federally or publicly funded: a free qualified interpreter must be provided on request. Ask for one when you call.",
@@ -14392,11 +14396,12 @@
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
-   "new": false
+   "new": false,
+   "start": true
   },
   {
    "id": "keeping-the-provider-you-already-trust-when",
-   "n": "🎯 Keeping the provider you already trust when the plan changes",
+   "n": "Keeping the provider you already trust when the plan changes",
    "pp": "",
    "sp": "🟠 Interpreter available",
    "spd": "Federally or publicly funded: a free qualified interpreter must be provided on request. Ask for one when you call.",
@@ -14417,7 +14422,8 @@
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
-   "new": false
+   "new": false,
+   "start": true
   },
   {
    "id": "never-leave-the-pharmacy-without-the-medicin",
@@ -14524,7 +14530,7 @@
   },
   {
    "id": "play-talk-grow-speech-feeding-aac-takes-medi",
-   "n": "🎯 Play Talk & Grow - speech, feeding, AAC, takes Medicaid and Vaya",
+   "n": "Play Talk & Grow - speech, feeding, AAC, takes Medicaid and Vaya",
    "pp": "",
    "sp": "🟠 Interpreter available",
    "spd": "",
@@ -14547,7 +14553,8 @@
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
-   "new": false
+   "new": false,
+   "start": true
   },
   {
    "id": "campfire-behavioral-health-campfire-aba-no-w",
@@ -14576,7 +14583,7 @@
   },
   {
    "id": "campfire-community-school-opens-20-aug-2026",
-   "n": "⚠️ Campfire Community School - opens 20 Aug 2026, read the funding note first",
+   "n": "Campfire Community School - opens 20 Aug 2026, read the funding note first",
    "pp": "",
    "sp": "🟢 Spanish-first / Latino-led",
    "spd": "",
@@ -14599,7 +14606,8 @@
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
-   "new": false
+   "new": false,
+   "readFirst": true
   },
   {
    "n": "Carolina Pediatric Therapy - South Asheville",
@@ -15051,6 +15059,32 @@
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, CRISIS NOW tab",
    "note": "",
+   "new": true
+  },
+  {
+   "id": "dental-on-livingston-wncchs-abccm",
+   "n": "Dental on Livingston (WNCCHS at ABCCM)",
+   "pp": "",
+   "sp": "🟠 Interpreter available",
+   "spd": "Federally or publicly funded: a free qualified interpreter must be provided on request. Ask for one when you call.",
+   "ph": "828-285-0622 ext 8903",
+   "em": "",
+   "w": "wncchs.org/dental",
+   "d": "Urgent dental care, opened 25 Aug 2026. A WNCCHS dental team working three days a week inside ABCCM's Medical Ministry Clinic. Mostly extractions and other urgent needs, and the stated point of it is to hand patients on to ongoing comprehensive dental care at Minnie Jones. Funded by a multiyear Leon Levine Foundation grant, with about 1,040 extra urgent visits budgeted in year one.",
+   "a": "155 Livingston St, Asheville (inside ABCCM Medical Ministry Clinic)",
+   "h": "Three days a week. WNCCHS has not published which three, so call and ask.",
+   "os": "7.1 Adult Dental with Medicaid (Buncombe)",
+   "t": "Medicaid, Sliding scale, Urgent",
+   "lv": "",
+   "vb": "",
+   "sec": "VI",
+   "needs": [
+    "VI:*",
+    "III:*",
+    "III:3a"
+   ],
+   "src": "WNCCHS announcement 'WNCCHS Opens Dental on Livingston' and wncchs.org/dental, read 2026-09-10; WNC Community Health Services Facebook post",
+   "note": "Same building as ABCCM's own Friday crisis dental, but a different service with a different phone. This one is the WNCCHS dental line; ABCCM's is 828-259-5339, called Monday 9am. NOT verified by phone: no site-specific number or days were published, so the number here is the general WNCCHS Dental Urgent Care line.",
    "new": true
   }
  ]

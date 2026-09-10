@@ -41,6 +41,7 @@ export const BASE = resourcesFile.resources.map((r) => ({
   address: r.a || "", hours: r.h || "", tags: r.t || "",
   verified: r.lv || "", verifiedBy: r.vb || "", point: r.pp || "",
   note: r.note || "", isNew: !!r.new,
+  startHere: !!r.start, readFirst: !!r.readFirst,
 }));
 
 export const PEOPLE = peopleFile.people;
