@@ -127,6 +127,10 @@ export default function App() {
      straight back over the file it came from */
   const exportJson = () => download("resources.json", JSON.stringify({
     meta: { ...META, exported: new Date().toISOString(), count: resources.length },
+    /* data/resources.json keeps its own copy of the sniff.json taxonomy; write
+       it back so committing an export over the file does not delete it */
+    sections: SECTIONS.map(({ id, name, hue }) => ({ id, name, hue })),
+    needs: NEEDS,
     resources: resources.map((r) => ({
       id: r.id, n: r.name, pp: r.point, sp: r.spanish, spd: r.spanishDetail,
       ph: r.phone, em: r.email, w: r.web, d: r.detail, a: r.address, h: r.hours,
