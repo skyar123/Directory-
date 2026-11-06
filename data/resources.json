@@ -2396,6 +2396,32 @@
    "new": false
   },
   {
+   "id": "unc-teacch-video-changes-in-schedules",
+   "n": "UNC TEACCH video: preparing children for changes in schedule",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "facebook.com/UNCTEACCH/videos/812280017560557/",
+   "d": "A short UNC TEACCH video (\"Changes in schedules are hard\") showing a method to prepare students for changes to their schedule. Free to watch and to share with a family working on transitions.",
+   "a": "",
+   "h": "",
+   "os": "11.3 Therapies and Direct Services",
+   "t": "Free",
+   "lv": "",
+   "vb": "",
+   "sec": "IX",
+   "needs": [
+    "IX:*",
+    "IX:6a",
+    "IX:9a"
+   ],
+   "src": "Saved Facebook item (UNC TEACCH), Facebook deep scrape part 2, 6 Nov 2026",
+   "note": "",
+   "new": true
+  },
+  {
    "id": "teacch-autism-program",
    "n": "TEACCH Autism Program",
    "pp": "",
@@ -7713,6 +7739,56 @@
    "new": false
   },
   {
+   "id": "shepherds-table-marion-thanksgiving",
+   "n": "The Shepherd's Table, Marion: Thanksgiving food for families",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "facebook.com/groups/200385480017996/permalink/29248077724822052/",
+   "d": "The Shepherd's Table in Marion aims to feed 134 families this Thanksgiving. The community is collecting food and money for it through 22 November.",
+   "a": "Marion (McDowell County)",
+   "h": "",
+   "os": "PART 22: TIME-LIMITED AND SEASONAL PROGRAMS",
+   "t": "Free",
+   "lv": "",
+   "vb": "",
+   "sec": "VIII",
+   "needs": [
+    "VIII:*",
+    "VIII:5a"
+   ],
+   "src": "Facebook post in You know You're From Marion, NC, 29 Oct 2026 (Facebook deep scrape part 4, 6 Nov 2026)",
+   "note": "The post is a donation drive and does not say how a family gets on the list. Ask through the post.",
+   "new": true
+  },
+  {
+   "id": "garren-creek-thanksgiving-boxes-swannanoa",
+   "n": "Garren Creek Thanksgiving boxes, Swannanoa",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "garrencreek.org/donate",
+   "d": "Thanksgiving boxes for families in Swannanoa. By 2 November more than 50 families had asked for one and only about half could be covered; donations sponsor a family's box at garrencreek.org/donate.",
+   "a": "Swannanoa",
+   "h": "",
+   "os": "PART 22: TIME-LIMITED AND SEASONAL PROGRAMS",
+   "t": "Free",
+   "lv": "",
+   "vb": "",
+   "sec": "VIII",
+   "needs": [
+    "VIII:*",
+    "VIII:5a"
+   ],
+   "src": "Facebook post in Friends of Swannanoa, NC, 2 Nov 2026 (Facebook deep scrape part 4, 6 Nov 2026)",
+   "note": "Requests already outnumber the boxes. Ask before telling a family they can get one.",
+   "new": true
+  },
+  {
    "id": "24-7-crisis-lines",
    "n": "24/7 crisis lines",
    "pp": "",
@@ -8858,6 +8934,32 @@
    "new": false
   },
   {
+   "id": "lady-gloria-ridge-community-pantry",
+   "n": "Lady Gloria Ridge Community Pantry",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "facebook.com/groups/323374477098568/permalink/1103809919055016/",
+   "d": "A community pantry. In October it was running low and asked for toilet paper, body soap, laundry detergent, paper towels, towels, cleaning supplies, and hygiene supplies including shampoo and conditioner.",
+   "a": "",
+   "h": "",
+   "os": "3.1 Find Food Fast",
+   "t": "Free",
+   "lv": "",
+   "vb": "",
+   "sec": "VIII",
+   "needs": [
+    "VIII:*",
+    "VIII:5a",
+    "VIII:13a"
+   ],
+   "src": "Facebook post in Buy Nothing: West Asheville / Candler, 9 Oct 2026 (Facebook deep scrape part 4, 6 Nov 2026)",
+   "note": "The post gives no address or hours. Message through the post before sending a family.",
+   "new": true
+  },
+  {
    "id": "north-asheville-little-free-pantry",
    "n": "North Asheville Little Free Pantry",
    "pp": "",
@@ -9024,6 +9126,31 @@
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
    "new": false
+  },
+  {
+   "id": "free-fridge-asheville-group",
+   "n": "Free Fridge Asheville (Facebook group): free fridges, mini pantries, free OTC medicine",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "facebook.com/groups/freefridgeasheville",
+   "d": "The group where Asheville's free fridges and mini pantries post news. In September 2026 it announced a new free mini pantry in Southside, and a member reported that a source of free over-the-counter medicine and supplies was available again. Neither post gave a location, so ask in the group.",
+   "a": "",
+   "h": "",
+   "os": "3.2 24/7 Free Food, No ID, No Questions",
+   "t": "Free",
+   "lv": "",
+   "vb": "",
+   "sec": "VIII",
+   "needs": [
+    "VIII:*",
+    "VIII:5a"
+   ],
+   "src": "Facebook posts in Free Fridge Asheville, 16 and 24 Sep 2026 (Facebook deep scrape part 4, 6 Nov 2026)",
+   "note": "",
+   "new": true
   },
   {
    "id": "summer-meals",
@@ -9590,6 +9717,31 @@
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
    "new": false
+  },
+  {
+   "id": "merrimon-florist-free-clothing",
+   "n": "Merrimon Florist: free clothing, mostly women's, some men's",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "828-232-4474",
+   "em": "",
+   "w": "merrimonflorist.com",
+   "d": "Lots of free clothing, mostly women's with some men's: slightly used, in various sizes and styles. The post invites anyone who needs clothes to come in and take what they need, and to tell friends in need.",
+   "a": "329 Merrimon Ave, Asheville 28801",
+   "h": "Mon-Fri 9am-3:30pm",
+   "os": "4.2 Baby Gear, Clothing, School Supplies",
+   "t": "Free",
+   "lv": "",
+   "vb": "",
+   "sec": "VIII",
+   "needs": [
+    "VIII:*",
+    "VIII:12a"
+   ],
+   "src": "Facebook post in Buy Nothing: West Asheville / Candler, 5 Oct 2026 (Facebook deep scrape part 4, 6 Nov 2026), also shared by Skylar in chat, 6 Nov 2026; phone, ZIP code and website from the Asheville Chamber member directory (web.ashevillechamber.org) and regionaldirectory.us via web search, 6 Nov 2026",
+   "note": "Posted 5 October 2026 in a Buy Nothing group, so what is left changes from day to day. Call before sending a family.",
+   "new": true
   },
   {
    "id": "habitat-restore",
@@ -13545,6 +13697,31 @@
    "new": false
   },
   {
+   "id": "pregnancy-birth-postpartum-circle-forming",
+   "n": "Pregnancy, birth and postpartum circle (forming)",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "facebook.com/groups/954940164847197/permalink/3021244321550094/",
+   "d": "A local Ayurvedic postpartum doula and a colleague are starting a consistent circle of local women to go through pregnancy, birth and postpartum together.",
+   "a": "",
+   "h": "",
+   "os": "PART 9: PREGNANCY, BIRTH, POSTPARTUM",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*",
+    "X:2"
+   ],
+   "src": "Facebook post in Asheville Nanny & Childcare connection, 4 Oct 2026 (Facebook deep scrape part 4, 6 Nov 2026)",
+   "note": "Cost, place and dates are not in the post. Message the poster before suggesting it.",
+   "new": true
+  },
+  {
    "id": "clearway-autism-services",
    "n": "Clearway Autism Services",
    "pp": "Seph Bartholomew, BCBA",
@@ -14527,6 +14704,33 @@
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
    "new": false
+  },
+  {
+   "id": "free-monthly-dads-group-early-childhood",
+   "n": "Free monthly dads' group: early childhood and relationship-led parenting",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "facebook.com/groups/AshevilleNaturalMamas/permalink/28788559707464325/",
+   "d": "An intentional space for dads to build community around early childhood development and attachment, and to move from reactive to relationship-led parenting. Free, meets monthly; the next meeting was posted for 11 November 2026.",
+   "a": "",
+   "h": "Monthly; next meeting 11 Nov 2026",
+   "os": "IV. Caregiver Support",
+   "t": "Free",
+   "lv": "",
+   "vb": "",
+   "sec": "IV",
+   "needs": [
+    "IV:*",
+    "IV:4a",
+    "II:*",
+    "II:5a"
+   ],
+   "src": "Facebook post in Asheville Natural Mamas & Papas, 16 Oct 2026 (Facebook deep scrape part 3, 6 Nov 2026)",
+   "note": "The post does not name the host or the place. Message the poster through the link to ask where it meets.",
+   "new": true
   },
   {
    "id": "play-talk-grow-speech-feeding-aac-takes-medi",
