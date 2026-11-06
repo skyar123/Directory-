@@ -1,7 +1,7 @@
 import { useState, useMemo, useRef, useEffect } from "react";
 import {
   META, SECTIONS, SECBY, NEEDS, BASE, PEOPLE, PEOPLE_META,
-  CRA, CRA_SECTIONS, CHANGELOG, FOOD, TODAY, norm,
+  CRA, CRA_SECTIONS, CHANGELOG, FOOD, TODAY, norm, telHref,
 } from "./data.js";
 import { useStore } from "./storage.js";
 import { score } from "./search.js";
@@ -548,7 +548,7 @@ export default function App() {
                 <p className="tiny">{[p.role, p.org].filter(Boolean).join(" · ")}</p>
                 <div className="card-actions">
                   {p.ph && (
-                    <a className="act call" href={"tel:" + p.ph.replace(/[^0-9]/g, "").slice(0, 11)}>
+                    <a className="act call" href={telHref(p.ph)}>
                       <Icon name="phone" size={14} />{p.ph}
                     </a>
                   )}

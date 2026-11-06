@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { SECBY, NEEDBY, FIELDS } from "../data.js";
+import { SECBY, NEEDBY, FIELDS, telHref } from "../data.js";
 import { VerifyBadge, MissingBits, Field } from "./bits.jsx";
 import Icon from "./Icon.jsx";
 
@@ -37,7 +37,7 @@ export default function ResourceCard({ r, open, onToggle, onEdit, onVerify, show
 
       <div className="card-actions">
         {tel && (
-          <a className="act call" href={"tel:" + tel.replace(/[^0-9]/g, "")}>
+          <a className="act call" href={telHref(tel)}>
             <Icon name="phone" size={14} />{r.phone}
           </a>
         )}

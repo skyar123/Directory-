@@ -58,6 +58,17 @@ export const FOOD = foodFile;
 export const TODAY = new Date().toISOString().slice(0, 10);
 export const norm = (s) => (s || "").toLowerCase().replace(/[^a-z0-9 ]+/g, " ");
 
+/* the number a tel: link dials. A phone field can hold a second number after
+   "/" or ",", an extension, or a note like "(texts)", and running all of those
+   digits together dials a wrong number. So take the first number, from its
+   first digit to the first letter or note bracket after it. A bracketed area
+   code, as in "(253) 349-6925" or "1 (800) 555-1234", is part of the number. */
+export const telHref = (phone) => "tel:" + (phone || "")
+  .split(/[/,]/)[0]
+  .replace(/^\D+/, "")
+  .split(/[a-z]|\((?!\d{3}\))/i)[0]
+  .replace(/\D/g, "");
+
 /* fields the editor exposes, in the order they appear on a card */
 export const FIELDS = [
   ["phone", "Phone"], ["web", "Website"], ["email", "Email"], ["address", "Address"],
