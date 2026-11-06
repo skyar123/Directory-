@@ -141,7 +141,7 @@ export default function App() {
       ...(r.startHere && { start: true }),
       ...(r.readFirst && { readFirst: true }),
     })),
-  }, null, 1));
+  }, null, 1) + "\n"); /* data/resources.json ends with a newline too */
 
   const exportCra = () => download("community-resource-assessment.json", JSON.stringify({
     meta: {
