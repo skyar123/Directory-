@@ -32,11 +32,11 @@ a firewall as it does outside one.
 
 | File | What it holds |
 |---|---|
-| `data/resources.json` | 523 resources. Each carries `needs` (SNIFF question keys), `sec` (section), and `src` (where the fact came from). |
+| `data/resources.json` | 540 resources. Each carries `needs` (SNIFF question keys), `sec` (section), and `src` (where the fact came from). |
 | `data/sniff.json` | The 13 sections and the 119 SNIFF questions the directory is ordered by. |
-| `data/point-people.json` | 105 named humans, with how fast each one answers. |
+| `data/point-people.json` | 114 named humans, with how fast each one answers. |
 | `data/community-resource-assessment.json` | The 84 rows of the Child First Community Resource Assessment, crosswalked to SNIFF questions. |
-| `data/changelog.json` | Dead ends, changes in flight, and the 106 questions still open. |
+| `data/changelog.json` | Dead ends, changes in flight, and the 114 questions still open. |
 | `data/food-by-day.json` | The weekly pantry and free-meal schedule, by day. |
 | `src/` | The app. Reads the data, edits it, exports it back. |
 | `src/styles.css` | The whole design system: tokens at the top, then components. |
@@ -72,9 +72,11 @@ becoming a second copy.
 
 ## Check the dead ends before you refer anyone
 
-The **What changed** tab carries four services that are closed or unreachable
-but still listed by findhelp and other aggregators with working phone numbers.
-Trinity Place is the clearest case: closed since 2022, still published.
+The **What changed** tab carries five dead ends: services that are closed or
+unreachable, some still listed by findhelp and other aggregators with working
+phone numbers. Trinity Place is the clearest case: closed since 2022, still
+published. Closed services keep their rows here, renamed with CLOSED and a
+note, so a search lands on the warning rather than on nothing.
 
 ## Sections
 
@@ -106,3 +108,5 @@ remove them before sharing outside the team. `point-people.json` exports stamp
 - Community_Resource_Assessment_Form_2.docx (Child First Community Resource Assessment, Dec 2015)
 - Carolina Pediatric Therapy research doc pasted in chat, 24 Aug 2026 (cites carolinapeds.com)
 - Correspondence from listed organisations, read 28 Aug 2026 (see `src` on the rows it touched)
+- Nurse-Family Partnership community partner meeting notes, 6 Nov 2026, with facts beyond the notes checked by web search (`scripts/apply-nfp-meeting-2026-11-06.mjs`)
+- Facebook deep scrape parts 1 to 4 and two family weekend guides, 6 Nov 2026: family resources only, and nothing from the guides without a second source
