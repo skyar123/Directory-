@@ -132,6 +132,10 @@ export default function App() {
       ph: r.phone, em: r.email, w: r.web, d: r.detail, a: r.address, h: r.hours,
       os: r.origSection, t: r.tags, lv: r.verified, vb: r.verifiedBy,
       sec: r.sec, needs: r.needs, src: r.source, note: r.note, new: r.isNew,
+      /* data/ has these keys only on flagged rows. They drive the "Start
+         here" and "Read the note first" badges, which an export must keep */
+      ...(r.startHere && { start: true }),
+      ...(r.readFirst && { readFirst: true }),
     })),
   }, null, 1));
 
