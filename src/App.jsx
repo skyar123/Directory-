@@ -1,20 +1,23 @@
 import { useState, useMemo, useRef, useEffect } from "react";
 import {
   META, SECTIONS, SECBY, NEEDS, BASE, PEOPLE, PEOPLE_META,
-  CRA, CRA_SECTIONS, CHANGELOG, FOOD, TODAY, norm, telHref,
+  CRA, CRA_SECTIONS, CHANGELOG, FOOD, EVENTS, EVENTS_META, TODAY, norm, telHref,
 } from "./data.js";
 import { useStore } from "./storage.js";
 import { score } from "./search.js";
+import { arrange, soon, localToday } from "./events.js";
 import { Chip } from "./components/bits.jsx";
 import Icon, { Logo } from "./components/Icon.jsx";
 import ResourceCard from "./components/ResourceCard.jsx";
 import CraRow from "./components/CraRow.jsx";
+import EventCard from "./components/EventCard.jsx";
 
 const VIEWS = [
   ["find", "Find"],
   ["sniff", "By SNIFF question"],
   ["assessment", "Community assessment"],
   ["food", "Food by day"],
+  ["events", "Events"],
   ["changed", "What changed"],
   ["gaps", "What is missing"],
   ["people", "Point people"],
@@ -27,6 +30,8 @@ const RESP = {
   "👍 Responsive": ["Responsive", "resp-ok"],
   "⚪ Not tried yet": ["Not tried yet", "resp-none"],
 };
+
+const EVENT_KINDS = [["all", "Everything"], ["event", "Events"], ["due", "Deadlines and sign-ups"]];
 function RespBadge({ value }) {
   if (!value) return <span className="badge resp-unknown">Responsiveness unknown</span>;
   const [label, cls] = RESP[value] || [value.replace(/^[^\w]+/, ""), "resp-ok"];
@@ -43,6 +48,7 @@ export default function App() {
   const [openNeed, setOpenNeed] = useState("");
   const [craSec, setCraSec] = useState("I");
   const [foodDay, setFoodDay] = useState(FOOD.days[0].day);
+  const [evKind, setEvKind] = useState("all");
   const [toast, setToast] = useState("");
   const tabsRef = useRef(null);
 
@@ -211,6 +217,26 @@ export default function App() {
   }, []);
 
   const deadEnds = CHANGELOG.groups.find((g) => g.id === "dead-ends");
+
+  /* not memoised: the date has to be read on every render, or a tab left
+     open overnight would keep calling yesterday's events "Today" */
+  const evToday = localToday();
+  const evUpcoming = EVENTS.filter((e) => (e.end || e.date) >= evToday);
+  const evCounts = {
+    all: evUpcoming.length,
+    event: evUpcoming.filter((e) => e.kind === "event").length,
+    due: evUpcoming.filter((e) => e.kind !== "event").length,
+  };
+  const evPlan = arrange(
+    EVENTS.filter((e) => evKind === "all" || (evKind === "due") === (e.kind !== "event")), evToday);
+  const resById = useMemo(() => new Map(resources.map((r) => [r.id, r])), [resources]);
+
+  /* an event's "Open in the directory": the resource it links, found and
+     opened in the Find view with nothing else filtering it out */
+  const openResource = (r) => {
+    setQ(r.name); setSecFilter(""); setOnlyGaps(false); setOpenId(r.id); setView("find");
+    window.scrollTo(0, 0);
+  };
 
   return (
     <div className="wnc">
@@ -428,6 +454,50 @@ export default function App() {
               </div>
             </div>
           ))}
+        </section>
+      )}
+
+      {view === "events" && (
+        <section className="pane">
+          <p className="lede">
+            Events, deadlines and sign-ups for families, soonest first. Past ones fold away at the bottom.
+          </p>
+          <p className="handling">
+            Almost none of these has been verified, and dates and places move. Call before you send anyone.
+          </p>
+          <div className="filters">
+            {EVENT_KINDS.map(([id, label]) => (
+              <Chip key={id} active={evKind === id} onClick={() => setEvKind(id)}>
+                {label} <strong>{evCounts[id]}</strong>
+              </Chip>
+            ))}
+          </div>
+          {evPlan.months.map((m) => (
+            <div key={m.key} className="need-block">
+              <h2>{m.label}<span className="need-n">{m.items.length}</span></h2>
+              <div className="cards">
+                {m.items.map((e) => (
+                  <EventCard key={e.id} e={e} soon={soon(e, evToday)} resource={resById.get(e.rid)}
+                    onOpen={() => openResource(resById.get(e.rid))} />
+                ))}
+              </div>
+            </div>
+          ))}
+          {!evPlan.months.length && (
+            <p className="empty">Nothing coming up in this list. New dates go in data/events.json.</p>
+          )}
+          {!!evPlan.past.length && (
+            <details className="past">
+              <summary>Already happened <span className="need-n">{evPlan.past.length}</span></summary>
+              <div className="cards">
+                {evPlan.past.map((e) => (
+                  <EventCard key={e.id} e={e} soon="" resource={resById.get(e.rid)}
+                    onOpen={() => openResource(resById.get(e.rid))} />
+                ))}
+              </div>
+            </details>
+          )}
+          <p className="tiny src">{EVENTS_META.src}</p>
         </section>
       )}
 

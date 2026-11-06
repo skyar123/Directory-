@@ -38,6 +38,7 @@ a firewall as it does outside one.
 | `data/community-resource-assessment.json` | The 84 rows of the Child First Community Resource Assessment, crosswalked to SNIFF questions. |
 | `data/changelog.json` | Dead ends, changes in flight, and the 106 questions still open. |
 | `data/food-by-day.json` | The weekly pantry and free-meal schedule, by day. |
+| `data/events.json` | Events, deadlines and sign-ups by date, each with its source. The Events tab sorts them and folds past ones away. |
 | `src/` | The app. Reads the data, edits it, exports it back. |
 | `src/styles.css` | The whole design system: tokens at the top, then components. |
 | `scripts/` | The importers that built `data/`, kept so its provenance is reproducible. |
@@ -54,6 +55,12 @@ came from. `lv` is the date it was last verified and `vb` is who verified it.
 
 Edits live in the browser's localStorage until you export them. Clearing site
 data loses them, so export before you rely on them anywhere else.
+
+Events are not edited in the app. Add them to `data/events.json`: a `date`
+(YYYY-MM-DD), an `end` for a run of days or a sign-up window, a `kind` of
+event, deadline or signup, and a `src` like every other row. `rid` links the
+matching resource. Leave past events in: the Events tab moves them under
+"Already happened" by itself, so seasonal entries need no clean-up.
 
 ## Where the data came from
 

@@ -1,5 +1,5 @@
 /*
- * Loads the four data files and expands them into the shapes the UI uses.
+ * Loads the data files and expands them into the shapes the UI uses.
  * The JSON on disk stays close to what the workbook exports, so a diff of
  * data/ still reads like a list of facts that changed.
  */
@@ -9,6 +9,7 @@ import peopleFile from "../data/point-people.json";
 import craFile from "../data/community-resource-assessment.json";
 import changelogFile from "../data/changelog.json";
 import foodFile from "../data/food-by-day.json";
+import eventsFile from "../data/events.json";
 
 const DEEP = {
   I: "#B4552B", II: "#8F6A05", III: "#1E7A55", IV: "#1F5F9E", V: "#4A4BA8",
@@ -54,6 +55,8 @@ export const CRA = craFile.rows;
 
 export const CHANGELOG = changelogFile;
 export const FOOD = foodFile;
+export const EVENTS = eventsFile.events;
+export const EVENTS_META = eventsFile.meta;
 
 export const TODAY = new Date().toISOString().slice(0, 10);
 export const norm = (s) => (s || "").toLowerCase().replace(/[^a-z0-9 ]+/g, " ");
