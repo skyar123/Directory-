@@ -36,7 +36,7 @@ a firewall as it does outside one.
 | `data/sniff.json` | The 13 sections and the 119 SNIFF questions the directory is ordered by. |
 | `data/point-people.json` | 114 named humans, with how fast each one answers. |
 | `data/community-resource-assessment.json` | The 84 rows of the Child First Community Resource Assessment, crosswalked to SNIFF questions. |
-| `data/changelog.json` | Dead ends, changes in flight, and the 114 questions still open. |
+| `data/changelog.json` | Dead ends, changes in flight, and the 116 questions still open. |
 | `data/food-by-day.json` | The weekly pantry and free-meal schedule, by day. |
 | `src/` | The app. Reads the data, edits it, exports it back. |
 | `src/styles.css` | The whole design system: tokens at the top, then components. |
@@ -110,3 +110,4 @@ remove them before sharing outside the team. `point-people.json` exports stamp
 - Correspondence from listed organisations, read 28 Aug 2026 (see `src` on the rows it touched)
 - Nurse-Family Partnership community partner meeting notes, 6 Nov 2026, with facts beyond the notes checked by web search (`scripts/apply-nfp-meeting-2026-11-06.mjs`)
 - Facebook deep scrape parts 1 to 4 and two family weekend guides, 6 Nov 2026: family resources only, and nothing from the guides without a second source
+- Accuracy pass by web search, 6 Nov 2026 (`scripts/apply-accuracy-pass-2026-11-06.mjs`): rows confirmed against an official or the organisation's own source show `vb` "SB (web search)"

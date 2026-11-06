@@ -143,6 +143,12 @@
    "entries": [
     {
      "date": "Nov 6 2026",
+     "what": "Accuracy pass: wrong numbers fixed, gaps filled, crisis lines verified",
+     "detail": "Fixed: Bounty & Soul carried the YMCA mobile market's phone; ABCCM Our Daily Bread carried Swannanoa Valley Christian Ministry's; Kaleidoscope Play & Learn dialled Madison County Smart Start; Doulas of Asheville named a Raleigh-Durham business; MAHEC Ob/Gyn had the wrong building; two rows were tagged Medicaid against their own notes; hours cut off mid-word on eight rows; hours or phone numbers sitting in the address field on ten. Filled from sources: My Sister's Place's hotline, websites for 14 crisis and safety rows, and Raleigh contacts for the perinatal IOP. In all 84 rows changed: 7 more phones, 23 more websites, 28 more addresses, 47 more hours, and 11 rows verified for the first time. Checked and left alone: RHA's urgent care is still listed as 24/7 on RHA's newer pages. Organization pages could not be opened from this session, so facts came from web search; rows confirmed against an official or the organization's own source show 'verified by SB (web search)'.",
+     "source": "scripts/apply-accuracy-pass-2026-11-06.mjs"
+    },
+    {
+     "date": "Nov 6 2026",
      "what": "Nurse-Family Partnership partner meeting: new resources and contacts",
      "detail": "Added Lilac Health Asheville Birth & Wellness Center, Blue Ridge Healthy Families (7 counties), the MAHEC School Health Program, the library Preschool Outreach Program, the free WCU CATalyst Clinic in Clyde, Pisgah Legal health care access and enrollment, Goodwill Justice Navigation, YWCA Women's Empowerment, and buncombebreastfeed.org. Updated Project CARA, WIC (online referral form), Helpmate, Sistas Caring 4 Sistas, and All Souls Counseling (sliding scale down to $0, no insurance needed). Nine new point people: Caitlin Hettich, Morgan Kaelin, Co-kema King, Julie Burger, Taylor Brown, Abby Moser, Tangie Ballard Bowman, Shoshana Barton, Melissa Chambers. Facts beyond the meeting notes were checked by web search because organization pages could not be opened; each row's source says which.",
      "source": "NFP community partner meeting, 6 Nov 2026"
@@ -221,6 +227,24 @@
    "entries": [
     {
      "date": "OPEN",
+     "what": "May be gone or renamed: M.Y. Life Center, Perinatal Emotional Health Network, WNC Listening Line",
+     "detail": "M.Y. Life Center's mobile unit (828-637-0009) could not be found online at all. The Perinatal Emotional Health Network of WNC shows no activity since its 2011 blog. Henderson County lists the 'WNC Listening Line' number as the warm line of Love and Respect Community for Recovery and Wellness. Call each before sending a family, and mark it closed or rename it.",
+     "source": "Accuracy pass, web search 6 Nov 2026"
+    },
+    {
+     "date": "OPEN",
+     "what": "Asheville Lactation Consulting: which address?",
+     "detail": "The practice's own site gives 64 Peachtree Rd, Suite 30. A federal provider registry gives 573 Fairview Rd Ste 6 and 828-279-1735. The directory and the Liz Mills and Julie Holcomb point-people notes still say 573 Fairview Rd and 828-373-3345.",
+     "source": "Accuracy pass, web search 6 Nov 2026"
+    },
+    {
+     "date": "OPEN",
+     "what": "Phone numbers that rest on one source",
+     "detail": "Blue Ridge Healthy Families 828-682-5091 (an older article); Tranzmission 828-771-6955 (one fundraising listing); Swannanoa Valley Christian Ministry 828-669-9404 or 828-545-3948 (sources disagree); Buncombe Co-Responder Unit 828-250-6670 (not found anywhere). A quick call to each settles it.",
+     "source": "Accuracy pass, web search 6 Nov 2026"
+    },
+    {
+     "date": "OPEN",
      "what": "Sistas Caring for Children, or Sistas Caring 4 Sistas?",
      "detail": "The NFP meeting notes name 'Sistas Caring for Children' for doula support, with Co-kema King as contact and referral details still to be confirmed. Filed under Sistas Caring 4 Sistas, the local doula program. Confirm the name, Co-kema's role, and how to refer.",
      "source": "NFP community partner meeting, 6 Nov 2026"
@@ -254,12 +278,6 @@
      "what": "Lead: a free monthly dads' group",
      "detail": "A post in Asheville Natural Mamas & Papas (16 Oct 2026) describes a free monthly dads' group on early childhood development, attachment, and relationship-led parenting, next meeting 11 Nov. The host and place were not captured. The directory has nothing for fathers yet.",
      "source": "Facebook group post, 16 Oct 2026"
-    },
-    {
-     "date": "OPEN",
-     "what": "Lead: Casa de Apoyo Mutuo",
-     "detail": "Mutual aid group formed after Hurricane Helene: free food, essential resources, community gatherings, and El Mercadito food boxes with PODER Emma. No contact captured yet; worth its own row once someone reaches them.",
-     "source": "Flavors of The Hop Facebook group post, 3 Nov 2026"
     },
     {
      "date": "OPEN",
