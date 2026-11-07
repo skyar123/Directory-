@@ -15,7 +15,7 @@
   ],
   "file": "resources.json",
   "note": "One object per resource. `needs` are SNIFF question keys, `src` names where the fact came from.",
-  "count": 607
+  "count": 616
  },
  "sections": [
   {
@@ -839,7 +839,7 @@
    "ph": "828-250-5500",
    "em": "",
    "w": "buncombepfc.org/for-families/child-care-vouchers",
-   "d": "(Buncombe DSS): 40 Coxe Ave, 828-250-5500. State/federal vouchers, ages 0-12, for parents working or in school full-time; parents pay ~10% of gross monthly income. Also covers kinship and family-friend-neighbor care. 150+ participating programs. Expect waitlists; get on the list even mid-crisis. (The Dec 2025 federal funding freeze does NOT affect NC subsidies.)",
+   "d": "(Buncombe DSS): 40 Coxe Ave, 828-250-5500. State/federal vouchers, ages 0-12, for parents working or in school full-time; parents pay ~10% of gross monthly income. Also covers kinship and family-friend-neighbor care. 150+ participating programs. Expect waitlists; get on the list even mid-crisis. (The Dec 2025 federal funding freeze does NOT affect NC subsidies.) Per the Drive childcare guide: a decision is due within 30 days of a signed application; eligibility lasts 12 months; report a new job, address or household change within 5 working days; families with CPS, child welfare or foster care involvement pay no parent fee; and when income rises past the limit there is a 12-month phase-out instead of a cliff. A voucher can be used at any 4- or 5-star licensed program. Get on the list even while waiting, because some charities ask for proof of a pending application. Some centers charge the gap between the state rate and their price, so ask before enrolling. Monthly income limits for families with a child under 6 (Aug 2026 guide): 2 people $3,525, 3 $4,442, 4 $5,358, 5 $6,275.",
    "a": "40 Coxe Ave",
    "h": "",
    "os": "10.1 Paying for Childcare",
@@ -855,8 +855,8 @@
     "VIII:*",
     "VIII:9a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Drive: Free Childcare Leicester NC (14 Aug 2026)",
+   "note": "Sources disagree on who qualifies: this row says parents working or in school full time, while the Drive childcare guide (Aug 2026) says a parent looking for work, in job training, or with a child who has CPS involvement or developmental needs can qualify too. Ask DSS, and ask how long job-search care lasts.",
    "new": false
   },
   {
@@ -990,8 +990,8 @@
    "ph": "828-254-5302 / 828-254-5356",
    "em": "",
    "w": "",
-   "d": "(Leicester): 828-254-5302. Prioritizes foster and DSS-involved kids; ~$38.50/month parent fee with subsidy; free NC Pre-K slots; equine-assisted therapy; on-site counseling. Also daycare, after-school, summer camp (828-254-5356).",
-   "a": "",
+   "d": "(Leicester): 828-254-5302. Prioritizes foster and DSS-involved kids; ~$38.50/month parent fee with subsidy; free NC Pre-K slots; equine-assisted therapy; on-site counseling. Also daycare, after-school, summer camp (828-254-5356). Per the August childcare guide: 2 Compton Dr, West Asheville (about 15 to 20 minutes from Leicester), info@eliada.org; 5-star, babies through Pre-K; takes vouchers and is also a Head Start and NC Pre-K site.",
+   "a": "2 Compton Dr, Asheville, NC 28806",
    "h": "",
    "os": "10.2 Centers and Programs",
    "t": "Free, Kids / 0-5",
@@ -1008,7 +1008,7 @@
     "VIII:*",
     "VIII:3a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: Free & Low-Cost Childcare in Leicester & Buncombe County (family guide, checked Aug 2026)",
    "note": "",
    "new": false
   },
@@ -1262,7 +1262,7 @@
    "ph": "828-298-0808 / 828-348-7540",
    "em": "info@verneremail.org",
    "w": "verneremail.org",
-   "d": "(only Early Head Start provider in Buncombe, ages 0-3 plus expecting families): Verner East, 2586 Riceville Rd; Verner Central, 566 N Louisiana Ave. Enrollment 828-298-0808 / 828-348-7540, info@verneremail.org. Trauma-informed, subsidized, NC Pre-K, Rainbow in My Tummy nutrition, therapeutic classrooms.",
+   "d": "(only Early Head Start provider in Buncombe, ages 0-3 plus expecting families): Verner East, 2586 Riceville Rd; Verner Central, 566 N Louisiana Ave. Enrollment 828-298-0808 / 828-348-7540, info@verneremail.org. Trauma-informed, subsidized, NC Pre-K, Rainbow in My Tummy nutrition, therapeutic classrooms. Also, per the Drive childcare guides: Verner West in Candler; enrollment@verneremail.org. Classrooms run 8:30am-3pm Mon-Fri with breakfast, lunch and a snack. Free home-based Early Head Start: a teacher visits for about 90 minutes a week all year, at home or a library or park, plus family play groups with transportation. Eligibility is about the poverty line (about $32,150 a year for four), or automatic with SNAP, TANF, SSI, foster care or housing instability; the waitlist goes by need, not first come.",
    "a": "2586 Riceville Rd",
    "h": "",
    "os": "10.2 Centers and Programs",
@@ -1280,7 +1280,7 @@
     "II:4a",
     "II:8a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Drive: Free & Low-Cost Childcare in Leicester & Buncombe County (family guide, checked Aug 2026); Drive: Free Childcare Leicester NC (14 Aug 2026)",
    "note": "Sources disagree on the website: this row has verneremail.org, which is also the staff email domain, while the Public Edition (7 Nov 2026) lists vernerearlylearning.org.",
    "new": false
   },
@@ -1524,7 +1524,7 @@
    "ph": "828-723-0425",
    "em": "",
    "w": "eckerd.org/services/children-family-services/foster-care/caring-for-children-nc",
-   "d": "(CARING for Children): voluntary crisis placement, ages 0-10, up to 90 days, WITHOUT relinquishing custody, while a case manager helps the family stabilize (hospitalization, inpatient rehab, mental health crisis, short incarceration). 828-723-0425.",
+   "d": "(CARING for Children): voluntary crisis placement, ages 0-10, up to 90 days, WITHOUT relinquishing custody, while a case manager helps the family stabilize (hospitalization, inpatient rehab, mental health crisis, short incarceration). 828-723-0425. Free to families. Children keep going to their own school, and parents keep as much contact as they want. Also for housing loss and leaving domestic violence. A child's special needs do not rule them out if they are managed. Referral is a four-page intake form, usually faxed; the case manager visits within 72 hours of placement and weekly after.",
    "a": "225 E Chestnut St",
    "h": "",
    "os": "11.4 Respite",
@@ -1543,7 +1543,7 @@
     "VII:5a",
     "VII:6a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Drive: Angel's Watch Respite Care Guide, Asheville & WNC (30 Aug 2026)",
    "note": "",
    "new": false
   },
@@ -1792,7 +1792,7 @@
    "ph": "828-785-1590",
    "em": "AmyHobson@eckerd.org",
    "w": "eckerd.org",
-   "d": "funds respite childcare for Buncombe kids birth-18 with disability, chronic condition, or significant behavioral/medical needs. AmyHobson@eckerd.org / amy.hobson@caring4children.org, 828-785-1590.",
+   "d": "funds respite childcare for Buncombe kids birth-18 with disability, chronic condition, or significant behavioral/medical needs. AmyHobson@eckerd.org / amy.hobson@caring4children.org, 828-785-1590. How it works, per the guide: the parent picks the respite caregiver (18 or older and not living in the home, often someone the child already knows), pays them, sends a monthly timesheet by 9am on the last Monday, and is reimbursed by direct deposit. No work requirement. Apply with a W-9. 2026-27 application: scholarships run July 2026 to June 2027 for Buncombe and Henderson counties, for families of children with emotional, behavioral or medical needs or families facing risk factors. Send the application, a W-9 and the direct-deposit form with a voided check to the director. The money is for the caregiver to get a break: the application says it cannot pay for care during the parent's appointments, surgery or recovery, work, school or errands (that is child care), for camps or after-school programs, or for the parent's own outing costs. The whole amount goes to the respite provider.",
    "a": "",
    "h": "",
    "os": "11.4 Respite",
@@ -1813,8 +1813,8 @@
     "IX:8a",
     "RESPITE:*"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: Free Childcare Leicester NC (14 Aug 2026); Drive: Eckerd Respite Scholarship Application (2026-2027) and Parent Information Guide",
+   "note": "Contacts differ: this row has 828-785-1590 and AmyHobson@eckerd.org; the 2026-27 application gives the director's cell as 828-777-5715, fax 828-575-2049, and ahobson@eckerd.org; the August childcare guide gives 828-450-3943 for questions. Email ahobson@eckerd.org first.",
    "new": false
   },
   {
@@ -3856,7 +3856,7 @@
    "ph": "828-250-6750",
    "em": "",
    "w": "",
-   "d": "Black Mountain/Swannanoa, Enka-Candler, North Buncombe (Weaverville/Woodfin). Deviations up to 1/4 mile: call 828-250-6750 Option 1 by 5pm the day before.",
+   "d": "Black Mountain/Swannanoa, Enka-Candler, North Buncombe (Weaverville/Woodfin). Deviations up to 1/4 mile: call 828-250-6750 Option 1 by 5pm the day before. Enka-Candler route, per the August childcare guide: Highway 19-23 from the Goodwill on Smokey Park Highway to the TA Truck Stop, Mon-Fri about 6:15am-6:10pm; flag it anywhere on the route; connects to ART's W3 at the Goodwill park-and-ride. Wheelchair accessible; children ride with a parent.",
    "a": "",
    "h": "",
    "os": "PART 15: TRANSPORTATION",
@@ -3867,7 +3867,7 @@
    "needs": [
     "VIII:*"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: Free & Low-Cost Childcare in Leicester & Buncombe County (family guide, checked Aug 2026)",
    "note": "",
    "new": false
   },
@@ -3912,7 +3912,7 @@
    "ph": "828-250-5500 / 828-250-5592",
    "em": "",
    "w": "buncombenc.gov/414/Work-First-Family-Assistance",
-   "d": "(40 Coxe Ave, 828-250-5500): Work First/TANF cash assistance, SNAP, Medicaid, childcare subsidy, emergency assistance (828-250-5592).",
+   "d": "(40 Coxe Ave, 828-250-5500): Work First/TANF cash assistance, SNAP, Medicaid, childcare subsidy, emergency assistance (828-250-5592). Work First diversion, per the guide: a one-time lump-sum payment to get a family through a crisis, such as an eviction notice or a car breakdown, that threatens a job or training, instead of ongoing cash assistance. Ongoing Work First runs up to 24 months in a row (then a three-year wait), with a 60-month lifetime limit, and asks the parent to sign a plan for work or training.",
    "a": "40 Coxe Ave",
    "h": "",
    "os": "PART 16: MONEY, WORK, BENEFITS, TAXES",
@@ -3929,7 +3929,7 @@
     "X:*",
     "X:4"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Drive: Phlebotomy Training & Workforce Stipends Guide, Buncombe County (30 Aug 2026)",
    "note": "",
    "new": false
   },
@@ -3994,7 +3994,7 @@
    "ph": "828-298-9023",
    "em": "",
    "w": "goodwillnwnc.org",
-   "d": "workforce programs; A-B Tech career pathways (see 12.3). Goodwill also runs Justice Navigation Services for people involved with the justice system: see that entry (contact Melissa Chambers). At a Career Center, ask to meet with a Career Navigator. Goodwill's own services are free; partner courses may charge fees, with tuition help for people who qualify (Public Edition, 7 Nov 2026).",
+   "d": "workforce programs; A-B Tech career pathways (see 12.3). Goodwill also runs Justice Navigation Services for people involved with the justice system: see that entry (contact Melissa Chambers). At a Career Center, ask to meet with a Career Navigator. Goodwill's own services are free; partner courses may charge fees, with tuition help for people who qualify (Public Edition, 7 Nov 2026). Goodwill Career Center, 1616 Patton Ave (also an A-B Tech campus): free and open to anyone, walk in or call, no appointment, referral or experience needed; a Career Navigator makes a plan with you. Free resume help, coaching, interview practice, computers and Wi-Fi, job fairs, and virtual classes and job fairs from home. A-B Tech classes in the building need only a high school diploma: Nurse Assistant I (first step to CNA), Pharmacy Assistant, Medical Office and Billing/Coding (work-from-home friendly), Intro to Health Care Careers; A-B Tech classes at Goodwill: 828-398-7520. The Goodwill Outreach Scholarship Fund has paid tuition, books, uniforms, background checks and even child care during training; the Reset program adds support for ages 18 to 24.",
    "a": "1616 Patton Ave, Asheville 28806 (career center)",
    "h": "Career coaching Mon-Fri 9am-4pm (A-B Tech listing)",
    "os": "PART 16: MONEY, WORK, BENEFITS, TAXES",
@@ -4011,8 +4011,8 @@
     "X:*",
     "X:4"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Justice Navigation from Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes); career center phone, address and coaching hours from A-B Tech's Goodwill pages via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Goodwill NWNC official Programs & Services page (goodwillnwnc.org/programs-and-services), checked 7 Nov 2026",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Justice Navigation from Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes); career center phone, address and coaching hours from A-B Tech's Goodwill pages via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Goodwill NWNC official Programs & Services page (goodwillnwnc.org/programs-and-services), checked 7 Nov 2026; Drive: Phlebotomy Training & Workforce Stipends Guide, Buncombe County (30 Aug 2026); Drive: Goodwill Career Center Family Handout (29 Sep 2026)",
+   "note": "Hours differ: this row lists career coaching Mon-Fri 9am-4pm (A-B Tech listing); the Goodwill handout (Sep 2026) gives Mon-Thu 8am-5pm and Fri 8am-noon. Call to confirm.",
    "new": false
   },
   {
@@ -4080,7 +4080,7 @@
    "ph": "828-251-6200 / 828-920-6670",
    "em": "",
    "w": "",
-   "d": "48 Grove St (828-251-6200) and 339 New Leicester Hwy Suite 1 (828-920-6670). Mon-Fri 8:30am-5pm. Free computer access, resume help, interview coaching, job training funding, WNC Career Expo, \"Pass to Earn a Laptop\" digital skills program. Spanish-speaking staff.",
+   "d": "48 Grove St (828-251-6200) and 339 New Leicester Hwy Suite 1 (828-920-6670). Mon-Fri 8:30am-5pm. Free computer access, resume help, interview coaching, job training funding, WNC Career Expo, \"Pass to Earn a Laptop\" digital skills program. Spanish-speaking staff. WIOA training funds through NCWorks (at A-B Tech) can pay tuition, books and uniforms for short training, up to about $9,000. Categories include adult workers with low income or public assistance, dislocated workers, and displaced homemakers: a parent pushed back into work by divorce, a spouse's death or lost family income. Bring a birth certificate or passport, Social Security card, ID, proof of address, household size and highest education.",
    "a": "48 Grove St",
    "h": "Mon-Fri 8:30am-5pm",
    "os": "PART 16: MONEY, WORK, BENEFITS, TAXES",
@@ -4100,7 +4100,7 @@
     "X:*",
     "X:4"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: Phlebotomy Training & Workforce Stipends Guide, Buncombe County (30 Aug 2026)",
    "note": "",
    "new": false
   },
@@ -5149,7 +5149,7 @@
    "ph": "828-242-1559",
    "em": "info@southernequality.org",
    "w": "southernequality.org",
-   "d": "20 Oak St, Asheville, info@southernequality.org. Regional LGBTQ+ advocacy, the Southern Equality Fund, trans-health navigation, rapid-response support.",
+   "d": "20 Oak St, Asheville, info@southernequality.org. Regional LGBTQ+ advocacy, the Southern Equality Fund, trans-health navigation, rapid-response support. Its Trans Youth Emergency Project helps parents and guardians of transgender young people under 18 who have lost access to gender-affirming care find new providers and cover travel (southernequality.org/tyep).",
    "a": "20 Oak St",
    "h": "",
    "os": "19.3 LGBTQ+ Families and Youth",
@@ -5161,7 +5161,7 @@
     "X:*",
     "X:9"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: LGBTQIA2+ World Wide Resources (shared list, modified 4 Nov 2026), filtered to WNC and broadly applicable crisis lines",
    "note": "",
    "new": false
   },
@@ -6018,9 +6018,9 @@
    "ph": "",
    "em": "info@youthoutright.org",
    "w": "youthoutright.org",
-   "d": "youthoutright.org, @youth.outright. Ages 11-24. Advocacy, leadership, safe community space; helps queer youth find affirming housing and avoid non-affirming shelters (knowledge of safe couches and affirming landlords). Not an overnight shelter.",
+   "d": "youthoutright.org, @youth.outright. Ages 11-24. Advocacy, leadership, safe community space; helps queer youth find affirming housing and avoid non-affirming shelters (knowledge of safe couches and affirming landlords). Not an overnight shelter. Drop-in hours at the Youth Center for queer and trans youth 11 to 24, Fridays 3-6pm (per a shared LGBTQIA2+ resource list, Nov 2026; confirm). Mailing address PMB 128, 30 Westgate Pkwy, Asheville.",
    "a": "PMB 128, 30 Westgate Pkwy",
-   "h": "",
+   "h": "Youth Center drop-in Fridays 3-6pm (per the list; confirm)",
    "os": "19.3 LGBTQ+ Families and Youth",
    "t": "LGBTQ+ affirming | Verified 8/2026. Ages 11-24. Drop-in Wednesdays 3-6pm among posted hours.",
    "lv": "2026-08-01",
@@ -6030,7 +6030,7 @@
     "X:*",
     "X:9"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Drive: LGBTQIA2+ World Wide Resources (shared list, modified 4 Nov 2026), filtered to WNC and broadly applicable crisis lines",
    "note": "",
    "new": false
   },
@@ -10536,7 +10536,7 @@
    "ph": "828-239-3531",
    "em": "applications@haca.org",
    "w": "haca.org",
-   "d": "165 S French Broad Ave, 828-239-3531, haca.org. Public housing and Section 8 (online applications). The Family Self-Sufficiency (FSS) program provides case management that also unlocks a Working Wheels referral.",
+   "d": "165 S French Broad Ave, 828-239-3531, haca.org. Public housing and Section 8 (online applications). The Family Self-Sufficiency (FSS) program provides case management that also unlocks a Working Wheels referral. Apply online through the RENTCafe applicant portal (haca.org, Apply for Housing; register without a code). No internet or need an accommodation: the Admissions Office at 165 S French Broad Ave takes walk-ins Tuesdays 9am-5pm, appointments Mon, Wed and Thu. Expect a wait of up to about three years; keep the address and phone current in the portal, because a missed waitlist purge letter removes the family. Local preferences include homelessness and fleeing domestic violence. The guide says a 15-hour-a-week work or school rule applies from 2026-27 for adults who are not 62+, disabled, or the main caregiver of a child under 6; confirm with HACA. Once housed, the Family Self-Sufficiency (FSS) program puts rent increases from new earnings into an escrow savings account.",
    "a": "165 S French Broad Ave",
    "h": "",
    "os": "5.3 Affordable Housing and Vouchers",
@@ -10548,7 +10548,7 @@
     "VIII:*",
     "VIII:6a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Drive: HACA Housing Application & Family Stabilization Guide (30 Aug 2026)",
    "note": "",
    "new": false
   },
@@ -11691,7 +11691,7 @@
    "ph": "828-274-4744",
    "em": "",
    "w": "drjoshdentistry.com",
-   "d": "(Dr. Joshua Paynich): 11 Yorkshire St, Suite C. 828-274-4744. Mon-Thu 8am-4:30pm. Ages 1-18. Top pick for sensory-sensitive kids: laser dentistry means no needles/drill sensation; immediate appointments often available. Families report exceptional patience with anxious kids.",
+   "d": "(Dr. Joshua Paynich): 11 Yorkshire St, Suite C. 828-274-4744. Mon-Thu 8am-4:30pm. Ages 1-18. Top pick for sensory-sensitive kids: laser dentistry means no needles/drill sensation; immediate appointments often available. Families report exceptional patience with anxious kids. Getting in, per the guide: email the practice's new-patient questionnaire with the child's insurance; a coordinator decides who joins the waiting list, mostly children with no current dentist. Openings are offered by phone with two or three days' notice or the same day, and a family that misses or declines three offers comes off the list.",
    "a": "11 Yorkshire St, Suite C",
    "h": "Mon-Thu 8am-4:30pm",
    "os": "7.2 Pediatric Dental with Medicaid",
@@ -11705,7 +11705,7 @@
     "III:*",
     "III:3a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: Medicaid Dental Providers Guide, Buncombe County (30 Aug 2026)",
    "note": "",
    "new": false
   },
@@ -11990,7 +11990,7 @@
    "ph": "828-285-0622",
    "em": "",
    "w": "",
-   "d": "(FQHC): 257 Biltmore Ave, 828-285-0622. Children generally prioritized even when adult list is closed.",
+   "d": "(FQHC): 257 Biltmore Ave, 828-285-0622. Children generally prioritized even when adult list is closed. Dental, per the guide: the routine adult dental waitlist is closed to new patients except established WNCCHS medical patients, Ryan White program patients, and pregnant or postpartum patients, so pregnancy Medicaid is the window to get dental work done. Children's dental stays open. No emergency dental walk-ins; call for urgent triage.",
    "a": "257 Biltmore Ave",
    "h": "",
    "os": "7.2 Pediatric Dental with Medicaid",
@@ -12001,7 +12001,7 @@
    "needs": [
     "III:*"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: Medicaid Dental Providers Guide, Buncombe County (30 Aug 2026)",
    "note": "Sources disagree on the address: listings show both 154 and 257 Biltmore Ave. Confirm before sending a family.",
    "new": false
   },
@@ -12352,7 +12352,7 @@
    "ph": "828-254-5356",
    "em": "",
    "w": "",
-   "d": "on-campus counseling center, therapeutic services (828-254-5356).",
+   "d": "on-campus counseling center, therapeutic services (828-254-5356). Also, per the guide: short-term emergency respite (up to 14 days) with Vaya Health for ages 6 to 17 with Medicaid and a mental health or mild intellectual/developmental disability diagnosis; therapeutic and family foster care for children in DSS custody, birth to 21; psychiatric residential treatment; Eliada Academy day treatment on campus; and ESTA job training for youth aging out of foster care.",
    "a": "",
    "h": "",
    "os": "8.3 Child and Family Mental Health",
@@ -12365,7 +12365,7 @@
     "II:7a",
     "RESPITE:*"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: Angel's Watch Respite Care Guide, Asheville & WNC (30 Aug 2026), citing eliada.org and Vaya Health",
    "note": "",
    "new": false
   },
@@ -12815,7 +12815,7 @@
    "ph": "828-273-1377 / 828-254-1524",
    "em": "childandfamilyreferrals@rhanet.org",
    "w": "rhanet.org",
-   "d": "home-based dyadic (parent-child) treatment for ages 0-5 plus Family Resource Partner coordination. Referrals: childandfamilyreferrals@rhanet.org, 828-273-1377, fax 828-254-1524.",
+   "d": "home-based dyadic (parent-child) treatment for ages 0-5 plus Family Resource Partner coordination. Referrals: childandfamilyreferrals@rhanet.org, 828-273-1377, fax 828-254-1524. The flyer says families can call or text 828-273-1377 and covers Buncombe, Madison, Haywood, Henderson and Polk counties. Medicaid covers the service.",
    "a": "",
    "h": "",
    "os": "8.3 Child and Family Mental Health",
@@ -12831,8 +12831,8 @@
     "IV:*",
     "IV:3a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
-   "note": "The Public Edition (7 Nov 2026) links Children's Home Society of NC's Child First page (chsnc.org/programs-services/child-first). The referral route above is RHA's.",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Drive: Child First Program Flyer, Parent & Family Overview (30 Aug 2026)",
+   "note": "The Public Edition (7 Nov 2026) links Children's Home Society of NC's Child First page (chsnc.org/programs-services/child-first). The referral route above is RHA's. The program flyer gives childfirstnc@rhanet.org as its email; the referral address in this row is childandfamilyreferrals@rhanet.org. Ask which to use.",
    "new": false
   },
   {
@@ -14421,7 +14421,7 @@
    "ph": "1-800-962-9003",
    "em": "",
    "w": "medicaid.ncdhhs.gov/beneficiaries/1915i",
-   "d": "The services that replaced (b)(3) on 1 July 2023. Five of them: RESPITE, Community Living and Support, Individual and Transitional Support, Community Transition, and Supported Employment. The thing that makes this reachable is that 1915(i) does NOT require an institutional level of care, which Innovations does. Qualifying conditions are a serious mental health condition, a severe substance use disorder, an I/DD, or a TBI. Sitting on the Innovations Registry of Unmet Needs does not disqualify anyone, and using 1915(i) does NOT cost a family its place in that line. Being found eligible for 1915(i) also makes you eligible for Tailored Care Management. Call Vaya 1-800-962-9003 and ask the Tailored Care Manager for a 1915(i) independent assessment. It goes to the state; if eligible, the care manager writes the service into the care plan and submits it for prior authorisation.",
+   "d": "The services that replaced (b)(3) on 1 July 2023. Five of them: RESPITE, Community Living and Support, Individual and Transitional Support, Community Transition, and Supported Employment. The thing that makes this reachable is that 1915(i) does NOT require an institutional level of care, which Innovations does. Qualifying conditions are a serious mental health condition, a severe substance use disorder, an I/DD, or a TBI. Sitting on the Innovations Registry of Unmet Needs does not disqualify anyone, and using 1915(i) does NOT cost a family its place in that line. Being found eligible for 1915(i) also makes you eligible for Tailored Care Management. Call Vaya 1-800-962-9003 and ask the Tailored Care Manager for a 1915(i) independent assessment. It goes to the state; if eligible, the care manager writes the service into the care plan and submits it for prior authorisation. For children with severe medical needs or technology dependence, the CAP/C waiver counts only the child's income, not the parents'.",
    "a": "",
    "h": "",
    "os": "III. Child Health",
@@ -14435,7 +14435,7 @@
     "RESPITE:*",
     "RESPITE:more-of-what-your-medi"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: Free Childcare Leicester NC (14 Aug 2026)",
    "note": "",
    "new": false,
    "start": true
@@ -14718,8 +14718,8 @@
     "X:*",
     "X:2"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: My Village Respite Care Guide, Asheville & WNC (30 Aug 2026)",
+   "note": "The Drive respite guide (Aug 2026) says My Village Asheville used to be called Alongside Families. The Public Edition (Nov 2026) lists Alongside Families (alongsidefamilies.org) separately, as home visiting for immigrant and refugee families. Check which is current before referring.",
    "new": false
   },
   {
@@ -15510,7 +15510,7 @@
    "ph": "828-254-7206",
    "em": "tangela.bowman@ywcaofasheville.org",
    "w": "ywcaofasheville.org",
-   "d": "For women working toward economic security and well-being: free Empowerment Child Care, MotherLove (mentoring and support for teen parents), and Getting Ahead in a Just Gettin' By World. Clients call 828-254-7206 ext. 104. Director Tangie Ballard Bowman (email under Tangela) shared an upcoming event: TD Bank at the YWCA, Tue Nov 17, 2026, 6pm; the topic was not given.",
+   "d": "For women working toward economic security and well-being: free Empowerment Child Care, MotherLove (mentoring and support for teen parents), and Getting Ahead in a Just Gettin' By World. Clients call 828-254-7206 ext. 104. Director Tangie Ballard Bowman (email under Tangela) shared an upcoming event: TD Bank at the YWCA, Tue Nov 17, 2026, 6pm; the topic was not given. Empowerment Child Care, per the family guide checked Aug 2026: up to 12 free hours a week with income verification for parents in transition, in school or looking for work, at most 4 hours a day, Mon-Thu 8am-6pm; ext. 113 or ecc@ywcaofasheville.org; 185 S French Broad Ave. Pay-by-the-hour care is open to anyone, and staff help with case management and links to jobs, housing and school.",
    "a": "185 S French Broad Ave",
    "h": "",
    "os": "PART 16: MONEY, WORK, BENEFITS, TAXES",
@@ -15529,8 +15529,8 @@
     "X:2",
     "X:4"
    ],
-   "src": "Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes) (contacts, extension, event); program components from the YWCA of Asheville site and Mountain Xpress via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
-   "note": "",
+   "src": "Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes) (contacts, extension, event); program components from the YWCA of Asheville site and Mountain Xpress via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Drive: Free & Low-Cost Childcare in Leicester & Buncombe County (family guide, checked Aug 2026); Drive: Free Childcare Leicester NC (14 Aug 2026)",
+   "note": "Details differ: the August family guide says up to 12 free hours a week at ext. 113; an earlier Drive guide said 12 to 20 hours; this row's client line is ext. 104. Ask which applies.",
    "new": true
   },
   {
@@ -15985,10 +15985,10 @@
    "pp": "",
    "sp": "⚪ Not listed - ask",
    "spd": "Not stated in the source. Ask when you call.",
-   "ph": "",
+   "ph": "828-210-9622",
    "em": "",
    "w": "ymcawnc.org/programs/community/financial-assistance",
-   "d": "Income-based assistance for qualifying YMCA programs and memberships; confirm program-specific award terms.",
+   "d": "Income-based assistance for qualifying YMCA programs and memberships; confirm program-specific award terms. For child care aid, apply for the county subsidy first; the Y covers gaps after a denial or a long wait. Its rule asks for 30+ hours of work a week or full-time school, but a written explanation of extenuating circumstances (disability, crisis, caring full time for a relative's child) is reviewed case by case. With a membership, Child Watch gives up to 2 hours a day of drop-in care while the parent uses the Y, and Y-Access can bring a membership close to free. Child Watch at the downtown branch, 30 Woodfin St: 828-210-9622.",
    "a": "",
    "h": "",
    "os": "Public Edition: Family Activities & Enrichment",
@@ -16002,7 +16002,7 @@
     "VIII:*",
     "VIII:9a"
    ],
-   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details; Drive: Free & Low-Cost Childcare in Leicester & Buncombe County (family guide, checked Aug 2026); Drive: Free Childcare Leicester NC (14 Aug 2026)",
    "note": "",
    "new": true
   },
@@ -16816,8 +16816,8 @@
     "IV:*",
     "IV:3a"
    ],
-   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
-   "note": "",
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details; Drive: My Village Respite Care Guide, Asheville & WNC (30 Aug 2026)",
+   "note": "Sources disagree: the Drive respite guide (Aug 2026) gives Alongside Families as the former name of My Village Asheville, the church-based child-hosting ministry, while the Public Edition (Nov 2026) describes it as home visiting for immigrant and refugee families. Check alongsidefamilies.org before referring.",
    "new": true
   },
   {
@@ -17268,6 +17268,241 @@
     "I:11a"
    ],
    "src": "Buncombe County Family Resource Directory, Public Edition: LEAF official website (theleaf.org), checked 7 Nov 2026; Verified on official source; confirm current logistics",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "mountaincare-adult-day-services",
+   "n": "MountainCare adult day services",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "",
+   "d": "Nonprofit, state-licensed adult day centers in Buncombe and Henderson counties for older adults with physical or memory decline, including Alzheimer's and other dementias: nurses on site for health checks and medications, a hot lunch, music, crafts and exercise. Mountain Explorers is its day program for adults with intellectual and developmental disabilities. Daytime respite for a parent who is also caring for an older relative or an adult family member with a disability. Formerly Community CarePartners.",
+   "a": "First Baptist Church of Asheville campus, 5 Oak St, Asheville",
+   "h": "",
+   "os": "Drive: My Village Respite Care Guide",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "RESPITE",
+   "needs": [
+    "IV:*",
+    "IV:6a"
+   ],
+   "src": "Drive: My Village Respite Care Guide, Asheville & WNC (30 Aug 2026), citing MountainCare's 2024 move notice (agingresourceswnc.com) and Mountain Aging Partners",
+   "note": "The guide gives no phone or website, and the address is from a 2024 move. Confirm both before referring.",
+   "new": true
+  },
+  {
+   "id": "a-b-tech-phlebotomy-certificate",
+   "n": "A-B Tech Phlebotomy Certificate",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "abtech.edu/phlebotomy",
+   "d": "About 180 hours of class, lab and a supervised clinical rotation, preparing for national certification (NHA or ASCP). Start with the Introduction to Health Care Careers course; no healthcare experience needed. Needs: 18+, high school diploma or GED, photo ID and signed Social Security card, immunizations, a physician's form, background check and drug screen. The guide puts the total at about $655 (tuition $246, books, scrubs, onboarding $171, exam $145) before shots; STEP, NCWorks (WIOA), FAFSA (A-B Tech school code 004033) and Goodwill's Outreach Scholarship can cover it. Do not buy an onboarding package until the program gives you its site code.",
+   "a": "",
+   "h": "",
+   "os": "Drive: Phlebotomy Training & Workforce Stipends Guide",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "V",
+   "needs": [
+    "V:*",
+    "V:4a"
+   ],
+   "src": "Drive: Phlebotomy Training & Workforce Stipends Guide, Buncombe County (30 Aug 2026), citing abtech.edu/phlebotomy",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "step-more-than-a-job-nc-mtaj-nc-at-a-b-tech",
+   "n": "STEP / More Than a Job NC (MTAJ-NC) at A-B Tech",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "abtech.edu/program-finder/continuing-ed-workforce/mtaj-nc-more-job-nc/mtaj-nc-pathways",
+   "d": "Free training at A-B Tech in in-demand fields, continuing education or curriculum, for Buncombe residents under 60 who get Food and Nutrition Services (SNAP). Covers the course costs and helps with job placement after. A parent approved for SNAP qualifies.",
+   "a": "",
+   "h": "",
+   "os": "Drive: Phlebotomy Training & Workforce Stipends Guide",
+   "t": "Free",
+   "lv": "",
+   "vb": "",
+   "sec": "V",
+   "needs": [
+    "V:*",
+    "V:4a",
+    "V:8a"
+   ],
+   "src": "Drive: Phlebotomy Training & Workforce Stipends Guide, Buncombe County (30 Aug 2026), citing A-B Tech's MTAJ-NC pages",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "finish-line-grants-community-college-emergency-grants",
+   "n": "Finish Line Grants (community college emergency grants)",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "nccommunitycolleges.edu/students/paying-for-college/options-for-paying-for-college/finish-line-grants",
+   "d": "Up to $1,000 a semester for a community college student whose unexpected hardship (housing, medical, child care, a car repair) threatens finishing. At A-B Tech: at least halfway through the program, GPA 2.0+, in good standing, 18+, able to work in the US, with a plan for full-time work. Apply through A-B Tech Student Services.",
+   "a": "",
+   "h": "",
+   "os": "Drive: Phlebotomy Training & Workforce Stipends Guide",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "V",
+   "needs": [
+    "V:*",
+    "V:4a",
+    "VIII:*"
+   ],
+   "src": "Drive: Phlebotomy Training & Workforce Stipends Guide, Buncombe County (30 Aug 2026), citing the NC Community College System's Finish Line Grants page",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "trans-lifeline",
+   "n": "Trans Lifeline",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "877-565-8860",
+   "em": "",
+   "w": "translifeline.org",
+   "d": "Peer support hotline run by trans people for trans people: crisis support and connection to resources.",
+   "a": "",
+   "h": "24/7; operators guaranteed 10am-4am Eastern",
+   "os": "Drive: LGBTQIA2+ World Wide Resources",
+   "t": "Free, LGBTQ+ affirming",
+   "lv": "",
+   "vb": "",
+   "sec": "CRISIS",
+   "needs": [
+    "X:*",
+    "X:9",
+    "VII:*",
+    "VII:2a"
+   ],
+   "src": "Drive: LGBTQIA2+ World Wide Resources (shared list, modified 4 Nov 2026), filtered to WNC and broadly applicable crisis lines",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "lgbt-national-help-center",
+   "n": "LGBT National Help Center",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "888-843-4564 / youth 800-246-7743 / seniors 888-234-7243",
+   "em": "",
+   "w": "glbtnationalhelpcenter.org",
+   "d": "National hotline for all ages, a youth talkline, a senior hotline, and online peer-support chat.",
+   "a": "",
+   "h": "Online peer chat Mon-Fri 4pm-midnight, Sat noon-5pm (Eastern)",
+   "os": "Drive: LGBTQIA2+ World Wide Resources",
+   "t": "Free, LGBTQ+ affirming",
+   "lv": "",
+   "vb": "",
+   "sec": "CRISIS",
+   "needs": [
+    "X:*",
+    "X:9",
+    "VII:*",
+    "VII:2a"
+   ],
+   "src": "Drive: LGBTQIA2+ World Wide Resources (shared list, modified 4 Nov 2026), filtered to WNC and broadly applicable crisis lines",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "national-runaway-safeline",
+   "n": "National Runaway Safeline",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "800-786-2929",
+   "em": "",
+   "w": "1800runaway.org",
+   "d": "For young people who have run away or are thinking about it, and their families: advice, help finding shelter, transportation and counseling, and help returning home, with staff who will advocate and mediate.",
+   "a": "",
+   "h": "",
+   "os": "Drive: LGBTQIA2+ World Wide Resources",
+   "t": "Free",
+   "lv": "",
+   "vb": "",
+   "sec": "CRISIS",
+   "needs": [
+    "VII:*",
+    "VII:7a",
+    "VIII:*",
+    "VIII:6a"
+   ],
+   "src": "Drive: LGBTQIA2+ World Wide Resources (shared list, modified 4 Nov 2026), filtered to WNC and broadly applicable crisis lines",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "biltmore-avenue-family-dentistry",
+   "n": "Biltmore Avenue Family Dentistry",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "828-216-9531",
+   "em": "",
+   "w": "bafdentistry.com",
+   "d": "Private family dental practice near Mission Hospital.",
+   "a": "1 Hospital Dr, Suite 200, Asheville, NC 28801",
+   "h": "",
+   "os": "Drive: McDowell County Community Resource Guide 2026",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "VI",
+   "needs": [
+    "VI:*",
+    "III:*",
+    "III:3a"
+   ],
+   "src": "Drive: McDowell County Community Resource Guide 2026 (shared, modified 5 Oct 2026) for contact details; Drive: Medicaid Dental Providers Guide, Buncombe County (30 Aug 2026) for its Medicaid status",
+   "note": "Do not count on it for adult Medicaid: the Drive Medicaid dental guide (Aug 2026) says it is turning away new adult Medicaid patients because of space and staffing, and offering existing patients more out-of-pocket work. Call before sending anyone; for adults try AMH Dental's first-Monday booking or MAHEC's first-Friday line instead.",
+   "new": true
+  },
+  {
+   "id": "irene-wortham-early-learning-center",
+   "n": "Irene Wortham Early Learning Center",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "828-274-7518",
+   "em": "",
+   "w": "",
+   "d": "5-star inclusive early learning center where children with and without disabilities learn together: small classes, low ratios, therapists on site, ages 6 weeks through Pre-K. Takes child care vouchers. A good fit for a child with developmental needs.",
+   "a": "916 W Chapel Rd, Asheville",
+   "h": "",
+   "os": "Drive: Free & Low-Cost Childcare in Leicester & Buncombe County",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "I",
+   "needs": [
+    "I:*",
+    "I:7a",
+    "IX:*"
+   ],
+   "src": "Drive: Free & Low-Cost Childcare in Leicester & Buncombe County (family guide, checked Aug 2026)",
    "note": "",
    "new": true
   }
