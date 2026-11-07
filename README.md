@@ -33,7 +33,7 @@ a firewall as it does outside one.
 
 | File | What it holds |
 |---|---|
-| `data/resources.json` | 540 resources. Each carries `needs` (SNIFF question keys), `sec` (section), and `src` (where the fact came from). |
+| `data/resources.json` | 607 resources. Each carries `needs` (SNIFF question keys), `sec` (section), and `src` (where the fact came from). |
 | `data/sniff.json` | The 13 sections and the 119 SNIFF questions the directory is ordered by. |
 | `data/point-people.json` | 114 named humans, with how fast each one answers. |
 | `data/community-resource-assessment.json` | The 84 rows of the Child First Community Resource Assessment, crosswalked to SNIFF questions. |
@@ -141,3 +141,4 @@ remove them before sharing outside the team. `point-people.json` exports stamp
 - Nurse-Family Partnership community partner meeting notes, 6 Nov 2026, with facts beyond the notes checked by web search (`scripts/apply-nfp-meeting-2026-11-06.mjs`)
 - Facebook deep scrape parts 1 to 4 and two family weekend guides, 6 Nov 2026: family resources only, and nothing from the guides without a second source
 - Accuracy pass by web search, 6 Nov 2026 (`scripts/apply-accuracy-pass-2026-11-06.mjs`): rows confirmed against an official or the organisation's own source show `vb` "SB (web search)"
+- Buncombe County Family Resource Directory, Public Edition (workbook checked 7 Nov 2026; `scripts/export-public-edition.py`, then `scripts/import-public-edition-resources.cjs`). 110 of its 169 resources matched rows already here: they filled 37 blank fields and added the Public Edition to `src`. Where it disagrees with a row, the row keeps its own value and `note` names both. The other 59 are new rows. They keep the Public Edition's "confirm current details" status: no `lv`, and "Not stated in the source" where it says nothing about language access

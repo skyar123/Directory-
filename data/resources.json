@@ -10,11 +10,12 @@
    "Carolina Pediatric Therapy research doc pasted in chat, 24 Aug 2026 (cites carolinapeds.com)",
    "Nurse-Family Partnership community partner meeting notes, 6 Nov 2026",
    "Facebook deep scrape parts 1 to 4 and two family weekend guides, 6 Nov 2026 (family resources only; see scripts/apply-nfp-meeting-2026-11-06.mjs)",
-   "Accuracy pass by web search, 6 Nov 2026 (see scripts/apply-accuracy-pass-2026-11-06.mjs)"
+   "Accuracy pass by web search, 6 Nov 2026 (see scripts/apply-accuracy-pass-2026-11-06.mjs)",
+   "Buncombe County Family Resource Directory, Public Edition (169 resources checked 7 Nov 2026; mostly the Buncombe Partnership for Children family-resource directory, 16 from official sites)"
   ],
   "file": "resources.json",
   "note": "One object per resource. `needs` are SNIFF question keys, `src` names where the fact came from.",
-  "count": 540
+  "count": 607
  },
  "sections": [
   {
@@ -825,7 +826,7 @@
     "VIII:*",
     "VIII:9a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; SOAR rules and contact from ashevillenc.gov via web search, 6 Nov 2026; how to apply from ashevillenc.gov via web search, 6 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; SOAR rules and contact from ashevillenc.gov via web search, 6 Nov 2026; how to apply from ashevillenc.gov via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -837,7 +838,7 @@
    "spd": "Federally or publicly funded: a free qualified interpreter must be provided on request. Ask for one when you call.",
    "ph": "828-250-5500",
    "em": "",
-   "w": "",
+   "w": "buncombepfc.org/for-families/child-care-vouchers",
    "d": "(Buncombe DSS): 40 Coxe Ave, 828-250-5500. State/federal vouchers, ages 0-12, for parents working or in school full-time; parents pay ~10% of gross monthly income. Also covers kinship and family-friend-neighbor care. 150+ participating programs. Expect waitlists; get on the list even mid-crisis. (The Dec 2025 federal funding freeze does NOT affect NC subsidies.)",
    "a": "40 Coxe Ave",
    "h": "",
@@ -854,7 +855,7 @@
     "VIII:*",
     "VIII:9a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -866,7 +867,7 @@
    "spd": "Not stated in the source. Ask when you call.",
    "ph": "828-259-9717",
    "em": "",
-   "w": "",
+   "w": "childrenfirstcisbc.org",
    "d": "828-259-9717. Free after-school, summer programs, tutoring for K-5 in public housing communities and Emma.",
    "a": "",
    "h": "",
@@ -881,7 +882,7 @@
     "V:*",
     "V:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -943,8 +944,8 @@
     "VIII:*",
     "VIII:10a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "note": "Sources disagree on the sign-up page: this row points to Literacy Together (lit-together.org), while the Public Edition (7 Nov 2026) points to Buncombe Partnership for Children's page, buncombepfc.org/dpil.",
    "new": false
   },
   {
@@ -1118,8 +1119,8 @@
     "VII:*",
     "VII:4a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; openings from AVL Kids and Asheville Family Activities posts, 29 Oct 2026, Facebook deep scrape, 6 Nov 2026; BPFC main line and website from Asheville Chamber and directory listings, eligibility from a 2020 BPFC description, via web search, 6 Nov 2026",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; openings from AVL Kids and Asheville Family Activities posts, 29 Oct 2026, Facebook deep scrape, 6 Nov 2026; BPFC main line and website from Asheville Chamber and directory listings, eligibility from a 2020 BPFC description, via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "note": "Older flyers and search results conflict on days, sites, eligibility and breaks. Confirm the current schedule.",
    "new": false
   },
   {
@@ -1130,7 +1131,7 @@
    "spd": "Not stated in the source. Ask when you call.",
    "ph": "",
    "em": "",
-   "w": "",
+   "w": "kidsplaygarden.com/asheville",
    "d": "4 S Tunnel Rd. Drop-in up to 4 hours, no reservation; Parents' Night Out 2nd Saturdays.",
    "a": "4 S Tunnel Rd",
    "h": "",
@@ -1143,7 +1144,7 @@
     "IV:*",
     "IV:6a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -1180,7 +1181,7 @@
    "spd": "Not stated in the source. Ask when you call.",
    "ph": "877-752-5955 / 828-407-2066",
    "em": "",
-   "w": "",
+   "w": "buncombepfc.org/childcare",
    "d": "(CCR&R): 877-752-5955 / 828-407-2066. FREE referral line; they know who actually has openings. Henderson/Transylvania CCR&R: 828-698-0674; Madison: 828-689-1528.",
    "a": "",
    "h": "",
@@ -1195,7 +1196,7 @@
     "IV:*",
     "IV:1a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -1224,7 +1225,7 @@
     "VIII:*",
     "VIII:9a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -1279,8 +1280,8 @@
     "II:4a",
     "II:8a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "note": "Sources disagree on the website: this row has verneremail.org, which is also the staff email domain, while the Public Edition (7 Nov 2026) lists vernerearlylearning.org.",
    "new": false
   },
   {
@@ -1522,7 +1523,7 @@
    "spd": "Federally or publicly funded: a free qualified interpreter must be provided on request. Ask for one when you call.",
    "ph": "828-723-0425",
    "em": "",
-   "w": "",
+   "w": "eckerd.org/services/children-family-services/foster-care/caring-for-children-nc",
    "d": "(CARING for Children): voluntary crisis placement, ages 0-10, up to 90 days, WITHOUT relinquishing custody, while a case manager helps the family stabilize (hospitalization, inpatient rehab, mental health crisis, short incarceration). 828-723-0425.",
    "a": "225 E Chestnut St",
    "h": "",
@@ -1542,7 +1543,7 @@
     "VII:5a",
     "VII:6a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -1572,7 +1573,7 @@
     "IX:*",
     "IX:3a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -1696,7 +1697,7 @@
     "IX:11a",
     "IX:1a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -1778,7 +1779,7 @@
     "I:3a",
     "I:4a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -1824,7 +1825,7 @@
    "spd": "Not stated in the source. Ask when you call.",
    "ph": "828-251-6091",
    "em": "Gillan.Gallagher-Zapherson@dhhs.nc.gov",
-   "w": "",
+   "w": "ncdhhs.gov/divisions/child-and-family-well-being/north-carolina-infant-toddler-program-nc-itp",
    "d": "early intervention referral for hearing loss (828-251-6091).",
    "a": "2500 Heart Dr, Suite 100",
    "h": "",
@@ -1843,7 +1844,7 @@
     "X:*",
     "X:6"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -1999,7 +2000,7 @@
     "IX:*",
     "IX:3a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -2136,7 +2137,7 @@
     "IX:*",
     "IX:2a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -2461,7 +2462,7 @@
    "spd": "Federally or publicly funded: a free qualified interpreter must be provided on request. Ask for one when you call.",
    "ph": "828-253-1255",
    "em": "",
-   "w": "",
+   "w": "arcofbuncombecounty.org",
    "d": "828-253-1255. Respite, advocacy, after-school and summer programs, camps.",
    "a": "",
    "h": "",
@@ -2483,7 +2484,7 @@
     "X:*",
     "X:7"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -2558,7 +2559,7 @@
    "spd": "Telephonic interpretation on the member line",
    "ph": "1-800-962-9003",
    "em": "",
-   "w": "",
+   "w": "vayahealth.com",
    "d": "IDD Tailored Plan care coordination, 1-800-962-9003. Vaya Total Care members may get up to 12 non-medical round trips/year (groceries, WIC, legal aid).",
    "a": "",
    "h": "",
@@ -2581,7 +2582,7 @@
     "IX:8a",
     "RESPITE:*"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -2608,7 +2609,7 @@
     "IX:*",
     "IX:7a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -2835,7 +2836,7 @@
     "V:2a",
     "V:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -2943,7 +2944,7 @@
     "X:*",
     "X:8"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -3069,7 +3070,7 @@
    "spd": "Not stated in the source. Ask when you call.",
    "ph": "828-785-1590 / 828-723-0425",
    "em": "",
-   "w": "",
+   "w": "eckerd.org/services/children-family-services/foster-care/caring-for-children-nc",
    "d": "225 E Chestnut St / 1550 Hendersonville Rd Suite 202, 828-785-1590. Traditional and Therapeutic Foster Care licensing and support; Angel's Watch voluntary crisis respite (ages 0-10, up to 90 days, custody stays with the parent); Trinity Place Youth Shelter (ages ~10-17); residential group homes (16-18); Respite Scholarship Program; outpatient trauma therapy, assessments, parental coaching. Angel's Watch line: 828-723-0425.",
    "a": "225 E Chestnut St",
    "h": "",
@@ -3089,7 +3090,7 @@
     "VII:*",
     "VII:4a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -3251,7 +3252,7 @@
     "II:*",
     "II:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -3515,7 +3516,7 @@
    "spd": "Spanish pro se packets and Listen & Learn clinics",
    "ph": "1-866-219-5262",
    "em": "",
-   "w": "",
+   "w": "legalaidnc.org",
    "d": "statewide helpline 1-866-219-5262 (M-F, extended Mon/Thu evenings); Asheville office 20 Artful Way. Under 125% FPL. Triage priorities: DV safety (50B), homelessness prevention, custody for survivors, income preservation. Usually does NOT take divorce, alimony, or property division, but offers free virtual Listen & Learn clinics (custody, simple divorce) with complete pro se filing packets, translated into Spanish. Senior Law Project for 60+.",
    "a": "20 Artful Way",
    "h": "",
@@ -3532,8 +3533,8 @@
     "X:*",
     "X:3"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Legal Aid of North Carolina official office listing (legalaidnc.org), checked 7 Nov 2026",
+   "note": "Sources disagree on the office: the Public Edition (7 Nov 2026, from Legal Aid of NC's office list) names the Morganton office (211 E Union St, 828-437-8280 or 800-849-5195) as the one serving Buncombe, while this row lists an Asheville office at 20 Artful Way. Call the helpline to confirm which office takes the case.",
    "new": false
   },
   {
@@ -3619,7 +3620,7 @@
     "X:*",
     "X:3"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; health access contacts from Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes); hours, intake and eligibility from Pisgah Legal's 2025 legal aid brochure via web search, 6 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; health access contacts from Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes); hours, intake and eligibility from Pisgah Legal's 2025 legal aid brochure via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -3717,7 +3718,7 @@
    "spd": "Not stated in the source. Ask when you call.",
    "ph": "828-253-5691",
    "em": "",
-   "w": "",
+   "w": "ashevillenc.gov/department/transit",
    "d": "49 Coxe Ave, 828-253-5691. $1/ride. Mon-Sat 5:30am-10:30pm, Sun 8:30am-6:30pm. S3 and S6 cover the Hendersonville Rd/Arden corridor. Senior 65+ free monthly pass; discount passes for disability via ART Station. FREE rides to shelter on Code Purple nights (5:20-8pm out, 6-9:30am back).",
    "a": "49 Coxe Ave",
    "h": "Mon-Sat 5:30am-10:30pm, Sun 8:30am-6:30",
@@ -3731,7 +3732,7 @@
     "VIII:17a",
     "VIII:7a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -3786,7 +3787,7 @@
     "VIII:14a",
     "VIII:1a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -3828,7 +3829,7 @@
    "spd": "Federally or publicly funded: a free qualified interpreter must be provided on request. Ask for one when you call.",
    "ph": "828-250-6750",
    "em": "",
-   "w": "",
+   "w": "buncombenc.gov/605/Transportation",
    "d": "828-250-6750 (Option 5 for eligibility). ADA paratransit, demand-response county rides Mon-Sat 5:30am-7:30pm, Medicaid transport, RIDE vouchers for elderly/disabled (books of 10 at 25% of rate), Senior Bus Pass.",
    "a": "",
    "h": "Mon-Sat 5:30am-7:30pm, Medicaid transpo",
@@ -3842,7 +3843,7 @@
     "VIII:10a",
     "VIII:17a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -3898,7 +3899,7 @@
     "VIII:17a",
     "VIII:8a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Working Wheels official Vehicle Purchase Program page (workingwheelswnc.org/vehicle-purchase-program), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -3910,7 +3911,7 @@
    "spd": "Federally or publicly funded: a free qualified interpreter must be provided on request. Ask for one when you call.",
    "ph": "828-250-5500 / 828-250-5592",
    "em": "",
-   "w": "",
+   "w": "buncombenc.gov/414/Work-First-Family-Assistance",
    "d": "(40 Coxe Ave, 828-250-5500): Work First/TANF cash assistance, SNAP, Medicaid, childcare subsidy, emergency assistance (828-250-5592).",
    "a": "40 Coxe Ave",
    "h": "",
@@ -3928,7 +3929,7 @@
     "X:*",
     "X:4"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -3993,7 +3994,7 @@
    "ph": "828-298-9023",
    "em": "",
    "w": "goodwillnwnc.org",
-   "d": "workforce programs; A-B Tech career pathways (see 12.3). Goodwill also runs Justice Navigation Services for people involved with the justice system: see that entry (contact Melissa Chambers).",
+   "d": "workforce programs; A-B Tech career pathways (see 12.3). Goodwill also runs Justice Navigation Services for people involved with the justice system: see that entry (contact Melissa Chambers). At a Career Center, ask to meet with a Career Navigator. Goodwill's own services are free; partner courses may charge fees, with tuition help for people who qualify (Public Edition, 7 Nov 2026).",
    "a": "1616 Patton Ave, Asheville 28806 (career center)",
    "h": "Career coaching Mon-Fri 9am-4pm (A-B Tech listing)",
    "os": "PART 16: MONEY, WORK, BENEFITS, TAXES",
@@ -4010,7 +4011,7 @@
     "X:*",
     "X:4"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Justice Navigation from Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes); career center phone, address and coaching hours from A-B Tech's Goodwill pages via web search, 6 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Justice Navigation from Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes); career center phone, address and coaching hours from A-B Tech's Goodwill pages via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Goodwill NWNC official Programs & Services page (goodwillnwnc.org/programs-and-services), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -4223,7 +4224,7 @@
    "spd": "Bilingual storytimes at Enka-Candler and Skyland",
    "ph": "828-250-4700",
    "em": "",
-   "w": "",
+   "w": "buncombenc.gov/161/Libraries",
    "d": "free laptop + WiFi hotspot kits (unlimited data, adult cardholders, Microsoft Office loaded, data wiped on return); Playaway Launchpad kids' tablets (no internet, 14-day loan, hand-return, ~$150-195 replacement liability); Student Access: school ID doubles as a library card (opt-in each fall). Library WiFi reaches parking lots 24/7 (password: readmore). Pack Memorial (67 Haywood St, 828-250-4700) is \"the office of the people\": copies, scanners, word processing; personal archiving backpacks with flatbed scanners can be borrowed to scan documents for housing or benefits applications.",
    "a": "67 Haywood St",
    "h": "24/7",
@@ -4242,7 +4243,7 @@
     "X:*",
     "X:5"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -4612,7 +4613,7 @@
     "VII:4a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; openings from AVL Kids and Asheville Family Activities posts, 29 Oct 2026, Facebook deep scrape, 6 Nov 2026; BPFC main line and website from Asheville Chamber and directory listings, eligibility from a 2020 BPFC description, via web search, 6 Nov 2026",
-   "note": "",
+   "note": "Older flyers and search results conflict on days, sites, eligibility and breaks. Confirm the current schedule.",
    "new": false
   },
   {
@@ -4722,7 +4723,7 @@
     "V:*",
     "V:7a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -4834,7 +4835,7 @@
     "X:*",
     "X:8"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -5108,8 +5109,8 @@
     "X:*",
     "X:10"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "note": "The Public Edition (7 Nov 2026) links CIMA's Facebook page, facebook.com/cimawnc.",
    "new": false
   },
   {
@@ -5192,7 +5193,7 @@
     "X:*",
     "X:10"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -5253,7 +5254,7 @@
     "VIII:*",
     "VIII:15a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -5436,7 +5437,7 @@
     "ESPANOL:*",
     "ESPANOL:servicios-en-espanol-p"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -5760,7 +5761,7 @@
     "X:2",
     "X:8"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; winter openings from an SC4S availability post in Facebook groups, 5 Nov 2026; Co-kema King from Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes)",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; winter openings from an SC4S availability post in Facebook groups, 5 Nov 2026; Co-kema King from Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes); also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -5827,7 +5828,7 @@
    "ph": "828-771-6955",
    "em": "jasper@tranzmission.org",
    "w": "tranzmission.org",
-   "d": "jasper@tranzmission.org, @tranzmission_. Trans and nonbinary community org; Transformers and nonbinary/transfemme support groups (virtual and in person), Transwim at the JCC, Trans Table Tops game nights, and a clothing closet with chest binders; also distributes food via Instagram DM. Oct 2026: holding community town halls on what comes next for the organization after funding trouble (see What changed). The phone comes from one fundraising listing, so email is still the surer route.",
+   "d": "jasper@tranzmission.org, @tranzmission_. Trans and nonbinary community org; Transformers and nonbinary/transfemme support groups (virtual and in person), Transwim at the JCC, Trans Table Tops game nights, and a clothing closet with chest binders; also distributes food via Instagram DM. Oct 2026: holding community town halls on what comes next for the organization after funding trouble (see What changed). The phone comes from one fundraising listing, so email is still the surer route. Some groups are for supportive parents and caregivers (Public Edition, 7 Nov 2026).",
    "a": "37 Montford Ave, Suite 2, Asheville 28801",
    "h": "",
    "os": "19.3 LGBTQ+ Families and Youth",
@@ -5845,7 +5846,7 @@
     "X:*",
     "X:9"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; town halls from a QAX Facebook group post, 29 Oct 2026; address and phone from GiveOutDay and CauseIQ listings via web search, 6 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; town halls from a QAX Facebook group post, 29 Oct 2026; address and phone from GiveOutDay and CauseIQ listings via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Tranzmission official website (tranzmission.org), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -5925,7 +5926,7 @@
     "X:*",
     "X:8"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -6004,7 +6005,7 @@
     "X:*",
     "X:8"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -6029,7 +6030,7 @@
     "X:*",
     "X:9"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -6123,7 +6124,7 @@
     "X:*",
     "X:1"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -6150,7 +6151,7 @@
     "X:*",
     "X:1"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: NC 211 official website (nc211.org), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -6456,7 +6457,7 @@
     "ESPANOL:*",
     "ESPANOL:servicios-en-espanol-p"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -6950,7 +6951,7 @@
    "spd": "Interpreter access",
    "ph": "828-583-6733",
    "em": "",
-   "w": "",
+   "w": "wncchs.org",
    "d": "828-583-6733. Escala móvil, intérpretes, dental.",
    "a": "",
    "h": "",
@@ -6962,7 +6963,7 @@
    "needs": [
     "ESPANOL:*"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -7039,7 +7040,7 @@
     "IV:*",
     "IV:6a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -7309,7 +7310,7 @@
    "spd": "Not stated in the source. Ask when you call.",
    "ph": "",
    "em": "",
-   "w": "",
+   "w": "buncombenc.gov/395/Crisis-Intervention-Program",
    "d": "year-round until funds exhausted.",
    "a": "",
    "h": "",
@@ -7324,7 +7325,7 @@
     "X:*",
     "X:12"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -7835,7 +7836,7 @@
    "needs": [
     "CRISIS:*"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; official site confirmed via web search, 6 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; official site confirmed via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -7890,7 +7891,7 @@
     "VIII:18a",
     "VIII:8a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Buncombe County's Family Justice Center pages via web search, 6 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Buncombe County's Family Justice Center pages via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -8024,7 +8025,7 @@
     "VIII:16a",
     "VIII:8a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; shelter update, classes and professional consultation from Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes); bed counts from WLOS and SECU Foundation coverage via web search, 6 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; shelter update, classes and professional consultation from Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes); bed counts from WLOS and SECU Foundation coverage via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -8188,7 +8189,7 @@
     "VIII:*",
     "VIII:8a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; official site and text line confirmed via web search, 6 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; official site and text line confirmed via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -8216,7 +8217,7 @@
     "VII:2a",
     "VII:7a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; crisis line, business line, office and hours from ourvoicenc.org via web search, 6 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; crisis line, business line, office and hours from ourvoicenc.org via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -8441,7 +8442,7 @@
    "spd": "Not stated in the source. Ask when you call.",
    "ph": "828-232-2149",
    "em": "",
-   "w": "",
+   "w": "ashevillepovertyinitiative.org/12baskets",
    "d": "610 Haywood Rd. Coffee at 10, free lunch and free store 11am-1pm Mon/Tue/Thu/Fri; weekend brunches. Cafe model, rescued food, pay nothing. Tech Help Tuesdays 10:30am-12:30pm. 828-232-2149.",
    "a": "610 Haywood Rd",
    "h": "Tuesdays 10:30am-12:30pm",
@@ -8460,7 +8461,7 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -8595,8 +8596,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; office phone and address from Idealist and CauseIQ listings via web search, 6 Nov 2026; YMCA line identified from YMCA WNC mobile market schedules",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; office phone and address from Idealist and CauseIQ listings via web search, 6 Nov 2026; YMCA line identified from YMCA WNC mobile market schedules; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "note": "Sources disagree on the Fairview venue: the official schedule may show 99999 Rocket Dr while an older county guide lists 11 Rocket Dr. Use the current listing and call.",
    "new": false
   },
   {
@@ -8656,7 +8657,7 @@
    "spd": "Federally or publicly funded: a free qualified interpreter must be provided on request. Ask for one when you call.",
    "ph": "",
    "em": "",
-   "w": "",
+   "w": "buncombenc.gov/193/Community-Engagement",
    "d": "(County/MANNA/ABIPA): Swannanoa first Monday 4:30pm (Asheville Christian Academy) plus Aston Park and Fairview Library sites. No ID or income verification.",
    "a": "",
    "h": "Swannanoa: first Monday 4:30pm (Asheville Christian Academy); other sites vary",
@@ -8669,7 +8670,7 @@
     "VIII:*",
     "VIII:10a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; cut-off hours completed from the detail, 6 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; cut-off hours completed from the detail, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -9054,7 +9055,7 @@
    "needs": [
     "VIII:*"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -9151,7 +9152,7 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "Facebook posts in Free Fridge Asheville, 16 and 24 Sep 2026 (Facebook deep scrape part 4, 6 Nov 2026)",
+   "src": "Facebook posts in Free Fridge Asheville, 16 and 24 Sep 2026 (Facebook deep scrape part 4, 6 Nov 2026); also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": true
   },
@@ -9285,7 +9286,7 @@
     "X:*",
     "X:2"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; online referral form from Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes); 20-day follow-up from an NCDHHS WIC outreach newsletter via web search, 6 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; online referral form from Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes); 20-day follow-up from an NCDHHS WIC outreach newsletter via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -9369,7 +9370,7 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; November stops from Facebook event listings, Facebook deep scrape, 6 Nov 2026; phone, schedule page and stops from YMCA WNC mobile market schedule PDFs via web search, 6 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; November stops from Facebook event listings, Facebook deep scrape, 6 Nov 2026; phone, schedule page and stops from YMCA WNC mobile market schedule PDFs via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -9445,7 +9446,7 @@
     "VIII:11a",
     "VIII:12a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -9485,7 +9486,7 @@
     "VIII:4a",
     "VIII:8a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -9497,7 +9498,7 @@
    "spd": "Federally or publicly funded: a free qualified interpreter must be provided on request. Ask for one when you call.",
    "ph": "",
    "em": "",
-   "w": "",
+   "w": "buncombenc.gov/m/NewsFlash/Home/Detail/204",
    "d": "205 College St, 1st floor. Mon-Fri 8am-5pm. Free diapers, wipes, and formula, walk-in, take what you need (partnership with Babies Need Bottoms).",
    "a": "205 College St",
    "h": "Mon-Fri 8am-5pm",
@@ -9509,7 +9510,7 @@
    "needs": [
     "VIII:*"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -9521,7 +9522,7 @@
    "spd": "Not stated in the source. Ask when you call.",
    "ph": "",
    "em": "",
-   "w": "",
+   "w": "facebook.com/groups/136377012624",
    "d": "search \"Buy Nothing [your neighborhood]\" on Facebook or the BuyNothing app. Free gift economy. Also Asheville Mamas and AVL Kids Facebook groups for real-time formula availability, clothing swaps, and peer intel.",
    "a": "",
    "h": "",
@@ -9536,7 +9537,7 @@
     "VIII:*",
     "VIII:10a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -10013,7 +10014,7 @@
    "spd": "Not stated in the source. Ask when you call.",
    "ph": "828-259-5300 / 828-259-5302",
    "em": "",
-   "w": "",
+   "w": "abccm.org",
    "d": "(food + emergency financial aid; requires ID and proof of residence): Downtown 24 Cumberland Ave (828-259-5300); South/Arden 10 Buck Shoals Rd (828-259-5302, Mon-Fri 8:30-4:30); Hominy Valley 1914 Smokey Park Hwy, Candler (828-259-5301 / 828-670-1221); North 403 Weaverville Hwy (10am-2pm, 828-259-5303). If you lack documentation, use BeLoved, Bounty & Soul, or Food Connection instead.",
    "a": "24 Cumberland Ave",
    "h": "",
@@ -10030,7 +10031,7 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -10085,7 +10086,7 @@
     "VIII:6a",
     "VIII:7a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -10134,7 +10135,7 @@
    "needs": [
     "VIII:*"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; hours moved out of the address field, 6 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; hours moved out of the address field, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -10146,7 +10147,7 @@
    "spd": "Federally or publicly funded: a free qualified interpreter must be provided on request. Ask for one when you call.",
    "ph": "828-250-5592 / 828-250-5500",
    "em": "",
-   "w": "",
+   "w": "ncdhhs.gov/divisions/social-services/buncombe-county-health-human-services",
    "d": "828-250-5592; call center 828-250-5500.",
    "a": "",
    "h": "",
@@ -10162,7 +10163,7 @@
     "VIII:1a",
     "VIII:3a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -10226,7 +10227,7 @@
    "spd": "Not stated in the source. Ask when you call.",
    "ph": "828-252-2495",
    "em": "",
-   "w": "",
+   "w": "communityactionopportunities.org",
    "d": "(free): insulation, air sealing, HVAC repair for households below 200% FPL; priority to elderly, disabled, families with children. 828-252-2495, 25 Gaston St.",
    "a": "25 Gaston St",
    "h": "",
@@ -10240,7 +10241,7 @@
     "VIII:14a",
     "VIII:6a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -10547,7 +10548,7 @@
     "VIII:*",
     "VIII:6a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -10572,7 +10573,7 @@
     "VIII:*",
     "VIII:14a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -10622,7 +10623,7 @@
     "VIII:*",
     "VIII:6a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -10750,8 +10751,8 @@
     "IV:7a",
     "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; El Mercadito from a Facebook group post, 3 Nov 2026, Facebook deep scrape, 6 Nov 2026; El Mercadito attribution corrected and website taken from the Colaborativa La Milpa rows, 6 Nov 2026",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; El Mercadito from a Facebook group post, 3 Nov 2026, Facebook deep scrape, 6 Nov 2026; El Mercadito attribution corrected and website taken from the Colaborativa La Milpa rows, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "note": "Sources disagree on the website: the Public Edition (7 Nov 2026) lists PODER Emma's own site, poderemma.org.",
    "new": false
   },
   {
@@ -10865,7 +10866,7 @@
    "spd": "Not stated in the source. Ask when you call.",
    "ph": "828-253-4723",
    "em": "",
-   "w": "",
+   "w": "salvationarmyusa.org/nc/asheville/haywood-rd-corps",
    "d": "828-253-4723.",
    "a": "",
    "h": "",
@@ -10879,7 +10880,7 @@
     "VIII:1a",
     "VIII:7a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -10891,7 +10892,7 @@
    "spd": "Not stated in the source. Ask when you call.",
    "ph": "828-253-4723",
    "em": "",
-   "w": "",
+   "w": "salvationarmyusa.org/nc/asheville/haywood-rd-corps",
    "d": "204 Haywood St, 828-253-4723. Same safety note applies.",
    "a": "204 Haywood St",
    "h": "",
@@ -10904,7 +10905,7 @@
     "VII:*",
     "VII:7a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -10967,7 +10968,7 @@
    "spd": "Not stated in the source. Ask when you call.",
    "ph": "828-398-6920",
    "em": "",
-   "w": "",
+   "w": "abccm.org",
    "d": "30 Olin Haven Way, 828-398-6920 (call Tuesdays for waitlist). Women, mothers with children (kids stay with mom), female veterans. Transitional case-management model; new 36-bed emergency wing for women and children. Faith-based; verify current protocols for trans women before referral.",
    "a": "30 Olin Haven Way",
    "h": "",
@@ -10982,7 +10983,7 @@
     "VIII:13a",
     "VIII:7a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -11132,7 +11133,7 @@
    "spd": "Federally or publicly funded: a free qualified interpreter must be provided on request. Ask for one when you call.",
    "ph": "828-257-4745",
    "em": "",
-   "w": "",
+   "w": "appalachianmountainhealth.org",
    "d": "Dale Fell Health Center, 7 McDowell St (828-257-4745). FQHC sliding scale; sites in Leicester, Sylva, Robbinsville, Murphy. Mobile walk-in clinic: Mondays at Salvation Army; 1st/3rd Tue at Compass Point; 2nd/4th Tue at Transformation Village.",
    "a": "7 McDowell St",
    "h": "",
@@ -11152,7 +11153,7 @@
     "VIII:12a",
     "VIII:1a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -11164,7 +11165,7 @@
    "spd": "Interpreters available",
    "ph": "828-698-2979 / 828-692-4289",
    "em": "",
-   "w": "",
+   "w": "brchs.com",
    "d": "(FQHC): 2579 Hendersonville Rd, 828-698-2979 (dental bus 828-692-4289). Primary care, behavioral health, pediatric dental, nutrition. Medicaid, Medicare, all major plans, sliding scale; nobody turned away. Mon-Fri 8am-5pm (closed 12-1). Closest safety net for South Buncombe. Also runs school-based health centers.",
    "a": "2579 Hendersonville Rd",
    "h": "Mon-Fri 8am-5pm (closed 12-1)",
@@ -11186,7 +11187,7 @@
     "VI:*",
     "VI:1a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -11263,7 +11264,7 @@
    "spd": "Interpreters available",
    "ph": "828-257-4730 / 828-771-5500",
    "em": "",
-   "w": "",
+   "w": "mahec.net",
    "d": "Family Health teaching clinics at 121/123 Hendersonville Rd (828-257-4730; heavy Medicaid), six family health centers across Buncombe, ob/gyn (828-771-5500), dental, psychiatry. Sliding scale. Serves 16 counties.",
    "a": "123 Hendersonville Rd",
    "h": "",
@@ -11281,7 +11282,7 @@
     "VII:*",
     "VII:3a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -11318,7 +11319,7 @@
    "spd": "Federally or publicly funded: a free qualified interpreter must be provided on request. Ask for one when you call.",
    "ph": "",
    "em": "",
-   "w": "",
+   "w": "ncdhhs.gov",
    "d": "Buncombe DSS or ePASS. Expansion covers a single adult to roughly $1,800/month income, family of three to roughly $3,065/month. Vaya Health manages the Behavioral Health/IDD Tailored Plan.",
    "a": "",
    "h": "",
@@ -11333,7 +11334,7 @@
     "VI:*",
     "VI:4a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -11508,7 +11509,7 @@
    "spd": "Interpreter access",
    "ph": "828-285-0622 / 828-583-6733",
    "em": "",
-   "w": "",
+   "w": "wncchs.org/minnie-jones",
    "d": "(FQHC): 257 Biltmore Ave, 828-285-0622 (system line 828-583-6733). Sliding scale primary care, behavioral health, dental; prioritizes children and OB patients; gender-affirming care; interpreter access. Walk-in Mon-Fri 9-11:30am and 1-4pm. Also a Marion site: 136 Creekview Ct.",
    "a": "257 Biltmore Ave",
    "h": "Mon-Fri 9-11:30am and 1-4pm",
@@ -11521,8 +11522,8 @@
     "VI:*",
     "VI:1a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "note": "Sources disagree on the address: listings show both 154 and 257 Biltmore Ave. Confirm before sending a family.",
    "new": false
   },
   {
@@ -12001,7 +12002,7 @@
     "III:*"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "note": "Sources disagree on the address: listings show both 154 and 257 Biltmore Ave. Confirm before sending a family.",
    "new": false
   },
   {
@@ -12144,7 +12145,7 @@
     "VII:4a",
     "VII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; shout-out at Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes); services and fees corroborated by Asheville Chamber, Diocese of WNC and Mountain Xpress profiles and a 2023 990 summary via web search, 6 Nov 2026; listed in AVL Kids' Facebook \"Resource Rundown\", 5 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; shout-out at Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes); services and fees corroborated by Asheville Chamber, Diocese of WNC and Mountain Xpress profiles and a 2023 990 summary via web search, 6 Nov 2026; listed in AVL Kids' Facebook \"Resource Rundown\", 5 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -12236,7 +12237,7 @@
    "spd": "Not stated in the source. Ask when you call.",
    "ph": "",
    "em": "",
-   "w": "",
+   "w": "buncombepfc.org/for-families/circle-of-security",
    "d": "parenting groups (via Buncombe Partnership for Children) and Under Wing Therapeutic Services (in-person/virtual parent-child work).",
    "a": "",
    "h": "",
@@ -12252,7 +12253,7 @@
     "IV:3a",
     "IV:4a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -12418,7 +12419,7 @@
     "IX:1a",
     "IX:6a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -12430,7 +12431,7 @@
    "spd": "Multilingual mental health professionals",
    "ph": "828-225-3100",
    "em": "",
-   "w": "",
+   "w": "fpcscorp.com",
    "d": "828-225-3100. Also runs Enhanced Support Services deploying multilingual mental health professionals for children with ASD/IDD in home and school.",
    "a": "",
    "h": "",
@@ -12447,7 +12448,7 @@
     "IV:*",
     "IV:3a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -12459,7 +12460,7 @@
    "spd": "Not stated in the source. Ask when you call.",
    "ph": "828-213-0047",
    "em": "",
-   "w": "",
+   "w": "missionhealth.org/locations/mission-hospital/for-patients/family-support-network",
    "d": "11 Vanderbilt Park Dr, 828-213-0047. Peer support for NICU, disability, and special-needs parenting.",
    "a": "11 Vanderbilt Park Dr",
    "h": "",
@@ -12474,7 +12475,7 @@
     "IV:4a",
     "IV:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -12742,7 +12743,7 @@
     "VII:*",
     "VII:3a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -12767,7 +12768,7 @@
     "VII:*",
     "VII:3a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -12830,8 +12831,8 @@
     "IV:*",
     "IV:3a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "note": "The Public Edition (7 Nov 2026) links Children's Home Society of NC's Child First page (chsnc.org/programs-services/child-first). The referral route above is RHA's.",
    "new": false
   },
   {
@@ -12884,7 +12885,7 @@
     "IV:*",
     "IV:4a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; website via web search, 6 Nov 2026; RHA's newer pages still say 24/7/365 (an hours cut announced for March 2020 was reversed)",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; website via web search, 6 Nov 2026; RHA's newer pages still say 24/7/365 (an hours cut announced for March 2020 was reversed); also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -12920,7 +12921,7 @@
    "spd": "Federally or publicly funded: a free qualified interpreter must be provided on request. Ask for one when you call.",
    "ph": "828-333-7850",
    "em": "",
-   "w": "",
+   "w": "riverofhopenc.org",
    "d": "psychiatric medication management with Medicaid (see above).",
    "a": "",
    "h": "",
@@ -12933,7 +12934,7 @@
     "VII:*",
     "VII:3a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -13029,7 +13030,7 @@
    "spd": "Not stated in the source. Ask when you call.",
    "ph": "828-552-3858",
    "em": "",
-   "w": "",
+   "w": "sunriseinasheville.org",
    "d": "209 Tunnel Rd, 828-552-3858. Peer support, drop-in center.",
    "a": "209 Tunnel Rd",
    "h": "",
@@ -13045,7 +13046,7 @@
     "VII:*",
     "VII:6a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -13171,7 +13172,7 @@
    "spd": "Federally or publicly funded: a free qualified interpreter must be provided on request. Ask for one when you call.",
    "ph": "828-827-7239",
    "em": "",
-   "w": "",
+   "w": "traumatherapync.com",
    "d": "5 Ravenscroft Dr, 828-827-7239. Takes Vaya Medicaid; free 15-minute consult; telehealth. David Wilder, LCMHC (trauma, stress, shutdown patterns, ACT, therapy dog). Katarina Wittekind, LCSW (somatic body-based trauma work, grief, caregiver exhaustion). Sarah Anderson, LCMHCS.",
    "a": "5 Ravenscroft Dr",
    "h": "",
@@ -13189,7 +13190,7 @@
     "VIII:*",
     "VIII:2a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -13217,7 +13218,7 @@
     "VII:1a",
     "VII:2a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -13327,7 +13328,7 @@
     "X:*",
     "X:2"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; owner and related agency from event listings and a speaker profile via web search, 6 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; owner and related agency from event listings and a speaker profile via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false
   },
@@ -14771,7 +14772,7 @@
     "IX:*",
     "IX:4a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address and hours moved out of the detail, 6 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address and hours moved out of the detail, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": false,
    "start": true
@@ -15360,8 +15361,8 @@
     "X:*",
     "X:2"
    ],
-   "src": "Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes) (contact); counties from the NCDHHS Healthy Families site list (July 2025) and Mitchell News via web search, 6 Nov 2026; older phone and county inbox from Mitchell News and a Smart Start directory via web search, 6 Nov 2026",
-   "note": "",
+   "src": "Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes) (contact); counties from the NCDHHS Healthy Families site list (July 2025) and Mitchell News via web search, 6 Nov 2026; older phone and county inbox from Mitchell News and a Smart Start directory via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "note": "Sources disagree on the website: the Public Edition (7 Nov 2026) lists brhealthyfamilies.org.",
    "new": true
   },
   {
@@ -15528,7 +15529,7 @@
     "X:2",
     "X:4"
    ],
-   "src": "Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes) (contacts, extension, event); program components from the YWCA of Asheville site and Mountain Xpress via web search, 6 Nov 2026",
+   "src": "Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes) (contacts, extension, event); program components from the YWCA of Asheville site and Mountain Xpress via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": true
   },
@@ -15582,7 +15583,7 @@
     "X:*",
     "X:11"
    ],
-   "src": "Buncombe County ZOOM Pass page (buncombenc.gov/315) via web search, 6 Nov 2026; flagged by a family weekend guide shared 6 Nov 2026; address and hours from the program description already in the row, 6 Nov 2026",
+   "src": "Buncombe County ZOOM Pass page (buncombenc.gov/315) via web search, 6 Nov 2026; flagged by a family weekend guide shared 6 Nov 2026; address and hours from the program description already in the row, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
    "new": true
   },
@@ -15770,6 +15771,1503 @@
     "IX:9a"
    ],
    "src": "saved Facebook item, Facebook deep scrape, 6 Nov 2026",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "books-alive-with-ms-ann",
+   "n": "Books Alive with Ms. Ann",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "facebook.com/BooksAlivewithMsAnn",
+   "d": "Interactive early-literacy performances using storytelling, puppets, and music, online and in person.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Literacy & Learning",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "I",
+   "needs": [
+    "I:*",
+    "I:8a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "amerihealth-caritas-nc",
+   "n": "AmeriHealth Caritas NC: Wellness & Opportunity Centers",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "amerihealthcaritasnc.com/community/wellness-and-opportunity-centers",
+   "d": "Free cooking, fitness, and life-skills classes at Wellness & Opportunity Centers.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Health, Development & Home Visiting",
+   "t": "Free",
+   "lv": "",
+   "vb": "",
+   "sec": "VI",
+   "needs": [
+    "VI:*",
+    "VI:4a",
+    "V:*",
+    "V:3a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "families-in-recovery-supporting-treatment",
+   "n": "FIRST (Families in Recovery Supporting Treatment)",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "fifnc.org/programs",
+   "d": "Support for families affected by substance use, helping parents maintain safe and stable environments for children.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Health, Development & Home Visiting",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "VII",
+   "needs": [
+    "VII:*",
+    "VII:6a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "la-leche-league-of-buncombe-county-asheville",
+   "n": "La Leche League of Buncombe County / Asheville: Infant-feeding peer support",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "lllpinesandpalmettos.org/2024/08/07/lll-of-buncombe-county-asheville-meeting-schedule",
+   "d": "Volunteer-led breastfeeding and chestfeeding support, meetings, one-to-one guidance, and evidence-based information.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Health, Development & Home Visiting",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*",
+    "X:2"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "The group's schedule page is dated 2024 and has a malformed end time. Confirm the 2026-27 meetings before sending a family.",
+   "new": true
+  },
+  {
+   "id": "birthstone-center-for-appalachian-perinatal-resilience",
+   "n": "Birthstone Center for Appalachian Perinatal Resilience: Perinatal support",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "birthstonecenter.org",
+   "d": "Doula care, childbirth education, peer support, lactation and mental-health resources with a focus on resilience and reducing disparities.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Health, Development & Home Visiting",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*",
+    "X:2"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "bilingual-birdies",
+   "n": "Bilingual Birdies: Spanish-English early language classes",
+   "pp": "",
+   "sp": "🟡 Bilingual staff",
+   "spd": "The classes are taught in Spanish and English.",
+   "ph": "",
+   "em": "",
+   "w": "bilingualbirdies.com",
+   "d": "Early-language classes for babies and young children using music and movement.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Family Activities & Enrichment",
+   "t": "Kids / 0-5, Spanish / bilingual",
+   "lv": "",
+   "vb": "",
+   "sec": "I",
+   "needs": [
+    "I:*",
+    "I:8a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "asheville-parks-recreation",
+   "n": "Asheville Parks & Recreation: City recreation programs",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "ashevillenc.gov/department/parks-recreation",
+   "d": "City recreation classes, sports, camps, and family programs.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Family Activities & Enrichment",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "I",
+   "needs": [
+    "I:*",
+    "I:11a",
+    "X:*",
+    "X:11"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "ymca-of-wnc-classes-camps-sports-and-youth-programs",
+   "n": "YMCA of WNC: Classes, camps, sports, and youth programs",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "ymcawnc.org",
+   "d": "Family and youth programs across WNC; financial assistance available for qualifying households.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Family Activities & Enrichment",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "I",
+   "needs": [
+    "I:*",
+    "I:10a",
+    "I:11a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "ymca-of-wnc-financial-assistance",
+   "n": "YMCA of WNC: Financial assistance",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "ymcawnc.org/programs/community/financial-assistance",
+   "d": "Income-based assistance for qualifying YMCA programs and memberships; confirm program-specific award terms.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Family Activities & Enrichment",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "I",
+   "needs": [
+    "I:*",
+    "I:11a",
+    "VIII:*",
+    "VIII:9a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "asheville-poverty-initiative",
+   "n": "Asheville Poverty Initiative: Community and economic-justice programs",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "ashevillepovertyinitiative.org",
+   "d": "Food-security, economic-justice, and resource-access work for low-income Asheville families.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Family Support & Supplies",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "VIII:*",
+    "X:*"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "family-forward-nc",
+   "n": "Family Forward NC: Family-friendly workplace resources",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "familyforwardnc.com",
+   "d": "Information and support for working parents, family-friendly policies, and paid leave.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Family Support & Supplies",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "V",
+   "needs": [
+    "V:*",
+    "V:8a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "hark",
+   "n": "HARK: Support for children in custody, foster care, and unstable housing",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "hark-bc.org",
+   "d": "Services for children and youth in protective custody, foster care, and unstable housing; confirm current referral route.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Family Support & Supplies",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "IV",
+   "needs": [
+    "IV:*",
+    "IV:5a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "healthychildren-org",
+   "n": "HealthyChildren.org: Pediatric health information",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "healthychildren.org/English/Pages/default.aspx",
+   "d": "Trusted pediatric health information from the American Academy of Pediatrics.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Family Support & Supplies",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "III",
+   "needs": [
+    "III:*",
+    "III:1a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "my-daddy-taught-me-that",
+   "n": "My Daddy Taught Me That: Father engagement",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "mydaddytaughtmethat.org",
+   "d": "Asheville-based program focused on father engagement and positive family relationships.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Family Support & Supplies",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "IV",
+   "needs": [
+    "IV:*",
+    "IV:4a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "sparc-foundation",
+   "n": "SPARC Foundation: Education, employment, and mentorship",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "thesparcfoundation.org",
+   "d": "Programs connecting families to education, employment, and mentorship to strengthen well-being and personal freedom.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Family Support & Supplies",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "V",
+   "needs": [
+    "V:*",
+    "V:4a",
+    "V:8a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "asheville-nanny-childcare-connection",
+   "n": "Asheville Nanny & Childcare Connection: Childcare Facebook community",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "facebook.com/groups/954940164847197",
+   "d": "Community group connecting families with local childcare providers; independently verify credentials, references, and safety.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Community & Informal Support",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "I",
+   "needs": [
+    "I:*",
+    "I:7a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "wnc-community-resources",
+   "n": "WNC Community Resources: Resource-sharing Facebook community",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "facebook.com/WNCcommunityresources",
+   "d": "Community group for finding local resources and mutual support; verify details before traveling or sharing personal information.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Community & Informal Support",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "VIII",
+   "needs": [
+    "VIII:*"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "food-connection",
+   "n": "Food Connection: Mobile prepared meals",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "food-connection.org",
+   "d": "Free chef-prepared, ready-to-heat meals distributed through a mobile food truck on listed weekdays.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Food & Nutrition",
+   "t": "Free",
+   "lv": "",
+   "vb": "",
+   "sec": "VIII",
+   "needs": [
+    "VIII:*",
+    "VIII:5a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "salvation-army-asheville",
+   "n": "Salvation Army Asheville: Food pantry and baby supplies",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "salvationarmyusa.org/nc/asheville/haywood-rd-corps",
+   "d": "Food pantry and baby supplies; directory lists Tuesday–Thursday hours, but appointment requirements may differ by source.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Food & Nutrition",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "VIII",
+   "needs": [
+    "VIII:*",
+    "VIII:5a",
+    "VIII:11a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "Sources disagree on access: the BPFC directory lists Tuesday to Thursday hours, while another source describes appointment-only access. Call before visiting.",
+   "new": true
+  },
+  {
+   "id": "beloved-asheville",
+   "n": "BeLoved Asheville: Shelter and transitional support",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "belovedasheville.com",
+   "d": "Emergency shelter and transitional-housing support for people and families experiencing homelessness; confirm current availability.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Housing, Utilities & Home Repair",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "VIII",
+   "needs": [
+    "VIII:*",
+    "VIII:6a",
+    "VIII:7a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "porchlight-project",
+   "n": "Porchlight Project: Domestic-violence prevention",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "porchlightprojectnc.org",
+   "d": "Community-based relationship education and domestic-violence prevention.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Family Safety & Crisis",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "VII",
+   "needs": [
+    "VII:*",
+    "VII:7a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "abbas-house",
+   "n": "ABBA’s House: Safe housing for survivors",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "abbas-house.com",
+   "d": "Safe housing and support for women and children fleeing domestic violence; call for current eligibility and availability.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Family Safety & Crisis",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "VIII",
+   "needs": [
+    "VIII:*",
+    "VIII:8a",
+    "VII:*",
+    "VII:7a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "daymark-recovery-services",
+   "n": "Daymark Recovery Services: Facility-Based Crisis / Buncombe",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "daymarkrecovery.org/fbc-buncombe",
+   "d": "Mental-health and substance-use crisis services, including walk-in crisis-center access for children and families.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Family Safety & Crisis",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "VII",
+   "needs": [
+    "VII:*",
+    "VII:6a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "love-is-respect",
+   "n": "love is respect: Dating-abuse helpline",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "1-866-331-9474 / text LOVEIS to 22522",
+   "em": "",
+   "w": "loveisrespect.org",
+   "d": "Free 24-hour support for teens and young adults experiencing dating abuse.",
+   "a": "",
+   "h": "24/7",
+   "os": "Public Edition: Family Safety & Crisis",
+   "t": "24/7, Free",
+   "lv": "",
+   "vb": "",
+   "sec": "CRISIS",
+   "needs": [
+    "VII:*",
+    "VII:7a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "the-trevor-project",
+   "n": "The Trevor Project: TrevorLifeline",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "1-866-488-7386 / text START to 678-678",
+   "em": "",
+   "w": "thetrevorproject.org",
+   "d": "Free confidential 24/7 crisis support for LGBTQ+ young people.",
+   "a": "",
+   "h": "24/7",
+   "os": "Public Edition: Family Safety & Crisis",
+   "t": "24/7, Free, LGBTQ+ affirming",
+   "lv": "",
+   "vb": "",
+   "sec": "CRISIS",
+   "needs": [
+    "X:*",
+    "X:9"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "resources-for-resilience",
+   "n": "Resources for Resilience: Trauma-informed training and community programs",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "resourcesforresilience.org",
+   "d": "Workshops and healing-centered programming for families, community members, and organizations.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Mental Health, Recovery & Wellness",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "VII",
+   "needs": [
+    "VII:*",
+    "VII:4a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "seek-healing",
+   "n": "Seek Healing: Connection and peer support",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "seekhealing.org",
+   "d": "Free and low-cost wellness programming, connection, and peer support for people experiencing hardship.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Mental Health, Recovery & Wellness",
+   "t": "Free",
+   "lv": "",
+   "vb": "",
+   "sec": "VII",
+   "needs": [
+    "VII:*",
+    "VII:4a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "nami-western-nc",
+   "n": "NAMI Western NC: Education, support groups, and advocacy",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "namiwnc.org",
+   "d": "Free education, support groups, and advocacy for individuals and families affected by mental illness.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Mental Health, Recovery & Wellness",
+   "t": "Free",
+   "lv": "",
+   "vb": "",
+   "sec": "VII",
+   "needs": [
+    "VII:*",
+    "VII:4a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "youth-villages",
+   "n": "Youth Villages: Intensive youth mental-health services",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "youthvillages.org/about-us/locations/north-carolina",
+   "d": "In-home and residential services for children and teenagers with serious emotional or behavioral challenges.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Mental Health, Recovery & Wellness",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "II",
+   "needs": [
+    "II:*",
+    "II:6a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "flourish",
+   "n": "Flourish: Counseling",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "flourishasheville.com",
+   "d": "Children, teens, and adults; BPFC notes only select Medicaid plans and clinicians. Verify directly.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Mental Health, Recovery & Wellness",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "VII",
+   "needs": [
+    "VII:*",
+    "VII:2a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "born-to-bend-mental-health-wellness",
+   "n": "Born to Bend Mental Health & Wellness: Counseling and family therapy",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "borntobendcounseling.com",
+   "d": "All ages and families; EMDR, trauma, addiction, play therapy, anxiety, depression, and affirming care. Confirm panels.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Mental Health, Recovery & Wellness",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "VII",
+   "needs": [
+    "VII:*",
+    "VII:2a",
+    "VII:5a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "clarvida",
+   "n": "Clarvida: Asheville-Ridgefield Psychiatric Services",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "clarvida.com/locations/asheville-ridgefield",
+   "d": "Child/adolescent and adult behavioral-health services including medication management and therapy. Confirm referrals and panels.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Mental Health, Recovery & Wellness",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "VII",
+   "needs": [
+    "VII:*",
+    "VII:3a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "pyramid-healthcare",
+   "n": "Pyramid Healthcare: Addiction and dual-diagnosis treatment",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "pyramid-healthcare.com/location/nc/asheville",
+   "d": "Adults and adolescents; addiction treatment, MAT, mental-health care, medication management, and group/individual therapy.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Mental Health, Recovery & Wellness",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "VII",
+   "needs": [
+    "VII:*",
+    "VII:6a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "mindpath-health",
+   "n": "Mindpath Health: Psychiatry and therapy",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "mindpath.com",
+   "d": "All-ages psychiatry, medication management, therapy, and TMS. Confirm location, telehealth, and insurance.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Mental Health, Recovery & Wellness",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "VII",
+   "needs": [
+    "VII:*",
+    "VII:2a",
+    "VII:3a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "thrive-mental-health-center",
+   "n": "Thrive Mental Health Center: Individual, couples, and family therapy",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "thrivemhc.org",
+   "d": "Trauma-informed therapy for anxiety, depression, ADHD, and substance use. Confirm insurance and availability.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Mental Health, Recovery & Wellness",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "VII",
+   "needs": [
+    "VII:*",
+    "VII:2a",
+    "VII:5a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "daya-mental-health-and-wellness",
+   "n": "Daya Mental Health and Wellness: Adolescent and adult therapy",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "dayamentalhealth.com",
+   "d": "Adolescents 12+ and adults; addiction, trauma, eating disorders, anxiety, and depression. Confirm panels.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Mental Health, Recovery & Wellness",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "VII",
+   "needs": [
+    "VII:*",
+    "VII:2a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "aspire-psychiatry",
+   "n": "Aspire Psychiatry: Medication management and therapy",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "aspirepsychiatry.com",
+   "d": "Medication management and therapy for ages 6+; trauma, substance use, mood and anxiety conditions, ADHD, and TMS.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Mental Health, Recovery & Wellness",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "VII",
+   "needs": [
+    "VII:*",
+    "VII:3a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "disability-partners",
+   "n": "Disability Partners: Independent living and resource navigation",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "disabilitypartners.org",
+   "d": "Community-inclusion support and resource navigation for people with disabilities in WNC.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Disability & Special Needs",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*",
+    "X:7",
+    "IX:*",
+    "IX:11a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "irene-wortham-center",
+   "n": "Irene Wortham Center: I/DD day, vocational, and life-skills programs",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "ireneworthamcenter.org",
+   "d": "Vocational training, day programs, and life-skills support for children and adults with intellectual and developmental disabilities.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Disability & Special Needs",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*",
+    "X:7",
+    "IX:*"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "thrive",
+   "n": "Thrive: Immigrant and refugee family support",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "thriveavl.org",
+   "d": "Supportive services and advocacy for immigrant and refugee families in WNC.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Legal, Immigration & Cultural Support",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*",
+    "X:10",
+    "VIII:*",
+    "VIII:15a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "alongside-families",
+   "n": "Alongside Families: Immigrant and refugee home visiting",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "alongsidefamilies.org",
+   "d": "Home-visiting and family-support services for immigrant and refugee families in WNC.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Legal, Immigration & Cultural Support",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*",
+    "X:10",
+    "IV:*",
+    "IV:3a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "unete",
+   "n": "Únete: Immigrant-worker rights education",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "unetenc.org",
+   "d": "Legal-rights education and advocacy for immigrant workers and families.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Legal, Immigration & Cultural Support",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*",
+    "X:10",
+    "X:3"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "asheville-humane-society",
+   "n": "Asheville Humane Society: Pet Helpline and retention support",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "ashevillehumane.org",
+   "d": "Pet food, behavior support, resource navigation, and emergency short-term boarding information; confirm current availability.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Pet Support",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "aspca-spay-neuter-alliance",
+   "n": "ASPCA Spay/Neuter Alliance: Spay/neuter and community support",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "aspca.org/aspca-spay-neuter-alliance",
+   "d": "Low-cost spay/neuter and related services; confirm transport, eligibility, and family pet-support options.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Pet Support",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "brother-wolf-animal-rescue",
+   "n": "Brother Wolf Animal Rescue: Stay Together and mobile spay/neuter",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "bwar.org",
+   "d": "Pet-retention support, mobile spay/neuter with financial assistance, adoption, and foster network.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Pet Support",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "asheville-cat-weirdos",
+   "n": "Asheville Cat Weirdos: Emergency veterinary fund",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "ashevillecatweirdos.org",
+   "d": "Financial assistance for urgent veterinary care, medication, and treatment for cats during financial hardship.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Pet Support",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "the-street-dog-coalition-asheville",
+   "n": "The Street Dog Coalition Asheville: Free veterinary care for unhoused pet owners",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "thestreetdogcoalition.org/asheville-nc",
+   "d": "Free veterinary care and basic services for pets belonging to people experiencing homelessness.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Pet Support",
+   "t": "Free",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "community-partnership-for-pets",
+   "n": "Community Partnership for Pets: Pet food and veterinary assistance",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "communitypartnershipforpets.org",
+   "d": "Pet-food pantry support, low-cost vaccines, and emergency veterinary assistance; confirm Buncombe service area.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Pet Support",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "mountain-pet-rescue-asheville",
+   "n": "Mountain Pet Rescue Asheville: Low-cost spay/neuter",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "mountainpetrescueavl.org/spayneuter",
+   "d": "Low-cost spay/neuter clinics, foster network, and pet-support programs.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Pet Support",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "buncombe-partnership-for-children",
+   "n": "Buncombe Partnership for Children: Family-resource navigation and early-childhood programs",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "828-285-9333",
+   "em": "",
+   "w": "buncombepfc.org/for-families/family-resources",
+   "d": "County early-childhood partnership offering resource navigation, play groups, parenting groups, Imagination Library, and childcare referrals.",
+   "a": "53 Asheland Avenue, Suite 102A, Asheville, NC 28801",
+   "h": "",
+   "os": "Public Edition: Family Support & Supplies",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "IV",
+   "needs": [
+    "IV:*",
+    "IV:1a",
+    "IV:5a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children official website (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Verified on official source; confirm current logistics",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "connect-buncombe-online",
+   "n": "Connect Buncombe Online: Digital Navigator support",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "connectbuncombeonline.org",
+   "d": "Free help with connectivity, devices, and digital skills through local digital-navigation services; confirm current sites and hours.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Transportation & Digital Access",
+   "t": "Free",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*",
+    "X:5"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Connect Buncombe Online official website (connectbuncombeonline.org), checked 7 Nov 2026; Verified on official source; confirm current logistics",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "buncombe-county-public-libraries-hotspot-lending",
+   "n": "Buncombe County Public Libraries: Hotspot lending",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "buncombenc.gov/299/Check-Out-a-Hotspot",
+   "d": "Free hotspot checkout with a library card from county library branches; confirm loan period, availability, and card requirements. Cost: Free with library card. Documents: Library card required; ask the branch about current card documentation workarounds.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Transportation & Digital Access",
+   "t": "Free",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*",
+    "X:5"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe County Public Libraries official hotspot page (buncombenc.gov/299/Check-Out-a-Hotspot), checked 7 Nov 2026; Verified on official source; confirm current logistics",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "wnc-nature-center",
+   "n": "WNC Nature Center: Animal exhibits, tours, and family programs",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "828-259-8080",
+   "em": "admin@wildwnc.org",
+   "w": "wildwnc.org",
+   "d": "Regional wildlife center offering visits, tours, camps, and special programs; confirm registration and traffic advisories.",
+   "a": "75 Gashes Creek Road, Asheville, NC",
+   "h": "",
+   "os": "Public Edition: Family Activities & Enrichment",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*",
+    "X:11"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: WNC Nature Center official website (wildwnc.org), checked 7 Nov 2026; Verified on official source; confirm current logistics",
+   "note": "A traffic and bridge advisory was listed as expected through May 2027. Check directions before traveling (Public Edition, 7 Nov 2026).",
+   "new": true
+  },
+  {
+   "id": "north-carolina-arboretum",
+   "n": "North Carolina Arboretum: Gardens, trails, exhibits, and education",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "ncarboretum.org",
+   "d": "Arboretum exhibits, outdoor spaces, educational programs, and seasonal events; some programs occur offsite, so use each event’s venue.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Family Activities & Enrichment",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*",
+    "X:11"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: North Carolina Arboretum official website (ncarboretum.org), checked 7 Nov 2026; Verified on official source; confirm current logistics",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "asheville-museum-of-science",
+   "n": "Asheville Museum of Science: Exhibits, camps, and family science programs",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "ashevillemuseumofscience.org",
+   "d": "Hands-on science exhibits, camps, early-childhood programs, and parent-night-out events.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Family Activities & Enrichment",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*",
+    "X:11",
+    "I:*",
+    "I:11a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Asheville Museum of Science official calendar (ashevillemuseumofscience.org), checked 7 Nov 2026; Verified on official source; confirm current logistics",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "asheville-art-museum",
+   "n": "Asheville Art Museum: Exhibitions, tours, and family art programs",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "828-253-3227",
+   "em": "",
+   "w": "ashevilleart.org",
+   "d": "Art exhibitions, tours, studios, performances, and community programs; many listings are free for members or included with admission.",
+   "a": "2 South Pack Square, Asheville, NC 28801",
+   "h": "",
+   "os": "Public Edition: Family Activities & Enrichment",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*",
+    "X:11"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Asheville Art Museum official calendar (ashevilleart.org), checked 7 Nov 2026; Verified on official source; confirm current logistics",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "wortham-center-for-the-performing-arts",
+   "n": "Wortham Center for the Performing Arts: Student and family performance series",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "828-257-4530",
+   "em": "boxoffice@worthamarts.org",
+   "w": "worthamarts.org",
+   "d": "Ticketed performances and student series, including puppetry, theater, music, and dance.",
+   "a": "18 Biltmore Avenue, Asheville, NC 28801",
+   "h": "",
+   "os": "Public Edition: Family Activities & Enrichment",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*",
+    "X:11"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Wortham Center official website (worthamarts.org), checked 7 Nov 2026; Verified on official source; confirm current logistics",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "black-mountain-center-for-the-arts",
+   "n": "Black Mountain Center for the Arts: Community theater, classes, and exhibits",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "828-669-0930",
+   "em": "info@blackmountainarts.org",
+   "w": "blackmountainarts.org",
+   "d": "Community performances, arts classes, and exhibits in Black Mountain.",
+   "a": "225 W State Street, Black Mountain, NC 28711",
+   "h": "",
+   "os": "Public Edition: Family Activities & Enrichment",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*",
+    "X:11",
+    "I:*",
+    "I:11a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: Black Mountain Center for the Arts official website (blackmountainarts.org), checked 7 Nov 2026; Verified on official source; confirm current logistics",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "leaf-global-arts",
+   "n": "LEAF Global Arts: Arts education, camps, and cultural programs",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "theleaf.org",
+   "d": "Arts education and cultural programming; published 2027 summer-camp season and scholarships are included in the event workbook.",
+   "a": "",
+   "h": "",
+   "os": "Public Edition: Family Activities & Enrichment",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*",
+    "X:11",
+    "I:*",
+    "I:11a"
+   ],
+   "src": "Buncombe County Family Resource Directory, Public Edition: LEAF official website (theleaf.org), checked 7 Nov 2026; Verified on official source; confirm current logistics",
    "note": "",
    "new": true
   }
