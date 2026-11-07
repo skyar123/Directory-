@@ -17,11 +17,36 @@ export const endpoint = (model) =>
   `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
 
 const clip = (s, n) => String(s || "").replace(/\s+/g, " ").trim().slice(0, n);
+const addDays = (iso, n) => {
+  const [y, m, d] = iso.split("-").map(Number);
+  return new Date(Date.UTC(y, m - 1, d + n)).toISOString().slice(0, 10);
+};
+
+/* The calendar holds a year of listings, which would double the request and
+   the wait. What a family can act on is the next three weeks of it, so the
+   prompt carries the team's own picks and at most this many listings. */
+export const EVENT_DAYS = 21;
+export const EVENT_MAX = 150;
+
+/* A mix-up Muse ran into: AI Studio shows a service account email
+   (...@...iam.gserviceaccount.com) next to the key, and it is not the key.
+   Keys start "AQ." (the newer form) or "AIza". */
+export function keyProblem(k) {
+  if (/@|gserviceaccount\.com/i.test(k)) {
+    return "That is a service account email, not an API key. In AI Studio, open the key and copy the key itself. It starts with AQ. or AIza.";
+  }
+  if (/\s/.test(k)) return "A key has no spaces in it. Copy it again from AI Studio.";
+  return "";
+}
 
 /* one line per resource and event, short enough that the whole directory
    fits in one request, with refs (R12, E3) the reply has to use */
 export function buildPrompt({ resources, needs, events, today }) {
-  const upcoming = events.filter((e) => (e.end || e.date) >= today);
+  const horizon = addDays(today, EVENT_DAYS);
+  const upcoming = events
+    .filter((e) => (e.end || e.date) >= today && (!e.status || e.date <= horizon))
+    .sort((a, b) => (a.status ? 1 : 0) - (b.status ? 1 : 0) || a.date.localeCompare(b.date))
+    .slice(0, EVENT_MAX);
   const rows = resources.map((r, i) => {
     const flags = [
       /\bfree\b/i.test(r.tags) && "free",
@@ -32,7 +57,7 @@ export function buildPrompt({ resources, needs, events, today }) {
     return `R${i}|${clip(r.name, 90)}|${r.sec}|${keys}|${flags}|${clip(r.detail, 110)}`;
   });
   const ev = upcoming.map((e, i) =>
-    `E${i}|${e.date}${e.end ? " to " + e.end : ""}|${clip(e.what, 80)}|${clip(e.where, 60)}`);
+    `E${i}|${e.date}${e.end ? " to " + e.end : ""}${e.time ? " " + clip(e.time, 20) : ""}|${clip(e.what, 80)}|${clip(e.where, 60)}|${(e.ages || []).join("/")}|${clip(e.org, 40)}`);
   const system = [
     "You help Family Resource Partners in Buncombe County and Western North Carolina find resources for families with young children.",
     "Recommend ONLY items from the lists below, by their ref (R... or E...). Never invent a resource, phone number or event.",
@@ -52,7 +77,7 @@ export function buildPrompt({ resources, needs, events, today }) {
     "Resources (ref|name|section|SNIFF keys|flags|detail):",
     ...rows,
     "",
-    "Upcoming events (ref|date|what|where):",
+    `Upcoming events, the team's picks and the next ${EVENT_DAYS} days of the family calendar (ref|date|what|where|ages|organizer):`,
     ...ev,
   ].join("\n");
   return { system, resourceIds: resources.map((r) => r.id), eventIds: upcoming.map((e) => e.id) };
@@ -94,35 +119,48 @@ const kindFor = (status, body) => {
   return "error";
 };
 
+/* Flash models think before they answer, and on a prompt this size that
+   is most of the wait. Matching a list against a need does not take much,
+   so the request asks for a low thinking level. */
+export const THINKING = { thinkingLevel: "low" };
+
 /* one call to Gemini; tries the fallback model when the first is missing or busy */
 export async function askGemini({ key, system, text, signal, fetchImpl = fetch }) {
   let last;
   for (const model of MODELS) {
-    let res;
-    try {
-      res = await fetchImpl(endpoint(model), {
-        method: "POST",
-        headers: { "Content-Type": "application/json", "x-goog-api-key": key },
-        body: JSON.stringify({
-          systemInstruction: { parts: [{ text: system }] },
-          contents: [{ role: "user", parts: [{ text }] }],
-          generationConfig: { responseMimeType: "application/json", temperature: 0.2 },
-        }),
-        signal,
-      });
-    } catch (e) {
-      if (e.name === "AbortError") throw e;
-      throw new AiError("offline", String(e));
+    /* a model that does not take a thinking level refuses the request with
+       a 400, so ask that model again without one before moving on */
+    for (const thinking of [THINKING, null]) {
+      let res;
+      try {
+        res = await fetchImpl(endpoint(model), {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "x-goog-api-key": key },
+          body: JSON.stringify({
+            systemInstruction: { parts: [{ text: system }] },
+            contents: [{ role: "user", parts: [{ text }] }],
+            generationConfig: {
+              responseMimeType: "application/json", temperature: 0.2,
+              ...(thinking && { thinkingConfig: thinking }),
+            },
+          }),
+          signal,
+        });
+      } catch (e) {
+        if (e.name === "AbortError") throw e;
+        throw new AiError("offline", String(e));
+      }
+      if (res.ok) {
+        const j = await res.json();
+        const c = j.candidates && j.candidates[0];
+        const out = ((c && c.content && c.content.parts) || []).filter((p) => !p.thought).map((p) => p.text || "").join("");
+        if (!out) throw new AiError("blocked", (c && c.finishReason) || (j.promptFeedback && j.promptFeedback.blockReason) || "");
+        return out;
+      }
+      const body = await res.text();
+      last = new AiError(kindFor(res.status, body), body.slice(0, 300));
+      if (!(thinking && res.status === 400 && last.kind !== "key")) break;
     }
-    if (res.ok) {
-      const j = await res.json();
-      const c = j.candidates && j.candidates[0];
-      const out = ((c && c.content && c.content.parts) || []).map((p) => p.text || "").join("");
-      if (!out) throw new AiError("blocked", (c && c.finishReason) || (j.promptFeedback && j.promptFeedback.blockReason) || "");
-      return out;
-    }
-    const body = await res.text();
-    last = new AiError(kindFor(res.status, body), body.slice(0, 300));
     if (last.kind !== "model" && last.kind !== "busy") break;
   }
   throw last;

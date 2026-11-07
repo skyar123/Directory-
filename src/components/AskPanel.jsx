@@ -1,5 +1,5 @@
-import { useMemo, useRef, useState } from "react";
-import { KEY_STORE, buildPrompt, looksIdentifying, askGemini, parseAnswer, explain } from "../ai.js";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { KEY_STORE, buildPrompt, looksIdentifying, askGemini, parseAnswer, explain, keyProblem } from "../ai.js";
 
 /* localStorage can throw in private windows; the key is a per-browser
    convenience, so failing to save it only means pasting it again */
@@ -9,7 +9,7 @@ const storeKey = (k) => {
 };
 
 export default function AskPanel({
-  initialText, resources, needs, needBy, events, today,
+  initialText, resources, needs, needBy, events, eventsLoading, today,
   renderResource, renderEvent, copyText, onClose,
 }) {
   const [text, setText] = useState(initialText || "");
@@ -19,7 +19,18 @@ export default function AskPanel({
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const [result, setResult] = useState(null);
+  const [keyError, setKeyError] = useState("");
+  const [elapsed, setElapsed] = useState(0);
   const abort = useRef(null);
+
+  /* a count while Gemini works, so a long answer reads as working, not stuck */
+  useEffect(() => {
+    if (!busy) return undefined;
+    const t0 = Date.now();
+    setElapsed(0);
+    const id = setInterval(() => setElapsed(Math.round((Date.now() - t0) / 1000)), 1000);
+    return () => clearInterval(id);
+  }, [busy]);
 
   const prompt = useMemo(() => buildPrompt({ resources, needs, events, today }), [resources, needs, events, today]);
   const warn = useMemo(() => looksIdentifying(text), [text]);
@@ -29,12 +40,14 @@ export default function AskPanel({
   const saveKey = () => {
     const k = draft.trim();
     if (!k) return;
-    storeKey(k); setKey(k); setDraft(""); setEditingKey(false); setError("");
+    const problem = keyProblem(k);
+    if (problem) { setKeyError(problem); return; }
+    storeKey(k); setKey(k); setDraft(""); setEditingKey(false); setError(""); setKeyError("");
   };
   const forgetKey = () => { storeKey(""); setKey(""); setEditingKey(false); };
 
   const send = async () => {
-    if (!key || !text.trim() || busy) return;
+    if (!key || !text.trim() || busy || eventsLoading) return;
     abort.current?.abort();
     abort.current = new AbortController();
     setBusy(true); setError(""); setResult(null);
@@ -85,15 +98,17 @@ export default function AskPanel({
             <strong>{key ? "Change your Gemini key." : "One-time setup."}</strong> Ask AI uses your own free
             Gemini key. Get one at{" "}
             <a href="https://aistudio.google.com/apikey" target="_blank" rel="noreferrer">aistudio.google.com/apikey</a>{" "}
-            with a Google account, then paste it here. It is saved in this browser only.
+            with a Google account, then paste the key itself here (it starts with AQ. or AIza). It is saved
+            in this browser, for this site's address only, so another phone, computer or address asks once more.
           </p>
           <div className="ask-key-row">
             <input type="password" autoComplete="off" spellCheck="false" value={draft}
-              onChange={(e) => setDraft(e.target.value)} onKeyDown={(e) => e.key === "Enter" && saveKey()}
+              onChange={(e) => { setDraft(e.target.value); setKeyError(""); }} onKeyDown={(e) => e.key === "Enter" && saveKey()}
               placeholder="Paste your Gemini API key" aria-label="Gemini API key" />
             <button className="btn ok-btn" onClick={saveKey} disabled={!draft.trim()}>Save key</button>
             {key && <button className="btn" onClick={() => setEditingKey(false)}>Cancel</button>}
           </div>
+          {keyError && <p className="ask-warn" role="alert">{keyError}</p>}
         </div>
       )}
 
@@ -110,10 +125,13 @@ export default function AskPanel({
       )}
 
       <div className="row-btns ask-actions">
-        <button className="btn ok-btn" onClick={send} disabled={!key || !text.trim() || busy}>
-          {busy ? "Reading the directory..." : "Get recommendations"}
+        <button className="btn ok-btn" onClick={send} disabled={!key || !text.trim() || busy || eventsLoading}>
+          {busy ? `Reading the directory... ${elapsed}s` : "Get recommendations"}
         </button>
-        {key && !editingKey && (
+        {busy && <button className="btn" onClick={() => abort.current?.abort()}>Stop</button>}
+        {eventsLoading && <span className="ask-wait">Loading the family calendar…</span>}
+        {busy && elapsed >= 20 && <span className="ask-wait">Long answers can take a minute.</span>}
+        {key && !editingKey && !busy && (
           <span className="tiny">
             Gemini key saved in this browser.{" "}
             <button className="linkish" onClick={() => setEditingKey(true)}>Change</button>{" · "}
