@@ -39,7 +39,8 @@ a firewall as it does outside one.
 | `data/community-resource-assessment.json` | The 84 rows of the Child First Community Resource Assessment, crosswalked to SNIFF questions. |
 | `data/changelog.json` | Dead ends, changes in flight, and the 116 questions still open. |
 | `data/food-by-day.json` | The weekly pantry and free-meal schedule, by day. |
-| `data/events.json` | Events, deadlines and sign-ups by date, each with its source. The Events tab sorts them and folds past ones away. |
+| `data/events.json` | The team's own picks: events, deadlines and sign-ups by date, each with its source and notes. The Events tab sorts them and folds past ones away. |
+| `data/calendar.json` | The Public Edition's family calendar: 1,353 dated listings from 7 Nov 2026 to 7 Nov 2027, 129 repeating series, 10 yearly events not announced yet, and the 16 calendars it was read from. Rebuilt by `scripts/import-public-edition-calendar.cjs`, not edited by hand. The app fetches it only when the Events tab or Ask AI opens. |
 | `src/` | The app. Reads the data, edits it, exports it back. |
 | `src/styles.css` | The whole design system: tokens at the top, then components. |
 | `scripts/` | The importers that built `data/`, kept so its provenance is reproducible. |
@@ -63,6 +64,17 @@ event, deadline or signup, and a `src` like every other row. `rid` links the
 matching resource. Leave past events in: the Events tab moves them under
 "Already happened" by itself, so seasonal entries need no clean-up.
 
+The calendar is a different kind of list: a year of library programs, Bounty &
+Soul markets, museum and Arboretum programs and the like, as the Public Edition
+found them on each organizer's calendar on 7 Nov 2026. The Events tab shows it
+with the team's picks, with filters by kind, age, organizer and a search, and
+opens one month at a time. Each listing says how it was found ("On the library
+calendar, 7 Nov 2026") instead of "Verified". Past listings drop off rather
+than pile up. Repeating series and yearly events with no date yet are kept
+apart, under the months, so neither reads as a promise. Organizers publish a
+few months ahead, so a thin later month means not published yet. To refresh
+it, export the next edition of the workbook and rerun the script.
+
 ## Ask AI
 
 The **Ask AI** button next to the search box takes a question, a description of
@@ -70,13 +82,24 @@ a family's situation, or a whole pasted SNIFF, and asks Google's Gemini which
 resources in this directory fit, with a reason for each. Pasting more than one
 line into the search box opens it too.
 
-- Each person uses their own free key: make one at aistudio.google.com/apikey
-  with a Google account and paste it in once. It is kept in that browser's
-  localStorage and nowhere else; **Forget** removes it.
+- Each person uses a free key: make one at aistudio.google.com/apikey with a
+  Google account and paste it in once. Keys start with `AQ.` (the newer form)
+  or `AIza`. AI Studio also shows a service account email
+  (`...@...iam.gserviceaccount.com`) beside the key. That is not the key, and the
+  panel says so if it is pasted.
+- The key is kept in that browser's localStorage and nowhere else, so it is per
+  browser and per site address: a phone, a second computer, or the preview link
+  as against the main site each ask for it once. **Forget** removes it. A key
+  shared across the team shares one free limit.
 - A request sends the typed text plus a one-line-per-entry list of every
-  resource and upcoming event to `generativelanguage.googleapis.com`. Gemini can
-  only answer with entries from that list; anything else it suggests is dropped,
-  and the panel says how many.
+  resource, the team's upcoming picks, and the next three weeks of the family
+  calendar (150 events at most) to `generativelanguage.googleapis.com`, about
+  35,000 tokens in all. Gemini can only answer with entries from that list;
+  anything else it suggests is dropped, and the panel says how many.
+- It asks for a low thinking level, since most of the wait on a prompt this
+  size is the model thinking. A model that does not take that setting is asked
+  again without it. While it works, the button counts the seconds and **Stop**
+  cancels.
 - **No client details.** On the free tier Google may keep and review what is
   sent. The panel says so, and warns when the text looks like it has a phone
   number, an email address, a date of birth or a "Name:" style field.
@@ -141,4 +164,5 @@ remove them before sharing outside the team. `point-people.json` exports stamp
 - Nurse-Family Partnership community partner meeting notes, 6 Nov 2026, with facts beyond the notes checked by web search (`scripts/apply-nfp-meeting-2026-11-06.mjs`)
 - Facebook deep scrape parts 1 to 4 and two family weekend guides, 6 Nov 2026: family resources only, and nothing from the guides without a second source
 - Accuracy pass by web search, 6 Nov 2026 (`scripts/apply-accuracy-pass-2026-11-06.mjs`): rows confirmed against an official or the organisation's own source show `vb` "SB (web search)"
+- Buncombe County Family Resource Directory, Public Edition, event sheets (`scripts/import-public-edition-calendar.cjs`): its curated family and caregiver calendar of 1,354 occurrences (one, Fire Safety for Kids in Fairview, was already in `events.json`, which kept it and gained the library's details), its recurring series, annual leads and monitored calendars. The full library feed's 74 adult-interest programs stay out, as the Public Edition keeps them out of its family calendar
 - Buncombe County Family Resource Directory, Public Edition (workbook checked 7 Nov 2026; `scripts/export-public-edition.py`, then `scripts/import-public-edition-resources.cjs`). 110 of its 169 resources matched rows already here: they filled 37 blank fields and added the Public Edition to `src`. Where it disagrees with a row, the row keeps its own value and `note` names both. The other 59 are new rows. They keep the Public Edition's "confirm current details" status: no `lv`, and "Not stated in the source" where it says nothing about language access

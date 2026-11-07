@@ -1,5 +1,5 @@
 import { telHref } from "../data.js";
-import { day, longDate } from "../events.js";
+import { day, longDate, AGE_LABEL, STATUS_LABEL } from "../events.js";
 import Icon from "./Icon.jsx";
 
 /* label, badge class and the card's edge colour for each kind */
@@ -17,6 +17,11 @@ export default function EventCard({ e, soon, resource, onOpen }) {
   const when = longDate(e.date) + (e.end ? " to " + longDate(e.end) : "")
     + (e.time ? " · " + e.time : "");
   const url = e.w ? (e.w.startsWith("http") ? e.w : "https://" + e.w) : "";
+  /* a calendar listing's link is a long event URL; its site says enough */
+  let linkText = e.w || "";
+  if (linkText.length > 42) {
+    try { linkText = new URL(url).hostname.replace(/^www\./, ""); } catch (err) { /* keep it */ }
+  }
 
   return (
     <article className="card ev" style={{ "--sec": edge }}>
@@ -30,20 +35,27 @@ export default function EventCard({ e, soon, resource, onOpen }) {
           <strong className="ev-what">{e.what}</strong>
           <span className="card-sub"><Icon name="clock" size={13} />{when}</span>
           {e.where && <span className="card-sub"><Icon name="pin" size={13} />{e.where}</span>}
+          {e.org && <span className="card-sub ev-org">{e.org}</span>}
         </div>
       </div>
 
       <div className="card-badges">
         {soon && <span className="badge soon">{soon}</span>}
         {label && <span className={"badge " + cls}>{label}</span>}
+        {(e.ages || []).map((a) => <span key={a} className="badge">{AGE_LABEL[a] || a}</span>)}
         {(e.tags || []).map((t) => <span key={t} className="badge sp">{t}</span>)}
-        {e.lv
-          ? <span className="badge ok">Verified {e.lv}</span>
-          : <span className="badge warn">Never verified</span>}
+        {e.status
+          ? <span className={"badge " + (e.status === "recheck" ? "warn" : "listed")}>
+              {STATUS_LABEL[e.status]}{e.status !== "recheck" && e.checked ? ", " + e.checked : ""}
+            </span>
+          : e.lv
+            ? <span className="badge ok">Verified {e.lv}</span>
+            : <span className="badge warn">Never verified</span>}
       </div>
 
       {e.note && <p className="callout">{e.note}</p>}
       {e.detail && <p className="detail">{e.detail}</p>}
+      {e.cost && <p className="detail">Cost: {e.cost}</p>}
 
       {(e.ph || url || resource) && (
         <div className="card-actions">
@@ -54,7 +66,7 @@ export default function EventCard({ e, soon, resource, onOpen }) {
           )}
           {url && (
             <a className="act link" href={url} target="_blank" rel="noreferrer">
-              <Icon name="link" size={14} />{e.w}
+              <Icon name="link" size={14} />{linkText}
             </a>
           )}
           {resource && (

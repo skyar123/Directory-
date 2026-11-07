@@ -18,6 +18,7 @@ const cra = read("community-resource-assessment.json");
 const changelog = read("changelog.json");
 const food = read("food-by-day.json");
 const events = read("events.json");
+const calendar = read("calendar.json");
 
 const sectionIds = new Set(sniff.sections.map((s) => s.id));
 const needKeys = new Set(sniff.needs.map((n) => n.key));
@@ -71,6 +72,44 @@ for (const e of events.events) {
   if (e.rid && !seen.has(e.rid)) note(`event ${e.id} links to unknown resource "${e.rid}"`);
 }
 
+/* the Public Edition calendar: the same rules, plus its own window and
+   labels. Its src is built from org and status, so org and status are what
+   every entry has to carry instead. */
+const STATUSES = new Set(["library", "organizer", "recheck", "season"]);
+const FITS = new Set(["family", "caregiver", "general"]);
+const AGES = new Set(["baby", "toddler", "preschool", "school", "teen", "adult"]);
+const { from, to } = calendar.meta;
+if (!isDay(from) || !isDay(to)) note(`calendar.json meta needs a real from and to day`);
+for (const e of calendar.events) {
+  if (!e.id) note(`calendar event with no id: ${e.what}`);
+  if (eventIds.has(e.id)) note(`duplicate event id across events.json and calendar.json: ${e.id}`);
+  eventIds.add(e.id);
+  if (!e.what) note(`calendar event ${e.id} has no title`);
+  if (!isDay(e.date)) note(`calendar event ${e.id} has date "${e.date}", not a real YYYY-MM-DD day`);
+  else if (e.date < from || e.date > to) note(`calendar event ${e.id} on ${e.date} is outside ${from} to ${to}`);
+  if (e.end !== undefined && !(isDay(e.end) && e.end >= e.date)) {
+    note(`calendar event ${e.id} has end "${e.end}", not a real day on or after its date`);
+  }
+  if (!KINDS.has(e.kind)) note(`calendar event ${e.id} has unknown kind "${e.kind}"`);
+  if (e.tags !== undefined && !Array.isArray(e.tags)) note(`calendar event ${e.id} has tags that are not a list`);
+  if (!e.org) note(`calendar event ${e.id} has no org`);
+  if (!STATUSES.has(e.status)) note(`calendar event ${e.id} has unknown status "${e.status}"`);
+  if (!FITS.has(e.fit)) note(`calendar event ${e.id} has unknown fit "${e.fit}"`);
+  for (const a of e.ages || []) if (!AGES.has(a)) note(`calendar event ${e.id} has unknown age group "${a}"`);
+  if (!e.w) note(`calendar event ${e.id} has no link to its listing`);
+  if (e.rid && !seen.has(e.rid)) note(`calendar event ${e.id} links to unknown resource "${e.rid}"`);
+}
+for (const s of calendar.series) {
+  if (!s.org || !s.what || !s.note) note(`calendar series "${s.what}" needs org, what and its verification note`);
+  for (const k of ["first", "last"]) if (s[k] !== undefined && !isDay(s[k])) note(`calendar series "${s.what}" has ${k} "${s[k]}", not a real day`);
+  if (s.rid && !seen.has(s.rid)) note(`calendar series "${s.what}" links to unknown resource "${s.rid}"`);
+}
+for (const w of calendar.watch) {
+  if (!w.org || !w.what || !w.status) note(`calendar lead "${w.what}" needs org, what and its announcement status`);
+  if (w.rid && !seen.has(w.rid)) note(`calendar lead "${w.what}" links to unknown resource "${w.rid}"`);
+}
+for (const c of calendar.calendars) if (!c.org || !c.w) note(`monitored calendar "${c.org}" needs org and a link`);
+
 /* people */
 const pnames = new Set();
 for (const p of people.people) {
@@ -100,6 +139,8 @@ const counts = {
   "changelog entries": changelog.groups.reduce((n, g) => n + g.entries.length, 0),
   "food schedule rows": food.days.reduce((n, d) => n + d.sites.length, 0),
   events: events.events.length,
+  "calendar events": calendar.events.length,
+  "calendar series": calendar.series.length,
 };
 for (const [k, v] of Object.entries(counts)) console.log(`${String(v).padStart(5)}  ${k}`);
 

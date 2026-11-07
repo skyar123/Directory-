@@ -272,10 +272,11 @@
    "time": "2pm",
    "kind": "event",
    "what": "Fire Safety for Kids",
-   "where": "1 Taylor Rd, Fairview",
-   "note": "The listing gives no host or cost.",
+   "where": "Fairview Library, 1 Taylor Rd, Fairview",
+   "note": "The library calendar lists it as a Fairview Library program with the Fairview Fire Department, for kids and their grown-ups. Neither listing gives a cost.",
    "w": "facebook.com/events/4391382221177067",
-   "src": "Facebook event listing, Facebook deep scrape part 2, 6 Nov 2026"
+   "src": "Facebook event listing, Facebook deep scrape part 2, 6 Nov 2026; also on the Buncombe County Public Libraries calendar, via the Public Edition (checked 7 Nov 2026)",
+   "rid": "buncombe-county-public-libraries"
   },
   {
    "id": "plant-people-holiday-open-house-2026-11-14",

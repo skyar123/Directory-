@@ -1,17 +1,19 @@
 import { useState, useMemo, useRef, useEffect } from "react";
 import {
   META, SECTIONS, SECBY, NEEDS, NEEDBY, BASE, PEOPLE, PEOPLE_META,
-  CRA, CRA_SECTIONS, CHANGELOG, FOOD, EVENTS, EVENTS_META, TODAY, norm, telHref,
+  CRA, CRA_SECTIONS, CHANGELOG, FOOD, EVENTS, EVENTS_META, TODAY, norm, telHref, loadCalendar,
 } from "./data.js";
 import { useStore } from "./storage.js";
 import { score } from "./search.js";
-import { arrange, soon, localToday } from "./events.js";
+import { arrange, soon, localToday, AGE_FILTERS, forAge } from "./events.js";
 import { Chip } from "./components/bits.jsx";
 import Icon, { Logo } from "./components/Icon.jsx";
 import ResourceCard from "./components/ResourceCard.jsx";
 import CraRow from "./components/CraRow.jsx";
 import EventCard from "./components/EventCard.jsx";
 import AskPanel from "./components/AskPanel.jsx";
+import EventMonth from "./components/EventMonth.jsx";
+import CalendarNotes from "./components/CalendarNotes.jsx";
 
 const VIEWS = [
   ["find", "Find"],
@@ -50,6 +52,10 @@ export default function App() {
   const [craSec, setCraSec] = useState("I");
   const [foodDay, setFoodDay] = useState(FOOD.days[0].day);
   const [evKind, setEvKind] = useState("all");
+  const [evAge, setEvAge] = useState("any");
+  const [evOrg, setEvOrg] = useState("");
+  const [evQ, setEvQ] = useState("");
+  const [cal, setCal] = useState(null);
   const [ask, setAsk] = useState({ text: "", n: 0 });
 
   /* Ask AI opens with whatever is in the search box, or with pasted text;
@@ -68,6 +74,16 @@ export default function App() {
   }, [view]);
 
   const say = (m) => { setToast(m); setTimeout(() => setToast(""), 2600); };
+
+  /* the Public Edition calendar, fetched once, the first time it is needed */
+  useEffect(() => {
+    if (cal || (view !== "events" && view !== "ask")) return undefined;
+    let live = true;
+    loadCalendar()
+      .then((c) => live && setCal(c))
+      .catch(() => live && setCal({ failed: true, events: [], series: [], watch: [], calendars: [] }));
+    return () => { live = false; };
+  }, [view, cal]);
 
   const resources = useMemo(() => {
     const all = [...BASE, ...(state.added || [])];
@@ -231,14 +247,33 @@ export default function App() {
   /* not memoised: the date has to be read on every render, or a tab left
      open overnight would keep calling yesterday's events "Today" */
   const evToday = localToday();
-  const evUpcoming = EVENTS.filter((e) => (e.end || e.date) >= evToday);
-  const evCounts = {
-    all: evUpcoming.length,
-    event: evUpcoming.filter((e) => e.kind === "event").length,
-    due: evUpcoming.filter((e) => e.kind !== "event").length,
-  };
-  const evPlan = arrange(
-    EVENTS.filter((e) => evKind === "all" || (evKind === "due") === (e.kind !== "event")), evToday);
+  const allEvents = useMemo(() => (cal ? EVENTS.concat(cal.events) : EVENTS), [cal]);
+  const evIndex = useMemo(() => new Map(allEvents.map((e) => [e.id,
+    norm([e.what, e.where, e.org, e.detail, (e.tags || []).join(" ")].join(" "))])), [allEvents]);
+  const evTerms = norm(evQ).split(" ").filter(Boolean);
+  const kindOk = (e, k) => k === "all" || (k === "due") === (e.kind !== "event");
+  /* every filter but the one being counted, so each chip says what tapping it would show */
+  const evMatch = (e, skip) =>
+    (skip === "kind" || kindOk(e, evKind)) &&
+    (skip === "age" || forAge(e, evAge)) &&
+    (!evOrg || (evOrg === "team" ? !e.status : e.org === evOrg)) &&
+    evTerms.every((t) => evIndex.get(e.id).includes(t));
+  const evUpcoming = allEvents.filter((e) => (e.end || e.date) >= evToday);
+  const evCounts = Object.fromEntries(EVENT_KINDS.map(([k]) => [k,
+    evUpcoming.filter((e) => evMatch(e, "kind") && kindOk(e, k)).length]));
+  const evAgeCounts = Object.fromEntries(AGE_FILTERS.map(([k]) => [k,
+    evUpcoming.filter((e) => evMatch(e, "age") && forAge(e, k)).length]));
+  const evOrgs = Object.entries(evUpcoming.reduce((m, e) => {
+    if (e.org) m[e.org] = (m[e.org] || 0) + 1;
+    return m;
+  }, {})).sort((a, b) => b[1] - a[1]);
+  const evFiltered = evKind !== "all" || evAge !== "any" || !!evOrg || !!evTerms.length;
+  const evPlan = arrange(allEvents.filter((e) => evMatch(e)), evToday);
+  /* a past calendar listing is just yesterday's story time; only the team's
+     own picks are worth keeping under "Already happened" */
+  const evPast = evPlan.past.filter((e) => !e.status);
+  const evShown = evPlan.months.reduce((n, m) => n + m.items.length, 0);
+  const evSig = [evKind, evAge, evOrg, evTerms.join(" ")].join("|");
   const resById = useMemo(() => new Map(resources.map((r) => [r.id, r])), [resources]);
 
   /* an event's "Open in the directory": the resource it links, found and
@@ -329,7 +364,7 @@ export default function App() {
 
       {view === "ask" && (
         <AskPanel key={ask.n} initialText={ask.text} resources={resources} needs={NEEDS} needBy={NEEDBY}
-          events={EVENTS} today={evToday} copyText={copyText} onClose={() => setView("find")}
+          events={allEvents} eventsLoading={!cal} today={evToday} copyText={copyText} onClose={() => setView("find")}
           renderResource={(r) => (
             <ResourceCard r={r} open={openId === r.id}
               onToggle={() => setOpenId(openId === r.id ? "" : r.id)}
@@ -502,10 +537,13 @@ export default function App() {
       {view === "events" && (
         <section className="pane">
           <p className="lede">
-            Events, deadlines and sign-ups for families, soonest first. Past ones fold away at the bottom.
+            Events, deadlines and sign-ups for families, soonest first: the team's own picks, and the
+            Public Edition's family calendar of library programs, Bounty &amp; Soul markets, museums and more.
           </p>
           <p className="handling">
-            Almost none of these has been verified, and dates and places move. Call before you send anyone.
+            Almost none of these has been verified by the team, and dates and places move. Call or check the
+            listing before you send anyone. Organizers publish a few months ahead, so a thin later month
+            means not published yet.
           </p>
           <div className="filters">
             {EVENT_KINDS.map(([id, label]) => (
@@ -514,32 +552,67 @@ export default function App() {
               </Chip>
             ))}
           </div>
-          {evPlan.months.map((m) => (
-            <div key={m.key} className="need-block">
-              <h2>{m.label}<span className="need-n">{m.items.length}</span></h2>
-              <div className="cards">
-                {m.items.map((e) => (
-                  <EventCard key={e.id} e={e} soon={soon(e, evToday)} resource={resById.get(e.rid)}
-                    onOpen={() => openResource(resById.get(e.rid))} />
-                ))}
-              </div>
-            </div>
+          <div className="filters">
+            {AGE_FILTERS.map(([id, label]) => (
+              <Chip key={id} active={evAge === id} onClick={() => setEvAge(id)}>
+                {label} <strong>{evAgeCounts[id]}</strong>
+              </Chip>
+            ))}
+          </div>
+          <div className="ev-tools">
+            <label className="field ev-search">
+              <span>Search events</span>
+              <input type="search" value={evQ} onChange={(e) => setEvQ(e.target.value)}
+                placeholder="story time, Spanish, Leicester, market" />
+            </label>
+            <label className="field ev-org-pick">
+              <span>From</span>
+              <select value={evOrg} onChange={(e) => setEvOrg(e.target.value)}>
+                <option value="">Everyone</option>
+                <option value="team">The team's own picks</option>
+                {evOrgs.map(([o, n]) => <option key={o} value={o}>{o} ({n})</option>)}
+              </select>
+            </label>
+          </div>
+          {!cal && <p className="count">Loading the family calendar…</p>}
+          {cal?.failed && (
+            <p className="callout">The family calendar did not load. The team's own picks are below; try again later.</p>
+          )}
+          {cal && !cal.failed && (
+            <p className="count">
+              {evShown} coming up{evFiltered ? " with these filters" : ""}
+              {evFiltered && (
+                <> · <button className="linkish" onClick={() => { setEvKind("all"); setEvAge("any"); setEvOrg(""); setEvQ(""); }}>
+                  Clear filters</button></>
+              )}
+            </p>
+          )}
+          {evPlan.months.map((m, i) => (
+            <EventMonth key={m.key + evSig} m={m} startOpen={i === 0 || (evFiltered && evShown <= 90)}
+              render={(e) => (
+                <EventCard key={e.id} e={e} soon={soon(e, evToday)} resource={resById.get(e.rid)}
+                  onOpen={() => openResource(resById.get(e.rid))} />
+              )} />
           ))}
           {!evPlan.months.length && (
-            <p className="empty">Nothing coming up in this list. New dates go in data/events.json.</p>
+            <p className="empty">
+              {evFiltered ? "Nothing coming up matches these filters." : "Nothing coming up in this list. New dates go in data/events.json."}
+            </p>
           )}
-          {!!evPlan.past.length && (
+          {!!evPast.length && (
             <details className="past">
-              <summary>Already happened <span className="need-n">{evPlan.past.length}</span></summary>
+              <summary>Already happened <span className="need-n">{evPast.length}</span></summary>
               <div className="cards">
-                {evPlan.past.map((e) => (
+                {evPast.map((e) => (
                   <EventCard key={e.id} e={e} soon="" resource={resById.get(e.rid)}
                     onOpen={() => openResource(resById.get(e.rid))} />
                 ))}
               </div>
             </details>
           )}
+          {cal && !cal.failed && <CalendarNotes cal={cal} resById={resById} onOpen={openResource} />}
           <p className="tiny src">{EVENTS_META.src}</p>
+          {cal?.meta && <p className="tiny src">{cal.meta.src}</p>}
         </section>
       )}
 

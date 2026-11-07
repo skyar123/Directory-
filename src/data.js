@@ -58,6 +58,28 @@ export const FOOD = foodFile;
 export const EVENTS = eventsFile.events;
 export const EVENTS_META = eventsFile.meta;
 
+/* The Public Edition calendar is well over a thousand dated listings, so it
+   is its own file, fetched the first time the Events tab or Ask AI needs it
+   rather than with every page. Each listing's source is its organizer's
+   calendar as the Public Edition read it, so the file says that once and
+   the line on each card is built here. */
+const CAL_SRC = {
+  library: "calendar", organizer: "calendar",
+  recheck: "page, from earlier research", season: "program-season listing",
+};
+export const loadCalendar = () => import("../data/calendar.json").then((m) => {
+  const c = m.default;
+  const [y, mo, d] = c.meta.checked.split("-").map(Number);
+  const checked = new Date(y, mo - 1, d).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+  return {
+    ...c, checked,
+    events: c.events.map((e) => ({
+      ...e, tags: e.tags || [], checked,
+      src: `${e.org} ${CAL_SRC[e.status]}, via the Public Edition (checked ${checked})`,
+    })),
+  };
+});
+
 export const TODAY = new Date().toISOString().slice(0, 10);
 export const norm = (s) => (s || "").toLowerCase().replace(/[^a-z0-9 ]+/g, " ");
 

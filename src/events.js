@@ -55,3 +55,39 @@ export function arrange(events, today) {
   }
   return { months, past };
 }
+
+/* who an event is for, as the Events tab's second row of chips asks it.
+   Only the calendar's listings carry ages and fit, so the team's own picks
+   show under "Any age" */
+export const AGE_FILTERS = [
+  ["any", "Any age"],
+  ["little", "Babies and toddlers"],
+  ["preschool", "Preschool"],
+  ["school", "School age"],
+  ["caregiver", "For caregivers"],
+];
+export function forAge(e, k) {
+  const a = e.ages || [];
+  if (k === "little") return a.includes("baby") || a.includes("toddler");
+  if (k === "preschool") return a.includes("preschool");
+  if (k === "school") return a.includes("school") || a.includes("teen");
+  if (k === "caregiver") return e.fit === "caregiver";
+  return true;
+}
+
+export const AGE_LABEL = {
+  baby: "Babies", toddler: "Toddlers", preschool: "Preschool",
+  school: "School age", teen: "Teens", adult: "Adults",
+};
+
+/* how the Public Edition found a listing, which is not the same as the team
+   having verified it */
+export const STATUS_LABEL = {
+  library: "On the library calendar",
+  organizer: "On the organizer's calendar",
+  recheck: "Recheck before going",
+  season: "Season dates only",
+};
+
+export const shortDate = (iso) =>
+  day(iso).toLocaleDateString("en-US", { month: "short", day: "numeric" });
