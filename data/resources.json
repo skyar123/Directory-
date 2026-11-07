@@ -15,7 +15,7 @@
   ],
   "file": "resources.json",
   "note": "One object per resource. `needs` are SNIFF question keys, `src` names where the fact came from.",
-  "count": 616
+  "count": 622
  },
  "sections": [
   {
@@ -1349,7 +1349,7 @@
    "ph": "828-251-5910",
    "em": "ybc@ymcawnc.org",
    "w": "ymcawnc.org",
-   "d": "multiple schools, until 6pm; financial assistance; vouchers accepted. Up to 2 hrs/day drop-in childcare with membership.",
+   "d": "multiple schools, until 6pm; financial assistance; vouchers accepted. Up to 2 hrs/day drop-in childcare with membership. Youth Services: ybc@ymcawnc.org. Options include full-time (41 weeks) or 3-day after-school, drop-in, and year-round plans with summer camp. The 21st Century Horizons program gives free after-school care at select Buncombe middle and intermediate schools. Y-Access asks for a tax return, two pay stubs or a benefits letter, and a county voucher application first.",
    "a": "",
    "h": "",
    "os": "10.3 After-School, Drop-In, Parents' Night Out",
@@ -1362,7 +1362,7 @@
     "I:10a",
     "RESPITE:*"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: Respite Options for Caregivers (Jul 2026; checked against each organization's published information and an FFA-NC coach)",
    "note": "",
    "new": false
   },
@@ -2179,7 +2179,7 @@
    "ph": "828-665-8733 / 828-665-8737",
    "em": "DSDHH.Information@dhhs.nc.gov",
    "w": "ncdhhs.gov/divisions/services-deaf-and-hard-hearing/regional-centers-deaf-and-hard-hearing",
-   "d": "Voice 828-665-8733, TTY 828-665-8737, toll-free 800-681-7998 / 800-681-8035. Equipment, advocacy, community connection. Regional contact: Ruth Anne Everett, 828-432-5352 (phone/TTY). Open house Thu Nov 12, 2026, 1:30 to 3pm at the Asheville Regional Center: resources for Deaf, DeafBlind, and hard of hearing adults and children, ASL interpreter provided. Free. Serves Buncombe, Cherokee, Clay, Graham, Haywood, Henderson, Jackson, Macon, Madison, Mitchell, Polk, Swain, Transylvania and Yancey counties. Video phone 828-333-5830.",
+   "d": "Voice 828-665-8733, TTY 828-665-8737, toll-free 800-681-7998 / 800-681-8035. Equipment, advocacy, community connection. Regional contact: Ruth Anne Everett, 828-432-5352 (phone/TTY). Open house Thu Nov 12, 2026, 1:30 to 3pm at the Asheville Regional Center: resources for Deaf, DeafBlind, and hard of hearing adults and children, ASL interpreter provided. Free. Serves Buncombe, Cherokee, Clay, Graham, Haywood, Henderson, Jackson, Macon, Madison, Mitchell, Polk, Swain, Transylvania and Yancey counties. Video phone 828-333-5830. Community connections, per the March 2026 guide: Asheville Deaf Chat, first Tuesdays 5:30-8pm at the Starbucks at 211 River Ford Pkwy, for Deaf and hard-of-hearing people, ASL learners and families; HLAA Asheville, third Saturdays at CarePartners' Seymour Auditorium (hlaa.asheville@gmail.com); free statewide virtual ASL classes (ask the regional center for the calendar); MyDeafChild.org gives families of a deaf child 0-3 free Sign It ASL. The guide found no regular in-person ASL storytime or DHH playgroup for ages 1-5 in Asheville, so virtual storytimes plus the regional center are the best current route.",
    "a": "12 Barbetta Dr, Asheville 28806",
    "h": "Mon-Fri 8am-5pm",
    "os": "11.6 Deaf and Hard of Hearing",
@@ -2197,7 +2197,7 @@
     "IX:*",
     "IX:10a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; open house from a Facebook event listing, Facebook deep scrape, 6 Nov 2026; website, counties and video phone from NCDHHS's regional centers page and brochure via web search, 6 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; open house from a Facebook event listing, Facebook deep scrape, 6 Nov 2026; website, counties and video phone from NCDHHS's regional centers page and brochure via web search, 6 Nov 2026; Drive: Free Events and Programs for Caregivers of Children Ages 1-5, WNC Caregiver Resource Guide (compiled 6 Mar 2026)",
    "note": "",
    "new": false
   },
@@ -2210,7 +2210,7 @@
    "ph": "",
    "em": "",
    "w": "",
-   "d": "up to $750 reimbursement. Land of Sky Project C.A.R.E.: dementia respite.",
+   "d": "up to $750 reimbursement. Land of Sky Project C.A.R.E.: dementia respite. Up to $750 a year in vouchers to hire a respite provider the family chooses (18 or older, not living in the home). Needs a referral from a professional such as the Family Resource Partner, a social worker or a care coordinator. Cannot be used for child care during regular work hours.",
    "a": "",
    "h": "",
    "os": "11.4 Respite",
@@ -2224,7 +2224,7 @@
     "IX:*",
     "IX:8a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: Respite Options for Caregivers (Jul 2026; checked against each organization's published information and an FFA-NC coach)",
    "note": "",
    "new": false
   },
@@ -3162,7 +3162,7 @@
    "ph": "",
    "em": "",
    "w": "",
-   "d": "Giving Tree of WNC, Foster Pantry, Kaylee's Closet, Buncombe HHS closet.",
+   "d": "Giving Tree of WNC, Foster Pantry, Kaylee's Closet, Buncombe HHS closet. Buncombe County HHS also keeps a Foster Closet of free clothing and items for children in foster care; ask the child's social worker.",
    "a": "",
    "h": "",
    "os": "13.2 Support for Foster, Adoptive, and Kinship Caregivers",
@@ -3174,7 +3174,7 @@
     "VIII:*",
     "VIII:12a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: Asheville NC Kinship Care Benefits (Jul 2026)",
    "note": "",
    "new": false
   },
@@ -3265,7 +3265,7 @@
    "ph": "888-625-4375",
    "em": "nc.kids@dhhs.nc.gov",
    "w": "ncdhhs.gov",
-   "d": "KinGAP financial assistance, kinship navigator; nc.kids@dhhs.nc.gov, 888-625-4375.",
+   "d": "KinGAP financial assistance, kinship navigator; nc.kids@dhhs.nc.gov, 888-625-4375. For a child in DSS custody placed with relatives, per the Drive kinship guide: an unlicensed kinship caregiver can get a monthly payment of half the foster care board rate (the guide gives $351 a month for ages 0 to 5 against a $702 board rate) after signing the DSS-5802 acknowledgement and the county's checks. A licensed kinship foster home gets the full rate; the kinship licensing track is 15 hours of training instead of 30, plus fingerprints for adults in the home, medical exams with a TB test, a fire inspection, CPR and first aid, and a no-spanking agreement. Children in DSS custody get priority child care vouchers with no parent fee (the social worker applies through NC FAST; over-market fees are not covered), Medicaid to age 26, and CMARC care management for ages 0 to 5. In Buncombe a Kinship Support Specialist calls relative caregivers in the second week of a placement.",
    "a": "",
    "h": "",
    "os": "13.2 Support for Foster, Adoptive, and Kinship Caregivers",
@@ -3276,8 +3276,8 @@
    "needs": [
     "IV:*"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: Asheville NC Kinship Care Benefits (Jul 2026), citing NCDHHS, S.L. 2023-14 and S.L. 2025-16",
+   "note": "Check before planning guardianship: the Drive kinship guide says that under S.L. 2025-16 a child generally has to be at least 10 for KinGAP guardianship assistance (unless placed with an older sibling), so guardianship of a young child could end the monthly payment. Confirm with the social worker and the Guardian ad Litem first.",
    "new": false
   },
   {
@@ -6976,7 +6976,7 @@
    "ph": "828-277-8288",
    "em": "",
    "w": "coabc.org",
-   "d": "828-277-8288, coabc.org. 46 Sheffield Circle. Medicare/SHIIP counseling, Meals on Wheels, Project Access, minor home repair (60+), care management, caregiver support.",
+   "d": "828-277-8288, coabc.org. 46 Sheffield Circle. Medicare/SHIIP counseling, Meals on Wheels, Project Access, minor home repair (60+), care management, caregiver support. Family Caregiver Support Program, per the Drive respite guide: for grandparents and other relatives 55 or older raising a child in Buncombe or Madison; it can pay for a week of summer camp, after-school fees or short-term daytime care, not overnight care. Ask for the Family Caregiver Support Specialist, ext. 1303. CAPES caregiver support group: third Tuesday of the month at 2pm.",
    "a": "46 Sheffield Circle",
    "h": "",
    "os": "PART 21: SENIORS AND FAMILY CAREGIVERS",
@@ -6989,8 +6989,8 @@
     "VI:2a",
     "RESPITE:*"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: Respite Options for Caregivers (Jul 2026; checked against each organization's published information and an FFA-NC coach)",
+   "note": "CAPES meeting place differs between listings: the Council on Aging site gives First Baptist Church Asheville, 5 Oak St, Room SC207; other directories give CenterWell Primary Care on Patton Ave. Confirm when you call.",
    "new": false
   },
   {
@@ -9433,7 +9433,7 @@
    "ph": "828-252-6512 / 828-254-2612",
    "em": "",
    "w": "",
-   "d": "(free cribs, car seats, strollers, clothing): Weaverville UMC (1st/3rd Mondays 5-7pm, evening hours for working parents); St. Paul's UMC North Asheville (by appointment, more privacy: 828-252-6512); Abernethy UMC West Asheville (midday hours: 828-254-2612); Snow Hill UMC.",
+   "d": "(free cribs, car seats, strollers, clothing): Weaverville UMC (1st/3rd Mondays 5-7pm, evening hours for working parents); St. Paul's UMC North Asheville (by appointment, more privacy: 828-252-6512); Abernethy UMC West Asheville (midday hours: 828-254-2612); Snow Hill UMC. Hours per the Drive kinship guide: St. Paul's UMC, 223 Hillside St, 2nd and 4th Wednesdays 4-6pm and Thursdays by appointment; Weaverville UMC, 90 N Main St, order online ahead for curbside pickup, 1st and 3rd Mondays 5-7pm and 2nd, 4th and 5th Mondays 10am-noon; Abernethy UMC, 1418 Patton Ave, 1st and 3rd Wednesdays 10am-2pm; also Snow Hill and East Asheville UMC. Small items are given; big equipment is loaned and returned when outgrown. Clothing to 6T, toddler car seats and boosters, potty chairs, pull-ups.",
    "a": "",
    "h": "Mondays 5-7pm, evening hours for worki",
    "os": "4.2 Baby Gear, Clothing, School Supplies",
@@ -9446,7 +9446,7 @@
     "VIII:11a",
     "VIII:12a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Drive: Asheville NC Kinship Care Benefits (Jul 2026), citing the BEAR Closet sites' pages",
    "note": "",
    "new": false
   },
@@ -13173,7 +13173,7 @@
    "ph": "828-827-7239",
    "em": "",
    "w": "traumatherapync.com",
-   "d": "5 Ravenscroft Dr, 828-827-7239. Takes Vaya Medicaid; free 15-minute consult; telehealth. David Wilder, LCMHC (trauma, stress, shutdown patterns, ACT, therapy dog). Katarina Wittekind, LCSW (somatic body-based trauma work, grief, caregiver exhaustion). Sarah Anderson, LCMHCS.",
+   "d": "5 Ravenscroft Dr, 828-827-7239. Takes Vaya Medicaid; free 15-minute consult; telehealth. David Wilder, LCMHC (trauma, stress, shutdown patterns, ACT, therapy dog). Katarina Wittekind, LCSW (somatic body-based trauma work, grief, caregiver exhaustion). Sarah Anderson, LCMHCS. Sarah Anderson, LCMHCS, is certified in Child-Parent Psychotherapy (CPP) and sees ages 2 to 18, using Triple P and Conscious Discipline. Per the June 2026 handout the practice takes Healthy Blue, Vaya and WellCare Medicaid as well as self-pay.",
    "a": "5 Ravenscroft Dr",
    "h": "",
    "os": "8.1 Adult Therapy, Medicaid-Friendly",
@@ -13190,7 +13190,7 @@
     "VIII:*",
     "VIII:2a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Drive: Therapy & Mental Health Resources for foster families (Child First handout, Jun 2026)",
    "note": "",
    "new": false
   },
@@ -13203,7 +13203,7 @@
    "ph": "828-268-3339",
    "em": "",
    "w": "yournextchaptercounseling.com",
-   "d": "(Montford Ave): Derek Martinez, LCMHC, 828-268-3339 (anxiety, feeling stuck, acceptance work); Samantha Morgan, LCSW (complex trauma; shame-free space for kids and adults).",
+   "d": "(Montford Ave): Derek Martinez, LCMHC, 828-268-3339 (anxiety, feeling stuck, acceptance work); Samantha Morgan, LCSW (complex trauma; shame-free space for kids and adults). Samantha Morgan, LCSW, is certified in Child-Parent Psychotherapy (CPP) and EMDR, with a focus on complex trauma, attachment disruption and early childhood; about $150 a session, takes major commercial insurance (per the June 2026 handout).",
    "a": "",
    "h": "",
    "os": "8.1 Adult Therapy, Medicaid-Friendly",
@@ -13218,7 +13218,7 @@
     "VII:1a",
     "VII:2a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Drive: Therapy & Mental Health Resources for foster families (Child First handout, Jun 2026)",
    "note": "",
    "new": false
   },
@@ -15171,7 +15171,7 @@
    "ph": "",
    "em": "luv4kin@gmail.com",
    "w": "",
-   "d": "Twice-monthly peer group. Members know who currently has openings. No application at all.",
+   "d": "Twice-monthly peer group. Members know who currently has openings. No application at all. For grandparents, aunts, uncles, cousins and family friends raising a child, with or without a court order; meets twice a month at Skyland United Methodist Church. To join, email luv4kin@gmail.com with who you are and who you are raising.",
    "a": "Skyland UMC, South Buncombe",
    "h": "",
    "os": "RESPITE",
@@ -15182,7 +15182,7 @@
    "needs": [
     "RESPITE:*"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, RESPITE tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, RESPITE tab; Drive: Respite Options for Caregivers (Jul 2026; checked against each organization's published information and an FFA-NC coach)",
    "note": "",
    "new": true
   },
@@ -17149,7 +17149,7 @@
    "ph": "",
    "em": "",
    "w": "ashevillemuseumofscience.org",
-   "d": "Hands-on science exhibits, camps, early-childhood programs, and parent-night-out events.",
+   "d": "Hands-on science exhibits, camps, early-childhood programs, and parent-night-out events. Museums for All: $5 a person with an EBT card and photo ID, up to 4 people (per the March 2026 guide). Free with a library ZOOM Pass too.",
    "a": "",
    "h": "",
    "os": "Public Edition: Family Activities & Enrichment",
@@ -17163,7 +17163,7 @@
     "I:*",
     "I:11a"
    ],
-   "src": "Buncombe County Family Resource Directory, Public Edition: Asheville Museum of Science official calendar (ashevillemuseumofscience.org), checked 7 Nov 2026; Verified on official source; confirm current logistics",
+   "src": "Buncombe County Family Resource Directory, Public Edition: Asheville Museum of Science official calendar (ashevillemuseumofscience.org), checked 7 Nov 2026; Verified on official source; confirm current logistics; Drive: Free Events and Programs for Caregivers of Children Ages 1-5, WNC Caregiver Resource Guide (compiled 6 Mar 2026)",
    "note": "",
    "new": true
   },
@@ -17176,7 +17176,7 @@
    "ph": "828-253-3227",
    "em": "",
    "w": "ashevilleart.org",
-   "d": "Art exhibitions, tours, studios, performances, and community programs; many listings are free for members or included with admission.",
+   "d": "Art exhibitions, tours, studios, performances, and community programs; many listings are free for members or included with admission. Takes part in Museums for All (reduced admission with an EBT card), and children under 6 are always free (per the March 2026 guide).",
    "a": "2 South Pack Square, Asheville, NC 28801",
    "h": "",
    "os": "Public Edition: Family Activities & Enrichment",
@@ -17188,7 +17188,7 @@
     "X:*",
     "X:11"
    ],
-   "src": "Buncombe County Family Resource Directory, Public Edition: Asheville Art Museum official calendar (ashevilleart.org), checked 7 Nov 2026; Verified on official source; confirm current logistics",
+   "src": "Buncombe County Family Resource Directory, Public Edition: Asheville Art Museum official calendar (ashevilleart.org), checked 7 Nov 2026; Verified on official source; confirm current logistics; Drive: Free Events and Programs for Caregivers of Children Ages 1-5, WNC Caregiver Resource Guide (compiled 6 Mar 2026)",
    "note": "",
    "new": true
   },
@@ -17504,6 +17504,161 @@
    ],
    "src": "Drive: Free & Low-Cost Childcare in Leicester & Buncombe County (family guide, checked Aug 2026)",
    "note": "",
+   "new": true
+  },
+  {
+   "id": "cmarc-care-management-for-at-risk-children-ages-0-5",
+   "n": "CMARC: Care Management for At-Risk Children (ages 0-5)",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "",
+   "d": "Free statewide care management for children birth to 5 facing toxic stress or adverse experiences (children removed from home included) or with special health needs: a care manager helps the family through medical appointments, behavior worries and developmental milestones. It replaced CC4C (Care Coordination for Children), and children entering foster care get these calls. Ask the child's doctor or Medicaid health plan for a referral.",
+   "a": "",
+   "h": "",
+   "os": "Drive: Asheville NC Kinship Care Benefits",
+   "t": "Free, Kids / 0-5",
+   "lv": "",
+   "vb": "",
+   "sec": "III",
+   "needs": [
+    "III:*",
+    "II:*",
+    "IV:*"
+   ],
+   "src": "Drive: Asheville NC Kinship Care Benefits (Jul 2026), citing NCDHHS",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "botanical-gardens-at-asheville",
+   "n": "Botanical Gardens at Asheville",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "ashevillebotanicalgarden.org",
+   "d": "Free 10-acre garden of native Southern Appalachian plants with free parking: a flat half-mile loop trail, a creek and footbridges, a meadow and picnic spots. One of the best truly free toddler nature outings. A free Kids Investigation Passport scavenger hunt (ages 4 to 10) is at the visitor center.",
+   "a": "151 W.T. Weaver Blvd, Asheville (next to UNC Asheville)",
+   "h": "Grounds dawn to dusk daily; visitor center 10am-4pm",
+   "os": "Drive: WNC Caregiver Resource Guide, March 2026",
+   "t": "Free, Kids / 0-5",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*",
+    "X:11"
+   ],
+   "src": "Drive: Free Events and Programs for Caregivers of Children Ages 1-5, WNC Caregiver Resource Guide (compiled 6 Mar 2026); Drive: Asheville Family Weekend Guide (4-6 Sep 2026) for the passport and visitor-center hours",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "folk-art-center-southern-highland-craft-guild",
+   "n": "Folk Art Center (Southern Highland Craft Guild)",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "southernhighlandguild.org",
+   "d": "Free galleries of Appalachian craft, stroller-accessible, with free parking; guild artists often demonstrate carving, weaving and pottery during the day.",
+   "a": "Blue Ridge Parkway Milepost 382, Asheville",
+   "h": "",
+   "os": "Drive: WNC Caregiver Resource Guide, March 2026",
+   "t": "Free",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*",
+    "X:11"
+   ],
+   "src": "Drive: Free Events and Programs for Caregivers of Children Ages 1-5, WNC Caregiver Resource Guide (compiled 6 Mar 2026); Drive: Asheville Family Weekend Guide (4-6 Sep 2026)",
+   "note": "Hours differ between the Drive guides (9am-5pm in March; 10am-5pm with demonstrations 10am-4pm in September). Check before going.",
+   "new": true
+  },
+  {
+   "id": "wnc-farmers-market",
+   "n": "WNC Farmers Market",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "",
+   "d": "Year-round state farmers market, free to browse, with produce, honey, jams and crafts. Takes SNAP/EBT. An easy, low-pressure family outing.",
+   "a": "570 Brevard Rd, Asheville",
+   "h": "Daily 8am-5pm",
+   "os": "Drive: WNC Caregiver Resource Guide, March 2026",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*",
+    "X:11",
+    "VIII:*"
+   ],
+   "src": "Drive: Free Events and Programs for Caregivers of Children Ages 1-5, WNC Caregiver Resource Guide (compiled 6 Mar 2026); Drive: Asheville Family Weekend Guide (4-6 Sep 2026)",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "the-incredible-years-parenting-program",
+   "n": "The Incredible Years parenting program",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "buncombepfc.org",
+   "d": "Free parent education groups for families of children 3 to 5 with challenging behavior, offered through Buncombe Partnership for Children and FIRST WNC (per the March 2026 guide). Ask BPFC when the next group starts.",
+   "a": "",
+   "h": "",
+   "os": "Drive: WNC Caregiver Resource Guide, March 2026",
+   "t": "Free, Kids / 0-5",
+   "lv": "",
+   "vb": "",
+   "sec": "IV",
+   "needs": [
+    "IV:*",
+    "IV:4a",
+    "II:*"
+   ],
+   "src": "Drive: Free Events and Programs for Caregivers of Children Ages 1-5, WNC Caregiver Resource Guide (compiled 6 Mar 2026)",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "free-outdoor-and-nature-play-for-young-children",
+   "n": "Free outdoor and nature play for young children",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "",
+   "d": "Free options from the March 2026 guide: Growing Wild Forest School's open house, a free nature play morning for ages 3 to 6 on the first Saturday of the month (West Asheville); Asheville Farmstead School's monthly free Discovery Days on the farm and in the forest; Hike It Baby / OutGrown community hikes for ages 0 to 5 (find the local chapter online or on Facebook); Kids in Parks TRACK Trails, self-guided trails with brochures and prizes; Buncombe Partnership for Children's Adventure Play pop-up playgrounds (6 to 12 a year); and Asheville Parks & Recreation's Rec 'n' Roll mobile fun van. Easy stroller walks: the Botanical Gardens loop, Bent Creek's Lake Powhatan Homestead Trail, Richmond Hill Park.",
+   "a": "",
+   "h": "",
+   "os": "Drive: WNC Caregiver Resource Guide, March 2026",
+   "t": "Free, Kids / 0-5",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*",
+    "X:11",
+    "I:*",
+    "I:11a"
+   ],
+   "src": "Drive: Free Events and Programs for Caregivers of Children Ages 1-5, WNC Caregiver Resource Guide (compiled 6 Mar 2026)",
+   "note": "Compiled March 2026; dates and locations of the monthly programs change. Check each before going.",
    "new": true
   }
  ]
