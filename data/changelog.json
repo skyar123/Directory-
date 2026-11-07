@@ -10,6 +10,12 @@
    "label": "DEAD ENDS - DO NOT REFER",
    "entries": [
     {
+     "date": "Nov 2026",
+     "what": "WNC Birth Center is CLOSED (since July 2021)",
+     "detail": "The Western North Carolina Birth Center at 390 S French Broad Ave closed in July 2021, and this directory still listed it as open. Lilac Health Asheville Birth & Wellness Center has run a birth center in the same space since 2023: 828-970-5000, ashevillebirth.com.",
+     "source": "Mountain Xpress, NC Health News and Carolina Public Press, via web search 6 Nov 2026"
+    },
+    {
      "date": "Aug 2026",
      "what": "Trinity Place youth shelter is CLOSED",
      "detail": "Eckerd Connects / CARING for Children closed the Trinity Place emergency youth shelter permanently in May 2022 after staffing shortages. It ran from 1992 and served about 4,500 youth. findhelp and other aggregators STILL list it with a working phone number. Do not refer. For a youth in crisis use RHA Mobile Crisis 1-888-573-1006.",
@@ -39,6 +45,54 @@
    "id": "watch",
    "label": "WATCH THESE - SYSTEM CHANGES IN FLIGHT",
    "entries": [
+    {
+     "date": "Oct 1 2026",
+     "what": "NC Medicaid immigration eligibility changed (federal H.R. 1)",
+     "detail": "From 1 October 2026 full NC Medicaid for non-citizens is limited mainly to lawful permanent residents (green card holders), Cuban and Haitian entrants, and citizens of Micronesia, the Marshall Islands and Palau. Many refugees, asylees, trafficking survivors and parolees lose full coverage; Carolina Journal reports about 10,500 people lost it. Protections remain: lawfully residing children under 19 and people who are pregnant or within 12 months postpartum stay eligible even without permanent status, and Emergency Medicaid is still there for those who qualify. Do not tell a family they are no longer eligible. Send them for individual guidance: Buncombe DSS, or Pisgah Legal health access (Shoshana Barton, 828-210-3786). More changes start 1 January 2027.",
+     "source": "NFP community partner meeting, 6 Nov 2026; NC Medicaid H.R. 1 presentation and 'Medicaid is Changing' page, Carolina Journal, via web search 6 Nov 2026"
+    },
+    {
+     "date": "Dec 15 2026",
+     "what": "Marketplace open enrollment for 2027: pick a plan by 15 December",
+     "detail": "Open enrollment on HealthCare.gov started 1 November 2026, and a plan chosen by 15 December 2026 starts 1 January 2027. Some guides give 15 January 2027 as the end date and others 15 December; the end date has been disputed in court, so treat 15 December as the deadline. Free help choosing and enrolling: Pisgah Legal navigators, appointments 828-210-3404, Spanish available.",
+     "source": "NFP community partner meeting, 6 Nov 2026; enrollment guides via web search 6 Nov 2026"
+    },
+    {
+     "date": "Dec to Feb",
+     "what": "Sistas Caring 4 Sistas has a few free doula openings for December, January and February due dates",
+     "detail": "Prenatal visits and childbirth education, continuous labor support, postpartum visits, newborn feeding support, and connections to local resources, subject to eligibility and scheduling. Refer early. Main line 828-575-0488.",
+     "source": "SC4S availability post in the Asheville Community and Get Asheville Connected Facebook groups, 5 Nov 2026"
+    },
+    {
+     "date": "Nov 2026",
+     "what": "Helpmate shelter has new space with more beds, two designated for children",
+     "detail": "Reported at the NFP partner meeting. Press coverage describes a move to a larger confidential site (the old shelter had about 20 beds; 43 were planned). Confirm a bed on the 24/7 hotline, 828-254-0516, before promising one. Helpmate also offers court advocacy and Tuesday classes on different topics, and professionals can call the hotline for a consultation.",
+     "source": "NFP community partner meeting, 6 Nov 2026; WLOS and SECU Foundation coverage via web search"
+    },
+    {
+     "date": "Nov 12 2026",
+     "what": "DSDHH Asheville Regional Center open house, 1:30 to 3pm",
+     "detail": "12 Barbetta Dr. Resources for Deaf, DeafBlind and hard of hearing adults and children in WNC; ASL interpreter provided.",
+     "source": "Facebook event listing, scraped 6 Nov 2026"
+    },
+    {
+     "date": "Nov 17 2026",
+     "what": "TD Bank at the YWCA, 6pm",
+     "detail": "Shared by Tangie Ballard Bowman, YWCA Women's Empowerment Director. The topic was not given at the meeting, so ask her before inviting families. Clients: 828-254-7206 ext. 104.",
+     "source": "NFP community partner meeting, 6 Nov 2026"
+    },
+    {
+     "date": "Nov 2026",
+     "what": "YMCA mobile free food market stops through 24 November",
+     "detail": "Nov 13 Crowell Apartments (10 Coleys Cir) noon and Mission Hospital pop-up (509 Biltmore Ave) 1pm; Nov 18 Oakley/South Asheville Library 11am; Nov 19 Carolina Complete Health (150 Tunnel Rd) 11am and Woodfin YMCA 2pm; Nov 20 Haywood Pediatrics noon; Nov 24 Hendersonville Family YMCA 1pm. Free, farmers-market style. Confirm before sending anyone.",
+     "source": "Facebook event listings, scraped 6 Nov 2026"
+    },
+    {
+     "date": "Oct 2026",
+     "what": "Tranzmission is holding community town halls on its future",
+     "detail": "After growing pains and funding trouble, Tranzmission is asking the community for input in a series of town halls. Dates were not in the post. Ask Jasper Joy before telling a family which groups are running.",
+     "source": "QAX Facebook group post, 29 Oct 2026"
+    },
     {
      "date": "Sep 2 2026",
      "what": "Tranzmission support groups drop to a reduced placeholder schedule",
@@ -87,6 +141,30 @@
    "id": "added",
    "label": "ADDED THIS ROUND",
    "entries": [
+    {
+     "date": "Nov 6 2026",
+     "what": "Accuracy pass: wrong numbers fixed, gaps filled, crisis lines verified",
+     "detail": "Fixed: Bounty & Soul carried the YMCA mobile market's phone; ABCCM Our Daily Bread carried Swannanoa Valley Christian Ministry's; Kaleidoscope Play & Learn dialled Madison County Smart Start; Doulas of Asheville named a Raleigh-Durham business; MAHEC Ob/Gyn had the wrong building; two rows were tagged Medicaid against their own notes; hours cut off mid-word on eight rows; hours or phone numbers sitting in the address field on ten. Filled from sources: My Sister's Place's hotline, websites for 14 crisis and safety rows, and Raleigh contacts for the perinatal IOP. In all 84 rows changed: 7 more phones, 23 more websites, 28 more addresses, 47 more hours, and 11 rows verified for the first time. Checked and left alone: RHA's urgent care is still listed as 24/7 on RHA's newer pages. Organization pages could not be opened from this session, so facts came from web search; rows confirmed against an official or the organization's own source show 'verified by SB (web search)'.",
+     "source": "scripts/apply-accuracy-pass-2026-11-06.mjs"
+    },
+    {
+     "date": "Nov 6 2026",
+     "what": "Nurse-Family Partnership partner meeting: new resources and contacts",
+     "detail": "Added Lilac Health Asheville Birth & Wellness Center, Blue Ridge Healthy Families (7 counties), the MAHEC School Health Program, the library Preschool Outreach Program, the free WCU CATalyst Clinic in Clyde, Pisgah Legal health care access and enrollment, Goodwill Justice Navigation, YWCA Women's Empowerment, and buncombebreastfeed.org. Updated Project CARA, WIC (online referral form), Helpmate, Sistas Caring 4 Sistas, and All Souls Counseling (sliding scale down to $0, no insurance needed). Nine new point people: Caitlin Hettich, Morgan Kaelin, Co-kema King, Julie Burger, Taylor Brown, Abby Moser, Tangie Ballard Bowman, Shoshana Barton, Melissa Chambers. Facts beyond the meeting notes were checked by web search because organization pages could not be opened; each row's source says which.",
+     "source": "NFP community partner meeting, 6 Nov 2026"
+    },
+    {
+     "date": "Nov 6 2026",
+     "what": "Nurse-Family Partnership row fixed",
+     "detail": "It carried Vaya Health's member line (1-800-962-9003) and a Vaya Family Partners note by mistake. Now 828-250-5072 (the NFP line in the county HHS resource guide) or the HHS main line 828-250-5000, 40 Coxe Ave. Buncombe NFP also takes mothers who already have children if they enroll before delivery; first-time mothers enroll before 29 weeks.",
+     "source": "Buncombe County NFP page and HHS resource guide, via web search 6 Nov 2026"
+    },
+    {
+     "date": "Nov 6 2026",
+     "what": "Facebook and weekend-guide finds added",
+     "detail": "New: ZOOM Pass (free attraction admission with a Buncombe library card), the Between Heartbeats pregnancy and infant loss group (online), free Narcan trainings, holiday events (sensory-friendly Santa Dec 11, Little Smiles Day with Santa Dec 12, Marion community Thanksgiving Nov 14), Pathways.org milestone handouts, and an autism-inclusive children's book list. Updated YMCA mobile markets, Kaleidoscope Play & Learn, DSDHH, APR SOAR and Therapeutic Recreation, PODER Emma, Tranzmission, and holiday assistance. Seasonal rows carry their dates in the name; remove them after the season. Trinity Place's row now says CLOSED to match the dead ends list.",
+     "source": "Facebook deep scrape parts 1 to 4 and two family weekend guides, 6 Nov 2026"
+    },
     {
      "date": "Aug 25 2026",
      "what": "Dental on Livingston opened: WNCCHS urgent dental inside ABCCM",
@@ -147,6 +225,66 @@
    "id": "open-questions",
    "label": "STILL OPEN",
    "entries": [
+    {
+     "date": "OPEN",
+     "what": "May be gone or renamed: M.Y. Life Center, Perinatal Emotional Health Network, WNC Listening Line",
+     "detail": "M.Y. Life Center's mobile unit (828-637-0009) could not be found online at all. The Perinatal Emotional Health Network of WNC shows no activity since its 2011 blog. Henderson County lists the 'WNC Listening Line' number as the warm line of Love and Respect Community for Recovery and Wellness. Call each before sending a family, and mark it closed or rename it.",
+     "source": "Accuracy pass, web search 6 Nov 2026"
+    },
+    {
+     "date": "OPEN",
+     "what": "Asheville Lactation Consulting: which address?",
+     "detail": "The practice's own site gives 64 Peachtree Rd, Suite 30. A federal provider registry gives 573 Fairview Rd Ste 6 and 828-279-1735. The directory and the Liz Mills and Julie Holcomb point-people notes still say 573 Fairview Rd and 828-373-3345.",
+     "source": "Accuracy pass, web search 6 Nov 2026"
+    },
+    {
+     "date": "OPEN",
+     "what": "Phone numbers that rest on one source",
+     "detail": "Blue Ridge Healthy Families 828-682-5091 (an older article); Tranzmission 828-771-6955 (one fundraising listing); Swannanoa Valley Christian Ministry 828-669-9404 or 828-545-3948 (sources disagree); Buncombe Co-Responder Unit 828-250-6670 (not found anywhere). A quick call to each settles it.",
+     "source": "Accuracy pass, web search 6 Nov 2026"
+    },
+    {
+     "date": "OPEN",
+     "what": "Sistas Caring for Children, or Sistas Caring 4 Sistas?",
+     "detail": "The NFP meeting notes name 'Sistas Caring for Children' for doula support, with Co-kema King as contact and referral details still to be confirmed. Filed under Sistas Caring 4 Sistas, the local doula program. Confirm the name, Co-kema's role, and how to refer.",
+     "source": "NFP community partner meeting, 6 Nov 2026"
+    },
+    {
+     "date": "OPEN",
+     "what": "CHECK: Sistas Caring 4 Sistas language tag",
+     "detail": "Both SC4S rows are tagged Spanish-first / Latino-led. SC4S describes itself as doula care by and for people of color, founded by Black women. Ask whether Spanish-speaking doulas are available and fix the tag.",
+     "source": "Spotted while adding the NFP meeting notes, 6 Nov 2026"
+    },
+    {
+     "date": "OPEN",
+     "what": "NFP Buncombe: which number do families call?",
+     "detail": "Sources disagree: 828-250-5072 (county HHS resource guide, findhelp), 828-250-5063 (Standing With You), and the HHS main line 828-250-5000 on the county's NFP page. Ask the NFP team.",
+     "source": "Web search, 6 Nov 2026"
+    },
+    {
+     "date": "OPEN",
+     "what": "Does Lilac Health take NC Medicaid?",
+     "detail": "Nothing search returned says. Ask before referring a Medicaid family to the birth center.",
+     "source": "Web search, 6 Nov 2026"
+    },
+    {
+     "date": "OPEN",
+     "what": "Who runs buncombebreastfeed.org?",
+     "detail": "Shared at the NFP meeting as Buncombe's breastfeeding resource site. Search did not find it, so its owner and contents are unconfirmed.",
+     "source": "NFP community partner meeting, 6 Nov 2026"
+    },
+    {
+     "date": "OPEN",
+     "what": "Lead: a free monthly dads' group",
+     "detail": "A post in Asheville Natural Mamas & Papas (16 Oct 2026) describes a free monthly dads' group on early childhood development, attachment, and relationship-led parenting, next meeting 11 Nov. The host and place were not captured. The directory has nothing for fathers yet.",
+     "source": "Facebook group post, 16 Oct 2026"
+    },
+    {
+     "date": "OPEN",
+     "what": "Kaleidoscope Play & Learn: where and when?",
+     "detail": "A 29 Oct Facebook post lists several weekday sites, Mondays 10 to 11:30am first. A family weekend guide says Fridays 9:30 to 11am at 222 S French Broad Ave, which does not match the 53 Asheland Ave address this directory has for BPFC. Confirm with Marna at BPFC.",
+     "source": "Facebook post 29 Oct 2026; family weekend guide shared 6 Nov 2026"
+    },
     {
      "date": "CLOSED",
      "what": "RESOLVED: DSS prevention worker is Kelly Marler",
