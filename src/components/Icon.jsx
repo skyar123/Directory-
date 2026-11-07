@@ -12,6 +12,7 @@ const PATHS = {
   clock: "M8 14.5a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13Z M8 4.5V8l2.4 1.6",
   plus: "M8 3.5v9 M3.5 8h9",
   minus: "M3.5 8h9",
+  spark: "M8 2c.4 2.9 1.4 4.6 4.5 6-3.1 1.4-4.1 3.1-4.5 6-.4-2.9-1.4-4.6-4.5-6C6.6 6.6 7.6 4.9 8 2Z M13 1.5v2.5 M11.8 2.8h2.5",
 };
 
 export default function Icon({ name, size = 15, className }) {

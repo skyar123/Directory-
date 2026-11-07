@@ -24,7 +24,8 @@ npm run check    # validate data/ before committing an export
 ```
 
 `dist/` is plain static files. Any static host will serve it, and the app keeps
-working offline once loaded — nothing is fetched at runtime. The typeface
+working offline once loaded. The one thing that goes online is Ask AI, and only
+when someone presses it (see below). The typeface
 (Inter) is bundled rather than pulled from a CDN, so it renders the same behind
 a firewall as it does outside one.
 
@@ -61,6 +62,28 @@ Events are not edited in the app. Add them to `data/events.json`: a `date`
 event, deadline or signup, and a `src` like every other row. `rid` links the
 matching resource. Leave past events in: the Events tab moves them under
 "Already happened" by itself, so seasonal entries need no clean-up.
+
+## Ask AI
+
+The **Ask AI** button next to the search box takes a question, a description of
+a family's situation, or a whole pasted SNIFF, and asks Google's Gemini which
+resources in this directory fit, with a reason for each. Pasting more than one
+line into the search box opens it too.
+
+- Each person uses their own free key: make one at aistudio.google.com/apikey
+  with a Google account and paste it in once. It is kept in that browser's
+  localStorage and nowhere else; **Forget** removes it.
+- A request sends the typed text plus a one-line-per-entry list of every
+  resource and upcoming event to `generativelanguage.googleapis.com`. Gemini can
+  only answer with entries from that list; anything else it suggests is dropped,
+  and the panel says how many.
+- **No client details.** On the free tier Google may keep and review what is
+  sent. The panel says so, and warns when the text looks like it has a phone
+  number, an email address, a date of birth or a "Name:" style field.
+- The free tier has per-minute and daily limits. When one is hit, the panel says
+  to wait rather than failing quietly.
+- It asks `gemini-flash-latest` and falls back to `gemini-flash-lite-latest`.
+  The logic is in `src/ai.js`; the panel is `src/components/AskPanel.jsx`.
 
 ## Where the data came from
 

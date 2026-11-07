@@ -1,6 +1,6 @@
 import { useState, useMemo, useRef, useEffect } from "react";
 import {
-  META, SECTIONS, SECBY, NEEDS, BASE, PEOPLE, PEOPLE_META,
+  META, SECTIONS, SECBY, NEEDS, NEEDBY, BASE, PEOPLE, PEOPLE_META,
   CRA, CRA_SECTIONS, CHANGELOG, FOOD, EVENTS, EVENTS_META, TODAY, norm, telHref,
 } from "./data.js";
 import { useStore } from "./storage.js";
@@ -11,6 +11,7 @@ import Icon, { Logo } from "./components/Icon.jsx";
 import ResourceCard from "./components/ResourceCard.jsx";
 import CraRow from "./components/CraRow.jsx";
 import EventCard from "./components/EventCard.jsx";
+import AskPanel from "./components/AskPanel.jsx";
 
 const VIEWS = [
   ["find", "Find"],
@@ -49,6 +50,15 @@ export default function App() {
   const [craSec, setCraSec] = useState("I");
   const [foodDay, setFoodDay] = useState(FOOD.days[0].day);
   const [evKind, setEvKind] = useState("all");
+  const [ask, setAsk] = useState({ text: "", n: 0 });
+
+  /* Ask AI opens with whatever is in the search box, or with pasted text;
+     the counter gives the panel a fresh start each time it is opened */
+  const openAsk = (text) => {
+    setAsk((a) => ({ text, n: a.n + 1 }));
+    setView("ask");
+    window.scrollTo(0, 0);
+  };
   const [toast, setToast] = useState("");
   const tabsRef = useRef(null);
 
@@ -252,11 +262,24 @@ export default function App() {
           </div>
         </div>
         <div className="searchbar">
-          <Icon name="search" className="search-ic" size={16} />
-          <input value={q} onChange={(e) => { setQ(e.target.value); if (view !== "find") setView("find"); }}
-            placeholder="Search: diapers, autism eval, rent, interpreter, Black Mountain"
-            aria-label="Search resources" />
-          {q && <button className="clear" onClick={() => setQ("")} aria-label="Clear search">×</button>}
+          <div className="search-field">
+            <Icon name="search" className="search-ic" size={16} />
+            <input value={q} onChange={(e) => { setQ(e.target.value); if (view !== "find") setView("find"); }}
+              onPaste={(e) => {
+                /* a pasted case or SNIFF is a question for Ask AI, and a
+                   one-line search box would flatten its line breaks */
+                const t = e.clipboardData.getData("text");
+                if (/\n/.test(t.trim()) || t.length > 160) { e.preventDefault(); openAsk(t); }
+              }}
+              placeholder="Search: diapers, autism eval, rent, interpreter, Black Mountain"
+              aria-label="Search resources" />
+            {q && <button className="clear" onClick={() => setQ("")} aria-label="Clear search">×</button>}
+          </div>
+          <button className={"ask-btn" + (view === "ask" ? " ask-on" : "")}
+            onClick={() => (view === "ask" ? window.scrollTo(0, 0) : openAsk(q))}
+            title="Ask a question, describe a situation, or paste a SNIFF">
+            <Icon name="spark" size={15} />Ask AI
+          </button>
         </div>
         <nav className="tabs" ref={tabsRef}>
           {VIEWS.map(([id, label]) => (
@@ -286,6 +309,11 @@ export default function App() {
             </Chip>
           </div>
           <p className="count">{results.length} showing</p>
+          {terms.length >= 4 && (
+            <button className="ask-hint" onClick={() => openAsk(q)}>
+              <Icon name="spark" size={14} />Ask AI about “{q.trim()}”
+            </button>
+          )}
           <div className="cards">
             {results.slice(0, 260).map((r) => (
               <ResourceCard key={r.id} r={r} open={openId === r.id} showGaps={onlyGaps}
@@ -297,6 +325,20 @@ export default function App() {
             <p className="count">Showing the first 260. Keep typing to narrow it down.</p>
           )}
         </section>
+      )}
+
+      {view === "ask" && (
+        <AskPanel key={ask.n} initialText={ask.text} resources={resources} needs={NEEDS} needBy={NEEDBY}
+          events={EVENTS} today={evToday} copyText={copyText} onClose={() => setView("find")}
+          renderResource={(r) => (
+            <ResourceCard r={r} open={openId === r.id}
+              onToggle={() => setOpenId(openId === r.id ? "" : r.id)}
+              onEdit={(k, v) => edit(r.id, k, v)} onVerify={() => verify(r.id)} />
+          )}
+          renderEvent={(e) => (
+            <EventCard e={e} soon={soon(e, evToday)} resource={resById.get(e.rid)}
+              onOpen={() => openResource(resById.get(e.rid))} />
+          )} />
       )}
 
       {view === "sniff" && (

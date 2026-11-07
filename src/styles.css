@@ -697,3 +697,72 @@ button.act { font-family: inherit; cursor: pointer; }
 }
 .past[open] > summary::after { content: "Hide"; }
 .past > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+
+/* ------------------------------------------------------------------ ask AI */
+
+/* the search box and the Ask AI button share the bar */
+.searchbar { display: flex; gap: 8px; align-items: stretch; }
+.search-field { position: relative; flex: 1; min-width: 0; }
+.ask-btn {
+  flex: 0 0 auto;
+  display: inline-flex; align-items: center; gap: 6px;
+  font: inherit; font-size: 13.5px; font-weight: 600;
+  padding: 0 13px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--accent);
+  background: var(--accent-tint);
+  color: var(--accent-ink);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.ask-btn:hover, .ask-btn.ask-on { background: var(--accent); color: #fff; }
+.ask-hint {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin: 0 0 12px; max-width: 100%;
+  font: inherit; font-size: 13px; font-weight: 550; text-align: left;
+  padding: 7px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px dashed var(--accent);
+  background: var(--surface); color: var(--accent-ink);
+  cursor: pointer; overflow-wrap: anywhere;
+}
+.ask-hint:hover { background: var(--accent-tint); }
+
+.ask-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 10px; }
+.ask-head h2 { font-size: 20px; }
+.ask-privacy, .ask-field, .ask-warn, .ask-key, .ask-summary, .ask-why { max-width: 72ch; }
+.ask-key {
+  margin: 0 0 16px; padding: 12px 14px;
+  border: 1px solid var(--line); border-radius: var(--radius-sm);
+  background: var(--surface); font-size: 13.5px; color: var(--ink-2);
+}
+.ask-key p { margin: 0 0 10px; }
+.ask-key a { color: var(--accent-ink); }
+.ask-key-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.ask-key-row input {
+  flex: 1 1 220px; min-width: 0;
+  font: inherit; font-size: 14px; color: var(--ink);
+  padding: 7px 10px;
+  border-radius: var(--radius-sm); border: 1px solid var(--line-strong); background: var(--surface);
+}
+.ask-key-row input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-tint); }
+.ask-input { min-height: 150px; }
+.ask-warn {
+  margin: 8px 0 0; padding: 7px 10px;
+  font-size: 13px; color: var(--warn);
+  background: var(--warn-tint); border: 1px solid #EFDCB6; border-radius: var(--radius-sm);
+}
+.ask-actions { margin-top: 12px; align-items: center; }
+.linkish {
+  font: inherit; color: var(--accent-ink); text-decoration: underline;
+  background: none; border: 0; padding: 0; cursor: pointer;
+}
+.btn:disabled { opacity: .55; cursor: not-allowed; }
+.ask-results { margin-top: 18px; }
+.ask-summary { font-size: 15px; color: var(--ink); margin: 0 0 10px; }
+.ask-pick { display: flex; flex-direction: column; gap: 6px; }
+.ask-why { margin: 0; font-size: 13.5px; color: var(--ink-2); }
+.ask-why strong { color: var(--ink); font-weight: 600; }
+@media (max-width: 640px) {
+  .ask-key-row input { font-size: 16px; } /* iOS zooms on anything smaller */
+}
