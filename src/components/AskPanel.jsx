@@ -1,27 +1,32 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { KEY_STORE, buildPrompt, looksIdentifying, askGemini, parseAnswer, explain, keyProblem } from "../ai.js";
+import { CODE_STORE, LEGACY_KEY_STORE, looksIdentifying, askServer, explain } from "../ai.js";
 
-/* localStorage can throw in private windows; the key is a per-browser
-   convenience, so failing to save it only means pasting it again */
-const loadKey = () => { try { return localStorage.getItem(KEY_STORE) || ""; } catch (e) { return ""; } };
-const storeKey = (k) => {
-  try { if (k) localStorage.setItem(KEY_STORE, k); else localStorage.removeItem(KEY_STORE); } catch (e) { /* not saved */ }
+/* The Gemini key is on the server now, so nobody sets anything up. The only
+   thing a browser may keep is the team's Ask AI code, and only on a site
+   that has turned one on. localStorage can throw in private windows; then
+   the code is simply asked for again. */
+const loadCode = () => { try { return localStorage.getItem(CODE_STORE) || ""; } catch (e) { return ""; } };
+const storeCode = (c) => {
+  try { if (c) localStorage.setItem(CODE_STORE, c); else localStorage.removeItem(CODE_STORE); } catch (e) { /* not saved */ }
 };
+/* a key saved under the old per-browser setup is no longer needed: drop it */
+const dropLegacyKey = () => { try { localStorage.removeItem(LEGACY_KEY_STORE); } catch (e) { /* nothing to drop */ } };
 
 export default function AskPanel({
-  initialText, resources, needs, needBy, events, eventsLoading, today,
+  initialText, resources, needBy, events, eventsLoading,
   renderResource, renderEvent, copyText, onClose,
 }) {
   const [text, setText] = useState(initialText || "");
-  const [key, setKey] = useState(loadKey);
+  const [code, setCode] = useState(loadCode);
+  const [needCode, setNeedCode] = useState(false);
   const [draft, setDraft] = useState("");
-  const [editingKey, setEditingKey] = useState(false);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const [result, setResult] = useState(null);
-  const [keyError, setKeyError] = useState("");
   const [elapsed, setElapsed] = useState(0);
   const abort = useRef(null);
+
+  useEffect(dropLegacyKey, []);
 
   /* a count while Gemini works, so a long answer reads as working, not stuck */
   useEffect(() => {
@@ -32,41 +37,42 @@ export default function AskPanel({
     return () => clearInterval(id);
   }, [busy]);
 
-  const prompt = useMemo(() => buildPrompt({ resources, needs, events, today }), [resources, needs, events, today]);
   const warn = useMemo(() => looksIdentifying(text), [text]);
   const byId = useMemo(() => new Map(resources.map((r) => [r.id, r])), [resources]);
   const evById = useMemo(() => new Map(events.map((e) => [e.id, e])), [events]);
 
-  const saveKey = () => {
-    const k = draft.trim();
-    if (!k) return;
-    const problem = keyProblem(k);
-    if (problem) { setKeyError(problem); return; }
-    storeKey(k); setKey(k); setDraft(""); setEditingKey(false); setError(""); setKeyError("");
-  };
-  const forgetKey = () => { storeKey(""); setKey(""); setEditingKey(false); };
-
-  const send = async () => {
-    if (!key || !text.trim() || busy || eventsLoading) return;
+  const send = async (withCode = code) => {
+    if (!text.trim() || busy || eventsLoading) return;
     abort.current?.abort();
     abort.current = new AbortController();
     setBusy(true); setError(""); setResult(null);
     try {
-      const raw = await askGemini({ key, system: prompt.system, text: text.trim(), signal: abort.current.signal });
-      setResult(parseAnswer(raw, prompt));
+      setResult(await askServer({ text: text.trim(), code: withCode, signal: abort.current.signal }));
+      setNeedCode(false);
     } catch (e) {
-      if (e.name !== "AbortError") setError(explain(e));
+      if (e.name === "AbortError") return;
+      if (e.kind === "code") {
+        setNeedCode(true);
+        if (withCode) { storeCode(""); setCode(""); setError("That code was not accepted. Check it with your team."); }
+      } else setError(explain(e));
     } finally {
       setBusy(false);
     }
   };
 
+  const saveCode = () => {
+    const c = draft.trim();
+    if (!c) return;
+    storeCode(c); setCode(c); setDraft("");
+    send(c);
+  };
+
   const copyList = () => {
-    const lines = result.picks.map((p) => {
+    const lines = picks.map((p) => {
       const r = byId.get(p.id);
       return [r.name, r.phone, r.web].filter(Boolean).join(" · ") + (p.why ? "\n  " + p.why : "");
     });
-    const ev = result.events.map((x) => {
+    const ev = evPicks.map((x) => {
       const e = evById.get(x.id);
       return [e.what, e.date + (e.end ? " to " + e.end : ""), e.where].filter(Boolean).join(" · ");
     });
@@ -74,7 +80,10 @@ export default function AskPanel({
   };
 
   const needLabel = (k) => (needBy[k] ? needBy[k].label : k);
-  const showKeyForm = !key || editingKey;
+  /* a pick this copy of the page cannot show (say the calendar failed to
+     load) is left out rather than rendered empty */
+  const picks = result ? result.picks.filter((p) => byId.has(p.id)) : [];
+  const evPicks = result ? result.events.filter((x) => evById.has(x.id)) : [];
 
   return (
     <section className="pane ask">
@@ -88,27 +97,22 @@ export default function AskPanel({
       </p>
       <p className="handling ask-privacy">
         <strong>No client details.</strong> Leave out names, dates of birth, addresses, phone numbers and
-        anything else that could identify a family. What you type is sent to Google's Gemini service, and
-        on the free tier Google may keep and review it.
+        anything else that could identify a family. What you type goes through this site to Google's Gemini
+        service, and on the free tier Google may keep and review it.
       </p>
 
-      {showKeyForm && (
+      {needCode && (
         <div className="ask-key">
           <p>
-            <strong>{key ? "Change your Gemini key." : "One-time setup."}</strong> Ask AI uses your own free
-            Gemini key. Get one at{" "}
-            <a href="https://aistudio.google.com/apikey" target="_blank" rel="noreferrer">aistudio.google.com/apikey</a>{" "}
-            with a Google account, then paste the key itself here (it starts with AQ. or AIza). It is saved
-            in this browser, for this site's address only, so another phone, computer or address asks once more.
+            <strong>This site asks for the team's Ask AI code.</strong> Ask your team lead for it. It is
+            saved in this browser so you only enter it once.
           </p>
           <div className="ask-key-row">
             <input type="password" autoComplete="off" spellCheck="false" value={draft}
-              onChange={(e) => { setDraft(e.target.value); setKeyError(""); }} onKeyDown={(e) => e.key === "Enter" && saveKey()}
-              placeholder="Paste your Gemini API key" aria-label="Gemini API key" />
-            <button className="btn ok-btn" onClick={saveKey} disabled={!draft.trim()}>Save key</button>
-            {key && <button className="btn" onClick={() => setEditingKey(false)}>Cancel</button>}
+              onChange={(e) => setDraft(e.target.value)} onKeyDown={(e) => e.key === "Enter" && saveCode()}
+              placeholder="Team code" aria-label="Ask AI team code" />
+            <button className="btn ok-btn" onClick={saveCode} disabled={!draft.trim() || busy}>Save and ask</button>
           </div>
-          {keyError && <p className="ask-warn" role="alert">{keyError}</p>}
         </div>
       )}
 
@@ -125,19 +129,12 @@ export default function AskPanel({
       )}
 
       <div className="row-btns ask-actions">
-        <button className="btn ok-btn" onClick={send} disabled={!key || !text.trim() || busy || eventsLoading}>
+        <button className="btn ok-btn" onClick={() => send()} disabled={!text.trim() || busy || eventsLoading}>
           {busy ? `Reading the directory... ${elapsed}s` : "Get recommendations"}
         </button>
         {busy && <button className="btn" onClick={() => abort.current?.abort()}>Stop</button>}
         {eventsLoading && <span className="ask-wait">Loading the family calendar…</span>}
         {busy && elapsed >= 20 && <span className="ask-wait">Long answers can take a minute.</span>}
-        {key && !editingKey && !busy && (
-          <span className="tiny">
-            Gemini key saved in this browser.{" "}
-            <button className="linkish" onClick={() => setEditingKey(true)}>Change</button>{" · "}
-            <button className="linkish" onClick={forgetKey}>Forget</button>
-          </span>
-        )}
       </div>
 
       {error && <p className="callout" role="alert">{error}</p>}
@@ -151,10 +148,10 @@ export default function AskPanel({
             </p>
           )}
 
-          <h3>Recommended from the directory ({result.picks.length})</h3>
-          {!result.picks.length && <p className="empty">Gemini found nothing in the directory for this. Try the regular search.</p>}
+          <h3>Recommended from the directory ({picks.length})</h3>
+          {!picks.length && <p className="empty">Gemini found nothing in the directory for this. Try the regular search.</p>}
           <div className="cards">
-            {result.picks.map((p) => (
+            {picks.map((p) => (
               <div key={p.id} className="ask-pick">
                 <p className="ask-why">
                   {p.need && needBy[p.need] && <strong>{needLabel(p.need)}. </strong>}{p.why}
@@ -164,11 +161,11 @@ export default function AskPanel({
             ))}
           </div>
 
-          {!!result.events.length && (
+          {!!evPicks.length && (
             <>
               <h3>Coming up</h3>
               <div className="cards">
-                {result.events.map((x) => (
+                {evPicks.map((x) => (
                   <div key={x.id} className="ask-pick">
                     {x.why && <p className="ask-why">{x.why}</p>}
                     {renderEvent(evById.get(x.id))}
@@ -186,7 +183,7 @@ export default function AskPanel({
           )}
 
           <div className="row-btns">
-            <button className="btn" onClick={copyList} disabled={!result.picks.length && !result.events.length}>Copy the list</button>
+            <button className="btn" onClick={copyList} disabled={!picks.length && !evPicks.length}>Copy the list</button>
           </div>
           <p className="tiny src">
             Picked by Gemini from this directory

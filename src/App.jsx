@@ -363,8 +363,8 @@ export default function App() {
       )}
 
       {view === "ask" && (
-        <AskPanel key={ask.n} initialText={ask.text} resources={resources} needs={NEEDS} needBy={NEEDBY}
-          events={allEvents} eventsLoading={!cal} today={evToday} copyText={copyText} onClose={() => setView("find")}
+        <AskPanel key={ask.n} initialText={ask.text} resources={resources} needBy={NEEDBY}
+          events={allEvents} eventsLoading={!cal} copyText={copyText} onClose={() => setView("find")}
           renderResource={(r) => (
             <ResourceCard r={r} open={openId === r.id}
               onToggle={() => setOpenId(openId === r.id ? "" : r.id)}

@@ -25,7 +25,8 @@ npm run check    # validate data/ before committing an export
 
 `dist/` is plain static files. Any static host will serve it, and the app keeps
 working offline once loaded. The one thing that goes online is Ask AI, and only
-when someone presses it (see below). The typeface
+when someone presses it (see below); it is also the one part with a server side,
+a Netlify function. The typeface
 (Inter) is bundled rather than pulled from a CDN, so it renders the same behind
 a firewall as it does outside one.
 
@@ -80,33 +81,57 @@ it, export the next edition of the workbook and rerun the script.
 The **Ask AI** button next to the search box takes a question, a description of
 a family's situation, or a whole pasted SNIFF, and asks Google's Gemini which
 resources in this directory fit, with a reason for each. Pasting more than one
-line into the search box opens it too.
+line into the search box opens it too. Nobody sets anything up: it works in any
+browser on any device.
 
-- Each person uses a free key: make one at aistudio.google.com/apikey with a
-  Google account and paste it in once. Keys start with `AQ.` (the newer form)
-  or `AIza`. AI Studio also shows a service account email
-  (`...@...iam.gserviceaccount.com`) beside the key. That is not the key, and the
-  panel says so if it is pasted.
-- The key is kept in that browser's localStorage and nowhere else, so it is per
-  browser and per site address: a phone, a second computer, or the preview link
-  as against the main site each ask for it once. **Forget** removes it. A key
-  shared across the team shares one free limit.
-- A request sends the typed text plus a one-line-per-entry list of every
-  resource, the team's upcoming picks, and the next three weeks of the family
-  calendar (150 events at most) to `generativelanguage.googleapis.com`, about
-  35,000 tokens in all. Gemini can only answer with entries from that list;
-  anything else it suggests is dropped, and the panel says how many.
-- It asks for a low thinking level, since most of the wait on a prompt this
-  size is the model thinking. A model that does not take that setting is asked
-  again without it. While it works, the button counts the seconds and **Stop**
-  cancels.
-- **No client details.** On the free tier Google may keep and review what is
-  sent. The panel says so, and warns when the text looks like it has a phone
-  number, an email address, a date of birth or a "Name:" style field.
-- The free tier has per-minute and daily limits. When one is hit, the panel says
-  to wait rather than failing quietly.
-- It asks `gemini-flash-latest` and falls back to `gemini-flash-lite-latest`.
-  The logic is in `src/ai.js`; the panel is `src/components/AskPanel.jsx`.
+**How it works.** The browser sends only the typed text to this site's own
+function, `/api/ask-ai` (`netlify/functions/ask-ai.mjs`). The function builds
+the prompt on the server from the directory as deployed (every resource, the
+team's upcoming picks, and the next three weeks of the family calendar, 150
+events at most), calls Gemini, maps the answer back onto the directory, and
+returns it. Gemini can only answer with entries from that list; anything else
+it suggests is dropped, and the panel says how many. Because the prompt is
+built on the server, the endpoint answers questions about this directory and
+nothing else.
+
+**Setting it up (once, on Netlify):**
+
+1. In AI Studio (aistudio.google.com/apikey), copy the key itself. It starts
+   with `AQ.` or `AIza`; the service account email shown beside it is not the
+   key. Keep billing off and the key stays on the free tier.
+2. In Netlify: the site, then Site configuration, then Environment variables,
+   then Add a variable. Key `GEMINI_API_KEY`, the key as its value, marked as
+   containing a secret. Scope: Functions. Deploy contexts: Production and Deploy
+   Previews (and Branch deploys if those are used).
+3. Redeploy: functions read the value as it was at deploy time, so trigger a new
+   deploy (or push a commit) after adding or changing it.
+
+Never put the key in the code, a `VITE_` variable, `netlify.toml` or a chat: a
+front-end variable would publish it inside the app for anyone to copy.
+
+**Limits and locks.**
+
+- One shared key means one shared free limit. If it runs out, Ask AI says so and
+  waits for the reset; with billing off it never charges.
+- The function only answers requests from the app's own pages, and Netlify
+  rate-limits it to 10 questions a minute per IP.
+- Optional team code: set `ASK_AI_CODE` the same way, and the panel asks each
+  browser for that code once before it will answer.
+- Gemini gets a low thinking level and up to 42 seconds, then the lighter model
+  gets what is left of Netlify's 60-second limit, so the panel shows an answer
+  or a plain "took too long", never a platform error. While it works, the button
+  counts the seconds and **Stop** cancels.
+
+**No client details.** On the free tier Google may keep and review what is
+sent. The panel says so, and warns when the text looks like it has a phone
+number, an email address, a date of birth or a "Name:" style field. The
+function never logs what was asked.
+
+**Locally**, `npm run dev` has no functions, so Ask AI says it is not switched on.
+To try it, run `netlify dev` with `GEMINI_API_KEY` set in the shell, or use a
+deploy preview. The logic is in `src/ai.js`, the panel is
+`src/components/AskPanel.jsx`, and the server side is
+`netlify/functions/ask-ai.mjs`.
 
 ## Where the data came from
 

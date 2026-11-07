@@ -6,8 +6,12 @@
  * resource, a phone number or an event.
  */
 
-/* the key lives only in this browser; nothing in the repo or the build has it */
-export const KEY_STORE = "wnc:gemini-key";
+/* The Gemini key lives on the server (netlify/functions/ask-ai.mjs reads it
+   from Netlify's environment); the browser only ever calls ASK_PATH. Browsers
+   that saved a key under the old per-browser setup have it removed. */
+export const ASK_PATH = "/api/ask-ai";
+export const CODE_STORE = "wnc:ask-code";
+export const LEGACY_KEY_STORE = "wnc:gemini-key";
 
 /* Google repoints this alias at its current Flash model, which the free tier
    covers, so a retired model version does not break the search. The lite
@@ -28,16 +32,6 @@ const addDays = (iso, n) => {
 export const EVENT_DAYS = 21;
 export const EVENT_MAX = 150;
 
-/* A mix-up Muse ran into: AI Studio shows a service account email
-   (...@...iam.gserviceaccount.com) next to the key, and it is not the key.
-   Keys start "AQ." (the newer form) or "AIza". */
-export function keyProblem(k) {
-  if (/@|gserviceaccount\.com/i.test(k)) {
-    return "That is a service account email, not an API key. In AI Studio, open the key and copy the key itself. It starts with AQ. or AIza.";
-  }
-  if (/\s/.test(k)) return "A key has no spaces in it. Copy it again from AI Studio.";
-  return "";
-}
 
 /* one line per resource and event, short enough that the whole directory
    fits in one request, with refs (R12, E3) the reply has to use */
@@ -100,14 +94,44 @@ export class AiError extends Error {
 /* what each failure means for the person holding the phone */
 export function explain(err) {
   switch (err.kind) {
-    case "key": return "Gemini did not accept that key. Check it at aistudio.google.com/apikey, then paste it again.";
+    case "setup": return "Ask AI is not switched on for this copy of the app yet. Someone with Netlify access adds the Gemini key once (see the README); the regular search works meanwhile.";
+    case "key": return "Google turned down this site's Gemini key. Someone with Netlify access needs to check GEMINI_API_KEY.";
     case "quota": return "Gemini's free limit is used up for now. Wait a minute and try again; the daily limit resets overnight.";
+    case "limit": return "Too many questions in a short time. Wait a minute and try again.";
     case "busy": return "Gemini is busy right now. Try again in a moment.";
-    case "offline": return "Could not reach Gemini. Check the connection; the regular search still works without one.";
+    case "timeout": return "Gemini took too long to answer. Try again, or shorten the text.";
+    case "long": return "That is longer than Ask AI takes (30,000 characters). Trim it and try again.";
+    case "denied": return "This page is not allowed to use Ask AI. Open the directory from its own address.";
+    case "offline": return "Could not reach Ask AI. Check the connection; the regular search still works without one.";
     case "blocked": return "Gemini would not answer that one. Try rewording it.";
     case "parse": return "Gemini's answer could not be read. Try again.";
-    default: return "Something went wrong asking Gemini. Try again.";
+    default: return "Something went wrong with Ask AI. Try again.";
   }
+}
+
+/* The browser's side: send the question to this site's function, get back
+   the picks already mapped onto the directory. */
+export async function askServer({ text, code, signal, fetchImpl = fetch }) {
+  let res;
+  try {
+    res = await fetchImpl(ASK_PATH, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", ...(code && { "x-ask-code": code }) },
+      body: JSON.stringify({ text }),
+      signal,
+    });
+  } catch (e) {
+    if (e.name === "AbortError") throw e;
+    throw new AiError("offline", String(e));
+  }
+  let j = null;
+  try { j = await res.json(); } catch (e) { /* a platform page, not the function's JSON */ }
+  if (res.ok && j && Array.isArray(j.picks)) return j;
+  if (j && typeof j.error === "string") throw new AiError(j.error);
+  if (res.status === 429) throw new AiError("limit");
+  if (res.status === 404) throw new AiError("setup", "no function at " + ASK_PATH);
+  if (res.status >= 500) throw new AiError("busy");
+  throw new AiError("error", String(res.status));
 }
 
 const kindFor = (status, body) => {
@@ -125,9 +149,9 @@ const kindFor = (status, body) => {
 export const THINKING = { thinkingLevel: "low" };
 
 /* one call to Gemini; tries the fallback model when the first is missing or busy */
-export async function askGemini({ key, system, text, signal, fetchImpl = fetch }) {
+export async function askGemini({ key, system, text, signal, models = MODELS, fetchImpl = fetch }) {
   let last;
-  for (const model of MODELS) {
+  for (const model of models) {
     /* a model that does not take a thinking level refuses the request with
        a 400, so ask that model again without one before moving on */
     for (const thinking of [THINKING, null]) {
@@ -147,7 +171,7 @@ export async function askGemini({ key, system, text, signal, fetchImpl = fetch }
           signal,
         });
       } catch (e) {
-        if (e.name === "AbortError") throw e;
+        if (e.name === "AbortError" || e.name === "TimeoutError") throw e;
         throw new AiError("offline", String(e));
       }
       if (res.ok) {
