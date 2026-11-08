@@ -100,9 +100,12 @@ nothing else.
    with `AQ.` or `AIza`; the service account email shown beside it is not the
    key. Keep billing off and the key stays on the free tier.
 2. In Netlify: the site, then Site configuration, then Environment variables,
-   then Add a variable. Key `GEMINI_API_KEY`, the key as its value, marked as
-   containing a secret. Scope: Functions. Deploy contexts: Production and Deploy
-   Previews (and Branch deploys if those are used).
+   then Add a variable. Key `GEMINI_API_KEY`, the key as its value. On a paid
+   plan, mark it as a secret and give it the Functions scope only. On the free
+   plan those two options are refused (that is how this site's key was set, on
+   8 Nov 2026: all scopes and contexts, not marked secret). That is still safe
+   here: Vite only builds `VITE_`-prefixed variables into the app, so the key
+   never reaches a browser; it is visible only to people on the Netlify team.
 3. Redeploy: functions read the value as it was at deploy time, so trigger a new
    deploy (or push a commit) after adding or changing it.
 
