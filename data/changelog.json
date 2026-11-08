@@ -143,6 +143,12 @@
    "entries": [
     {
      "date": "Nov 8 2026",
+     "what": "Crisis rows checked: two wrong or stale rows fixed, four confirmed",
+     "detail": "Community Paramedics / MCOT listed numbers that are not in the county's directory; its 24/7 line is 828-772-1294. Mission's Copestone unit was replaced in 2023 by the Sweeten Creek Mental Health & Wellness Center. 'The Bridges Crisis and Assessment Center' could not be confirmed and now says so. Confirmed against official sources: the child abuse report line (24/7), RHA Mobile Crisis (24/7, 11 counties), the Vaya crisis line (24/7 including holidays) and MCOT's new numbers, each now with a website.",
+     "source": "scripts/apply-crisis-check-2026-11-08.mjs"
+    },
+    {
+     "date": "Nov 8 2026",
      "what": "SNIFF questions added to 51 rows that only had a section",
      "detail": "Each got the SNIFF questions its own description answers (food pantries and free fridges, home repair and housing, dental and clinics, respite and kinship support, diapers and formula, transportation and more), so Ask AI and the By SNIFF question tab find them by need, not only by their words. 18 rows stay section-only because no SNIFF question fits: the crisis lines (their crisis tag keeps them on every Ask AI shortlist), pet help, senior centers, showers, laundry and a Facebook group. Script: scripts/tag-section-only-rows-2026-11-08.mjs.",
      "source": "Each row's own description in this directory"
@@ -231,6 +237,12 @@
    "id": "open-questions",
    "label": "STILL OPEN",
    "entries": [
+    {
+     "date": "OPEN",
+     "what": "What is 'The Bridges Crisis and Assessment Center' row?",
+     "detail": "Its name belongs to a juvenile crisis and assessment center in Winston-Salem, and nothing turns up at 1984 Hendersonville Rd. It may be a garbled copy of Asheville's Western Area Multi-Purpose Juvenile Crisis and Assessment Center (20 Lees Creek Rd), which takes youth from the juvenile justice system, not family referrals. Ask RHA (1-800-848-0180) and then rename the row or mark it closed.",
+     "source": "Crisis rows check, web search 6 and 8 Nov 2026"
+    },
     {
      "date": "OPEN",
      "what": "May be gone or renamed: M.Y. Life Center, Perinatal Emotional Health Network, WNC Listening Line",
