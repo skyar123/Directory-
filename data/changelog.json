@@ -142,6 +142,12 @@
    "label": "ADDED THIS ROUND",
    "entries": [
     {
+     "date": "Nov 8 2026",
+     "what": "SNIFF questions added to 51 rows that only had a section",
+     "detail": "Each got the SNIFF questions its own description answers (food pantries and free fridges, home repair and housing, dental and clinics, respite and kinship support, diapers and formula, transportation and more), so Ask AI and the By SNIFF question tab find them by need, not only by their words. 18 rows stay section-only because no SNIFF question fits: the crisis lines (their crisis tag keeps them on every Ask AI shortlist), pet help, senior centers, showers, laundry and a Facebook group. Script: scripts/tag-section-only-rows-2026-11-08.mjs.",
+     "source": "Each row's own description in this directory"
+    },
+    {
      "date": "Nov 6 2026",
      "what": "Accuracy pass: wrong numbers fixed, gaps filled, crisis lines verified",
      "detail": "Fixed: Bounty & Soul carried the YMCA mobile market's phone; ABCCM Our Daily Bread carried Swannanoa Valley Christian Ministry's; Kaleidoscope Play & Learn dialled Madison County Smart Start; Doulas of Asheville named a Raleigh-Durham business; MAHEC Ob/Gyn had the wrong building; two rows were tagged Medicaid against their own notes; hours cut off mid-word on eight rows; hours or phone numbers sitting in the address field on ten. Filled from sources: My Sister's Place's hotline, websites for 14 crisis and safety rows, and Raleigh contacts for the perinatal IOP. In all 84 rows changed: 7 more phones, 23 more websites, 28 more addresses, 47 more hours, and 11 rows verified for the first time. Checked and left alone: RHA's urgent care is still listed as 24/7 on RHA's newer pages. Organization pages could not be opened from this session, so facts came from web search; rows confirmed against an official or the organization's own source show 'verified by SB (web search)'.",

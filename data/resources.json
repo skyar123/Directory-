@@ -1247,7 +1247,10 @@
    "vb": "",
    "sec": "I",
    "needs": [
-    "I:*"
+    "I:*",
+    "I:11a",
+    "IV:*",
+    "IV:6a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -2051,7 +2054,8 @@
    "vb": "",
    "sec": "IX",
    "needs": [
-    "IX:*"
+    "IX:*",
+    "IX:9a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -2631,7 +2635,9 @@
    "vb": "",
    "sec": "IX",
    "needs": [
-    "IX:*"
+    "IX:*",
+    "VIII:*",
+    "VIII:11a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -2738,6 +2744,8 @@
    "vb": "",
    "sec": "V",
    "needs": [
+    "I:*",
+    "I:10a",
     "V:*"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
@@ -3029,6 +3037,8 @@
    "vb": "",
    "sec": "IV",
    "needs": [
+    "I:*",
+    "I:11a",
     "IV:*"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
@@ -3196,7 +3206,8 @@
    "vb": "",
    "sec": "IV",
    "needs": [
-    "IV:*"
+    "IV:*",
+    "IV:5a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -3274,7 +3285,10 @@
    "vb": "",
    "sec": "IV",
    "needs": [
-    "IV:*"
+    "IV:*",
+    "IV:5a",
+    "VIII:*",
+    "VIII:1a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: Asheville NC Kinship Care Benefits (Jul 2026), citing NCDHHS, S.L. 2023-14 and S.L. 2025-16",
    "note": "Check before planning guardianship: the Drive kinship guide says that under S.L. 2025-16 a child generally has to be at least 10 for KinGAP guardianship assistance (unless placed with an older sibling), so guardianship of a young child could end the monthly payment. Confirm with the social worker and the Guardian ad Litem first.",
@@ -3865,7 +3879,8 @@
    "vb": "",
    "sec": "VIII",
    "needs": [
-    "VIII:*"
+    "VIII:*",
+    "VIII:17a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: Free & Low-Cost Childcare in Leicester & Buncombe County (family guide, checked Aug 2026)",
    "note": "",
@@ -6961,7 +6976,13 @@
    "vb": "",
    "sec": "ESPANOL",
    "needs": [
-    "ESPANOL:*"
+    "ESPANOL:*",
+    "ESPANOL:interprete-disponible-",
+    "III:*",
+    "III:1a",
+    "III:3a",
+    "VI:*",
+    "VI:1a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
@@ -7089,7 +7110,9 @@
    "vb": "",
    "sec": "IV",
    "needs": [
-    "IV:*"
+    "IV:*",
+    "VIII:*",
+    "VIII:12a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -7113,7 +7136,9 @@
    "vb": "",
    "sec": "IV",
    "needs": [
-    "IV:*"
+    "IV:*",
+    "VIII:*",
+    "VIII:16a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -7186,7 +7211,9 @@
    "vb": "",
    "sec": "IV",
    "needs": [
-    "IV:*"
+    "IV:*",
+    "VIII:*",
+    "VIII:17a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -8565,7 +8592,8 @@
    "vb": "",
    "sec": "VIII",
    "needs": [
-    "VIII:*"
+    "VIII:*",
+    "VIII:5a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -8643,7 +8671,9 @@
    "vb": "",
    "sec": "VIII",
    "needs": [
-    "VIII:*"
+    "VIII:*",
+    "VIII:13a",
+    "VIII:5a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -8717,7 +8747,8 @@
    "vb": "",
    "sec": "VIII",
    "needs": [
-    "VIII:*"
+    "VIII:*",
+    "VIII:5a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -8741,7 +8772,8 @@
    "vb": "",
    "sec": "VIII",
    "needs": [
-    "VIII:*"
+    "VIII:*",
+    "VIII:5a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -8765,7 +8797,8 @@
    "vb": "",
    "sec": "VIII",
    "needs": [
-    "VIII:*"
+    "VIII:*",
+    "VIII:5a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address and hours replaced: they named one of the listed sites, 6 Nov 2026",
    "note": "",
@@ -8981,7 +9014,8 @@
    "vb": "",
    "sec": "VIII",
    "needs": [
-    "VIII:*"
+    "VIII:*",
+    "VIII:5a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -9005,7 +9039,8 @@
    "vb": "",
    "sec": "VIII",
    "needs": [
-    "VIII:*"
+    "VIII:*",
+    "VIII:5a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -9029,7 +9064,8 @@
    "vb": "",
    "sec": "VIII",
    "needs": [
-    "VIII:*"
+    "VIII:*",
+    "VIII:5a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -9053,7 +9089,8 @@
    "vb": "",
    "sec": "VIII",
    "needs": [
-    "VIII:*"
+    "VIII:*",
+    "VIII:3a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
@@ -9077,7 +9114,8 @@
    "vb": "",
    "sec": "VIII",
    "needs": [
-    "VIII:*"
+    "VIII:*",
+    "VIII:5a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address and hours replaced: they named one of the listed sites, 6 Nov 2026",
    "note": "",
@@ -9101,7 +9139,8 @@
    "vb": "",
    "sec": "VIII",
    "needs": [
-    "VIII:*"
+    "VIII:*",
+    "VIII:5a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -9125,7 +9164,10 @@
    "vb": "",
    "sec": "VIII",
    "needs": [
-    "VIII:*"
+    "VIII:*",
+    "VIII:5a",
+    "X:*",
+    "X:8"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -9174,7 +9216,8 @@
    "vb": "",
    "sec": "VIII",
    "needs": [
-    "VIII:*"
+    "VIII:*",
+    "VIII:5a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -9198,7 +9241,8 @@
    "vb": "",
    "sec": "VIII",
    "needs": [
-    "VIII:*"
+    "VIII:*",
+    "VIII:5a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address and hours replaced: they named one of the listed sites, 6 Nov 2026",
    "note": "",
@@ -9508,7 +9552,9 @@
    "vb": "",
    "sec": "VIII",
    "needs": [
-    "VIII:*"
+    "VIII:*",
+    "VIII:11a",
+    "VIII:4a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
@@ -9695,7 +9741,9 @@
    "vb": "",
    "sec": "VIII",
    "needs": [
-    "VIII:*"
+    "VIII:*",
+    "VIII:12a",
+    "VIII:5a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -9950,7 +9998,9 @@
    "vb": "",
    "sec": "VIII",
    "needs": [
-    "VIII:*"
+    "VIII:*",
+    "VIII:11a",
+    "VIII:4a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -10133,7 +10183,8 @@
    "vb": "SB",
    "sec": "VIII",
    "needs": [
-    "VIII:*"
+    "VIII:*",
+    "VIII:6a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; hours moved out of the address field, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
    "note": "",
@@ -10395,7 +10446,8 @@
    "vb": "",
    "sec": "VIII",
    "needs": [
-    "VIII:*"
+    "VIII:*",
+    "VIII:6a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -10419,7 +10471,8 @@
    "vb": "",
    "sec": "VIII",
    "needs": [
-    "VIII:*"
+    "VIII:*",
+    "VIII:6a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -10645,7 +10698,8 @@
    "vb": "",
    "sec": "VIII",
    "needs": [
-    "VIII:*"
+    "VIII:*",
+    "VIII:6a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -10694,7 +10748,8 @@
    "vb": "",
    "sec": "VIII",
    "needs": [
-    "VIII:*"
+    "VIII:*",
+    "VIII:6a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -10798,7 +10853,8 @@
    "vb": "",
    "sec": "VIII",
    "needs": [
-    "VIII:*"
+    "VIII:*",
+    "VIII:6a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -11064,7 +11120,8 @@
    "vb": "",
    "sec": "VIII",
    "needs": [
-    "VIII:*"
+    "VIII:*",
+    "VIII:13a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -11390,7 +11447,8 @@
    "vb": "",
    "sec": "VI",
    "needs": [
-    "VI:*"
+    "VI:*",
+    "VI:1a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -11414,6 +11472,10 @@
    "vb": "",
    "sec": "VI",
    "needs": [
+    "III:*",
+    "III:2a",
+    "IX:*",
+    "IX:10a",
     "VI:*"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
@@ -11544,7 +11606,8 @@
    "vb": "",
    "sec": "VI",
    "needs": [
-    "VI:*"
+    "VI:*",
+    "VI:1a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -11624,7 +11687,8 @@
    "vb": "",
    "sec": "III",
    "needs": [
-    "III:*"
+    "III:*",
+    "III:3a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -11975,7 +12039,8 @@
    "vb": "",
    "sec": "III",
    "needs": [
-    "III:*"
+    "III:*",
+    "III:3a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -11999,7 +12064,11 @@
    "vb": "",
    "sec": "III",
    "needs": [
-    "III:*"
+    "III:*",
+    "III:1a",
+    "III:3a",
+    "VI:*",
+    "VI:1a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: Medicaid Dental Providers Guide, Buncombe County (30 Aug 2026)",
    "note": "Sources disagree on the address: listings show both 154 and 257 Biltmore Ave. Confirm before sending a family.",
@@ -12023,7 +12092,8 @@
    "vb": "",
    "sec": "VI",
    "needs": [
-    "VI:*"
+    "VI:*",
+    "VI:1a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; cross-reference added 2026-09-10",
    "note": "Since Aug 2026 this same line also books the new Dental on Livingston site at ABCCM, 155 Livingston St, three days a week.",
@@ -12691,7 +12761,8 @@
    "vb": "SB",
    "sec": "VII",
    "needs": [
-    "VII:*"
+    "VII:*",
+    "VII:2a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -12907,7 +12978,8 @@
    "vb": "",
    "sec": "VII",
    "needs": [
-    "VII:*"
+    "VII:*",
+    "VII:6a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -14062,8 +14134,10 @@
    "vb": "SB",
    "sec": "VI",
    "needs": [
+    "III:*",
+    "III:5a",
     "VI:*",
-    "III:*"
+    "VI:4a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -15156,6 +15230,8 @@
    "vb": "",
    "sec": "RESPITE",
    "needs": [
+    "IV:*",
+    "IV:6a",
     "RESPITE:*"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, RESPITE tab; hours moved out of the address field, 6 Nov 2026",
@@ -15180,6 +15256,9 @@
    "vb": "",
    "sec": "RESPITE",
    "needs": [
+    "IV:*",
+    "IV:4a",
+    "IV:6a",
     "RESPITE:*"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, RESPITE tab; Drive: Respite Options for Caregivers (Jul 2026; checked against each organization's published information and an FFA-NC coach)",
@@ -15204,6 +15283,8 @@
    "vb": "SB",
    "sec": "RESPITE",
    "needs": [
+    "IV:*",
+    "IV:6a",
     "RESPITE:*"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, RESPITE tab",
@@ -16025,6 +16106,7 @@
    "sec": "X",
    "needs": [
     "VIII:*",
+    "VIII:5a",
     "X:*"
    ],
    "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
@@ -17524,8 +17606,10 @@
    "vb": "",
    "sec": "III",
    "needs": [
-    "III:*",
+    "I:*",
+    "I:6a",
     "II:*",
+    "III:*",
     "IV:*"
    ],
    "src": "Drive: Asheville NC Kinship Care Benefits (Jul 2026), citing NCDHHS",
