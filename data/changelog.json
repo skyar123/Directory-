@@ -155,6 +155,12 @@
    "entries": [
     {
      "date": "Nov 8 2026",
+     "what": "Gap fill: phones, websites and addresses for about 70 rows",
+     "detail": "Contact details filled for rows that had none, among them Burton Street Community Center, Just Economics, Mountain BizWorks, BCS Language Services, CMARC's Buncombe referral line, the Lavender Fund, Youth Villages, ECAC, NAMI Western Carolina, the WNC Farmers Market, Read to Succeed, Literacy Together and all six Carolina Pediatric Therapy rows. Corrections: the Estes Resource Center is the Estes Elementary family resource center on Overlook Rd, Brandy Colvin's office is on N French Broad, and USCRI and Hispanic Federation have no Asheville office. Nine rows that could not be found now say so.",
+     "source": "scripts/apply-gap-fill-2026-11-08.mjs"
+    },
+    {
+     "date": "Nov 8 2026",
      "what": "Concrete Needs check: a dangerous mix-up fixed, the Salvation Army shelter pause flagged",
      "detail": "ABBA's House was described as domestic violence safe housing; it is a recovery residence for mothers, so the row now says so and points survivors to Helpmate. The Salvation Army's 65-bed shelter is paused until April 30, 2027. The NC Diaper Bank row's Houston number and walk-in description were removed. Modivcare now lists each plan's ride line, with WellCare's corrected to One Call, and it and Mountain Mobility lost a stray \"Toys or books\" tag. 12 Baskets, ART, Mountain Mobility, BEAR Closets and Safe Shelter had wrong or cut-off hours. Code Purple now lists last season's sites and rules. Confirmed against official or the organizations' own sources: ART, Mountain Mobility, Trailblazer, Modivcare, both MANNA helpline rows, both CIP rows, the Salvation Army shelter and rent help, Safe Shelter, love is respect and the Trevor Project.",
      "source": "scripts/apply-concrete-needs-check-2026-11-08.mjs"
@@ -255,6 +261,12 @@
    "id": "open-questions",
    "label": "STILL OPEN",
    "entries": [
+    {
+     "date": "OPEN",
+     "what": "Organizations the gap-fill search could not find",
+     "detail": "Budgie's Bakery free pantry (1808 Pisgah Hwy), Bountiful Cities Free Veggie Mondays, Project Comfort, an Asheville Laundry Love, Watoto Wa Utamaduni, Fostering the Family, Little Land Stewards, the We Belong! children's program and RSA Asheville. Also unclear: whether Field & Kitchen in Hendersonville is still open. Each row now carries a note. Ask whoever added it, or call, then fix or retire the row.",
+     "source": "Gap fill, web search 8 Nov 2026"
+    },
     {
      "date": "OPEN",
      "what": "Concrete Needs details to confirm before relying on them",
