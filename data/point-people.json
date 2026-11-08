@@ -4,7 +4,7 @@
   "generated": "2026-08-25",
   "note": "RESPONSIVE? is the column that matters.",
   "internalNote": "Entries with internal:true are the Child First team's personal addresses. The whole directory is an internal staff tool, so the app shows them. Strip them before anything derived from this file goes outside the team.",
-  "count": 105,
+  "count": 114,
   "internalUseOnly": true
  },
  "people": [
@@ -1195,6 +1195,123 @@
    "notes": "60+ car repair program. $100 = 10% of repair cost.",
    "internal": false,
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, POINT PEOPLE tab"
+  },
+  {
+   "n": "Caitlin Hettich",
+   "resp": "⚪ Not tried yet",
+   "role": "Project CARA contact",
+   "org": "MAHEC Project CARA",
+   "ph": "828-708-8560 (direct)",
+   "em": "caitlin.hettich@mahec.net",
+   "grp": "Pregnancy & Postpartum",
+   "notes": "Welcomes collaboration and can connect partners with MAHEC meetings. Family referrals still go through 828-255-5542 or MAHEC's online referral form. Met at the 6 Nov 2026 NFP partner meeting.",
+   "lv": "2026-11-06",
+   "vb": "SB",
+   "internal": false,
+   "src": "Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes)"
+  },
+  {
+   "n": "Morgan Kaelin",
+   "resp": "⚪ Not tried yet",
+   "role": "Blue Ridge Healthy Families contact",
+   "org": "Blue Ridge Partnership for Children",
+   "em": "morgan.kaelin@brpartnershipforchildren.org",
+   "grp": "Pregnancy & Postpartum",
+   "notes": "Healthy Families America home visiting. Covers more than Buncombe (NCDHHS lists Avery, Henderson, Madison, Mitchell, Yancey and Watauga too), so ask whether a family's county is covered. Met at the 6 Nov 2026 NFP partner meeting.",
+   "lv": "2026-11-06",
+   "vb": "SB",
+   "internal": false,
+   "src": "Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes)"
+  },
+  {
+   "n": "Co-kema King",
+   "resp": "⚪ Not tried yet",
+   "role": "Doula support contact (role to be confirmed)",
+   "org": "Sistas Caring 4 Sistas (\"Sistas Caring for Children\" in the meeting notes)",
+   "grp": "Pregnancy & Postpartum",
+   "notes": "Named as the doula support contact at the 6 Nov 2026 NFP partner meeting; referral details still to be confirmed and no phone or email captured yet. SC4S general line 828-575-0488, doulaup@sistascaring4sistas.org.",
+   "internal": false,
+   "src": "Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes)"
+  },
+  {
+   "n": "Julie Burger",
+   "resp": "⚪ Not tried yet",
+   "role": "School Health Program Manager",
+   "org": "MAHEC School Health Program",
+   "em": "julie.burger@mahec.net",
+   "grp": "Child Health",
+   "notes": "Manages the MAHEC school nurses who cover Asheville City, Buncombe County and charter schools. Met at the 6 Nov 2026 NFP partner meeting.",
+   "lv": "2026-11-06",
+   "vb": "SB",
+   "internal": false,
+   "src": "Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes)"
+  },
+  {
+   "n": "Taylor Brown",
+   "resp": "⚪ Not tried yet",
+   "role": "School nurse",
+   "org": "MAHEC School Health Program",
+   "em": "taylor.brown@mahec.net",
+   "grp": "Child Health",
+   "notes": "Program manager is Julie Burger. Met at the 6 Nov 2026 NFP partner meeting.",
+   "lv": "2026-11-06",
+   "vb": "SB",
+   "internal": false,
+   "src": "Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes)"
+  },
+  {
+   "n": "Abby Moser",
+   "resp": "⚪ Not tried yet",
+   "role": "Preschool Outreach Program",
+   "org": "Buncombe County Public Libraries",
+   "em": "abby.moser@buncombenc.gov",
+   "grp": "Child Development",
+   "notes": "Library story times and materials for child care centers, birth to pre-K. Program line 828-250-4729. Met at the 6 Nov 2026 NFP partner meeting.",
+   "lv": "2026-11-06",
+   "vb": "SB",
+   "internal": false,
+   "src": "Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes)"
+  },
+  {
+   "n": "Tangie Ballard Bowman",
+   "resp": "⚪ Not tried yet",
+   "role": "Women's Empowerment Director",
+   "org": "YWCA of Asheville",
+   "ph": "828-254-7206",
+   "em": "tangela.bowman@ywcaofasheville.org",
+   "grp": "Money & Work",
+   "notes": "Email uses her full name, Tangela. Clients use ext. 104 on the main line. Organization-related cell for partners: 864-807-0244. Women's Empowerment covers Empowerment Child Care, MotherLove and Getting Ahead. Upcoming: TD Bank at the YWCA, Tue Nov 17, 2026, 6pm (topic not given). Met at the 6 Nov 2026 NFP partner meeting.",
+   "lv": "2026-11-06",
+   "vb": "SB",
+   "internal": false,
+   "src": "Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes)"
+  },
+  {
+   "n": "Shoshana Barton",
+   "resp": "⚪ Not tried yet",
+   "role": "Health care access legal help",
+   "org": "Pisgah Legal Services",
+   "ph": "828-210-3786",
+   "em": "shoshana@pisgahlegal.org",
+   "grp": "Legal",
+   "notes": "Free legal help with eligible health care access and coverage problems. Marketplace enrollment appointments are a different line, 828-210-3404. Met at the 6 Nov 2026 NFP partner meeting.",
+   "lv": "2026-11-06",
+   "vb": "SB",
+   "internal": false,
+   "src": "Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes)"
+  },
+  {
+   "n": "Melissa Chambers",
+   "resp": "⚪ Not tried yet",
+   "role": "Justice Navigation Services",
+   "org": "Goodwill Industries of Northwest NC",
+   "em": "mchambers@goodwillnwnc.org",
+   "grp": "Legal",
+   "notes": "Court and reentry navigation for people involved with the justice system. Book an appointment rather than walking in. Met at the 6 Nov 2026 NFP partner meeting.",
+   "lv": "2026-11-06",
+   "vb": "SB",
+   "internal": false,
+   "src": "Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes)"
   }
  ]
 }

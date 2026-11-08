@@ -1,20 +1,26 @@
 import { useState, useMemo, useRef, useEffect } from "react";
 import {
-  META, SECTIONS, SECBY, NEEDS, BASE, PEOPLE, PEOPLE_META,
-  CRA, CRA_SECTIONS, CHANGELOG, FOOD, TODAY, norm,
+  META, SECTIONS, SECBY, NEEDS, NEEDBY, BASE, PEOPLE, PEOPLE_META,
+  CRA, CRA_SECTIONS, CHANGELOG, FOOD, EVENTS, EVENTS_META, TODAY, norm, telHref, loadCalendar,
 } from "./data.js";
 import { useStore } from "./storage.js";
 import { score } from "./search.js";
+import { arrange, soon, localToday, AGE_FILTERS, forAge } from "./events.js";
 import { Chip } from "./components/bits.jsx";
 import Icon, { Logo } from "./components/Icon.jsx";
 import ResourceCard from "./components/ResourceCard.jsx";
 import CraRow from "./components/CraRow.jsx";
+import EventCard from "./components/EventCard.jsx";
+import AskPanel from "./components/AskPanel.jsx";
+import EventMonth from "./components/EventMonth.jsx";
+import CalendarNotes from "./components/CalendarNotes.jsx";
 
 const VIEWS = [
   ["find", "Find"],
   ["sniff", "By SNIFF question"],
   ["assessment", "Community assessment"],
   ["food", "Food by day"],
+  ["events", "Events"],
   ["changed", "What changed"],
   ["gaps", "What is missing"],
   ["people", "Point people"],
@@ -27,6 +33,8 @@ const RESP = {
   "👍 Responsive": ["Responsive", "resp-ok"],
   "⚪ Not tried yet": ["Not tried yet", "resp-none"],
 };
+
+const EVENT_KINDS = [["all", "Everything"], ["event", "Events"], ["due", "Deadlines and sign-ups"]];
 function RespBadge({ value }) {
   if (!value) return <span className="badge resp-unknown">Responsiveness unknown</span>;
   const [label, cls] = RESP[value] || [value.replace(/^[^\w]+/, ""), "resp-ok"];
@@ -43,8 +51,37 @@ export default function App() {
   const [openNeed, setOpenNeed] = useState("");
   const [craSec, setCraSec] = useState("I");
   const [foodDay, setFoodDay] = useState(FOOD.days[0].day);
+  const [evKind, setEvKind] = useState("all");
+  const [evAge, setEvAge] = useState("any");
+  const [evOrg, setEvOrg] = useState("");
+  const [evQ, setEvQ] = useState("");
+  const [cal, setCal] = useState(null);
+  const [ask, setAsk] = useState({ text: "", n: 0 });
+
+  /* Ask AI opens with whatever is in the search box, or with pasted text;
+     the counter gives the panel a fresh start each time it is opened */
+  const openAsk = (text) => {
+    setAsk((a) => ({ text, n: a.n + 1 }));
+    setView("ask");
+    window.scrollTo(0, 0);
+  };
   const [toast, setToast] = useState("");
   const tabsRef = useRef(null);
+
+  /* a need tapped in an Ask AI answer opens its SNIFF question, with
+     everything the directory files under it */
+  const needScroll = useRef("");
+  const showNeed = (key) => {
+    needScroll.current = key;
+    setOpenNeed(key);
+    setView("sniff");
+  };
+  useEffect(() => {
+    if (view !== "sniff" || !needScroll.current) return;
+    const el = document.getElementById("need-" + needScroll.current);
+    needScroll.current = "";
+    if (el) el.scrollIntoView({ block: "start" });
+  }, [view, openNeed]);
 
   useEffect(() => {
     const el = tabsRef.current?.querySelector(".tab-on");
@@ -52,6 +89,16 @@ export default function App() {
   }, [view]);
 
   const say = (m) => { setToast(m); setTimeout(() => setToast(""), 2600); };
+
+  /* the Public Edition calendar, fetched once, the first time it is needed */
+  useEffect(() => {
+    if (cal || (view !== "events" && view !== "ask")) return undefined;
+    let live = true;
+    loadCalendar()
+      .then((c) => live && setCal(c))
+      .catch(() => live && setCal({ failed: true, events: [], series: [], watch: [], calendars: [] }));
+    return () => { live = false; };
+  }, [view, cal]);
 
   const resources = useMemo(() => {
     const all = [...BASE, ...(state.added || [])];
@@ -127,13 +174,21 @@ export default function App() {
      straight back over the file it came from */
   const exportJson = () => download("resources.json", JSON.stringify({
     meta: { ...META, exported: new Date().toISOString(), count: resources.length },
+    /* data/resources.json keeps its own copy of the sniff.json taxonomy; write
+       it back so committing an export over the file does not delete it */
+    sections: SECTIONS.map(({ id, name, hue }) => ({ id, name, hue })),
+    needs: NEEDS,
     resources: resources.map((r) => ({
       id: r.id, n: r.name, pp: r.point, sp: r.spanish, spd: r.spanishDetail,
       ph: r.phone, em: r.email, w: r.web, d: r.detail, a: r.address, h: r.hours,
       os: r.origSection, t: r.tags, lv: r.verified, vb: r.verifiedBy,
       sec: r.sec, needs: r.needs, src: r.source, note: r.note, new: r.isNew,
+      /* data/ has these keys only on flagged rows. They drive the "Start
+         here" and "Read the note first" badges, which an export must keep */
+      ...(r.startHere && { start: true }),
+      ...(r.readFirst && { readFirst: true }),
     })),
-  }, null, 1));
+  }, null, 1) + "\n"); /* data/resources.json ends with a newline too */
 
   const exportCra = () => download("community-resource-assessment.json", JSON.stringify({
     meta: {
@@ -204,6 +259,45 @@ export default function App() {
 
   const deadEnds = CHANGELOG.groups.find((g) => g.id === "dead-ends");
 
+  /* not memoised: the date has to be read on every render, or a tab left
+     open overnight would keep calling yesterday's events "Today" */
+  const evToday = localToday();
+  const allEvents = useMemo(() => (cal ? EVENTS.concat(cal.events) : EVENTS), [cal]);
+  const evIndex = useMemo(() => new Map(allEvents.map((e) => [e.id,
+    norm([e.what, e.where, e.org, e.detail, (e.tags || []).join(" ")].join(" "))])), [allEvents]);
+  const evTerms = norm(evQ).split(" ").filter(Boolean);
+  const kindOk = (e, k) => k === "all" || (k === "due") === (e.kind !== "event");
+  /* every filter but the one being counted, so each chip says what tapping it would show */
+  const evMatch = (e, skip) =>
+    (skip === "kind" || kindOk(e, evKind)) &&
+    (skip === "age" || forAge(e, evAge)) &&
+    (!evOrg || (evOrg === "team" ? !e.status : e.org === evOrg)) &&
+    evTerms.every((t) => evIndex.get(e.id).includes(t));
+  const evUpcoming = allEvents.filter((e) => (e.end || e.date) >= evToday);
+  const evCounts = Object.fromEntries(EVENT_KINDS.map(([k]) => [k,
+    evUpcoming.filter((e) => evMatch(e, "kind") && kindOk(e, k)).length]));
+  const evAgeCounts = Object.fromEntries(AGE_FILTERS.map(([k]) => [k,
+    evUpcoming.filter((e) => evMatch(e, "age") && forAge(e, k)).length]));
+  const evOrgs = Object.entries(evUpcoming.reduce((m, e) => {
+    if (e.org) m[e.org] = (m[e.org] || 0) + 1;
+    return m;
+  }, {})).sort((a, b) => b[1] - a[1]);
+  const evFiltered = evKind !== "all" || evAge !== "any" || !!evOrg || !!evTerms.length;
+  const evPlan = arrange(allEvents.filter((e) => evMatch(e)), evToday);
+  /* a past calendar listing is just yesterday's story time; only the team's
+     own picks are worth keeping under "Already happened" */
+  const evPast = evPlan.past.filter((e) => !e.status);
+  const evShown = evPlan.months.reduce((n, m) => n + m.items.length, 0);
+  const evSig = [evKind, evAge, evOrg, evTerms.join(" ")].join("|");
+  const resById = useMemo(() => new Map(resources.map((r) => [r.id, r])), [resources]);
+
+  /* an event's "Open in the directory": the resource it links, found and
+     opened in the Find view with nothing else filtering it out */
+  const openResource = (r) => {
+    setQ(r.name); setSecFilter(""); setOnlyGaps(false); setOpenId(r.id); setView("find");
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="wnc">
       <header className="top">
@@ -218,11 +312,24 @@ export default function App() {
           </div>
         </div>
         <div className="searchbar">
-          <Icon name="search" className="search-ic" size={16} />
-          <input value={q} onChange={(e) => { setQ(e.target.value); if (view !== "find") setView("find"); }}
-            placeholder="Search: diapers, autism eval, rent, interpreter, Black Mountain"
-            aria-label="Search resources" />
-          {q && <button className="clear" onClick={() => setQ("")} aria-label="Clear search">×</button>}
+          <div className="search-field">
+            <Icon name="search" className="search-ic" size={16} />
+            <input value={q} onChange={(e) => { setQ(e.target.value); if (view !== "find") setView("find"); }}
+              onPaste={(e) => {
+                /* a pasted case or SNIFF is a question for Ask AI, and a
+                   one-line search box would flatten its line breaks */
+                const t = e.clipboardData.getData("text");
+                if (/\n/.test(t.trim()) || t.length > 160) { e.preventDefault(); openAsk(t); }
+              }}
+              placeholder="Search: diapers, autism eval, rent, interpreter, Black Mountain"
+              aria-label="Search resources" />
+            {q && <button className="clear" onClick={() => setQ("")} aria-label="Clear search">×</button>}
+          </div>
+          <button className={"ask-btn" + (view === "ask" ? " ask-on" : "")}
+            onClick={() => (view === "ask" ? window.scrollTo(0, 0) : openAsk(q))}
+            title="Ask a question, describe a situation, or paste a SNIFF">
+            <Icon name="spark" size={15} />Ask AI
+          </button>
         </div>
         <nav className="tabs" ref={tabsRef}>
           {VIEWS.map(([id, label]) => (
@@ -252,6 +359,11 @@ export default function App() {
             </Chip>
           </div>
           <p className="count">{results.length} showing</p>
+          {terms.length >= 4 && (
+            <button className="ask-hint" onClick={() => openAsk(q)}>
+              <Icon name="spark" size={14} />Ask AI about “{q.trim()}”
+            </button>
+          )}
           <div className="cards">
             {results.slice(0, 260).map((r) => (
               <ResourceCard key={r.id} r={r} open={openId === r.id} showGaps={onlyGaps}
@@ -263,6 +375,21 @@ export default function App() {
             <p className="count">Showing the first 260. Keep typing to narrow it down.</p>
           )}
         </section>
+      )}
+
+      {view === "ask" && (
+        <AskPanel key={ask.n} initialText={ask.text} resources={resources} needBy={NEEDBY}
+          events={allEvents} eventsLoading={!cal} copyText={copyText} onClose={() => setView("find")}
+          onShowNeed={showNeed}
+          renderResource={(r) => (
+            <ResourceCard r={r} open={openId === r.id}
+              onToggle={() => setOpenId(openId === r.id ? "" : r.id)}
+              onEdit={(k, v) => edit(r.id, k, v)} onVerify={() => verify(r.id)} />
+          )}
+          renderEvent={(e) => (
+            <EventCard e={e} soon={soon(e, evToday)} resource={resById.get(e.rid)}
+              onOpen={() => openResource(resById.get(e.rid))} />
+          )} />
       )}
 
       {view === "sniff" && (
@@ -281,7 +408,7 @@ export default function App() {
                 const hits = resources.filter((r) => r.needs.includes(n.key));
                 const isOpen = openNeed === n.key;
                 return (
-                  <div key={n.key} className="need">
+                  <div key={n.key} className="need" id={"need-" + n.key}>
                     <button className="need-head" onClick={() => setOpenNeed(isOpen ? "" : n.key)}
                       aria-expanded={isOpen ? "true" : "false"}>
                       <span className="need-code">{n.code}</span>
@@ -423,6 +550,88 @@ export default function App() {
         </section>
       )}
 
+      {view === "events" && (
+        <section className="pane">
+          <p className="lede">
+            Events, deadlines and sign-ups for families, soonest first: the team's own picks, and the
+            Public Edition's family calendar of library programs, Bounty &amp; Soul markets, museums and more.
+          </p>
+          <p className="handling">
+            Almost none of these has been verified by the team, and dates and places move. Call or check the
+            listing before you send anyone. Organizers publish a few months ahead, so a thin later month
+            means not published yet.
+          </p>
+          <div className="filters">
+            {EVENT_KINDS.map(([id, label]) => (
+              <Chip key={id} active={evKind === id} onClick={() => setEvKind(id)}>
+                {label} <strong>{evCounts[id]}</strong>
+              </Chip>
+            ))}
+          </div>
+          <div className="filters">
+            {AGE_FILTERS.map(([id, label]) => (
+              <Chip key={id} active={evAge === id} onClick={() => setEvAge(id)}>
+                {label} <strong>{evAgeCounts[id]}</strong>
+              </Chip>
+            ))}
+          </div>
+          <div className="ev-tools">
+            <label className="field ev-search">
+              <span>Search events</span>
+              <input type="search" value={evQ} onChange={(e) => setEvQ(e.target.value)}
+                placeholder="story time, Spanish, Leicester, market" />
+            </label>
+            <label className="field ev-org-pick">
+              <span>From</span>
+              <select value={evOrg} onChange={(e) => setEvOrg(e.target.value)}>
+                <option value="">Everyone</option>
+                <option value="team">The team's own picks</option>
+                {evOrgs.map(([o, n]) => <option key={o} value={o}>{o} ({n})</option>)}
+              </select>
+            </label>
+          </div>
+          {!cal && <p className="count">Loading the family calendar…</p>}
+          {cal?.failed && (
+            <p className="callout">The family calendar did not load. The team's own picks are below; try again later.</p>
+          )}
+          {cal && !cal.failed && (
+            <p className="count">
+              {evShown} coming up{evFiltered ? " with these filters" : ""}
+              {evFiltered && (
+                <> · <button className="linkish" onClick={() => { setEvKind("all"); setEvAge("any"); setEvOrg(""); setEvQ(""); }}>
+                  Clear filters</button></>
+              )}
+            </p>
+          )}
+          {evPlan.months.map((m, i) => (
+            <EventMonth key={m.key + evSig} m={m} startOpen={i === 0 || (evFiltered && evShown <= 90)}
+              render={(e) => (
+                <EventCard key={e.id} e={e} soon={soon(e, evToday)} resource={resById.get(e.rid)}
+                  onOpen={() => openResource(resById.get(e.rid))} />
+              )} />
+          ))}
+          {!evPlan.months.length && (
+            <p className="empty">
+              {evFiltered ? "Nothing coming up matches these filters." : "Nothing coming up in this list. New dates go in data/events.json."}
+            </p>
+          )}
+          {!!evPast.length && (
+            <details className="past">
+              <summary>Already happened <span className="need-n">{evPast.length}</span></summary>
+              <div className="cards">
+                {evPast.map((e) => (
+                  <EventCard key={e.id} e={e} soon="" resource={resById.get(e.rid)}
+                    onOpen={() => openResource(resById.get(e.rid))} />
+                ))}
+              </div>
+            </details>
+          )}
+          {cal && !cal.failed && <CalendarNotes cal={cal} resById={resById} onOpen={openResource} />}
+          <p className="tiny src">{EVENTS_META.src}</p>
+          {cal?.meta && <p className="tiny src">{cal.meta.src}</p>}
+        </section>
+      )}
+
       {view === "changed" && (
         <section className="pane">
           <p className="lede">
@@ -544,7 +753,7 @@ export default function App() {
                 <p className="tiny">{[p.role, p.org].filter(Boolean).join(" · ")}</p>
                 <div className="card-actions">
                   {p.ph && (
-                    <a className="act call" href={"tel:" + p.ph.replace(/[^0-9]/g, "").slice(0, 11)}>
+                    <a className="act call" href={telHref(p.ph)}>
                       <Icon name="phone" size={14} />{p.ph}
                     </a>
                   )}

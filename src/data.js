@@ -1,5 +1,5 @@
 /*
- * Loads the four data files and expands them into the shapes the UI uses.
+ * Loads the data files and expands them into the shapes the UI uses.
  * The JSON on disk stays close to what the workbook exports, so a diff of
  * data/ still reads like a list of facts that changed.
  */
@@ -9,6 +9,7 @@ import peopleFile from "../data/point-people.json";
 import craFile from "../data/community-resource-assessment.json";
 import changelogFile from "../data/changelog.json";
 import foodFile from "../data/food-by-day.json";
+import eventsFile from "../data/events.json";
 
 const DEEP = {
   I: "#B4552B", II: "#8F6A05", III: "#1E7A55", IV: "#1F5F9E", V: "#4A4BA8",
@@ -54,9 +55,44 @@ export const CRA = craFile.rows;
 
 export const CHANGELOG = changelogFile;
 export const FOOD = foodFile;
+export const EVENTS = eventsFile.events;
+export const EVENTS_META = eventsFile.meta;
+
+/* The Public Edition calendar is well over a thousand dated listings, so it
+   is its own file, fetched the first time the Events tab or Ask AI needs it
+   rather than with every page. Each listing's source is its organizer's
+   calendar as the Public Edition read it, so the file says that once and
+   the line on each card is built here. */
+const CAL_SRC = {
+  library: "calendar", organizer: "calendar",
+  recheck: "page, from earlier research", season: "program-season listing",
+};
+export const loadCalendar = () => import("../data/calendar.json").then((m) => {
+  const c = m.default;
+  const [y, mo, d] = c.meta.checked.split("-").map(Number);
+  const checked = new Date(y, mo - 1, d).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+  return {
+    ...c, checked,
+    events: c.events.map((e) => ({
+      ...e, tags: e.tags || [], checked,
+      src: `${e.org} ${CAL_SRC[e.status]}, via the Public Edition (checked ${checked})`,
+    })),
+  };
+});
 
 export const TODAY = new Date().toISOString().slice(0, 10);
 export const norm = (s) => (s || "").toLowerCase().replace(/[^a-z0-9 ]+/g, " ");
+
+/* the number a tel: link dials. A phone field can hold a second number after
+   "/" or ",", an extension, or a note like "(texts)", and running all of those
+   digits together dials a wrong number. So take the first number, from its
+   first digit to the first letter or note bracket after it. A bracketed area
+   code, as in "(253) 349-6925" or "1 (800) 555-1234", is part of the number. */
+export const telHref = (phone) => "tel:" + (phone || "")
+  .split(/[/,]/)[0]
+  .replace(/^\D+/, "")
+  .split(/[a-z]|\((?!\d{3}\))/i)[0]
+  .replace(/\D/g, "");
 
 /* fields the editor exposes, in the order they appear on a card */
 export const FIELDS = [

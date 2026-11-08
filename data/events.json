@@ -1,0 +1,801 @@
+{
+ "meta": {
+  "file": "events.json",
+  "generated": "2026-11-06",
+  "note": "Events, deadlines and sign-ups for families. `date` and `end` are calendar days (YYYY-MM-DD); `end` is the last day of a run of days or a sign-up window. `kind` is event, deadline or signup. Past entries stay in the file and fold away at the bottom of the Events tab. Every entry carries `src`, and `rid` links the matching row in resources.json where there is one.",
+  "src": "Pulled from the v19 workbook, the 6 Nov 2026 Nurse-Family Partnership partner meeting, the 6 Nov 2026 Facebook deep scrape (parts 1 to 4, including mutual aid) and family weekend guides, and FFA-NC and FEMA notices. Each card names its source."
+ },
+ "events": [
+  {
+   "id": "renew-nc-applications-closed-2026-01-31",
+   "date": "2026-01-31",
+   "kind": "deadline",
+   "what": "Renew NC Single-Family Housing applications closed",
+   "detail": "Repairs, reconstruction and manufactured home replacement across 29 counties. The Helene Resource Center at 94 Coxe Ave (Mon-Fri 8am-5pm) is still the in-person navigation point for recovery programs.",
+   "ph": "888-791-0207",
+   "w": "renewnc.org",
+   "rid": "renew-nc-single-family-housing",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab (Renew NC row)"
+  },
+  {
+   "id": "eckerd-respite-scholarship-2026-27-applications-open-2026-07-01",
+   "date": "2026-07-01",
+   "end": "2027-06-30",
+   "kind": "signup",
+   "what": "Eckerd respite scholarship: 2026-27 applications open",
+   "where": "Buncombe and Henderson counties",
+   "detail": "Monthly reimbursement for a respite caregiver the parent picks, for families of children with emotional, behavioral or medical needs or facing risk factors. Apply to the program director with a W-9 and direct-deposit form.",
+   "note": "The application prints no deadline; it covers July 2026 to June 2027.",
+   "tags": [],
+   "ph": "828-777-5715",
+   "w": "eckerd.org",
+   "rid": "caring-for-children-respite-scholarship",
+   "src": "Drive: Eckerd Respite Scholarship Application (2026-2027) and Parent Information Guide (30 Aug 2026)"
+  },
+  {
+   "id": "opportunity-scholarship-window-closed-2026-08-14",
+   "date": "2026-08-14",
+   "time": "5pm",
+   "kind": "deadline",
+   "what": "Opportunity Scholarship window for 2026-27 closed",
+   "detail": "ESA+ runs on its own timeline, so check k12.ncseaa.edu. It needs an eligibility determination from a North Carolina public school from the last three years, which is what the free school evaluation gives a family.",
+   "w": "k12.ncseaa.edu",
+   "rid": "campfire-community-school-opens-20-aug-2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab (Campfire Community School row, added 17 Aug 2026)"
+  },
+  {
+   "id": "fema-helene-housing-assistance-ended-2026-09-30",
+   "date": "2026-09-30",
+   "kind": "deadline",
+   "what": "FEMA Helene housing and rental assistance ended",
+   "detail": "Direct temporary housing and rental assistance for NC Helene survivors both ran through 30 September 2026. Call 211 for current disaster-housing intake.",
+   "ph": "211",
+   "src": "FEMA, as recorded on the What changed watch list (data/changelog.json)"
+  },
+  {
+   "id": "healthy-blue-school-supplies-closed-2026-09-30",
+   "date": "2026-09-30",
+   "kind": "deadline",
+   "what": "Healthy Blue school supply benefit closed for the year",
+   "detail": "Up to $50 in school supplies for ages 6 to 18, June through September only. Healthy Blue Standard Plan only; children in foster care are usually on Healthy Blue Care Together, a separate plan.",
+   "ph": "844-594-5070",
+   "w": "healthybluenc.com/medicaid/extras",
+   "rid": "healthy-blue-extra-benefits-school-supplies",
+   "lv": "2026-08-04",
+   "vb": "SB",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab (Healthy Blue extra benefits row, verified on healthybluenc.com, 4 Aug 2026)"
+  },
+  {
+   "id": "ffa-nc-kinship-conference-2026-10-17",
+   "date": "2026-10-17",
+   "time": "9am to 3pm",
+   "kind": "event",
+   "what": "FFA-NC Kinship Conference",
+   "where": "Asheville",
+   "detail": "Run with NCDHHS for kinship caregivers and the professionals supporting relatives with DSS involvement. Lunch provided. Registration was through info@ffa-nc.org.",
+   "tags": [
+    "Free"
+   ],
+   "ph": "800-578-7770",
+   "rid": "foster-family-alliance-of-nc-ffa-nc",
+   "src": "FFA-NC, as recorded on the What changed watch list (data/changelog.json)"
+  },
+  {
+   "id": "eblen-ingles-thanksgiving-giveaway-2026-11",
+   "date": "2026-11-01",
+   "end": "2026-11-30",
+   "kind": "signup",
+   "what": "Eblen and Ingles Thanksgiving meal giveaway",
+   "detail": "Eblen Charities and Ingles run a Thanksgiving meal giveaway each November, for about 800 families in recent years.",
+   "note": "The 2026 sign-up had not been confirmed by 6 November. Call Eblen now rather than wait for an announcement.",
+   "ph": "828-255-3066",
+   "rid": "eblen-charities",
+   "src": "Past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026, as recorded on the Holiday assistance row"
+  },
+  {
+   "id": "salvation-army-angel-tree-registration-2026-11",
+   "date": "2026-11-01",
+   "end": "2026-11-30",
+   "kind": "signup",
+   "what": "Salvation Army Angel Tree registration",
+   "detail": "Families register in November, and gifts are given out on 21 and 22 December.",
+   "note": "The directory gives the month, not the days. Call to confirm when and where to register.",
+   "ph": "828-253-4723",
+   "rid": "holiday-assistance",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab (Holiday assistance row)"
+  },
+  {
+   "id": "ymca-mobile-market-2026-11-06",
+   "date": "2026-11-06",
+   "time": "Noon",
+   "kind": "event",
+   "what": "YMCA mobile free food market",
+   "where": "Haywood Pediatrics, Clyde",
+   "detail": "Farmers-market style: free, no questions, no limits, with Spanish-speaking staff.",
+   "note": "These stops come from Facebook event listings. Confirm before sending anyone.",
+   "tags": [
+    "Free",
+    "No ID",
+    "Spanish-speaking staff"
+   ],
+   "ph": "828-775-7081",
+   "w": "facebook.com/events/2303271663566861",
+   "rid": "ymca-wnc-mobile-food-markets",
+   "src": "Facebook event listing, Facebook deep scrape part 3, 6 Nov 2026"
+  },
+  {
+   "id": "coloring-with-cats-kids-2026-11-07",
+   "date": "2026-11-07",
+   "time": "1pm",
+   "kind": "event",
+   "what": "Coloring with Cats: kids' edition",
+   "where": "841 Haywood Rd, Asheville",
+   "detail": "The kids' edition of the cat-cafe coloring event.",
+   "note": "Cost is not in the listing.",
+   "w": "facebook.com/events/1187096886363419",
+   "src": "Facebook event listing, Facebook deep scrape part 1, 6 Nov 2026"
+  },
+  {
+   "id": "dia-de-muertos-festival-marion-2026-11-07",
+   "date": "2026-11-07",
+   "time": "From noon",
+   "kind": "event",
+   "what": "Dia de Muertos Festival, Western North Carolina",
+   "where": "45 N Main St, Marion",
+   "detail": "A family event opened by the Consul General of Mexico in Raleigh: a big community ofrenda, Aztec dancers, a dog costume contest, live music, and food and craft vendors.",
+   "tags": [
+    "Free carnival activities"
+   ],
+   "w": "facebook.com/events/1349696337283551",
+   "src": "Facebook event listing, Facebook deep scrape part 3, 6 Nov 2026"
+  },
+  {
+   "id": "friends-montessori-yard-sale-2026-11-07",
+   "date": "2026-11-07",
+   "time": "9am to 2pm",
+   "kind": "event",
+   "what": "Asheville Friends Montessori community yard sale",
+   "where": "Asheville Friends Montessori",
+   "note": "The listing gives no address; check the post.",
+   "w": "facebook.com/groups/AshevilleNaturalMamas/permalink/29077329071920719",
+   "src": "Facebook post in Asheville Natural Mamas & Papas, 6 Nov 2026 (Facebook deep scrape part 3, 6 Nov 2026)"
+  },
+  {
+   "id": "locol-market-first-saturday-2026-11-07",
+   "date": "2026-11-07",
+   "time": "10am-3pm",
+   "kind": "event",
+   "what": "LoCol Market (first Saturday)",
+   "where": "The Local Collective, 52 S Main St, Weaverville",
+   "detail": "Monthly market of local makers, artists and vintage sellers, with live music.",
+   "note": "The Drive weekend guide put it in Black Mountain; the organizer and Mountain Xpress list Weaverville. It runs the first Saturday of each month.",
+   "tags": [
+    "Free admission"
+   ],
+   "w": "thelocalc.com",
+   "lv": "2026-11-07",
+   "vb": "SB (web search)",
+   "src": "Drive: WNC Weekend Family Events Explorer (5 Nov 2026), checked by web search 7 Nov 2026 against The Local Collective's site, Mountain Xpress and Explore Asheville"
+  },
+  {
+   "id": "sonshine-crafters-craft-show-2026-11-07",
+   "date": "2026-11-07",
+   "time": "9am-2pm",
+   "kind": "event",
+   "what": "SONshine Crafters craft show",
+   "where": "Skyland First Baptist Church, 2115 Hendersonville Rd, Arden (Skyland)",
+   "detail": "Holiday and fall craft show: handmade items, decor, baked goods, hot dogs and hamburgers for sale.",
+   "note": "The Drive weekend guide gave a wrong address (1050 Old Hendersonville Rd). The church lists 2115 Hendersonville Rd; its 2025 flyer used the Family Life Center at 2119.",
+   "tags": [
+    "Free admission"
+   ],
+   "w": "skylandbaptist.org/SONShineCrafters",
+   "lv": "2026-11-07",
+   "vb": "SB (web search)",
+   "src": "Drive: WNC Weekend Family Events Explorer (5 Nov 2026), checked by web search 7 Nov 2026 against the church's SONshine Crafters page and Explore Asheville's weekend listings"
+  },
+  {
+   "id": "weaverville-art-safari-studio-tour-fall-2026-11-07",
+   "date": "2026-11-07",
+   "end": "2026-11-08",
+   "time": "10am-5pm",
+   "kind": "event",
+   "what": "Weaverville Art Safari studio tour (fall)",
+   "where": "Studios across Weaverville and north Buncombe; map at weavervilleartsafari.com",
+   "detail": "Self-guided tour of about 85 artists in 36 working studios: painters, potters, glass, sculpture.",
+   "note": "The Drive weekend guide gave 11am; the organizer's listings say 10am.",
+   "tags": [
+    "Free admission"
+   ],
+   "w": "weavervilleartsafari.com",
+   "lv": "2026-11-07",
+   "vb": "SB (web search)",
+   "src": "Drive: WNC Weekend Family Events Explorer (5 Nov 2026), checked by web search 7 Nov 2026 against the Laurel of Asheville, Asheville.com and Arts AVL listings"
+  },
+  {
+   "id": "montford-plein-air-painting-festival-wet-paint-sale-2026-11-08",
+   "date": "2026-11-08",
+   "time": "2:30-5pm",
+   "kind": "event",
+   "what": "Montford Plein Air painting festival: wet paint sale",
+   "where": "Behind the Asheville Chamber Visitor Center, 36 Montford Ave, Asheville",
+   "detail": "Free outdoor show and sale of paintings made over the festival weekend, with live music and a food truck.",
+   "note": "Weather can move it to a rain date; check the festival site. The Drive weekend guide gave a different venue and website.",
+   "tags": [
+    "Free admission"
+   ],
+   "w": "montfordarts.com",
+   "lv": "2026-11-07",
+   "vb": "SB (web search)",
+   "src": "Drive: WNC Weekend Family Events Explorer (5 Nov 2026), checked by web search 7 Nov 2026 against Asheville.com's festival notice and the festival FAQ (montfordarts.com)"
+  },
+  {
+   "id": "dads-group-2026-11-11",
+   "date": "2026-11-11",
+   "kind": "event",
+   "what": "Free monthly dads' group",
+   "detail": "Community for dads around early childhood development, attachment and relationship-led parenting.",
+   "note": "The post names no host, place or time. Message the poster to ask.",
+   "tags": [
+    "Free"
+   ],
+   "w": "facebook.com/groups/AshevilleNaturalMamas/permalink/28788559707464325",
+   "rid": "free-monthly-dads-group-early-childhood",
+   "src": "Facebook post in Asheville Natural Mamas & Papas, 16 Oct 2026 (Facebook deep scrape part 3, 6 Nov 2026)"
+  },
+  {
+   "id": "intl-friendsgiving-lantern-festival-2026-11-11",
+   "date": "2026-11-11",
+   "time": "Lantern making 3:30pm to 5pm, then a lantern walk",
+   "kind": "event",
+   "what": "International Friendsgiving and German Lantern Festival",
+   "where": "Haus Heidelberg",
+   "detail": "WNC International Connections celebrates St. Martin's Day with lantern making and a lantern walk. Families invited.",
+   "w": "facebook.com/groups/AshevilleNaturalMamas/permalink/29027346340252326",
+   "src": "Facebook post in Asheville Natural Mamas & Papas, 2 Nov 2026 (Facebook deep scrape part 3, 6 Nov 2026)"
+  },
+  {
+   "id": "story-time-woodfin-2026-11-11",
+   "date": "2026-11-11",
+   "time": "9:30am",
+   "kind": "event",
+   "what": "Story Time at Woodfin",
+   "where": "40 N Merrimon Ave #101, Asheville",
+   "detail": "Part of a recurring story time series.",
+   "note": "The listing does not name the host or say what it costs.",
+   "w": "facebook.com/events/1559344558865109",
+   "src": "Facebook event listing, Facebook deep scrape part 1, 6 Nov 2026"
+  },
+  {
+   "id": "dsdhh-asheville-open-house-2026-11-12",
+   "date": "2026-11-12",
+   "time": "1:30pm to 3pm",
+   "kind": "event",
+   "what": "DSDHH Asheville Regional Center open house",
+   "where": "12 Barbetta Dr, Asheville 28806",
+   "detail": "Resources for Deaf, DeafBlind and hard of hearing adults and children in Western NC. Video phone 828-333-5830.",
+   "tags": [
+    "Free",
+    "ASL interpreter"
+   ],
+   "ph": "828-665-8733",
+   "rid": "nc-division-of-services-for-the-deaf-and-har",
+   "src": "Facebook event listing, Facebook deep scrape, 6 Nov 2026"
+  },
+  {
+   "id": "origami-fun-for-kids-2026-11-13",
+   "date": "2026-11-13",
+   "time": "5:30pm",
+   "kind": "event",
+   "what": "Origami Fun for Kids",
+   "where": "Cultivated Cocktails",
+   "note": "Cost is not in the listing.",
+   "w": "facebook.com/events/3254746004734252",
+   "src": "Facebook event listing, Facebook deep scrape part 2, 6 Nov 2026"
+  },
+  {
+   "id": "ymca-mobile-market-2026-11-13",
+   "date": "2026-11-13",
+   "time": "Noon and 1pm",
+   "kind": "event",
+   "what": "YMCA mobile free food market",
+   "where": "Noon at Crowell Apartments, 10 Coleys Cir; 1pm at the Mission Hospital pop-up, 509 Biltmore Ave",
+   "detail": "Farmers-market style: free, no questions, no limits, with Spanish-speaking staff.",
+   "note": "These stops come from Facebook event listings. Confirm before sending anyone.",
+   "tags": [
+    "Free",
+    "No ID",
+    "Spanish-speaking staff"
+   ],
+   "ph": "828-775-7081",
+   "w": "ymcawnc.org/schedules-7",
+   "rid": "ymca-wnc-mobile-food-markets",
+   "src": "Facebook event listings, Facebook deep scrape, 6 Nov 2026; phone from YMCA WNC mobile market schedule PDFs via web search, 6 Nov 2026"
+  },
+  {
+   "id": "christmas-on-main-marshall-2026-11-14",
+   "date": "2026-11-14",
+   "time": "From 9am",
+   "kind": "event",
+   "what": "Christmas on Main, Marshall",
+   "where": "S Main St, Marshall",
+   "detail": "The 2nd annual Christmas on Main in downtown Marshall.",
+   "w": "facebook.com/events/1587299386398481",
+   "src": "Facebook event listing, Facebook deep scrape part 2, 6 Nov 2026"
+  },
+  {
+   "id": "community-thanksgiving-marion-2026-11-14",
+   "date": "2026-11-14",
+   "time": "Served from 11am",
+   "kind": "event",
+   "what": "Free community Thanksgiving meal, Marion",
+   "where": "Mt. Moriah Missionary Baptist, 115 E Wilhemenia St, Marion (McDowell County)",
+   "detail": "The 8th annual free community Thanksgiving meal: turkey and all the trimmings, families welcome.",
+   "tags": [
+    "Free"
+   ],
+   "w": "facebook.com/events/1167809228916738",
+   "src": "Facebook event listing, Facebook deep scrape, 6 Nov 2026"
+  },
+  {
+   "id": "fire-safety-for-kids-fairview-2026-11-14",
+   "date": "2026-11-14",
+   "time": "2pm",
+   "kind": "event",
+   "what": "Fire Safety for Kids",
+   "where": "Fairview Library, 1 Taylor Rd, Fairview",
+   "note": "The library calendar lists it as a Fairview Library program with the Fairview Fire Department, for kids and their grown-ups. Neither listing gives a cost.",
+   "w": "facebook.com/events/4391382221177067",
+   "src": "Facebook event listing, Facebook deep scrape part 2, 6 Nov 2026; also on the Buncombe County Public Libraries calendar, via the Public Edition (checked 7 Nov 2026)",
+   "rid": "buncombe-county-public-libraries"
+  },
+  {
+   "id": "free-futbol-youth-festival-2026-11-14",
+   "date": "2026-11-14",
+   "kind": "event",
+   "what": "Free Futbol Youth Festival",
+   "where": "Grey Eagle Arena",
+   "detail": "A free youth soccer clinic with Bridge-2-Futbol, raising money to support Asheville players.",
+   "note": "The scraped post was cut off, so the time, ages and link are missing. Look it up in the Asheville Events group before telling a family.",
+   "tags": [
+    "Free"
+   ],
+   "w": "facebook.com/groups/ashevilleevents1",
+   "src": "Facebook post in Asheville Events, 5 Nov 2026 (Facebook deep scrape part 1, 6 Nov 2026; the post was cut off in the scrape)"
+  },
+  {
+   "id": "plant-people-holiday-open-house-2026-11-14",
+   "date": "2026-11-14",
+   "time": "10am to 2pm",
+   "kind": "event",
+   "what": "Holiday open house and artist market, with mini goats",
+   "where": "Asheville Plant People, about 10 minutes north of downtown Asheville",
+   "detail": "Festive plants, mini goats, local art and a food truck.",
+   "tags": [
+    "Free",
+    "RSVP requested"
+   ],
+   "w": "facebook.com/groups/AvlPlantPeople/permalink/28859544560334883",
+   "src": "Facebook post in Asheville Plant People, 6 Nov 2026 (Facebook deep scrape part 4, 6 Nov 2026)"
+  },
+  {
+   "id": "santa-arrival-tree-lighting-tanger-2026-11-14",
+   "date": "2026-11-14",
+   "time": "4pm",
+   "kind": "event",
+   "what": "Santa's arrival and tree lighting",
+   "where": "Tanger Outlets, Asheville",
+   "w": "facebook.com/events/1099370442588202",
+   "src": "Facebook event listing, Facebook deep scrape part 1, 6 Nov 2026"
+  },
+  {
+   "id": "eblen-saint-nicholas-signup-2026-11-16",
+   "date": "2026-11-16",
+   "kind": "signup",
+   "what": "Eblen Saint Nicholas Project online sign-up opens",
+   "detail": "Sign-up for the Saint Nicholas Project holiday store, where more than 1,900 families shop for toys and clothing.",
+   "note": "Unverified: this date is from a family-events guide, and in past years registration opened in early October. Confirm with Eblen before telling a family to wait.",
+   "ph": "828-255-3066",
+   "rid": "holiday-assistance",
+   "src": "A family-events guide, as recorded on the Holiday assistance row with past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026"
+  },
+  {
+   "id": "sk8way-food-drive-free-night-2026-11-17",
+   "date": "2026-11-17",
+   "kind": "event",
+   "what": "Free admission night at the skating rink (annual food drive)",
+   "where": "Smoky Mountain Sk8way, 19025 Great Smoky Mountain Expressway, Waynesville",
+   "note": "The listing gives no time.",
+   "tags": [
+    "Free admission"
+   ],
+   "w": "facebook.com/events/1800010927789560",
+   "src": "Facebook event listing, Facebook deep scrape part 2, 6 Nov 2026"
+  },
+  {
+   "id": "wild-food-community-walk-2026-11-17",
+   "date": "2026-11-17",
+   "kind": "event",
+   "what": "Final Wild Food Community Walk of the year",
+   "detail": "Edible plants and fungi of late autumn, with foraged tea and cookies.",
+   "note": "The post gives no place or time; register on the form linked in it.",
+   "w": "facebook.com/groups/359061837602127/permalink/3572724059569206",
+   "src": "Facebook post in Asheville Outdoor Families, 4 Nov 2026 (Facebook deep scrape part 3, 6 Nov 2026)"
+  },
+  {
+   "id": "ywca-td-bank-2026-11-17",
+   "date": "2026-11-17",
+   "time": "6pm",
+   "kind": "event",
+   "what": "TD Bank at the YWCA",
+   "where": "YWCA of Asheville, 185 S French Broad Ave",
+   "detail": "Shared at the 6 November partner meeting by Tangie Ballard Bowman, YWCA Women's Empowerment Director. Clients call 828-254-7206 ext. 104.",
+   "note": "The topic was not given. Ask her before inviting families.",
+   "ph": "828-254-7206 ext. 104",
+   "src": "Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes)"
+  },
+  {
+   "id": "ymca-mobile-market-2026-11-18",
+   "date": "2026-11-18",
+   "time": "11am",
+   "kind": "event",
+   "what": "YMCA mobile free food market",
+   "where": "Oakley/South Asheville Library",
+   "detail": "Farmers-market style: free, no questions, no limits, with Spanish-speaking staff.",
+   "note": "These stops come from Facebook event listings. Confirm before sending anyone.",
+   "tags": [
+    "Free",
+    "No ID",
+    "Spanish-speaking staff"
+   ],
+   "ph": "828-775-7081",
+   "w": "ymcawnc.org/schedules-7",
+   "rid": "ymca-wnc-mobile-food-markets",
+   "src": "Facebook event listings, Facebook deep scrape, 6 Nov 2026; phone from YMCA WNC mobile market schedule PDFs via web search, 6 Nov 2026"
+  },
+  {
+   "id": "narcan-training-2026-11-19",
+   "date": "2026-11-19",
+   "kind": "event",
+   "what": "Free Narcan (naloxone) training",
+   "detail": "The first of three free sessions listed for November and December.",
+   "note": "The listings name no host. Check the listing for the time and place. For naloxone itself on a weekday, WNCAP gives it out free.",
+   "tags": [
+    "Free"
+   ],
+   "w": "facebook.com/events/1735595161121184",
+   "src": "Facebook event listings, Facebook deep scrape part 2, 6 Nov 2026"
+  },
+  {
+   "id": "ymca-mobile-market-2026-11-19",
+   "date": "2026-11-19",
+   "time": "11am and 2pm",
+   "kind": "event",
+   "what": "YMCA mobile free food market",
+   "where": "11am at Carolina Complete Health, 150 Tunnel Rd; 2pm at the Woodfin YMCA",
+   "detail": "Farmers-market style: free, no questions, no limits, with Spanish-speaking staff.",
+   "note": "These stops come from Facebook event listings. Confirm before sending anyone.",
+   "tags": [
+    "Free",
+    "No ID",
+    "Spanish-speaking staff"
+   ],
+   "ph": "828-775-7081",
+   "w": "ymcawnc.org/schedules-7",
+   "rid": "ymca-wnc-mobile-food-markets",
+   "src": "Facebook event listings, Facebook deep scrape, 6 Nov 2026; phone from YMCA WNC mobile market schedule PDFs via web search, 6 Nov 2026"
+  },
+  {
+   "id": "biltmore-park-tree-lighting-2026-11-20",
+   "date": "2026-11-20",
+   "time": "4pm",
+   "kind": "event",
+   "what": "Tree lighting and holiday market",
+   "where": "Biltmore Park Town Square",
+   "w": "facebook.com/events/1581784600630609",
+   "src": "Facebook event listing, Facebook deep scrape part 1, 6 Nov 2026"
+  },
+  {
+   "id": "ymca-mobile-market-2026-11-20",
+   "date": "2026-11-20",
+   "time": "Noon",
+   "kind": "event",
+   "what": "YMCA mobile free food market",
+   "where": "Haywood Pediatrics, Clyde",
+   "detail": "Farmers-market style: free, no questions, no limits, with Spanish-speaking staff.",
+   "note": "These stops come from Facebook event listings. Confirm before sending anyone.",
+   "tags": [
+    "Free",
+    "No ID",
+    "Spanish-speaking staff"
+   ],
+   "ph": "828-775-7081",
+   "w": "ymcawnc.org/schedules-7",
+   "rid": "ymca-wnc-mobile-food-markets",
+   "src": "Facebook event listings, Facebook deep scrape, 6 Nov 2026; phone from YMCA WNC mobile market schedule PDFs via web search, 6 Nov 2026"
+  },
+  {
+   "id": "fandom-fusion-2026-11-21",
+   "date": "2026-11-21",
+   "time": "From 10am",
+   "kind": "event",
+   "what": "Fandom Fusion! card and anime event",
+   "where": "250 Overlook Rd, Asheville",
+   "detail": "Card trading, an artist alley, a cosplay contest, games and bounce houses.",
+   "tags": [
+    "$5, ages 8 and under free"
+   ],
+   "w": "facebook.com/events/1632604424889148",
+   "src": "Facebook event listing, Facebook deep scrape part 3, 6 Nov 2026"
+  },
+  {
+   "id": "shepherds-table-donations-close-2026-11-22",
+   "date": "2026-11-22",
+   "kind": "deadline",
+   "what": "Donations close: The Shepherd's Table Thanksgiving drive, Marion",
+   "detail": "Food and money donations help it feed 134 families this Thanksgiving.",
+   "w": "facebook.com/groups/200385480017996/permalink/29248077724822052",
+   "rid": "shepherds-table-marion-thanksgiving",
+   "src": "Facebook post in You know You're From Marion, NC, 29 Oct 2026 (Facebook deep scrape part 4, 6 Nov 2026)"
+  },
+  {
+   "id": "between-heartbeats-2026-11-24",
+   "date": "2026-11-24",
+   "time": "6pm",
+   "kind": "event",
+   "what": "Between Heartbeats pregnancy and infant loss support group",
+   "where": "Online (the listing also gives 494 W Main St, Sylva)",
+   "detail": "A trauma-informed support circle.",
+   "tags": [
+    "Online"
+   ],
+   "w": "facebook.com/events/979473675065211",
+   "src": "Facebook event listing, Facebook deep scrape part 2, 6 Nov 2026"
+  },
+  {
+   "id": "ymca-mobile-market-2026-11-24",
+   "date": "2026-11-24",
+   "time": "1pm",
+   "kind": "event",
+   "what": "YMCA mobile free food market",
+   "where": "Hendersonville Family YMCA",
+   "detail": "Farmers-market style: free, no questions, no limits, with Spanish-speaking staff.",
+   "note": "These stops come from Facebook event listings. Confirm before sending anyone.",
+   "tags": [
+    "Free",
+    "No ID",
+    "Spanish-speaking staff"
+   ],
+   "ph": "828-775-7081",
+   "w": "ymcawnc.org/schedules-7",
+   "rid": "ymca-wnc-mobile-food-markets",
+   "src": "Facebook event listings, Facebook deep scrape, 6 Nov 2026; phone from YMCA WNC mobile market schedule PDFs via web search, 6 Nov 2026"
+  },
+  {
+   "id": "santa-in-the-square-2026-12-05",
+   "date": "2026-12-05",
+   "time": "3pm",
+   "kind": "event",
+   "what": "Santa in the Square and holiday market",
+   "where": "Biltmore Park Town Square",
+   "w": "facebook.com/events/1622868049308512",
+   "src": "Facebook event listing, Facebook deep scrape part 3, 6 Nov 2026"
+  },
+  {
+   "id": "origami-fun-for-kids-2026-12-06",
+   "date": "2026-12-06",
+   "time": "1pm",
+   "kind": "event",
+   "what": "Origami Fun for Kids",
+   "where": "3131 Cane Creek Rd, Fairview",
+   "note": "Cost is not in the listing.",
+   "w": "facebook.com/events/3159629287577101",
+   "src": "Facebook event listing, Facebook deep scrape part 2, 6 Nov 2026"
+  },
+  {
+   "id": "narcan-training-2026-12-08",
+   "date": "2026-12-08",
+   "kind": "event",
+   "what": "Free Narcan (naloxone) training",
+   "where": "216 Asheland Ave, Asheville",
+   "detail": "A food pantry finder lists 216 Asheland Ave as the Asheville Wellness and Opportunities Center.",
+   "note": "The listings name no host. Check the listing for the time.",
+   "tags": [
+    "Free"
+   ],
+   "w": "facebook.com/events/1664551961336856",
+   "src": "Facebook event listings, Facebook deep scrape, 6 Nov 2026; venue name from a feedam.org pantry listing via web search, 6 Nov 2026"
+  },
+  {
+   "id": "story-time-woodfin-2026-12-09",
+   "date": "2026-12-09",
+   "time": "9:30am",
+   "kind": "event",
+   "what": "Story Time at Woodfin",
+   "where": "40 N Merrimon Ave #101, Asheville",
+   "detail": "Part of a recurring story time series.",
+   "note": "The listing does not name the host or say what it costs.",
+   "w": "facebook.com/events/1559344555531776",
+   "src": "Facebook event listing, Facebook deep scrape part 2, 6 Nov 2026"
+  },
+  {
+   "id": "origami-fun-for-kids-2026-12-11",
+   "date": "2026-12-11",
+   "time": "5:30pm",
+   "kind": "event",
+   "what": "Origami Fun for Kids",
+   "where": "Cultivated Cocktails",
+   "note": "Cost is not in the listing.",
+   "w": "facebook.com/events/3254746008067585",
+   "src": "Facebook event listing, Facebook deep scrape part 2, 6 Nov 2026"
+  },
+  {
+   "id": "sensory-friendly-santa-tanger-2026-12-11",
+   "date": "2026-12-11",
+   "time": "11am",
+   "kind": "event",
+   "what": "Sensory-friendly visits with Santa",
+   "where": "Tanger Outlets, Asheville",
+   "detail": "Calmer, relaxed Santa visits. The listing invites families of children with autism and other special needs.",
+   "note": "Photo packages may cost money, so check the listing.",
+   "tags": [
+    "Sensory-friendly"
+   ],
+   "w": "facebook.com/events/1001927645530291",
+   "src": "Facebook event listing, Facebook deep scrape, 6 Nov 2026"
+  },
+  {
+   "id": "coloring-with-cats-kids-2026-12-12",
+   "date": "2026-12-12",
+   "time": "1pm",
+   "kind": "event",
+   "what": "Coloring with Cats: kids' edition",
+   "where": "841 Haywood Rd, Asheville",
+   "detail": "The kids' edition of the cat-cafe coloring event.",
+   "note": "Cost is not in the listing.",
+   "w": "facebook.com/events/1187096903030084",
+   "src": "Facebook event listing, Facebook deep scrape part 2, 6 Nov 2026"
+  },
+  {
+   "id": "little-smiles-day-with-santa-arden-2026-12-12",
+   "date": "2026-12-12",
+   "time": "9am to 1pm",
+   "kind": "event",
+   "what": "Little Smiles Day with Santa",
+   "where": "Arden Dental Group, 2160 Hendersonville Rd, Arden",
+   "detail": "Santa photos, hot chocolate and cookies, and ornament decorating.",
+   "tags": [
+    "Free"
+   ],
+   "w": "facebook.com/events/2320488638687080",
+   "src": "Facebook event listing, Facebook deep scrape, 6 Nov 2026"
+  },
+  {
+   "id": "marketplace-open-enrollment-deadline-2026-12-15",
+   "date": "2026-12-15",
+   "kind": "deadline",
+   "what": "Marketplace open enrollment: last day to pick a 2027 plan",
+   "detail": "Open enrollment on HealthCare.gov started 1 November 2026, and a plan chosen by 15 December starts 1 January 2027. Pisgah Legal navigators give free help choosing and enrolling, with Spanish available.",
+   "note": "Some guides give 15 January 2027 as the end date. It has been disputed in court, so treat 15 December as the deadline.",
+   "tags": [
+    "Free help",
+    "Spanish available"
+   ],
+   "ph": "828-210-3404",
+   "w": "healthcare.gov",
+   "src": "NFP community partner meeting, 6 Nov 2026; enrollment guides via web search, 6 Nov 2026"
+  },
+  {
+   "id": "eblen-saint-nicholas-store-2026-12-17",
+   "date": "2026-12-17",
+   "end": "2026-12-22",
+   "kind": "event",
+   "what": "Eblen Saint Nicholas Project holiday store",
+   "detail": "Families who signed up shop for toys and clothing; more than 1,900 families use it.",
+   "note": "Unverified: these dates are from a family-events guide. The workbook gave about 10 to 19 December, and the 2025 store opened 9 December at 23 Hamilton St. Confirm with Eblen before telling a family when to go.",
+   "ph": "828-255-3066",
+   "rid": "holiday-assistance",
+   "src": "A family-events guide, as recorded on the Holiday assistance row with past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026"
+  },
+  {
+   "id": "narcan-training-2026-12-17",
+   "date": "2026-12-17",
+   "kind": "event",
+   "what": "Free Narcan (naloxone) training",
+   "detail": "The last of three free sessions listed for November and December.",
+   "note": "The listings name no host. Check the listing for the time and place.",
+   "tags": [
+    "Free"
+   ],
+   "w": "facebook.com/events/1292731676324870",
+   "src": "Facebook event listings, Facebook deep scrape part 2, 6 Nov 2026"
+  },
+  {
+   "id": "sk8way-holiday-night-market-2026-12-18",
+   "date": "2026-12-18",
+   "time": "6pm to 9:30pm",
+   "kind": "event",
+   "what": "Holiday night market with Santa at the skating rink",
+   "where": "Smoky Mountain Sk8way, Waynesville",
+   "detail": "Local vendors, Santa, hot cocoa and cookies. Market admission is free; skating costs extra.",
+   "tags": [
+    "Free admission"
+   ],
+   "w": "facebook.com/groups/aboutasheville/permalink/1435474795465637",
+   "src": "Facebook post in What's Happening Asheville, 2 Nov 2026 (Facebook deep scrape part 2, 6 Nov 2026)"
+  },
+  {
+   "id": "salvation-army-angel-tree-distribution-2026-12-21",
+   "date": "2026-12-21",
+   "end": "2026-12-22",
+   "kind": "event",
+   "what": "Salvation Army Angel Tree gifts given out",
+   "detail": "For families who registered in November.",
+   "ph": "828-253-4723",
+   "rid": "holiday-assistance",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab (Holiday assistance row)"
+  },
+  {
+   "id": "between-heartbeats-2026-12-22",
+   "date": "2026-12-22",
+   "time": "6pm",
+   "kind": "event",
+   "what": "Between Heartbeats pregnancy and infant loss support group",
+   "where": "Online (the listing also gives 494 W Main St, Sylva)",
+   "detail": "A trauma-informed support circle.",
+   "tags": [
+    "Online"
+   ],
+   "w": "facebook.com/events/979473671731878",
+   "src": "Facebook event listing, Facebook deep scrape part 2, 6 Nov 2026"
+  },
+  {
+   "id": "mars-hill-library-tech-help-2027-01-05",
+   "date": "2027-01-05",
+   "time": "11am",
+   "kind": "event",
+   "what": "Mobile Medic: free tech help",
+   "where": "Mars Hill Library",
+   "tags": [
+    "Free"
+   ],
+   "w": "facebook.com/events/2248005039328699",
+   "src": "Facebook event listing, Facebook deep scrape part 4, 6 Nov 2026"
+  },
+  {
+   "id": "ymca-parents-night-out-2027-01-08",
+   "date": "2027-01-08",
+   "time": "5pm",
+   "kind": "event",
+   "what": "YMCA Parents Night Out",
+   "where": "Ferguson Family YMCA, 31 Westridge Market Place, Candler; Hendersonville YMCA, 810 West 6th Ave",
+   "detail": "Childcare for the evening so parents get a night out.",
+   "note": "Cost and ages are not in the listings. Call the Y to book.",
+   "w": "facebook.com/events/1621327629741168",
+   "src": "Facebook event listing, Facebook deep scrape part 4, 6 Nov 2026"
+  },
+  {
+   "id": "ymca-parents-night-out-2027-01-09",
+   "date": "2027-01-09",
+   "time": "4pm",
+   "kind": "event",
+   "what": "YMCA Parents Night Out",
+   "where": "YMCA, 25 Jane Jacobs Rd, Black Mountain",
+   "detail": "Childcare for the evening so parents get a night out.",
+   "note": "Cost and ages are not in the listings. Call the Y to book.",
+   "w": "facebook.com/events/1657562902430223",
+   "src": "Facebook event listing, Facebook deep scrape part 4, 6 Nov 2026"
+  },
+  {
+   "id": "frostbite-family-fun-day-2027-02-21",
+   "date": "2027-02-21",
+   "time": "1pm",
+   "kind": "event",
+   "what": "Frostbite Family Fun Day and Wellness Expo",
+   "where": "Lelia Patterson Fitness and Aquatics Center",
+   "note": "Cost is not in the listing.",
+   "w": "facebook.com/events/787458757116698",
+   "src": "Facebook event listing, Facebook deep scrape part 4, 6 Nov 2026"
+  }
+ ]
+}

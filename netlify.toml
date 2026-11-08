@@ -1,0 +1,4 @@
+# Build settings stay in the Netlify UI. This only tells Netlify how to bundle
+# the Ask AI function: esbuild inlines the data/*.json files it imports.
+[functions]
+  node_bundler = "esbuild"
