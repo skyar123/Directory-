@@ -149,7 +149,7 @@ export default function AskPanel({
           )}
 
           <h3>Recommended from the directory ({picks.length})</h3>
-          {!picks.length && <p className="empty">Gemini found nothing in the directory for this. Try the regular search.</p>}
+          {!picks.length && <p className="empty">Nothing in the directory matched this yet. Try saying it another way, or use the regular search.</p>}
           <div className="cards">
             {picks.map((p) => (
               <div key={p.id} className="ask-pick">

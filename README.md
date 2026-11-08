@@ -130,6 +130,25 @@ front-end variable would publish it inside the app for anyone to copy.
   then `ask-ai`): which model answered, how long it took and how many tokens it
   used. What was asked and answered is never logged.
 
+**Search first.** Gemini does not read all 622 resources for each question. The
+function indexes the directory once when it starts (`src/shortlist.js`), and each
+question sends Gemini only the closest 120 or so:
+- resources that share words with the question,
+- the ones tagged with the SNIFF questions it raises, in their own words or in
+  everyday ones ("behind on rent" reaches housing help),
+- Spanish-capable programs moved up when Spanish comes up.
+
+Each need gets its fair share of the list. The call-first lines and the crisis
+lines are always on it. When the search cannot make sense of the text, Gemini
+reads the whole directory as before. A prompt is about a third of the size it was.
+
+**The voice.** Gemini is asked to write the way a caring neighbor who knows
+every program would talk: warm, plain, hopeful and never judging, on the
+family's side and above all trying to help. It always leaves the family
+something to try. It puts crisis and safety options first when someone may be
+unsafe, never promises eligibility or openings the directory does not state, and
+answers in the language it was asked in.
+
 **No client details.** On the free tier Google may keep and review what is
 sent. The panel says so, and warns when the text looks like it has a phone
 number, an email address, a date of birth or a "Name:" style field. The

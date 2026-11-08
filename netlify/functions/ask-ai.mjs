@@ -15,14 +15,20 @@ import sniffFile from "../../data/sniff.json";
 import eventsFile from "../../data/events.json";
 import calendarFile from "../../data/calendar.json";
 import { buildPrompt, askGemini, parseAnswer } from "../../src/ai.js";
+import { buildIndex } from "../../src/shortlist.js";
 
 export const MAX_TEXT = 30000;
 
-/* the same field names src/data.js gives the app, only the ones the prompt uses */
+/* the same field names src/data.js gives the app, only the ones the prompt
+   and the search use */
 const RESOURCES = resourcesFile.resources.map((r) => ({
   id: r.id, name: r.n, sec: r.sec, needs: r.needs || [],
   spanish: r.sp || "", tags: r.t || "", detail: r.d || "",
+  address: r.a || "", origSection: r.os || "",
 }));
+/* the directory, indexed once when the function starts; each question then
+   only looks things up in it */
+const SEARCH = buildIndex(RESOURCES, sniffFile.needs);
 const EVENTS = eventsFile.events.concat(calendarFile.events.map((e) => ({ ...e, tags: e.tags || [] })));
 
 const env = (k) => (globalThis.Netlify ? globalThis.Netlify.env.get(k) : process.env[k]);
@@ -80,7 +86,11 @@ export async function handle(req, { budgetMs = BUDGET_MS, fetchImpl = fetch, mem
   if (!text) return reply(400, { error: "empty" });
   if (text.length > MAX_TEXT) return reply(413, { error: "long" });
 
-  const prompt = buildPrompt({ resources: RESOURCES, needs: sniffFile.needs, events: EVENTS, today: localToday() });
+  /* search first: Gemini reads the closest matches, not all 622 */
+  const found = SEARCH(text);
+  const prompt = buildPrompt({
+    resources: found.resources, needs: sniffFile.needs, events: EVENTS, today: localToday(), shortlisted: found.shortlisted,
+  });
   const limit = deadline(budgetMs);
   const t0 = Date.now();
   /* the log says which model answered, how fast and with how many tokens;
@@ -89,7 +99,7 @@ export async function handle(req, { budgetMs = BUDGET_MS, fetchImpl = fetch, mem
   try {
     const raw = await askGemini({ key, system: prompt.system, text, signal: limit.signal, fetchImpl, memo, trace });
     const answer = parseAnswer(raw, prompt);
-    log.log(`ask-ai ok in ${Date.now() - t0}ms: ${answer.picks.length} picks, ${answer.events.length} events, ${answer.dropped} dropped`);
+    log.log(`ask-ai ok in ${Date.now() - t0}ms: read ${found.resources.length} of ${RESOURCES.length} resources (${prompt.system.length} characters); ${answer.picks.length} picks, ${answer.events.length} events, ${answer.dropped} dropped`);
     return reply(200, answer);
   } catch (e) {
     const kind = isTimeout(e) ? "timeout" : e.kind || "error";

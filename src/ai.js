@@ -37,9 +37,10 @@ export const EVENT_DAYS = 21;
 export const EVENT_MAX = 150;
 
 
-/* one line per resource and event, short enough that the whole directory
-   fits in one request, with refs (R12, E3) the reply has to use */
-export function buildPrompt({ resources, needs, events, today }) {
+/* one line per resource and event, with refs (R12, E3) the reply has to
+   use. resources is the search's shortlist (src/shortlist.js) or, when the
+   search found too little to go on, the whole directory. */
+export function buildPrompt({ resources, needs, events, today, shortlisted = false }) {
   const horizon = addDays(today, EVENT_DAYS);
   const upcoming = events
     .filter((e) => (e.end || e.date) >= today && (!e.status || e.date <= horizon))
@@ -57,22 +58,30 @@ export function buildPrompt({ resources, needs, events, today }) {
   const ev = upcoming.map((e, i) =>
     `E${i}|${e.date}${e.end ? " to " + e.end : ""}${e.time ? " " + clip(e.time, 20) : ""}|${clip(e.what, 80)}|${clip(e.where, 60)}|${(e.ages || []).join("/")}|${clip(e.org, 40)}`);
   const system = [
-    "You help Family Resource Partners in Buncombe County and Western North Carolina find resources for families with young children.",
-    "Recommend ONLY items from the lists below, by their ref (R... or E...). Never invent a resource, phone number or event.",
-    "The user may type a question, describe a family's situation, or paste a SNIFF needs assessment. Work out which SNIFF needs it raises, then pick the best matches for each.",
+    "You help Family Resource Partners (FRPs) in Buncombe County and Western North Carolina find resources for families with young children. FRPs often read what you write to the family or pass it on to them.",
+    /* the voice: the user asked for it to be very family friendly, warm,
+       kind and above all trying to help */
+    "Be warm, kind and on the family's side, and above all try to help. Write the way a caring neighbor who knows every program in town would talk: plain everyday words, respectful and hopeful, never judging, blaming or lecturing. When the text shows something the family is already doing well, say so. Use person-first words, and no jargon or labels such as 'at-risk' or 'non-compliant'.",
+    "Always leave the family with something to try. When nothing fits a need exactly, offer the closest options and a good first call, and say what to ask for.",
+    "If the text suggests a child or adult may be unsafe, in danger or thinking about ending their life, put the crisis and safety options first, gently.",
+    "Recommend ONLY items from the lists below, by their ref (R... or E...). Never invent a resource, phone number, price or event, and never promise eligibility, openings or costs the list does not state; suggest a call to check instead.",
+    "The text may be a question, a family's situation, or a pasted SNIFF needs assessment. Work out which SNIFF needs it raises, then pick the best matches for each.",
     "If the text contains names or other identifying details, do not repeat them.",
+    "Write the summary, each why and each question in the language the text is written in.",
     "Reply with JSON only, in this shape:",
-    '{"summary": "one or two sentences on what the family needs",',
+    '{"summary": "one or two warm sentences on what the family is looking for",',
     ' "needs": [{"key": "SNIFF key", "why": "short reason from the text"}],',
-    ' "picks": [{"ref": "R12", "need": "SNIFF key", "why": "one sentence on why it fits"}],',
-    ' "events": [{"ref": "E3", "why": "one sentence"}],',
-    ' "ask": ["a question that would help narrow this down"]}',
+    ' "picks": [{"ref": "R12", "need": "SNIFF key", "why": "one kind, plain sentence on how it can help"}],',
+    ' "events": [{"ref": "E3", "why": "one friendly sentence"}],',
+    ' "ask": ["a gentle question that would help find a better fit"]}',
     "Give at most 10 picks, best first, at most 3 events and at most 3 questions. Keep each why to one short sentence. Prefer free, nearby and Spanish-capable options when the text points that way.",
     "",
     "SNIFF questions (key|label):",
     ...needs.map((n) => `${n.key}|${n.label}`),
     "",
-    "Resources (ref|name|section|SNIFF keys|flags|detail):",
+    shortlisted
+      ? "Resources: the directory's closest matches to this text, found by search, plus the call-first and crisis lines (ref|name|section|SNIFF keys|flags|detail):"
+      : "Resources (ref|name|section|SNIFF keys|flags|detail):",
     ...rows,
     "",
     `Upcoming events, the team's picks and the next ${EVENT_DAYS} days of the family calendar (ref|date|what|where|ages|organizer):`,
