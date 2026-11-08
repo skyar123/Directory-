@@ -1,3 +1,5 @@
+import { norm } from "./urgent.js";
+
 /*
  * Ask AI. The browser sends the question to this site's function
  * (askServer); the function builds a prompt from the directory, asks Gemini
@@ -36,11 +38,37 @@ const addDays = (iso, n) => {
 export const EVENT_DAYS = 21;
 export const EVENT_MAX = 150;
 
+const WEEKDAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const weekdayOf = (iso) => {
+  const [y, m, d] = iso.split("-").map(Number);
+  return WEEKDAYS[new Date(Date.UTC(y, m - 1, d)).getUTCDay()];
+};
+const longDate = (iso) => new Date(iso + "T12:00:00Z").toLocaleDateString("en-US",
+  { weekday: "long", month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
+
+/* A question about when ("open Saturday?", "food tonight") gets each
+   resource's hours, and, when it is about food, the Food by day schedule for
+   the days it means: the ones it names, the weekend, tomorrow, or else
+   today. Other questions leave both out, which keeps them short. */
+const WHEN = /\b(today|tonight|tomorrow|now|open|opens|closed|close|hours|weekend|this week|morning|afternoon|evening|late|sunday|monday|tuesday|wednesday|thursday|friday|saturday|hoy|manana|esta noche|fin de semana|abierto|horario)\b/;
+const FOODISH = /\b(food|pantr\w*|meals?|grocer\w*|hungry|lunch|dinner|breakfast|eat|comida|despensa)\b/;
+export function whenAsked(text, today) {
+  const flat = norm(text);
+  if (!WHEN.test(flat)) return { hours: false, foodDays: [] };
+  const days = WEEKDAYS.filter((d) => flat.includes(d.toLowerCase()));
+  if (/\b(weekend|fin de semana)\b/.test(flat)) days.push("Saturday", "Sunday");
+  if (/\b(tomorrow|manana)\b/.test(flat)) days.push(weekdayOf(addDays(today, 1)));
+  if (!days.length || /\b(today|tonight|now|hoy|esta noche)\b/.test(flat)) days.push(weekdayOf(today));
+  return { hours: true, foodDays: FOODISH.test(flat) ? WEEKDAYS.filter((d) => days.includes(d)) : [] };
+}
+
 
 /* one line per resource and event, with refs (R12, E3) the reply has to
    use. resources is the search's shortlist (src/shortlist.js) or, when the
-   search found too little to go on, the whole directory. */
-export function buildPrompt({ resources, needs, events, today, shortlisted = false }) {
+   search found too little to go on, the whole directory. withHours and food
+   come from whenAsked: hours on each resource line, and the Food by day
+   schedule ({day, sites}) for the days asked about. */
+export function buildPrompt({ resources, needs, events, today, shortlisted = false, withHours = false, food = [] }) {
   const horizon = addDays(today, EVENT_DAYS);
   const upcoming = events
     .filter((e) => (e.end || e.date) >= today && (!e.status || e.date <= horizon))
@@ -53,8 +81,12 @@ export function buildPrompt({ resources, needs, events, today, shortlisted = fal
       /^🟠/u.test(r.spanish) && "interpreter",
     ].filter(Boolean).join(",");
     const keys = r.needs.filter((k) => !k.endsWith(":*")).join(" ");
-    return `R${i}|${clip(r.name, 90)}|${r.sec}|${keys}|${flags}|${clip(r.detail, 110)}`;
+    return `R${i}|${clip(r.name, 90)}|${r.sec}|${keys}|${flags}|${clip(r.detail, 110)}`
+      + (withHours ? `|${clip(r.hours, 70) || "not listed"}` : "");
   });
+  const cols = "ref|name|section|SNIFF keys|flags|detail" + (withHours ? "|hours" : "");
+  const foodLines = food.flatMap((d) => d.sites.map((x) =>
+    `F|${d.day}|${clip(x.place, 60)}|${clip(x.when, 90)}|${clip(x.goodToKnow, 40)}`));
   const ev = upcoming.map((e, i) =>
     `E${i}|${e.date}${e.end ? " to " + e.end : ""}${e.time ? " " + clip(e.time, 20) : ""}|${clip(e.what, 80)}|${clip(e.where, 60)}|${(e.ages || []).join("/")}|${clip(e.org, 40)}`);
   const system = [
@@ -66,7 +98,7 @@ export function buildPrompt({ resources, needs, events, today, shortlisted = fal
     "If the text suggests a child or adult may be unsafe, in danger or thinking about ending their life, put the crisis and safety options first, gently.",
     "Recommend ONLY items from the lists below, by their ref (R... or E...). Never invent a resource, phone number, price or event, and never promise eligibility, openings or costs the list does not state; suggest a call to check instead.",
     "The text may be a question, a family's situation, or a pasted SNIFF needs assessment. Work out which SNIFF needs it raises, then pick the best matches for each.",
-    "If the text contains names or other identifying details, do not repeat them.",
+    "If the text contains names or other identifying details, do not repeat them. Placeholders such as [name], [phone], [date] or [address] stand for details taken out for privacy; never ask for names, contact details, dates of birth or addresses.",
     "Write the summary, each why and each question in the language the text is written in.",
     "Reply with JSON only, in this shape:",
     '{"summary": "one or two warm sentences on what the family is looking for",',
@@ -74,20 +106,79 @@ export function buildPrompt({ resources, needs, events, today, shortlisted = fal
     ' "picks": [{"ref": "R12", "need": "SNIFF key", "why": "one kind, plain sentence on how it can help"}],',
     ' "events": [{"ref": "E3", "why": "one friendly sentence"}],',
     ' "ask": ["a gentle question that would help find a better fit"]}',
-    "Give at most 10 picks, best first, at most 3 events and at most 3 questions. Keep each why to one short sentence. Prefer free, nearby and Spanish-capable options when the text points that way.",
+    "Give up to 10 picks, best first, with two or three choices for a need when the list has them, at most 3 events and at most 3 questions. Keep each why to one short sentence. Prefer free, nearby and Spanish-capable options when the text points that way.",
+    ...(withHours ? ["Hours are as the directory lists them and can change, so suggest a call first. Use them when the text asks what is open, and say when a place's hours are not listed."] : []),
     "",
     "SNIFF questions (key|label):",
     ...needs.map((n) => `${n.key}|${n.label}`),
     "",
     shortlisted
-      ? "Resources: the directory's closest matches to this text, found by search, plus the call-first and crisis lines (ref|name|section|SNIFF keys|flags|detail):"
-      : "Resources (ref|name|section|SNIFF keys|flags|detail):",
+      ? `Resources: the directory's closest matches to this text, found by search, plus the call-first and crisis lines (${cols}):`
+      : `Resources (${cols}):`,
     ...rows,
     "",
+    `Today is ${longDate(today)}, in Asheville.`,
+    ...(foodLines.length ? [
+      "Food by day, the directory's weekly pantry and free-meal schedule, for the days asked about (F|weekday|place|when and where|good to know). These have no refs: mention a time from here in a why or the summary when it helps, and pick the matching resource ref when there is one.",
+      ...foodLines,
+      "",
+    ] : []),
     `Upcoming events, the team's picks and the next ${EVENT_DAYS} days of the family calendar (ref|date|what|where|ages|organizer):`,
     ...ev,
   ].join("\n");
   return { system, resourceIds: resources.map((r) => r.id), eventIds: upcoming.map((e) => e.id) };
+}
+
+/* The family message's reasons, in Spanish (or English). Only the reasons
+   go to Gemini; names, phone numbers, hours and addresses stay as the
+   directory has them, so a translation cannot change a number. */
+export function translatePrompt(to) {
+  const lang = to === "es" ? "Spanish" : "English";
+  return [
+    `Translate each line into warm, plain ${lang}, the way someone helping a family would write to them in a text message.`,
+    "Keep program names, phone numbers, times, dates, addresses and websites exactly as written.",
+    'Reply with JSON only: {"texts": ["...", "..."]}, one line for each line given, in the same order.',
+  ].join("\n");
+}
+export function parseTranslation(raw, n) {
+  let j;
+  try { j = JSON.parse(raw); } catch (e) {
+    const m = String(raw).match(/\{[\s\S]*\}/);
+    try { j = m && JSON.parse(m[0]); } catch (e2) { j = null; }
+  }
+  const texts = j && Array.isArray(j.texts) ? j.texts.map((t) => clip(t, 400)) : null;
+  if (!texts || texts.length !== n || texts.some((t) => !t)) throw new AiError("parse", String(raw).slice(0, 200));
+  return texts;
+}
+
+/* the browser's side of a translation */
+export async function askTranslate({ texts, to, code, signal, fetchImpl = fetch }) {
+  const j = await post({ body: { translate: texts, to }, code, signal, fetchImpl });
+  if (!Array.isArray(j.texts)) throw new AiError("parse");
+  return j.texts;
+}
+
+/* Thumbs up or down on an answer (netlify/functions/ask-feedback.mjs).
+   What is sent says nothing about the family: the rating, one of these
+   reasons for a thumbs down, and the SNIFF needs, resources and events the
+   answer named. */
+export const FEEDBACK_PATH = "/api/ask-feedback";
+export const REASONS = {
+  missing: "Missing something that would help",
+  area: "Not near the family",
+  closed: "Closed, full or not taking people",
+  few: "Too few choices",
+  tone: "The wording was off",
+  other: "Something else",
+};
+export async function sendFeedback({ rating, reason, needs, picks, events, fetchImpl = fetch }) {
+  const res = await fetchImpl(FEEDBACK_PATH, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ rating, ...(reason && { reason }), needs, picks, events }),
+  });
+  if (!res.ok) throw new AiError(res.status === 429 ? "limit" : "error", String(res.status));
+  return true;
 }
 
 /* things that usually mean a client detail slipped in; a nudge, not a block */
@@ -122,15 +213,14 @@ export function explain(err) {
   }
 }
 
-/* The browser's side: send the question to this site's function, get back
-   the picks already mapped onto the directory. */
-export async function askServer({ text, code, signal, fetchImpl = fetch }) {
+/* one request to this site's function, its errors turned into kinds */
+async function post({ body, code, signal, fetchImpl }) {
   let res;
   try {
     res = await fetchImpl(ASK_PATH, {
       method: "POST",
       headers: { "Content-Type": "application/json", ...(code && { "x-ask-code": code }) },
-      body: JSON.stringify({ text }),
+      body: JSON.stringify(body),
       signal,
     });
   } catch (e) {
@@ -139,7 +229,7 @@ export async function askServer({ text, code, signal, fetchImpl = fetch }) {
   }
   let j = null;
   try { j = await res.json(); } catch (e) { /* a platform page, not the function's JSON */ }
-  if (res.ok && j && Array.isArray(j.picks)) return j;
+  if (res.ok && j && !j.error) return j;
   if (j && typeof j.error === "string") throw new AiError(j.error);
   if (res.status === 429) throw new AiError("limit");
   if (res.status === 404) throw new AiError("setup", "no function at " + ASK_PATH);
@@ -147,6 +237,14 @@ export async function askServer({ text, code, signal, fetchImpl = fetch }) {
   if (res.status === 504) throw new AiError("timeout");
   if (res.status >= 500) throw new AiError("busy");
   throw new AiError("error", String(res.status));
+}
+
+/* The browser's side: send the question to this site's function, get back
+   the picks already mapped onto the directory. */
+export async function askServer({ text, code, signal, fetchImpl = fetch }) {
+  const j = await post({ body: { text }, code, signal, fetchImpl });
+  if (!Array.isArray(j.picks)) throw new AiError("parse");
+  return j;
 }
 
 const kindFor = (status, body) => {

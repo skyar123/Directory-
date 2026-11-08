@@ -68,6 +68,21 @@ export default function App() {
   const [toast, setToast] = useState("");
   const tabsRef = useRef(null);
 
+  /* a need tapped in an Ask AI answer opens its SNIFF question, with
+     everything the directory files under it */
+  const needScroll = useRef("");
+  const showNeed = (key) => {
+    needScroll.current = key;
+    setOpenNeed(key);
+    setView("sniff");
+  };
+  useEffect(() => {
+    if (view !== "sniff" || !needScroll.current) return;
+    const el = document.getElementById("need-" + needScroll.current);
+    needScroll.current = "";
+    if (el) el.scrollIntoView({ block: "start" });
+  }, [view, openNeed]);
+
   useEffect(() => {
     const el = tabsRef.current?.querySelector(".tab-on");
     el?.scrollIntoView({ block: "nearest", inline: "center" });
@@ -365,6 +380,7 @@ export default function App() {
       {view === "ask" && (
         <AskPanel key={ask.n} initialText={ask.text} resources={resources} needBy={NEEDBY}
           events={allEvents} eventsLoading={!cal} copyText={copyText} onClose={() => setView("find")}
+          onShowNeed={showNeed}
           renderResource={(r) => (
             <ResourceCard r={r} open={openId === r.id}
               onToggle={() => setOpenId(openId === r.id ? "" : r.id)}
@@ -392,7 +408,7 @@ export default function App() {
                 const hits = resources.filter((r) => r.needs.includes(n.key));
                 const isOpen = openNeed === n.key;
                 return (
-                  <div key={n.key} className="need">
+                  <div key={n.key} className="need" id={"need-" + n.key}>
                     <button className="need-head" onClick={() => setOpenNeed(isOpen ? "" : n.key)}
                       aria-expanded={isOpen ? "true" : "false"}>
                       <span className="need-code">{n.code}</span>

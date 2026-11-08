@@ -3,55 +3,46 @@
  * variable on Netlify (see the README for how it is set), never in a browser
  * or in this repo, so Ask AI works in any browser with no setup.
  *
- * The browser sends only the question. The prompt is built here from the
- * directory as deployed, so this endpoint answers questions about this
- * directory and nothing else, which makes the key close to useless to anyone
- * who finds the URL. On top of that: requests must come from the app's own
- * pages, Netlify rate-limits by IP, and ASK_AI_CODE (optional) adds a shared
- * team code.
+ * The browser sends only the question. Client details are taken out of it
+ * here (src/scrub.js) before anything goes to Google, and the prompt is
+ * built here from the directory as deployed, so this endpoint answers
+ * questions about this directory and nothing else, which makes the key close
+ * to useless to anyone who finds the URL. On top of that: requests must come
+ * from the app's own pages, Netlify rate-limits by IP, and ASK_AI_CODE
+ * (optional) adds a shared team code.
+ *
+ * It answers two kinds of request: {text}, a question, and
+ * {translate: [...], to: "es"}, the reasons in a message for a family.
  */
 import resourcesFile from "../../data/resources.json";
 import sniffFile from "../../data/sniff.json";
 import eventsFile from "../../data/events.json";
 import calendarFile from "../../data/calendar.json";
-import { buildPrompt, askGemini, parseAnswer } from "../../src/ai.js";
+import foodFile from "../../data/food-by-day.json";
+import {
+  buildPrompt, askGemini, parseAnswer, whenAsked, translatePrompt, parseTranslation,
+} from "../../src/ai.js";
 import { buildIndex } from "../../src/shortlist.js";
+import { scrub } from "../../src/scrub.js";
+import { env, reply, sameSite, localToday } from "../lib/http.mjs";
+
+export { sameSite, localToday };
 
 export const MAX_TEXT = 30000;
+export const MAX_LINES = 20; // reasons in one translation
+export const MAX_LINE = 400;
 
 /* the same field names src/data.js gives the app, only the ones the prompt
    and the search use */
 const RESOURCES = resourcesFile.resources.map((r) => ({
   id: r.id, name: r.n, sec: r.sec, needs: r.needs || [],
   spanish: r.sp || "", tags: r.t || "", detail: r.d || "",
-  address: r.a || "", origSection: r.os || "",
+  address: r.a || "", origSection: r.os || "", hours: r.h || "",
 }));
 /* the directory, indexed once when the function starts; each question then
    only looks things up in it */
 const SEARCH = buildIndex(RESOURCES, sniffFile.needs);
 const EVENTS = eventsFile.events.concat(calendarFile.events.map((e) => ({ ...e, tags: e.tags || [] })));
-
-const env = (k) => (globalThis.Netlify ? globalThis.Netlify.env.get(k) : process.env[k]);
-const reply = (status, body) => Response.json(body, { status, headers: { "cache-control": "no-store" } });
-
-/* The app calls this from its own pages. A page on another site that tries
-   to use it from a visitor's browser sends that site's Origin and is turned
-   away. (A script outside a browser can fake headers; the rate limit and the
-   directory-only prompt are what keep that cheap.) */
-export function sameSite(req) {
-  const host = new URL(req.url).host;
-  const hostOf = (u) => { try { return new URL(u).host; } catch (e) { return ""; } };
-  const origin = req.headers.get("origin");
-  if (origin) return hostOf(origin) === host;
-  const fetchSite = req.headers.get("sec-fetch-site");
-  if (fetchSite) return fetchSite === "same-origin";
-  const referer = req.headers.get("referer");
-  return !!referer && hostOf(referer) === host;
-}
-
-/* the calendar's days are Asheville's days */
-export const localToday = (now = new Date()) =>
-  new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York", year: "numeric", month: "2-digit", day: "2-digit" }).format(now);
 
 const isTimeout = (e) => e && (e.name === "TimeoutError" || e.name === "AbortError");
 
@@ -82,25 +73,46 @@ export async function handle(req, { budgetMs = BUDGET_MS, fetchImpl = fetch, mem
 
   let body;
   try { body = await req.json(); } catch (e) { return reply(400, { error: "bad" }); }
-  const text = String((body && body.text) || "").trim();
-  if (!text) return reply(400, { error: "empty" });
-  if (text.length > MAX_TEXT) return reply(413, { error: "long" });
+  const translating = !!body && Array.isArray(body.translate);
+  let text = "", lines = [];
+  if (translating) {
+    lines = body.translate.map((t) => String(t || "").trim());
+    if (!lines.length || lines.length > MAX_LINES || lines.some((l) => !l || l.length > MAX_LINE)) return reply(400, { error: "bad" });
+    if (body.to !== "es" && body.to !== "en") return reply(400, { error: "bad" });
+  } else {
+    text = String((body && body.text) || "").trim();
+    if (!text) return reply(400, { error: "empty" });
+    if (text.length > MAX_TEXT) return reply(413, { error: "long" });
+  }
 
-  /* search first: Gemini reads the closest matches, not all 622 */
-  const found = SEARCH(text);
-  const prompt = buildPrompt({
-    resources: found.resources, needs: sniffFile.needs, events: EVENTS, today: localToday(), shortlisted: found.shortlisted,
-  });
   const limit = deadline(budgetMs);
   const t0 = Date.now();
   /* the log says which model answered, how fast and with how many tokens;
      never what was asked or answered: that is a family's situation */
   const trace = (t) => log.log("ask-ai gemini " + JSON.stringify(t));
+  const ask = (system, userText) => askGemini({ key, system, text: userText, signal: limit.signal, fetchImpl, memo, trace });
   try {
-    const raw = await askGemini({ key, system: prompt.system, text, signal: limit.signal, fetchImpl, memo, trace });
-    const answer = parseAnswer(raw, prompt);
-    log.log(`ask-ai ok in ${Date.now() - t0}ms: read ${found.resources.length} of ${RESOURCES.length} resources (${prompt.system.length} characters); ${answer.picks.length} picks, ${answer.events.length} events, ${answer.dropped} dropped`);
-    return reply(200, answer);
+    if (translating) {
+      const clean = lines.map((l) => scrub(l).text);
+      const texts = parseTranslation(await ask(translatePrompt(body.to), JSON.stringify(clean)), clean.length);
+      log.log(`ask-ai translated ${clean.length} lines in ${Date.now() - t0}ms`);
+      return reply(200, { texts });
+    }
+    /* client details out first; then search, so Gemini reads the closest
+       matches, not all 622 */
+    const clean = scrub(text);
+    const today = localToday();
+    const found = SEARCH(clean.text);
+    const when = whenAsked(clean.text, today);
+    const prompt = buildPrompt({
+      resources: found.resources, needs: sniffFile.needs, events: EVENTS, today, shortlisted: found.shortlisted,
+      withHours: when.hours, food: foodFile.days.filter((d) => when.foodDays.includes(d.day)),
+    });
+    const answer = parseAnswer(await ask(prompt.system, clean.text), prompt);
+    log.log(`ask-ai ok in ${Date.now() - t0}ms: read ${found.resources.length} of ${RESOURCES.length} resources (${prompt.system.length} characters)`
+      + `${when.hours ? ", with hours" : ""}${when.foodDays.length ? `, food for ${when.foodDays.length} days` : ""}`
+      + `${clean.removed.length ? `; took out ${clean.removed.length} kinds of detail` : ""}; ${answer.picks.length} picks, ${answer.events.length} events, ${answer.dropped} dropped`);
+    return reply(200, { ...answer, removed: clean.removed });
   } catch (e) {
     const kind = isTimeout(e) ? "timeout" : e.kind || "error";
     /* an unexpected error is logged by its name only: its message could quote Gemini's reply */

@@ -25,8 +25,9 @@ export const SHORTLIST_MIN = 30; // fewer matches than this and it reads all of 
    call to offer, and a crisis line when a family may not be safe */
 export const ALWAYS_KEYS = ["X:1", "CRISIS:*"];
 
-export const norm = (s) => String(s || "").toLowerCase().normalize("NFD")
-  .replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, " ").trim();
+import { norm, SELF_HARM, UNSAFE, CRISIS } from "./urgent.js";
+
+export { norm };
 
 const SUFFIXES = ["ies", "ing", "ed", "es", "s", "y"];
 /* a crude stem, the same on both sides, so "diapers" finds "diaper" and
@@ -95,7 +96,7 @@ export const NEED_WORDS = [
   [/\b(lawyers?|legal|custody|court|divorce|child support|attorneys?)\b/, ["VIII:16a", "X:3"]],
   [/\b(interpret\w*|translat\w*)\b/, ["VIII:18a", "ESPANOL:interprete-disponible-"]],
   [/\b(pregnan\w*|prenatal|newborns?|postpartum|birth|doulas?|midwi\w*|infants?|nursing)\b/, ["X:2", "VI:3a"]],
-  [/\b(domestic violence|abus\w*|unsafe|not safe|violen\w*|stalk\w*)\b/, ["VII:7a", "VIII:8a"]],
+  [UNSAFE, ["VII:7a", "VIII:8a"]],
   [/\b(therap\w*|counsel\w*|mental health|depress\w*|anxi\w*|stress\w*|trauma\w*|grief|grieving)\b/, ["VII:2a", "VII:1a", "II:7a", "II:6a"]],
   [/\b(substance|addict\w*|recovery|sober\w*|opioids?|alcohol\w*|drinking|drugs?|narcan|meth)\b/, ["VII:6a"]],
   [/\b(behavio\w*|tantrums?|aggressi\w*|biting|hitting|melt ?downs?)\b/, ["II:1a", "II:2a", "II:6a"]],
@@ -117,9 +118,8 @@ export const NEED_WORDS = [
   [/\b(camps?|summer|after ?school)\b/, ["I:10a", "I:11a"]],
   [/\b(foster\w*|kinship|grandparents?|grandmother|grandma|grandfather|grandpa|adopt\w*|relative caregivers?)\b/, ["IV:5a", "RESPITE:*"]],
   [/\b(where to start|don ?t know where|211|referrals?)\b/, ["X:1", "IV:1a"]],
-  [/\b(crisis|suicid\w*|emergency|988)\b/, ["CRISIS:*", "VII:7a"]],
-  [/\b(can ?t (keep going|go on|do this anymore|take (it|this) anymore)|give up on (life|everything)|end (it all|my life|her life|his life)|kill (myself|herself|himself)|hurt(ing)? (myself|herself|himself)|self harm\w*|wants? to die|not want to (live|be here))\b/, ["CRISIS:*", "VII:1a", "VII:2a"]],
-  [/\b(do(es)?n ?t feel safe|not feel safe|afraid of (him|her|them)|scared of (him|her|them)|hits? (her|him|me)|threaten\w*)\b/, ["VII:7a", "VIII:8a", "CRISIS:*"]],
+  [SELF_HARM, ["CRISIS:*", "VII:1a", "VII:2a"]],
+  [CRISIS, ["CRISIS:*"]],
 ];
 
 /* SNIFF keys typed out, as in a pasted SNIFF: "VIII:12a" */

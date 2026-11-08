@@ -1,5 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { CODE_STORE, LEGACY_KEY_STORE, looksIdentifying, askServer, explain } from "../ai.js";
+import { urgentKind } from "../urgent.js";
+import CrisisBox from "./CrisisBox.jsx";
+import AskContext, { NO_CONTEXT, contextLine } from "./AskContext.jsx";
+import FamilyMessage from "./FamilyMessage.jsx";
+import AskFeedback from "./AskFeedback.jsx";
 
 /* The Gemini key is on the server now, so nobody sets anything up. The only
    thing a browser may keep is the team's Ask AI code, and only on a site
@@ -12,18 +17,27 @@ const storeCode = (c) => {
 /* a key saved under the old per-browser setup is no longer needed: drop it */
 const dropLegacyKey = () => { try { localStorage.removeItem(LEGACY_KEY_STORE); } catch (e) { /* nothing to drop */ } };
 
+/* "a phone number and a name" */
+const listOf = (items) => (items.length < 2 ? items.join("")
+  : items.slice(0, -1).join(", ") + " and " + items[items.length - 1]);
+
 export default function AskPanel({
   initialText, resources, needBy, events, eventsLoading,
-  renderResource, renderEvent, copyText, onClose,
+  renderResource, renderEvent, copyText, onClose, onShowNeed,
 }) {
   const [text, setText] = useState(initialText || "");
+  const [ctx, setCtx] = useState(NO_CONTEXT);
   const [code, setCode] = useState(loadCode);
   const [needCode, setNeedCode] = useState(false);
   const [draft, setDraft] = useState("");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const [result, setResult] = useState(null);
+  const [round, setRound] = useState(0);
+  const [urgent, setUrgent] = useState("");
   const [elapsed, setElapsed] = useState(0);
+  const [replyTo, setReplyTo] = useState(-1);
+  const [answer, setAnswer] = useState("");
   const abort = useRef(null);
 
   useEffect(dropLegacyKey, []);
@@ -41,13 +55,18 @@ export default function AskPanel({
   const byId = useMemo(() => new Map(resources.map((r) => [r.id, r])), [resources]);
   const evById = useMemo(() => new Map(events.map((e) => [e.id, e])), [events]);
 
-  const send = async (withCode = code) => {
-    if (!text.trim() || busy || eventsLoading) return;
+  const send = async (withCode = code, t = text) => {
+    if (!t.trim() || busy || eventsLoading) return;
+    /* what goes to the server: the text, and the taps as one plain line */
+    const question = [t.trim(), contextLine(ctx)].filter(Boolean).join("\n\n");
+    /* the crisis lines go up now, before Gemini answers, whatever it says */
+    setUrgent(urgentKind(question));
     abort.current?.abort();
     abort.current = new AbortController();
-    setBusy(true); setError(""); setResult(null);
+    setBusy(true); setError(""); setResult(null); setReplyTo(-1);
     try {
-      setResult(await askServer({ text: text.trim(), code: withCode, signal: abort.current.signal }));
+      setResult(await askServer({ text: question, code: withCode, signal: abort.current.signal }));
+      setRound((n) => n + 1);
       setNeedCode(false);
     } catch (e) {
       if (e.name === "AbortError") return;
@@ -67,6 +86,16 @@ export default function AskPanel({
     send(c);
   };
 
+  /* an answer to one of Gemini's questions joins the text, so it is there
+     to see and edit, and Ask AI looks again */
+  const askAgain = () => {
+    const a = answer.trim();
+    if (!a || replyTo < 0 || !result) return;
+    const next = `${text.trim()}\n${result.ask[replyTo]} ${a}`;
+    setText(next); setAnswer("");
+    send(code, next);
+  };
+
   const copyList = () => {
     const lines = picks.map((p) => {
       const r = byId.get(p.id);
@@ -84,6 +113,7 @@ export default function AskPanel({
      load) is left out rather than rendered empty */
   const picks = result ? result.picks.filter((p) => byId.has(p.id)) : [];
   const evPicks = result ? result.events.filter((x) => evById.has(x.id)) : [];
+  const removed = (result && result.removed) || [];
 
   return (
     <section className="pane ask">
@@ -98,7 +128,8 @@ export default function AskPanel({
       <p className="handling ask-privacy">
         <strong>No client details.</strong> Leave out names, dates of birth, addresses, phone numbers and
         anything else that could identify a family. What you type goes through this site to Google's Gemini
-        service, and on the free tier Google may keep and review it.
+        service, and on the free tier Google may keep and review it. Ask AI also takes out any it finds
+        before it asks.
       </p>
 
       {needCode && (
@@ -127,6 +158,7 @@ export default function AskPanel({
           This looks like it includes {warn.join(", ")}. Take client details out before you send.
         </p>
       )}
+      <AskContext ctx={ctx} onChange={setCtx} />
 
       <div className="row-btns ask-actions">
         <button className="btn ok-btn" onClick={() => send()} disabled={!text.trim() || busy || eventsLoading}>
@@ -137,15 +169,24 @@ export default function AskPanel({
         {busy && elapsed >= 10 && <span className="ask-wait">Taking longer than usual. It stops by itself at 25 seconds.</span>}
       </div>
 
+      {urgent && <CrisisBox kind={urgent} byId={byId} />}
       {error && <p className="callout" role="alert">{error}</p>}
 
       {result && (
         <div className="ask-results">
           {result.summary && <p className="ask-summary">{result.summary}</p>}
           {!!result.needs.length && (
-            <p className="tags ask-needs">
-              {result.needs.map((n) => <span key={n.key} title={n.why}>{needLabel(n.key)}</span>)}
-            </p>
+            <>
+              <p className="tags ask-needs">
+                {result.needs.map((n) => (needBy[n.key] && onShowNeed ? (
+                  <button key={n.key} className="need-chip" title={n.why} onClick={() => onShowNeed(n.key)}
+                    aria-label={`See everything for ${needLabel(n.key)}`}>
+                    {needLabel(n.key)} <span aria-hidden="true">›</span>
+                  </button>
+                ) : <span key={n.key} title={n.why}>{needLabel(n.key)}</span>))}
+              </p>
+              {onShowNeed && <p className="tiny">Tap a need to see everything the directory has for it.</p>}
+            </>
           )}
 
           <h3>Recommended from the directory ({picks.length})</h3>
@@ -178,17 +219,44 @@ export default function AskPanel({
           {!!result.ask.length && (
             <>
               <h3>Questions that would narrow it down</h3>
-              <ul className="plain">{result.ask.map((q, i) => <li key={i}>{q}</li>)}</ul>
+              <p className="tiny">Tap one to answer it, and Ask AI will look again.</p>
+              <ul className="plain ask-followups">
+                {result.ask.map((q, i) => (
+                  <li key={i}>
+                    <button className="linkish" aria-expanded={i === replyTo}
+                      onClick={() => { setReplyTo(i === replyTo ? -1 : i); setAnswer(""); }}>
+                      {q}
+                    </button>
+                    {i === replyTo && (
+                      <div className="ask-key-row ask-reply">
+                        <input value={answer} onChange={(e) => setAnswer(e.target.value)} autoFocus
+                          onKeyDown={(e) => e.key === "Enter" && askAgain()}
+                          placeholder="Your answer, without client details" aria-label={"Answer: " + q} />
+                        <button className="btn ok-btn" onClick={askAgain} disabled={!answer.trim() || busy}>Ask again</button>
+                      </div>
+                    )}
+                  </li>
+                ))}
+              </ul>
             </>
+          )}
+
+          {!!(picks.length || evPicks.length) && (
+            <FamilyMessage key={round} code={code} copyText={copyText}
+              items={picks.map((p) => ({ r: byId.get(p.id), why: p.why }))}
+              events={evPicks.map((x) => evById.get(x.id))} />
           )}
 
           <div className="row-btns">
             <button className="btn" onClick={copyList} disabled={!picks.length && !evPicks.length}>Copy the list</button>
           </div>
+          <AskFeedback key={"f" + round} needs={result.needs.map((n) => n.key)}
+            picks={picks.map((p) => p.id)} events={evPicks.map((x) => x.id)} />
           <p className="tiny src">
             Picked by Gemini from this directory
             {result.dropped ? `; ${result.dropped} suggestion${result.dropped === 1 ? " that is" : "s that are"} not in the directory ${result.dropped === 1 ? "was" : "were"} left out` : ""}.
-            Check each one before you refer.
+            {!!removed.length && ` Before asking, Ask AI took out ${listOf(removed)}.`}
+            {" "}Check each one before you refer.
           </p>
         </div>
       )}

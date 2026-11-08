@@ -151,14 +151,50 @@ answers in the language it was asked in.
 
 **No client details.** On the free tier Google may keep and review what is
 sent. The panel says so, and warns when the text looks like it has a phone
-number, an email address, a date of birth or a "Name:" style field. The
-function never logs what was asked.
+number, an email address, a date of birth or a "Name:" style field. The function
+also takes these details out itself before anything goes to Google
+(`src/scrub.js`), and the answer says what it took out. It catches:
+- names after a label ("Name:", "Mother: Maria Lopez");
+- dates of birth;
+- phone numbers, emails and ID numbers;
+- street addresses.
+
+It cannot spot a name in the middle of a sentence, so the warning still matters.
+The function never logs what was asked.
+
+**Safety first, without Gemini.** When a question sounds like someone may be in
+danger, the panel shows the crisis lines at once, before and whatever Gemini
+answers: 911, then 988, Helpmate's 24-hour line, RHA Mobile Crisis and the
+Crisis Text Line, ordered by what was said. The words it listens for, in English
+and Spanish, are in `src/urgent.js`. The numbers come from those rows in
+`data/resources.json`.
+
+**In an answer:**
+- Tap a need to open it under By SNIFF question, with everything filed there.
+- Tap one of Gemini's questions to answer it; Ask AI adds the answer to the text
+  and looks again.
+- **A message for the family** writes the picks up as a warm text message, with
+  names, phone numbers, hours and addresses straight from the directory. In
+  Spanish, only Gemini's reasons are translated, so a number cannot change.
+  Read it over before sending.
+- **Did this help?** saves a thumbs up or down, and for a thumbs down a reason
+  picked from a list. It saves only the day, the SNIFF needs, resources and
+  events named, never the question or the answer. The totals are at
+  `/api/ask-feedback` on the site (add `?code=` if `ASK_AI_CODE` is set). They
+  are kept in the site's Netlify Blobs store `ask-feedback`.
+
+**About the family** taps (children's ages, Spanish, no car, town) add one plain
+line to the question, so the search and Gemini both use them.
+
+**What is open.** Gemini always knows today's date. A question about when ("open
+Saturday?", "food tonight") also gets each resource's hours. If it is about food,
+it gets that day's Food by day schedule too.
 
 **Locally**, `npm run dev` has no functions, so Ask AI says it is not switched on.
 To try it, run `netlify dev` with `GEMINI_API_KEY` set in the shell, or use a
-deploy preview. The logic is in `src/ai.js`, the panel is
-`src/components/AskPanel.jsx`, and the server side is
-`netlify/functions/ask-ai.mjs`.
+deploy preview. The logic is in `src/ai.js`, `src/shortlist.js`, `src/scrub.js`
+and `src/urgent.js`. The panel is `src/components/AskPanel.jsx`. The server side
+is `netlify/functions/ask-ai.mjs` and `ask-feedback.mjs`.
 
 ## Where the data came from
 
