@@ -134,7 +134,7 @@ export default function AskPanel({
         </button>
         {busy && <button className="btn" onClick={() => abort.current?.abort()}>Stop</button>}
         {eventsLoading && <span className="ask-wait">Loading the family calendar…</span>}
-        {busy && elapsed >= 20 && <span className="ask-wait">Long answers can take a minute.</span>}
+        {busy && elapsed >= 10 && <span className="ask-wait">Taking longer than usual. It stops by itself at 25 seconds.</span>}
       </div>
 
       {error && <p className="callout" role="alert">{error}</p>}

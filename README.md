@@ -120,10 +120,15 @@ front-end variable would publish it inside the app for anyone to copy.
   rate-limits it to 10 questions a minute per IP.
 - Optional team code: set `ASK_AI_CODE` the same way, and the panel asks each
   browser for that code once before it will answer.
-- Gemini gets a low thinking level and up to 42 seconds, then the lighter model
-  gets what is left of Netlify's 60-second limit, so the panel shows an answer
-  or a plain "took too long", never a platform error. While it works, the button
-  counts the seconds and **Stop** cancels.
+- Speed: Ask AI asks Gemini Flash-Lite, Google's fastest model, with thinking
+  turned down to the minimum, and falls back to Flash when Flash-Lite is busy or
+  out of its free quota. Netlify cuts this site's functions off at 30 seconds,
+  so both together get 24, and the panel shows an answer or a plain "took too
+  long", never a platform error. While it works, the button counts the seconds
+  and **Stop** cancels.
+- Each question leaves a line in Netlify's function logs (Logs, then Functions,
+  then `ask-ai`): which model answered, how long it took and how many tokens it
+  used. What was asked and answered is never logged.
 
 **No client details.** On the free tier Google may keep and review what is
 sent. The panel says so, and warns when the text looks like it has a phone

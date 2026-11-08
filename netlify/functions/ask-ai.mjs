@@ -1,8 +1,7 @@
 /*
  * Ask AI's server side. The Gemini key is the GEMINI_API_KEY environment
- * variable on Netlify (scope: Functions; set for Production and Deploy
- * Previews), never in a browser or in this repo, so Ask AI works in any
- * browser with no setup.
+ * variable on Netlify (see the README for how it is set), never in a browser
+ * or in this repo, so Ask AI works in any browser with no setup.
  *
  * The browser sends only the question. The prompt is built here from the
  * directory as deployed, so this endpoint answers questions about this
@@ -15,7 +14,7 @@ import resourcesFile from "../../data/resources.json";
 import sniffFile from "../../data/sniff.json";
 import eventsFile from "../../data/events.json";
 import calendarFile from "../../data/calendar.json";
-import { buildPrompt, askGemini, parseAnswer, AiError } from "../../src/ai.js";
+import { buildPrompt, askGemini, parseAnswer } from "../../src/ai.js";
 
 export const MAX_TEXT = 30000;
 
@@ -58,10 +57,16 @@ const deadline = (ms) => {
   return { signal: ctrl.signal, done: () => clearTimeout(timer) };
 };
 
-/* Netlify stops a function at 60 seconds. Give Gemini 42 to answer; if it is
-   still thinking, ask the lighter model with what is left, so the person gets
-   an answer or a clear "took too long" rather than a platform error. */
-export async function handle(req, { firstMs = 42000, totalMs = 55000, fetchImpl = fetch } = {}) {
+/* Netlify ends this site's functions at 30 seconds (the request logs show
+   the cutoff at 30, whatever the docs say) and answers with its own error
+   page. Everything here, the fallback model included, gets 24 seconds, so the
+   person always hears from this code: an answer, or a plain "took too long". */
+export const BUDGET_MS = 24000;
+
+/* which thinking setting each model took, kept while the function is warm */
+const THINKING_MEMO = new Map();
+
+export async function handle(req, { budgetMs = BUDGET_MS, fetchImpl = fetch, memo = THINKING_MEMO, log = console } = {}) {
   if (req.method !== "POST") return reply(405, { error: "method" });
   if (!sameSite(req)) return reply(403, { error: "denied" });
   const code = env("ASK_AI_CODE");
@@ -76,31 +81,23 @@ export async function handle(req, { firstMs = 42000, totalMs = 55000, fetchImpl 
   if (text.length > MAX_TEXT) return reply(413, { error: "long" });
 
   const prompt = buildPrompt({ resources: RESOURCES, needs: sniffFile.needs, events: EVENTS, today: localToday() });
-  const started = Date.now();
-  const ask = async (models, ms) => {
-    const limit = deadline(ms);
-    try {
-      return await askGemini({ key, system: prompt.system, text, models, signal: limit.signal, fetchImpl });
-    } finally {
-      limit.done();
-    }
-  };
+  const limit = deadline(budgetMs);
+  const t0 = Date.now();
+  /* the log says which model answered, how fast and with how many tokens;
+     never what was asked or answered: that is a family's situation */
+  const trace = (t) => log.log("ask-ai gemini " + JSON.stringify(t));
   try {
-    let raw;
-    try {
-      raw = await ask(undefined, firstMs);
-    } catch (e) {
-      if (!isTimeout(e)) throw e;
-      const left = totalMs - (Date.now() - started);
-      if (left < 4000) throw new AiError("timeout");
-      raw = await ask(["gemini-flash-lite-latest"], left);
-    }
-    return reply(200, parseAnswer(raw, prompt));
+    const raw = await askGemini({ key, system: prompt.system, text, signal: limit.signal, fetchImpl, memo, trace });
+    const answer = parseAnswer(raw, prompt);
+    log.log(`ask-ai ok in ${Date.now() - t0}ms: ${answer.picks.length} picks, ${answer.events.length} events, ${answer.dropped} dropped`);
+    return reply(200, answer);
   } catch (e) {
     const kind = isTimeout(e) ? "timeout" : e.kind || "error";
-    /* never log what was asked: it is a family's situation */
-    console.error("ask-ai failed:", kind, e.kind ? "" : String(e).slice(0, 120));
+    /* an unexpected error is logged by its name only: its message could quote Gemini's reply */
+    log.error(`ask-ai failed after ${Date.now() - t0}ms: ${kind}`, e.kind ? "" : e.name || "");
     return reply(kind === "quota" ? 429 : kind === "timeout" ? 504 : 502, { error: kind });
+  } finally {
+    limit.done();
   }
 }
 

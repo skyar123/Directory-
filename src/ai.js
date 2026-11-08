@@ -1,9 +1,10 @@
 /*
- * Ask AI. Builds a prompt from this directory, sends it with the user's own
- * free Gemini key straight from the browser, and turns the reply back into
- * resources and events from the directory. Every pick has to be a ref the
- * prompt listed, so the model can rank and explain but never invent a
- * resource, a phone number or an event.
+ * Ask AI. The browser sends the question to this site's function
+ * (askServer); the function builds a prompt from the directory, asks Gemini
+ * (askGemini) and turns the reply back into resources and events from the
+ * directory (parseAnswer). Every pick has to be a ref the prompt listed, so
+ * the model can rank and explain but never invent a resource, a phone number
+ * or an event.
  */
 
 /* The Gemini key lives on the server (netlify/functions/ask-ai.mjs reads it
@@ -13,10 +14,13 @@ export const ASK_PATH = "/api/ask-ai";
 export const CODE_STORE = "wnc:ask-code";
 export const LEGACY_KEY_STORE = "wnc:gemini-key";
 
-/* Google repoints this alias at its current Flash model, which the free tier
-   covers, so a retired model version does not break the search. The lite
-   alias is the fallback when the first is overloaded or missing. */
-export const MODELS = ["gemini-flash-latest", "gemini-flash-lite-latest"];
+/* Flash-Lite is Google's fastest model. Flash, on a prompt this size, ran
+   past the function's 30 seconds in the first live tests, so Flash-Lite goes
+   first and Flash is the fallback when Flash-Lite is overloaded, out of its
+   free quota (each model has its own) or missing. Google repoints both
+   aliases at its current models, which the free tier covers, so a retired
+   version does not break the search. */
+export const MODELS = ["gemini-flash-lite-latest", "gemini-flash-latest"];
 export const endpoint = (model) =>
   `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
 
@@ -63,7 +67,7 @@ export function buildPrompt({ resources, needs, events, today }) {
     ' "picks": [{"ref": "R12", "need": "SNIFF key", "why": "one sentence on why it fits"}],',
     ' "events": [{"ref": "E3", "why": "one sentence"}],',
     ' "ask": ["a question that would help narrow this down"]}',
-    "Give at most 12 picks, best first, and at most 4 events. Prefer free, nearby and Spanish-capable options when the text points that way.",
+    "Give at most 10 picks, best first, at most 3 events and at most 3 questions. Keep each why to one short sentence. Prefer free, nearby and Spanish-capable options when the text points that way.",
     "",
     "SNIFF questions (key|label):",
     ...needs.map((n) => `${n.key}|${n.label}`),
@@ -130,6 +134,8 @@ export async function askServer({ text, code, signal, fetchImpl = fetch }) {
   if (j && typeof j.error === "string") throw new AiError(j.error);
   if (res.status === 429) throw new AiError("limit");
   if (res.status === 404) throw new AiError("setup", "no function at " + ASK_PATH);
+  /* Netlify's own timeout page, should the function ever run past its limit */
+  if (res.status === 504) throw new AiError("timeout");
   if (res.status >= 500) throw new AiError("busy");
   throw new AiError("error", String(res.status));
 }
@@ -143,18 +149,41 @@ const kindFor = (status, body) => {
   return "error";
 };
 
-/* Flash models think before they answer, and on a prompt this size that
-   is most of the wait. Matching a list against a need does not take much,
-   so the request asks for a low thinking level. */
-export const THINKING = { thinkingLevel: "low" };
+/* Thinking is most of the wait on a prompt this size, and matching a list
+   against a need does not take much. Gemini 3 models take a thinking level
+   (minimal is the least); 2.5 models refuse a level with a 400 and turn
+   thinking off with a budget of 0. Each model is asked these in turn until
+   one is accepted, and a memo (the function keeps one while it stays warm)
+   remembers which, so the refusal costs a round trip once, not every time. */
+export const THINKING = [{ thinkingLevel: "minimal" }, { thinkingBudget: 0 }, null];
 
-/* one call to Gemini; tries the fallback model when the first is missing or busy */
-export async function askGemini({ key, system, text, signal, models = MODELS, fetchImpl = fetch }) {
+/* An answer is well under a thousand tokens. The cap stops a reply that
+   loops from eating the time limit. No temperature is set: Gemini 3 models
+   are tuned for their default and can loop below it. */
+export const MAX_OUTPUT = 3000;
+
+const thinkingName = (t) => (t ? Object.entries(t)[0].join("=") : "default");
+const usageOf = (u) => u && {
+  in: u.promptTokenCount || 0, out: u.candidatesTokenCount || 0,
+  think: u.thoughtsTokenCount || 0, cached: u.cachedContentTokenCount || 0,
+};
+/* Gemini's own error, for the log: its status and message, never the request */
+const errorOf = (body) => {
+  try { const e = JSON.parse(body).error; return clip(`${e.status || ""} ${e.message || ""}`, 160); } catch (x) { return clip(body, 80); }
+};
+
+/* One question to Gemini. Tries the next model when one is missing, busy or
+   out of quota. trace gets one line per attempt (model, status, time,
+   tokens) for the function log; it never sees the question or the answer. */
+export async function askGemini({
+  key, system, text, signal, models = MODELS, fetchImpl = fetch, memo = new Map(), trace = () => {},
+}) {
   let last;
   for (const model of models) {
-    /* a model that does not take a thinking level refuses the request with
-       a 400, so ask that model again without one before moving on */
-    for (const thinking of [THINKING, null]) {
+    for (let t = memo.get(model) || 0; t < THINKING.length; t++) {
+      const thinking = THINKING[t];
+      const t0 = Date.now();
+      const note = (o) => trace({ model, thinking: thinkingName(thinking), ms: Date.now() - t0, ...o });
       let res;
       try {
         res = await fetchImpl(endpoint(model), {
@@ -164,28 +193,34 @@ export async function askGemini({ key, system, text, signal, models = MODELS, fe
             systemInstruction: { parts: [{ text: system }] },
             contents: [{ role: "user", parts: [{ text }] }],
             generationConfig: {
-              responseMimeType: "application/json", temperature: 0.2,
+              responseMimeType: "application/json", maxOutputTokens: MAX_OUTPUT,
               ...(thinking && { thinkingConfig: thinking }),
             },
           }),
           signal,
         });
       } catch (e) {
-        if (e.name === "AbortError" || e.name === "TimeoutError") throw e;
+        if (e.name === "AbortError" || e.name === "TimeoutError") { note({ status: "deadline" }); throw e; }
+        note({ status: "offline" });
         throw new AiError("offline", String(e));
       }
       if (res.ok) {
+        memo.set(model, t);
         const j = await res.json();
         const c = j.candidates && j.candidates[0];
+        note({ status: res.status, finish: (c && c.finishReason) || "", usage: usageOf(j.usageMetadata) });
         const out = ((c && c.content && c.content.parts) || []).filter((p) => !p.thought).map((p) => p.text || "").join("");
         if (!out) throw new AiError("blocked", (c && c.finishReason) || (j.promptFeedback && j.promptFeedback.blockReason) || "");
         return out;
       }
       const body = await res.text();
       last = new AiError(kindFor(res.status, body), body.slice(0, 300));
+      note({ status: res.status, error: errorOf(body) });
+      /* a 400 that is not about the key is most likely the thinking
+         setting this model does not take: ask it the next way */
       if (!(thinking && res.status === 400 && last.kind !== "key")) break;
     }
-    if (last.kind !== "model" && last.kind !== "busy") break;
+    if (!["model", "busy", "quota"].includes(last.kind)) break;
   }
   throw last;
 }
