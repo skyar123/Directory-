@@ -46,6 +46,18 @@
    "label": "WATCH THESE - SYSTEM CHANGES IN FLIGHT",
    "entries": [
     {
+     "date": "Nov 1 2026",
+     "what": "Salvation Army Center of Hope pauses its 65-bed shelter until April 30, 2027",
+     "detail": "For lack of funding, after it used its final installment of federal money (American Rescue Plan Act and HUD). It still runs Code Purple emergency shelter on cold nights, and the food pantry and other Haywood Street services continue. BPR reported that if the shelter closes for good, the region's shortage of shelter beds would grow from about 90 to 155. Call 828-253-4723 before sending anyone.",
+     "source": "WLOS, Mountain Xpress and BPR (Aug 2026) via web search, 8 Nov 2026"
+    },
+    {
+     "date": "Dec 1 2026",
+     "what": "LIHEAP heating help opens: December for 60+ and disabled, January 4 for everyone",
+     "detail": "Households with someone 60 or older, or a disabled person receiving adult services, apply December 1 to 31, 2026. Everyone else applies January 4 to March 31, 2027, or until funds run out. Apply at epass.nc.gov, 40 Coxe Ave, or by phone at 828-250-6330. These dates come from a grants-tracking blog, so confirm them with Buncombe DSS.",
+     "source": "Grants-tracking blog and Buncombe County pages via web search, 8 Nov 2026"
+    },
+    {
      "date": "Oct 1 2026",
      "what": "NC Medicaid immigration eligibility changed (federal H.R. 1)",
      "detail": "From 1 October 2026 full NC Medicaid for non-citizens is limited mainly to lawful permanent residents (green card holders), Cuban and Haitian entrants, and citizens of Micronesia, the Marshall Islands and Palau. Many refugees, asylees, trafficking survivors and parolees lose full coverage; Carolina Journal reports about 10,500 people lost it. Protections remain: lawfully residing children under 19 and people who are pregnant or within 12 months postpartum stay eligible even without permanent status, and Emergency Medicaid is still there for those who qualify. Do not tell a family they are no longer eligible. Send them for individual guidance: Buncombe DSS, or Pisgah Legal health access (Shoshana Barton, 828-210-3786). More changes start 1 January 2027.",
@@ -143,6 +155,12 @@
    "entries": [
     {
      "date": "Nov 8 2026",
+     "what": "Concrete Needs check: a dangerous mix-up fixed, the Salvation Army shelter pause flagged",
+     "detail": "ABBA's House was described as domestic violence safe housing; it is a recovery residence for mothers, so the row now says so and points survivors to Helpmate. The Salvation Army's 65-bed shelter is paused until April 30, 2027. The NC Diaper Bank row's Houston number and walk-in description were removed. Modivcare now lists each plan's ride line, with WellCare's corrected to One Call, and it and Mountain Mobility lost a stray \"Toys or books\" tag. 12 Baskets, ART, Mountain Mobility, BEAR Closets and Safe Shelter had wrong or cut-off hours. Code Purple now lists last season's sites and rules. Confirmed against official or the organizations' own sources: ART, Mountain Mobility, Trailblazer, Modivcare, both MANNA helpline rows, both CIP rows, the Salvation Army shelter and rent help, Safe Shelter, love is respect and the Trevor Project.",
+     "source": "scripts/apply-concrete-needs-check-2026-11-08.mjs"
+    },
+    {
+     "date": "Nov 8 2026",
      "what": "Crisis rows checked: two wrong or stale rows fixed, four confirmed",
      "detail": "Community Paramedics / MCOT listed numbers that are not in the county's directory; its 24/7 line is 828-772-1294. Mission's Copestone unit was replaced in 2023 by the Sweeten Creek Mental Health & Wellness Center. 'The Bridges Crisis and Assessment Center' could not be confirmed and now says so. Confirmed against official sources: the child abuse report line (24/7), RHA Mobile Crisis (24/7, 11 counties), the Vaya crisis line (24/7 including holidays) and MCOT's new numbers, each now with a website.",
      "source": "scripts/apply-crisis-check-2026-11-08.mjs"
@@ -237,6 +255,12 @@
    "id": "open-questions",
    "label": "STILL OPEN",
    "entries": [
+    {
+     "date": "OPEN",
+     "what": "Concrete Needs details to confirm before relying on them",
+     "detail": "Whether the Trailblazer routes are still free; what winter disconnection protection Duke gives in 2026-27 and whether 1-800-452-2777 reaches Share the Light; the 2026-27 Code Purple sites; BEAR Closet hours at Weaverville and Abernethy; whether Safe Shelter runs a safe parking program; and which of 828-254-1529 or 828-254-0471 reaches Western Carolina Rescue Ministries.",
+     "source": "Concrete Needs check, web search 8 Nov 2026"
+    },
     {
      "date": "OPEN",
      "what": "What is 'The Bridges Crisis and Assessment Center' row?",
