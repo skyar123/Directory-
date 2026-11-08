@@ -6,7 +6,7 @@
  *  - ABBA's House was described as safe housing for domestic violence
  *    survivors. Asheville's Abba's House is a recovery residence for pregnant
  *    and parenting mothers, run by Western Carolina Rescue Ministries. Sending
- *    a survivor there by mistake could put her at risk, so the row says so now.
+ *    a survivor there by mistake could put them at risk, so the row says so now.
  *  - The Salvation Army's 65-bed Center of Hope shelter is paused from
  *    1 Nov 2026 to 30 Apr 2027 for lack of funding.
  *  - The NC Diaper Bank formula row carried a Houston phone number and a
