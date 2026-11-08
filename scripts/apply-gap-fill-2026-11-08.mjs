@@ -14,7 +14,8 @@
  *    the organization's own source confirmed its main contact, and only if it
  *    was never verified before (Skylar's own checks are left as they are).
  *  - Contact details from directories or news are filled but say so in `src`.
- *  - Where nothing could be found, the row says so in `note` instead.
+ *  - Nine resources turned up nothing online. Skylar confirmed they exist by
+ *    word of mouth, so their notes say that instead of doubting them.
  * Run once.
  */
 import { readFileSync, writeFileSync } from "node:fs";
@@ -75,9 +76,13 @@ const patch = (id, fn) => {
   clean(r);
   n++;
 };
-const notFound = (id, what) => patch(id, (r) => {
-  append(r, "note", `Not confirmed: ${what} Call before referring.`);
-  append(r, "src", `nothing found by ${WEB}`);
+/* known locally, not online: Skylar confirmed these exist by word of mouth */
+const WOM = "Word of mouth: a local resource with no online listing (Skylar Belt, 8 Nov 2026). The details come "
+  + "from local contacts, so confirm them before referring.";
+const wordOfMouth = (id, extraNote = "", extraSrc = "") => patch(id, (r) => {
+  append(r, "note", extraNote ? `${WOM} ${extraNote}` : WOM);
+  append(r, "src", `not listed online (nothing found by ${WEB}); exists by word of mouth, per Skylar Belt, 8 Nov 2026`
+    + (extraSrc ? `; ${extraSrc}` : ""));
 });
 
 /* -------------------------------------- copies from the same organization */
@@ -132,7 +137,7 @@ patch("ssi-ssdi", (r) => {
 
 /* ---------------------------------------------------- food and basics */
 
-notFound("budgie-s-bakery-free-pantry", "no listing for Budgie's Bakery or a pantry at 1808 Pisgah Hwy turned up.");
+wordOfMouth("budgie-s-bakery-free-pantry");
 patch("rosetta-s-kitchen-everyone-eats", (r) => {
   fill(r, "h", "Tue-Sat 12-8pm (the restaurant's own page; other listings differ)");
   append(r, "d", "Still at 68 N Lexington. Its own page describes pay-it-forward and sliding-scale meals; an older "
@@ -154,11 +159,8 @@ patch("root-cause-farm-free-market", (r) => {
     + "to November 11, so expect a winter break. Older listings give other times, so call first.");
   append(r, "src", `address, phone, market time and season from farm directory listings and WLOS via ${WEB}`);
 });
-patch("bountiful-cities-free-veggie-mondays", (r) => {
-  append(r, "note", "Not confirmed: Free Veggie Mondays did not turn up. WLOS reports Bountiful Cities running free "
-    + "Share Markets (one on October 28 at William Randolph School, 3-5pm). Call before sending anyone.");
-  append(r, "src", `Share Markets from WLOS via ${WEB}; Veggie Mondays not found`);
-});
+wordOfMouth("bountiful-cities-free-veggie-mondays", "Bountiful Cities also runs free Share Markets (WLOS listed "
+  + "one on October 28 at William Randolph School, 3-5pm).", "Share Markets from WLOS");
 patch("estes-resource-center", (r) => {
   expect(r, "a", "1984 Hendersonville Rd");
   r.n = "Estes Family Resource Center (W.W. Estes Elementary)";
@@ -175,17 +177,10 @@ patch("foster-adventist-church", (r) => {
     + "Showers could not be confirmed (the county's resource sheet lists showers at the downtown YMCA), so call first.");
   append(r, "src", `phone and services from church and food directory listings and a Buncombe County resource sheet via ${WEB}`);
 });
-patch("laundry-love", (r) => {
-  append(r, "note", "Not confirmed: no Asheville Laundry Love chapter turned up, and the BBB lists Fiesta Laundries at "
-    + "712 Merrimon Ave, not 615. Call before sending anyone.");
-  append(r, "src", `chapter not found and Fiesta's address from the BBB via ${WEB}`);
-});
-patch("project-comfort", (r) => {
-  append(r, "note", "Not confirmed: no Asheville \"Project Comfort\" turned up. ABCCM has given out free air "
-    + "conditioners and fans in heat waves, and BeLoved Asheville has handed out heaters in past winters. Call before "
-    + "sending anyone.");
-  append(r, "src", `program not found; alternatives from WLOS via ${WEB}`);
-});
+wordOfMouth("laundry-love", "The BBB lists Fiesta Laundries at 712 Merrimon Ave, not 615, so check the address.",
+  "Fiesta's address from the BBB");
+wordOfMouth("project-comfort", "If it cannot help, ABCCM has given out free air conditioners and fans in heat "
+  + "waves, and BeLoved Asheville has handed out heaters in past winters.", "alternatives from WLOS");
 patch("swannanoa-communities-together", (r) => {
   fill(r, "a", "2121 US 70 Hwy, Swannanoa");
   append(r, "src", `address from a Pisgah Legal Services page and Helene case management from Direct Relief via ${WEB}; no phone or website found`);
@@ -205,7 +200,7 @@ patch("hood-huggers-international", (r) => {
     + "neighborhoods, with walking and driving tours of legacy Black neighborhoods booked through the website.");
   append(r, "src", `website and tours from PBS North Carolina and Mountain Xpress via ${WEB}`);
 });
-notFound("watoto-wa-utamaduni-children-of-culture", "no Asheville program by this name turned up.");
+wordOfMouth("watoto-wa-utamaduni-children-of-culture");
 patch("just-economics-wnc", (r) => {
   fill(r, "ph", "828-505-7466");
   fill(r, "em", "info@justeconomicswnc.org");
@@ -263,7 +258,7 @@ patch("el-centro", (r) => {
 
 /* ------------------------------------------------ families and caregivers */
 
-notFound("fostering-the-family", "no program by this name turned up in Asheville.");
+wordOfMouth("fostering-the-family");
 patch("homebuilders", (r) => {
   fill(r, "w", "ncdhhs.gov/divisions/social-services/family-first-prevention-services-act-information");
   append(r, "d", "Families cannot sign up themselves: county child welfare staff refer a family when a child is at "
@@ -332,13 +327,10 @@ patch("the-little-gym-parent-survival-nights", (r) => {
   webVerified(r);
   append(r, "src", `phone, address and age range from The Little Gym's own pages via ${WEB}`);
 });
-patch("we-belong-sensory-friendly-programming", (r) => {
-  append(r, "note", "Not confirmed: no children's after-school or camp program by this name turned up. At 1 Edwin Pl "
-    + "(the Unitarian Universalist Church of Asheville) there is a We Belong Caregiver Support Group for families of "
-    + "neurodivergent youth. Call before referring.");
-  append(r, "src", `caregiver group from the UU Asheville calendar via ${WEB}; children's program not found`);
-});
-notFound("little-land-stewards", "no nature-based program by this name turned up in Alexander or Buncombe County.");
+wordOfMouth("we-belong-sensory-friendly-programming", "The same address (1 Edwin Pl, the Unitarian Universalist "
+  + "Church of Asheville) also hosts a We Belong Caregiver Support Group for families of neurodivergent youth.",
+  "caregiver group from the UU Asheville calendar");
+wordOfMouth("little-land-stewards");
 patch("operation-fan-heat-relief", (r) => {
   fill(r, "ph", "828-251-6622 (Land of Sky Area Agency on Aging) / 919-855-3400 (NCDHHS)");
   fill(r, "w", "landofsky.org");
@@ -469,7 +461,8 @@ patch("haywood-street-congregation-downtown-welcome", (r) => {
   fill(r, "h", "Welcome Table lunch Wednesdays about 10:30am-1pm (confirm Sunday meals)");
   append(r, "src", `phone and Wednesday hours from UMC.org, MANNA's food finder and a Buncombe County sheet via ${WEB}`);
 });
-notFound("rsa-asheville", "no organization called RSA Asheville, or the rsaasheville.org site, turned up.");
+wordOfMouth("rsa-asheville", "The website listed here did not turn up in the search either, so confirm it and the "
+  + "email.");
 
 /* ----------------------------------------------- language, learning, care */
 
@@ -533,11 +526,9 @@ const cl = load("changelog.json");
 const group = (id) => cl.file.groups.find((g) => g.id === id);
 group("open-questions").entries.unshift(clean({
   date: "OPEN",
-  what: "Organizations the gap-fill search could not find",
-  detail: "Budgie's Bakery free pantry (1808 Pisgah Hwy), Bountiful Cities Free Veggie Mondays, Project Comfort, "
-    + "an Asheville Laundry Love, Watoto Wa Utamaduni, Fostering the Family, Little Land Stewards, the We Belong! "
-    + "children's program and RSA Asheville. Also unclear: whether Field & Kitchen in Hendersonville is still open. "
-    + "Each row now carries a note. Ask whoever added it, or call, then fix or retire the row.",
+  what: "Is Field & Kitchen in Hendersonville still open?",
+  detail: "Its operator, Caja, posted an undated survey saying it is closing this location \"this fall\" to "
+    + "consolidate at the farm. Confirm with Field & Kitchen or Caja, then mark the row closed or clear its note.",
   source: "Gap fill, web search 8 Nov 2026",
 }));
 group("added").entries.unshift(clean({
@@ -548,7 +539,8 @@ group("added").entries.unshift(clean({
     + "Villages, ECAC, NAMI Western Carolina, the WNC Farmers Market, Read to Succeed, Literacy Together and all six "
     + "Carolina Pediatric Therapy rows. Corrections: the Estes Resource Center is the Estes Elementary family "
     + "resource center on Overlook Rd, Brandy Colvin's office is on N French Broad, and USCRI and Hispanic "
-    + "Federation have no Asheville office. Nine rows that could not be found now say so.",
+    + "Federation have no Asheville office. Nine local resources that exist by word of mouth, with no online "
+    + "listing, are now marked that way.",
   source: "scripts/apply-gap-fill-2026-11-08.mjs",
 }));
 save(cl);

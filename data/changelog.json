@@ -156,7 +156,7 @@
     {
      "date": "Nov 8 2026",
      "what": "Gap fill: phones, websites and addresses for about 70 rows",
-     "detail": "Contact details filled for rows that had none, among them Burton Street Community Center, Just Economics, Mountain BizWorks, BCS Language Services, CMARC's Buncombe referral line, the Lavender Fund, Youth Villages, ECAC, NAMI Western Carolina, the WNC Farmers Market, Read to Succeed, Literacy Together and all six Carolina Pediatric Therapy rows. Corrections: the Estes Resource Center is the Estes Elementary family resource center on Overlook Rd, Brandy Colvin's office is on N French Broad, and USCRI and Hispanic Federation have no Asheville office. Nine rows that could not be found now say so.",
+     "detail": "Contact details filled for rows that had none, among them Burton Street Community Center, Just Economics, Mountain BizWorks, BCS Language Services, CMARC's Buncombe referral line, the Lavender Fund, Youth Villages, ECAC, NAMI Western Carolina, the WNC Farmers Market, Read to Succeed, Literacy Together and all six Carolina Pediatric Therapy rows. Corrections: the Estes Resource Center is the Estes Elementary family resource center on Overlook Rd, Brandy Colvin's office is on N French Broad, and USCRI and Hispanic Federation have no Asheville office. Nine local resources that exist by word of mouth, with no online listing, are now marked that way.",
      "source": "scripts/apply-gap-fill-2026-11-08.mjs"
     },
     {
@@ -263,8 +263,8 @@
    "entries": [
     {
      "date": "OPEN",
-     "what": "Organizations the gap-fill search could not find",
-     "detail": "Budgie's Bakery free pantry (1808 Pisgah Hwy), Bountiful Cities Free Veggie Mondays, Project Comfort, an Asheville Laundry Love, Watoto Wa Utamaduni, Fostering the Family, Little Land Stewards, the We Belong! children's program and RSA Asheville. Also unclear: whether Field & Kitchen in Hendersonville is still open. Each row now carries a note. Ask whoever added it, or call, then fix or retire the row.",
+     "what": "Is Field & Kitchen in Hendersonville still open?",
+     "detail": "Its operator, Caja, posted an undated survey saying it is closing this location \"this fall\" to consolidate at the farm. Confirm with Field & Kitchen or Caja, then mark the row closed or clear its note.",
      "source": "Gap fill, web search 8 Nov 2026"
     },
     {
