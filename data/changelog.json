@@ -154,6 +154,12 @@
    "label": "ADDED THIS ROUND",
    "entries": [
     {
+     "date": "Nov 13 2026",
+     "what": "Food guide cross-check: 39 new food sources, Code Purple sites, Salvation Army flagged",
+     "detail": "From the WNC Free Food & Supplies guide (Oct 2026): new rows for Asheville meals, pantries and fridges, Barnardsville, Black Mountain, Leicester and Weaverville sites, free firewood, and the main food sources in Henderson, Madison, McDowell, Haywood, Transylvania and Yancey. Corrected Food Connection's times, Swannanoa Communities Together's hours and Budgie's Bakeshop. Code Purple now lists this winter's sites and status line (828-442-7597). Salvation Army rows say Skylar does not refer there first, because of how much personal detail it asks for. Calendar: Code Purple Nov 13-14, Eblen's turkey giveaway (Nov 20), the Christmas Blessings Event in Candler (Nov 21) and Bounty & Soul's market changes.",
+     "source": "scripts/apply-food-guide-2026-11-13.mjs"
+    },
+    {
      "date": "Nov 8 2026",
      "what": "Gap fill: phones, websites and addresses for about 70 rows",
      "detail": "Contact details filled for rows that had none, among them Burton Street Community Center, Just Economics, Mountain BizWorks, BCS Language Services, CMARC's Buncombe referral line, the Lavender Fund, Youth Villages, ECAC, NAMI Western Carolina, the WNC Farmers Market, Read to Succeed, Literacy Together and all six Carolina Pediatric Therapy rows. Corrections: the Estes Resource Center is the Estes Elementary family resource center on Overlook Rd, Brandy Colvin's office is on N French Broad, and USCRI and Hispanic Federation have no Asheville office. Nine local resources that exist by word of mouth, with no online listing, are now marked that way.",

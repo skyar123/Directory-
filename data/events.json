@@ -313,6 +313,18 @@
    "src": "Facebook event listings, Facebook deep scrape, 6 Nov 2026; phone from YMCA WNC mobile market schedule PDFs via web search, 6 Nov 2026"
   },
   {
+   "id": "code-purple-2026-11-13",
+   "date": "2026-11-13",
+   "end": "2026-11-14",
+   "time": "Check-in 5-8pm",
+   "kind": "event",
+   "what": "Code Purple called: emergency overnight shelter",
+   "detail": "Women and children: ABCCM Transformation Village, 30 Olin Haven Way. Men, couples and people with pets: Center of Hope, 204 Haywood St. No ID or sobriety required; free ART rides to the shelters.",
+   "ph": "828-442-7597",
+   "rid": "code-purple",
+   "src": "Flyer shared by Skylar Belt, 13 Nov 2026 (Asheville-Buncombe Continuum of Care)"
+  },
+  {
    "id": "christmas-on-main-marshall-2026-11-14",
    "date": "2026-11-14",
    "time": "From 9am",
@@ -515,6 +527,20 @@
    "src": "Facebook event listings, Facebook deep scrape, 6 Nov 2026; phone from YMCA WNC mobile market schedule PDFs via web search, 6 Nov 2026"
   },
   {
+   "id": "eblen-turkey-giveaway-2026-11-20",
+   "date": "2026-11-20",
+   "kind": "event",
+   "what": "Eblen Charities Giving Thanks Turkey Giveaway",
+   "detail": "Everything for a Thanksgiving meal, with Ingles and iHeart Media. Sign up in advance; the flyer says sign-ups are still open.",
+   "tags": [
+    "Free"
+   ],
+   "ph": "828-255-3066",
+   "w": "eblencharities.org",
+   "rid": "eblen-charities",
+   "src": "Flyer shared by Skylar Belt, 13 Nov 2026"
+  },
+  {
    "id": "fandom-fusion-2026-11-21",
    "date": "2026-11-21",
    "time": "From 10am",
@@ -527,6 +553,34 @@
    ],
    "w": "facebook.com/events/1632604424889148",
    "src": "Facebook event listing, Facebook deep scrape part 3, 6 Nov 2026"
+  },
+  {
+   "id": "christmas-blessings-candler-2026-11-21",
+   "date": "2026-11-21",
+   "time": "10am-2pm",
+   "kind": "event",
+   "what": "3rd Annual Christmas Blessings Event: free toys, food and clothing",
+   "where": "Maple Ridge Baptist, 133 Medford Branch Rd, Candler 28715",
+   "detail": "Free Christmas toy shop with new toys, a hot meal, a free used-clothing store, pantry staple boxes, and bookbags and school supplies. Everyone welcome. Hosted by Woodland Terrace Baptist Church.",
+   "tags": [
+    "Free"
+   ],
+   "w": "hoperidgechristianministries.org",
+   "src": "Flyer shared by Skylar Belt, 13 Nov 2026"
+  },
+  {
+   "id": "bounty-soul-artspace-moved-2026-11-21",
+   "date": "2026-11-21",
+   "time": "10-11:30am",
+   "kind": "event",
+   "what": "Bounty & Soul ArtSpace market moves for one day",
+   "where": "Black Mountain Machine & Tool, 2988 US Hwy 70, Black Mountain 28711",
+   "detail": "The Saturday ArtSpace market meets here this week only.",
+   "tags": [
+    "Free"
+   ],
+   "rid": "bounty-soul",
+   "src": "Flyer shared by Skylar Belt, 13 Nov 2026"
   },
   {
    "id": "shepherds-table-donations-close-2026-11-22",
@@ -570,6 +624,19 @@
    "w": "ymcawnc.org/schedules-7",
    "rid": "ymca-wnc-mobile-food-markets",
    "src": "Facebook event listings, Facebook deep scrape, 6 Nov 2026; phone from YMCA WNC mobile market schedule PDFs via web search, 6 Nov 2026"
+  },
+  {
+   "id": "bounty-soul-thanksgiving-week-2026-11-25",
+   "date": "2026-11-25",
+   "end": "2026-11-28",
+   "kind": "event",
+   "what": "Bounty & Soul Thanksgiving week market changes",
+   "detail": "Bi-Lo market moves to Wednesday, Nov 25, 3:30-4:30pm (not Thursday). Cancelled: Beacon Community Center and Fairview Reynolds (Wed Nov 25), Grant Center (Fri Nov 27) and ArtSpace (Sat Nov 28). Regular markets resume Monday, Nov 30.",
+   "tags": [
+    "Free"
+   ],
+   "rid": "bounty-soul",
+   "src": "Flyer shared by Skylar Belt, 13 Nov 2026"
   },
   {
    "id": "santa-in-the-square-2026-12-05",

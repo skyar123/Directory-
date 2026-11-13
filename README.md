@@ -34,7 +34,7 @@ a firewall as it does outside one.
 
 | File | What it holds |
 |---|---|
-| `data/resources.json` | 622 resources. Each carries `needs` (SNIFF question keys), `sec` (section), and `src` (where the fact came from). |
+| `data/resources.json` | 661 resources. Each carries `needs` (SNIFF question keys), `sec` (section), and `src` (where the fact came from). |
 | `data/sniff.json` | The 13 sections and the 119 SNIFF questions the directory is ordered by. |
 | `data/point-people.json` | 114 named humans, with how fast each one answers. |
 | `data/community-resource-assessment.json` | The 84 rows of the Child First Community Resource Assessment, crosswalked to SNIFF questions. |
@@ -130,7 +130,7 @@ front-end variable would publish it inside the app for anyone to copy.
   then `ask-ai`): which model answered, how long it took and how many tokens it
   used. What was asked and answered is never logged.
 
-**Search first.** Gemini does not read all 622 resources for each question. The
+**Search first.** Gemini does not read all 661 resources for each question. The
 function indexes the directory once when it starts (`src/shortlist.js`), and each
 question sends Gemini only the closest 120 or so:
 - resources that share words with the question,
@@ -255,6 +255,7 @@ remove them before sharing outside the team. `point-people.json` exports stamp
 - Crisis rows check, searches 6 and 8 Nov 2026 (`scripts/apply-crisis-check-2026-11-08.mjs`): MCOT's numbers corrected, Copestone updated to Sweeten Creek, "The Bridges" flagged as unconfirmed, and the CPS, RHA Mobile Crisis and Vaya crisis lines confirmed
 - Concrete Needs check by web search, 8 Nov 2026 (`scripts/apply-concrete-needs-check-2026-11-08.mjs`): ABBA's House corrected from domestic violence housing to a recovery residence for mothers, the Salvation Army shelter's pause flagged, the NC Diaper Bank row's Houston number removed, Medicaid ride lines listed by health plan, cut-off hours fixed, and 13 food, transport, utility, shelter and hotline rows confirmed
 - Gap fill by web search, 8 Nov 2026 (`scripts/apply-gap-fill-2026-11-08.mjs`): phones, websites, addresses and hours for 75 rows, copied between duplicate rows of the same organization where one already had them. The script only writes empty fields; details from directories or news say so in `src`, and 9 local resources that exist by word of mouth, with no online listing, are marked that way
+- WNC Free Food & Supplies community guide (Oct 2026) and flyers shared 13 Nov 2026 (`scripts/apply-food-guide-2026-11-13.mjs`): 39 new food sources, corrections to rows the guide covers, this winter's Code Purple sites, five calendar events, and Salvation Army rows marked as not a first referral
 - The owner's Google Drive, read 7 Nov 2026 under the Drive merge prompt's rules (metadata first, only family-resource files, no client details; `scripts/apply-drive-merge-2026-11-07.mjs`). The v19 workbook there is the same version this app was built from, and most topic guides predate it, so most of what they name was already here. They added 9 rows (MountainCare adult day, A-B Tech phlebotomy, STEP / More Than a Job NC, Finish Line grants, Trans Lifeline, LGBT National Help Center, National Runaway Safeline, Biltmore Avenue Family Dentistry, Irene Wortham Early Learning Center) and details on 19 others, with every conflict in `note`. Weekend-guide events went in only with a second source: four, checked by web search, and three of those had the venue, time or website wrong in the guide
 - A second Drive pass the same day (`scripts/apply-drive-followup-2026-11-07.mjs`) over the family-resource files the first left as candidates: kinship care benefits, the March 2026 caregiver guide, respite options, a caregiver therapy handout and drop-in movement options. Most of it was already here; it added 6 rows (CMARC care management, Botanical Gardens, Folk Art Center, WNC Farmers Market, The Incredible Years, free nature play) and details on 12, including what relatives raising a child in DSS custody can be paid and which therapists are certified in Child-Parent Psychotherapy
 - Buncombe County Family Resource Directory, Public Edition, event sheets (`scripts/import-public-edition-calendar.cjs`): its curated family and caregiver calendar of 1,354 occurrences (one, Fire Safety for Kids in Fairview, was already in `events.json`, which kept it and gained the library's details), its recurring series, annual leads and monitored calendars. The full library feed's 74 adult-interest programs stay out, as the Public Edition keeps them out of its family calendar
