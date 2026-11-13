@@ -26,7 +26,20 @@ export const MODELS = ["gemini-flash-lite-latest", "gemini-flash-latest"];
 export const endpoint = (model) =>
   `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
 
-const clip = (s, n) => String(s || "").replace(/\s+/g, " ").trim().slice(0, n);
+/* an object has no words of its own to show: String() would give
+   "[object Object]", so it clips to nothing instead */
+const clip = (s, n) => (s && typeof s === "object" && !Array.isArray(s) ? ""
+  : String(s || "").replace(/\s+/g, " ").trim().slice(0, n));
+/* Gemini is asked for each follow-up question as a plain string, but now and
+   then copies the shape of the other lists and sends {"question": "..."}
+   instead. Either way the question's own words are what we want. */
+const QUESTION_KEYS = ["question", "q", "text", "ask", "prompt"];
+const questionText = (q) => {
+  if (typeof q === "string") return q;
+  if (!q || typeof q !== "object") return "";
+  const k = QUESTION_KEYS.find((key) => typeof q[key] === "string");
+  return k ? q[k] : "";
+};
 const addDays = (iso, n) => {
   const [y, m, d] = iso.split("-").map(Number);
   return new Date(Date.UTC(y, m - 1, d + n)).toISOString().slice(0, 10);
@@ -107,6 +120,7 @@ export function buildPrompt({ resources, needs, events, today, shortlisted = fal
     ' "events": [{"ref": "E3", "why": "one friendly sentence"}],',
     ' "ask": ["a gentle question that would help find a better fit"]}',
     "Give up to 10 picks, best first, with two or three choices for a need when the list has them, at most 3 events and at most 3 questions. Keep each why to one short sentence. Prefer free, nearby and Spanish-capable options when the text points that way.",
+    "Each item in ask is a plain string, the question itself, never an object.",
     ...(withHours ? ["Hours are as the directory lists them and can change, so suggest a call first. Use them when the text asks what is open, and say when a place's hours are not listed."] : []),
     "",
     "SNIFF questions (key|label):",
@@ -359,7 +373,7 @@ export function parseAnswer(raw, { resourceIds, eventIds }) {
     needs: arr(j.needs).map((n) => ({ key: clip(n.key, 40), why: clip(n.why, 200) })).filter((n) => n.key),
     picks: picks.slice(0, 15),
     events: events.slice(0, 6),
-    ask: arr(j.ask).map((q) => clip(q, 200)).filter(Boolean).slice(0, 5),
+    ask: arr(j.ask).map((q) => clip(questionText(q), 200)).filter(Boolean).slice(0, 5),
     dropped,
   };
 }
