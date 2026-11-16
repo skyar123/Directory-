@@ -155,6 +155,12 @@
    "entries": [
     {
      "date": "Nov 16 2026",
+     "what": "Mountain Strong Free Clinic (Burnsville) open houses",
+     "detail": "New row and two calendar events (Nov 21 and Dec 17) from the English and Spanish flyers: a free clinic open house with a nurse to ask, medication assistance information and a free first aid kit. No appointments or treatment at the event.",
+     "source": "scripts/apply-mountain-strong-2026-11-16.mjs"
+    },
+    {
+     "date": "Nov 16 2026",
      "what": "Facebook holiday sweep: ABCCM application link, Thanksgiving meals, full programs",
      "detail": "ABCCM Christmas Angel now has its family application form and shop dates. Calendar: Horse Shoe Thanksgiving lunch (Nov 20), Radiant Church dinner (Nov 26), IAM holiday boxes, a MANNA pop-up, free gift wrapping (Dec 8 and 22). Eblen's Thanksgiving giveaway is marked full. New Grace Covenant no-ID free food row. Holiday assistance flags the programs that need no documents.",
      "source": "scripts/apply-fb-holiday-sweep-2026-11-16.mjs"

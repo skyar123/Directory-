@@ -675,6 +675,22 @@
    "src": "Flyer shared by Skylar Belt, 13 Nov 2026"
   },
   {
+   "id": "mountain-strong-open-house-2026-11-21",
+   "date": "2026-11-21",
+   "time": "11am-2pm",
+   "kind": "event",
+   "what": "Free clinic open house: Get Connected to Care (Mountain Strong, Burnsville)",
+   "where": "371 W US Hwy 19E, Burnsville 28714",
+   "detail": "Tour the clinic, meet the team, ask a nurse general health questions, learn about free medical services and medication assistance, and take home a free first aid kit (while supplies last). Everyone welcome; no registration. No appointments or treatment at this event. The flyer is also in Spanish.",
+   "tags": [
+    "Free"
+   ],
+   "ph": "828-380-9219",
+   "w": "mountainstrong828.org",
+   "rid": "mountain-strong-free-clinic",
+   "src": "Mountain Strong Free Clinic flyers (English and Spanish), shared by Skylar Belt, 16 Nov 2026"
+  },
+  {
    "id": "shepherds-table-donations-close-2026-11-22",
    "date": "2026-11-22",
    "kind": "deadline",
@@ -899,6 +915,22 @@
    ],
    "w": "facebook.com/events/1292731676324870",
    "src": "Facebook event listings, Facebook deep scrape part 2, 6 Nov 2026"
+  },
+  {
+   "id": "mountain-strong-open-house-2026-12-17",
+   "date": "2026-12-17",
+   "time": "5-8pm",
+   "kind": "event",
+   "what": "Free clinic open house: Get Connected to Care (Mountain Strong, Burnsville)",
+   "where": "371 W US Hwy 19E, Burnsville 28714",
+   "detail": "Tour the clinic, meet the team, ask a nurse general health questions, learn about free medical services and medication assistance, and take home a free first aid kit (while supplies last). Everyone welcome; no registration. No appointments or treatment at this event. The flyer is also in Spanish.",
+   "tags": [
+    "Free"
+   ],
+   "ph": "828-380-9219",
+   "w": "mountainstrong828.org",
+   "rid": "mountain-strong-free-clinic",
+   "src": "Mountain Strong Free Clinic flyers (English and Spanish), shared by Skylar Belt, 16 Nov 2026"
   },
   {
    "id": "sk8way-holiday-night-market-2026-12-18",

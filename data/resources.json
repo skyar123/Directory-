@@ -19,11 +19,12 @@
    "Holiday help refresh, 16 Nov 2026 (see scripts/apply-holiday-refresh-2026-11-16.mjs)",
    "Flyers shared 16 Nov 2026 (see scripts/apply-flyers-2026-11-16.mjs)",
    "Holiday sign-up update, 16 Nov 2026 (see scripts/apply-holiday-signup-2026-11-16.mjs)",
-   "Facebook holiday sweep, 16 Nov 2026 (see scripts/apply-fb-holiday-sweep-2026-11-16.mjs)"
+   "Facebook holiday sweep, 16 Nov 2026 (see scripts/apply-fb-holiday-sweep-2026-11-16.mjs)",
+   "Mountain Strong Free Clinic flyers, 16 Nov 2026 (see scripts/apply-mountain-strong-2026-11-16.mjs)"
   ],
   "file": "resources.json",
   "note": "One object per resource. `needs` are SNIFF question keys, `src` names where the fact came from.",
-  "count": 666
+  "count": 667
  },
  "sections": [
   {
@@ -18867,6 +18868,32 @@
    ],
    "src": "WNC Free Food & Supplies community guide (Oct 2026); Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026 (LGBTQ Women of Asheville, Nov 11)",
    "note": "",
+   "new": true
+  },
+  {
+   "id": "mountain-strong-free-clinic",
+   "n": "Mountain Strong Free Clinic (Burnsville, Yancey County)",
+   "pp": "",
+   "sp": "🟡 Bilingual staff",
+   "spd": "Its open house flyer comes in Spanish and English.",
+   "ph": "828-380-9219",
+   "em": "",
+   "w": "mountainstrong828.org",
+   "d": "A free clinic in Burnsville. Its Get Connected to Care open house (Saturday Nov 21, 11am-2pm, and Thursday Dec 17, 5-8pm) lets anyone tour the clinic, meet the team, ask a nurse general health questions, learn about upcoming FREE medical services and medication assistance, get a free first aid kit (while supplies last) and get connected as a future patient. Everyone is welcome and no registration is needed. No medical appointments or treatment are given at the open house, so it is for getting connected, not for being seen that day.",
+   "a": "371 W US Hwy 19E, Burnsville 28714",
+   "h": "Open house Sat Nov 21 11am-2pm and Thu Dec 17 5-8pm; call for other times",
+   "os": "Flyers",
+   "t": "Free, No ID, Spanish / bilingual",
+   "lv": "",
+   "vb": "",
+   "sec": "VI",
+   "needs": [
+    "VI:*",
+    "VI:4a",
+    "ESPANOL:*"
+   ],
+   "src": "Mountain Strong Free Clinic flyers (English and Spanish), shared by Skylar Belt, 16 Nov 2026",
+   "note": "Clinic hours and which services are free were not on the flyers; call 828-380-9219.",
    "new": true
   }
  ]
