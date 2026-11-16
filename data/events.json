@@ -83,26 +83,26 @@
   {
    "id": "eblen-ingles-thanksgiving-giveaway-2026-11",
    "date": "2026-11-01",
-   "end": "2026-11-30",
+   "end": "2026-11-19",
    "kind": "signup",
-   "what": "Eblen and Ingles Thanksgiving meal giveaway",
-   "detail": "Eblen Charities and Ingles run a Thanksgiving meal giveaway each November, for about 800 families in recent years.",
-   "note": "The 2026 sign-up had not been confirmed by 6 November. Call Eblen now rather than wait for an announcement.",
+   "what": "Sign up: Eblen Giving Thanks Turkey Giveaway (Nov 20)",
+   "detail": "Advance sign-up is required to get everything for a Thanksgiving meal at the Friday, November 20 giveaway, with Ingles and iHeart Media.",
+   "note": "Confirmed by Eblen's flyer; sign-ups were still open on 13 November.",
    "ph": "828-255-3066",
    "rid": "eblen-charities",
-   "src": "Past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026, as recorded on the Holiday assistance row"
+   "src": "Past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026, as recorded on the Holiday assistance row; confirmed by Eblen's Giving Thanks flyer, shared by Skylar Belt 13 Nov 2026"
   },
   {
    "id": "salvation-army-angel-tree-registration-2026-11",
-   "date": "2026-11-01",
+   "date": "2026-11-16",
    "end": "2026-11-30",
    "kind": "signup",
    "what": "Salvation Army Angel Tree registration",
-   "detail": "Families register in November, and gifts are given out on 21 and 22 December.",
-   "note": "The directory gives the month, not the days. Call to confirm when and where to register.",
+   "detail": "A registration link goes up the morning of November 16 with limited spots, for children 0 to 12 (siblings to 17) in Buncombe; families get an appointment to shop.",
+   "note": "Skylar does not refer here: it asks for photo ID, birth certificates or custody papers and proof of income, and bars families who asked anyone else for Christmas help. Offer Eblen, ABCCM or a Toys for Tots partner first.",
    "ph": "828-253-4723",
    "rid": "holiday-assistance",
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab (Holiday assistance row)"
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab (Holiday assistance row); 2026 dates and rules from the Salvation Army Angel Tree flyer, shared by Skylar Belt 13 Nov 2026"
   },
   {
    "id": "ymca-mobile-market-2026-11-06",
@@ -759,10 +759,10 @@
    "kind": "event",
    "what": "Eblen Saint Nicholas Project holiday store",
    "detail": "Families who signed up shop for toys and clothing; more than 1,900 families use it.",
-   "note": "Unverified: these dates are from a family-events guide. The workbook gave about 10 to 19 December, and the 2025 store opened 9 December at 23 Hamilton St. Confirm with Eblen before telling a family when to go.",
+   "note": "Eblen says the store runs the two weeks before Christmas; the exact 2026 dates and place are not published yet (2025 opened December 9 at 23 Hamilton St). Families must book a slot online first.",
    "ph": "828-255-3066",
-   "rid": "holiday-assistance",
-   "src": "A family-events guide, as recorded on the Holiday assistance row with past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026"
+   "rid": "eblen-saint-nicholas-project-christmas",
+   "src": "A family-events guide, as recorded on the Holiday assistance row with past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026; timing from Eblen's own page via web search, 16 Nov 2026"
   },
   {
    "id": "narcan-training-2026-12-17",
@@ -800,7 +800,8 @@
    "detail": "For families who registered in November.",
    "ph": "828-253-4723",
    "rid": "holiday-assistance",
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab (Holiday assistance row)"
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab (Holiday assistance row)",
+   "note": "Not a first referral (see the registration entry)."
   },
   {
    "id": "between-heartbeats-2026-12-22",
