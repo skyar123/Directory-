@@ -154,6 +154,12 @@
    "label": "ADDED THIS ROUND",
    "entries": [
     {
+     "date": "Nov 16 2026",
+     "what": "Code Purple 2026-27 rules, and Eblen's Christmas toy store",
+     "detail": "Code Purple now has the official 2026-27 sheet: sites, bus routes, 5-8pm entry, when it is called, and the right numbers (828-398-6011 recorded message; 828-442-7597 is the coordinator, not a status line). New row for Eblen's Saint Nicholas Project toy store, with its sign-up page.",
+     "source": "scripts/apply-holiday-codepurple-2026-11-16.mjs"
+    },
+    {
      "date": "Nov 13 2026",
      "what": "Food guide cross-check: 39 new food sources, Code Purple sites, Salvation Army flagged",
      "detail": "From the WNC Free Food & Supplies guide (Oct 2026): new rows for Asheville meals, pantries and fridges, Barnardsville, Black Mountain, Leicester and Weaverville sites, free firewood, and the main food sources in Henderson, Madison, McDowell, Haywood, Transylvania and Yancey. Corrected Food Connection's times, Swannanoa Communities Together's hours and Budgie's Bakeshop. Code Purple now lists this winter's sites and status line (828-442-7597). Salvation Army rows say Skylar does not refer there first, because of how much personal detail it asks for. Calendar: Code Purple Nov 13-14, Eblen's turkey giveaway (Nov 20), the Christmas Blessings Event in Candler (Nov 21) and Bounty & Soul's market changes.",

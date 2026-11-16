@@ -14,11 +14,12 @@
    "Buncombe County Family Resource Directory, Public Edition (169 resources checked 7 Nov 2026; mostly the Buncombe Partnership for Children family-resource directory, 16 from official sites)",
    "Crisis and Concrete Needs checks by web search, 8 Nov 2026 (see scripts/apply-crisis-check-2026-11-08.mjs and scripts/apply-concrete-needs-check-2026-11-08.mjs)",
    "Gap fill by web search, 8 Nov 2026: phones, websites, addresses and hours (see scripts/apply-gap-fill-2026-11-08.mjs)",
-   "WNC Free Food & Supplies community guide (Oct 2026) and flyers shared 13 Nov 2026 (see scripts/apply-food-guide-2026-11-13.mjs)"
+   "WNC Free Food & Supplies community guide (Oct 2026) and flyers shared 13 Nov 2026 (see scripts/apply-food-guide-2026-11-13.mjs)",
+   "Code Purple 2026-2027 sheet and Eblen Christmas gift assistance, 16 Nov 2026 (see scripts/apply-holiday-codepurple-2026-11-16.mjs)"
   ],
   "file": "resources.json",
   "note": "One object per resource. `needs` are SNIFF question keys, `src` names where the fact came from.",
-  "count": 661
+  "count": 662
  },
  "sections": [
   {
@@ -3789,7 +3790,7 @@
    "ph": "828-255-3066",
    "em": "",
    "w": "eblencharities.org",
-   "d": "gas vouchers for medical trips (828-255-3066).",
+   "d": "gas vouchers for medical trips (828-255-3066). At Christmas it runs the Saint Nicholas Project toy store (see that row) and in November a Thanksgiving meal giveaway with Ingles.",
    "a": "23 Hamilton St",
    "h": "",
    "os": "PART 15: TRANSPORTATION",
@@ -7308,7 +7309,7 @@
    "pp": "",
    "sp": "⚪ Not listed - ask",
    "spd": "Not stated in the source. Ask when you call.",
-   "ph": "828-442-7597 (Code Purple status line)",
+   "ph": "828-398-6011 (recorded message) / 828-442-7597 (coordinator)",
    "em": "",
    "w": "",
    "d": "roughly Nov 1 - Apr 30 on freezing nights. This winter's sites and check-in times are on the main Code Purple row.",
@@ -7326,7 +7327,7 @@
     "X:*",
     "X:12"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; status line from the Continuum of Care flyer, Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; status line from the Continuum of Care flyer, Nov 2026; phones from the Asheville-Buncombe Continuum of Care, Code Purple 2026-2027 sheet, shared by Skylar Belt 16 Nov 2026",
    "note": "",
    "new": false
   },
@@ -7518,7 +7519,7 @@
    "ph": "828-253-4723",
    "em": "",
    "w": "abccm.org/christmas-angel",
-   "d": "ABCCM Christmas Angel (applications open in fall, abccm.org/christmas-angel); Salvation Army Angel Tree (register November, distribute Dec 21-22, 828-253-4723); Eblen Charities Saint Nicholas Project Holiday Store (~Dec 10-19; 1,900+ families shop for toys and clothing). 2026 timing (checked 6 Nov): Eblen and Ingles run a Thanksgiving meal giveaway each November, about 800 families in recent years; 2026 sign-up was not confirmed, so call Eblen at 828-255-3066 now. For the Saint Nicholas Project, family registration opened in early October in past years and the 2025 toy store opened Dec 9 at 23 Hamilton St. A family-events guide now circulating says online sign-up opens Nov 16 and the store runs Dec 17 to 22; that is unverified, so confirm with Eblen before telling a family to wait. Skylar does not refer to the Salvation Army Angel Tree: its 2026 sign-up (from November 16) asks for photo ID, each child's birth certificate or custody papers, and proof of income, and bars families who asked any other agency for Christmas help.",
+   "d": "ABCCM Christmas Angel (applications open in fall, abccm.org/christmas-angel); Salvation Army Angel Tree (register November, distribute Dec 21-22, 828-253-4723); Eblen Charities Saint Nicholas Project Holiday Store (~Dec 10-19; 1,900+ families shop for toys and clothing). 2026 timing (checked 6 Nov): Eblen and Ingles run a Thanksgiving meal giveaway each November, about 800 families in recent years; 2026 sign-up was not confirmed, so call Eblen at 828-255-3066 now. For the Saint Nicholas Project, family registration opened in early October in past years and the 2025 toy store opened Dec 9 at 23 Hamilton St. A family-events guide now circulating says online sign-up opens Nov 16 and the store runs Dec 17 to 22; that is unverified, so confirm with Eblen before telling a family to wait. Skylar does not refer to the Salvation Army Angel Tree: its 2026 sign-up (from November 16) asks for photo ID, each child's birth certificate or custody papers, and proof of income, and bars families who asked any other agency for Christmas help. Eblen's Christmas gift assistance page is eblencharities.org/christmas-gift-assistance: families sign up there for a shopping appointment at the free Saint Nicholas Project toy store (see its own row).",
    "a": "",
    "h": "",
    "os": "PART 22: TIME-LIMITED AND SEASONAL PROGRAMS",
@@ -7533,7 +7534,7 @@
     "X:*",
     "X:12"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; 2026 timing from past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026; Angel Tree 2026 requirements from the Salvation Army flyer, stance from Skylar Belt, 13 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; 2026 timing from past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026; Angel Tree 2026 requirements from the Salvation Army flyer, stance from Skylar Belt, 13 Nov 2026; Eblen's Christmas gift assistance page, its 2024 release and WLOS (Dec 2025), via web search, 16 Nov 2026",
    "note": "",
    "new": false
   },
@@ -10227,12 +10228,12 @@
    "pp": "",
    "sp": "⚪ Not listed - ask",
    "spd": "Not stated in the source. Ask when you call.",
-   "ph": "828-442-7597 (Code Purple status line)",
-   "em": "",
+   "ph": "828-398-6011 (recorded message: is it called?) / 828-442-7597 (coordinator)",
+   "em": "HomelessStrategy@ashevillenc.gov",
    "w": "",
-   "d": "Extra emergency shelter on cold nights, roughly Nov 1 to Apr 30. In the 2025-26 season it opened at 32°F or below, or 33 to 40°F with precipitation. Sites that season: Safe Shelter, 91 New Leicester Hwy (men, 40 beds); Safe Shelter, 27 Balm Grove Ave (women, 10); ABCCM Transformation Village, 30 Olin Haven Way (women, and women with children, 35); Salvation Army, 204 Haywood St (men); Homeward Bound/AHOPE, 19 N Ann St (couples and people with pets). Entry 6-8pm; no ID or sobriety needed. On Code Purple nights ART buses are free to every site from 5:20pm and back downtown the next morning: tell the driver you need a Code Purple ride. 2026-27, from the Continuum of Care's November flyer: women and children go to ABCCM Transformation Village, 30 Olin Haven Way; men, couples and people with pets go to the Center of Hope, 204 Haywood St. Check-in 5-8pm, no ID or sobriety required, free ART rides. Call the status line to hear whether tonight is a Code Purple night.",
-   "a": "",
-   "h": "Called nights only; check-in 5-8pm",
+   "d": "Emergency overflow shelter with fewer requirements than usual, open only on nights it is called, November 1, 2026 to April 30, 2027. Women and women with children: ABCCM Safe Haven at Transformation Village, 30 Olin Haven Way (bus W2; it cannot serve people on the sex offender registry). Men, couples and people with pets: Homeward Bound's Center of Hope, 204 Haywood St (buses W6, WE1 West, WE2 West). Entry 5-8pm; after 8pm, entry has to be arranged by public safety or outreach staff. No ID or sobriety needed. ART buses are free to every site that night and back downtown the next morning. It is called 48 hours ahead, at or below 32°F including wind chill, or 33-40°F with rain or snow, for at least 2 hours in a row between 5pm and 7:30am, and in declared emergencies. Call 828-398-6011 any time for a recorded message saying whether it is called, or sign up for email alerts (QR code on the sheet).",
+   "a": "ABCCM Safe Haven at Transformation Village, 30 Olin Haven Way; Homeward Bound Center of Hope, 204 Haywood St",
+   "h": "When called, Nov 1, 2026 to Apr 30, 2027; entry 5-8pm",
    "os": "5.1 Emergency Shelter",
    "t": "Free, Evening / weekend",
    "lv": "",
@@ -10242,7 +10243,7 @@
     "VIII:*",
     "VIII:7a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; 2025-26 rules, sites and transit from Buncombe County, the City of Asheville and WLOS via web search, 8 Nov 2026; 2026-27 sites, check-in and status line from the Asheville-Buncombe Continuum of Care flyer for Nov 13-14, 2026, shared by Skylar Belt",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; 2025-26 rules, sites and transit from Buncombe County, the City of Asheville and WLOS via web search, 8 Nov 2026; 2026-27 sites, check-in and status line from the Asheville-Buncombe Continuum of Care flyer for Nov 13-14, 2026, shared by Skylar Belt; 2026-27 sites, rules, routes and contacts from the Asheville-Buncombe Continuum of Care, Code Purple 2026-2027 sheet, shared by Skylar Belt 16 Nov 2026; corrects the coordinator number labelled as the status line on 13 Nov",
    "note": "",
    "new": false
   },
@@ -18726,6 +18727,34 @@
     "VIII:5a"
    ],
    "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "eblen-saint-nicholas-project-christmas",
+   "n": "Eblen Charities Saint Nicholas Project: free Christmas toy store",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "828-255-3066",
+   "em": "",
+   "w": "eblencharities.org/christmas-gift-assistance",
+   "d": "Families choose new toys (and in past years clothing) for their children, birth through 18, free, at a toy store by appointment. Parents and guardians living in or near poverty, and Hurricane Helene survivors, register online for a shopping slot. Slots filled quickly in 2025, so sign up as soon as registration opens. The 2025 store opened December 9 at 23 Hamilton St; check the page for this year's dates and place. Ask what to bring when you book.",
+   "a": "Store location changes each year (2025: 23 Hamilton St, Asheville)",
+   "h": "Shopping by appointment in December",
+   "os": "Holiday help",
+   "t": "Free, Kids / 0-5",
+   "lv": "",
+   "vb": "",
+   "sec": "VIII",
+   "needs": [
+    "VIII:*",
+    "VIII:10a",
+    "VIII:12a",
+    "X:*",
+    "X:12"
+   ],
+   "src": "Eblen's Christmas gift assistance page, its 2024 release and WLOS (Dec 2025), via web search, 16 Nov 2026",
    "note": "",
    "new": true
   }
