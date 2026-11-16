@@ -18,11 +18,12 @@
    "Code Purple 2026-2027 sheet and Eblen Christmas gift assistance, 16 Nov 2026 (see scripts/apply-holiday-codepurple-2026-11-16.mjs)",
    "Holiday help refresh, 16 Nov 2026 (see scripts/apply-holiday-refresh-2026-11-16.mjs)",
    "Flyers shared 16 Nov 2026 (see scripts/apply-flyers-2026-11-16.mjs)",
-   "Holiday sign-up update, 16 Nov 2026 (see scripts/apply-holiday-signup-2026-11-16.mjs)"
+   "Holiday sign-up update, 16 Nov 2026 (see scripts/apply-holiday-signup-2026-11-16.mjs)",
+   "Facebook holiday sweep, 16 Nov 2026 (see scripts/apply-fb-holiday-sweep-2026-11-16.mjs)"
   ],
   "file": "resources.json",
   "note": "One object per resource. `needs` are SNIFF question keys, `src` names where the fact came from.",
-  "count": 665
+  "count": 666
  },
  "sections": [
   {
@@ -7522,7 +7523,7 @@
    "ph": "828-259-5300 (ABCCM) / 828-255-3066 (Eblen)",
    "em": "",
    "w": "signup.com/mobileweb/2.0/vspot.html?activitykey=3603962089",
-   "d": "Christmas gifts for children, 2026. Start here, in this order: 1) EBLEN SAINT NICHOLAS PROJECT, sign up now. Free in-person toy shop for children birth to 18, open the 5 days before Christmas. Online sign-up opened November 16 and needs only a name, email and each child's age: signup.com/mobileweb/2.0/vspot.html?activitykey=3603962089 (see the Eblen Saint Nicholas row). Slots fill fast. 2) ABCCM CHRISTMAS ANGEL. Parents apply at an ABCCM Crisis Ministry (828-259-5300) and make a wish list for each child; gifts are picked up at the Christmas Angel Shop (see the ABCCM Christmas Angel row). 3) WNC TOYS FOR TOTS. Families sign up through one local partner program, not with Toys for Tots itself (see that row). 4) Christmas Blessings Event, Saturday November 21, 10am-2pm, Maple Ridge Baptist, 133 Medford Branch Rd, Candler: free toys, clothing and food, everyone welcome. THANKSGIVING: Eblen's turkey giveaway is Friday, November 20, with advance sign-up (828-255-3066). NOT A FIRST REFERRAL: the Salvation Army Angel Tree asks for photo ID, birth certificates or custody papers and proof of income, and turns away families who asked anyone else for Christmas help.",
+   "d": "Christmas gifts for children, 2026. Start here, in this order: 1) EBLEN SAINT NICHOLAS PROJECT, sign up now. Free in-person toy shop for children birth to 18, open the 5 days before Christmas. Online sign-up opened November 16 and needs only a name, email and each child's age: signup.com/mobileweb/2.0/vspot.html?activitykey=3603962089 (see the Eblen Saint Nicholas row). Slots fill fast. 2) ABCCM CHRISTMAS ANGEL. Parents apply online at act.abccm.org/page/103314/survey/1 or at an ABCCM Crisis Ministry (828-259-5300) and make a wish list for each child; gifts are picked up at the Christmas Angel Shop (see the ABCCM Christmas Angel row). 3) WNC TOYS FOR TOTS. Families sign up through one local partner program, not with Toys for Tots itself (see that row). 4) Christmas Blessings Event, Saturday November 21, 10am-2pm, Maple Ridge Baptist, 133 Medford Branch Rd, Candler: free toys, clothing and food, everyone welcome. THANKSGIVING: Eblen's turkey giveaway is Friday, November 20, with advance sign-up (828-255-3066). NOT A FIRST REFERRAL: the Salvation Army Angel Tree asks for photo ID, birth certificates or custody papers and proof of income, and turns away families who asked anyone else for Christmas help. NO PAPERWORK NEEDED: the Christmas Blessings Event (Nov 21), Radiant Church's Thanksgiving dinner (Nov 26) and Horse Shoe Community Church's lunch (Nov 20) state no documents at all, which matters for families who have lost birth certificates. FULL: Eblen's Thanksgiving giveaway was reported fully registered on November 16, and most Swannanoa Thanksgiving boxes (Ingles drive, Meadowbrook FWB Church) are spoken for; NC 211 is the fallback.",
    "a": "",
    "h": "Sign-ups open now (mid November 2026); gifts given out in December",
    "os": "PART 22: TIME-LIMITED AND SEASONAL PROGRAMS",
@@ -7537,7 +7538,7 @@
     "X:*",
     "X:12"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; 2026 timing from past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026; Angel Tree 2026 requirements from the Salvation Army flyer, stance from Skylar Belt, 13 Nov 2026; Eblen's Christmas gift assistance page, its 2024 release and WLOS (Dec 2025), via web search, 16 Nov 2026; rewritten from Eblen's Saint Nicholas Project page and Giving Thanks flyer, WNC Toys for Tots, WLOS on ABCCM's 2025 Christmas Angel Shop, and the Salvation Army 2026 Angel Tree flyer, via web search, 16 Nov 2026; rewritten 16 Nov 2026 from Eblen's and ABCCM's pages via web search, 16 Nov 2026 and the sign-up message shared with Skylar Belt",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; 2026 timing from past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026; Angel Tree 2026 requirements from the Salvation Army flyer, stance from Skylar Belt, 13 Nov 2026; Eblen's Christmas gift assistance page, its 2024 release and WLOS (Dec 2025), via web search, 16 Nov 2026; rewritten from Eblen's Saint Nicholas Project page and Giving Thanks flyer, WNC Toys for Tots, WLOS on ABCCM's 2025 Christmas Angel Shop, and the Salvation Army 2026 Angel Tree flyer, via web search, 16 Nov 2026; rewritten 16 Nov 2026 from Eblen's and ABCCM's pages via web search, 16 Nov 2026 and the sign-up message shared with Skylar Belt; Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026",
    "note": "Updated 16 Nov 2026. Eblen sign-up is open now; ABCCM's 2026 deadline and Eblen's store address were not published yet.",
    "new": false
   },
@@ -7806,10 +7807,10 @@
    "sp": "⚪ Not listed - ask",
    "spd": "Not stated in the source. Ask when you call.",
    "ph": "",
-   "em": "",
+   "em": "info@garrencreek.org",
    "w": "garrencreek.org/donate",
-   "d": "Thanksgiving boxes for families in Swannanoa. By 2 November more than 50 families had asked for one and only about half could be covered; donations sponsor a family's box at garrencreek.org/donate. Garren Creek Foundation also runs a free food and supply store every Tuesday 4:30-6:30pm at 1198 Garren Creek Rd, Fairview.",
-   "a": "Swannanoa",
+   "d": "Thanksgiving boxes for families in Swannanoa. By 2 November more than 50 families had asked for one and only about half could be covered; donations sponsor a family's box at garrencreek.org/donate. Garren Creek Foundation also runs a free food and supply store every Tuesday 4:30-6:30pm at 1198 Garren Creek Rd, Fairview. To ask for a dinner, email info@garrencreek.org or message Garren Creek Foundation's Facebook page; pickup dates were not set. Treat it as first come and nearly full.",
+   "a": "Pickup at 1198 Garren Creek Rd, Fairview",
    "h": "",
    "os": "PART 22: TIME-LIMITED AND SEASONAL PROGRAMS",
    "t": "Free",
@@ -7820,7 +7821,7 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "Facebook post in Friends of Swannanoa, NC, 2 Nov 2026 (Facebook deep scrape part 4, 6 Nov 2026); weekly store from the WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
+   "src": "Facebook post in Friends of Swannanoa, NC, 2 Nov 2026 (Facebook deep scrape part 4, 6 Nov 2026); weekly store from the WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026 (Friends of Swannanoa, Oct 28 and Nov 2)",
    "note": "Requests already outnumber the boxes. Ask before telling a family they can get one.",
    "new": true
   },
@@ -9687,7 +9688,7 @@
    "ph": "",
    "em": "",
    "w": "acrms.buncombeschools.org/o/wwees/page/estes-family-resource-center",
-   "d": "Food pantry, clothing closet, parenting classes and holiday help for Estes Elementary families, run from a building beside the school's bus lot; it also collects school supplies. This row used to give 1984 Hendersonville Rd, which could not be confirmed.",
+   "d": "Food pantry, clothing closet, parenting classes and holiday help for Estes Elementary families, run from a building beside the school's bus lot; it also collects school supplies. This row used to give 1984 Hendersonville Rd, which could not be confirmed. 1984 Hendersonville Rd is Skyland United Methodist Church (a November 2026 MANNA pop-up was held there), so the old row may have meant a resource at that church.",
    "a": "W.W. Estes Elementary, 275 Overlook Rd, Asheville (beside the bus lot)",
    "h": "",
    "os": "4.2 Baby Gear, Clothing, School Supplies",
@@ -9699,7 +9700,7 @@
     "IV:*",
     "IV:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; center, services and address from Buncombe County Schools' Estes Elementary pages via web search, 8 Nov 2026; old address not found",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; center, services and address from Buncombe County Schools' Estes Elementary pages via web search, 8 Nov 2026; old address not found; Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026",
    "note": "",
    "new": false
   },
@@ -18517,7 +18518,7 @@
    "ph": "",
    "em": "",
    "w": "",
-   "d": "Food, hygiene items and cold-weather clothing.",
+   "d": "Food, hygiene items and cold-weather clothing. At Christmas it gets names of children in need from schools and DSS, so a family's route in is through the school or DSS.",
    "a": "1049 Spartanburg Hwy, Hendersonville",
    "h": "Wed-Fri 9am-2pm",
    "os": "Community food guide (Oct 2026)",
@@ -18529,7 +18530,7 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026 (Hendersonville group, Nov 11)",
    "note": "",
    "new": true
   },
@@ -18822,10 +18823,10 @@
    "spd": "Not stated in the source. Ask when you call.",
    "ph": "828-259-5300 (ABCCM Crisis Ministry) / 828-259-5337 (Christmas Angel Shop, Arden)",
    "em": "",
-   "w": "abccm.org/christmas-angel-tree/",
-   "d": "Parents and guardians with children at home apply through an ABCCM Crisis Ministry and make a Christmas wish list for each child; sponsors buy the gifts and families pick them up from the Christmas Angel Shop. Children and teens are included. In 2025 it took applications up to December 23 and served about 2,300 children. To apply, call or visit a Crisis Ministry (Asheville office 828-259-5300). Note: abccm.org/christmas-angel-sponsors/ is the page for people who want to GIVE, not for families.",
+   "w": "act.abccm.org/page/103314/survey/1",
+   "d": "Parents and guardians with children at home apply through an ABCCM Crisis Ministry and make a Christmas wish list for each child; sponsors buy the gifts and families pick them up from the Christmas Angel Shop. Children and teens are included. In 2025 it took applications up to December 23 and served about 2,300 children. To apply, call or visit a Crisis Ministry (Asheville office 828-259-5300). Note: abccm.org/christmas-angel-sponsors/ is the page for people who want to GIVE, not for families. The family application form is act.abccm.org/page/103314/survey/1 (on ABCCM's own site; shared in a Facebook comment, not an official post). ABCCM's November 12 posts say the shop opens the week of Thanksgiving and runs through the third week of December.",
    "a": "ABCCM Crisis Ministry offices (Asheville, Arden and others)",
-   "h": "Applications through December (2025: to Dec 23)",
+   "h": "Christmas Angel Shop open the week of Thanksgiving through the third week of December",
    "os": "Holiday help",
    "t": "Free, Kids / 0-5",
    "lv": "",
@@ -18838,8 +18839,34 @@
     "X:*",
     "X:12"
    ],
-   "src": "ABCCM Christmas Angel Tree and Sponsors pages, WLOS (2025), via web search, 16 Nov 2026; Christmas Angel Shop phone from a directory listing",
+   "src": "ABCCM Christmas Angel Tree and Sponsors pages, WLOS (2025), via web search, 16 Nov 2026; Christmas Angel Shop phone from a directory listing; Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026 (ABCCM's Nov 12 posts; application link from a Hendersonville group comment, Nov 15)",
    "note": "ABCCM's 2026 deadline was not published by 16 Nov 2026; ask when you call.",
+   "new": true
+  },
+  {
+   "id": "grace-covenant-free-food",
+   "n": "Grace Covenant Presbyterian free food (no ID, no questions)",
+   "pp": "",
+   "sp": "🟡 Bilingual staff",
+   "spd": "The post says Spanish is spoken.",
+   "ph": "",
+   "em": "",
+   "w": "",
+   "d": "Free food at Grace Covenant Presbyterian Church: no ID, no documents, no registration, no questions asked, and Spanish spoken. The community food guide lists the pantry on Thursdays 11am-1pm; a November 2026 post advertised Thursday November 12, 11am-1pm. Confirm the weekly schedule.",
+   "a": "789 Merrimon Ave, Asheville 28804",
+   "h": "Thursdays 11am-1pm (confirm)",
+   "os": "Community food guide (Oct 2026)",
+   "t": "Free, No ID, Spanish / bilingual",
+   "lv": "",
+   "vb": "",
+   "sec": "VIII",
+   "needs": [
+    "VIII:*",
+    "VIII:5a",
+    "ESPANOL:*"
+   ],
+   "src": "WNC Free Food & Supplies community guide (Oct 2026); Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026 (LGBTQ Women of Asheville, Nov 11)",
+   "note": "",
    "new": true
   }
  ]

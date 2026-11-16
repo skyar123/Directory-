@@ -87,10 +87,10 @@
    "kind": "signup",
    "what": "Sign up: Eblen Giving Thanks Turkey Giveaway (Nov 20)",
    "detail": "Advance sign-up is required to get everything for a Thanksgiving meal at the Friday, November 20 giveaway, with Ingles and iHeart Media.",
-   "note": "Confirmed by Eblen's flyer; sign-ups were still open on 13 November.",
+   "note": "Reported FULLY REGISTERED on November 16 (Friends of Swannanoa comment). Do not send new families; try the meals listed for Nov 20 to 26 or NC 211.",
    "ph": "828-255-3066",
    "rid": "eblen-charities",
-   "src": "Past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026, as recorded on the Holiday assistance row; confirmed by Eblen's Giving Thanks flyer, shared by Skylar Belt 13 Nov 2026"
+   "src": "Past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026, as recorded on the Holiday assistance row; confirmed by Eblen's Giving Thanks flyer, shared by Skylar Belt 13 Nov 2026; full status from the Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026"
   },
   {
    "id": "ymca-mobile-market-2026-11-06",
@@ -417,6 +417,34 @@
    "src": "A family-events guide, as recorded on the Holiday assistance row with past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026; confirmed by Eblen's Saint Nicholas page via web search, 16 Nov 2026; sign-up link shared with Skylar Belt, 16 Nov 2026"
   },
   {
+   "id": "manna-popup-skyland-umc-2026-11-16",
+   "date": "2026-11-16",
+   "time": "3:30-4:30pm",
+   "kind": "event",
+   "what": "MANNA free groceries pop-up",
+   "where": "Skyland United Methodist Church, 1984 Hendersonville Rd, Asheville",
+   "detail": "One-time free grocery mobile market.",
+   "tags": [
+    "Free"
+   ],
+   "src": "Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026 (Nov 16 digest)"
+  },
+  {
+   "id": "iam-holiday-meal-boxes-2026-11-16",
+   "date": "2026-11-16",
+   "end": "2026-11-25",
+   "kind": "event",
+   "what": "IAM holiday meal boxes (Hendersonville)",
+   "where": "IAM, 310 Freeman St, Hendersonville",
+   "detail": "Holiday meal boxes given out through Thanksgiving week.",
+   "note": "How to sign up and who qualifies were not stated; call IAM first.",
+   "tags": [
+    "Free"
+   ],
+   "rid": "iam-pantry-hendersonville",
+   "src": "Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026 (Nov 16 digest)"
+  },
+  {
    "id": "sk8way-food-drive-free-night-2026-11-17",
    "date": "2026-11-17",
    "kind": "event",
@@ -585,7 +613,23 @@
    "ph": "828-255-3066",
    "w": "eblencharities.org",
    "rid": "eblen-charities",
-   "src": "Flyer shared by Skylar Belt, 13 Nov 2026"
+   "src": "Flyer shared by Skylar Belt, 13 Nov 2026; full status from the Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026",
+   "note": "Reported FULLY REGISTERED on November 16 (Friends of Swannanoa comment). Do not send new families; try the meals listed for Nov 20 to 26 or NC 211."
+  },
+  {
+   "id": "horse-shoe-feed-u-friday-2026-11-20",
+   "date": "2026-11-20",
+   "time": "11:30am-1pm",
+   "kind": "event",
+   "what": "Free Thanksgiving lunch: Horse Shoe Community Church \"Feed U Friday\"",
+   "where": "Horse Shoe Community Church, 3 Banner Farm Rd, Horse Shoe 28742 (Henderson County)",
+   "detail": "Free sit-down Thanksgiving lunch (turkey, homemade sides and desserts), with take-out dinners. Open to everyone, no requirements stated.",
+   "note": "RSVP was due Monday, November 16: call 828-714-1670 and ask if there is still room.",
+   "ph": "828-714-1670",
+   "tags": [
+    "Free"
+   ],
+   "src": "Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026 (Hendersonville, NC group, Nov 10)"
   },
   {
    "id": "fandom-fusion-2026-11-21",
@@ -613,7 +657,8 @@
     "Free"
    ],
    "w": "hoperidgechristianministries.org",
-   "src": "Flyer shared by Skylar Belt, 13 Nov 2026"
+   "src": "Flyer shared by Skylar Belt, 13 Nov 2026",
+   "note": "Walk-in: no sign-up, income test or documents stated."
   },
   {
    "id": "bounty-soul-artspace-moved-2026-11-21",
@@ -686,6 +731,20 @@
    "src": "Flyer shared by Skylar Belt, 13 Nov 2026"
   },
   {
+   "id": "radiant-church-feed-the-828-2026-11-26",
+   "date": "2026-11-26",
+   "time": "11am-2pm",
+   "kind": "event",
+   "what": "Free Thanksgiving dinner: Radiant Church \"Feed the 828\" (Arden)",
+   "where": "Radiant Church Arden campus, Radiant Cafe at the back, 3839 Sweeten Creek Rd, Arden",
+   "detail": "Free Thanksgiving dinner, dine in or take out. Free to the community; no RSVP or requirements stated.",
+   "w": "radiant828.com",
+   "tags": [
+    "Free"
+   ],
+   "src": "Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026 (Hendersonville group, Nov 15; Asheville Free, Nov 13)"
+  },
+  {
    "id": "santa-in-the-square-2026-12-05",
    "date": "2026-12-05",
    "time": "3pm",
@@ -719,6 +778,19 @@
    ],
    "w": "facebook.com/events/1664551961336856",
    "src": "Facebook event listings, Facebook deep scrape, 6 Nov 2026; venue name from a feedam.org pantry listing via web search, 6 Nov 2026"
+  },
+  {
+   "id": "hot-mess-express-gift-wrapping-2026-12-08",
+   "date": "2026-12-08",
+   "kind": "event",
+   "what": "Free gift wrapping for families (Hot Mess Express Asheville)",
+   "detail": "Volunteers wrap families' gifts for free. Location given when you sign up.",
+   "w": "forms.gle/yjoGnCTgb1wXEHML7",
+   "note": "Sign up on the form or email tyonnahoward@hotmessexpressaffiliate.co. Also December 22.",
+   "tags": [
+    "Free"
+   ],
+   "src": "Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026 (Asheville Mamas, Nov 12)"
   },
   {
    "id": "story-time-woodfin-2026-12-09",
@@ -879,6 +951,19 @@
    ],
    "w": "facebook.com/events/979473671731878",
    "src": "Facebook event listing, Facebook deep scrape part 2, 6 Nov 2026"
+  },
+  {
+   "id": "hot-mess-express-gift-wrapping-2026-12-22",
+   "date": "2026-12-22",
+   "kind": "event",
+   "what": "Free gift wrapping for families (Hot Mess Express Asheville)",
+   "detail": "Volunteers wrap families' gifts for free. Location given when you sign up.",
+   "w": "forms.gle/yjoGnCTgb1wXEHML7",
+   "note": "Sign up on the form or email tyonnahoward@hotmessexpressaffiliate.co.",
+   "tags": [
+    "Free"
+   ],
+   "src": "Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026 (Asheville Mamas, Nov 12)"
   },
   {
    "id": "mars-hill-library-tech-help-2027-01-05",
