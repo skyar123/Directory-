@@ -93,18 +93,6 @@
    "src": "Past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026, as recorded on the Holiday assistance row; confirmed by Eblen's Giving Thanks flyer, shared by Skylar Belt 13 Nov 2026"
   },
   {
-   "id": "salvation-army-angel-tree-registration-2026-11",
-   "date": "2026-11-16",
-   "end": "2026-11-30",
-   "kind": "signup",
-   "what": "Salvation Army Angel Tree registration",
-   "detail": "A registration link goes up the morning of November 16 with limited spots, for children 0 to 12 (siblings to 17) in Buncombe; families get an appointment to shop.",
-   "note": "Skylar does not refer here: it asks for photo ID, birth certificates or custody papers and proof of income, and bars families who asked anyone else for Christmas help. Offer Eblen, ABCCM or a Toys for Tots partner first.",
-   "ph": "828-253-4723",
-   "rid": "holiday-assistance",
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab (Holiday assistance row); 2026 dates and rules from the Salvation Army Angel Tree flyer, shared by Skylar Belt 13 Nov 2026"
-  },
-  {
    "id": "ymca-mobile-market-2026-11-06",
    "date": "2026-11-06",
    "time": "Noon",
@@ -401,6 +389,18 @@
    "src": "Facebook event listing, Facebook deep scrape part 1, 6 Nov 2026"
   },
   {
+   "id": "salvation-army-angel-tree-registration-2026-11",
+   "date": "2026-11-16",
+   "end": "2026-11-30",
+   "kind": "signup",
+   "what": "Salvation Army Angel Tree registration",
+   "detail": "A registration link goes up the morning of November 16 with limited spots, for children 0 to 12 (siblings to 17) in Buncombe; families get an appointment to shop.",
+   "note": "Skylar does not refer here: it asks for photo ID, birth certificates or custody papers and proof of income, and bars families who asked anyone else for Christmas help. Offer Eblen, ABCCM or a Toys for Tots partner first.",
+   "ph": "828-253-4723",
+   "rid": "holiday-assistance",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab (Holiday assistance row); 2026 dates and rules from the Salvation Army Angel Tree flyer, shared by Skylar Belt 13 Nov 2026"
+  },
+  {
    "id": "eblen-saint-nicholas-signup-2026-11-16",
    "date": "2026-11-16",
    "kind": "signup",
@@ -447,6 +447,18 @@
    "src": "Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes)"
   },
   {
+   "id": "restoration-house-haircuts-2026-11-17",
+   "date": "2026-11-17",
+   "kind": "event",
+   "what": "Free haircut clinic at Restoration House",
+   "detail": "Local stylists Brooke Shipman and Cat Raybon Burns give free haircuts.",
+   "tags": [
+    "Free"
+   ],
+   "note": "The flyer gives no time or address. The WNC free food guide lists Restoration House WNC at 81 Academy St, Bryson City; confirm it is this one.",
+   "src": "Flyer shared by Skylar Belt, 16 Nov 2026 (Restoration House)"
+  },
+  {
    "id": "ymca-mobile-market-2026-11-18",
    "date": "2026-11-18",
    "time": "11am",
@@ -464,6 +476,22 @@
    "w": "ymcawnc.org/schedules-7",
    "rid": "ymca-wnc-mobile-food-markets",
    "src": "Facebook event listings, Facebook deep scrape, 6 Nov 2026; phone from YMCA WNC mobile market schedule PDFs via web search, 6 Nov 2026"
+  },
+  {
+   "id": "community-closet-murphy-oakley-2026-11-18",
+   "date": "2026-11-18",
+   "time": "1-2pm",
+   "kind": "event",
+   "what": "Community Closet: free stuff at Murphy-Oakley",
+   "where": "Murphy-Oakley Community Center, 749 Fairview Rd, Asheville 28803",
+   "detail": "Take what you need, leave what you can.",
+   "tags": [
+    "Free"
+   ],
+   "ph": "828-232-4529",
+   "w": "avlrec.com",
+   "rid": "community-closet-murphy-oakley",
+   "src": "Flyer shared by Skylar Belt, 16 Nov 2026 (City of Asheville Parks & Recreation)"
   },
   {
    "id": "narcan-training-2026-11-19",
@@ -496,6 +524,19 @@
    "w": "ymcawnc.org/schedules-7",
    "rid": "ymca-wnc-mobile-food-markets",
    "src": "Facebook event listings, Facebook deep scrape, 6 Nov 2026; phone from YMCA WNC mobile market schedule PDFs via web search, 6 Nov 2026"
+  },
+  {
+   "id": "cch-ymca-food-distribution-2026-11-19",
+   "date": "2026-11-19",
+   "time": "11am-12pm",
+   "kind": "event",
+   "what": "Free food distribution: Carolina Complete Health and YMCA",
+   "where": "150 Tunnel Rd, Asheville 28805 (bus stop #443 on WE1)",
+   "detail": "Fresh groceries, free, everyone welcome. Reserve a spot on the Eventbrite listing (Carolina Complete Health - Asheville).",
+   "tags": [
+    "Free"
+   ],
+   "src": "Eventbrite listing shared by Skylar Belt, 16 Nov 2026"
   },
   {
    "id": "biltmore-park-tree-lighting-2026-11-20",
@@ -684,6 +725,22 @@
    "note": "The listing does not name the host or say what it costs.",
    "w": "facebook.com/events/1559344555531776",
    "src": "Facebook event listing, Facebook deep scrape part 2, 6 Nov 2026"
+  },
+  {
+   "id": "community-closet-murphy-oakley-2026-12-09",
+   "date": "2026-12-09",
+   "time": "1-2pm",
+   "kind": "event",
+   "what": "Community Closet: free stuff at Murphy-Oakley",
+   "where": "Murphy-Oakley Community Center, 749 Fairview Rd, Asheville 28803",
+   "detail": "Take what you need, leave what you can.",
+   "tags": [
+    "Free"
+   ],
+   "ph": "828-232-4529",
+   "w": "avlrec.com",
+   "rid": "community-closet-murphy-oakley",
+   "src": "Flyer shared by Skylar Belt, 16 Nov 2026 (City of Asheville Parks & Recreation)"
   },
   {
    "id": "origami-fun-for-kids-2026-12-11",

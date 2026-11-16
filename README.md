@@ -34,7 +34,7 @@ a firewall as it does outside one.
 
 | File | What it holds |
 |---|---|
-| `data/resources.json` | 663 resources. Each carries `needs` (SNIFF question keys), `sec` (section), and `src` (where the fact came from). |
+| `data/resources.json` | 664 resources. Each carries `needs` (SNIFF question keys), `sec` (section), and `src` (where the fact came from). |
 | `data/sniff.json` | The 13 sections and the 119 SNIFF questions the directory is ordered by. |
 | `data/point-people.json` | 114 named humans, with how fast each one answers. |
 | `data/community-resource-assessment.json` | The 84 rows of the Child First Community Resource Assessment, crosswalked to SNIFF questions. |
@@ -130,7 +130,7 @@ front-end variable would publish it inside the app for anyone to copy.
   then `ask-ai`): which model answered, how long it took and how many tokens it
   used. What was asked and answered is never logged.
 
-**Search first.** Gemini does not read all 663 resources for each question. The
+**Search first.** Gemini does not read all 664 resources for each question. The
 function indexes the directory once when it starts (`src/shortlist.js`), and each
 question sends Gemini only the closest 120 or so:
 - resources that share words with the question,
@@ -258,6 +258,7 @@ remove them before sharing outside the team. `point-people.json` exports stamp
 - WNC Free Food & Supplies community guide (Oct 2026) and flyers shared 13 Nov 2026 (`scripts/apply-food-guide-2026-11-13.mjs`): 39 new food sources, corrections to rows the guide covers, this winter's Code Purple sites, five calendar events, and Salvation Army rows marked as not a first referral
 - Code Purple 2026-2027 sheet from the Asheville-Buncombe Continuum of Care and Eblen's Christmas gift assistance page, 16 Nov 2026 (`scripts/apply-holiday-codepurple-2026-11-16.mjs`): official Code Purple rules and numbers, and a row for Eblen's Saint Nicholas Project toy store
 - Holiday help refresh, 16 Nov 2026 (`scripts/apply-holiday-refresh-2026-11-16.mjs`): Holiday assistance rewritten for 2026, a WNC Toys for Tots row, and holiday calendar entries updated
+- Flyers shared 16 Nov 2026 (`scripts/apply-flyers-2026-11-16.mjs`): Community Closet row and three calendar events
 - The owner's Google Drive, read 7 Nov 2026 under the Drive merge prompt's rules (metadata first, only family-resource files, no client details; `scripts/apply-drive-merge-2026-11-07.mjs`). The v19 workbook there is the same version this app was built from, and most topic guides predate it, so most of what they name was already here. They added 9 rows (MountainCare adult day, A-B Tech phlebotomy, STEP / More Than a Job NC, Finish Line grants, Trans Lifeline, LGBT National Help Center, National Runaway Safeline, Biltmore Avenue Family Dentistry, Irene Wortham Early Learning Center) and details on 19 others, with every conflict in `note`. Weekend-guide events went in only with a second source: four, checked by web search, and three of those had the venue, time or website wrong in the guide
 - A second Drive pass the same day (`scripts/apply-drive-followup-2026-11-07.mjs`) over the family-resource files the first left as candidates: kinship care benefits, the March 2026 caregiver guide, respite options, a caregiver therapy handout and drop-in movement options. Most of it was already here; it added 6 rows (CMARC care management, Botanical Gardens, Folk Art Center, WNC Farmers Market, The Incredible Years, free nature play) and details on 12, including what relatives raising a child in DSS custody can be paid and which therapists are certified in Child-Parent Psychotherapy
 - Buncombe County Family Resource Directory, Public Edition, event sheets (`scripts/import-public-edition-calendar.cjs`): its curated family and caregiver calendar of 1,354 occurrences (one, Fire Safety for Kids in Fairview, was already in `events.json`, which kept it and gained the library's details), its recurring series, annual leads and monitored calendars. The full library feed's 74 adult-interest programs stay out, as the Public Edition keeps them out of its family calendar

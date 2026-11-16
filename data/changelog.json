@@ -155,6 +155,12 @@
    "entries": [
     {
      "date": "Nov 16 2026",
+     "what": "Flyers: Community Closet, food distribution, free haircuts",
+     "detail": "New row for the City's monthly Community Closet at Murphy-Oakley (Nov 18, Dec 9). Calendar: Restoration House free haircuts (Nov 17), Carolina Complete Health and YMCA food distribution at 150 Tunnel Rd (Nov 19, reserve a spot).",
+     "source": "scripts/apply-flyers-2026-11-16.mjs"
+    },
+    {
+     "date": "Nov 16 2026",
      "what": "Holiday help brought up to date",
      "detail": "The Holiday assistance row now leads with Eblen's Saint Nicholas Project (sign-up open now), ABCCM's Christmas Angel and WNC Toys for Tots, with Thanksgiving help, and says why the Salvation Army Angel Tree is not a first referral. New Toys for Tots row. Calendar: Eblen's turkey sign-up confirmed for November 20, the Angel Tree entry updated with its 2026 rules, and the Eblen store entry linked to its row.",
      "source": "scripts/apply-holiday-refresh-2026-11-16.mjs"

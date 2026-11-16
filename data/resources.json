@@ -16,11 +16,12 @@
    "Gap fill by web search, 8 Nov 2026: phones, websites, addresses and hours (see scripts/apply-gap-fill-2026-11-08.mjs)",
    "WNC Free Food & Supplies community guide (Oct 2026) and flyers shared 13 Nov 2026 (see scripts/apply-food-guide-2026-11-13.mjs)",
    "Code Purple 2026-2027 sheet and Eblen Christmas gift assistance, 16 Nov 2026 (see scripts/apply-holiday-codepurple-2026-11-16.mjs)",
-   "Holiday help refresh, 16 Nov 2026 (see scripts/apply-holiday-refresh-2026-11-16.mjs)"
+   "Holiday help refresh, 16 Nov 2026 (see scripts/apply-holiday-refresh-2026-11-16.mjs)",
+   "Flyers shared 16 Nov 2026 (see scripts/apply-flyers-2026-11-16.mjs)"
   ],
   "file": "resources.json",
   "note": "One object per resource. `needs` are SNIFF question keys, `src` names where the fact came from.",
-  "count": 663
+  "count": 664
  },
  "sections": [
   {
@@ -18784,6 +18785,32 @@
    ],
    "src": "WNC Toys for Tots site (counties served, program-only requests, 9 Nov 2026 deadline) via web search, 16 Nov 2026; age range from benefit guides",
    "note": "Ask which local program in the family's area hands out Toys for Tots gifts before promising toys.",
+   "new": true
+  },
+  {
+   "id": "community-closet-murphy-oakley",
+   "n": "Community Closet at Murphy-Oakley Community Center (free stuff)",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "828-232-4529",
+   "em": "",
+   "w": "avlrec.com",
+   "d": "City of Asheville Parks & Recreation free closet: take what you need, leave what you can. Monthly on a Wednesday, 1-2pm (2026: Sep 9, Oct 14, Nov 18, Dec 9). Call 828-232-4529 to drop off donations.",
+   "a": "Murphy-Oakley Community Center, 749 Fairview Rd, Asheville 28803",
+   "h": "Monthly, 1-2pm (next: Nov 18 and Dec 9, 2026)",
+   "os": "Flyers",
+   "t": "Free",
+   "lv": "",
+   "vb": "",
+   "sec": "VIII",
+   "needs": [
+    "VIII:*",
+    "VIII:12a",
+    "VIII:13a"
+   ],
+   "src": "Flyer shared by Skylar Belt, 16 Nov 2026 (City of Asheville Parks & Recreation)",
+   "note": "",
    "new": true
   }
  ]
