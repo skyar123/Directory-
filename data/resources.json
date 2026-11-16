@@ -17,11 +17,12 @@
    "WNC Free Food & Supplies community guide (Oct 2026) and flyers shared 13 Nov 2026 (see scripts/apply-food-guide-2026-11-13.mjs)",
    "Code Purple 2026-2027 sheet and Eblen Christmas gift assistance, 16 Nov 2026 (see scripts/apply-holiday-codepurple-2026-11-16.mjs)",
    "Holiday help refresh, 16 Nov 2026 (see scripts/apply-holiday-refresh-2026-11-16.mjs)",
-   "Flyers shared 16 Nov 2026 (see scripts/apply-flyers-2026-11-16.mjs)"
+   "Flyers shared 16 Nov 2026 (see scripts/apply-flyers-2026-11-16.mjs)",
+   "Holiday sign-up update, 16 Nov 2026 (see scripts/apply-holiday-signup-2026-11-16.mjs)"
   ],
   "file": "resources.json",
   "note": "One object per resource. `needs` are SNIFF question keys, `src` names where the fact came from.",
-  "count": 664
+  "count": 665
  },
  "sections": [
   {
@@ -7520,8 +7521,8 @@
    "spd": "Not stated in the source. Ask when you call.",
    "ph": "828-259-5300 (ABCCM) / 828-255-3066 (Eblen)",
    "em": "",
-   "w": "eblencharities.org/christmas-gift-assistance",
-   "d": "Christmas and Thanksgiving help for 2026, best first. (1) Eblen Charities Saint Nicholas Project: a free toy store where parents choose gifts for children birth to 18. Eblen says online sign-up starts at the beginning of November and the store opens for the two weeks before Christmas; book at eblencharities.org/christmas-gift-assistance now, because slots filled fast in 2025. (2) ABCCM Christmas Angel: gifts for children and teens through the Christmas Angel Shop; in 2025 it took applications up to December 23. Ask at an ABCCM Crisis Ministry (828-259-5300) or abccm.org/christmas-angel. (3) WNC Toys for Tots (Buncombe, Henderson, Madison, Polk, Transylvania, Yancey): families do not apply to Toys for Tots directly; they sign up through one partner program in their area (see the Toys for Tots row). (4) Thanksgiving: Eblen's Giving Thanks Turkey Giveaway is Friday, November 20, with advance sign-up (call 828-255-3066); see the calendar for the Christmas Blessings Event in Candler (November 21) and other giveaways. Toys for Tots asks families to sign up with only one of its partner programs. Skylar does not refer to the Salvation Army Angel Tree: its 2026 sign-up (a link posted the morning of November 16, limited spots) asks for photo ID, each child's birth certificate or custody papers, and proof of income, and bars families who asked any other agency for Christmas help.",
+   "w": "signup.com/mobileweb/2.0/vspot.html?activitykey=3603962089",
+   "d": "Christmas gifts for children, 2026. Start here, in this order: 1) EBLEN SAINT NICHOLAS PROJECT, sign up now. Free in-person toy shop for children birth to 18, open the 5 days before Christmas. Online sign-up opened November 16 and needs only a name, email and each child's age: signup.com/mobileweb/2.0/vspot.html?activitykey=3603962089 (see the Eblen Saint Nicholas row). Slots fill fast. 2) ABCCM CHRISTMAS ANGEL. Parents apply at an ABCCM Crisis Ministry (828-259-5300) and make a wish list for each child; gifts are picked up at the Christmas Angel Shop (see the ABCCM Christmas Angel row). 3) WNC TOYS FOR TOTS. Families sign up through one local partner program, not with Toys for Tots itself (see that row). 4) Christmas Blessings Event, Saturday November 21, 10am-2pm, Maple Ridge Baptist, 133 Medford Branch Rd, Candler: free toys, clothing and food, everyone welcome. THANKSGIVING: Eblen's turkey giveaway is Friday, November 20, with advance sign-up (828-255-3066). NOT A FIRST REFERRAL: the Salvation Army Angel Tree asks for photo ID, birth certificates or custody papers and proof of income, and turns away families who asked anyone else for Christmas help.",
    "a": "",
    "h": "Sign-ups open now (mid November 2026); gifts given out in December",
    "os": "PART 22: TIME-LIMITED AND SEASONAL PROGRAMS",
@@ -7536,8 +7537,8 @@
     "X:*",
     "X:12"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; 2026 timing from past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026; Angel Tree 2026 requirements from the Salvation Army flyer, stance from Skylar Belt, 13 Nov 2026; Eblen's Christmas gift assistance page, its 2024 release and WLOS (Dec 2025), via web search, 16 Nov 2026; rewritten from Eblen's Saint Nicholas Project page and Giving Thanks flyer, WNC Toys for Tots, WLOS on ABCCM's 2025 Christmas Angel Shop, and the Salvation Army 2026 Angel Tree flyer, via web search, 16 Nov 2026",
-   "note": "Checked 16 Nov 2026. This year's Eblen store dates and place, and ABCCM's 2026 deadline, were not published yet; confirm before telling a family when to go.",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; 2026 timing from past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026; Angel Tree 2026 requirements from the Salvation Army flyer, stance from Skylar Belt, 13 Nov 2026; Eblen's Christmas gift assistance page, its 2024 release and WLOS (Dec 2025), via web search, 16 Nov 2026; rewritten from Eblen's Saint Nicholas Project page and Giving Thanks flyer, WNC Toys for Tots, WLOS on ABCCM's 2025 Christmas Angel Shop, and the Salvation Army 2026 Angel Tree flyer, via web search, 16 Nov 2026; rewritten 16 Nov 2026 from Eblen's and ABCCM's pages via web search, 16 Nov 2026 and the sign-up message shared with Skylar Belt",
+   "note": "Updated 16 Nov 2026. Eblen sign-up is open now; ABCCM's 2026 deadline and Eblen's store address were not published yet.",
    "new": false
   },
   {
@@ -18740,10 +18741,10 @@
    "spd": "Not stated in the source. Ask when you call.",
    "ph": "828-255-3066",
    "em": "",
-   "w": "eblencharities.org/christmas-gift-assistance",
-   "d": "Families choose new toys (and in past years clothing) for their children, birth through 18, free, at a toy store by appointment. Parents and guardians living in or near poverty, and Hurricane Helene survivors, register online for a shopping slot. Eblen says sign-up starts online at the beginning of November and the store runs for the two weeks before Christmas, so registration should be open now; slots filled quickly in 2025. The 2025 store opened December 9 at 23 Hamilton St; check the page for this year's dates and place. Ask what to bring when you book.",
+   "w": "signup.com/mobileweb/2.0/vspot.html?activitykey=3603962089",
+   "d": "A free toy store: parents shop in person for new toys for their children, birth through 18, at no cost. SIGN UP NOW: online appointments opened Monday, November 16, 2026, and slots fill quickly. The sign-up link (signup.com/mobileweb/2.0/vspot.html?activitykey=3603962089) asks only for a name, email and each child's age. Eblen's page is eblencharities.org/christmas-gift-assistance (its \"Sign Up to Shop\" button). For families in or near poverty and Hurricane Helene survivors. In past years Eblen asked for proof of custody or guardianship when picking up (for example the children's Social Security cards, Medicaid cards or passports), so tell families to bring one. If slots are full, ask Eblen about a waiting list. Help a family sign up if they need it.",
    "a": "Store location changes each year (2025: 23 Hamilton St, Asheville)",
-   "h": "Sign up online now; shopping by appointment in the two weeks before Christmas",
+   "h": "Sign-up opened Mon Nov 16, 2026; store open the 5 days before Christmas, by appointment",
    "os": "Holiday help",
    "t": "Free, Kids / 0-5",
    "lv": "",
@@ -18756,8 +18757,8 @@
     "X:*",
     "X:12"
    ],
-   "src": "Eblen's Christmas gift assistance page, its 2024 release and WLOS (Dec 2025), via web search, 16 Nov 2026; sign-up timing from Eblen's own Saint Nicholas Project page via web search, 16 Nov 2026",
-   "note": "",
+   "src": "Eblen's Christmas gift assistance page, its 2024 release and WLOS (Dec 2025), via web search, 16 Nov 2026; sign-up timing from Eblen's own Saint Nicholas Project page via web search, 16 Nov 2026; sign-up date and 5-day store from Eblen's Saint Nicholas page, pickup documents and waitlist from Mountain Xpress (2024), via web search, 16 Nov 2026; sign-up link and fields from a message shared with Skylar Belt, 16 Nov 2026",
+   "note": "The sign-up link was shared with Skylar on 16 Nov 2026 for a free in-person Christmas shop that opened that day; it matches Eblen's own schedule, but the page could not be opened from here, so confirm the organizer when you use it.",
    "new": true
   },
   {
@@ -18811,6 +18812,34 @@
    ],
    "src": "Flyer shared by Skylar Belt, 16 Nov 2026 (City of Asheville Parks & Recreation)",
    "note": "",
+   "new": true
+  },
+  {
+   "id": "abccm-christmas-angel",
+   "n": "ABCCM Christmas Angel: Christmas gifts for children (families apply)",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "828-259-5300 (ABCCM Crisis Ministry) / 828-259-5337 (Christmas Angel Shop, Arden)",
+   "em": "",
+   "w": "abccm.org/christmas-angel-tree/",
+   "d": "Parents and guardians with children at home apply through an ABCCM Crisis Ministry and make a Christmas wish list for each child; sponsors buy the gifts and families pick them up from the Christmas Angel Shop. Children and teens are included. In 2025 it took applications up to December 23 and served about 2,300 children. To apply, call or visit a Crisis Ministry (Asheville office 828-259-5300). Note: abccm.org/christmas-angel-sponsors/ is the page for people who want to GIVE, not for families.",
+   "a": "ABCCM Crisis Ministry offices (Asheville, Arden and others)",
+   "h": "Applications through December (2025: to Dec 23)",
+   "os": "Holiday help",
+   "t": "Free, Kids / 0-5",
+   "lv": "",
+   "vb": "",
+   "sec": "VIII",
+   "needs": [
+    "VIII:*",
+    "VIII:10a",
+    "VIII:12a",
+    "X:*",
+    "X:12"
+   ],
+   "src": "ABCCM Christmas Angel Tree and Sponsors pages, WLOS (2025), via web search, 16 Nov 2026; Christmas Angel Shop phone from a directory listing",
+   "note": "ABCCM's 2026 deadline was not published by 16 Nov 2026; ask when you call.",
    "new": true
   }
  ]

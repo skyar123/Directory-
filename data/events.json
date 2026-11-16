@@ -403,13 +403,18 @@
   {
    "id": "eblen-saint-nicholas-signup-2026-11-16",
    "date": "2026-11-16",
+   "end": "2026-12-18",
    "kind": "signup",
-   "what": "Eblen Saint Nicholas Project online sign-up opens",
-   "detail": "Sign-up for the Saint Nicholas Project holiday store, where more than 1,900 families shop for toys and clothing.",
-   "note": "Unverified: this date is from a family-events guide, and in past years registration opened in early October. Confirm with Eblen before telling a family to wait.",
+   "what": "Sign up now: Eblen Saint Nicholas Project free Christmas toy shop",
+   "detail": "Book a free in-person shopping appointment for children birth to 18. Needs only a name, email and each child's age. Slots fill fast.",
+   "tags": [
+    "Free"
+   ],
+   "w": "signup.com/mobileweb/2.0/vspot.html?activitykey=3603962089",
    "ph": "828-255-3066",
-   "rid": "holiday-assistance",
-   "src": "A family-events guide, as recorded on the Holiday assistance row with past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026"
+   "rid": "eblen-saint-nicholas-project-christmas",
+   "note": "Bring proof of custody or guardianship when picking up (asked in past years).",
+   "src": "A family-events guide, as recorded on the Holiday assistance row with past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026; confirmed by Eblen's Saint Nicholas page via web search, 16 Nov 2026; sign-up link shared with Skylar Belt, 16 Nov 2026"
   },
   {
    "id": "sk8way-food-drive-free-night-2026-11-17",
@@ -811,18 +816,6 @@
    "src": "NFP community partner meeting, 6 Nov 2026; enrollment guides via web search, 6 Nov 2026"
   },
   {
-   "id": "eblen-saint-nicholas-store-2026-12-17",
-   "date": "2026-12-17",
-   "end": "2026-12-22",
-   "kind": "event",
-   "what": "Eblen Saint Nicholas Project holiday store",
-   "detail": "Families who signed up shop for toys and clothing; more than 1,900 families use it.",
-   "note": "Eblen says the store runs the two weeks before Christmas; the exact 2026 dates and place are not published yet (2025 opened December 9 at 23 Hamilton St). Families must book a slot online first.",
-   "ph": "828-255-3066",
-   "rid": "eblen-saint-nicholas-project-christmas",
-   "src": "A family-events guide, as recorded on the Holiday assistance row with past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026; timing from Eblen's own page via web search, 16 Nov 2026"
-  },
-  {
    "id": "narcan-training-2026-12-17",
    "date": "2026-12-17",
    "kind": "event",
@@ -848,6 +841,18 @@
    ],
    "w": "facebook.com/groups/aboutasheville/permalink/1435474795465637",
    "src": "Facebook post in What's Happening Asheville, 2 Nov 2026 (Facebook deep scrape part 2, 6 Nov 2026)"
+  },
+  {
+   "id": "eblen-saint-nicholas-store-2026-12-17",
+   "date": "2026-12-20",
+   "end": "2026-12-24",
+   "kind": "event",
+   "what": "Eblen Saint Nicholas Project toy store (about Dec 20 to 24)",
+   "detail": "Families who signed up shop for toys and clothing; more than 1,900 families use it.",
+   "note": "Eblen says the store is open the 5 days before Christmas; exact 2026 days and address are not published. Families need a booked appointment.",
+   "ph": "828-255-3066",
+   "rid": "eblen-saint-nicholas-project-christmas",
+   "src": "A family-events guide, as recorded on the Holiday assistance row with past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026; timing from Eblen's own page via web search, 16 Nov 2026"
   },
   {
    "id": "salvation-army-angel-tree-distribution-2026-12-21",

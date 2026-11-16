@@ -155,6 +155,12 @@
    "entries": [
     {
      "date": "Nov 16 2026",
+     "what": "Holiday gift help made clear: Eblen sign-up link, ABCCM for families",
+     "detail": "Eblen's Saint Nicholas Project sign-up opened today: the row, Holiday assistance and a calendar entry carry the sign-up link (name, email and ages only). New ABCCM Christmas Angel row for families applying for gifts (the old link was the sponsor page). Holiday assistance rewritten as numbered steps.",
+     "source": "scripts/apply-holiday-signup-2026-11-16.mjs"
+    },
+    {
+     "date": "Nov 16 2026",
      "what": "Flyers: Community Closet, food distribution, free haircuts",
      "detail": "New row for the City's monthly Community Closet at Murphy-Oakley (Nov 18, Dec 9). Calendar: Restoration House free haircuts (Nov 17), Carolina Complete Health and YMCA food distribution at 150 Tunnel Rd (Nov 19, reserve a spot).",
      "source": "scripts/apply-flyers-2026-11-16.mjs"
