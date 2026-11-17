@@ -984,10 +984,10 @@
    "kind": "event",
    "what": "Eblen Saint Nicholas Project toy store (about Dec 20 to 24)",
    "detail": "Families who signed up shop for toys and clothing; more than 1,900 families use it.",
-   "note": "Eblen says the store is open the 5 days before Christmas; exact 2026 days and address are not published. Families need a booked appointment.",
+   "note": "Eblen says the store is open the 5 days before Christmas; exact 2026 days and address are not published. Families need a booked appointment. The winter guide says shopping appointments run Dec 14-18 with restock days through Dec 22 at 23 Hamilton St; not confirmed. Ask Eblen when booking.",
    "ph": "828-255-3066",
    "rid": "eblen-saint-nicholas-project-christmas",
-   "src": "A family-events guide, as recorded on the Holiday assistance row with past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026; timing from Eblen's own page via web search, 16 Nov 2026"
+   "src": "A family-events guide, as recorded on the Holiday assistance row with past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026; timing from Eblen's own page via web search, 16 Nov 2026; appointment dates as given in the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026"
   },
   {
    "id": "salvation-army-angel-tree-distribution-2026-12-21",
@@ -1086,6 +1086,212 @@
    "w": "uspsoperationsanta.com",
    "rid": "usps-operation-santa",
    "src": "WNC Financial Support Resources community list (companion to the food guide), shared by Skylar Belt 17 Nov 2026 (holiday list); 2026 dates from national news reports via web search, 17 Nov 2026"
+  },
+  {
+   "ph": "",
+   "w": "",
+   "id": "thanksgiving-closures-2026-11-25",
+   "date": "2026-11-25",
+   "end": "2026-11-27",
+   "kind": "event",
+   "what": "Thanksgiving week: schools, libraries, county offices and buses closed",
+   "detail": "Schools (Buncombe County and Asheville City) are out Nov 25-27, so school meals pause. Libraries and county offices close Thu Nov 26 and Fri Nov 27 (county holiday calendar). ART buses and Mountain Mobility do not run on Thanksgiving Day; ART runs a regular weekday schedule on Friday, per the winter guide. Still open: BeLoved's 24/7 street pantries, free fridges, library parking-lot Wi-Fi (password readmore), and Code Purple on called nights (828-398-6011).",
+   "note": "ART did not run on Thanksgiving or Christmas Day in 2025 and stopped after 6:30pm on Christmas Eve, per city notices; check ridetheart.com/holidays or 828-253-5691 for 2026.",
+   "where": "Buncombe County",
+   "src": "county holiday calendar 2023-2026 and third-party BCS and ACS calendars via web search, 17 Nov 2026; Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026"
+  },
+  {
+   "ph": "",
+   "w": "",
+   "id": "school-winter-break-2026-12-21",
+   "date": "2026-12-21",
+   "end": "2027-01-04",
+   "kind": "event",
+   "what": "School winter break (BCS Dec 21 to Jan 4; ACS Dec 21 to Jan 1)",
+   "detail": "Buncombe County Schools: no school Dec 21 (teacher workday) through Jan 4 (teacher workday); students back Tue Jan 5. Asheville City Schools: early release Fri Dec 18, out Dec 21 to Jan 1, back Mon Jan 4. School meals pause; plan food, childcare and camps now.",
+   "note": "Dates from third-party copies of the district calendars, which disagree slightly on whether BCS break ends Dec 31 or Jan 1; confirm on buncombeschools.org/calendar and the ACS calendar.",
+   "where": "Buncombe County and Asheville City Schools",
+   "src": "third-party BCS and ACS 2026-27 calendars via web search, 17 Nov 2026; Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026"
+  },
+  {
+   "ph": "",
+   "w": "",
+   "id": "christmas-closures-2026-12-24",
+   "date": "2026-12-24",
+   "end": "2026-12-28",
+   "kind": "event",
+   "what": "Christmas closures: libraries, county offices, buses and Eblen",
+   "detail": "Libraries and county offices close Thu Dec 24, Fri Dec 25 and Mon Dec 28 (county holiday calendar); the winter guide says branches open Sat Dec 26, 9am-5pm. ART stops early on Christmas Eve and does not run on Christmas Day; Mountain Mobility is also closed Christmas Day. Eblen Charities is closed Dec 23-25, per the winter guide.",
+   "note": "ART did not run on Thanksgiving or Christmas Day in 2025 and stopped after 6:30pm on Christmas Eve, per city notices; check ridetheart.com/holidays or 828-253-5691 for 2026.",
+   "where": "Buncombe County",
+   "src": "county holiday calendar 2023-2026 and city transit notices via web search, 17 Nov 2026; Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026"
+  },
+  {
+   "ph": "",
+   "w": "",
+   "id": "new-years-day-closures-2027-01-01",
+   "date": "2027-01-01",
+   "kind": "event",
+   "what": "New Year's Day: libraries and county offices closed, buses on Sunday hours",
+   "detail": "Libraries and county offices are closed. ART runs a reduced Sunday-hours schedule (8am-6pm), and Mountain Mobility runs only city paratransit, per the winter guide. Eblen Charities is closed Dec 30 to Jan 1.",
+   "note": "ART ran a reduced holiday schedule on Jan 1 last season, per city notices; check ridetheart.com/holidays.",
+   "where": "Buncombe County",
+   "src": "city transit notices via web search, 17 Nov 2026; Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026"
+  },
+  {
+   "ph": "",
+   "w": "",
+   "id": "mlk-day-closures-2027-01-18",
+   "date": "2027-01-18",
+   "end": "2027-01-19",
+   "kind": "event",
+   "what": "MLK Day: schools, libraries and county offices closed",
+   "detail": "No school on Mon Jan 18, and Buncombe County Schools also has a teacher workday Tue Jan 19. Libraries and county offices are closed Jan 18, and ART runs Sunday hours (8am-6pm). Later BCS dates: 2-hour early dismissals Jan 15 and Feb 12, and a teacher workday Feb 15.",
+   "note": "From the winter guide; confirm on the district calendars.",
+   "where": "Buncombe County",
+   "src": "Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026"
+  },
+  {
+   "ph": "828-250-6330",
+   "w": "epass.nc.gov",
+   "id": "liheap-priority-window-2026-12-01",
+   "date": "2026-12-01",
+   "end": "2026-12-31",
+   "kind": "signup",
+   "what": "LIHEAP heating help: December window for households with someone 60+ or disabled",
+   "detail": "Households with someone 60 or older, or with a disability and receiving Division of Aging and Adult Services help, can apply in December. Apply at epass.nc.gov, call 828-250-6330, or go to 40 Coxe Ave. Approval also opens Crisis Intervention funds and Duke Energy's monthly bill credit.",
+   "rid": "liheap",
+   "note": "Dates from benefit guides; NCDHHS publishes the official chart each season.",
+   "src": "NC LIHEAP state plan and benefit guides via web search, 17 Nov 2026; Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026"
+  },
+  {
+   "ph": "828-250-6330",
+   "w": "epass.nc.gov",
+   "id": "liheap-general-window-2027-01-04",
+   "date": "2027-01-04",
+   "end": "2027-03-31",
+   "kind": "signup",
+   "what": "LIHEAP heating help opens to all eligible households",
+   "detail": "Households at or below about 130% of the poverty level can apply until March 31 or until funds run out. Apply at epass.nc.gov, 828-250-6330, or 40 Coxe Ave. Renters whose heat is in the rent usually do not qualify.",
+   "rid": "liheap",
+   "note": "Benefit guides give Mon Jan 4 because Jan 1 is a holiday; the winter guide says Sat Jan 2.",
+   "src": "NC LIHEAP state plan and benefit guides via web search, 17 Nov 2026; Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026"
+  },
+  {
+   "ph": "",
+   "w": "",
+   "id": "black-mountain-holly-jolly-2026-12-04",
+   "date": "2026-12-04",
+   "end": "2026-12-06",
+   "kind": "event",
+   "what": "Black Mountain Holly Jolly, Christmas parade and Circle of Lights",
+   "detail": "Free downtown holiday celebration with carolers and luminaries, the Christmas parade, and the Circle of Lights luminary walk at Lake Tomahawk. The winter guide gives Holly Jolly Fri Dec 4, 5-8pm and the parade Sat Dec 5 at 4pm.",
+   "tags": [
+    "Free"
+   ],
+   "where": "Downtown Black Mountain and Lake Tomahawk",
+   "note": "Explore Asheville lists both Dec 4 and Dec 5-6, 2026, and a travel site says Helene damaged the Lake Tomahawk trail. Check with the Black Mountain chamber before going.",
+   "src": "Explore Asheville listings via web search, 17 Nov 2026; Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026"
+  },
+  {
+   "ph": "",
+   "w": "",
+   "id": "lake-julian-festival-of-lights-2026-12-02",
+   "date": "2026-12-02",
+   "end": "2026-12-23",
+   "kind": "event",
+   "what": "Lake Julian Festival of Lights (drive-through, paid per car)",
+   "detail": "Buncombe County's drive-through light display, nightly 6-9pm. Tickets are per car, and part of the proceeds goes to Special Olympics Buncombe County.",
+   "where": "Lake Julian Park, 37 Lake Julian Rd, Arden",
+   "note": "One events site gives Dec 2-23, 2026 (the 2025 run was Dec 2-23); the winter guide says Dec 4-23 at $10-20 a car. Not free.",
+   "src": "lake.com listing and past Buncombe County releases via web search, 17 Nov 2026; Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026"
+  },
+  {
+   "ph": "",
+   "w": "",
+   "id": "big-crafty-free-sunday-2026-12-06",
+   "date": "2026-12-05",
+   "end": "2026-12-06",
+   "kind": "event",
+   "what": "The Big Crafty holiday craft fair (free on Sunday)",
+   "detail": "Independent artists, toy makers and potters at Harrah's Cherokee Center, noon-6pm both days. Saturday is $10; Sunday Dec 6 is free.",
+   "tags": [
+    "Free"
+   ],
+   "where": "Harrah's Cherokee Center, 87 Haywood St, Asheville",
+   "src": "Explore Asheville and another event listing via web search, 17 Nov 2026; Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026"
+  },
+  {
+   "ph": "",
+   "w": "",
+   "id": "weaverville-candlelight-stroll-2026-12-11",
+   "date": "2026-12-11",
+   "kind": "event",
+   "what": "Weaverville Candlelight Stroll",
+   "detail": "Free evening on Main Street, 6-9pm, with a Winter Wonderland on Florida Avenue. The winter guide adds hot cider, cookies, ornament tables and Santa.",
+   "tags": [
+    "Free"
+   ],
+   "where": "Downtown Weaverville",
+   "src": "Explore Asheville listing (21st annual) via web search, 17 Nov 2026; Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026"
+  },
+  {
+   "ph": "800-413-5778",
+   "w": "",
+   "id": "grove-park-inn-gingerbread-2026-11-17",
+   "date": "2026-11-17",
+   "end": "2027-01-03",
+   "kind": "event",
+   "what": "National Gingerbread House Competition display (Omni Grove Park Inn)",
+   "detail": "Hundreds of gingerbread houses on display. Viewing is free for non-guests on select evenings and weekdays, but parking costs money and peak weekends may need a reservation. Hotline 800-413-5778.",
+   "where": "Omni Grove Park Inn, 290 Macon Ave, Asheville",
+   "note": "The winter guide says half the parking proceeds go to MANNA and Eblen; not confirmed.",
+   "src": "Omni and Explore Asheville listings via web search, 17 Nov 2026; Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026"
+  },
+  {
+   "ph": "828-252-4614",
+   "w": "",
+   "id": "ymi-kwanzaa-2026-12-26",
+   "date": "2026-12-26",
+   "end": "2027-01-01",
+   "kind": "event",
+   "what": "Kwanzaa at the YMI Cultural Center",
+   "detail": "The YMI hosts Asheville's yearly Kwanzaa celebration with candle-lighting, drumming and storytelling.",
+   "tags": [
+    "Free"
+   ],
+   "where": "YMI Cultural Center, 39 S Market St, Asheville",
+   "note": "The 2026 schedule was not published when checked. Past years ran a free nightly celebration Dec 26 to Jan 1 at 6pm; the winter guide says Dec 26-27, 12-5pm. Call the YMI.",
+   "src": "past YMI Kwanzaa announcements via web search, 17 Nov 2026; Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026"
+  },
+  {
+   "ph": "",
+   "w": "mlkasheville.org",
+   "id": "mlk-weekend-2027-01-16",
+   "date": "2027-01-16",
+   "end": "2027-01-18",
+   "kind": "event",
+   "what": "MLK weekend: prayer breakfast and Peace March and Rally",
+   "detail": "The Dr. Martin Luther King Jr. Association's yearly events: a prayer breakfast on the Saturday and a free Peace March from St. James A.M.E. Church to a rally in Pack Square Park on MLK Day, Mon Jan 18. The winter guide adds youth storytelling at the YMI and a family day of service.",
+   "tags": [
+    "Free"
+   ],
+   "where": "Downtown Asheville",
+   "note": "2027 times were not published when checked; check mlkasheville.org.",
+   "src": "past MLK Association schedules via web search, 17 Nov 2026; Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026"
+  },
+  {
+   "ph": "828-259-5800",
+   "w": "",
+   "id": "winter-break-camps-2026-12-21",
+   "date": "2026-11-17",
+   "end": "2026-12-21",
+   "kind": "signup",
+   "what": "Sign up: winter break day camps (Asheville Parks & Rec, Museum of Science)",
+   "detail": "Full-day camps cover working hours while schools are out. SOAR scholarships cover Parks & Rec camp fees for families with free or reduced lunch, SNAP, Medicaid, Section 8 or SSI, but take up to three weeks, so apply now. The Museum of Science's STEAM Winter Break Camp is on the Events calendar.",
+   "rid": "asheville-parks-rec-soar-scholarships",
+   "note": "Parks & Rec's 2026 camp dates were not published when checked. In 2025 its Holiday Camp ran Dec 22-23, Dec 29-31 and Jan 2, 8:30am-6pm ($40 first child, $30 each additional), and registration opened Nov 1. The winter guide says Dec 21-23 and 28-31, 8am-5pm, with registration from Nov 21.",
+   "src": "2025 Parks & Rec holiday roundup via web search, 17 Nov 2026; Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026"
   }
  ]
 }
