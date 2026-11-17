@@ -931,3 +931,12 @@ ul.plan-list { padding-left: 0; list-style: none; }
   .plan-asks input { display: none; }
   .plan-asks li.on span::before { content: "\2610  "; }
 }
+
+/* Ask AI: the way from a sample of picks to the whole list */
+.ask-more {
+  margin: 14px 0 6px; padding: 12px 14px; border-radius: 12px;
+  background: var(--surface); border: 1px solid var(--line, #dcdcdc);
+}
+.ask-more p { margin: 0 0 8px; font-size: 14px; max-width: 72ch; }
+.ask-more .row-btns { flex-wrap: wrap; }
+.ask-more a.btn { text-decoration: none; }

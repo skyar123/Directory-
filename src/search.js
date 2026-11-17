@@ -19,6 +19,27 @@ export function score(r, terms) {
   return s;
 }
 
+/* The search box. Word-for-word matching alone found about a quarter of what
+   fits an everyday search ("groceries", "shelter tonight", "food for my
+   kids" found almost nothing), so the shared engine in shortlist.js does the
+   finding: word stems, everyday words for each SNIFF need, the needs each
+   resource is filed under, Spanish, and programs in Buncombe first when no
+   place is named. The word-for-word score still adds in, so names, partial
+   names ("ebl" for Eblen), phone numbers and websites are found as before.
+   rank is the index's search.rank. */
+export function searchResources(resources, q, rank) {
+  const terms = norm(q).split(" ").filter(Boolean);
+  if (!terms.length) return resources.map((r) => ({ r, s: 1 }));
+  const smart = rank(q);
+  return resources
+    .map((r) => {
+      const lit = score(r, terms);
+      const w = smart.weight ? smart.weight(r.id) : 1;
+      return { r, s: (smart.get(r.id) || 0) + (lit ? (4 + lit / 3) * w : 0) };
+    })
+    .filter((x) => x.s > 0);
+}
+
 /* suggestions for an assessment row: SNIFF-question overlap first, then the
    row's fallback keywords */
 export function craCandidates(row, resources) {

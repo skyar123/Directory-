@@ -20,7 +20,7 @@ import eventsFile from "../../data/events.json";
 import calendarFile from "../../data/calendar.json";
 import foodFile from "../../data/food-by-day.json";
 import {
-  buildPrompt, askGemini, parseAnswer, whenAsked, translatePrompt, parseTranslation,
+  buildPrompt, askGemini, parseAnswer, whenAsked, wantsCalendar, translatePrompt, parseTranslation,
 } from "../../src/ai.js";
 import { buildIndex } from "../../src/shortlist.js";
 import { scrub } from "../../src/scrub.js";
@@ -99,17 +99,20 @@ export async function handle(req, { budgetMs = BUDGET_MS, fetchImpl = fetch, mem
       return reply(200, { texts });
     }
     /* client details out first; then search, so Gemini reads the closest
-       matches, not all 622 */
+       matches, not the whole directory */
     const clean = scrub(text);
     const today = localToday();
     const found = SEARCH(clean.text);
     const when = whenAsked(clean.text, today);
+    const calendar = wantsCalendar(clean.text);
     const prompt = buildPrompt({
       resources: found.resources, needs: sniffFile.needs, events: EVENTS, today, shortlisted: found.shortlisted,
       withHours: when.hours, food: foodFile.days.filter((d) => when.foodDays.includes(d.day)),
+      query: clean.text, calendar, vague: !!found.vague,
     });
     const answer = parseAnswer(await ask(prompt.system, clean.text), prompt);
-    log.log(`ask-ai ok in ${Date.now() - t0}ms: read ${found.resources.length} of ${RESOURCES.length} resources (${prompt.system.length} characters)`
+    log.log(`ask-ai ok in ${Date.now() - t0}ms: read ${found.resources.length} of ${RESOURCES.length} resources`
+      + ` and ${prompt.eventIds.length} events (${prompt.system.length} characters)${found.vague ? ", vague" : ""}${calendar ? ", with calendar" : ""}`
       + `${when.hours ? ", with hours" : ""}${when.foodDays.length ? `, food for ${when.foodDays.length} days` : ""}`
       + `${clean.removed.length ? `; took out ${clean.removed.length} kinds of detail` : ""}; ${answer.picks.length} picks, ${answer.events.length} events, ${answer.dropped} dropped`);
     return reply(200, { ...answer, removed: clean.removed });

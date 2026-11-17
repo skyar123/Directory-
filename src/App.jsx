@@ -1,10 +1,11 @@
 import { useState, useMemo, useRef, useEffect } from "react";
 import {
-  META, SECTIONS, SECBY, NEEDS, NEEDBY, BASE, PEOPLE, PEOPLE_META,
+  META, SECTIONS, SECBY, NEEDS, NEEDBY, BASE, MERGED, PEOPLE, PEOPLE_META,
   CRA, CRA_SECTIONS, CHANGELOG, FOOD, EVENTS, EVENTS_META, TODAY, norm, telHref, loadCalendar,
 } from "./data.js";
 import { useStore } from "./storage.js";
-import { score } from "./search.js";
+import { searchResources } from "./search.js";
+import { buildIndex, queryStems, norm as fold } from "./shortlist.js";
 import { arrange, soon, localToday, AGE_FILTERS, forAge } from "./events.js";
 import { Chip } from "./components/bits.jsx";
 import Icon, { Logo } from "./components/Icon.jsx";
@@ -105,23 +106,26 @@ export default function App() {
 
   const resources = useMemo(() => {
     const all = [...BASE, ...(state.added || [])];
-    return all.map((r) => (state.edits[r.id] ? { ...r, ...state.edits[r.id] } : r));
+    /* edits saved under a merged-away id carry over to the kept row */
+    const edits = { ...state.edits };
+    for (const [old, kept] of Object.entries(MERGED)) if (edits[old] && !edits[kept]) edits[kept] = edits[old];
+    return all.map((r) => (edits[r.id] ? { ...r, ...edits[r.id] } : r));
   }, [state]);
 
   const terms = useMemo(() => norm(q).split(" ").filter(Boolean), [q]);
 
+  /* the same search engine Ask AI uses on the server, built once per change */
+  const index = useMemo(() => buildIndex(resources, NEEDS), [resources]);
   const results = useMemo(() => {
-    const list = resources
-      .map((r) => ({ r, s: score(r, terms) }))
-      .filter((x) => x.s > 0)
-      .filter((x) => !secFilter || x.r.sec === secFilter)
+    const list = searchResources(resources, q, index.rank)
+      .filter((x) => !secFilter || x.r.sec === secFilter || (x.r.secs || []).includes(secFilter))
       .filter((x) => !onlyGaps || !x.r.phone || !x.r.web || !x.r.verified);
     list.sort((a, b) =>
       b.s - a.s
       || (b.r.startHere ? 1 : 0) - (a.r.startHere ? 1 : 0)
       || a.r.name.localeCompare(b.r.name));
     return list.map((x) => x.r);
-  }, [resources, terms, secFilter, onlyGaps]);
+  }, [resources, q, index, secFilter, onlyGaps]);
 
   const edit = (id, key, value) => {
     const prev = state.edits[id] || {};
@@ -225,6 +229,7 @@ export default function App() {
       ...(r.startHere && { start: true }),
       ...(r.readFirst && { readFirst: true }),
       ...(r.backup && { alt: r.backup }),
+      ...(r.secs && r.secs.length > 1 && { secs: r.secs }),
     })),
   }, null, 1) + "\n"); /* data/resources.json ends with a newline too */
 
@@ -301,9 +306,13 @@ export default function App() {
      open overnight would keep calling yesterday's events "Today" */
   const evToday = localToday();
   const allEvents = useMemo(() => (cal ? EVENTS.concat(cal.events) : EVENTS), [cal]);
+  /* accents folded and word stems matched, so "markets" finds "market",
+     "storytimes" finds "Story Time" and "espanol" finds "Español" */
+  const joinWords = (t) => t.replace(/\b(story|play|day|child) (time|group|date|care)s?\b/g, "$1$2");
   const evIndex = useMemo(() => new Map(allEvents.map((e) => [e.id,
-    norm([e.what, e.where, e.org, e.detail, (e.tags || []).join(" ")].join(" "))])), [allEvents]);
-  const evTerms = norm(evQ).split(" ").filter(Boolean);
+    joinWords(fold([e.what, e.where, e.org, e.detail, (e.tags || []).join(" ")].join(" ")))])), [allEvents]);
+  /* "events" and "things to do" describe the whole tab, so they filter nothing */
+  const evTerms = queryStems(joinWords(fold(evQ))).filter((t) => !["event", "happen", "activit", "thing"].includes(t));
   const kindOk = (e, k) => k === "all" || (k === "due") === (e.kind !== "event");
   /* every filter but the one being counted, so each chip says what tapping it would show */
   const evMatch = (e, skip) =>
@@ -327,7 +336,11 @@ export default function App() {
   const evPast = evPlan.past.filter((e) => !e.status);
   const evShown = evPlan.months.reduce((n, m) => n + m.items.length, 0);
   const evSig = [evKind, evAge, evOrg, evTerms.join(" ")].join("|");
-  const resById = useMemo(() => new Map(resources.map((r) => [r.id, r])), [resources]);
+  const resById = useMemo(() => {
+    const m = new Map(resources.map((r) => [r.id, r]));
+    for (const [old, kept] of Object.entries(MERGED)) if (!m.has(old) && m.has(kept)) m.set(old, m.get(kept));
+    return m;
+  }, [resources]);
 
   /* an event's "Open in the directory": the resource it links, found and
      opened in the Find view with nothing else filtering it out */
@@ -426,7 +439,7 @@ export default function App() {
       {view === "ask" && (
         <AskPanel key={ask.n} initialText={ask.text} resources={resources} needBy={NEEDBY}
           events={allEvents} eventsLoading={!cal} copyText={copyText} onClose={() => setView("find")}
-          onShowNeed={showNeed}
+          onShowNeed={showNeed} onFoodDay={() => goNeed({ food: true })}
           renderResource={(r) => (
             <ResourceCard r={r} open={openId === r.id}
               onToggle={() => setOpenId(openId === r.id ? "" : r.id)}
@@ -559,6 +572,14 @@ export default function App() {
             Most of these have never been verified, and pantry hours move. Call before you send
             anyone. {FOOD.meta.src}
           </p>
+          {resById.get("wnc-free-food-map") && (
+            <p>
+              <a className="act link" href={"https://" + resById.get("wnc-free-food-map").web.replace(/^https?:\/\//, "")}
+                target="_blank" rel="noreferrer">
+                <Icon name="pin" size={14} />Skylar's free food map: every spot on one map
+              </a>
+            </p>
+          )}
           <div className="filters">
             {FOOD.days.map((d) => (
               <Chip key={d.day} bg="#DDEFC4" fg="#55731F" active={foodDay === d.day}
