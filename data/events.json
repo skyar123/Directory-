@@ -1292,6 +1292,22 @@
    "rid": "asheville-parks-rec-soar-scholarships",
    "note": "Parks & Rec's 2026 camp dates were not published when checked. In 2025 its Holiday Camp ran Dec 22-23, Dec 29-31 and Jan 2, 8:30am-6pm ($40 first child, $30 each additional), and registration opened Nov 1. The winter guide says Dec 21-23 and 28-31, 8am-5pm, with registration from Nov 21.",
    "src": "2025 Parks & Rec holiday roundup via web search, 17 Nov 2026; Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026"
+  },
+  {
+   "id": "eas-nationwide-test-2026-11-17",
+   "date": "2026-11-17",
+   "time": "2:20pm",
+   "kind": "event",
+   "what": "Nationwide emergency alert test on TV and radio, 2:20pm (only a test)",
+   "detail": "FEMA and the FCC test the Emergency Alert System at 2:20pm Eastern on radio, TV, cable and satellite, in English and Spanish. The message says: \"This is a nationwide test of the Emergency Alert System, issued by the Federal Emergency Management Agency, covering the United States from 2:20 to 2:50 hours ET. This is only a test. No action is required by the public.\" If it has to be moved, it will run on December 3, 2026.",
+   "note": "A heads-up can help families for whom a sudden alarm brings back Helene or another emergency.",
+   "where": "Nationwide (radio, TV, cable and satellite)",
+   "ph": "",
+   "w": "fcc.gov",
+   "tags": [
+    "Free"
+   ],
+   "src": "FCC Public Notice DA 26-989, released 16 Sep 2026 (page 1), shared by Skylar Belt 17 Nov 2026"
   }
  ]
 }
