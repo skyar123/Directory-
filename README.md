@@ -113,10 +113,11 @@ browser on any device.
 
 **How it works.** The browser sends only the typed text to this site's own
 function, `/api/ask-ai` (`netlify/functions/ask-ai.mjs`). The function builds
-the prompt on the server from the directory as deployed (every resource, the
-team's upcoming picks, and the next three weeks of the family calendar, 150
-events at most), calls Gemini, maps the answer back onto the directory, and
-returns it. Gemini can only answer with entries from that list; anything else
+the prompt on the server from the directory as deployed (the resources that
+fit the question, up to 40 of the team's upcoming picks closest to it, and, when
+the question is about things to do, dates or the holidays, up to 60 listings
+from the next three weeks of the family calendar), calls Gemini, maps the answer
+back onto the directory, and returns it. Gemini can only answer with entries from that list; anything else
 it suggests is dropped, and the panel says how many. Because the prompt is
 built on the server, the endpoint answers questions about this directory and
 nothing else.
@@ -166,8 +167,20 @@ question sends Gemini only the closest 120 or so:
 - Spanish-capable programs moved up when Spanish comes up.
 
 Each need gets its fair share of the list. The call-first lines and the crisis
-lines are always on it. When the search cannot make sense of the text, Gemini
-reads the whole directory as before. A prompt is about a third of the size it was.
+lines are always on it. Rows Skylar does not refer to first (the Salvation Army)
+rank lower and are flagged `not-first`, so Gemini offers them only after other
+options or when asked by name.
+
+When the text names no need: a short message with nothing to match ("hi", "ok
+thanks") gets only the call-first and crisis lines, and Gemini asks what would
+help; a few rare-word matches ("crib") go with those lines; only a long text with
+no match at all reads the whole directory. Measured on 17 Nov 2026 at 745
+resources: a typical question is about 5,000 to 12,000 tokens, and "hi" about
+4,000 (it was about 38,000 when it read everything).
+
+**How many picks.** Up to 12. When the text raises one or two needs, Gemini is
+asked for 5 to 8 choices each, spread across areas, days and kinds (for food:
+pantries, hot meals, markets, delivery); with more needs, two or three each.
 
 **The voice.** Gemini is asked to write the way a caring neighbor who knows
 every program would talk: warm, plain, hopeful and never judging, on the
@@ -215,7 +228,8 @@ line to the question, so the search and Gemini both use them.
 
 **What is open.** Gemini always knows today's date. A question about when ("open
 Saturday?", "food tonight") also gets each resource's hours. If it is about food,
-it gets that day's Food by day schedule too.
+it gets that day's Food by day schedule too. A food question that names no day
+("free food") gets hours and the schedule for today and tomorrow.
 
 **Locally**, `npm run dev` has no functions, so Ask AI says it is not switched on.
 To try it, run `netlify dev` with `GEMINI_API_KEY` set in the shell, or use a

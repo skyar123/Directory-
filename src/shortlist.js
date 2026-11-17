@@ -1,5 +1,5 @@
 /*
- * Ask AI's search-first step. Reading all 622 resources is most of what
+ * Ask AI's search-first step. Reading the whole directory is most of what
  * Gemini is asked to do for each question, and most of them have nothing to
  * do with a given family. So the function indexes the directory once, when
  * it starts, and each question sends Gemini only the closest matches. A
@@ -14,13 +14,24 @@
  *    out the housing help a Spanish-speaking family asked for.
  * Each need the text raises gets its fair share of the list, so a family
  * with five needs is not read only for the one with the most programs.
- * The call-first lines and the crisis lines are on every shortlist. When
- * the search finds too little to go on, Gemini reads everything, as before. Nothing here calls out: it runs in the function, on the deployed
- * data.
+ * The call-first lines and the crisis lines are on every shortlist. Rows
+ * the team does not refer to first (the Salvation Army) rank lower, so they
+ * come after other options instead of near the top.
+ *
+ * When the text names no need and matches little:
+ *  - a short message with no match at all ("hi", "ok thanks") gets only the
+ *    call-first and crisis lines, and Gemini asks what would help, instead
+ *    of reading the whole directory (about 38,000 tokens at 745 resources);
+ *  - a few rare-word matches ("crib") go with those lines;
+ *  - only a long text with no match at all still reads everything.
+ * Nothing here calls out: it runs in the function, on the deployed data.
  */
 
+import { NOT_FIRST } from "./ai.js";
+
 export const SHORTLIST = 120; // resources Gemini reads at most
-export const SHORTLIST_MIN = 30; // fewer matches than this and it reads all of them
+export const SHORTLIST_MIN = 30; // fewer matches than this, with no need named, is "little to go on"
+export const VAGUE_WORDS = 8; // a text with this many words or fewer and no match is treated as vague
 /* on every shortlist whatever was asked, so there is always a good first
    call to offer, and a crisis line when a family may not be safe */
 export const ALWAYS_KEYS = ["X:1", "CRISIS:*"];
@@ -161,6 +172,7 @@ export function buildIndex(resources, needs) {
   const vocab = makeVocab(posting);
   const keysOf = resources.map((r) => new Set(r.needs));
   const spanish = resources.map((r) => /^[🟢🟡🟠]/u.test(r.spanish || ""));
+  const notFirst = resources.map((r) => NOT_FIRST.test(r.detail || ""));
 
   /* A SNIFF question is raised by a distinctive word of its label (one on
      only one or two labels), or by all of its label's words together, which
@@ -213,11 +225,18 @@ export function buildIndex(resources, needs) {
       score[i] += Math.max(0, ...urgent.map((key) => (keysOf[i].has(key) ? URGENT[key] : 0)));
       if (wantsSpanish && spanish[i]) score[i] += 5;
       if (places.some((p) => where[i].includes(" " + p + " "))) score[i] += 4;
+      /* still listed, so it can be found by name, but after the others */
+      if (notFirst[i]) score[i] *= 0.4;
     }
 
     const ranked = [...score.keys()].filter((i) => score[i] > 0).sort((a, b) => score[b] - score[a] || a - b);
-    /* nothing understood: no SNIFF need and hardly a word in common */
-    if (!spotted.size && ranked.length < SHORTLIST_MIN) return { resources, shortlisted: false, needs: [] };
+    /* little to go on: no SNIFF need and hardly a word in common */
+    if (!spotted.size && ranked.length < SHORTLIST_MIN) {
+      const pick = (idx) => idx.map((i) => resources[i]);
+      if (!ranked.length && q.length <= VAGUE_WORDS) return { resources: pick(always), shortlisted: true, vague: true, needs: [] };
+      if (ranked.length) return { resources: pick(ranked.concat(always.filter((i) => !ranked.includes(i)))), shortlisted: true, needs: [] };
+      return { resources, shortlisted: false, needs: [] };
+    }
     /* each need's best first, a turn each, for up to three quarters of the
        list; then the best of what is left, whatever it matched */
     const chosen = new Set();

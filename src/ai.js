@@ -45,11 +45,33 @@ const addDays = (iso, n) => {
   return new Date(Date.UTC(y, m - 1, d + n)).toISOString().slice(0, 10);
 };
 
-/* The calendar holds a year of listings, which would double the request and
-   the wait. What a family can act on is the next three weeks of it, so the
-   prompt carries the team's own picks and at most this many listings. */
+/* Events cost tokens on every question, so the prompt carries only what can
+   help this one: the team's own picks starting in the next TEAM_DAYS (open
+   sign-ups included), closest to the question first, and the family
+   calendar's next EVENT_DAYS only when the question is about things to do,
+   dates or the holidays. It used to carry 150 events every time, about a
+   third of a typical prompt. */
 export const EVENT_DAYS = 21;
-export const EVENT_MAX = 150;
+export const TEAM_DAYS = 45;
+export const TEAM_MAX = 40;
+export const CALENDAR_MAX = 60;
+
+/* rows the team does not refer to first: they start with Skylar's note */
+export const NOT_FIRST = /^Skylar does not refer/i;
+
+const CALENDARISH = /\b(events?|happening|things to do|activit\w*|outings?|fun|play ?groups?|play ?dates?|story ?times?|librar\w*|museums?|class(es)?|camps?|weekend|this week|today|tonight|tomorrow|saturday|sunday|holidays?|christmas|thanksgiving|kwanzaa|new year\w*|santa|parade|lights|markets?|giveaways?|music|crafts?|swim\w*|eventos?|actividad\w*|cuento|navidad)\b/;
+export const wantsCalendar = (text) => CALENDARISH.test(norm(text));
+
+/* how many of the question's words an event mentions, to put the closest
+   events first; ties go to the soonest */
+const eventScorer = (query) => {
+  const terms = [...new Set(norm(query).split(" ").filter((w) => w.length >= 4))].map((w) => w.slice(0, 5));
+  return (e) => {
+    if (!terms.length) return 0;
+    const hay = " " + norm(`${e.what || ""} ${e.detail || ""} ${e.where || ""} ${e.org || ""}`);
+    return terms.reduce((n, t) => n + (hay.includes(" " + t) ? 1 : 0), 0);
+  };
+};
 
 const WEEKDAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const weekdayOf = (iso) => {
@@ -62,12 +84,18 @@ const longDate = (iso) => new Date(iso + "T12:00:00Z").toLocaleDateString("en-US
 /* A question about when ("open Saturday?", "food tonight") gets each
    resource's hours, and, when it is about food, the Food by day schedule for
    the days it means: the ones it names, the weekend, tomorrow, or else
-   today. Other questions leave both out, which keeps them short. */
+   today. A food question that names no day ("free food") gets hours and the
+   schedule for today and tomorrow, since a family asking for food usually
+   needs it soon. Other questions leave both out, which keeps them short. */
 const WHEN = /\b(today|tonight|tomorrow|now|open|opens|closed|close|hours|weekend|this week|morning|afternoon|evening|late|sunday|monday|tuesday|wednesday|thursday|friday|saturday|hoy|manana|esta noche|fin de semana|abierto|horario)\b/;
 const FOODISH = /\b(food|pantr\w*|meals?|grocer\w*|hungry|lunch|dinner|breakfast|eat|comida|despensa)\b/;
 export function whenAsked(text, today) {
   const flat = norm(text);
-  if (!WHEN.test(flat)) return { hours: false, foodDays: [] };
+  if (!WHEN.test(flat)) {
+    if (!FOODISH.test(flat)) return { hours: false, foodDays: [] };
+    const soon = [weekdayOf(today), weekdayOf(addDays(today, 1))];
+    return { hours: true, foodDays: WEEKDAYS.filter((d) => soon.includes(d)) };
+  }
   const days = WEEKDAYS.filter((d) => flat.includes(d.toLowerCase()));
   if (/\b(weekend|fin de semana)\b/.test(flat)) days.push("Saturday", "Sunday");
   if (/\b(tomorrow|manana)\b/.test(flat)) days.push(weekdayOf(addDays(today, 1)));
@@ -81,17 +109,28 @@ export function whenAsked(text, today) {
    search found too little to go on, the whole directory. withHours and food
    come from whenAsked: hours on each resource line, and the Food by day
    schedule ({day, sites}) for the days asked about. */
-export function buildPrompt({ resources, needs, events, today, shortlisted = false, withHours = false, food = [] }) {
-  const horizon = addDays(today, EVENT_DAYS);
-  const upcoming = events
-    .filter((e) => (e.end || e.date) >= today && (!e.status || e.date <= horizon))
-    .sort((a, b) => (a.status ? 1 : 0) - (b.status ? 1 : 0) || a.date.localeCompare(b.date))
-    .slice(0, EVENT_MAX);
+export function buildPrompt({
+  resources, needs, events, today, shortlisted = false, withHours = false, food = [],
+  query = "", calendar = false, vague = false,
+}) {
+  const score = eventScorer(query);
+  const closest = (list, max) => list
+    .map((e) => [score(e), e])
+    .sort((a, b) => b[0] - a[0] || a[1].date.localeCompare(b[1].date))
+    .slice(0, max)
+    .map(([, e]) => e)
+    .sort((a, b) => a.date.localeCompare(b.date));
+  const live = events.filter((e) => (e.end || e.date) >= today);
+  /* the team's picks carry no status; calendar listings do */
+  const team = closest(live.filter((e) => !e.status && e.date <= addDays(today, TEAM_DAYS)), TEAM_MAX);
+  const listings = calendar ? closest(live.filter((e) => e.status && e.date <= addDays(today, EVENT_DAYS)), CALENDAR_MAX) : [];
+  const upcoming = team.concat(listings);
   const rows = resources.map((r, i) => {
     const flags = [
       /\bfree\b/i.test(r.tags) && "free",
       /^[🟢🟡]/u.test(r.spanish) && "spanish",
       /^🟠/u.test(r.spanish) && "interpreter",
+      NOT_FIRST.test(r.detail) && "not-first",
     ].filter(Boolean).join(",");
     const keys = r.needs.filter((k) => !k.endsWith(":*")).join(" ");
     return `R${i}|${clip(r.name, 90)}|${r.sec}|${keys}|${flags}|${clip(r.detail, 110)}`
@@ -119,16 +158,20 @@ export function buildPrompt({ resources, needs, events, today, shortlisted = fal
     ' "picks": [{"ref": "R12", "need": "SNIFF key", "why": "one kind, plain sentence on how it can help"}],',
     ' "events": [{"ref": "E3", "why": "one friendly sentence"}],',
     ' "ask": ["a gentle question that would help find a better fit"]}',
-    "Give up to 10 picks, best first, with two or three choices for a need when the list has them, at most 3 events and at most 3 questions. Keep each why to one short sentence. Prefer free, nearby and Spanish-capable options when the text points that way.",
+    "Give up to 12 picks, best first. When the text raises only one or two needs, give 5 to 8 choices for each when the list has them, spread across different areas, days and kinds (for food: pantries, hot meals, markets, delivery), so the family has real options. With more needs, give two or three for each. Give at most 3 events and at most 3 questions. Keep each why to one short sentence. Prefer free, nearby and Spanish-capable options when the text points that way.",
+    "Items flagged not-first are ones the team does not refer families to first: offer them only after other options, or when the text asks for them by name.",
     "Each item in ask is a plain string, the question itself, never an object.",
+    ...(vague ? ["The text does not say what the family needs yet. Do not guess: offer one or two call-first lines as a good first call, add a crisis line only if the text suggests someone may be unsafe, and use ask for up to 3 gentle questions about what would help most."] : []),
     ...(withHours ? ["Hours are as the directory lists them and can change, so suggest a call first. Use them when the text asks what is open, and say when a place's hours are not listed."] : []),
     "",
     "SNIFF questions (key|label):",
     ...needs.map((n) => `${n.key}|${n.label}`),
     "",
-    shortlisted
-      ? `Resources: the directory's closest matches to this text, found by search, plus the call-first and crisis lines (${cols}):`
-      : `Resources (${cols}):`,
+    vague
+      ? `Resources: only the call-first and crisis lines, because the text does not name a need yet (${cols}):`
+      : shortlisted
+        ? `Resources: the directory's closest matches to this text, found by search, plus the call-first and crisis lines (${cols}):`
+        : `Resources (${cols}):`,
     ...rows,
     "",
     `Today is ${longDate(today)}, in Asheville.`,
@@ -137,7 +180,9 @@ export function buildPrompt({ resources, needs, events, today, shortlisted = fal
       ...foodLines,
       "",
     ] : []),
-    `Upcoming events, the team's picks and the next ${EVENT_DAYS} days of the family calendar (ref|date|what|where|ages|organizer):`,
+    listings.length
+      ? `Upcoming events: the team's picks and the closest of the next ${EVENT_DAYS} days of the family calendar (ref|date|what|where|ages|organizer):`
+      : "Upcoming events, the team's picks (ref|date|what|where|ages|organizer):",
     ...ev,
   ].join("\n");
   return { system, resourceIds: resources.map((r) => r.id), eventIds: upcoming.map((e) => e.id) };
