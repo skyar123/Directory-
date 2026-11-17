@@ -4,7 +4,8 @@ import {
   CRA, CRA_SECTIONS, CHANGELOG, FOOD, EVENTS, EVENTS_META, TODAY, norm, telHref, loadCalendar,
 } from "./data.js";
 import { useStore } from "./storage.js";
-import { score } from "./search.js";
+import { searchResources } from "./search.js";
+import { buildIndex, queryStems, norm as fold } from "./shortlist.js";
 import { arrange, soon, localToday, AGE_FILTERS, forAge } from "./events.js";
 import { Chip } from "./components/bits.jsx";
 import Icon, { Logo } from "./components/Icon.jsx";
@@ -110,10 +111,10 @@ export default function App() {
 
   const terms = useMemo(() => norm(q).split(" ").filter(Boolean), [q]);
 
+  /* the same search engine Ask AI uses on the server, built once per change */
+  const index = useMemo(() => buildIndex(resources, NEEDS), [resources]);
   const results = useMemo(() => {
-    const list = resources
-      .map((r) => ({ r, s: score(r, terms) }))
-      .filter((x) => x.s > 0)
+    const list = searchResources(resources, q, index.rank)
       .filter((x) => !secFilter || x.r.sec === secFilter)
       .filter((x) => !onlyGaps || !x.r.phone || !x.r.web || !x.r.verified);
     list.sort((a, b) =>
@@ -121,7 +122,7 @@ export default function App() {
       || (b.r.startHere ? 1 : 0) - (a.r.startHere ? 1 : 0)
       || a.r.name.localeCompare(b.r.name));
     return list.map((x) => x.r);
-  }, [resources, terms, secFilter, onlyGaps]);
+  }, [resources, q, index, secFilter, onlyGaps]);
 
   const edit = (id, key, value) => {
     const prev = state.edits[id] || {};
@@ -301,9 +302,13 @@ export default function App() {
      open overnight would keep calling yesterday's events "Today" */
   const evToday = localToday();
   const allEvents = useMemo(() => (cal ? EVENTS.concat(cal.events) : EVENTS), [cal]);
+  /* accents folded and word stems matched, so "markets" finds "market",
+     "storytimes" finds "Story Time" and "espanol" finds "Español" */
+  const joinWords = (t) => t.replace(/\b(story|play|day|child) (time|group|date|care)s?\b/g, "$1$2");
   const evIndex = useMemo(() => new Map(allEvents.map((e) => [e.id,
-    norm([e.what, e.where, e.org, e.detail, (e.tags || []).join(" ")].join(" "))])), [allEvents]);
-  const evTerms = norm(evQ).split(" ").filter(Boolean);
+    joinWords(fold([e.what, e.where, e.org, e.detail, (e.tags || []).join(" ")].join(" ")))])), [allEvents]);
+  /* "events" and "things to do" describe the whole tab, so they filter nothing */
+  const evTerms = queryStems(joinWords(fold(evQ))).filter((t) => !["event", "happen", "activit", "thing"].includes(t));
   const kindOk = (e, k) => k === "all" || (k === "due") === (e.kind !== "event");
   /* every filter but the one being counted, so each chip says what tapping it would show */
   const evMatch = (e, skip) =>

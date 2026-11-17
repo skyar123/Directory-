@@ -155,6 +155,12 @@
    "entries": [
     {
      "date": "Nov 17 2026",
+     "what": "Search finds the whole directory, in everyday words and Spanish",
+     "detail": "The search box used to need every typed word to appear word for word, so it found about a quarter of what fits an everyday search (\"groceries\", \"shelter tonight\" and \"food for my kids\" found almost nothing). It now uses the same engine as Ask AI: word stems, everyday and Spanish words for each need, the needs each resource is filed under, and Buncombe programs first unless a town is named; names and phone numbers still match exactly. Across 40 everyday searches it finds 99% of what is filed under the need, up from 25%. 22 missing need tags were added (for example Swannanoa Communities Together and the Haywood Street Welcome Table under Food pantry). The Events search now matches plurals, folds accents and ignores filler words.",
+     "source": "scripts/apply-tag-fixes-2026-11-17.mjs; src/search.js, src/shortlist.js"
+    },
+    {
+     "date": "Nov 17 2026",
      "what": "Food by day caught up with the October food guide, and Skylar's food map",
      "detail": "Food by day had only the August workbook's 51 entries; 29 more from the October guide's weekly Buncombe sites are now on their days (Emma UMC, Bethel SDA, Big Ivy, Garren Creek, The Whale, Grace Covenant, East Asheville Welcome Table, the Grant Center fridge and more), which also feeds the Food today button and Ask AI. The NC 211 food row no longer shows MATCH's McDowell number. New row: Skylar's free food map (94 spots). From the map: the Blessing Barn may be paused, Tranzmission's pantry restarted on Saturdays, and BeLoved's Weaverville pantry location is in question.",
      "source": "scripts/apply-food-schedule-2026-11-17.mjs"

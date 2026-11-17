@@ -88,7 +88,7 @@ const longDate = (iso) => new Date(iso + "T12:00:00Z").toLocaleDateString("en-US
    schedule for today and tomorrow, since a family asking for food usually
    needs it soon. Other questions leave both out, which keeps them short. */
 const WHEN = /\b(today|tonight|tomorrow|now|open|opens|closed|close|hours|weekend|this week|morning|afternoon|evening|late|sunday|monday|tuesday|wednesday|thursday|friday|saturday|hoy|manana|esta noche|fin de semana|abierto|horario)\b/;
-const FOODISH = /\b(food|pantr\w*|meals?|grocer\w*|hungry|lunch|dinner|breakfast|eat|comida|despensa)\b/;
+const FOODISH = /\b(food(?! stamps?| benefits)|pantr\w*|meals?|grocer\w*|hungry|lunch|dinner|breakfast|eat|comida|despensa)\b/;
 export function whenAsked(text, today) {
   const flat = norm(text);
   if (!WHEN.test(flat)) {

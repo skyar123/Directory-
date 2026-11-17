@@ -50,7 +50,7 @@ a firewall as it does outside one.
 
 1. Open the app, find the resource, edit it or mark it verified.
 2. Download `resources.json` from the Data tab.
-3. Replace `data/resources.json`, run `npm run check`, commit with what you
+3. Replace `data/resources.json`, run `npm run check` and `npm run search-check`, commit with what you
    confirmed and how.
 
 Every entry has a `src` field, so a diff shows which document or call a fact
@@ -157,6 +157,23 @@ front-end variable would publish it inside the app for anyone to copy.
 - Each question leaves a line in Netlify's function logs (Logs, then Functions,
   then `ask-ai`): which model answered, how long it took and how many tokens it
   used. What was asked and answered is never logged.
+
+**The search box uses the same engine.** It used to need every typed word to
+appear word for word, which found about a quarter of what fits an everyday search
+("groceries", "shelter tonight" and "food for my kids" found almost nothing). Now
+`src/search.js` ranks with `src/shortlist.js`: word stems, everyday and Spanish
+words for each SNIFF need ("behind on rent", "comida", "panales"), the needs each
+resource is filed under, Spanish-capable programs first when the text is in
+Spanish, and programs outside Buncombe after the rest unless a town is named.
+Names, partial names and phone numbers still match exactly. Rows the team does not
+refer to first, and rows kept only to say a program closed, sort last. The Events
+search folds accents, matches plurals ("markets", "storytimes") and ignores filler
+words ("free events for kids" looks for free events).
+
+**Checking it.** `npm run search-check` runs 40 everyday searches against what the
+directory files under each need, through the same code. On 17 Nov 2026: the search
+box finds 99% (it was 25%), Ask AI's shortlist 91%. It fails below 95% or 80%. Run
+it after an import, and add any search someone reports as coming up short.
 
 **Search first.** Gemini does not read all 746 resources for each question. The
 function indexes the directory once when it starts (`src/shortlist.js`), and each
@@ -311,6 +328,7 @@ remove them before sharing outside the team. `point-people.json` exports stamp
 - Community food, medical and financial lists (the WNC Free Food guide's maintainer) and the October 2026 low-cost happenings list, shared 17 Nov 2026 (`scripts/apply-community-guides-2026-11-17.mjs`): 76 new rows and 16 updated. The rest of the food guide by county, free clinics, counseling and dental care, NCCARE360, four more holiday gift programs, and free family outings. Only two rows were confirmed on their own sites; the rest carry the community list as their source, with conflicts in `note`. NC HOPE (closed since 2022) and a Wayne County charity are left out
 - Winter 2026-27 holiday guide, shared 17 Nov 2026 (`scripts/apply-winter-guide-2026-11-17.mjs`): nearly all of its resources were already here, so it adds the season's calendar: holiday closures for schools, libraries, county offices and ART, both school winter breaks, the LIHEAP windows, winter camp sign-up and verified free holiday events, plus notes where it disagrees with the official Code Purple sheet. Left out because no source confirmed them for 2026: APR Friendsgiving (Nov 21), MANNA's pre-Thanksgiving boxes, Haywood Street and 12 Baskets holiday feasts, the Grove Arcade Winter Wonderland, Folk Art Center toy demos, seed swaps and the Black History Month program list
 - Food by day update and Skylar's free food map, 17 Nov 2026 (`scripts/apply-food-schedule-2026-11-17.mjs`): Food by day was still the August workbook's 51 entries, so 29 entries for the October food guide's weekly Buncombe sites were added; the NC 211 food row's phone (MATCH's McDowell number) was corrected; Skylar's map got a row and a link on Food by day and in Ask AI food answers, and her map listings flagged the Blessing Barn as possibly paused, Tranzmission's restarted Saturday pantry and BeLoved's Weaverville pantry location
+- SNIFF tag fixes, 17 Nov 2026 (`scripts/apply-tag-fixes-2026-11-17.mjs`): 22 need tags that rows' own names or descriptions plainly call for, found by a search audit (food providers such as Swannanoa Communities Together, the Haywood Street Welcome Table and BeLoved's street pantries under Food pantry; two dental clinics; two rent programs; four counseling practices)
 - The owner's Google Drive, read 7 Nov 2026 under the Drive merge prompt's rules (metadata first, only family-resource files, no client details; `scripts/apply-drive-merge-2026-11-07.mjs`). The v19 workbook there is the same version this app was built from, and most topic guides predate it, so most of what they name was already here. They added 9 rows (MountainCare adult day, A-B Tech phlebotomy, STEP / More Than a Job NC, Finish Line grants, Trans Lifeline, LGBT National Help Center, National Runaway Safeline, Biltmore Avenue Family Dentistry, Irene Wortham Early Learning Center) and details on 19 others, with every conflict in `note`. Weekend-guide events went in only with a second source: four, checked by web search, and three of those had the venue, time or website wrong in the guide
 - A second Drive pass the same day (`scripts/apply-drive-followup-2026-11-07.mjs`) over the family-resource files the first left as candidates: kinship care benefits, the March 2026 caregiver guide, respite options, a caregiver therapy handout and drop-in movement options. Most of it was already here; it added 6 rows (CMARC care management, Botanical Gardens, Folk Art Center, WNC Farmers Market, The Incredible Years, free nature play) and details on 12, including what relatives raising a child in DSS custody can be paid and which therapists are certified in Child-Parent Psychotherapy
 - Buncombe County Family Resource Directory, Public Edition, event sheets (`scripts/import-public-edition-calendar.cjs`): its curated family and caregiver calendar of 1,354 occurrences (one, Fire Safety for Kids in Fairview, was already in `events.json`, which kept it and gained the library's details), its recurring series, annual leads and monitored calendars. The full library feed's 74 adult-interest programs stay out, as the Public Edition keeps them out of its family calendar

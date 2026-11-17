@@ -84,6 +84,10 @@ export const URGENT_KEYS = Object.keys(URGENT);
 
 const words = (text) => norm(text).split(" ").filter((w) => w.length >= 3 && !STOP.has(w) && !/^\d+$/.test(w));
 const stems = (text) => [...new Set(words(text).map(stem))];
+/* the words of a search worth matching, as stems: filler words ("for",
+   "kids", "help") dropped, so "free events for kids" looks for "free" and
+   "event". The Events tab uses this with norm. */
+export const queryStems = (text) => stems(text);
 
 /* Everyday words for SNIFF questions, so "behind on rent" reaches the
    housing programs even where their write-up never says "behind". Each
@@ -92,14 +96,15 @@ export const NEED_WORDS = [
   [/\b(rent|evict\w*|landlords?|housing|apartments?|deposits?|section 8|homeless\w*|couch surf\w*|motel|place to live)\b/, ["VIII:6a", "VIII:7a"]],
   [/\bshelters?\b/, ["VIII:7a", "VIII:8a"]],
   [/\b(electric\w*|power bill|utilit\w*|heat|heating|gas bill|water bill|lights? (cut|off|shut)|propane|firewood|duke energy)\b/, ["VIII:14a"]],
-  [/\b(food|grocer\w*|hungry|pantr\w*|meals?|snap|food stamps?|ebt)\b/, ["VIII:5a", "VIII:3a"]],
+  [/\b(food(?! stamps?| benefits)|grocer\w*|hungry|pantr\w*|meals?|fridges?|lunch|dinner|breakfast)\b/, ["VIII:5a"]],
+  [/\b(snap|food stamps?|ebt|food benefits)\b/, ["VIII:3a"]],
   [/\b(wic|formula|breast ?feed\w*|lactation|baby food)\b/, ["VIII:4a", "III:4a"]],
   [/\b(diapers?|wipes|pull ?ups)\b/, ["VIII:4a", "VIII:11a"]],
   [/\b(clothes|clothing|coats?|jackets?|shoes|boots|uniforms?)\b/, ["VIII:12a"]],
   [/\b(car seats?|cribs?|strollers?|pack n play|high chairs?|baby gear|bassinets?)\b/, ["VIII:11a"]],
   [/\b(furniture|beds?|mattress\w*|appliances?|household|dishes)\b/, ["VIII:13a"]],
   [/\b(toys?|books?|christmas|holiday gifts?|presents|santa)\b/, ["VIII:10a", "X:12"]],
-  [/\b(cars?|rides?|transport\w*|bus|gas money|gas card|car repairs?)\b/, ["VIII:17a"]],
+  [/\b(cars?(?! seats?)|rides?|transport\w*|bus|gas money|gas card|car repairs?)\b/, ["VIII:17a"]],
   [/\b(cash|tanf|work first|money|bills?|taxes|tax return|benefits)\b/, ["VIII:1a", "X:4"]],
   [/\b(ssi|disabilit\w*)\b/, ["VIII:2a", "X:7"]],
   [/\b(child ?care|day ?care|preschool|pre k|head start|babysit\w*)\b/, ["I:7a", "VIII:9a"]],
@@ -131,7 +136,54 @@ export const NEED_WORDS = [
   [/\b(where to start|don ?t know where|211|referrals?)\b/, ["X:1", "IV:1a"]],
   [SELF_HARM, ["CRISIS:*", "VII:1a", "VII:2a"]],
   [CRISIS, ["CRISIS:*"]],
+  /* the same needs in everyday Spanish (accents are already gone after norm) */
+  [/\b(comidas?|despensas?|alimentos?|hambre|almuerzos?|cenas?|desayunos?|mercadito)\b/, ["VIII:5a"]],
+  [/\b(cupones de alimentos|estampillas)\b/, ["VIII:3a"]],
+  [/\b(renta|alquiler|desalojo\w*|vivienda|apartamentos?|sin hogar)\b/, ["VIII:6a", "VIII:7a"]],
+  [/\b(refugios?|albergues?)\b/, ["VIII:7a", "VIII:8a"]],
+  [/\b(luz|electricidad|calefaccion|recibo de luz|lena)\b/, ["VIII:14a"]],
+  [/\b(panales|toallitas)\b/, ["VIII:4a", "VIII:11a"]],
+  [/\b(leche de formula|lactancia|amamantar)\b/, ["VIII:4a", "III:4a"]],
+  [/\b(ropa|abrigos?|chaquetas?|zapatos|botas)\b/, ["VIII:12a"]],
+  [/\b(asientos? de carro|cunas?|carriolas?|cochecitos?)\b/, ["VIII:11a"]],
+  [/\b(muebles|camas?|colchon\w*)\b/, ["VIII:13a"]],
+  [/\b(juguetes|navidad|regalos)\b/, ["VIII:10a", "X:12"]],
+  [/\b(transporte|autobus|carro|viaje a la cita)\b/, ["VIII:17a"]],
+  [/\b(guarderia|cuidado de ninos|preescolar|kinder)\b/, ["I:7a", "VIII:9a"]],
+  [/\b(inmigracion|inmigrantes?|indocumentad\w*|ciudadania|asilo|papeles)\b/, ["VIII:15a", "V:6a", "X:10"]],
+  [/\b(abogad\w*|custodia|corte|divorcio)\b/, ["VIII:16a", "X:3"]],
+  [/\b(embarazad\w*|embarazo|parto|recien nacid\w*|bebes?)\b/, ["X:2", "VI:3a"]],
+  [/\b(consejeri\w*|terapia|salud mental|ansiedad|depresion|estres)\b/, ["VII:2a", "VII:1a", "II:7a"]],
+  [/\b(dentista|dientes|dental)\b/, ["III:3a"]],
+  [/\b(medicos?|clinicas?|pediatra|enferm\w*|salud)\b/, ["III:1a", "VI:1a"]],
+  [/\b(seguro medico|aseguranza)\b/, ["III:5a", "VI:4a"]],
+  [/\b(trabajos?|empleos?)\b/, ["V:8a", "V:4a"]],
+  [/\b(clases? de ingles|aprender ingles)\b/, ["V:2a"]],
 ];
+
+/* phrases whose first word, alone, would point at another need */
+const PHRASE_HEADS = [
+  [/\bfood (stamps?|benefits)\b/, "food"],
+  [/\bcar seats?\b/, "car"],
+  [/\bhigh chairs?\b/, "high"],
+  [/\bchild support\b/, "support"],
+];
+
+/* text written in Spanish, or asking for Spanish: Spanish-capable programs
+   move up inside each need */
+const SPANISH_TEXT = /\b(spanish|espanol|latin[oax]s?|hispanic|necesito|necesitamos|ayuda|gratis|donde|para mi|mis hijos|familia|comida|renta|por favor)\b/;
+
+/* Programs outside Buncombe rank a little lower when the text names no
+   place, so a family in Asheville sees what is close first; naming a town
+   ("food in Waynesville") lifts that town's programs as before. Road names
+   that carry a town ("Hendersonville Rd") do not count. */
+const ROAD = "(?!\\s*(rd|road|hwy|highway|st|street|ave|avenue|blvd|dr|drive|pike|ln|lane)\\b)";
+const OUTSIDE = new RegExp("\\b(hendersonville|waynesville|canton|clyde|maggie valley|marion|old fort|burnsville|spruce pine|"
+  + "bakersville|sylva|cullowhee|bryson city|franklin|brevard|forest city|rutherfordton|mooresboro|boone|newland|"
+  + "banner elk|creston|marshall|mars hill|hot springs|saluda|flat rock|edneyville|mills river|etowah|cashiers|murphy|"
+  + "cherokee|whittier|charlotte)\\b" + ROAD + "|\\b(haywood|henderson|madison|mcdowell|mitchell|rutherford|jackson|swain|"
+  + "yancey|macon|avery|ashe|watauga|transylvania|polk) county\\b");
+const OUTSIDE_WEIGHT = 0.75;
 
 /* SNIFF keys typed out, as in a pasted SNIFF: "VIII:12a" */
 const KEY_RE = /\b(I|II|III|IV|V|VI|VII|VIII|IX|X):(\d+a?)\b/g;
@@ -173,6 +225,13 @@ export function buildIndex(resources, needs) {
   const keysOf = resources.map((r) => new Set(r.needs));
   const spanish = resources.map((r) => /^[🟢🟡🟠]/u.test(r.spanish || ""));
   const notFirst = resources.map((r) => NOT_FIRST.test(r.detail || ""));
+  /* a program the directory keeps only to say it closed ("CLOSED May 2022") */
+  const closed = resources.map((r) => /\bclosed\b/i.test(r.name || ""));
+  const outside = resources.map((r) => OUTSIDE.test(norm(`${r.name} ${r.address}`)));
+  /* the same program filed under several SNIFF sections has the same name;
+     the shortlist keeps the best-placed one so copies do not take its places */
+  const idOf = new Map(resources.map((r, i) => [r.id, i]));
+  const nameKey = resources.map((r) => norm(String(r.name || "").replace(/\(.*?\)/g, "")));
 
   /* A SNIFF question is raised by a distinctive word of its label (one on
      only one or two labels), or by all of its label's words together, which
@@ -193,11 +252,15 @@ export function buildIndex(resources, needs) {
   const N = resources.length;
   const always = resources.map((r, i) => i).filter((i) => ALWAYS_KEYS.some((k) => keysOf[i].has(k)));
   const where = resources.map((r) => " " + norm(r.address + " " + r.detail) + " ");
-  return function search(text) {
+  /* every resource's score for a text, and what the text raised */
+  function scoreText(text) {
     const flat = " " + norm(text) + " ";
     const places = PLACES.filter((p) => flat.includes(" " + p + " "));
     const placeWords = new Set(places.flatMap((p) => p.split(" ").map(stem)));
-    const q = stems(text).filter((t) => !placeWords.has(t)).slice(0, 400);
+    /* a word that is part of a phrase meaning something else ("food" in
+       "food stamps", "car" in "car seat") does not count on its own */
+    const phraseWords = new Set(PHRASE_HEADS.filter(([re]) => re.test(flat)).map(([, w]) => stem(w)));
+    const q = stems(text).filter((t) => !placeWords.has(t) && !phraseWords.has(t)).slice(0, 400);
 
     /* the SNIFF questions the text raises */
     const spotted = new Set();
@@ -216,19 +279,35 @@ export function buildIndex(resources, needs) {
       const idf = Math.log((N + 1) / hits.size);
       for (const [i, weight] of hits) score[i] += idf * weight;
     }
-    const wantsSpanish = /\b(spanish|espanol|latin[oax]s?|hispanic)\b/.test(flat);
+    const wantsSpanish = SPANISH_TEXT.test(flat);
     const urgent = URGENT_KEYS.filter((k) => spotted.has(k));
     for (let i = 0; i < N; i++) {
       let k = 0;
       for (const key of spotted) if (keysOf[i].has(key)) k++;
-      score[i] += 6 * Math.min(k, 2);
+      score[i] += 10 * Math.min(k, 2);
       score[i] += Math.max(0, ...urgent.map((key) => (keysOf[i].has(key) ? URGENT[key] : 0)));
+    }
+    /* Spanish and a named town reorder what the text matched; they bring in
+       rows of their own only when nothing else matched ("en espanol",
+       "Swannanoa"), or "comida gratis" would list every Spanish program */
+    const matched = score.some((x) => x > 0);
+    for (let i = 0; i < N; i++) {
+      if (matched && !score[i]) continue;
       if (wantsSpanish && spanish[i]) score[i] += 5;
       if (places.some((p) => where[i].includes(" " + p + " "))) score[i] += 4;
+    }
+    for (let i = 0; i < N; i++) {
+      if (!score[i]) continue;
+      if (!places.length && outside[i]) score[i] *= OUTSIDE_WEIGHT;
       /* still listed, so it can be found by name, but after the others */
       if (notFirst[i]) score[i] *= 0.4;
+      if (closed[i]) score[i] *= 0.1;
     }
+    return { score, spotted, q, places };
+  }
 
+  function search(text) {
+    const { score, spotted, q } = scoreText(text);
     const ranked = [...score.keys()].filter((i) => score[i] > 0).sort((a, b) => score[b] - score[a] || a - b);
     /* little to go on: no SNIFF need and hardly a word in common */
     if (!spotted.size && ranked.length < SHORTLIST_MIN) {
@@ -238,16 +317,40 @@ export function buildIndex(resources, needs) {
       return { resources, shortlisted: false, needs: [] };
     }
     /* each need's best first, a turn each, for up to three quarters of the
-       list; then the best of what is left, whatever it matched */
+       list; then the best of what is left, whatever it matched. A copy of a
+       program already chosen (same name) is skipped. */
     const chosen = new Set();
+    const names = new Set();
+    const take = (i) => {
+      if (chosen.has(i) || names.has(nameKey[i])) return;
+      chosen.add(i);
+      names.add(nameKey[i]);
+    };
     const perNeed = [...spotted].map((k) => ranked.filter((i) => keysOf[i].has(k))).filter((l) => l.length);
     const fair = Math.floor(SHORTLIST * 0.75);
     for (let turn = 0; chosen.size < fair && perNeed.some((l) => l.length > turn); turn++) {
-      for (const l of perNeed) if (turn < l.length && chosen.size < fair) chosen.add(l[turn]);
+      for (const l of perNeed) if (turn < l.length && chosen.size < fair) take(l[turn]);
     }
-    for (const i of ranked) { if (chosen.size >= SHORTLIST) break; chosen.add(i); }
+    for (const i of ranked) { if (chosen.size >= SHORTLIST) break; take(i); }
     const top = [...chosen].sort((a, b) => score[b] - score[a] || a - b);
     const list = top.concat(always.filter((i) => !chosen.has(i)));
     return { resources: list.map((i) => resources[i]), shortlisted: true, needs: [...spotted] };
+  }
+
+  /* for the app's own search box: every resource that matches, best first,
+     as a Map of id to score, with no cap and no always-on lines */
+  search.rank = (text) => {
+    const { score, places } = scoreText(text);
+    const out = new Map();
+    for (let i = 0; i < N; i++) if (score[i] > 0) out.set(resources[i].id, score[i]);
+    /* how much each row's word-for-word score is weighted: the same
+       outside-Buncombe, not-first and closed rules the engine used */
+    out.weight = (id) => {
+      const i = idOf.get(id);
+      if (i === undefined) return 1;
+      return (!places.length && outside[i] ? OUTSIDE_WEIGHT : 1) * (notFirst[i] ? 0.4 : 1) * (closed[i] ? 0.1 : 1);
+    };
+    return out;
   };
+  return search;
 }

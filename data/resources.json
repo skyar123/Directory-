@@ -25,7 +25,8 @@
    "Backup routes, 17 Nov 2026 (see scripts/apply-backup-routes-2026-11-17.mjs)",
    "Community food, medical and financial lists and the October 2026 low-cost list, 17 Nov 2026 (see scripts/apply-community-guides-2026-11-17.mjs)",
    "Winter 2026-27 holiday guide cross-check, 17 Nov 2026 (see scripts/apply-winter-guide-2026-11-17.mjs)",
-   "Food by day update, 211 phone fix and Skylar's food map, 17 Nov 2026 (see scripts/apply-food-schedule-2026-11-17.mjs)"
+   "Food by day update, 211 phone fix and Skylar's food map, 17 Nov 2026 (see scripts/apply-food-schedule-2026-11-17.mjs)",
+   "SNIFF tag fixes from a name and description audit, 17 Nov 2026 (see scripts/apply-tag-fixes-2026-11-17.mjs)"
   ],
   "file": "resources.json",
   "note": "One object per resource. `needs` are SNIFF question keys, `src` names where the fact came from. `alt` is an optional backup route, shown as \"If this doesn't work\".",
@@ -4809,10 +4810,14 @@
    "needs": [
     "ESPANOL:*",
     "ESPANOL:personal-bilingue-bili",
+    "VIII:*",
+    "VIII:11a",
+    "VIII:4a",
+    "VIII:5a",
     "X:*",
     "X:10"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; VIII:5a tag added 17 Nov 2026 from the row's own name or description (tag audit); VIII:11a tag added 17 Nov 2026 from the row's own name or description (tag audit); VIII:4a tag added 17 Nov 2026 from the row's own name or description (tag audit)",
    "note": "",
    "new": false
   },
@@ -5171,9 +5176,11 @@
     "ESPANOL:*",
     "ESPANOL:servicios-en-espanol-p",
     "V:*",
-    "V:8a"
+    "V:8a",
+    "VIII:*",
+    "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; VIII:5a tag added 17 Nov 2026 from the row's own name or description (tag audit)",
    "note": "",
    "new": false
   },
@@ -5880,10 +5887,11 @@
     "IV:4a",
     "VIII:*",
     "VIII:12a",
+    "VIII:5a",
     "X:*",
     "X:9"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; town halls from a QAX Facebook group post, 29 Oct 2026; address and phone from GiveOutDay and CauseIQ listings via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Tranzmission official website (tranzmission.org), checked 7 Nov 2026; Skylar Belt's free food map listings, pasted 17 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; town halls from a QAX Facebook group post, 29 Oct 2026; address and phone from GiveOutDay and CauseIQ listings via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Tranzmission official website (tranzmission.org), checked 7 Nov 2026; Skylar Belt's free food map listings, pasted 17 Nov 2026; VIII:5a tag added 17 Nov 2026 from the row's own name or description (tag audit)",
    "note": "",
    "new": false
   },
@@ -6264,10 +6272,12 @@
    "vb": "",
    "sec": "X",
    "needs": [
+    "VIII:*",
+    "VIII:5a",
     "X:*",
     "X:1"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; VIII:5a tag added 17 Nov 2026 from the row's own name or description (tag audit)",
    "note": "",
    "new": false
   },
@@ -7083,9 +7093,11 @@
    "sec": "IV",
    "needs": [
     "IV:*",
-    "IV:6a"
+    "IV:6a",
+    "VIII:*",
+    "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; VIII:5a tag added 17 Nov 2026 from the row's own name or description (tag audit)",
    "note": "",
    "new": false
   },
@@ -7760,10 +7772,11 @@
    "needs": [
     "VIII:*",
     "VIII:3a",
+    "VIII:5a",
     "X:*",
     "X:12"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; VIII:5a tag added 17 Nov 2026 from the row's own name or description (tag audit)",
    "note": "",
    "new": false
   },
@@ -8597,9 +8610,10 @@
     "III:*",
     "III:4a",
     "VIII:*",
-    "VIII:4a"
+    "VIII:4a",
+    "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; pantry sites as given in the WNC Free Food & Supplies guide (Oct 2026), from BeLoved's street pantry PDF",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; pantry sites as given in the WNC Free Food & Supplies guide (Oct 2026), from BeLoved's street pantry PDF; VIII:5a tag added 17 Nov 2026 from the row's own name or description (tag audit)",
    "note": "The October food guide, linking BeLoved's own street pantry list, puts the Weaverville pantry in front of Hardee's on Weaver Blvd, not at 16 N Main St, and the Tunnel Rd pantry in front of Azalea Church past Zaxby's, before exit 55. It also lists Black Mountain (Hwy 9 near the railroad tracks, across from the old Bilo), Candler (Smokey Park Hwy between the Shell and BP) and Swannanoa (2299 US 70). Check the current list before sending a family.",
    "new": false
   },
@@ -8856,9 +8870,11 @@
     "I:*",
     "I:9a",
     "IV:*",
-    "IV:7a"
+    "IV:7a",
+    "VIII:*",
+    "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; phone and Wednesday hours from UMC.org, MANNA's food finder and a Buncombe County sheet via web search, 8 Nov 2026; holiday feast claims from the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026; 2022 feast date from Mountain Xpress via web search, 17 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; phone and Wednesday hours from UMC.org, MANNA's food finder and a Buncombe County sheet via web search, 8 Nov 2026; holiday feast claims from the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026; 2022 feast date from Mountain Xpress via web search, 17 Nov 2026; VIII:5a tag added 17 Nov 2026 from the row's own name or description (tag audit)",
    "note": "The winter guide says Haywood Street (and 12 Baskets) serve free feasts with coats on Black Friday, Nov 27, 10am-1pm, and Dec 25-27, and a Sunday breakfast 8:30-10:30am. None of that was confirmed online: in 2022 Haywood Street's Thanksgiving feast was the Wednesday before. Ask before telling a family.",
    "new": false
   },
@@ -9723,9 +9739,11 @@
    "sec": "VIII",
    "needs": [
     "IV:*",
-    "IV:5a"
+    "IV:5a",
+    "VIII:*",
+    "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; center, services and address from Buncombe County Schools' Estes Elementary pages via web search, 8 Nov 2026; old address not found; Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; center, services and address from Buncombe County Schools' Estes Elementary pages via web search, 8 Nov 2026; old address not found; Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026; VIII:5a tag added 17 Nov 2026 from the row's own name or description (tag audit)",
    "note": "",
    "new": false
   },
@@ -10460,9 +10478,10 @@
     "VIII:*",
     "VIII:12a",
     "VIII:14a",
-    "VIII:1a"
+    "VIII:1a",
+    "VIII:6a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; VIII:6a tag added 17 Nov 2026 from the row's own name or description (tag audit)",
    "note": "",
    "new": false
   },
@@ -10972,9 +10991,10 @@
    "needs": [
     "VIII:*",
     "VIII:1a",
+    "VIII:6a",
     "VIII:7a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; address, phone and services from the Salvation Army's Asheville page and a local assistance guide via web search, 8 Nov 2026; referral stance from Skylar Belt, 13 Nov 2026; backup route from Skylar Belt's referral stance, Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; address, phone and services from the Salvation Army's Asheville page and a local assistance guide via web search, 8 Nov 2026; referral stance from Skylar Belt, 13 Nov 2026; backup route from Skylar Belt's referral stance, Nov 2026; VIII:6a tag added 17 Nov 2026 from the row's own name or description (tag audit)",
    "note": "Skylar does not refer families here first: it asks for a humiliating amount of personal detail and paperwork. Offer other options before this one.",
    "new": false,
    "readFirst": true,
@@ -11026,9 +11046,11 @@
    "sec": "VIII",
    "needs": [
     "ESPANOL:*",
-    "ESPANOL:personal-bilingue-bili"
+    "ESPANOL:personal-bilingue-bili",
+    "VIII:*",
+    "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address from a Pisgah Legal Services page and Helene case management from Direct Relief via web search, 8 Nov 2026; no phone or website found; website, hours and services from the WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; phone and service area from the WNC Financial Support Resources community list (companion to the food guide), shared by Skylar Belt 17 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address from a Pisgah Legal Services page and Helene case management from Direct Relief via web search, 8 Nov 2026; no phone or website found; website, hours and services from the WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; phone and service area from the WNC Financial Support Resources community list (companion to the food guide), shared by Skylar Belt 17 Nov 2026; VIII:5a tag added 17 Nov 2026 from the row's own name or description (tag audit)",
    "note": "",
    "new": false
   },
@@ -11052,9 +11074,10 @@
    "needs": [
     "VIII:*",
     "VIII:12a",
-    "VIII:1a"
+    "VIII:1a",
+    "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address, hours, second number and email from MANNA's food finder, Plentiful and a community resource sheet via web search, 6 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address, hours, second number and email from MANNA's food finder, Plentiful and a community resource sheet via web search, 6 Nov 2026; VIII:5a tag added 17 Nov 2026 from the row's own name or description (tag audit)",
    "note": "",
    "new": false
   },
@@ -12007,10 +12030,11 @@
     "II:8a",
     "III:*",
     "III:1a",
+    "III:3a",
     "VI:*",
     "VI:1a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; III:3a tag added 17 Nov 2026 from the row's own name or description (tag audit)",
    "note": "",
    "new": false
   },
@@ -12135,10 +12159,12 @@
    "vb": "",
    "sec": "VI",
    "needs": [
+    "III:*",
+    "III:3a",
     "VI:*",
     "VI:1a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; cross-reference added 2026-09-10",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; cross-reference added 2026-09-10; III:3a tag added 17 Nov 2026 from the row's own name or description (tag audit)",
    "note": "Since Aug 2026 this same line also books the new Dental on Livingston site at ABCCM, 155 Livingston St, three days a week.",
    "new": false
   },
@@ -12755,10 +12781,12 @@
    "vb": "",
    "sec": "X",
    "needs": [
+    "VII:*",
+    "VII:2a",
     "X:*",
     "X:6"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; practice details from deaf library directories and NCDHHS's Deaf mental health page via web search, 8 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; practice details from deaf library directories and NCDHHS's Deaf mental health page via web search, 8 Nov 2026; VII:2a tag added 17 Nov 2026 from the row's own name or description (tag audit)",
    "note": "",
    "new": false
   },
@@ -12831,9 +12859,10 @@
    "sec": "VII",
    "needs": [
     "VII:*",
+    "VII:2a",
     "VII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; website and address from the practice's own site, phones from the NPI registry and Psychology Today, via web search, 8 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; website and address from the practice's own site, phones from the NPI registry and Psychology Today, via web search, 8 Nov 2026; VII:2a tag added 17 Nov 2026 from the row's own name or description (tag audit)",
    "note": "",
    "new": false
   },
@@ -13356,10 +13385,12 @@
    "vb": "",
    "sec": "X",
    "needs": [
+    "VII:*",
+    "VII:2a",
     "X:*",
     "X:2"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; phones and address from WakeMed's resource page, NPI and Psychology Today listings via web search, 6 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; phones and address from WakeMed's resource page, NPI and Psychology Today listings via web search, 6 Nov 2026; VII:2a tag added 17 Nov 2026 from the row's own name or description (tag audit)",
    "note": "",
    "new": false
   },
@@ -14603,9 +14634,10 @@
    "sec": "VIII",
    "needs": [
     "VIII:*",
+    "VIII:5a",
     "VIII:more-of-what-your-medi"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; VIII:5a tag added 17 Nov 2026 from the row's own name or description (tag audit)",
    "note": "",
    "new": false
   },
@@ -16838,9 +16870,10 @@
    "sec": "VII",
    "needs": [
     "VII:*",
+    "VII:2a",
     "VII:3a"
    ],
-   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details",
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details; VII:2a tag added 17 Nov 2026 from the row's own name or description (tag audit)",
    "note": "",
    "new": true
   },

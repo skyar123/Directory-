@@ -8,7 +8,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "check": "node scripts/check-data.mjs"
+    "check": "node scripts/check-data.mjs",
+    "search-check": "node scripts/search-check.mjs"
   },
   "dependencies": {
     "@netlify/blobs": "^11.1.5",
