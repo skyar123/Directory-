@@ -34,7 +34,7 @@ a firewall as it does outside one.
 
 | File | What it holds |
 |---|---|
-| `data/resources.json` | 744 resources. Each carries `needs` (SNIFF question keys), `sec` (section), and `src` (where the fact came from). |
+| `data/resources.json` | 745 resources. Each carries `needs` (SNIFF question keys), `sec` (section), and `src` (where the fact came from). |
 | `data/sniff.json` | The 13 sections and the 119 SNIFF questions the directory is ordered by. |
 | `data/point-people.json` | 114 named humans, with how fast each one answers. |
 | `data/community-resource-assessment.json` | The 84 rows of the Child First Community Resource Assessment, crosswalked to SNIFF questions. |
@@ -157,7 +157,7 @@ front-end variable would publish it inside the app for anyone to copy.
   then `ask-ai`): which model answered, how long it took and how many tokens it
   used. What was asked and answered is never logged.
 
-**Search first.** Gemini does not read all 744 resources for each question. The
+**Search first.** Gemini does not read all 745 resources for each question. The
 function indexes the directory once when it starts (`src/shortlist.js`), and each
 question sends Gemini only the closest 120 or so:
 - resources that share words with the question,
@@ -292,6 +292,7 @@ remove them before sharing outside the team. `point-people.json` exports stamp
 - OK Computer Buncombe Family Navigator build, shared 17 Nov 2026 (`scripts/apply-okc-build-2026-11-17.mjs`): another tool's 14 Nov 2026 reading of official pages. Dream Center holiday dates, Bounty & Soul's weekly schedule (also in Food by day) and intake details; no verified dates, conflicts kept in `note`
 - Backup routes, 17 Nov 2026 (`scripts/apply-backup-routes-2026-11-17.mjs`): an "If this doesn't work" route on 31 rows, from the OK Computer build's backups where they held up against the directory, and from Skylar's own stance for the Salvation Army and Christmas rows. Wording only; no new contacts
 - Community food, medical and financial lists (the WNC Free Food guide's maintainer) and the October 2026 low-cost happenings list, shared 17 Nov 2026 (`scripts/apply-community-guides-2026-11-17.mjs`): 76 new rows and 16 updated. The rest of the food guide by county, free clinics, counseling and dental care, NCCARE360, four more holiday gift programs, and free family outings. Only two rows were confirmed on their own sites; the rest carry the community list as their source, with conflicts in `note`. NC HOPE (closed since 2022) and a Wayne County charity are left out
+- Winter 2026-27 holiday guide, shared 17 Nov 2026 (`scripts/apply-winter-guide-2026-11-17.mjs`): nearly all of its resources were already here, so it adds the season's calendar: holiday closures for schools, libraries, county offices and ART, both school winter breaks, the LIHEAP windows, winter camp sign-up and verified free holiday events, plus notes where it disagrees with the official Code Purple sheet. Left out because no source confirmed them for 2026: APR Friendsgiving (Nov 21), MANNA's pre-Thanksgiving boxes, Haywood Street and 12 Baskets holiday feasts, the Grove Arcade Winter Wonderland, Folk Art Center toy demos, seed swaps and the Black History Month program list
 - The owner's Google Drive, read 7 Nov 2026 under the Drive merge prompt's rules (metadata first, only family-resource files, no client details; `scripts/apply-drive-merge-2026-11-07.mjs`). The v19 workbook there is the same version this app was built from, and most topic guides predate it, so most of what they name was already here. They added 9 rows (MountainCare adult day, A-B Tech phlebotomy, STEP / More Than a Job NC, Finish Line grants, Trans Lifeline, LGBT National Help Center, National Runaway Safeline, Biltmore Avenue Family Dentistry, Irene Wortham Early Learning Center) and details on 19 others, with every conflict in `note`. Weekend-guide events went in only with a second source: four, checked by web search, and three of those had the venue, time or website wrong in the guide
 - A second Drive pass the same day (`scripts/apply-drive-followup-2026-11-07.mjs`) over the family-resource files the first left as candidates: kinship care benefits, the March 2026 caregiver guide, respite options, a caregiver therapy handout and drop-in movement options. Most of it was already here; it added 6 rows (CMARC care management, Botanical Gardens, Folk Art Center, WNC Farmers Market, The Incredible Years, free nature play) and details on 12, including what relatives raising a child in DSS custody can be paid and which therapists are certified in Child-Parent Psychotherapy
 - Buncombe County Family Resource Directory, Public Edition, event sheets (`scripts/import-public-edition-calendar.cjs`): its curated family and caregiver calendar of 1,354 occurrences (one, Fire Safety for Kids in Fairview, was already in `events.json`, which kept it and gained the library's details), its recurring series, annual leads and monitored calendars. The full library feed's 74 adult-interest programs stay out, as the Public Edition keeps them out of its family calendar

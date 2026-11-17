@@ -155,6 +155,12 @@
    "entries": [
     {
      "date": "Nov 17 2026",
+     "what": "Winter holiday calendar: closures, school breaks, LIHEAP and holiday events",
+     "detail": "From the winter 2026-27 holiday guide: Events now show Thanksgiving, Christmas, New Year's and MLK Day closures (schools, libraries, county offices, ART), both school winter breaks, the two LIHEAP windows, winter break camp sign-up, and free or low-cost holiday events (Black Mountain Holly Jolly, Weaverville Candlelight Stroll, the Big Crafty's free Sunday, Kwanzaa at the YMI, MLK weekend, the Grove Park gingerbread display, Lake Julian lights). 19 repeating calendar listings on Thanksgiving, Christmas and New Year's Day now say to call first. Code Purple keeps the official sheet's numbers, with the guide's in its note.",
+     "source": "scripts/apply-winter-guide-2026-11-17.mjs"
+    },
+    {
+     "date": "Nov 17 2026",
      "what": "Community food, medical and financial lists, and free family outings",
      "detail": "76 new rows and 16 rows updated. Food: the rest of the WNC Free Food guide, by county (Haywood, Henderson, McDowell, Madison, Mitchell, Rutherford, Jackson, Swain, Yancey, Macon and the High Country), plus Asheville's East Asheville Welcome Table and UATE Feed the People. Medical: SVCM NeighborCare, The Free Clinics, Black Mountain Counseling Center, Blue Ridge Free Dental, Dispensary of Hope and more. Money and holidays: NCCARE360, The Arc's Operation Santa, SVCM's Christmas Cheer, Hearts with Hands and USPS Operation Santa. Outings: Hands On! (free with WIC or EBT), Museums for All, free museums and more. Salvation Army rows say Skylar does not refer there first. NC HOPE is left out because it has been closed since 2022.",
      "source": "scripts/apply-community-guides-2026-11-17.mjs"

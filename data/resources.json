@@ -23,11 +23,12 @@
    "Mountain Strong Free Clinic flyers, 16 Nov 2026 (see scripts/apply-mountain-strong-2026-11-16.mjs)",
    "OK Computer Buncombe Family Navigator build, 17 Nov 2026 (see scripts/apply-okc-build-2026-11-17.mjs)",
    "Backup routes, 17 Nov 2026 (see scripts/apply-backup-routes-2026-11-17.mjs)",
-   "Community food, medical and financial lists and the October 2026 low-cost list, 17 Nov 2026 (see scripts/apply-community-guides-2026-11-17.mjs)"
+   "Community food, medical and financial lists and the October 2026 low-cost list, 17 Nov 2026 (see scripts/apply-community-guides-2026-11-17.mjs)",
+   "Winter 2026-27 holiday guide cross-check, 17 Nov 2026 (see scripts/apply-winter-guide-2026-11-17.mjs)"
   ],
   "file": "resources.json",
   "note": "One object per resource. `needs` are SNIFF question keys, `src` names where the fact came from. `alt` is an optional backup route, shown as \"If this doesn't work\".",
-  "count": 744
+  "count": 745
  },
  "sections": [
   {
@@ -1240,8 +1241,8 @@
     "VIII:*",
     "VIII:9a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; fair and deadline as given in the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026",
+   "note": "The winter guide lists a bilingual NC Pre-K and Head Start enrollment fair Feb 19-20, 2027 (10am-2pm) at 222 S French Broad Ave and a Feb 20 priority deadline; neither was confirmed online.",
    "new": false
   },
   {
@@ -3189,7 +3190,7 @@
    "ph": "",
    "em": "",
    "w": "",
-   "d": "Giving Tree of WNC, Foster Pantry, Kaylee's Closet, Buncombe HHS closet. Buncombe County HHS also keeps a Foster Closet of free clothing and items for children in foster care; ask the child's social worker.",
+   "d": "Giving Tree of WNC, Foster Pantry, Kaylee's Closet, Buncombe HHS closet. Buncombe County HHS also keeps a Foster Closet of free clothing and items for children in foster care; ask the child's social worker. Each year Buncombe HHS runs Holiday Wishes: children in foster care and young adults in extended foster care submit wish lists that community members sponsor. Ask the child's social worker; the winter guide gives Nov 10-30, 2026.",
    "a": "",
    "h": "",
    "os": "13.2 Support for Foster, Adoptive, and Kinship Caregivers",
@@ -3201,7 +3202,7 @@
     "VIII:*",
     "VIII:12a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: Asheville NC Kinship Care Benefits (Jul 2026)",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: Asheville NC Kinship Care Benefits (Jul 2026); Holiday Wishes format from past Buncombe County releases via web search, 17 Nov 2026; 2026 dates from the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026",
    "note": "",
    "new": false
   },
@@ -3805,7 +3806,7 @@
    "ph": "828-255-3066",
    "em": "",
    "w": "eblencharities.org",
-   "d": "gas vouchers for medical trips (828-255-3066). At Christmas it runs the Saint Nicholas Project toy store (see that row) and in November a Thanksgiving meal giveaway with Ingles.",
+   "d": "gas vouchers for medical trips (828-255-3066). At Christmas it runs the Saint Nicholas Project toy store (see that row) and in November a Thanksgiving meal giveaway with Ingles. For a utility or rent appointment, send the documents first (the account holder attestation for utility bills, and income proof or a no-income self-attestation) in person or to info@eblencharities.org at least 3 business days ahead.",
    "a": "23 Hamilton St",
    "h": "",
    "os": "PART 15: TRANSPORTATION",
@@ -3820,8 +3821,8 @@
     "VIII:14a",
     "VIII:1a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory; appointment documents, address conflict and holiday closures from the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026",
+   "note": "Some mid-2026 county lists give 52 Westgate Pkwy; Eblen's own 2026 pages use 23 Hamilton St. Call 828-255-3066 before sending anyone. The winter guide says Eblen is closed Dec 23-25 and Dec 30 to Jan 1.",
    "new": false,
    "alt": "ABCCM Crisis Ministry (828-259-5300) or Buncombe DSS emergency assistance (828-250-6330)."
   },
@@ -4004,7 +4005,7 @@
    "ph": "",
    "em": "vitatax.unca@gmail.com",
    "w": "gmail.com",
-   "d": "for households under ~$72,000; sites open Feb 1 - Apr 15. UNC Asheville VITA at Pack Memorial Library Saturdays (vitatax.unca@gmail.com); AARP Tax-Aide at West Asheville Library (Tue 9am-12:30pm), Weaverville Library (Thu 9am-12:30pm), Black Mountain Library.",
+   "d": "for households under ~$72,000; sites open Feb 1 - Apr 15. UNC Asheville VITA at Pack Memorial Library Saturdays (vitatax.unca@gmail.com); AARP Tax-Aide at West Asheville Library (Tue 9am-12:30pm), Weaverville Library (Thu 9am-12:30pm), Black Mountain Library. Pisgah Legal Services' VITA program: 828-210-3404, for families earning $57,000 or less (its own page), with English and Spanish help and drop-off or remote filing. The winter guide lists a free tax, Medicaid and housing clinic Feb 26-27, 2027 at 62A Charlotte St; not confirmed.",
    "a": "",
    "h": "Tue 9am-12:30pm), Weaverville Li",
    "os": "PART 16: MONEY, WORK, BENEFITS, TAXES",
@@ -4016,7 +4017,7 @@
     "X:*",
     "X:4"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Pisgah Legal VITA line and income limit from pisgahlegal.org via web search, 17 Nov 2026; clinic dates from the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026",
    "note": "",
    "new": false
   },
@@ -8728,8 +8729,8 @@
     "VIII:*",
     "VIII:10a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; cut-off hours completed from the detail, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; cut-off hours completed from the detail, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Pisgah View schedule from the county's 2025 market flyer via web search, 17 Nov 2026; cancellation from the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026",
+   "note": "Pisgah View Apartments is a regular stop (2nd and 4th Wednesdays on the county's 2025 flyer). The winter guide says the Nov 25, 2026 Pisgah View market is canceled; not confirmed online, so check the county's market calendar.",
    "new": false
   },
   {
@@ -8856,8 +8857,8 @@
     "IV:*",
     "IV:7a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; phone and Wednesday hours from UMC.org, MANNA's food finder and a Buncombe County sheet via web search, 8 Nov 2026",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; phone and Wednesday hours from UMC.org, MANNA's food finder and a Buncombe County sheet via web search, 8 Nov 2026; holiday feast claims from the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026; 2022 feast date from Mountain Xpress via web search, 17 Nov 2026",
+   "note": "The winter guide says Haywood Street (and 12 Baskets) serve free feasts with coats on Black Friday, Nov 27, 10am-1pm, and Dec 25-27, and a Sunday breakfast 8:30-10:30am. None of that was confirmed online: in 2022 Haywood Street's Thanksgiving feast was the Wednesday before. Ask before telling a family.",
    "new": false
   },
   {
@@ -10273,8 +10274,8 @@
     "VIII:*",
     "VIII:7a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; 2025-26 rules, sites and transit from Buncombe County, the City of Asheville and WLOS via web search, 8 Nov 2026; 2026-27 sites, check-in and status line from the Asheville-Buncombe Continuum of Care flyer for Nov 13-14, 2026, shared by Skylar Belt; 2026-27 sites, rules, routes and contacts from the Asheville-Buncombe Continuum of Care, Code Purple 2026-2027 sheet, shared by Skylar Belt 16 Nov 2026; corrects the coordinator number labelled as the status line on 13 Nov; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; 2025-26 rules, sites and transit from Buncombe County, the City of Asheville and WLOS via web search, 8 Nov 2026; 2026-27 sites, check-in and status line from the Asheville-Buncombe Continuum of Care flyer for Nov 13-14, 2026, shared by Skylar Belt; 2026-27 sites, rules, routes and contacts from the Asheville-Buncombe Continuum of Care, Code Purple 2026-2027 sheet, shared by Skylar Belt 16 Nov 2026; corrects the coordinator number labelled as the status line on 13 Nov; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory; coordinator line from the city's 2025-26 Code Purple page via web search, 17 Nov 2026; guide details from the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026",
+   "note": "The winter guide and the city's 2025-26 Code Purple page give 828-785-4855 for the winter shelter coordinators; the official 2026-27 sheet gives 828-442-7597, which this row keeps. The guide also gives 6pm-7am hours and lists storm overflow at First Presbyterian (20 beds) and Trinity UMC (50 beds); the sheet's 5-8pm entry stands, and the overflow sites are not confirmed.",
    "new": false,
    "alt": "Call 211, or Homeward Bound's AHOPE Day Center, 828-252-8883."
   },
@@ -10662,8 +10663,8 @@
     "VIII:*",
     "VIII:14a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; 2026-27 windows from a grants-tracking blog (unconfirmed), phone line from Buncombe County's Help in an Emergency page, via web search, 8 Nov 2026",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; 2026-27 windows from a grants-tracking blog (unconfirmed), phone line from Buncombe County's Help in an Emergency page, via web search, 8 Nov 2026; season dates from the NC LIHEAP state plan and benefit guides via web search, 17 Nov 2026",
+   "note": "The winter guide gives Saturday Jan 2 for the general window; two benefit guides give Monday Jan 4, 2027, because Jan 1 is a holiday. The state plan confirms Dec 1, 2026 to Mar 31, 2027 overall.",
    "new": false
   },
   {
@@ -10946,8 +10947,8 @@
     "X:*",
     "X:9"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; beds, hours and referral route from Safe Shelter's own site and WLOS via web search, 8 Nov 2026; safe parking claim not confirmed",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; beds, hours and referral route from Safe Shelter's own site and WLOS via web search, 8 Nov 2026; safe parking claim not confirmed; nightly season and walk-in hours as given in the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026",
+   "note": "The winter guide says both sites open every night Nov 1 to Mar 31 regardless of weather, with walk-in resource help Mon-Fri 1-2pm; this row keeps 11am-2pm until the shelter confirms.",
    "new": false
   },
   {
@@ -18476,7 +18477,7 @@
    "ph": "828-669-9404 (Swannanoa Valley Christian Ministry)",
    "em": "",
    "w": "",
-   "d": "Swannanoa Valley Christian Ministry delivers a free load of split firewood in Black Mountain and Swannanoa through spring. Swannanoa Communities Together (2121 US 70) and Budgie's Bakeshop (1808 Pisgah Hwy, Candler) have firewood in winter, and the Asheville Tool Library (16 Smith Mill Rd) sometimes leaves emergency firewood to take. Pisgah National Forest allows free firewood gathering for personal use through December 2026 (Pisgah Ranger District 828-877-3265; Appalachian Ranger District 828-689-9694). Spring Creek Community Center (13075 NC 209 Hwy, Hot Springs) has a woodshed, and ROAR in Marshall gives propane vouchers on Saturdays 10am-4pm (see its row). Grandfather Ranger District (Avery, Burke, Caldwell, McDowell and Watauga): 828-652-2144.",
+   "d": "Swannanoa Valley Christian Ministry delivers a free load of split firewood in Black Mountain and Swannanoa through spring. Swannanoa Communities Together (2121 US 70) and Budgie's Bakeshop (1808 Pisgah Hwy, Candler) have firewood in winter, and the Asheville Tool Library (16 Smith Mill Rd) sometimes leaves emergency firewood to take. Pisgah National Forest allows free firewood gathering for personal use through December 2026 (Pisgah Ranger District 828-877-3265; Appalachian Ranger District 828-689-9694). Spring Creek Community Center (13075 NC 209 Hwy, Hot Springs) has a woodshed, and ROAR in Marshall gives propane vouchers on Saturdays 10am-4pm (see its row). Grandfather Ranger District (Avery, Burke, Caldwell, McDowell and Watauga): 828-652-2144. Healing Heat Firewood Bank gives kiln-dried firewood in half-cord bags and bulk loads through local church partners (the winter guide gives no contact).",
    "a": "",
    "h": "",
    "os": "Community food guide (Oct 2026)",
@@ -18488,7 +18489,7 @@
     "VIII:*",
     "VIII:14a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; Spring Creek, ROAR propane and Grandfather Ranger District from the WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; Spring Creek, ROAR propane and Grandfather Ranger District from the WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; Healing Heat from the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026",
    "note": "",
    "new": true
   },
@@ -18573,10 +18574,10 @@
    "pp": "",
    "sp": "⚪ Not listed - ask",
    "spd": "Not stated in the source. Ask when you call.",
-   "ph": "",
-   "em": "",
+   "ph": "828-243-7953",
+   "em": "roarhollerhub@gmail.com",
    "w": "ruralorganizing.wordpress.com",
-   "d": "Free hot food, local vegetables, canned goods, clothes, medical and hygiene supplies, and firewood and propane vouchers.",
+   "d": "Free hot food, local vegetables, canned goods, clothes, medical and hygiene supplies, and firewood and propane vouchers. ROAR (Rural Organizing and Resilience) also delivers firewood, propane tanks, camp stoves and heaters in North Buncombe and Madison County, with no paperwork or status questions.",
    "a": "798 Walnut Creek Rd, Marshall",
    "h": "Saturdays 10am-4pm",
    "os": "Community food guide (Oct 2026)",
@@ -18588,7 +18589,7 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; phone, email and deliveries from the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026",
    "note": "",
    "new": true
   },
@@ -20906,6 +20907,32 @@
     "X:5"
    ],
    "src": "Low-Cost & Free Things to do in the Asheville Area, October 2026 (updated 7 Oct 2026, facebook.com/AVLAreaHappenings), shared by Skylar Belt 17 Nov 2026",
+   "note": "",
+   "new": true
+  },
+  {
+   "id": "discount-grocery-outlets",
+   "n": "Discount and salvage grocery stores (Buncombe)",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "",
+   "em": "",
+   "w": "",
+   "d": "For families just over the SNAP limit: discount and salvage grocers that stretch a food budget. Uplifting Deals, 198 Weaverville Rd; Overstock Outlet, 1442 Smokey Park Hwy, Candler; Sav-Mor, 891 Patton Ave and 842 Merrimon Ave; Hopey & Co., 800 Fairview Rd #111 and Black Mountain; Grocery Outlet, 121 New Leicester Hwy and 1380 Tunnel Rd. These are stores, not free food.",
+   "a": "Several sites, listed in the description",
+   "h": "",
+   "os": "Winter holiday guide (Nov 2026)",
+   "t": "",
+   "lv": "",
+   "vb": "",
+   "sec": "VIII",
+   "needs": [
+    "VIII:*",
+    "VIII:3a",
+    "VIII:5a"
+   ],
+   "src": "Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026",
    "note": "",
    "new": true
   }
