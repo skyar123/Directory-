@@ -155,6 +155,12 @@
    "entries": [
     {
      "date": "Nov 17 2026",
+     "what": "Food by day caught up with the October food guide, and Skylar's food map",
+     "detail": "Food by day had only the August workbook's 51 entries; 29 more from the October guide's weekly Buncombe sites are now on their days (Emma UMC, Bethel SDA, Big Ivy, Garren Creek, The Whale, Grace Covenant, East Asheville Welcome Table, the Grant Center fridge and more), which also feeds the Food today button and Ask AI. The NC 211 food row no longer shows MATCH's McDowell number. New row: Skylar's free food map (94 spots). From the map: the Blessing Barn may be paused, Tranzmission's pantry restarted on Saturdays, and BeLoved's Weaverville pantry location is in question.",
+     "source": "scripts/apply-food-schedule-2026-11-17.mjs"
+    },
+    {
+     "date": "Nov 17 2026",
      "what": "Winter holiday calendar: closures, school breaks, LIHEAP and holiday events",
      "detail": "From the winter 2026-27 holiday guide: Events now show Thanksgiving, Christmas, New Year's and MLK Day closures (schools, libraries, county offices, ART), both school winter breaks, the two LIHEAP windows, winter break camp sign-up, and free or low-cost holiday events (Black Mountain Holly Jolly, Weaverville Candlelight Stroll, the Big Crafty's free Sunday, Kwanzaa at the YMI, MLK weekend, the Grove Park gingerbread display, Lake Julian lights). 19 repeating calendar listings on Thanksgiving, Christmas and New Year's Day now say to call first. Code Purple keeps the official sheet's numbers, with the guide's in its note.",
      "source": "scripts/apply-winter-guide-2026-11-17.mjs"

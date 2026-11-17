@@ -426,7 +426,7 @@ export default function App() {
       {view === "ask" && (
         <AskPanel key={ask.n} initialText={ask.text} resources={resources} needBy={NEEDBY}
           events={allEvents} eventsLoading={!cal} copyText={copyText} onClose={() => setView("find")}
-          onShowNeed={showNeed}
+          onShowNeed={showNeed} onFoodDay={() => goNeed({ food: true })}
           renderResource={(r) => (
             <ResourceCard r={r} open={openId === r.id}
               onToggle={() => setOpenId(openId === r.id ? "" : r.id)}
@@ -559,6 +559,14 @@ export default function App() {
             Most of these have never been verified, and pantry hours move. Call before you send
             anyone. {FOOD.meta.src}
           </p>
+          {resById.get("wnc-free-food-map") && (
+            <p>
+              <a className="act link" href={"https://" + resById.get("wnc-free-food-map").web.replace(/^https?:\/\//, "")}
+                target="_blank" rel="noreferrer">
+                <Icon name="pin" size={14} />Skylar's free food map: every spot on one map
+              </a>
+            </p>
+          )}
           <div className="filters">
             {FOOD.days.map((d) => (
               <Chip key={d.day} bg="#DDEFC4" fg="#55731F" active={foodDay === d.day}

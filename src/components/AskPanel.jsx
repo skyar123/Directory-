@@ -23,7 +23,7 @@ const listOf = (items) => (items.length < 2 ? items.join("")
 
 export default function AskPanel({
   initialText, resources, needBy, events, eventsLoading,
-  renderResource, renderEvent, copyText, onClose, onShowNeed,
+  renderResource, renderEvent, copyText, onClose, onShowNeed, onFoodDay,
 }) {
   const [text, setText] = useState(initialText || "");
   const [ctx, setCtx] = useState(NO_CONTEXT);
@@ -115,6 +115,22 @@ export default function AskPanel({
   const evPicks = result ? result.events.filter((x) => evById.has(x.id)) : [];
   const removed = (result && result.removed) || [];
 
+  /* Ask AI shows its closest picks, a dozen or so; a need like food has a
+     hundred entries. Each need the answer names gets a way to the whole list,
+     so a broad need never stops at the sample. */
+  const needCounts = useMemo(() => {
+    const m = new Map();
+    for (const r of resources) for (const k of r.needs) m.set(k, (m.get(k) || 0) + 1);
+    return m;
+  }, [resources]);
+  const answerNeeds = result
+    ? [...new Set(result.needs.map((n) => n.key).concat(picks.map((p) => p.need)))].filter((k) => k && needBy[k])
+    : [];
+  const moreNeeds = answerNeeds.filter((k) => (needCounts.get(k) || 0) > picks.filter((p) => p.need === k).length);
+  const aboutFood = answerNeeds.includes("VIII:5a");
+  const foodMap = byId.get("wnc-free-food-map");
+  const foodMapUrl = foodMap && foodMap.web ? (foodMap.web.startsWith("http") ? foodMap.web : "https://" + foodMap.web) : "";
+
   return (
     <section className="pane ask">
       <div className="ask-head">
@@ -201,6 +217,25 @@ export default function AskPanel({
               </div>
             ))}
           </div>
+
+          {(!!(onShowNeed && moreNeeds.length) || aboutFood) && (
+            <div className="ask-more">
+              <p><strong>These are Ask AI's closest picks, not the whole list.</strong> See everything the directory has:</p>
+              <div className="row-btns">
+                {onShowNeed && moreNeeds.map((k) => (
+                  <button key={k} className="btn" onClick={() => onShowNeed(k)}>
+                    All {needCounts.get(k)}: {needLabel(k)} <span aria-hidden="true">›</span>
+                  </button>
+                ))}
+                {aboutFood && onFoodDay && (
+                  <button className="btn" onClick={onFoodDay}>Food by day: what is open each day <span aria-hidden="true">›</span></button>
+                )}
+                {aboutFood && foodMapUrl && (
+                  <a className="btn" href={foodMapUrl} target="_blank" rel="noreferrer">Free food map <span aria-hidden="true">›</span></a>
+                )}
+              </div>
+            </div>
+          )}
 
           {!!evPicks.length && (
             <>

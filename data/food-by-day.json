@@ -2,7 +2,7 @@
  "meta": {
   "file": "food-by-day.json",
   "note": "Weekly pantry and free-meal schedule. A site appears on every day it serves. Most rows are unverified: call before sending a family.",
-  "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, Food - By Day tab"
+  "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, Food - By Day tab; weekly Buncombe sites from the October 2026 WNC Free Food guide added 17 Nov 2026 (scripts/apply-food-schedule-2026-11-17.mjs)"
  },
  "days": [
   {
@@ -49,6 +49,20 @@
      "goodToKnow": "Free; check bountyandsoul.org or 828-585-7835 for weather changes",
      "lv": "",
      "vb": ""
+    },
+    {
+     "place": "Emma United Methodist food pantry",
+     "when": "3-5pm (55 Adams Hill Rd)",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Grant Center free fridge",
+     "when": "9am-9pm (285 Livingston St)",
+     "goodToKnow": "Fridge",
+     "lv": "",
+     "vb": ""
     }
    ]
   },
@@ -79,7 +93,7 @@
     {
      "place": "Blessing Barn",
      "when": "10am-2pm (2492 US-70, Swannanoa)",
-     "goodToKnow": "",
+     "goodToKnow": "May be paused or closed (Skylar's food map); the Blessing Bus is its mobile successor. Confirm first",
      "lv": "",
      "vb": ""
     },
@@ -110,6 +124,55 @@
      "goodToKnow": "Free; check bountyandsoul.org or 828-585-7835 for weather changes",
      "lv": "",
      "vb": ""
+    },
+    {
+     "place": "Bethel Seventh-day Adventist food pantry",
+     "when": "10am-1pm (238 S French Broad Ave)",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Big Ivy Community Club pantry",
+     "when": "1-6pm, hot meal at 1pm (540 Dillingham Rd, Barnardsville)",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Weaverville First Baptist food and supply pantry",
+     "when": "10am-2pm (63 N Main St, Weaverville)",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Garren Creek free food and supply store",
+     "when": "4:30-6:30pm (1198 Garren Creek Rd, Fairview)",
+     "goodToKnow": "Evening",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "The Whale free groceries",
+     "when": "4:30pm until gone (507 Haywood Rd #10)",
+     "goodToKnow": "May post photos online",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "MANNA distribution, Leicester",
+     "when": "3rd Tuesday only, 2:30-3:30pm (Leicester Community Center, 1561 Alexander Rd)",
+     "goodToKnow": "Monthly",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Grant Center free fridge",
+     "when": "9am-9pm (285 Livingston St)",
+     "goodToKnow": "Fridge",
+     "lv": "",
+     "vb": ""
     }
    ]
   },
@@ -119,7 +182,7 @@
     {
      "place": "12 Baskets",
      "when": "11am-1pm",
-     "goodToKnow": "",
+     "goodToKnow": "The October guide and Skylar's food map list lunch Mon, Tue, Thu and Fri only; confirm Wednesday",
      "lv": "",
      "vb": ""
     },
@@ -140,7 +203,7 @@
     {
      "place": "Salvation Army",
      "when": "1:30-3:30pm (204 Haywood St; every 30 days)",
-     "goodToKnow": "",
+     "goodToKnow": "Not a first referral (asks for a lot of personal detail)",
      "lv": "",
      "vb": ""
     },
@@ -175,7 +238,7 @@
     {
      "place": "Feed the People free dinner",
      "when": "5:30-7:30pm (corner of Oakwood St and Haywood Rd; also free clothing, harm reduction kits, first aid, menstrual products)",
-     "goodToKnow": "Evening",
+     "goodToKnow": "Evening; The October 2026 food guide gives a new time, 6-7:30pm",
      "lv": "",
      "vb": ""
     },
@@ -190,6 +253,41 @@
      "place": "Bounty & Soul market, Beacon Community Center",
      "when": "3:30-5:30pm (216 Whitson Ave, Swannanoa)",
      "goodToKnow": "Free; check bountyandsoul.org or 828-585-7835 for weather changes",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Big Ivy Community Club pantry",
+     "when": "11am-2pm (540 Dillingham Rd, Barnardsville)",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Black Mountain Open Table meals",
+     "when": "11:30am-1pm (UU Congregation, 500 Montreat Rd; First UMC, 101 Church St)",
+     "goodToKnow": "No requirements",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Blessing Bus",
+     "when": "1st and 3rd Wednesdays (Ingles, 2299 US 70, Swannanoa)",
+     "goodToKnow": "Monthly",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Free pizza",
+     "when": "6:30-9pm (60 Craggy Ave)",
+     "goodToKnow": "Evening, vegan option",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Grant Center free fridge",
+     "when": "9am-9pm (285 Livingston St)",
+     "goodToKnow": "Fridge",
      "lv": "",
      "vb": ""
     }
@@ -229,7 +327,7 @@
     {
      "place": "Blessing Barn",
      "when": "10am-2pm",
-     "goodToKnow": "",
+     "goodToKnow": "May be paused or closed (Skylar's food map); the Blessing Bus is its mobile successor. Confirm first",
      "lv": "",
      "vb": ""
     },
@@ -251,6 +349,62 @@
      "place": "Bounty & Soul Bi-Lo drive-thru market",
      "when": "3:30-5:30pm (205 NC-9, Black Mountain)",
      "goodToKnow": "Free; check bountyandsoul.org or 828-585-7835 for weather changes",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Covenant Community Church SNAP Gap pantry",
+     "when": "9am (11 Rocket Dr)",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Big Ivy Community Club pantry",
+     "when": "9am-12pm (540 Dillingham Rd, Barnardsville)",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Grace Covenant free food",
+     "when": "11am-1pm (789 Merrimon Ave; confirm)",
+     "goodToKnow": "No ID",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Lunch at the Crossroads",
+     "when": "12pm (First Baptist, 5 Oak St)",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Zephyr Hills Free Will Baptist pantry",
+     "when": "12-2pm (283 Shelburne Rd)",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "A-B Tech student food pantry",
+     "when": "1-5pm (340 Victoria Rd)",
+     "goodToKnow": "A-B Tech students",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "East Asheville Welcome Table",
+     "when": "5-6:15pm (Groce UMC, 954 Tunnel Rd)",
+     "goodToKnow": "Evening",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Grant Center free fridge",
+     "when": "9am-9pm (285 Livingston St)",
+     "goodToKnow": "Fridge",
      "lv": "",
      "vb": ""
     }
@@ -291,6 +445,27 @@
      "place": "Bounty & Soul market, Grant Southside Community Center",
      "when": "1:30-3pm (285 Livingston St)",
      "goodToKnow": "Free; check bountyandsoul.org or 828-585-7835 for weather changes",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Weaverville First Baptist food and supply pantry",
+     "when": "10am-2pm (63 N Main St, Weaverville)",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "YWAM free hot meal",
+     "when": "12pm (corner of Aston St and Lexington Ave)",
+     "goodToKnow": "",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Grant Center free fridge",
+     "when": "9am-8pm (285 Livingston St)",
+     "goodToKnow": "Fridge",
      "lv": "",
      "vb": ""
     }
@@ -347,6 +522,27 @@
      "goodToKnow": "Free; check bountyandsoul.org or 828-585-7835 for weather changes",
      "lv": "",
      "vb": ""
+    },
+    {
+     "place": "Budgie's Bakeshop free market",
+     "when": "1st Saturday only, 12-4pm (1808 Pisgah Hwy, Candler)",
+     "goodToKnow": "Monthly",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Streetside community potluck",
+     "when": "Aston Park, 300 Hilliard Ave",
+     "goodToKnow": "Bring what you can, take what you need",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Grant Center free fridge",
+     "when": "10am-6pm (285 Livingston St)",
+     "goodToKnow": "Fridge",
+     "lv": "",
+     "vb": ""
     }
    ]
   },
@@ -394,6 +590,13 @@
      "goodToKnow": "Spanish-leading, No ID, Groceries + prepared meals + kids supplies",
      "lv": "2026-08-01",
      "vb": "SB"
+    },
+    {
+     "place": "Streetside community potluck",
+     "when": "Aston Park, 300 Hilliard Ave",
+     "goodToKnow": "Bring what you can, take what you need",
+     "lv": "",
+     "vb": ""
     }
    ]
   }
