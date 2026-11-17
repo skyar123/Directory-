@@ -20,11 +20,12 @@
    "Flyers shared 16 Nov 2026 (see scripts/apply-flyers-2026-11-16.mjs)",
    "Holiday sign-up update, 16 Nov 2026 (see scripts/apply-holiday-signup-2026-11-16.mjs)",
    "Facebook holiday sweep, 16 Nov 2026 (see scripts/apply-fb-holiday-sweep-2026-11-16.mjs)",
-   "Mountain Strong Free Clinic flyers, 16 Nov 2026 (see scripts/apply-mountain-strong-2026-11-16.mjs)"
+   "Mountain Strong Free Clinic flyers, 16 Nov 2026 (see scripts/apply-mountain-strong-2026-11-16.mjs)",
+   "OK Computer Buncombe Family Navigator build, 17 Nov 2026 (see scripts/apply-okc-build-2026-11-17.mjs)"
   ],
   "file": "resources.json",
   "note": "One object per resource. `needs` are SNIFF question keys, `src` names where the fact came from.",
-  "count": 667
+  "count": 668
  },
  "sections": [
   {
@@ -1128,8 +1129,8 @@
     "VII:*",
     "VII:4a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; openings from AVL Kids and Asheville Family Activities posts, 29 Oct 2026, Facebook deep scrape, 6 Nov 2026; BPFC main line and website from Asheville Chamber and directory listings, eligibility from a 2020 BPFC description, via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
-   "note": "Older flyers and search results conflict on days, sites, eligibility and breaks. Confirm the current schedule.",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; openings from AVL Kids and Asheville Family Activities posts, 29 Oct 2026, Facebook deep scrape, 6 Nov 2026; BPFC main line and website from Asheville Chamber and directory listings, eligibility from a 2020 BPFC description, via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; registration rule and contacts from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)",
+   "note": "Older flyers and search results conflict on days, sites, eligibility and breaks. Confirm the current schedule. The program page now says registration is required (not drop-in), groups run during the school year only, caregivers stay, one adult per child. To register: ages 3 months to 3 years, grace.ragaller@acsgmail.net; ages 3 to 5, marna.holland@acsgmail.net.",
    "new": false
   },
   {
@@ -1835,7 +1836,7 @@
    "pp": "",
    "sp": "⚪ Not listed - ask",
    "spd": "Not stated in the source. Ask when you call.",
-   "ph": "828-251-6091",
+   "ph": "828-250-3400 / 828-251-6091",
    "em": "Gillan.Gallagher-Zapherson@dhhs.nc.gov",
    "w": "ncdhhs.gov/divisions/child-and-family-well-being/north-carolina-infant-toddler-program-nc-itp",
    "d": "early intervention referral for hearing loss (828-251-6091).",
@@ -1856,8 +1857,8 @@
     "X:*",
     "X:6"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; state directory phone from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)",
+   "note": "Two numbers: the state CDSA directory lists 828-250-3400; local guides (BPFC, ECAC) list 828-251-6091. Try 828-250-3400 first. Anyone can make a referral call.",
    "new": false
   },
   {
@@ -3623,7 +3624,7 @@
    "ph": "828-253-0406 / 1-800-489-6144",
    "em": "info@pisgahlegal.org",
    "w": "pisgahlegal.org",
-   "d": "828-253-0406 / 1-800-489-6144 (crisis line 800-489-6144). 62 Charlotte St, Asheville (some materials list 89 Montford Ave). Free civil legal aid for 18 WNC counties: eviction defense and housing, 50B DVPOs, family law/custody for survivors, benefits appeals, ACA/Medicaid enrollment (NCMedHelp), elder law, consumer, children's law, immigration (Justice for All Project), Helene/FEMA appeals and contractor fraud. 300+ pro bono attorneys. Offices in Asheville, Brevard, Burnsville, Cashiers, Franklin, Hendersonville, Highlands, Marshall, Newland, Rutherfordton, Spruce Pine, Waynesville. Service stacking: PLS is a Working Wheels referral partner. Health care access (6 Nov 2026 NFP partner meeting): free legal help with eligible health care access and coverage problems from Shoshana Barton, 828-210-3786; free Marketplace enrollment help by appointment at 828-210-3404. See the separate health access entry. Apply online at pisgahlegal.org/free-legal-assistance or call during office hours; tell the receptionist about a court date or if the person is homebound. Free for low-income households. Does not take criminal, personal injury or divorce cases, and takes custody cases only for domestic violence survivors and grandparents raising grandchildren.",
+   "d": "828-253-0406 / 1-800-489-6144 (crisis line 800-489-6144). 62 Charlotte St, Asheville (some materials list 89 Montford Ave). Free civil legal aid for 18 WNC counties: eviction defense and housing, 50B DVPOs, family law/custody for survivors, benefits appeals, ACA/Medicaid enrollment (NCMedHelp), elder law, consumer, children's law, immigration (Justice for All Project), Helene/FEMA appeals and contractor fraud. 300+ pro bono attorneys. Offices in Asheville, Brevard, Burnsville, Cashiers, Franklin, Hendersonville, Highlands, Marshall, Newland, Rutherfordton, Spruce Pine, Waynesville. Service stacking: PLS is a Working Wheels referral partner. Health care access (6 Nov 2026 NFP partner meeting): free legal help with eligible health care access and coverage problems from Shoshana Barton, 828-210-3786; free Marketplace enrollment help by appointment at 828-210-3404. See the separate health access entry. Apply online at pisgahlegal.org/free-legal-assistance or call during office hours; tell the receptionist about a court date or if the person is homebound. Free for low-income households. Does not take criminal, personal injury or divorce cases, and takes custody cases only for domestic violence survivors and grandparents raising grandchildren. After applying, Pisgah tries to reach people three times within 7 to 10 days and may call from an unknown or private number; call back if nothing comes within 10 days. Say so if homebound or facing an urgent court date.",
    "a": "62 Charlotte St",
    "h": "Mon-Fri 8:30am-5pm",
    "os": "PART 14: LEGAL",
@@ -3643,7 +3644,7 @@
     "X:*",
     "X:3"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; health access contacts from Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes); hours, intake and eligibility from Pisgah Legal's 2025 legal aid brochure via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; health access contacts from Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes); hours, intake and eligibility from Pisgah Legal's 2025 legal aid brochure via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; callback process from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)",
    "note": "",
    "new": false
   },
@@ -3852,7 +3853,7 @@
    "ph": "828-250-6750",
    "em": "",
    "w": "buncombenc.gov/605/Transportation",
-   "d": "828-250-6750 (Option 5 for eligibility). ADA paratransit, demand-response county rides Mon-Sat 5:30am-7:30pm, Medicaid transport, RIDE vouchers for elderly/disabled (books of 10 at 25% of rate), Senior Bus Pass.",
+   "d": "828-250-6750 (Option 5 for eligibility). ADA paratransit, demand-response county rides Mon-Sat 5:30am-7:30pm, Medicaid transport, RIDE vouchers for elderly/disabled (books of 10 at 25% of rate), Senior Bus Pass. Reservations: option 4, Mon-Fri 8am-3pm. Relay 711 for TTY.",
    "a": "",
    "h": "Rides Mon-Sat 5:30am-7:30pm; eligibility line (Option 5) Mon-Fri 8am-5pm",
    "os": "PART 15: TRANSPORTATION",
@@ -3864,7 +3865,7 @@
     "VIII:*",
     "VIII:17a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; phone, Option 5 hours and services from Buncombe County's transportation pages via web search, 8 Nov 2026; \"Toys or books\" need tag removed",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; phone, Option 5 hours and services from Buncombe County's transportation pages via web search, 8 Nov 2026; \"Toys or books\" need tag removed; reservation line and hours from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)",
    "note": "",
    "new": false
   },
@@ -3902,7 +3903,7 @@
    "ph": "828-835-2420 / 828-633-6888",
    "em": "info@workingwheelswnc.org",
    "w": "workingwheelswnc.org",
-   "d": "refurbished reliable car (CONFLICT: this guide says ~$610, an Aug 2026 check of the programme says $628 - ask for today's price); repair program, participant pays 10% (this guide says up to $1,200 total repair, the Aug 2026 check says the participant share is capped at $100); Senior 60+ repair program (Gillian Bee, 828-835-2420; $100 = 10% of repair). REFERRAL ONLY: you cannot self-refer. Partner agencies: Helpmate, Pisgah Legal, YWCA, OpenDoors of Asheville, Asheville Housing Authority FSS, YMI Cultural Center, Buncombe Re-Entry Council. Requires job, valid NC license, no other household vehicle. 76 Weaverville Rd; 828-633-6888 ext 8; info@workingwheelswnc.org. Strategy: enroll in Helpmate or FSS case management first; the car comes as a milestone inside that plan.",
+   "d": "refurbished reliable car (CONFLICT: this guide says ~$610, an Aug 2026 check of the programme says $628 - ask for today's price); repair program, participant pays 10% (this guide says up to $1,200 total repair, the Aug 2026 check says the participant share is capped at $100); Senior 60+ repair program (Gillian Bee, 828-835-2420; $100 = 10% of repair). REFERRAL ONLY: you cannot self-refer. Partner agencies: Helpmate, Pisgah Legal, YWCA, OpenDoors of Asheville, Asheville Housing Authority FSS, YMI Cultural Center, Buncombe Re-Entry Council. Requires job, valid NC license, no other household vehicle. 76 Weaverville Rd; 828-633-6888 ext 8; info@workingwheelswnc.org. Strategy: enroll in Helpmate or FSS case management first; the car comes as a milestone inside that plan. Car purchase needs at least three months in an eligible partner program and a case manager's referral, plus a valid NC license, proof of work and the ability to pay $628. Repairs also need a partner referral. Families cannot apply on their own, and Working Wheels cannot connect them to a partner.",
    "a": "76 Weaverville Rd",
    "h": "",
    "os": "PART 15: TRANSPORTATION",
@@ -3921,7 +3922,7 @@
     "VIII:17a",
     "VIII:8a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Working Wheels official Vehicle Purchase Program page (workingwheelswnc.org/vehicle-purchase-program), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Working Wheels official Vehicle Purchase Program page (workingwheelswnc.org/vehicle-purchase-program), checked 7 Nov 2026; eligibility rules from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)",
    "note": "",
    "new": false
   },
@@ -6829,8 +6830,8 @@
     "III:*",
     "III:4a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; phone and website copied from the Bounty & Soul row",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; phone and website copied from the Bounty & Soul row; UNETE address on Bounty & Soul's schedule from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)",
+   "note": "Address conflict: Bounty & Soul's market schedule (checked 14 Nov 2026 by another tool) lists UNETE at 871 Riverside Dr, Asheville, Tuesdays 3:30-5pm; this row and the food schedule say 55 Adams Hill Rd. Confirm before sending a family.",
    "new": false
   },
   {
@@ -7524,7 +7525,7 @@
    "ph": "828-259-5300 (ABCCM) / 828-255-3066 (Eblen)",
    "em": "",
    "w": "signup.com/mobileweb/2.0/vspot.html?activitykey=3603962089",
-   "d": "Christmas gifts for children, 2026. Start here, in this order: 1) EBLEN SAINT NICHOLAS PROJECT, sign up now. Free in-person toy shop for children birth to 18, open the 5 days before Christmas. Online sign-up opened November 16 and needs only a name, email and each child's age: signup.com/mobileweb/2.0/vspot.html?activitykey=3603962089 (see the Eblen Saint Nicholas row). Slots fill fast. 2) ABCCM CHRISTMAS ANGEL. Parents apply online at act.abccm.org/page/103314/survey/1 or at an ABCCM Crisis Ministry (828-259-5300) and make a wish list for each child; gifts are picked up at the Christmas Angel Shop (see the ABCCM Christmas Angel row). 3) WNC TOYS FOR TOTS. Families sign up through one local partner program, not with Toys for Tots itself (see that row). 4) Christmas Blessings Event, Saturday November 21, 10am-2pm, Maple Ridge Baptist, 133 Medford Branch Rd, Candler: free toys, clothing and food, everyone welcome. THANKSGIVING: Eblen's turkey giveaway is Friday, November 20, with advance sign-up (828-255-3066). NOT A FIRST REFERRAL: the Salvation Army Angel Tree asks for photo ID, birth certificates or custody papers and proof of income, and turns away families who asked anyone else for Christmas help. NO PAPERWORK NEEDED: the Christmas Blessings Event (Nov 21), Radiant Church's Thanksgiving dinner (Nov 26) and Horse Shoe Community Church's lunch (Nov 20) state no documents at all, which matters for families who have lost birth certificates. FULL: Eblen's Thanksgiving giveaway was reported fully registered on November 16, and most Swannanoa Thanksgiving boxes (Ingles drive, Meadowbrook FWB Church) are spoken for; NC 211 is the fallback.",
+   "d": "Christmas gifts for children, 2026. Start here, in this order: 1) EBLEN SAINT NICHOLAS PROJECT, sign up now. Free in-person toy shop for children birth to 18, open the 5 days before Christmas. Online sign-up opened November 16 and needs only a name, email and each child's age: signup.com/mobileweb/2.0/vspot.html?activitykey=3603962089 (see the Eblen Saint Nicholas row). Slots fill fast. 2) ABCCM CHRISTMAS ANGEL. Parents apply online at act.abccm.org/page/103314/survey/1 or at an ABCCM Crisis Ministry (828-259-5300) and make a wish list for each child; gifts are picked up at the Christmas Angel Shop (see the ABCCM Christmas Angel row). 3) WNC TOYS FOR TOTS. Families sign up through one local partner program, not with Toys for Tots itself (see that row). 4) Christmas Blessings Event, Saturday November 21, 10am-2pm, Maple Ridge Baptist, 133 Medford Branch Rd, Candler: free toys, clothing and food, everyone welcome. THANKSGIVING: Eblen's turkey giveaway is Friday, November 20, with advance sign-up (828-255-3066). NOT A FIRST REFERRAL: the Salvation Army Angel Tree asks for photo ID, birth certificates or custody papers and proof of income, and turns away families who asked anyone else for Christmas help. NO PAPERWORK NEEDED: the Christmas Blessings Event (Nov 21), Radiant Church's Thanksgiving dinner (Nov 26) and Horse Shoe Community Church's lunch (Nov 20) state no documents at all, which matters for families who have lost birth certificates. FULL: Eblen's Thanksgiving giveaway was reported fully registered on November 16, and most Swannanoa Thanksgiving boxes (Ingles drive, Meadowbrook FWB Church) are spoken for; NC 211 is the fallback. ALSO: Asheville Dream Center's Dream Christmas Toy Giveaway is December 12 and its Thanksgiving Outreach November 21 (details forthcoming; 828-674-2989).",
    "a": "",
    "h": "Sign-ups open now (mid November 2026); gifts given out in December",
    "os": "PART 22: TIME-LIMITED AND SEASONAL PROGRAMS",
@@ -7539,7 +7540,7 @@
     "X:*",
     "X:12"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; 2026 timing from past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026; Angel Tree 2026 requirements from the Salvation Army flyer, stance from Skylar Belt, 13 Nov 2026; Eblen's Christmas gift assistance page, its 2024 release and WLOS (Dec 2025), via web search, 16 Nov 2026; rewritten from Eblen's Saint Nicholas Project page and Giving Thanks flyer, WNC Toys for Tots, WLOS on ABCCM's 2025 Christmas Angel Shop, and the Salvation Army 2026 Angel Tree flyer, via web search, 16 Nov 2026; rewritten 16 Nov 2026 from Eblen's and ABCCM's pages via web search, 16 Nov 2026 and the sign-up message shared with Skylar Belt; Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; 2026 timing from past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026; Angel Tree 2026 requirements from the Salvation Army flyer, stance from Skylar Belt, 13 Nov 2026; Eblen's Christmas gift assistance page, its 2024 release and WLOS (Dec 2025), via web search, 16 Nov 2026; rewritten from Eblen's Saint Nicholas Project page and Giving Thanks flyer, WNC Toys for Tots, WLOS on ABCCM's 2025 Christmas Angel Shop, and the Salvation Army 2026 Angel Tree flyer, via web search, 16 Nov 2026; rewritten 16 Nov 2026 from Eblen's and ABCCM's pages via web search, 16 Nov 2026 and the sign-up message shared with Skylar Belt; Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026; Dream Center dates from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)",
    "note": "Updated 16 Nov 2026. Eblen sign-up is open now; ABCCM's 2026 deadline and Eblen's store address were not published yet.",
    "new": false
   },
@@ -8236,7 +8237,7 @@
    "ph": "828-255-7576",
    "em": "",
    "w": "ourvoicenc.org",
-   "d": "828-255-7576 (24/7). Sexual assault crisis, counseling, advocacy. Spanish portal and crisis line. Business line for non-urgent questions: 828-252-0562.",
+   "d": "828-255-7576 (24/7). Sexual assault crisis, counseling, advocacy. Spanish portal and crisis line. Business line for non-urgent questions: 828-252-0562. Forensic medical exams at the Family Justice Center are free, need no ID and do not require filing a police report; survivors can decline or stop any part of an exam.",
    "a": "35 Woodfin St, Asheville 28801 (Family Justice Center)",
    "h": "Crisis line 24/7; office Mon-Fri 8am-5pm",
    "os": "PART 2: CRISIS AND SAFETY",
@@ -8251,7 +8252,7 @@
     "VII:2a",
     "VII:7a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; crisis line, business line, office and hours from ourvoicenc.org via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; crisis line, business line, office and hours from ourvoicenc.org via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; forensic exam terms from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)",
    "note": "",
    "new": false
   },
@@ -8616,9 +8617,9 @@
    "ph": "828-419-0533 / 828-273-9065",
    "em": "",
    "w": "bountyandsoul.org",
-   "d": "Office 828-419-0533 (828-775-7081, listed here before, is the YMCA mobile market line). Free produce markets in Black Mountain, Swannanoa, Fairview, Asheville; health education and cooking demos; no ID, no income proof. Calendar: bountyandsoul.org. Beacon Village truck Mondays 12:30-2pm (120 Alexander Pl, Swannanoa). Tuesday UNETE market 3:30-5pm (55 Adams Hill Rd) is fully Spanish-speaking with culturally relevant foods (maseca, beans, chiles) and kids' activities.",
+   "d": "Office 828-419-0533 (828-775-7081, listed here before, is the YMCA mobile market line). Free produce markets in Black Mountain, Swannanoa, Fairview, Asheville; health education and cooking demos; no ID, no income proof. Calendar: bountyandsoul.org. Beacon Village truck Mondays 12:30-2pm (120 Alexander Pl, Swannanoa). Tuesday UNETE market 3:30-5pm (55 Adams Hill Rd) is fully Spanish-speaking with culturally relevant foods (maseca, beans, chiles) and kids' activities. Weekly no-cost market schedule on bountyandsoul.org (Nov 2026): Mon 11:30am-1pm Rock Hill Baptist, 486 Caribou Rd; Tue 3-4:30pm Root Cause Farm, 26 Joe Jenkins Rd, Fairview; Tue 3:30-5pm UNETE; Wed 3:30-5pm Fairview Reynolds; Wed 3:30-5:30pm Beacon Community Center, 216 Whitson Ave, Swannanoa; Thu 3:30-5:30pm Bi-Lo drive-thru, 205 NC-9, Black Mountain; Fri 1:30-3pm Grant Southside Community Center, 285 Livingston St; Sat 10-11:30am ArtSpace, 2030 US 70, Swannanoa. No market at the office. Support animals welcome; other pets stay home. It is a weekly pattern, not a promise: check the schedule or the update line (828-585-7835).",
    "a": "999 Old US Hwy 70 W, Black Mountain 28711 (office; markets meet at rotating sites)",
-   "h": "Beacon Village truck Mon 12:30-2pm; UNETE market Tue 3:30-5pm; full calendar at bountyandsoul.org",
+   "h": "Free markets Mon-Sat at different sites; schedule at bountyandsoul.org; weather updates 828-585-7835",
    "os": "3.5 Fresh Produce Markets (free)",
    "t": "No ID, Free, Spanish / bilingual, Kids / 0-5",
    "lv": "",
@@ -8632,7 +8633,7 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; office phone and address from Idealist and CauseIQ listings via web search, 6 Nov 2026; YMCA line identified from YMCA WNC mobile market schedules; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; office phone and address from Idealist and CauseIQ listings via web search, 6 Nov 2026; YMCA line identified from YMCA WNC mobile market schedules; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; weekly market schedule and update line from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)",
    "note": "Sources disagree on the Fairview venue: the official schedule may show 99999 Rocket Dr while an older county guide lists 11 Rocket Dr. Use the current listing and call.",
    "new": false
   },
@@ -8878,7 +8879,7 @@
    "ph": "828-290-9749 / 1-800-820-1109",
    "em": "",
    "w": "mannafoodbank.org/wnc-free-food-distributions",
-   "d": "828-290-9749 / 1-800-820-1109 (Mon-Fri 9am-4pm; English, Spanish, Ukrainian). 200+ partner pantries across 16 WNC counties. Interactive map: mannafoodbank.org/wnc-free-food-distributions. Warehouse now at 99 Broadpointe Dr, Mills River.",
+   "d": "828-290-9749 / 1-800-820-1109 (Mon-Fri 9am-4pm; English, Spanish, Ukrainian). 200+ partner pantries across 16 WNC counties. Interactive map: mannafoodbank.org/wnc-free-food-distributions. Warehouse now at 99 Broadpointe Dr, Mills River. MANNA says its community mobile markets are free and open to anyone who needs food; no ID is required.",
    "a": "99 Broadpointe Dr",
    "h": "Mon-Fri 9am-4pm",
    "os": "3.1 Find Food Fast",
@@ -8896,7 +8897,7 @@
     "X:*",
     "X:1"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; helpline number and Mon-Fri 9am-4pm hours from MANNA's Where to Get Help page via web search, 8 Nov 2026; MANNA's pages label 828-367-9456 differently (call and text, or text only)",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; helpline number and Mon-Fri 9am-4pm hours from MANNA's Where to Get Help page via web search, 8 Nov 2026; MANNA's pages label 828-367-9456 differently (call and text, or text only); mobile market terms from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)",
    "note": "",
    "new": false
   },
@@ -10129,7 +10130,7 @@
    "ph": "828-252-8883",
    "em": "",
    "w": "homewardboundwnc.org",
-   "d": "19 N Ann St, 828-252-8883. Entry point for Housing First case management, Rapid Rehousing intake, showers, mail, storage. Mon/Tue/Thu/Fri 8am-1pm, Wed 8-11am. Using AHOPE services is the first step in building the case-management relationship that leads to housing placement. homewardboundwnc.org",
+   "d": "19 N Ann St, 828-252-8883. Entry point for Housing First case management, Rapid Rehousing intake, showers, mail, storage. Mon/Tue/Thu/Fri 8am-1pm, Wed 8-11am. Using AHOPE services is the first step in building the case-management relationship that leads to housing placement. homewardboundwnc.org. Basic services (showers, breakfast, mail, lockers, phone, Wi-Fi, charging) Mon-Fri 8-11am; housing and case management Mon/Tue/Thu/Fri 11am-1pm. Someone who cannot get there can be referred through Homeward Bound's online Outreach Assistance request.",
    "a": "19 N Ann St",
    "h": "Mon/Tue/Thu/Fri 8am-1pm, Wed 8-11am",
    "os": "5.1 Emergency Shelter",
@@ -10145,7 +10146,7 @@
     "VIII:6a",
     "VIII:7a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; service hours and outreach request from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)",
    "note": "",
    "new": false
   },
@@ -12585,8 +12586,8 @@
     "VII:*",
     "VII:6a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; cut-off hours completed from the detail, 6 Nov 2026",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; cut-off hours completed from the detail, 6 Nov 2026; Steady Collective schedule from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)",
+   "note": "Schedule conflict: another tool's 14 Nov 2026 reading of the Steady Collective site lists Tue 3-4:30pm in Candler (1808 Pisgah Hwy), Wed 10am-12:30pm at 271 Haywood St, and Fri 2-5pm at 39 Parkway Dr, West Asheville. Check thesteadycollective.org before going.",
    "new": false
   },
   {
@@ -18894,6 +18895,34 @@
    ],
    "src": "Mountain Strong Free Clinic flyers (English and Spanish), shared by Skylar Belt, 16 Nov 2026",
    "note": "Clinic hours and which services are free were not on the flyers; call 828-380-9219.",
+   "new": true
+  },
+  {
+   "id": "asheville-dream-center-holiday",
+   "n": "Asheville Dream Center holiday outreach (Love Our City)",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "828-674-2989",
+   "em": "info@ashevilledreamcenter.org",
+   "w": "ashevilledreamcenter.org/love-our-city",
+   "d": "Seasonal outreach: a Thanksgiving Outreach on Saturday, November 21, 2026 and a Dream Christmas Toy Giveaway on Saturday, December 12, 2026. Its page says more details are coming, so call or email before making a firm plan.",
+   "a": "",
+   "h": "Thanksgiving Outreach Nov 21; Christmas Toy Giveaway Dec 12 (2026)",
+   "os": "Holiday help",
+   "t": "Free",
+   "lv": "",
+   "vb": "",
+   "sec": "VIII",
+   "needs": [
+    "VIII:*",
+    "VIII:5a",
+    "VIII:10a",
+    "X:*",
+    "X:12"
+   ],
+   "src": "OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)",
+   "note": "Times, place and sign-up were not published yet.",
    "new": true
   }
  ]

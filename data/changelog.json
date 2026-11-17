@@ -154,6 +154,12 @@
    "label": "ADDED THIS ROUND",
    "entries": [
     {
+     "date": "Nov 17 2026",
+     "what": "From the OK Computer navigator build: Dream Center holiday dates, Bounty & Soul schedule, intake details",
+     "detail": "New Asheville Dream Center holiday row and two events (Nov 21, Dec 12). Bounty & Soul's full weekly market schedule, also added to Food by day. Intake details for Kaleidoscope (now registration only), CDSA, Our VOICE, Pisgah Legal, Working Wheels, Mountain Mobility, AHOPE and MANNA. Conflicts kept visible: UNETE's address and the Steady Collective schedule.",
+     "source": "scripts/apply-okc-build-2026-11-17.mjs"
+    },
+    {
      "date": "Nov 16 2026",
      "what": "Mountain Strong Free Clinic (Burnsville) open houses",
      "detail": "New row and two calendar events (Nov 21 and Dec 17) from the English and Spanish flyers: a free clinic open house with a nurse to ask, medication assistance information and a free first aid kit. No appointments or treatment at the event.",

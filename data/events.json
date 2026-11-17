@@ -691,6 +691,21 @@
    "src": "Mountain Strong Free Clinic flyers (English and Spanish), shared by Skylar Belt, 16 Nov 2026"
   },
   {
+   "id": "dream-center-thanksgiving-outreach-2026-11-21",
+   "date": "2026-11-21",
+   "kind": "event",
+   "what": "Asheville Dream Center Thanksgiving Outreach",
+   "detail": "Seasonal Thanksgiving outreach from Love Our City.",
+   "note": "Details forthcoming: call 828-674-2989 before planning.",
+   "tags": [
+    "Free"
+   ],
+   "ph": "828-674-2989",
+   "w": "ashevilledreamcenter.org/love-our-city",
+   "rid": "asheville-dream-center-holiday",
+   "src": "OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)"
+  },
+  {
    "id": "shepherds-table-donations-close-2026-11-22",
    "date": "2026-11-22",
    "kind": "deadline",
@@ -887,6 +902,21 @@
    ],
    "w": "facebook.com/events/2320488638687080",
    "src": "Facebook event listing, Facebook deep scrape, 6 Nov 2026"
+  },
+  {
+   "id": "dream-center-toy-giveaway-2026-12-12",
+   "date": "2026-12-12",
+   "kind": "event",
+   "what": "Asheville Dream Center Dream Christmas Toy Giveaway",
+   "detail": "Free Christmas toy giveaway.",
+   "note": "Details forthcoming: call 828-674-2989 or email info@ashevilledreamcenter.org.",
+   "tags": [
+    "Free"
+   ],
+   "ph": "828-674-2989",
+   "w": "ashevilledreamcenter.org/love-our-city",
+   "rid": "asheville-dream-center-holiday",
+   "src": "OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)"
   },
   {
    "id": "marketplace-open-enrollment-deadline-2026-12-15",

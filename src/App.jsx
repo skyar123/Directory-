@@ -368,7 +368,7 @@ export default function App() {
             {results.slice(0, 260).map((r) => (
               <ResourceCard key={r.id} r={r} open={openId === r.id} showGaps={onlyGaps}
                 onToggle={() => setOpenId(openId === r.id ? "" : r.id)}
-                onEdit={(k, v) => edit(r.id, k, v)} onVerify={() => verify(r.id)} />
+                onEdit={(k, v) => edit(r.id, k, v)} onVerify={() => verify(r.id)} onCopy={copyText} />
             ))}
           </div>
           {results.length > 260 && (
@@ -384,7 +384,7 @@ export default function App() {
           renderResource={(r) => (
             <ResourceCard r={r} open={openId === r.id}
               onToggle={() => setOpenId(openId === r.id ? "" : r.id)}
-              onEdit={(k, v) => edit(r.id, k, v)} onVerify={() => verify(r.id)} />
+              onEdit={(k, v) => edit(r.id, k, v)} onVerify={() => verify(r.id)} onCopy={copyText} />
           )}
           renderEvent={(e) => (
             <EventCard e={e} soon={soon(e, evToday)} resource={resById.get(e.rid)}
@@ -420,7 +420,7 @@ export default function App() {
                         {hits.map((r) => (
                           <ResourceCard key={r.id} r={r} open={openId === r.id}
                             onToggle={() => setOpenId(openId === r.id ? "" : r.id)}
-                            onEdit={(k, v) => edit(r.id, k, v)} onVerify={() => verify(r.id)} />
+                            onEdit={(k, v) => edit(r.id, k, v)} onVerify={() => verify(r.id)} onCopy={copyText} />
                         ))}
                         {!hits.length && <p className="empty">Nothing filed under this question yet.</p>}
                       </div>
