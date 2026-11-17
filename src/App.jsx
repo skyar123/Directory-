@@ -14,9 +14,12 @@ import EventCard from "./components/EventCard.jsx";
 import AskPanel from "./components/AskPanel.jsx";
 import EventMonth from "./components/EventMonth.jsx";
 import CalendarNotes from "./components/CalendarNotes.jsx";
+import PlanView from "./components/PlanView.jsx";
+import NeedStart from "./components/NeedStart.jsx";
 
 const VIEWS = [
   ["find", "Find"],
+  ["plan", "Visit plan"],
   ["sniff", "By SNIFF question"],
   ["assessment", "Community assessment"],
   ["food", "Food by day"],
@@ -147,6 +150,40 @@ export default function App() {
     catch (e) { say("Copy blocked by the browser. Select the text instead."); }
   };
 
+  /* The visit plan: a few resources and dated events for one family, kept in
+     this browser only. A resource is kept by id; an event keeps its own facts,
+     because calendar listings load only when the Events tab opens. */
+  const plan = state.plan || { items: [], asks: [] };
+  const inPlan = (t, id) => plan.items.some((x) => x.t === t && x.id === id);
+  const setPlan = (next) => setState({ ...state, plan: { ...plan, ...next } });
+  const removeFromPlan = (t, id) => setPlan({ items: plan.items.filter((x) => !(x.t === t && x.id === id)) });
+  const togglePlanResource = (r) => {
+    if (inPlan("r", r.id)) { removeFromPlan("r", r.id); say("Removed from the visit plan"); return; }
+    setPlan({ items: [...plan.items, { t: "r", id: r.id }] });
+    say("Added to the visit plan");
+  };
+  const togglePlanEvent = (e) => {
+    if (inPlan("e", e.id)) { removeFromPlan("e", e.id); say("Removed from the visit plan"); return; }
+    const { id, what, date, end, time, where, w, ph } = e;
+    setPlan({ items: [...plan.items, { t: "e", id, what, date, end, time, where, w, ph }] });
+    say("Added to the visit plan");
+  };
+  const toggleAsk = (a) => setPlan({ asks: plan.asks.includes(a) ? plan.asks.filter((x) => x !== a) : [...plan.asks, a] });
+
+  /* a need tapped on the Find view's start panel */
+  const goNeed = (go) => {
+    if (go.food) {
+      const today = new Date().toLocaleDateString("en-US", { weekday: "long" });
+      if (FOOD.days.some((d) => d.day === today)) setFoodDay(today);
+      setView("food");
+    } else if (go.need) {
+      showNeed(go.need);
+    } else if (go.q) {
+      setQ(go.q); setSecFilter(""); setOnlyGaps(false); setView("find");
+    }
+    window.scrollTo(0, 0);
+  };
+
   const copyCraRow = (row, confirmed, entry) => {
     const agencies = confirmed
       .map((r) => [r.name, r.address, r.email, r.phone].filter(Boolean).join(", "))
@@ -187,6 +224,7 @@ export default function App() {
          here" and "Read the note first" badges, which an export must keep */
       ...(r.startHere && { start: true }),
       ...(r.readFirst && { readFirst: true }),
+      ...(r.backup && { alt: r.backup }),
     })),
   }, null, 1) + "\n"); /* data/resources.json ends with a newline too */
 
@@ -223,7 +261,7 @@ export default function App() {
 
   const exportCsv = () => {
     const cols = ["id", "name", "sec", "origSection", "point", "phone", "email", "web",
-      "address", "hours", "spanish", "verified", "verifiedBy", "tags", "detail", "source", "note"];
+      "address", "hours", "spanish", "verified", "verifiedBy", "tags", "detail", "backup", "source", "note"];
     const esc = (v) => '"' + String(v == null ? "" : v).replace(/"/g, '""') + '"';
     const rows = [cols.join(",")].concat(resources.map((r) => cols.map((c) => esc(r[c])).join(",")));
     download("resources.csv", rows.join("\n"), "text/csv");
@@ -335,7 +373,7 @@ export default function App() {
           {VIEWS.map(([id, label]) => (
             <button key={id} className={"tab" + (view === id ? " tab-on" : "")} onClick={() => setView(id)}
               aria-current={view === id ? "page" : undefined}>
-              {label}
+              {label}{id === "plan" && plan.items.length ? ` (${plan.items.length})` : ""}
             </button>
           ))}
         </nav>
@@ -345,6 +383,7 @@ export default function App() {
 
       {view === "find" && (
         <section className="pane">
+          {!q.trim() && !secFilter && !onlyGaps && <NeedStart resById={resById} onGo={goNeed} />}
           <div className="filters">
             <Chip active={!secFilter} onClick={() => setSecFilter("")}>All sections</Chip>
             {SECTIONS.map((s) => (
@@ -368,13 +407,20 @@ export default function App() {
             {results.slice(0, 260).map((r) => (
               <ResourceCard key={r.id} r={r} open={openId === r.id} showGaps={onlyGaps}
                 onToggle={() => setOpenId(openId === r.id ? "" : r.id)}
-                onEdit={(k, v) => edit(r.id, k, v)} onVerify={() => verify(r.id)} onCopy={copyText} />
+                onEdit={(k, v) => edit(r.id, k, v)} onVerify={() => verify(r.id)} onCopy={copyText}
+                inPlan={inPlan("r", r.id)} onPlan={() => togglePlanResource(r)} />
             ))}
           </div>
           {results.length > 260 && (
             <p className="count">Showing the first 260. Keep typing to narrow it down.</p>
           )}
         </section>
+      )}
+
+      {view === "plan" && (
+        <PlanView plan={plan} resById={resById} onRemove={removeFromPlan} onToggleAsk={toggleAsk}
+          onClear={() => setPlan({ items: [], asks: [] })} copyText={copyText}
+          onFind={() => { setQ(""); setView("find"); }} onEvents={() => setView("events")} />
       )}
 
       {view === "ask" && (
@@ -384,11 +430,13 @@ export default function App() {
           renderResource={(r) => (
             <ResourceCard r={r} open={openId === r.id}
               onToggle={() => setOpenId(openId === r.id ? "" : r.id)}
-              onEdit={(k, v) => edit(r.id, k, v)} onVerify={() => verify(r.id)} onCopy={copyText} />
+              onEdit={(k, v) => edit(r.id, k, v)} onVerify={() => verify(r.id)} onCopy={copyText}
+                inPlan={inPlan("r", r.id)} onPlan={() => togglePlanResource(r)} />
           )}
           renderEvent={(e) => (
             <EventCard e={e} soon={soon(e, evToday)} resource={resById.get(e.rid)}
-              onOpen={() => openResource(resById.get(e.rid))} />
+              onOpen={() => openResource(resById.get(e.rid))}
+              inPlan={inPlan("e", e.id)} onPlan={() => togglePlanEvent(e)} />
           )} />
       )}
 
@@ -420,7 +468,8 @@ export default function App() {
                         {hits.map((r) => (
                           <ResourceCard key={r.id} r={r} open={openId === r.id}
                             onToggle={() => setOpenId(openId === r.id ? "" : r.id)}
-                            onEdit={(k, v) => edit(r.id, k, v)} onVerify={() => verify(r.id)} onCopy={copyText} />
+                            onEdit={(k, v) => edit(r.id, k, v)} onVerify={() => verify(r.id)} onCopy={copyText}
+                inPlan={inPlan("r", r.id)} onPlan={() => togglePlanResource(r)} />
                         ))}
                         {!hits.length && <p className="empty">Nothing filed under this question yet.</p>}
                       </div>
@@ -607,7 +656,8 @@ export default function App() {
             <EventMonth key={m.key + evSig} m={m} startOpen={i === 0 || (evFiltered && evShown <= 90)}
               render={(e) => (
                 <EventCard key={e.id} e={e} soon={soon(e, evToday)} resource={resById.get(e.rid)}
-                  onOpen={() => openResource(resById.get(e.rid))} />
+                  onOpen={() => openResource(resById.get(e.rid))}
+                  inPlan={inPlan("e", e.id)} onPlan={() => togglePlanEvent(e)} />
               )} />
           ))}
           {!evPlan.months.length && (

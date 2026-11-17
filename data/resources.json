@@ -21,10 +21,11 @@
    "Holiday sign-up update, 16 Nov 2026 (see scripts/apply-holiday-signup-2026-11-16.mjs)",
    "Facebook holiday sweep, 16 Nov 2026 (see scripts/apply-fb-holiday-sweep-2026-11-16.mjs)",
    "Mountain Strong Free Clinic flyers, 16 Nov 2026 (see scripts/apply-mountain-strong-2026-11-16.mjs)",
-   "OK Computer Buncombe Family Navigator build, 17 Nov 2026 (see scripts/apply-okc-build-2026-11-17.mjs)"
+   "OK Computer Buncombe Family Navigator build, 17 Nov 2026 (see scripts/apply-okc-build-2026-11-17.mjs)",
+   "Backup routes, 17 Nov 2026 (see scripts/apply-backup-routes-2026-11-17.mjs)"
   ],
   "file": "resources.json",
-  "note": "One object per resource. `needs` are SNIFF question keys, `src` names where the fact came from.",
+  "note": "One object per resource. `needs` are SNIFF question keys, `src` names where the fact came from. `alt` is an optional backup route, shown as \"If this doesn't work\".",
   "count": 668
  },
  "sections": [
@@ -865,9 +866,10 @@
     "VIII:*",
     "VIII:9a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Drive: Free Childcare Leicester NC (14 Aug 2026)",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Drive: Free Childcare Leicester NC (14 Aug 2026); backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
    "note": "Sources disagree on who qualifies: this row says parents working or in school full time, while the Drive childcare guide (Aug 2026) says a parent looking for work, in job training, or with a child who has CPS involvement or developmental needs can qualify too. Ask DSS, and ask how long job-search care lasts.",
-   "new": false
+   "new": false,
+   "alt": "Mountain Child Care Connections, 877-752-5955, helps find care; also ask about Head Start and NC Pre-K. Apply for the subsidy even if there is a waiting list."
   },
   {
    "id": "children-first-communities-in-schools",
@@ -1129,9 +1131,10 @@
     "VII:*",
     "VII:4a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; openings from AVL Kids and Asheville Family Activities posts, 29 Oct 2026, Facebook deep scrape, 6 Nov 2026; BPFC main line and website from Asheville Chamber and directory listings, eligibility from a 2020 BPFC description, via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; registration rule and contacts from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; openings from AVL Kids and Asheville Family Activities posts, 29 Oct 2026, Facebook deep scrape, 6 Nov 2026; BPFC main line and website from Asheville Chamber and directory listings, eligibility from a 2020 BPFC description, via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; registration rule and contacts from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026); backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
    "note": "Older flyers and search results conflict on days, sites, eligibility and breaks. Confirm the current schedule. The program page now says registration is required (not drop-in), groups run during the school year only, caregivers stay, one adult per child. To register: ages 3 months to 3 years, grace.ragaller@acsgmail.net; ages 3 to 5, marna.holland@acsgmail.net.",
-   "new": false
+   "new": false,
+   "alt": "Library story times (see the library rows) are free and many need no sign-up."
   },
   {
    "id": "kids-garden-asheville",
@@ -1206,9 +1209,10 @@
     "IV:*",
     "IV:1a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
    "note": "",
-   "new": false
+   "new": false,
+   "alt": "For help paying: the Child Care Subsidy Program, 828-250-5500. For ages 3 to 5: the shared Head Start and NC Pre-K application."
   },
   {
    "id": "nc-pre-k-head-start-unified-application",
@@ -1293,9 +1297,10 @@
     "II:4a",
     "II:8a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Drive: Free & Low-Cost Childcare in Leicester & Buncombe County (family guide, checked Aug 2026); Drive: Free Childcare Leicester NC (14 Aug 2026)",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Drive: Free & Low-Cost Childcare in Leicester & Buncombe County (family guide, checked Aug 2026); Drive: Free Childcare Leicester NC (14 Aug 2026); backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
    "note": "Sources disagree on the website: this row has verneremail.org, which is also the staff email domain, while the Public Edition (7 Nov 2026) lists vernerearlylearning.org.",
-   "new": false
+   "new": false,
+   "alt": "Mountain Child Care Connections, 877-752-5955, or Buncombe Pre-K for older children."
   },
   {
    "id": "we-belong-sensory-friendly-programming",
@@ -1857,9 +1862,10 @@
     "X:*",
     "X:6"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; state directory phone from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; state directory phone from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026); backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
    "note": "Two numbers: the state CDSA directory lists 828-250-3400; local guides (BPFC, ECAC) list 828-251-6091. Try 828-250-3400 first. Anyone can make a referral call.",
-   "new": false
+   "new": false,
+   "alt": "For children 3 and older, the school system's Exceptional Children program."
   },
   {
    "id": "deaf-community-organizations-nc-association",
@@ -3644,9 +3650,10 @@
     "X:*",
     "X:3"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; health access contacts from Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes); hours, intake and eligibility from Pisgah Legal's 2025 legal aid brochure via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; callback process from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; health access contacts from Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes); hours, intake and eligibility from Pisgah Legal's 2025 legal aid brochure via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; callback process from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026); backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
    "note": "",
-   "new": false
+   "new": false,
+   "alt": "Never ignore eviction or court papers. While waiting for a callback, call 211 for urgent needs."
   },
   {
    "id": "pro-se-self-filing-court-tools-ecourts-guide",
@@ -3756,9 +3763,10 @@
     "VIII:17a",
     "VIII:7a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; phone, station, 18 routes and $1 fare from the city's transit page (updated 6 Oct 2026), hours from a city listing not clearly dated 2026, via web search, 8 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; phone, station, 18 routes and $1 fare from the city's transit page (updated 6 Oct 2026), hours from a city listing not clearly dated 2026, via web search, 8 Nov 2026; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
    "note": "",
-   "new": false
+   "new": false,
+   "alt": "Mountain Mobility, 828-250-6750 (option 5 to ask about eligibility)."
   },
   {
    "id": "apple-country-transit",
@@ -3811,9 +3819,10 @@
     "VIII:14a",
     "VIII:1a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
    "note": "",
-   "new": false
+   "new": false,
+   "alt": "ABCCM Crisis Ministry (828-259-5300) or Buncombe DSS emergency assistance (828-250-6330)."
   },
   {
    "id": "modivcare-medicaid-non-emergency-medical-tra",
@@ -3865,9 +3874,10 @@
     "VIII:*",
     "VIII:17a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; phone, Option 5 hours and services from Buncombe County's transportation pages via web search, 8 Nov 2026; \"Toys or books\" need tag removed; reservation line and hours from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; phone, Option 5 hours and services from Buncombe County's transportation pages via web search, 8 Nov 2026; \"Toys or books\" need tag removed; reservation line and hours from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026); backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
    "note": "",
-   "new": false
+   "new": false,
+   "alt": "ART buses, 828-253-5691. Ask a current case manager about other transport help."
   },
   {
    "id": "trailblazer-routes-free",
@@ -3922,9 +3932,10 @@
     "VIII:17a",
     "VIII:8a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Working Wheels official Vehicle Purchase Program page (workingwheelswnc.org/vehicle-purchase-program), checked 7 Nov 2026; eligibility rules from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Working Wheels official Vehicle Purchase Program page (workingwheelswnc.org/vehicle-purchase-program), checked 7 Nov 2026; eligibility rules from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026); backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
    "note": "",
-   "new": false
+   "new": false,
+   "alt": "ART or Mountain Mobility while a case manager looks for an eligible partner route. Working Wheels cannot connect families to a partner."
   },
   {
    "id": "buncombe-dss",
@@ -6147,9 +6158,10 @@
     "X:*",
     "X:1"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; helpline number and Mon-Fri 9am-4pm hours from MANNA's Where to Get Help page via web search, 8 Nov 2026; MANNA's pages label 828-367-9456 differently (call and text, or text only)",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; helpline number and Mon-Fri 9am-4pm hours from MANNA's Where to Get Help page via web search, 8 Nov 2026; MANNA's pages label 828-367-9456 differently (call and text, or text only); backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
    "note": "",
-   "new": false
+   "new": false,
+   "alt": "Outside helpline hours, call or text 211 (or 1-888-892-1162)."
   },
   {
    "id": "nc-211",
@@ -6174,9 +6186,10 @@
     "X:*",
     "X:1"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: NC 211 official website (nc211.org), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: NC 211 official website (nc211.org), checked 7 Nov 2026; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
    "note": "",
-   "new": false
+   "new": false,
+   "alt": "In danger now: 911. Suicide or mental health crisis: call or text 988."
   },
   {
    "id": "nc-disaster-case-management",
@@ -7360,9 +7373,10 @@
     "X:*",
     "X:12"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; eligibility, coverage, phones and how to apply from Buncombe County's Crisis Intervention Program and Help in an Emergency pages via web search, 8 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; eligibility, coverage, phones and how to apply from Buncombe County's Crisis Intervention Program and Help in an Emergency pages via web search, 8 Nov 2026; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
    "note": "",
-   "new": false
+   "new": false,
+   "alt": "Eblen Charities (828-255-3066) or ABCCM Crisis Ministry (828-259-5300); 211 knows other utility help."
   },
   {
    "id": "duke-energy-winter-moratorium",
@@ -7871,9 +7885,10 @@
    "needs": [
     "CRISIS:*"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; official site confirmed via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; official site confirmed via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
    "note": "",
-   "new": false
+   "new": false,
+   "alt": "In danger now: 911. Mobile crisis can come to the family: RHA, 1-888-573-1006."
   },
   {
    "id": "buncombe-co-responder-unit",
@@ -8060,9 +8075,10 @@
     "VIII:16a",
     "VIII:8a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; shelter update, classes and professional consultation from Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes); bed counts from WLOS and SECU Foundation coverage via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; shelter update, classes and professional consultation from Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes); bed counts from WLOS and SECU Foundation coverage via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
    "note": "",
-   "new": false
+   "new": false,
+   "alt": "In danger now: 911. Sexual violence or trafficking: Our VOICE, 828-255-7576."
   },
   {
    "id": "helpmate-domestic-violence-hotline",
@@ -8252,9 +8268,10 @@
     "VII:2a",
     "VII:7a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; crisis line, business line, office and hours from ourvoicenc.org via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; forensic exam terms from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; crisis line, business line, office and hours from ourvoicenc.org via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; forensic exam terms from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026); backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
    "note": "",
-   "new": false
+   "new": false,
+   "alt": "In danger now: 911. Partner violence, shelter and safety planning: Helpmate, 828-254-0516."
   },
   {
    "id": "our-voice-sexual-violence-hotline",
@@ -8633,9 +8650,10 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; office phone and address from Idealist and CauseIQ listings via web search, 6 Nov 2026; YMCA line identified from YMCA WNC mobile market schedules; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; weekly market schedule and update line from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; office phone and address from Idealist and CauseIQ listings via web search, 6 Nov 2026; YMCA line identified from YMCA WNC mobile market schedules; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; weekly market schedule and update line from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026); backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
    "note": "Sources disagree on the Fairview venue: the official schedule may show 99999 Rocket Dr while an older county guide lists 11 Rocket Dr. Use the current listing and call.",
-   "new": false
+   "new": false,
+   "alt": "MANNA's food helpline, 828-290-9749, finds the nearest pantry or market."
   },
   {
    "id": "bridge-meals-crowdfeeding",
@@ -8897,9 +8915,10 @@
     "X:*",
     "X:1"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; helpline number and Mon-Fri 9am-4pm hours from MANNA's Where to Get Help page via web search, 8 Nov 2026; MANNA's pages label 828-367-9456 differently (call and text, or text only); mobile market terms from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; helpline number and Mon-Fri 9am-4pm hours from MANNA's Where to Get Help page via web search, 8 Nov 2026; MANNA's pages label 828-367-9456 differently (call and text, or text only); mobile market terms from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026); backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
    "note": "",
-   "new": false
+   "new": false,
+   "alt": "Outside helpline hours, call or text 211 (or 1-888-892-1162)."
   },
   {
    "id": "manna-packs",
@@ -9540,9 +9559,10 @@
     "VIII:4a",
     "VIII:8a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
    "note": "",
-   "new": false
+   "new": false,
+   "alt": "Ask any agency the family already uses whether it hands out diapers, or call 211."
   },
   {
    "id": "buncombe-county-register-of-deeds",
@@ -10091,9 +10111,10 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
    "note": "",
-   "new": false
+   "new": false,
+   "alt": "For food: MANNA's food helpline, 828-290-9749. For a money crisis: Buncombe DSS emergency assistance (828-250-6330) or Eblen Charities (828-255-3066)."
   },
   {
    "id": "abccm-veterans-restoration-quarters",
@@ -10146,9 +10167,10 @@
     "VIII:6a",
     "VIII:7a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; service hours and outreach request from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; service hours and outreach request from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026); backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
    "note": "",
-   "new": false
+   "new": false,
+   "alt": "Call 211 for other shelter routes; on Code Purple nights, use the Code Purple sites."
   },
   {
    "id": "archr-asheville-regional-coalition-for-home",
@@ -10224,9 +10246,10 @@
     "VIII:1a",
     "VIII:3a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
    "note": "",
-   "new": false
+   "new": false,
+   "alt": "If there is an eviction or court date, also call Pisgah Legal Services, 828-253-0406. ABCCM Crisis Ministry (828-259-5300) and Eblen Charities (828-255-3066) are other routes."
   },
   {
    "id": "code-purple",
@@ -10249,9 +10272,10 @@
     "VIII:*",
     "VIII:7a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; 2025-26 rules, sites and transit from Buncombe County, the City of Asheville and WLOS via web search, 8 Nov 2026; 2026-27 sites, check-in and status line from the Asheville-Buncombe Continuum of Care flyer for Nov 13-14, 2026, shared by Skylar Belt; 2026-27 sites, rules, routes and contacts from the Asheville-Buncombe Continuum of Care, Code Purple 2026-2027 sheet, shared by Skylar Belt 16 Nov 2026; corrects the coordinator number labelled as the status line on 13 Nov",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; 2025-26 rules, sites and transit from Buncombe County, the City of Asheville and WLOS via web search, 8 Nov 2026; 2026-27 sites, check-in and status line from the Asheville-Buncombe Continuum of Care flyer for Nov 13-14, 2026, shared by Skylar Belt; 2026-27 sites, rules, routes and contacts from the Asheville-Buncombe Continuum of Care, Code Purple 2026-2027 sheet, shared by Skylar Belt 16 Nov 2026; corrects the coordinator number labelled as the status line on 13 Nov; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
    "note": "",
-   "new": false
+   "new": false,
+   "alt": "Call 211, or Homeward Bound's AHOPE Day Center, 828-252-8883."
   },
   {
    "id": "colaborativa-la-milpa-cima",
@@ -10354,9 +10378,10 @@
     "X:*",
     "X:12"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; eligibility, coverage, phones and how to apply from Buncombe County's Crisis Intervention Program and Help in an Emergency pages via web search, 8 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; eligibility, coverage, phones and how to apply from Buncombe County's Crisis Intervention Program and Help in an Emergency pages via web search, 8 Nov 2026; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
    "note": "",
-   "new": false
+   "new": false,
+   "alt": "Eblen Charities (828-255-3066) or ABCCM Crisis Ministry (828-259-5300); 211 knows other utility help."
   },
   {
    "id": "duke-energy",
@@ -10946,10 +10971,11 @@
     "VIII:1a",
     "VIII:7a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; address, phone and services from the Salvation Army's Asheville page and a local assistance guide via web search, 8 Nov 2026; referral stance from Skylar Belt, 13 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; address, phone and services from the Salvation Army's Asheville page and a local assistance guide via web search, 8 Nov 2026; referral stance from Skylar Belt, 13 Nov 2026; backup route from Skylar Belt's referral stance, Nov 2026",
    "note": "Skylar does not refer families here first: it asks for a humiliating amount of personal detail and paperwork. Offer other options before this one.",
    "new": false,
-   "readFirst": true
+   "readFirst": true,
+   "alt": "Other help with rent or bills: Buncombe DSS emergency assistance (828-250-6330), Eblen Charities (828-255-3066) or ABCCM Crisis Ministry (828-259-5300)."
   },
   {
    "id": "salvation-army-shelter",
@@ -10972,10 +10998,11 @@
     "VII:*",
     "VII:7a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; phone from the Salvation Army's Asheville page; pause dates and Code Purple role from WLOS, Mountain Xpress and BPR, via web search, 8 Nov 2026; referral stance from Skylar Belt, 13 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; phone from the Salvation Army's Asheville page; pause dates and Code Purple role from WLOS, Mountain Xpress and BPR, via web search, 8 Nov 2026; referral stance from Skylar Belt, 13 Nov 2026; backup route from Skylar Belt's referral stance, Nov 2026",
    "note": "Skylar does not refer families here first: it asks for a humiliating amount of personal detail and paperwork. Offer other options before this one. The Center of Hope's 65-bed residential shelter is paused from November 1, 2026 through April 30, 2027 for lack of funding. It still runs Code Purple emergency shelter on cold nights, and the food pantry and other Haywood Street services continue. Call before sending anyone.",
    "new": false,
-   "readFirst": true
+   "readFirst": true,
+   "alt": "Call 211, AHOPE (828-252-8883), or Code Purple on cold nights."
   },
   {
    "id": "swannanoa-communities-together",
@@ -11621,9 +11648,10 @@
     "VI:*",
     "VI:1a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
    "note": "",
-   "new": false
+   "new": false,
+   "alt": "The Steady Collective's outreach sites (see the harm reduction row)."
   },
   {
    "id": "abccm-crisis-dental",
@@ -12586,9 +12614,10 @@
     "VII:*",
     "VII:6a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; cut-off hours completed from the detail, 6 Nov 2026; Steady Collective schedule from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; cut-off hours completed from the detail, 6 Nov 2026; Steady Collective schedule from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026); backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
    "note": "Schedule conflict: another tool's 14 Nov 2026 reading of the Steady Collective site lists Tue 3-4:30pm in Candler (1808 Pisgah Hwy), Wed 10am-12:30pm at 271 Haywood St, and Fri 2-5pm at 39 Parkway Dr, West Asheville. Check thesteadycollective.org before going.",
-   "new": false
+   "new": false,
+   "alt": "Buncombe County's syringe services at 40 Coxe Ave."
   },
   {
    "id": "jewish-family-services-healing-solutions",
@@ -16347,10 +16376,11 @@
     "VIII:5a",
     "VIII:11a"
    ],
-   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details; pantry continuing, per WLOS and Mountain Xpress via web search, 8 Nov 2026; phone from the Salvation Army's Asheville page (one number for its Haywood St services) via web search, 8 Nov 2026; referral stance from Skylar Belt, 13 Nov 2026; address, hours and items (hygiene, baby supplies, pet food) from the WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details; pantry continuing, per WLOS and Mountain Xpress via web search, 8 Nov 2026; phone from the Salvation Army's Asheville page (one number for its Haywood St services) via web search, 8 Nov 2026; referral stance from Skylar Belt, 13 Nov 2026; address, hours and items (hygiene, baby supplies, pet food) from the WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; backup route from Skylar Belt's referral stance, Nov 2026",
    "note": "Skylar does not refer families here first: it asks for a humiliating amount of personal detail and paperwork. Offer other options before this one. Sources disagree on access: the BPFC directory lists Tuesday to Thursday hours, while another source describes appointment-only access. Call before visiting.",
    "new": true,
-   "readFirst": true
+   "readFirst": true,
+   "alt": "Other free food: MANNA's food helpline (828-290-9749), Bounty & Soul markets, or Food Connection meals."
   },
   {
    "id": "beloved-asheville",
@@ -18760,9 +18790,10 @@
     "X:*",
     "X:12"
    ],
-   "src": "Eblen's Christmas gift assistance page, its 2024 release and WLOS (Dec 2025), via web search, 16 Nov 2026; sign-up timing from Eblen's own Saint Nicholas Project page via web search, 16 Nov 2026; sign-up date and 5-day store from Eblen's Saint Nicholas page, pickup documents and waitlist from Mountain Xpress (2024), via web search, 16 Nov 2026; sign-up link and fields from a message shared with Skylar Belt, 16 Nov 2026",
+   "src": "Eblen's Christmas gift assistance page, its 2024 release and WLOS (Dec 2025), via web search, 16 Nov 2026; sign-up timing from Eblen's own Saint Nicholas Project page via web search, 16 Nov 2026; sign-up date and 5-day store from Eblen's Saint Nicholas page, pickup documents and waitlist from Mountain Xpress (2024), via web search, 16 Nov 2026; sign-up link and fields from a message shared with Skylar Belt, 16 Nov 2026; backup route from Skylar Belt's referral stance, Nov 2026",
    "note": "The sign-up link was shared with Skylar on 16 Nov 2026 for a free in-person Christmas shop that opened that day; it matches Eblen's own schedule, but the page could not be opened from here, so confirm the organizer when you use it.",
-   "new": true
+   "new": true,
+   "alt": "ABCCM Christmas Angel, a WNC Toys for Tots partner program, or the Asheville Dream Center toy giveaway on December 12."
   },
   {
    "id": "toys-for-tots-wnc",
@@ -18841,9 +18872,10 @@
     "X:*",
     "X:12"
    ],
-   "src": "ABCCM Christmas Angel Tree and Sponsors pages, WLOS (2025), via web search, 16 Nov 2026; Christmas Angel Shop phone from a directory listing; Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026 (ABCCM's Nov 12 posts; application link from a Hendersonville group comment, Nov 15)",
+   "src": "ABCCM Christmas Angel Tree and Sponsors pages, WLOS (2025), via web search, 16 Nov 2026; Christmas Angel Shop phone from a directory listing; Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026 (ABCCM's Nov 12 posts; application link from a Hendersonville group comment, Nov 15); backup route from Skylar Belt's referral stance, Nov 2026",
    "note": "ABCCM's 2026 deadline was not published by 16 Nov 2026; ask when you call.",
-   "new": true
+   "new": true,
+   "alt": "Eblen's Saint Nicholas Project (sign-up open now) or a WNC Toys for Tots partner program."
   },
   {
    "id": "grace-covenant-free-food",

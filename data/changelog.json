@@ -155,6 +155,12 @@
    "entries": [
     {
      "date": "Nov 17 2026",
+     "what": "Visit plan, need-first Find tab, and backup routes",
+     "detail": "Find now opens on the crisis lines and a list of needs, each going straight to its list. 31 rows gained an \"If this doesn't work\" backup route, shown on the card and in anything copied for a family. A new Visit plan tab gathers resources and dates for one family, with questions to ask before going, to copy or print; it stays in this browser and takes no names.",
+     "source": "scripts/apply-backup-routes-2026-11-17.mjs"
+    },
+    {
+     "date": "Nov 17 2026",
      "what": "From the OK Computer navigator build: Dream Center holiday dates, Bounty & Soul schedule, intake details",
      "detail": "New Asheville Dream Center holiday row and two events (Nov 21, Dec 12). Bounty & Soul's full weekly market schedule, also added to Food by day. Intake details for Kaleidoscope (now registration only), CDSA, Our VOICE, Pisgah Legal, Working Wheels, Mountain Mobility, AHOPE and MANNA. Conflicts kept visible: UNETE's address and the Steady Collective schedule.",
      "source": "scripts/apply-okc-build-2026-11-17.mjs"

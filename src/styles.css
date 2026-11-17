@@ -859,3 +859,75 @@ button.act { font-family: inherit; cursor: pointer; }
   .ask-key-row input { font-size: 16px; } /* iOS zooms on anything smaller */
   .family-text, .ask-town { font-size: 16px; }
 }
+
+/* --------------------------------------------- start with a need (Find) */
+
+.need-start { margin: 0 0 22px; }
+.crisis-strip {
+  border: 1px solid #F2C9C4; background: var(--alert-tint);
+  border-radius: var(--radius); padding: 12px 14px; margin: 0 0 18px;
+}
+.crisis-strip-911 { margin: 0 0 8px; font-weight: 600; color: var(--alert); }
+.crisis-strip-911 a { color: var(--alert); }
+.crisis-strip ul {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; gap: 8px; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+.crisis-strip li a {
+  display: flex; flex-direction: column; gap: 1px; text-decoration: none;
+  background: var(--surface); border: 1px solid #F2C9C4; border-radius: var(--radius-sm);
+  padding: 8px 10px; color: var(--ink);
+}
+.crisis-strip li a:hover { border-color: var(--alert); }
+.crisis-strip li strong { color: var(--alert); font-size: 15px; }
+.crisis-strip li span { font-size: 12.5px; color: var(--ink-2); line-height: 1.35; }
+.need-title { font-size: 17px; margin: 0 0 10px; }
+.need-grid { display: grid; gap: 8px; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); }
+.need-btn {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  text-align: left; font: inherit; cursor: pointer;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 11px 13px; box-shadow: var(--shadow); color: var(--ink);
+}
+.need-btn:hover { border-color: var(--accent); background: var(--accent-tint); }
+.need-btn span { display: flex; flex-direction: column; gap: 2px; }
+.need-btn strong { font-weight: 600; }
+.need-btn small { color: var(--ink-3); font-size: 12.5px; line-height: 1.35; }
+.need-btn svg { flex: 0 0 auto; color: var(--accent); }
+
+/* ------------------------------------------------- backup route on a card */
+
+.backup {
+  margin: 10px 0 0; padding: 8px 11px;
+  border-left: 3px solid var(--accent); background: var(--accent-tint);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0; font-size: 14px;
+}
+
+/* ---------------------------------------------------------------- plan */
+
+.btn.in-plan, .act.in-plan { border-color: var(--ok); color: var(--ok); background: var(--ok-tint); }
+.plan-head h2 { margin: 0 0 4px; }
+.plan-empty { margin: 16px 0; }
+.plan-list { margin: 0; padding-left: 22px; display: grid; gap: 10px; }
+ul.plan-list { padding-left: 0; list-style: none; }
+.plan-item {
+  display: flex; gap: 12px; align-items: flex-start; justify-content: space-between;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 12px 14px; box-shadow: var(--shadow);
+}
+.plan-item-main { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
+.plan-item-main .act { align-self: flex-start; }
+.plan-fact { display: inline-flex; gap: 6px; align-items: center; color: var(--ink-2); font-size: 14px; }
+.plan-fact svg { flex: 0 0 auto; opacity: .7; }
+.plan-staff { color: var(--warn); margin: 4px 0 0; }
+.plan-asks { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.plan-asks label { display: flex; gap: 9px; align-items: flex-start; cursor: pointer; }
+.plan-asks input { margin-top: 4px; }
+
+@media print {
+  .no-print, .toast, .need-start { display: none !important; }
+  .plan-item { box-shadow: none; break-inside: avoid; }
+  .plan-asks li.off { display: none; }
+  .plan-asks input { display: none; }
+  .plan-asks li.on span::before { content: "\2610  "; }
+}

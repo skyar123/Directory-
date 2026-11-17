@@ -76,6 +76,33 @@ apart, under the months, so neither reads as a promise. Organizers publish a
 few months ahead, so a thin later month means not published yet. To refresh
 it, export the next edition of the workbook and rerun the script.
 
+## Working with a family
+
+**The Find tab opens on the need.** Before anything is typed, it shows the
+crisis lines (911, then 988, Helpmate, Our VOICE, 211 and Code Purple's
+recorded message) and a short list of needs: food today, diapers, a safe place
+tonight, not safe at home, rent, utilities, childcare, development, a ride,
+counseling, legal help, Christmas help, and not sure. Each opens the SNIFF
+question that holds the list, the day's Food by day schedule, or a search. The
+numbers come from the rows themselves, so fixing a row fixes the strip. The
+list is in `src/components/NeedStart.jsx`.
+
+**If this doesn't work.** Some rows carry a backup route (`alt` in
+`resources.json`, shown as "If this doesn't work" on the card and in anything
+copied for a family): where to go when the first place is full, closed or
+says no. They are written to be read by a family, so Skylar's reasons for not
+referring somewhere stay in `note`.
+
+**Visit plan.** "Add to visit plan" on a resource or an upcoming event gathers
+a short list in the Visit plan tab. From there, **Copy plan for a family**
+gives one text with each place's public contact facts and backup, the dates
+with their years, and any of the "before you go, ask" questions ticked (rides,
+interpreter, children along, disability needs, papers, timing, how to reach
+them). **Print or save as PDF** prints the same thing without the app around
+it. Staff notes show on screen and are never copied or printed. The plan stays
+in this browser only, in the same storage as edits; do not put names or case
+details in it. Clear it when the visit is done.
+
 ## Ask AI
 
 The **Ask AI** button next to the search box takes a question, a description of
@@ -263,6 +290,7 @@ remove them before sharing outside the team. `point-people.json` exports stamp
 - Facebook holiday sweep, 16 Nov 2026 (`scripts/apply-fb-holiday-sweep-2026-11-16.mjs`): ABCCM application link, Thanksgiving meals, programs reported full, a no-ID free food row
 - Mountain Strong Free Clinic flyers, 16 Nov 2026 (`scripts/apply-mountain-strong-2026-11-16.mjs`): a Burnsville free clinic row and its two open house dates
 - OK Computer Buncombe Family Navigator build, shared 17 Nov 2026 (`scripts/apply-okc-build-2026-11-17.mjs`): another tool's 14 Nov 2026 reading of official pages. Dream Center holiday dates, Bounty & Soul's weekly schedule (also in Food by day) and intake details; no verified dates, conflicts kept in `note`
+- Backup routes, 17 Nov 2026 (`scripts/apply-backup-routes-2026-11-17.mjs`): an "If this doesn't work" route on 31 rows, from the OK Computer build's backups where they held up against the directory, and from Skylar's own stance for the Salvation Army and Christmas rows. Wording only; no new contacts
 - The owner's Google Drive, read 7 Nov 2026 under the Drive merge prompt's rules (metadata first, only family-resource files, no client details; `scripts/apply-drive-merge-2026-11-07.mjs`). The v19 workbook there is the same version this app was built from, and most topic guides predate it, so most of what they name was already here. They added 9 rows (MountainCare adult day, A-B Tech phlebotomy, STEP / More Than a Job NC, Finish Line grants, Trans Lifeline, LGBT National Help Center, National Runaway Safeline, Biltmore Avenue Family Dentistry, Irene Wortham Early Learning Center) and details on 19 others, with every conflict in `note`. Weekend-guide events went in only with a second source: four, checked by web search, and three of those had the venue, time or website wrong in the guide
 - A second Drive pass the same day (`scripts/apply-drive-followup-2026-11-07.mjs`) over the family-resource files the first left as candidates: kinship care benefits, the March 2026 caregiver guide, respite options, a caregiver therapy handout and drop-in movement options. Most of it was already here; it added 6 rows (CMARC care management, Botanical Gardens, Folk Art Center, WNC Farmers Market, The Incredible Years, free nature play) and details on 12, including what relatives raising a child in DSS custody can be paid and which therapists are certified in Child-Parent Psychotherapy
 - Buncombe County Family Resource Directory, Public Edition, event sheets (`scripts/import-public-edition-calendar.cjs`): its curated family and caregiver calendar of 1,354 occurrences (one, Fire Safety for Kids in Fairview, was already in `events.json`, which kept it and gained the library's details), its recurring series, annual leads and monitored calendars. The full library feed's 74 adult-interest programs stay out, as the Public Edition keeps them out of its family calendar

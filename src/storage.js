@@ -10,7 +10,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 
 export const KEY = "wnc:directory:v1";
-export const EMPTY = { edits: {}, cra: {}, added: [], log: [] };
+export const EMPTY = { edits: {}, cra: {}, added: [], log: [], plan: { items: [], asks: [] } };
 
 export function useStore() {
   const [state, setState] = useState(EMPTY);

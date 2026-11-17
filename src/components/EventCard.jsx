@@ -9,7 +9,7 @@ const KIND = {
   signup: ["Sign-up", "new", "var(--accent)"],
 };
 
-export default function EventCard({ e, soon, resource, onOpen }) {
+export default function EventCard({ e, soon, resource, onOpen, inPlan, onPlan }) {
   const [label, cls, edge] = KIND[e.kind] || KIND.event;
   const open = soon === "On now" || soon === "Open now";
   /* a window that has already opened is shown by the day it closes */
@@ -57,7 +57,7 @@ export default function EventCard({ e, soon, resource, onOpen }) {
       {e.detail && <p className="detail">{e.detail}</p>}
       {e.cost && <p className="detail">Cost: {e.cost}</p>}
 
-      {(e.ph || url || resource) && (
+      {(e.ph || url || resource || onPlan) && (
         <div className="card-actions">
           {e.ph && (
             <a className="act call" href={telHref(e.ph)}>
@@ -72,6 +72,12 @@ export default function EventCard({ e, soon, resource, onOpen }) {
           {resource && (
             <button className="act link" onClick={onOpen} title={resource.name}>
               <Icon name="search" size={14} />Open in the directory
+            </button>
+          )}
+          {onPlan && (
+            <button className={"act link no-print" + (inPlan ? " in-plan" : "")} onClick={onPlan}
+              aria-pressed={inPlan ? "true" : "false"}>
+              {inPlan ? "In the visit plan (remove)" : "Add to visit plan"}
             </button>
           )}
         </div>

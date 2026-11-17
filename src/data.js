@@ -43,6 +43,8 @@ export const BASE = resourcesFile.resources.map((r) => ({
   verified: r.lv || "", verifiedBy: r.vb || "", point: r.pp || "",
   note: r.note || "", isNew: !!r.new,
   startHere: !!r.start, readFirst: !!r.readFirst,
+  /* where to turn if this route is full, closed or not a fit */
+  backup: r.alt || "",
 }));
 
 export const PEOPLE = peopleFile.people;
@@ -98,4 +100,5 @@ export const telHref = (phone) => "tel:" + (phone || "")
 export const FIELDS = [
   ["phone", "Phone"], ["web", "Website"], ["email", "Email"], ["address", "Address"],
   ["hours", "Hours"], ["point", "Point person"], ["detail", "What it is"], ["tags", "Tags"],
+  ["backup", "If this doesn't work (backup route)"],
 ];
