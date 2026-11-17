@@ -155,6 +155,12 @@
    "entries": [
     {
      "date": "Nov 17 2026",
+     "what": "Duplicate listings merged into one per program",
+     "detail": "34 programs were listed two to four times, once per SNIFF section they serve (72 rows). Each is now one listing (708 resources in all) that still shows under every SNIFF section and question its copies did, with the fullest description, the others' extra details (Spanish ones marked), the newest verification and every source. Examples: Catholic Charities, Safe Shelter, MANNA Food Helpline, NC 211, Mountain Child Advocacy Center, True Ridge, The Arc.",
+     "source": "scripts/apply-merge-duplicates-2026-11-17.mjs"
+    },
+    {
+     "date": "Nov 17 2026",
      "what": "Nationwide emergency alert test today at 2:20pm",
      "detail": "Events has the FCC's nationwide Emergency Alert System test on radio and TV, 2:20pm Eastern on November 17 (backup date December 3), with the exact English message, so staff can warn families that it is only a test.",
      "source": "scripts/apply-eas-test-2026-11-17.mjs"

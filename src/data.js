@@ -32,10 +32,16 @@ export const SECBY = Object.fromEntries(SECTIONS.map((s) => [s.id, s]));
 export const NEEDS = sniffFile.needs;
 export const NEEDBY = Object.fromEntries(NEEDS.map((n) => [n.key, n]));
 
+/* old id -> kept id, for programs merged from duplicate rows: a plan or
+   edit saved in a browser under an old id still finds the program */
+export const MERGED = resourcesFile.meta.merged || {};
+
 /* the on-disk field names are short because the workbook's are; the UI reads
    better with full ones, so rename once here rather than at every use site */
 export const BASE = resourcesFile.resources.map((r) => ({
   id: r.id, name: r.n, sec: r.sec, needs: r.needs || [],
+  /* every section the row is filed in: a merged program keeps its copies' */
+  secs: r.secs && r.secs.length ? r.secs : [r.sec],
   spanish: r.sp || "", spanishDetail: r.spd || "",
   origSection: r.os || "", source: r.src || "",
   phone: r.ph || "", email: r.em || "", web: r.w || "", detail: r.d || "",

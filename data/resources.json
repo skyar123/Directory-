@@ -26,11 +26,52 @@
    "Community food, medical and financial lists and the October 2026 low-cost list, 17 Nov 2026 (see scripts/apply-community-guides-2026-11-17.mjs)",
    "Winter 2026-27 holiday guide cross-check, 17 Nov 2026 (see scripts/apply-winter-guide-2026-11-17.mjs)",
    "Food by day update, 211 phone fix and Skylar's food map, 17 Nov 2026 (see scripts/apply-food-schedule-2026-11-17.mjs)",
-   "SNIFF tag fixes from a name and description audit, 17 Nov 2026 (see scripts/apply-tag-fixes-2026-11-17.mjs)"
+   "SNIFF tag fixes from a name and description audit, 17 Nov 2026 (see scripts/apply-tag-fixes-2026-11-17.mjs)",
+   "Duplicate rows merged, 17 Nov 2026 (see scripts/apply-merge-duplicates-2026-11-17.mjs); meta.merged maps old ids to kept ones"
   ],
   "file": "resources.json",
   "note": "One object per resource. `needs` are SNIFF question keys, `src` names where the fact came from. `alt` is an optional backup route, shown as \"If this doesn't work\".",
-  "count": 746
+  "count": 708,
+  "merged": {
+   "kaleidoscope-play-learn-2": "kaleidoscope-play-learn",
+   "asheville-city-schools-2": "asheville-city-schools",
+   "asheville-parks-rec-therapeutic-recreation-2": "asheville-parks-rec-therapeutic-recreation",
+   "caring-for-children-respite-scholarship-2": "caring-for-children-respite-scholarship",
+   "nc-lifespan-respite-2": "nc-lifespan-respite",
+   "the-arc-of-buncombe-county-2": "the-arc-of-buncombe-county",
+   "we-rock-the-spectrum-2": "we-rock-the-spectrum",
+   "bcs-language-services-2": "bcs-language-services",
+   "read-to-succeed-asheville-buncombe-r2s-2": "read-to-succeed-asheville-buncombe-r2s",
+   "foster-and-kinship-closets-giving-tree-foste-2": "foster-and-kinship-closets-giving-tree-foste",
+   "mountain-child-advocacy-center-2": "mountain-child-advocacy-center",
+   "mountain-child-advocacy-center-3": "mountain-child-advocacy-center",
+   "faithaction-id-2": "faithaction-id",
+   "eblen-charities-2": "eblen-charities",
+   "free-tax-prep-vita-aarp": "free-tax-prep-vita",
+   "hispanic-federation-nc-2": "hispanic-federation-nc",
+   "asheville-christian-refugee-ministry-2": "asheville-christian-refugee-ministry",
+   "cula": "cula-centro-unido-latino-americano",
+   "catholic-charities-2": "catholic-charities",
+   "catholic-charities-3": "catholic-charities",
+   "catholic-charities-4": "catholic-charities",
+   "colaborativa-la-milpa-2": "colaborativa-la-milpa",
+   "el-centro-of-henderson-county-2": "el-centro-of-henderson-county",
+   "hola-carolina-radio-la-pantera-97-3-fm-2": "hola-carolina-radio-la-pantera-97-3-fm",
+   "safe-shelter-2": "safe-shelter",
+   "sistas-caring-4-sistas-2": "sistas-caring-4-sistas",
+   "true-ridge-2": "true-ridge",
+   "true-ridge-3": "true-ridge",
+   "vecinos-farmworker-health-program-2": "vecinos-farmworker-health-program",
+   "manna-food-helpline-2": "manna-food-helpline",
+   "nc-211-2": "nc-211",
+   "nc-disaster-case-management-2": "nc-disaster-case-management",
+   "crisis-intervention-program-cip-2": "crisis-intervention-program-cip",
+   "liheap-heating": "liheap",
+   "operation-fan-heat-relief-2": "operation-fan-heat-relief",
+   "western-carolina-rescue-ministries-2": "western-carolina-rescue-ministries",
+   "appalachian-mountain-health-dental": "appalachian-mountain-health-amh-dental",
+   "project-cara": "project-cara-mahec"
+  }
  },
  "sections": [
   {
@@ -1120,7 +1161,7 @@
    "a": "Rotating weekday sites in Buncombe County (BPFC office: 53 Asheland Ave, Suite 102A)",
    "h": "Weekday mornings; Mondays 10-11:30am at one site (Oct 2026)",
    "os": "10.2 Centers and Programs",
-   "t": "Free, Kids / 0-5",
+   "t": "Free, Kids / 0-5, Walk-in",
    "lv": "",
    "vb": "",
    "sec": "I",
@@ -1135,8 +1176,8 @@
     "VII:*",
     "VII:4a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; openings from AVL Kids and Asheville Family Activities posts, 29 Oct 2026, Facebook deep scrape, 6 Nov 2026; BPFC main line and website from Asheville Chamber and directory listings, eligibility from a 2020 BPFC description, via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; registration rule and contacts from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026); backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
-   "note": "Older flyers and search results conflict on days, sites, eligibility and breaks. Confirm the current schedule. The program page now says registration is required (not drop-in), groups run during the school year only, caregivers stay, one adult per child. To register: ages 3 months to 3 years, grace.ragaller@acsgmail.net; ages 3 to 5, marna.holland@acsgmail.net.",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; openings from AVL Kids and Asheville Family Activities posts, 29 Oct 2026, Facebook deep scrape, 6 Nov 2026; BPFC main line and website from Asheville Chamber and directory listings, eligibility from a 2020 BPFC description, via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; registration rule and contacts from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026); backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory; merged 17 Nov 2026 from 2 rows (kaleidoscope-play-learn, kaleidoscope-play-learn-2)",
+   "note": "Older flyers and search results conflict on days, sites, eligibility and breaks. Confirm the current schedule. The program page now says registration is required (not drop-in), groups run during the school year only, caregivers stay, one adult per child. To register: ages 3 months to 3 years, grace.ragaller@acsgmail.net; ages 3 to 5, marna.holland@acsgmail.net. Older flyers and search results conflict on days, sites, eligibility and breaks. Confirm the current schedule.",
    "new": false,
    "alt": "Library story times (see the library rows) are free and many need no sign-up."
   },
@@ -1578,11 +1619,11 @@
    "ph": "828-350-6128 / 828-774-8785",
    "em": "holly.sutter@acsgmail.net",
    "w": "ashevillecityschools.net",
-   "d": "EC Director Holly Sutter, 828-350-6128, holly.sutter@acsgmail.net; Preschool Zachary Cohen, zachary.cohen@acsgmail.net, 828-774-8785",
+   "d": "EC Director Holly Sutter, 828-350-6128, holly.sutter@acsgmail.net; Preschool Zachary Cohen, zachary.cohen@acsgmail.net, 828-774-8785. Universal free breakfast AND lunch for all enrolled students, no application (Community Eligibility Provision).",
    "a": "",
    "h": "",
    "os": "11.2 Where to Start: Two Pathways (do both at once)",
-   "t": "Kids / 0-5",
+   "t": "Kids / 0-5, Free",
    "lv": "",
    "vb": "",
    "sec": "IX",
@@ -1595,9 +1636,13 @@
     "IX:*",
     "IX:3a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; merged 17 Nov 2026 from 2 rows (asheville-city-schools, asheville-city-schools-2)",
    "note": "",
-   "new": false
+   "new": false,
+   "secs": [
+    "IX",
+    "VIII"
+   ]
   },
   {
    "id": "asheville-parks-rec-therapeutic-recreation",
@@ -1612,7 +1657,7 @@
    "a": "Murphy-Oakley Community Center, 749 Fairview Rd, Asheville 28803",
    "h": "Program times vary; register at avlrec.com",
    "os": "11.5 Sensory-Friendly Recreation, Camps, and Community Recommendations",
-   "t": "",
+   "t": "Free",
    "lv": "2026-11-06",
    "vb": "SB (web search)",
    "sec": "IX",
@@ -1624,9 +1669,13 @@
     "X:*",
     "X:11"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; TR Tots and program list from ashevillenc.gov via web search, 6 Nov 2026; TR home base, phone and page from ashevillenc.gov via web search, 6 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; TR Tots and program list from ashevillenc.gov via web search, 6 Nov 2026; TR home base, phone and page from ashevillenc.gov via web search, 6 Nov 2026; merged 17 Nov 2026 from 2 rows (asheville-parks-rec-therapeutic-recreation, asheville-parks-rec-therapeutic-recreation-2)",
    "note": "",
-   "new": false
+   "new": false,
+   "secs": [
+    "IX",
+    "X"
+   ]
   },
   {
    "id": "asheville-testing",
@@ -1814,30 +1863,34 @@
    "ph": "828-785-1590",
    "em": "AmyHobson@eckerd.org",
    "w": "eckerd.org",
-   "d": "funds respite childcare for Buncombe kids birth-18 with disability, chronic condition, or significant behavioral/medical needs. AmyHobson@eckerd.org / amy.hobson@caring4children.org, 828-785-1590. How it works, per the guide: the parent picks the respite caregiver (18 or older and not living in the home, often someone the child already knows), pays them, sends a monthly timesheet by 9am on the last Monday, and is reimbursed by direct deposit. No work requirement. Apply with a W-9. 2026-27 application: scholarships run July 2026 to June 2027 for Buncombe and Henderson counties, for families of children with emotional, behavioral or medical needs or families facing risk factors. Send the application, a W-9 and the direct-deposit form with a voided check to the director. The money is for the caregiver to get a break: the application says it cannot pay for care during the parent's appointments, surgery or recovery, work, school or errands (that is child care), for camps or after-school programs, or for the parent's own outing costs. The whole amount goes to the respite provider.",
+   "d": "funds respite childcare for Buncombe kids birth-18 with disability, chronic condition, or significant behavioral/medical needs. AmyHobson@eckerd.org / amy.hobson@caring4children.org, 828-785-1590. How it works, per the guide: the parent picks the respite caregiver (18 or older and not living in the home, often someone the child already knows), pays them, sends a monthly timesheet by 9am on the last Monday, and is reimbursed by direct deposit. No work requirement. Apply with a W-9. 2026-27 application: scholarships run July 2026 to June 2027 for Buncombe and Henderson counties, for families of children with emotional, behavioral or medical needs or families facing risk factors. Send the application, a W-9 and the direct-deposit form with a voided check to the director. The money is for the caregiver to get a break: the application says it cannot pay for care during the parent's appointments, surgery or recovery, work, school or errands (that is child care), for camps or after-school programs, or for the parent's own outing costs. The whole amount goes to the respite provider. And FFA-NC free counseling.",
    "a": "",
    "h": "",
    "os": "11.4 Respite",
-   "t": "Kids / 0-5",
+   "t": "Kids / 0-5, Free",
    "lv": "",
    "vb": "",
    "sec": "RESPITE",
    "needs": [
     "IV:*",
     "IV:6a",
+    "IX:*",
+    "IX:8a",
+    "RESPITE:*",
     "V:*",
     "V:7a",
     "VII:*",
     "VII:5a",
     "VIII:*",
-    "VIII:9a",
-    "IX:*",
-    "IX:8a",
-    "RESPITE:*"
+    "VIII:9a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: Free Childcare Leicester NC (14 Aug 2026); Drive: Eckerd Respite Scholarship Application (2026-2027) and Parent Information Guide",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: Free Childcare Leicester NC (14 Aug 2026); Drive: Eckerd Respite Scholarship Application (2026-2027) and Parent Information Guide; merged 17 Nov 2026 from 2 rows (caring-for-children-respite-scholarship, caring-for-children-respite-scholarship-2)",
    "note": "Contacts differ: this row has 828-785-1590 and AmyHobson@eckerd.org; the 2026-27 application gives the director's cell as 828-777-5715, fax 828-575-2049, and ahobson@eckerd.org; the August childcare guide gives 828-450-3943 for questions. Email ahobson@eckerd.org first.",
-   "new": false
+   "new": false,
+   "secs": [
+    "RESPITE",
+    "IV"
+   ]
   },
   {
    "id": "cdsa",
@@ -2248,9 +2301,13 @@
     "IX:*",
     "IX:8a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: Respite Options for Caregivers (Jul 2026; checked against each organization's published information and an FFA-NC coach); program page from NCDHHS via web search, 8 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: Respite Options for Caregivers (Jul 2026; checked against each organization's published information and an FFA-NC coach); program page from NCDHHS via web search, 8 Nov 2026; merged 17 Nov 2026 from 2 rows (nc-lifespan-respite, nc-lifespan-respite-2)",
    "note": "",
-   "new": false
+   "new": false,
+   "secs": [
+    "RESPITE",
+    "IV"
+   ]
   },
   {
    "id": "neurodiverse-friendly-camps-lakey-gap-tall-t",
@@ -2484,10 +2541,10 @@
    "pp": "",
    "sp": "🟠 Interpreter available",
    "spd": "Federally or publicly funded: a free qualified interpreter must be provided on request. Ask for one when you call.",
-   "ph": "828-253-1255",
+   "ph": "828-253-1255 / 1-800-442-2762",
    "em": "",
    "w": "arcofbuncombecounty.org",
-   "d": "828-253-1255. Respite, advocacy, after-school and summer programs, camps. It also helps people with intellectual and developmental disabilities and their families through a housing, medical, transportation or utility crisis, and runs Operation Santa at Christmas (see that row).",
+   "d": "828-253-1255. Respite, advocacy, after-school and summer programs, camps. It also helps people with intellectual and developmental disabilities and their families through a housing, medical, transportation or utility crisis, and runs Operation Santa at Christmas. Autism Society of NC: 1-800-442-2762.",
    "a": "",
    "h": "",
    "os": "11.4 Respite",
@@ -2508,43 +2565,13 @@
     "X:*",
     "X:7"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; crisis help from the WNC Financial Support Resources community list (companion to the food guide), shared by Skylar Belt 17 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; crisis help from the WNC Financial Support Resources community list (companion to the food guide), shared by Skylar Belt 17 Nov 2026; merged 17 Nov 2026 from 2 rows (the-arc-of-buncombe-county, the-arc-of-buncombe-county-2)",
    "note": "",
-   "new": false
-  },
-  {
-   "id": "the-arc-of-buncombe-county-2",
-   "n": "The Arc of Buncombe County",
-   "pp": "",
-   "sp": "🟠 Interpreter available",
-   "spd": "Federally or publicly funded: a free qualified interpreter must be provided on request. Ask for one when you call.",
-   "ph": "828-253-1255 / 1-800-442-2762",
-   "em": "",
-   "w": "",
-   "d": "828-253-1255. Autism Society of NC: 1-800-442-2762.",
-   "a": "",
-   "h": "",
-   "os": "11.7 Disability Advocacy and Financial",
-   "t": "",
-   "lv": "",
-   "vb": "",
-   "sec": "X",
-   "needs": [
-    "I:*",
-    "I:10a",
-    "IV:*",
-    "IV:5a",
-    "IV:6a",
-    "RESPITE:*",
-    "RESPITE:section-5-medicaid-and",
-    "VIII:*",
-    "VIII:2a",
-    "X:*",
-    "X:7"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
-   "new": false
+   "new": false,
+   "secs": [
+    "RESPITE",
+    "X"
+   ]
   },
   {
    "id": "under-age-3",
@@ -2619,11 +2646,11 @@
    "ph": "828-505-7556",
    "em": "",
    "w": "werockthespectrumasheville.com",
-   "d": "63 Turtle Creek Dr, 828-505-7556. Inclusive sensory gym, calming room, Toddler Time (4 and under). My Brother Rocks the Spectrum Foundation grants cover fees, social skills groups, and 1:1 attendant care for low-income families.",
+   "d": "sensory gym. Sunny Day Play Space: 36 Rosscraggon Rd ($12/child, $7 sibling, infants free with paid sibling). Mountain Play Lodge: 3389 Sweeten Creek Rd, Arden (separate under-3 zone, $10-15). Big Air Toddler Time: Tue/Thu 11am-1pm school year, $12.99. Asheville Adventure Play. Inclusive sensory gym, calming room, Toddler Time (4 and under). My Brother Rocks the Spectrum Foundation grants cover fees, social skills groups, and 1:1 attendant care for low-income families.",
    "a": "63 Turtle Creek Dr",
-   "h": "",
+   "h": "Tue/Thu 11am-1pm school year, $12",
    "os": "11.5 Sensory-Friendly Recreation, Camps, and Community Recommendations",
-   "t": "Kids / 0-5",
+   "t": "Kids / 0-5, Free, Walk-in",
    "lv": "",
    "vb": "",
    "sec": "IX",
@@ -2633,9 +2660,13 @@
     "IX:*",
     "IX:7a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; merged 17 Nov 2026 from 2 rows (we-rock-the-spectrum, we-rock-the-spectrum-2)",
    "note": "",
-   "new": false
+   "new": false,
+   "secs": [
+    "IX",
+    "I"
+   ]
   },
   {
    "id": "weighted-blankets-project-linus",
@@ -2742,9 +2773,13 @@
     "X:*",
     "X:10"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; phone, email and services from Buncombe County Schools' Language Services pages via web search, 8 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; phone, email and services from Buncombe County Schools' Language Services pages via web search, 8 Nov 2026; merged 17 Nov 2026 from 2 rows (bcs-language-services, bcs-language-services-2)",
    "note": "",
-   "new": false
+   "new": false,
+   "secs": [
+    "I",
+    "X"
+   ]
   },
   {
    "id": "children-first-cis-learning-centers",
@@ -2956,7 +2991,7 @@
    "ph": "828-747-2277",
    "em": "",
    "w": "r2sasheville.org",
-   "d": "free summer reading programs and family literacy (r2sasheville.org). Trained volunteers tutor K-3 readers one to one in Asheville City and Buncombe County schools.",
+   "d": "r2sasheville.org. Free summer reading and family literacy, strong reach into Black and low-income communities. Trained volunteers tutor K-3 readers one to one in Asheville City and Buncombe County schools.",
    "a": "16A Stewart St, Asheville",
    "h": "",
    "os": "12.3 Literacy, Tutoring, Adult Ed",
@@ -2972,9 +3007,13 @@
     "X:*",
     "X:8"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; phone and office from volunteer listings, tutoring model from a Buncombe County grant report, via web search, 8 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; phone and office from volunteer listings, tutoring model from a Buncombe County grant report, via web search, 8 Nov 2026; merged 17 Nov 2026 from 2 rows (read-to-succeed-asheville-buncombe-r2s, read-to-succeed-asheville-buncombe-r2s-2)",
    "note": "",
-   "new": false
+   "new": false,
+   "secs": [
+    "V",
+    "X"
+   ]
   },
   {
    "id": "true-ridge-la-promesa",
@@ -3125,37 +3164,6 @@
    "new": false
   },
   {
-   "id": "caring-for-children-respite-scholarship-2",
-   "n": "CARING for Children Respite Scholarship",
-   "pp": "",
-   "sp": "⚪ Not listed - ask",
-   "spd": "Not stated in the source. Ask when you call.",
-   "ph": "828-785-1590",
-   "em": "AmyHobson@eckerd.org",
-   "w": "",
-   "d": "(see 11.4) and FFA-NC free counseling.",
-   "a": "",
-   "h": "",
-   "os": "13.2 Support for Foster, Adoptive, and Kinship Caregivers",
-   "t": "Free, Kids / 0-5",
-   "lv": "",
-   "vb": "",
-   "sec": "IV",
-   "needs": [
-    "IV:*",
-    "IV:6a",
-    "V:*",
-    "V:7a",
-    "VII:*",
-    "VII:5a",
-    "VIII:*",
-    "VIII:9a"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
-   "new": false
-  },
-  {
    "id": "foster-family-alliance-of-nc-ffa-nc",
    "n": "Foster Family Alliance of NC (FFA-NC)",
    "pp": "Erica",
@@ -3196,7 +3204,7 @@
    "a": "",
    "h": "",
    "os": "13.2 Support for Foster, Adoptive, and Kinship Caregivers",
-   "t": "",
+   "t": "Free",
    "lv": "",
    "vb": "",
    "sec": "IV",
@@ -3204,9 +3212,13 @@
     "VIII:*",
     "VIII:12a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: Asheville NC Kinship Care Benefits (Jul 2026); Holiday Wishes format from past Buncombe County releases via web search, 17 Nov 2026; 2026 dates from the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: Asheville NC Kinship Care Benefits (Jul 2026); Holiday Wishes format from past Buncombe County releases via web search, 17 Nov 2026; 2026 dates from the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026; merged 17 Nov 2026 from 2 rows (foster-and-kinship-closets-giving-tree-foste, foster-and-kinship-closets-giving-tree-foste-2)",
    "note": "",
-   "new": false
+   "new": false,
+   "secs": [
+    "IV",
+    "VIII"
+   ]
   },
   {
    "id": "fostering-the-family",
@@ -3269,11 +3281,11 @@
    "ph": "828-213-9824",
    "em": "",
    "w": "mtncac.org",
-   "d": "trauma treatment for kids in care.",
+   "d": "(at FJC): child abuse response; PCIT and CPP therapy for children 0-18 who've experienced abuse, neglect, or trauma; multilingual trauma therapists offering TF-CBT. Trauma treatment for kids in care.",
    "a": "Mission Children's Hospital, 3rd floor",
    "h": "",
    "os": "13.2 Support for Foster, Adoptive, and Kinship Caregivers",
-   "t": "Kids / 0-5 | Verified 8/2026. Forensic interviews, medical eval, TF-CBT and PCIT.",
+   "t": "Kids / 0-5, Verified 8/2026. Forensic interviews, medical eval, TF-CBT and PCIT.",
    "lv": "2026-08-01",
    "vb": "SB",
    "sec": "IV",
@@ -3283,9 +3295,14 @@
     "II:*",
     "II:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; merged 17 Nov 2026 from 3 rows (mountain-child-advocacy-center, mountain-child-advocacy-center-2, mountain-child-advocacy-center-3)",
    "note": "",
-   "new": false
+   "new": false,
+   "secs": [
+    "IV",
+    "CRISIS",
+    "II"
+   ]
   },
   {
    "id": "nc-kinship-relative-care",
@@ -3454,9 +3471,13 @@
     "X:*",
     "X:3"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; merged 17 Nov 2026 from 2 rows (faithaction-id, faithaction-id-2)",
    "note": "",
-   "new": false
+   "new": false,
+   "secs": [
+    "X",
+    "ESPANOL"
+   ]
   },
   {
    "id": "family-justice-center",
@@ -3808,7 +3829,7 @@
    "ph": "828-255-3066",
    "em": "",
    "w": "eblencharities.org",
-   "d": "gas vouchers for medical trips (828-255-3066). At Christmas it runs the Saint Nicholas Project toy store (see that row) and in November a Thanksgiving meal giveaway with Ingles. For a utility or rent appointment, send the documents first (the account holder attestation for utility bills, and income proof or a no-income self-attestation) in person or to info@eblencharities.org at least 3 business days ahead.",
+   "d": "gas vouchers for medical trips (828-255-3066). At Christmas it runs the Saint Nicholas Project toy store and in November a Thanksgiving meal giveaway with Ingles. For a utility or rent appointment, send the documents first (the account holder attestation for utility bills, and income proof or a no-income self-attestation) in person or to info@eblencharities.org at least 3 business days ahead. Emergency rent, mortgage, utilities, prescriptions, gas vouchers for medical trips, eyeglasses. Administers LIEAP/CIP intake for Buncombe. Book appointment online at eblencharities.org and submit documents at least 3 business days ahead.",
    "a": "23 Hamilton St",
    "h": "",
    "os": "PART 15: TRANSPORTATION",
@@ -3823,8 +3844,8 @@
     "VIII:14a",
     "VIII:1a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory; appointment documents, address conflict and holiday closures from the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026",
-   "note": "Some mid-2026 county lists give 52 Westgate Pkwy; Eblen's own 2026 pages use 23 Hamilton St. Call 828-255-3066 before sending anyone. The winter guide says Eblen is closed Dec 23-25 and Dec 30 to Jan 1.",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory; appointment documents, address conflict and holiday closures from the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026; merged 17 Nov 2026 from 2 rows (eblen-charities, eblen-charities-2)",
+   "note": "Some mid-2026 county lists give 52 Westgate Pkwy; Eblen's own 2026 pages use 23 Hamilton St. Call 828-255-3066 before sending anyone. The winter guide says Eblen is closed Dec 23-25 and Dec 30 to Jan 1. Another listing of this program gave the address 52 Westgate Pkwy.",
    "new": false,
    "alt": "ABCCM Crisis Ministry (828-259-5300) or Buncombe DSS emergency assistance (828-250-6330)."
   },
@@ -4000,7 +4021,7 @@
   },
   {
    "id": "free-tax-prep-vita",
-   "n": "Free tax prep (VITA)",
+   "n": "Free tax prep (VITA/AARP)",
    "pp": "",
    "sp": "⚪ Not listed - ask",
    "spd": "Not stated in the source. Ask when you call.",
@@ -4017,9 +4038,10 @@
    "sec": "X",
    "needs": [
     "X:*",
+    "X:12",
     "X:4"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Pisgah Legal VITA line and income limit from pisgahlegal.org via web search, 17 Nov 2026; clinic dates from the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Pisgah Legal VITA line and income limit from pisgahlegal.org via web search, 17 Nov 2026; clinic dates from the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026; merged 17 Nov 2026 from 2 rows (free-tax-prep-vita, free-tax-prep-vita-aarp)",
    "note": "",
    "new": false
   },
@@ -4321,7 +4343,7 @@
    "ph": "",
    "em": "",
    "w": "hispanicfederation.org/about/where-we-operate/north-carolina/",
-   "d": "computer scholarships and digital equity programs for Latino families. There is no Asheville office: its North Carolina offices are in Charlotte and Mount Olive, and the website has a contact form. It also runs NC Salud, a Spanish-language health information hotline.",
+   "d": "capacity building, Spanish CPR/First Aid, computer scholarships, immigration clinics; biweekly newsletter of Latinx programming. There is no Asheville office: its North Carolina offices are in Charlotte and Mount Olive, and the website has a contact form. It also runs NC Salud, a Spanish-language health information hotline.",
    "a": "",
    "h": "",
    "os": "PART 17: TECH AND INTERNET ACCESS",
@@ -4338,9 +4360,13 @@
     "X:*",
     "X:5"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; offices from Hispanic Federation's North Carolina page, NC Salud from WUNC, via web search, 8 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; offices from Hispanic Federation's North Carolina page, NC Salud from WUNC, via web search, 8 Nov 2026; merged 17 Nov 2026 from 2 rows (hispanic-federation-nc, hispanic-federation-nc-2)",
    "note": "",
-   "new": false
+   "new": false,
+   "secs": [
+    "X",
+    "ESPANOL"
+   ]
   },
   {
    "id": "kramden-institute",
@@ -4504,35 +4530,6 @@
    "new": false
   },
   {
-   "id": "asheville-parks-rec-therapeutic-recreation-2",
-   "n": "Asheville Parks & Rec Therapeutic Recreation",
-   "pp": "Lori Long",
-   "sp": "⚪ Not listed - ask",
-   "spd": "Not stated in the source. Ask when you call.",
-   "ph": "828-232-4529",
-   "em": "LLong@ashevillenc.gov",
-   "w": "ashevillenc.gov/department/parks-recreation/recreation/therapeutic-recreation/",
-   "d": "adaptive programs, Oakley Rec (828-232-4529). Fall 2026 programs include TR Tots for toddlers and young children, TR Club Connect, and the OAKS Afterschool program; check avlrec.com for TR Tots days and times. TR manager Lori Long, LRT, CTRS.",
-   "a": "Murphy-Oakley Community Center, 749 Fairview Rd, Asheville 28803",
-   "h": "Program times vary; register at avlrec.com",
-   "os": "18.4 Classes: Movement, Dance, Music, Yoga",
-   "t": "Free",
-   "lv": "2026-11-06",
-   "vb": "SB (web search)",
-   "sec": "X",
-   "needs": [
-    "I:*",
-    "I:11a",
-    "IX:*",
-    "IX:7a",
-    "X:*",
-    "X:11"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; TR Tots and program list from ashevillenc.gov via web search, 6 Nov 2026; TR home base, phone and page from ashevillenc.gov via web search, 6 Nov 2026",
-   "note": "",
-   "new": false
-  },
-  {
    "id": "dance-music-and-theater-programs-several-wit",
    "n": "Dance, music, and theater programs (several with scholarships)",
    "pp": "",
@@ -4623,38 +4620,6 @@
    "new": false
   },
   {
-   "id": "kaleidoscope-play-learn-2",
-   "n": "Kaleidoscope Play & Learn",
-   "pp": "Marna",
-   "sp": "⚪ Not listed - ask",
-   "spd": "Not stated in the source. Ask when you call.",
-   "ph": "828-285-9333 / 828-689-1525 (Madison County Smart Start)",
-   "em": "marna@buncombepfc.org",
-   "w": "buncombepfc.org",
-   "d": "free playgroups (see 10.2). 29 Oct 2026 Facebook post: openings now for children 3 to 5 who are not enrolled in licensed child care. Stories, songs, crafts and hands-on activities at several weekday sites (Mondays 10 to 11:30am was listed first). BPFC has described the groups as free adult-child playgroups for children 3 months to 5 years who live in Buncombe County and are not in licensed child care, with registration required first (2020 description, so confirm the age range).",
-   "a": "Rotating weekday sites in Buncombe County (BPFC office: 53 Asheland Ave, Suite 102A)",
-   "h": "Weekday mornings; Mondays 10-11:30am at one site (Oct 2026)",
-   "os": "18.3 Drop-In Play (0-5 focus)",
-   "t": "Free, Walk-in, Kids / 0-5",
-   "lv": "",
-   "vb": "",
-   "sec": "I",
-   "needs": [
-    "I:*",
-    "I:6a",
-    "I:8a",
-    "II:*",
-    "II:5a",
-    "IV:*",
-    "IV:7a",
-    "VII:*",
-    "VII:4a"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; openings from AVL Kids and Asheville Family Activities posts, 29 Oct 2026, Facebook deep scrape, 6 Nov 2026; BPFC main line and website from Asheville Chamber and directory listings, eligibility from a 2020 BPFC description, via web search, 6 Nov 2026",
-   "note": "Older flyers and search results conflict on days, sites, eligibility and breaks. Confirm the current schedule.",
-   "new": false
-  },
-  {
    "id": "live-calendars-to-follow",
    "n": "Live calendars to follow",
    "pp": "",
@@ -4706,33 +4671,6 @@
     "V:7a",
     "VII:*",
     "VII:4a"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
-   "new": false
-  },
-  {
-   "id": "we-rock-the-spectrum-2",
-   "n": "We Rock the Spectrum",
-   "pp": "",
-   "sp": "⚪ Not listed - ask",
-   "spd": "Not stated in the source. Ask when you call.",
-   "ph": "828-505-7556",
-   "em": "",
-   "w": "werockthespectrumasheville.com",
-   "d": "sensory gym (see 11.5). Sunny Day Play Space: 36 Rosscraggon Rd ($12/child, $7 sibling, infants free with paid sibling). Mountain Play Lodge: 3389 Sweeten Creek Rd, Arden (separate under-3 zone, $10-15). Big Air Toddler Time: Tue/Thu 11am-1pm school year, $12.99. Asheville Adventure Play.",
-   "a": "36 Rosscraggon Rd",
-   "h": "Tue/Thu 11am-1pm school year, $12",
-   "os": "18.3 Drop-In Play (0-5 focus)",
-   "t": "Free, Walk-in, Kids / 0-5",
-   "lv": "",
-   "vb": "",
-   "sec": "I",
-   "needs": [
-    "I:*",
-    "I:8a",
-    "IX:*",
-    "IX:7a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -4799,11 +4737,11 @@
    "ph": "",
    "em": "",
    "w": "acrnc.org",
-   "d": "104 Eastside Dr #308, Black Mountain, acrnc.org. Thu 10am-6pm by appointment. Household supplies, diapers, formula for refugee and immigrant families.",
+   "d": "104 Eastside Dr #308, Black Mountain, acrnc.org. Thu 10am-6pm by appointment. Household supplies, diapers, formula for refugee and immigrant families. En español: Black Mountain, jueves con cita. Pañales y fórmula.",
    "a": "104 Eastside Dr #308",
    "h": "Thu 10am-6pm by appointment",
    "os": "19.4 Immigrants, Refugees, and Newcomers",
-   "t": "Evening / weekend",
+   "t": "Evening / weekend, Spanish / bilingual",
    "lv": "",
    "vb": "",
    "sec": "X",
@@ -4817,36 +4755,13 @@
     "X:*",
     "X:10"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; VIII:5a tag added 17 Nov 2026 from the row's own name or description (tag audit); VIII:11a tag added 17 Nov 2026 from the row's own name or description (tag audit); VIII:4a tag added 17 Nov 2026 from the row's own name or description (tag audit)",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; VIII:5a tag added 17 Nov 2026 from the row's own name or description (tag audit); VIII:11a tag added 17 Nov 2026 from the row's own name or description (tag audit); VIII:4a tag added 17 Nov 2026 from the row's own name or description (tag audit); merged 17 Nov 2026 from 2 rows (asheville-christian-refugee-ministry, asheville-christian-refugee-ministry-2)",
    "note": "",
-   "new": false
-  },
-  {
-   "id": "bcs-language-services-2",
-   "n": "BCS Language Services",
-   "pp": "",
-   "sp": "🟠 Interpreter available",
-   "spd": "Spanish, Russian, Ukrainian, Moldovan on call plus 24/7 phone interpreting in 350+ languages",
-   "ph": "828-350-2295",
-   "em": "languageservices@bcsemail.org",
-   "w": "buncombeschools.org/page/language-services",
-   "d": "interpreting in 350+ languages for school families; never uses students as interpreters (see Part 12). On-call interpreters and translators for Spanish, Russian, Ukrainian, Vietnamese and Moldovan, and an outside agency for other languages. Each school has a Language Services designee, and families can ask the school for the form to request an interpreter at a parent-teacher conference.",
-   "a": "",
-   "h": "",
-   "os": "19.4 Immigrants, Refugees, and Newcomers",
-   "t": "Spanish / bilingual",
-   "lv": "2026-11-08",
-   "vb": "SB (web search)",
-   "sec": "X",
-   "needs": [
-    "VIII:*",
-    "VIII:18a",
-    "X:*",
-    "X:10"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; phone, email and services from Buncombe County Schools' Language Services pages via web search, 8 Nov 2026",
-   "note": "",
-   "new": false
+   "new": false,
+   "secs": [
+    "X",
+    "ESPANOL"
+   ]
   },
   {
    "id": "beloved-asheville-asheville-in-black-and-kid",
@@ -5164,7 +5079,7 @@
    "ph": "828-652-0727",
    "em": "",
    "w": "culawnc.org",
-   "d": "79 Academy St, Marion, 828-652-0727, culawnc.org. Mon-Fri 9am-5pm. McDowell County: crisis intervention, emergency assistance, health navigation, labor rights/wage-theft advocacy, biweekly drive-thru food pantry (every other Thursday 12-5pm).",
+   "d": "79 Academy St, Marion, 828-652-0727, culawnc.org. Mon-Fri 9am-5pm. McDowell County: crisis intervention, emergency assistance, health navigation, labor rights/wage-theft advocacy, biweekly drive-thru food pantry (every other Thursday 12-5pm). En español: Marion, 828-652-0727. Crisis, asistencia de emergencia, derechos laborales, despensa cada dos jueves 12-5pm.",
    "a": "79 Academy St",
    "h": "Mon-Fri 9am-5pm",
    "os": "19.2 Latinx and Spanish-Speaking Families",
@@ -5180,7 +5095,7 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; VIII:5a tag added 17 Nov 2026 from the row's own name or description (tag audit)",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; VIII:5a tag added 17 Nov 2026 from the row's own name or description (tag audit); merged 17 Nov 2026 from 2 rows (cula-centro-unido-latino-americano, cula)",
    "note": "",
    "new": false
   },
@@ -5218,9 +5133,9 @@
    "ph": "828-255-0146",
    "em": "",
    "w": "",
-   "d": "50 Orange St, 828-255-0146. DOJ-accredited immigration services (TPS, DACA, green cards, citizenship), bilingual counseling, pantry. The October 2026 food guide lists the pantry on Wednesdays 11am-1pm, open to anyone. For help with rent, mortgage or utilities, the Asheville office sends people to NC 211 (2-1-1 or 1-888-892-1162), per the October 2026 financial list.",
+   "d": "50 Orange St, 828-255-0146. DOJ-accredited immigration services (TPS, DACA, green cards, citizenship), bilingual counseling, pantry. The October 2026 food guide lists the pantry on Wednesdays 11am-1pm, open to anyone. For help with rent, mortgage or utilities, the Asheville office sends people to NC 211 (2-1-1 or 1-888-892-1162), per the October 2026 financial list. En español: TPS, DACA, green cards, ciudadanía (acreditados por el Departamento de Justicia). Adult diapers, emergency assistance, Mon-Thu 9:30am-4pm. En español: Miércoles 12:30-4pm (llame con 24 horas de antelación).",
    "a": "50 Orange St",
-   "h": "",
+   "h": "Mon-Thu 9:30am-4pm",
    "os": "19.4 Immigrants, Refugees, and Newcomers",
    "t": "Spanish / bilingual",
    "lv": "",
@@ -5237,9 +5152,14 @@
     "X:*",
     "X:10"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; pantry day from the WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; rent and utility routing from the WNC Financial Support Resources community list (companion to the food guide), shared by Skylar Belt 17 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; pantry day from the WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; rent and utility routing from the WNC Financial Support Resources community list (companion to the food guide), shared by Skylar Belt 17 Nov 2026; merged 17 Nov 2026 from 4 rows (catholic-charities, catholic-charities-2, catholic-charities-3, catholic-charities-4)",
    "note": "",
-   "new": false
+   "new": false,
+   "secs": [
+    "X",
+    "ESPANOL",
+    "VIII"
+   ]
   },
   {
    "id": "cenzontle-language-justice-cooperative",
@@ -5278,11 +5198,11 @@
    "ph": "",
    "em": "",
    "w": "colaborativalamilpa.org",
-   "d": "528 Emma Rd, colaborativalamilpa.org. Umbrella organization (formed 2018) tying together several member collectives; bilingual \"Promotores\" help with resource navigation, eviction prevention, immigrant rights education, and indigenous culture preservation. Explicitly for Latino and undocumented families; no legal-status requirements. Hours vary by program. | PODER Emma: community organizing against displacement; resident-owned mobile home parks; housing stability. | CIMA (Compañeros Inmigrantes de las Montañas en Acción): founded 2002. Immigrant civil rights defense; \"Conozca sus derechos\" (Know Your Rights) education and manuals; #MakeAshevilleSafe / Deportation Free Zones campaign; rapid emergency-fund regranting during crises and disasters. Two branches: Defensa Comunitaria and Community Outreach. | Raíces Emma-Erwin: Latino youth development; after-school and summer cultural programming in the Erwin school district. | Mä hñäkihu: preservation of the indigenous Hñähñu (Otomí) language and culture from Mexico's Mezquital Valley; intergenerational assemblies, festivals, music. mahnakihu.org. | El Telar: cooperative support infrastructure for Latina home-based childcare providers.",
+   "d": "528 Emma Rd, colaborativalamilpa.org. Umbrella organization (formed 2018) tying together several member collectives; bilingual \"Promotores\" help with resource navigation, eviction prevention, immigrant rights education, and indigenous culture preservation. Explicitly for Latino and undocumented families; no legal-status requirements. Hours vary by program. | PODER Emma: community organizing against displacement; resident-owned mobile home parks; housing stability. | CIMA (Compañeros Inmigrantes de las Montañas en Acción): founded 2002. Immigrant civil rights defense; \"Conozca sus derechos\" (Know Your Rights) education and manuals; #MakeAshevilleSafe / Deportation Free Zones campaign; rapid emergency-fund regranting during crises and disasters. Two branches: Defensa Comunitaria and Community Outreach. | Raíces Emma-Erwin: Latino youth development; after-school and summer cultural programming in the Erwin school district. | Mä hñäkihu: preservation of the indigenous Hñähñu (Otomí) language and culture from Mexico's Mezquital Valley; intergenerational assemblies, festivals, music. mahnakihu.org. | El Telar: cooperative support infrastructure for Latina home-based childcare providers. En español: Asheville. Promotores bilingües, prevención de desalojos, derechos migratorios. Sin requisitos de estatus. colaborativalamilpa.org.",
    "a": "528 Emma Rd",
    "h": "",
    "os": "19.2 Latinx and Spanish-Speaking Families",
-   "t": "Free, Spanish / bilingual, Mobile / delivery, Kids / 0-5 | Verified 8/2026. Umbrella for PODER Emma, CIMA, Raices Emma-Erwin and El Telar. Casa de Apoyo Mutuo / Mercadito Wed, Fri and Sun 12-5pm. Consulta Tu Compa gives case management in Spanish and English.",
+   "t": "Free, Spanish / bilingual, Mobile / delivery, Kids / 0-5, Verified 8/2026. Umbrella for PODER Emma, CIMA, Raices Emma-Erwin and El Telar. Casa de Apoyo Mutuo / Mercadito Wed, Fri and Sun 12-5pm. Consulta Tu Compa gives case management in Spanish and English.",
    "lv": "2026-08-01",
    "vb": "SB",
    "sec": "ESPANOL",
@@ -5298,7 +5218,7 @@
     "VIII:*",
     "VIII:15a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; merged 17 Nov 2026 from 2 rows (colaborativa-la-milpa, colaborativa-la-milpa-2)",
    "note": "",
    "new": false
   },
@@ -5338,7 +5258,7 @@
    "ph": "828-290-7134",
    "em": "",
    "w": "elcentrolac.org",
-   "d": "508 N Grove St, Hendersonville, 828-290-7134, elcentrolac.org. Mon-Fri 9am-4pm. Free/low-cost: document translation, notary, free mental health counseling, K-12 tutoring, citizenship classes, community events. Open to the whole Latino community.",
+   "d": "508 N Grove St, Hendersonville, 828-290-7134, elcentrolac.org. Mon-Fri 9am-4pm. Free/low-cost: document translation, notary, free mental health counseling, K-12 tutoring, citizenship classes, community events. Open to the whole Latino community. En español: Hendersonville, 828-290-7134. Lun-Vie 9am-4pm. Traducción, notaría, consejería de salud mental gratis, tutoría, ciudadanía.",
    "a": "508 N Grove St",
    "h": "Mon-Fri 9am-4pm",
    "os": "19.2 Latinx and Spanish-Speaking Families",
@@ -5359,38 +5279,7 @@
     "VIII:*",
     "VIII:15a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
-   "new": false
-  },
-  {
-   "id": "faithaction-id-2",
-   "n": "FaithAction ID",
-   "pp": "",
-   "sp": "🟡 Bilingual staff",
-   "spd": "Source says bilingual or Spanish-speaking staff",
-   "ph": "828-559-2189",
-   "em": "",
-   "w": "",
-   "d": "~$10 community ID accepted by many local law enforcement, clinics, schools; orientation and vetting required; issued regionally through East Marion IPHC En Español.",
-   "a": "",
-   "h": "",
-   "os": "19.2 Latinx and Spanish-Speaking Families",
-   "t": "Spanish / bilingual",
-   "lv": "",
-   "vb": "",
-   "sec": "ESPANOL",
-   "needs": [
-    "ESPANOL:*",
-    "ESPANOL:personal-bilingue-bili",
-    "V:*",
-    "V:1a",
-    "VIII:*",
-    "VIII:15a",
-    "X:*",
-    "X:3"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; merged 17 Nov 2026 from 2 rows (el-centro-of-henderson-county, el-centro-of-henderson-county-2)",
    "note": "",
    "new": false
   },
@@ -5431,36 +5320,6 @@
    "new": false
   },
   {
-   "id": "hispanic-federation-nc-2",
-   "n": "Hispanic Federation NC",
-   "pp": "",
-   "sp": "🟢 Spanish-first / Latino-led",
-   "spd": "Built for Spanish-speaking families",
-   "ph": "",
-   "em": "",
-   "w": "hispanicfederation.org/about/where-we-operate/north-carolina/",
-   "d": "capacity building, Spanish CPR/First Aid, computer scholarships, immigration clinics; biweekly newsletter of Latinx programming. There is no Asheville office: its North Carolina offices are in Charlotte and Mount Olive, and the website has a contact form. It also runs NC Salud, a Spanish-language health information hotline.",
-   "a": "",
-   "h": "",
-   "os": "19.2 Latinx and Spanish-Speaking Families",
-   "t": "Spanish / bilingual",
-   "lv": "",
-   "vb": "",
-   "sec": "ESPANOL",
-   "needs": [
-    "ESPANOL:*",
-    "ESPANOL:servicios-en-espanol-p",
-    "V:*",
-    "V:3a",
-    "V:6a",
-    "X:*",
-    "X:5"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; offices from Hispanic Federation's North Carolina page, NC Salud from WUNC, via web search, 8 Nov 2026",
-   "note": "",
-   "new": false
-  },
-  {
    "id": "hola-carolina-radio-la-pantera-97-3-fm",
    "n": "Hola Carolina / Radio La Pantera 97.3 FM",
    "pp": "",
@@ -5469,7 +5328,7 @@
    "ph": "",
    "em": "",
    "w": "holacarolina.org",
-   "d": "holacarolina.org. 24/7 Spanish-language radio; public health, emergency weather alerts, civic updates; storefront near LEAF Global Arts on Eagle St.",
+   "d": "holacarolina.org. 24/7 Spanish-language radio; public health, emergency weather alerts, civic updates; storefront near LEAF Global Arts on Eagle St. En español: Noticias, alertas y recursos en español 24/7.",
    "a": "",
    "h": "24/7",
    "os": "19.2 Latinx and Spanish-Speaking Families",
@@ -5481,7 +5340,7 @@
     "ESPANOL:*",
     "ESPANOL:servicios-en-espanol-p"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; merged 17 Nov 2026 from 2 rows (hola-carolina-radio-la-pantera-97-3-fm, hola-carolina-radio-la-pantera-97-3-fm-2)",
    "note": "",
    "new": false
   },
@@ -5669,35 +5528,6 @@
    "new": false
   },
   {
-   "id": "read-to-succeed-asheville-buncombe-r2s-2",
-   "n": "Read to Succeed Asheville/Buncombe (R2S)",
-   "pp": "",
-   "sp": "⚪ Not listed - ask",
-   "spd": "Not stated in the source. Ask when you call.",
-   "ph": "828-747-2277",
-   "em": "",
-   "w": "r2sasheville.org",
-   "d": "r2sasheville.org. Free summer reading and family literacy, strong reach into Black and low-income communities. Trained volunteers tutor K-3 readers one to one in Asheville City and Buncombe County schools.",
-   "a": "16A Stewart St, Asheville",
-   "h": "",
-   "os": "19.1 Black Families",
-   "t": "Free",
-   "lv": "",
-   "vb": "",
-   "sec": "X",
-   "needs": [
-    "V:*",
-    "V:5a",
-    "VIII:*",
-    "VIII:10a",
-    "X:*",
-    "X:8"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; phone and office from volunteer listings, tutoring model from a Buncombe County grant report, via web search, 8 Nov 2026",
-   "note": "",
-   "new": false
-  },
-  {
    "id": "regional-bilingual-community-hubs",
    "n": "Regional bilingual community hubs",
    "pp": "",
@@ -5726,16 +5556,16 @@
    "id": "safe-shelter",
    "n": "Safe Shelter",
    "pp": "",
-   "sp": "⚪ Not listed - ask",
+   "sp": "🟠 Interpreter available",
    "spd": "Not stated in the source. Ask when you call.",
    "ph": "",
    "em": "",
    "w": "safeshelterasheville.org",
-   "d": "LGBTQ+ affirming family shelter (see Part 5). Details are on the main Safe Shelter row.",
+   "d": "(LGBTQ+ affirming, families): 27 Balm Grove Ave, West Asheville. Explicitly welcomes BIPOC and LGBTQ+ individuals and families; keeps families together regardless of composition; non-congregate privacy. Walk in Mon-Fri 11am-2pm, or send a referral through the website. Men's winter shelter: 91 New Leicester Hwy. An older source said it also runs a safe parking program for families living in vehicles; that could not be confirmed in November 2026, so check before telling a family. About 20 beds at the West Asheville Community Hub, with families with minor children first. It was the Code Purple site for women in 2025-26.",
    "a": "27 Balm Grove Ave",
    "h": "Walk-in Mon-Fri 11am-2pm, or referral through the website",
    "os": "19.3 LGBTQ+ Families and Youth",
-   "t": "LGBTQ+ affirming",
+   "t": "LGBTQ+ affirming, Walk-in, Referral required",
    "lv": "2026-11-08",
    "vb": "SB (web search)",
    "sec": "X",
@@ -5747,9 +5577,13 @@
     "X:*",
     "X:9"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; website, address and hours copied from the main Safe Shelter row, confirmed on its own site via web search, 8 Nov 2026",
-   "note": "",
-   "new": false
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; website, address and hours copied from the main Safe Shelter row, confirmed on its own site via web search, 8 Nov 2026; beds, hours and referral route from Safe Shelter's own site and WLOS via web search, 8 Nov 2026; safe parking claim not confirmed; nightly season and walk-in hours as given in the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026; merged 17 Nov 2026 from 2 rows (safe-shelter, safe-shelter-2)",
+   "note": "The winter guide says both sites open every night Nov 1 to Mar 31 regardless of weather, with walk-in resource help Mon-Fri 1-2pm; this row keeps 11am-2pm until the shelter confirms.",
+   "new": false,
+   "secs": [
+    "X",
+    "VIII"
+   ]
   },
   {
    "id": "shiloh-community-association",
@@ -5785,11 +5619,11 @@
    "ph": "828-575-0488",
    "em": "doulaup@sistascaring4sistas.org",
    "w": "sc4s.org",
-   "d": "BIPOC doula care (see Part 9). Umoja and ABIPA (Asheville Buncombe Institute of Parity Achievement, 220 Continuum Dr, Fletcher) run health equity programs, community markets, and the Free Sunday Shop. Nov 2026: limited openings for families due in December, January, and February. Support includes prenatal visits and childbirth education, continuous labor support, postpartum visits, newborn feeding support, and connections to local resources, subject to eligibility and scheduling. Doula support contact named at the 6 Nov NFP partner meeting: Co-kema King (role and referral steps to be confirmed).",
+   "d": "BIPOC doula care. Umoja and ABIPA (Asheville Buncombe Institute of Parity Achievement, 220 Continuum Dr, Fletcher) run health equity programs, community markets, and the Free Sunday Shop. Nov 2026: limited openings for families due in December, January, and February. Support includes prenatal visits and childbirth education, continuous labor support, postpartum visits, newborn feeding support, and connections to local resources, subject to eligibility and scheduling. Doula support contact named at the 6 Nov NFP partner meeting: Co-kema King (role and referral steps to be confirmed).",
    "a": "220 Continuum Dr",
    "h": "",
    "os": "19.1 Black Families",
-   "t": "Free, Evening / weekend | Verified 8/2026. Free community doula care by and for people of color. Birth, postpartum, lactation, and partner support, plus in-home and after-hours care. Grew out of Mothering Asheville with MAHEC.",
+   "t": "Free, Evening / weekend, Verified 8/2026. Free community doula care by and for people of color. Birth, postpartum, lactation, and partner support, plus in-home and after-hours care. Grew out of Mothering Asheville with MAHEC.",
    "lv": "2026-08-01",
    "vb": "SB",
    "sec": "X",
@@ -5805,8 +5639,8 @@
     "X:2",
     "X:8"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; winter openings from an SC4S availability post in Facebook groups, 5 Nov 2026; Co-kema King from Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes); also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; winter openings from an SC4S availability post in Facebook groups, 5 Nov 2026; Co-kema King from Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes); also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; merged 17 Nov 2026 from 2 rows (sistas-caring-4-sistas, sistas-caring-4-sistas-2)",
+   "note": "Another listing of this program gave the address 50 S French Broad Ave, Suite 212, Asheville 28801.",
    "new": false
   },
   {
@@ -5904,7 +5738,7 @@
    "ph": "828-205-1170 / 828-376-9119",
    "em": "info@trueridge.org",
    "w": "trueridge.org",
-   "d": "204 6th Ave W, Hendersonville, 828-205-1170, info@trueridge.org, trueridge.org. Mon-Thu 9am-3pm, Fri 9am-12:30pm (initial appointments require a call first). Holistic case management for crime victims and vulnerable families: bilingual court accompaniment, DV safety planning, Helene recovery, Mexican apostilles, notarized translations, trafficking-survivor case management. La Promesa education program (FAFSA, residency, scholarships; celinav@trueridge.org, 828-376-9119). Serves Henderson, Polk, Transylvania.",
+   "d": "204 6th Ave W, Hendersonville, 828-205-1170, info@trueridge.org, trueridge.org. Mon-Thu 9am-3pm, Fri 9am-12:30pm (initial appointments require a call first). Holistic case management for crime victims and vulnerable families: bilingual court accompaniment, DV safety planning, Helene recovery, Mexican apostilles, notarized translations, trafficking-survivor case management. La Promesa education program (FAFSA, residency, scholarships; celinav@trueridge.org, 828-376-9119). Serves Henderson, Polk, Transylvania. En español: Acompañamiento en corte, planificación de seguridad, apostillas mexicanas, recuperación de huracán. Cita previa.",
    "a": "204 6th Ave W, Hendersonville",
    "h": "Mon-Thu 9am-3pm, Fri 9am-12:30pm (call first for an initial appointment)",
    "os": "19.2 Latinx and Spanish-Speaking Families",
@@ -5921,9 +5755,13 @@
     "VIII:*",
     "VIII:15a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; hours and address moved out of the detail, 6 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; hours and address moved out of the detail, 6 Nov 2026; merged 17 Nov 2026 from 3 rows (true-ridge, true-ridge-2, true-ridge-3)",
    "note": "",
-   "new": false
+   "new": false,
+   "secs": [
+    "ESPANOL",
+    "VIII"
+   ]
   },
   {
    "id": "us-committee-for-refugees-and-immigrants-usc",
@@ -5984,11 +5822,11 @@
    "ph": "828-293-2274",
    "em": "",
    "w": "vecinos.org",
-   "d": "828-293-2274 (see Part 6). Fully bilingual mobile clinics for farmworkers.",
+   "d": "828-293-2274, vecinos.org. Mobile clinics for migrant and seasonal farmworkers across WNC; fully bilingual primary care, diabetes education, behavioral health, pharmacy; regardless of status. Tue/Wed/Thu 10am-9pm.",
    "a": "",
-   "h": "",
+   "h": "Tue/Wed/Thu 10am-9pm",
    "os": "19.2 Latinx and Spanish-Speaking Families",
-   "t": "Spanish / bilingual, Mobile / delivery",
+   "t": "Spanish / bilingual, Mobile / delivery, Free, Evening / weekend",
    "lv": "",
    "vb": "",
    "sec": "ESPANOL",
@@ -5998,9 +5836,13 @@
     "VI:*",
     "VI:1a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; merged 17 Nov 2026 from 2 rows (vecinos-farmworker-health-program, vecinos-farmworker-health-program-2)",
    "note": "",
-   "new": false
+   "new": false,
+   "secs": [
+    "ESPANOL",
+    "VI"
+   ]
   },
   {
    "id": "watoto-wa-utamaduni-children-of-culture",
@@ -6151,8 +5993,8 @@
    "ph": "828-290-9749 / 1-800-820-1109",
    "em": "",
    "w": "mannafoodbank.org/wnc-free-food-distributions",
-   "d": "828-290-9749 or 1-800-820-1109 (call or text 828-367-9456). Mon-Fri 9am-4pm. English, Spanish, Ukrainian. Finds your nearest pantry and helps with SNAP applications. Free food map: mannafoodbank.org/wnc-free-food-distributions",
-   "a": "",
+   "d": "828-290-9749 / 1-800-820-1109 (Mon-Fri 9am-4pm; English, Spanish, Ukrainian). 200+ partner pantries across 16 WNC counties. Interactive map: mannafoodbank.org/wnc-free-food-distributions. Warehouse now at 99 Broadpointe Dr, Mills River. MANNA says its community mobile markets are free and open to anyone who needs food; no ID is required. Or 1-800-820-1109 (call or text 828-367-9456). Mon-Fri 9am-4pm. English, Spanish, Ukrainian. Finds your nearest pantry and helps with SNAP applications. Free food map: mannafoodbank.org/wnc-free-food-distributions",
+   "a": "99 Broadpointe Dr",
    "h": "Mon-Fri 9am-4pm",
    "os": "PART 1: CALL-FIRST NAVIGATION LINES",
    "t": "Free, Spanish / bilingual",
@@ -6169,10 +6011,14 @@
     "X:*",
     "X:1"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; helpline number and Mon-Fri 9am-4pm hours from MANNA's Where to Get Help page via web search, 8 Nov 2026; MANNA's pages label 828-367-9456 differently (call and text, or text only); backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; helpline number and Mon-Fri 9am-4pm hours from MANNA's Where to Get Help page via web search, 8 Nov 2026; MANNA's pages label 828-367-9456 differently (call and text, or text only); backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory; mobile market terms from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026); merged 17 Nov 2026 from 2 rows (manna-food-helpline, manna-food-helpline-2)",
    "note": "",
    "new": false,
-   "alt": "Outside helpline hours, call or text 211 (or 1-888-892-1162)."
+   "alt": "Outside helpline hours, call or text 211 (or 1-888-892-1162).",
+   "secs": [
+    "X",
+    "VIII"
+   ]
   },
   {
    "id": "nc-211",
@@ -6183,11 +6029,11 @@
    "ph": "211 / 1-888-892-1162",
    "em": "",
    "w": "nc211.org",
-   "d": "Dial 2-1-1 (or 1-888-892-1162). Free, confidential, 24/7/365, 170+ languages. Referrals for any need: food, housing, utilities, childcare, disaster recovery. Text 211Food to 51555 for food. nc211.org",
+   "d": "Dial 2-1-1 (or 1-888-892-1162). Free, confidential, 24/7/365, 170+ languages. Referrals for any need: food, housing, utilities, childcare, disaster recovery. Text 211Food to 51555 for food. nc211.org. En español: Marque 2-1-1. Gratis, confidencial, 24/7, más de 170 idiomas. Referencias para comida, vivienda, servicios públicos, cuidado infantil.",
    "a": "",
    "h": "24/7/365",
    "os": "PART 1: CALL-FIRST NAVIGATION LINES",
-   "t": "24/7, Free, Kids / 0-5",
+   "t": "24/7, Free, Kids / 0-5, Spanish / bilingual",
    "lv": "",
    "vb": "",
    "sec": "X",
@@ -6197,10 +6043,14 @@
     "X:*",
     "X:1"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: NC 211 official website (nc211.org), checked 7 Nov 2026; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: NC 211 official website (nc211.org), checked 7 Nov 2026; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory; merged 17 Nov 2026 from 2 rows (nc-211, nc-211-2)",
    "note": "",
    "new": false,
-   "alt": "In danger now: 911. Suicide or mental health crisis: call or text 988."
+   "alt": "In danger now: 911. Suicide or mental health crisis: call or text 988.",
+   "secs": [
+    "X",
+    "ESPANOL"
+   ]
   },
   {
    "id": "nc-disaster-case-management",
@@ -6208,10 +6058,10 @@
    "pp": "",
    "sp": "⚪ Not listed - ask",
    "spd": "Not stated in the source. Ask when you call.",
-   "ph": "844-746-2326",
+   "ph": "844-746-2326 / 828-250-6100",
    "em": "",
    "w": "",
-   "d": "844-746-2326. Assigns a case manager who bundles housing, financial, and legal recovery help.",
+   "d": "844-746-2326. Assigns a case manager who bundles housing, financial, and legal recovery help. One Buncombe Call Center: 828-250-6100.",
    "a": "",
    "h": "",
    "os": "PART 1: CALL-FIRST NAVIGATION LINES",
@@ -6223,9 +6073,13 @@
     "X:*",
     "X:1"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; merged 17 Nov 2026 from 2 rows (nc-disaster-case-management, nc-disaster-case-management-2)",
    "note": "",
-   "new": false
+   "new": false,
+   "secs": [
+    "X",
+    "VIII"
+   ]
   },
   {
    "id": "one-buncombe-call-center",
@@ -6336,33 +6190,6 @@
    "new": false
   },
   {
-   "id": "asheville-christian-refugee-ministry-2",
-   "n": "Asheville Christian Refugee Ministry",
-   "pp": "",
-   "sp": "🟡 Bilingual staff",
-   "spd": "Welcoming to Latino families",
-   "ph": "",
-   "em": "",
-   "w": "acrnc.org",
-   "d": "Black Mountain, jueves con cita. Pañales y fórmula.",
-   "a": "",
-   "h": "",
-   "os": "Comida (sin identificación)",
-   "t": "Spanish / bilingual",
-   "lv": "",
-   "vb": "",
-   "sec": "ESPANOL",
-   "needs": [
-    "ESPANOL:*",
-    "ESPANOL:personal-bilingue-bili",
-    "X:*",
-    "X:10"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
-   "new": false
-  },
-  {
    "id": "blue-ridge-health-arden",
    "n": "Blue Ridge Health (Arden)",
    "pp": "",
@@ -6397,95 +6224,6 @@
    "new": false
   },
   {
-   "id": "cula",
-   "n": "CULA",
-   "pp": "",
-   "sp": "🟢 Spanish-first / Latino-led",
-   "spd": "Bilingual crisis intervention and labor rights",
-   "ph": "828-652-0727",
-   "em": "",
-   "w": "",
-   "d": "79 Academy St, Marion, 828-652-0727. Crisis, asistencia de emergencia, derechos laborales, despensa cada dos jueves 12-5pm.",
-   "a": "79 Academy St",
-   "h": "",
-   "os": "Centros Comunitarios",
-   "t": "Spanish / bilingual",
-   "lv": "",
-   "vb": "",
-   "sec": "ESPANOL",
-   "needs": [
-    "ESPANOL:*",
-    "ESPANOL:servicios-en-espanol-p"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
-   "new": false
-  },
-  {
-   "id": "catholic-charities-2",
-   "n": "Catholic Charities",
-   "pp": "",
-   "sp": "🟡 Bilingual staff",
-   "spd": "Spanish-speaking staff, DOJ-accredited immigration, bilingual counseling",
-   "ph": "828-255-0146",
-   "em": "",
-   "w": "",
-   "d": "50 Orange St, 828-255-0146. Miércoles 12:30-4pm (llame con 24 horas de antelación).",
-   "a": "50 Orange St",
-   "h": "",
-   "os": "Comida (sin identificación)",
-   "t": "Spanish / bilingual",
-   "lv": "",
-   "vb": "",
-   "sec": "ESPANOL",
-   "needs": [
-    "ESPANOL:*",
-    "ESPANOL:personal-bilingue-bili",
-    "V:*",
-    "V:6a",
-    "VIII:*",
-    "VIII:15a",
-    "VIII:5a",
-    "X:*",
-    "X:10"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
-   "new": false
-  },
-  {
-   "id": "catholic-charities-3",
-   "n": "Catholic Charities",
-   "pp": "",
-   "sp": "🟡 Bilingual staff",
-   "spd": "Spanish-speaking staff, DOJ-accredited immigration, bilingual counseling",
-   "ph": "828-255-0146",
-   "em": "",
-   "w": "",
-   "d": "828-255-0146. TPS, DACA, green cards, ciudadanía (acreditados por el Departamento de Justicia).",
-   "a": "",
-   "h": "",
-   "os": "Legal e Inmigración",
-   "t": "Spanish / bilingual",
-   "lv": "",
-   "vb": "",
-   "sec": "ESPANOL",
-   "needs": [
-    "ESPANOL:*",
-    "ESPANOL:personal-bilingue-bili",
-    "V:*",
-    "V:6a",
-    "VIII:*",
-    "VIII:15a",
-    "VIII:5a",
-    "X:*",
-    "X:10"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
-   "new": false
-  },
-  {
    "id": "cenzontle",
    "n": "Cenzontle",
    "pp": "",
@@ -6507,39 +6245,6 @@
     "ESPANOL:servicios-en-espanol-p"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
-   "note": "",
-   "new": false
-  },
-  {
-   "id": "colaborativa-la-milpa-2",
-   "n": "Colaborativa La Milpa",
-   "pp": "",
-   "sp": "🟢 Spanish-first / Latino-led",
-   "spd": "Bilingual Promotores, no legal-status requirements",
-   "ph": "",
-   "em": "",
-   "w": "colaborativalamilpa.org",
-   "d": "528 Emma Rd, Asheville. Promotores bilingües, prevención de desalojos, derechos migratorios. Sin requisitos de estatus. colaborativalamilpa.org.",
-   "a": "528 Emma Rd",
-   "h": "",
-   "os": "Centros Comunitarios",
-   "t": "Spanish / bilingual | Verified 8/2026. Umbrella for PODER Emma, CIMA, Raices Emma-Erwin and El Telar. Casa de Apoyo Mutuo / Mercadito Wed, Fri and Sun 12-5pm. Consulta Tu Compa gives case management in Spanish and English.",
-   "lv": "2026-08-01",
-   "vb": "SB",
-   "sec": "ESPANOL",
-   "needs": [
-    "ESPANOL:*",
-    "ESPANOL:servicios-en-espanol-p",
-    "I:*",
-    "I:10a",
-    "II:*",
-    "II:6a",
-    "IV:*",
-    "IV:3a",
-    "VIII:*",
-    "VIII:15a"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
    "new": false
   },
@@ -6596,40 +6301,6 @@
    "new": false
   },
   {
-   "id": "el-centro-of-henderson-county-2",
-   "n": "El Centro of Henderson County",
-   "pp": "",
-   "sp": "🟢 Spanish-first / Latino-led",
-   "spd": "Free mental health counseling, translation, notary, citizenship classes",
-   "ph": "828-290-7134",
-   "em": "",
-   "w": "elcentrolac.org",
-   "d": "508 N Grove St, Hendersonville, 828-290-7134. Lun-Vie 9am-4pm. Traducción, notaría, consejería de salud mental gratis, tutoría, ciudadanía.",
-   "a": "508 N Grove St",
-   "h": "",
-   "os": "Centros Comunitarios",
-   "t": "Spanish / bilingual",
-   "lv": "",
-   "vb": "",
-   "sec": "ESPANOL",
-   "needs": [
-    "ESPANOL:*",
-    "ESPANOL:servicios-en-espanol-p",
-    "I:*",
-    "I:10a",
-    "V:*",
-    "V:1a",
-    "V:2a",
-    "V:5a",
-    "V:6a",
-    "VIII:*",
-    "VIII:15a"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
-   "new": false
-  },
-  {
    "id": "endaya-law",
    "n": "Endaya Law",
    "pp": "",
@@ -6643,31 +6314,6 @@
    "h": "",
    "os": "Legal e Inmigración",
    "t": "Spanish / bilingual",
-   "lv": "",
-   "vb": "",
-   "sec": "ESPANOL",
-   "needs": [
-    "ESPANOL:*",
-    "ESPANOL:servicios-en-espanol-p"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
-   "new": false
-  },
-  {
-   "id": "hola-carolina-radio-la-pantera-97-3-fm-2",
-   "n": "Hola Carolina / Radio La Pantera 97.3 FM",
-   "pp": "",
-   "sp": "🟢 Spanish-first / Latino-led",
-   "spd": "Built for Spanish-speaking families",
-   "ph": "",
-   "em": "",
-   "w": "holacarolina.org",
-   "d": "noticias, alertas y recursos en español 24/7.",
-   "a": "",
-   "h": "24/7",
-   "os": "Educación y Radio",
-   "t": "24/7, Spanish / bilingual",
    "lv": "",
    "vb": "",
    "sec": "ESPANOL",
@@ -6861,33 +6507,6 @@
    "new": false
   },
   {
-   "id": "nc-211-2",
-   "n": "NC 211",
-   "pp": "",
-   "sp": "🟠 Interpreter available",
-   "spd": "24/7 in 170+ languages",
-   "ph": "211",
-   "em": "",
-   "w": "nc211.org",
-   "d": "marque 2-1-1. Gratis, confidencial, 24/7, más de 170 idiomas. Referencias para comida, vivienda, servicios públicos, cuidado infantil.",
-   "a": "",
-   "h": "24/7",
-   "os": "Líneas de Ayuda",
-   "t": "24/7, Spanish / bilingual, Kids / 0-5",
-   "lv": "",
-   "vb": "",
-   "sec": "ESPANOL",
-   "needs": [
-    "IV:*",
-    "IV:1a",
-    "X:*",
-    "X:1"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
-   "new": false
-  },
-  {
    "id": "salud-mental-bilingue",
    "n": "Salud mental bilingüe",
    "pp": "",
@@ -6907,36 +6526,6 @@
    "needs": [
     "ESPANOL:*",
     "ESPANOL:servicios-en-espanol-p"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
-   "new": false
-  },
-  {
-   "id": "true-ridge-2",
-   "n": "True Ridge",
-   "pp": "",
-   "sp": "🟢 Spanish-first / Latino-led",
-   "spd": "Bilingual court accompaniment, apostilles, notarized translations",
-   "ph": "828-205-1170",
-   "em": "info@trueridge.org",
-   "w": "",
-   "d": "204 6th Ave W, Hendersonville, 828-205-1170. Acompañamiento en corte, planificación de seguridad, apostillas mexicanas, recuperación de huracán. Cita previa.",
-   "a": "",
-   "h": "",
-   "os": "Centros Comunitarios",
-   "t": "Spanish / bilingual",
-   "lv": "",
-   "vb": "",
-   "sec": "ESPANOL",
-   "needs": [
-    "ESPANOL:*",
-    "ESPANOL:servicios-en-espanol-p",
-    "V:*",
-    "V:6a",
-    "V:7a",
-    "VIII:*",
-    "VIII:15a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
@@ -7098,33 +6687,6 @@
     "VIII:5a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; VIII:5a tag added 17 Nov 2026 from the row's own name or description (tag audit)",
-   "note": "",
-   "new": false
-  },
-  {
-   "id": "nc-lifespan-respite-2",
-   "n": "NC Lifespan Respite",
-   "pp": "",
-   "sp": "⚪ Not listed - ask",
-   "spd": "Not stated in the source. Ask when you call.",
-   "ph": "",
-   "em": "",
-   "w": "ncdhhs.gov/divisions/aging/nc-lifespan-respite-program",
-   "d": "up to $750 reimbursement for a break from caregiving. NCDHHS reimburses family caregivers of a person of any age for up to $750 of respite in a calendar year; the money has to be used within 90 days of approval.",
-   "a": "",
-   "h": "",
-   "os": "PART 21: SENIORS AND FAMILY CAREGIVERS",
-   "t": "Verified 8/2026. Up to $750 a year in vouchers. Requires a referral from a professional, which includes an FRP.",
-   "lv": "2026-08-01",
-   "vb": "SB",
-   "sec": "IV",
-   "needs": [
-    "IV:*",
-    "IV:6a",
-    "IX:*",
-    "IX:8a"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; program page from NCDHHS via web search, 8 Nov 2026",
    "note": "",
    "new": false
   },
@@ -7374,7 +6936,7 @@
    "ph": "828-250-6330 / 828-250-5500",
    "em": "",
    "w": "buncombenc.gov/395/Crisis-Intervention-Program",
-   "d": "year-round until funds exhausted. For households below 150% of the poverty level in a heating or cooling emergency. Covers electric bills, deposits, fuel oil, kerosene, natural gas, propane, wood, coal, heaters, furnace repairs and fans; not rent, mortgage or water. Apply by phone at 828-250-6330, online at epass.nc.gov, or in person at 40 Coxe Ave. 828-250-5500 is the county's Economic Services line.",
+   "d": "year-round, up to ~$600 for heating/cooling emergencies with a disconnection notice; income ~150% FPL. For households below 150% of the poverty level in a heating or cooling emergency. Covers electric bills, deposits, fuel oil, kerosene, natural gas, propane, wood, coal, heaters, furnace repairs and fans; not rent, mortgage or water. Apply by phone at 828-250-6330, online at epass.nc.gov, or in person at 40 Coxe Ave. 828-250-5500 is the county's Economic Services line.",
    "a": "40 Coxe Ave, Asheville (or apply at epass.nc.gov)",
    "h": "Mon-Fri 8am-5pm",
    "os": "PART 22: TIME-LIMITED AND SEASONAL PROGRAMS",
@@ -7388,10 +6950,14 @@
     "X:*",
     "X:12"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; eligibility, coverage, phones and how to apply from Buncombe County's Crisis Intervention Program and Help in an Emergency pages via web search, 8 Nov 2026; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; eligibility, coverage, phones and how to apply from Buncombe County's Crisis Intervention Program and Help in an Emergency pages via web search, 8 Nov 2026; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory; merged 17 Nov 2026 from 2 rows (crisis-intervention-program-cip, crisis-intervention-program-cip-2)",
    "note": "",
    "new": false,
-   "alt": "Eblen Charities (828-255-3066) or ABCCM Crisis Ministry (828-259-5300); 211 knows other utility help."
+   "alt": "Eblen Charities (828-255-3066) or ABCCM Crisis Ministry (828-259-5300); 211 knows other utility help.",
+   "secs": [
+    "X",
+    "VIII"
+   ]
   },
   {
    "id": "duke-energy-winter-moratorium",
@@ -7496,31 +7062,6 @@
    "new": false
   },
   {
-   "id": "free-tax-prep-vita-aarp",
-   "n": "Free tax prep (VITA/AARP)",
-   "pp": "",
-   "sp": "⚪ Not listed - ask",
-   "spd": "Not stated in the source. Ask when you call.",
-   "ph": "",
-   "em": "",
-   "w": "",
-   "d": "Feb 1 - Apr 15.",
-   "a": "",
-   "h": "",
-   "os": "PART 22: TIME-LIMITED AND SEASONAL PROGRAMS",
-   "t": "Free",
-   "lv": "",
-   "vb": "",
-   "sec": "X",
-   "needs": [
-    "X:*",
-    "X:12"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
-   "new": false
-  },
-  {
    "id": "healthy-heroes-kids-carnival-grace-lutheran",
    "n": "Healthy Heroes Kids Carnival (Grace Lutheran, Hendersonville).",
    "pp": "",
@@ -7571,33 +7112,6 @@
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; 2026 timing from past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026; Angel Tree 2026 requirements from the Salvation Army flyer, stance from Skylar Belt, 13 Nov 2026; Eblen's Christmas gift assistance page, its 2024 release and WLOS (Dec 2025), via web search, 16 Nov 2026; rewritten from Eblen's Saint Nicholas Project page and Giving Thanks flyer, WNC Toys for Tots, WLOS on ABCCM's 2025 Christmas Angel Shop, and the Salvation Army 2026 Angel Tree flyer, via web search, 16 Nov 2026; rewritten 16 Nov 2026 from Eblen's and ABCCM's pages via web search, 16 Nov 2026 and the sign-up message shared with Skylar Belt; Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026; Dream Center dates from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026); more programs from the WNC Financial Support Resources community list (companion to the food guide), shared by Skylar Belt 17 Nov 2026, checked via web search, 17 Nov 2026",
    "note": "Updated 16 Nov 2026. Eblen sign-up is open now; ABCCM's 2026 deadline and Eblen's store address were not published yet.",
-   "new": false
-  },
-  {
-   "id": "liheap-heating",
-   "n": "LIHEAP (heating)",
-   "pp": "",
-   "sp": "🟠 Interpreter available",
-   "spd": "Federally or publicly funded: a free qualified interpreter must be provided on request. Ask for one when you call.",
-   "ph": "828-250-6330",
-   "em": "",
-   "w": "epass.nc.gov",
-   "d": "December priority for 60+/disabled; general applications Jan 2 - Mar 31 or until funds run out. For the 2026-27 dates, see the main LIHEAP row.",
-   "a": "40 Coxe Ave",
-   "h": "",
-   "os": "PART 22: TIME-LIMITED AND SEASONAL PROGRAMS",
-   "t": "",
-   "lv": "",
-   "vb": "",
-   "sec": "X",
-   "needs": [
-    "VIII:*",
-    "VIII:14a",
-    "X:*",
-    "X:12"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; phone, website and address copied from the main LIHEAP row",
-   "note": "",
    "new": false
   },
   {
@@ -7696,9 +7210,13 @@
     "X:*",
     "X:12"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; dates, eligibility and NCDHHS line from NCDHHS releases, Land of Sky phone from an older NCDHHS notice, via web search, 8 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; dates, eligibility and NCDHHS line from NCDHHS releases, Land of Sky phone from an older NCDHHS notice, via web search, 8 Nov 2026; eligibility and NCDHHS line from NCDHHS releases, Land of Sky phone from an older NCDHHS notice, via web search, 8 Nov 2026; merged 17 Nov 2026 from 2 rows (operation-fan-heat-relief, operation-fan-heat-relief-2)",
    "note": "",
-   "new": false
+   "new": false,
+   "secs": [
+    "X",
+    "VIII"
+   ]
   },
   {
    "id": "recurring-annual-windows-to-plan-around",
@@ -8180,33 +7698,6 @@
    "new": false
   },
   {
-   "id": "mountain-child-advocacy-center-2",
-   "n": "Mountain Child Advocacy Center",
-   "pp": "",
-   "sp": "🟡 Bilingual staff",
-   "spd": "Multilingual trauma therapists",
-   "ph": "828-213-9824",
-   "em": "",
-   "w": "mtncac.org",
-   "d": "(at FJC): child abuse response; PCIT and CPP therapy for children 0-18 who've experienced abuse, neglect, or trauma; multilingual trauma therapists offering TF-CBT.",
-   "a": "Mission Children's Hospital, 3rd floor",
-   "h": "",
-   "os": "PART 2: CRISIS AND SAFETY",
-   "t": "Kids / 0-5 | Verified 8/2026. Forensic interviews, medical eval, TF-CBT and PCIT.",
-   "lv": "2026-08-01",
-   "vb": "SB",
-   "sec": "CRISIS",
-   "needs": [
-    "ESPANOL:*",
-    "ESPANOL:personal-bilingue-bili",
-    "II:*",
-    "II:5a"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
-   "new": false
-  },
-  {
    "id": "my-sister-s-place",
    "n": "My Sister's Place",
    "pp": "",
@@ -8560,34 +8051,6 @@
    "new": false
   },
   {
-   "id": "asheville-city-schools-2",
-   "n": "Asheville City Schools",
-   "pp": "",
-   "sp": "🟠 Interpreter available",
-   "spd": "Federally or publicly funded: a free qualified interpreter must be provided on request. Ask for one when you call.",
-   "ph": "828-350-6128 / 828-774-8785",
-   "em": "holly.sutter@acsgmail.net",
-   "w": "",
-   "d": "universal free breakfast AND lunch for all enrolled students, no application (Community Eligibility Provision).",
-   "a": "",
-   "h": "",
-   "os": "3.6 Benefits, School Meals, Summer",
-   "t": "Free",
-   "lv": "",
-   "vb": "",
-   "sec": "VIII",
-   "needs": [
-    "ESPANOL:*",
-    "ESPANOL:interprete-disponible-",
-    "I:*",
-    "I:3a",
-    "I:4a"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
-   "new": false
-  },
-  {
    "id": "beloved-asheville-street-pantries",
    "n": "BeLoved Asheville Street Pantries",
    "pp": "",
@@ -8906,38 +8369,6 @@
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
    "new": false
-  },
-  {
-   "id": "manna-food-helpline-2",
-   "n": "MANNA Food Helpline",
-   "pp": "",
-   "sp": "🟡 Bilingual staff",
-   "spd": "English, Spanish, Ukrainian",
-   "ph": "828-290-9749 / 1-800-820-1109",
-   "em": "",
-   "w": "mannafoodbank.org/wnc-free-food-distributions",
-   "d": "828-290-9749 / 1-800-820-1109 (Mon-Fri 9am-4pm; English, Spanish, Ukrainian). 200+ partner pantries across 16 WNC counties. Interactive map: mannafoodbank.org/wnc-free-food-distributions. Warehouse now at 99 Broadpointe Dr, Mills River. MANNA says its community mobile markets are free and open to anyone who needs food; no ID is required.",
-   "a": "99 Broadpointe Dr",
-   "h": "Mon-Fri 9am-4pm",
-   "os": "3.1 Find Food Fast",
-   "t": "Free, Spanish / bilingual",
-   "lv": "2026-11-08",
-   "vb": "SB (web search)",
-   "sec": "VIII",
-   "needs": [
-    "ESPANOL:*",
-    "ESPANOL:personal-bilingue-bili",
-    "IV:*",
-    "IV:1a",
-    "VIII:*",
-    "VIII:5a",
-    "X:*",
-    "X:1"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; helpline number and Mon-Fri 9am-4pm hours from MANNA's Where to Get Help page via web search, 8 Nov 2026; MANNA's pages label 828-367-9456 differently (call and text, or text only); mobile market terms from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026); backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
-   "note": "",
-   "new": false,
-   "alt": "Outside helpline hours, call or text 211 (or 1-888-892-1162)."
   },
   {
    "id": "manna-packs",
@@ -9423,11 +8854,11 @@
    "ph": "828-254-0471",
    "em": "",
    "w": "",
-   "d": "225 Patton Ave, 828-254-0471. Lunch Mon/Tue/Thu/Fri 12pm; dinner daily 4:30pm. Clothing closet Tue and Fri 9:30-11am.",
+   "d": "225 Patton Ave, 828-254-1529. Emergency shelter for men, women, children. Intakes Mon-Thu (men 9-11am, women 11am-1pm). Abba's House women's recovery. Note: congregate, gendered, conservative theology; assess LGBTQ+ safety first. Lunch Mon/Tue/Thu/Fri 12pm; dinner daily 4:30pm. Clothing closet Tue and Fri 9:30-11am.",
    "a": "225 Patton Ave",
    "h": "Mon/Tue/Thu/Fri 12pm",
    "os": "3.4 Hot Meals and Dignity-Centered Dining",
-   "t": "UNRESOLVED CONFLICT: two numbers are in circulation for this agency, 828-254-1529 and 828-254-0471. Call both and delete the dead one before referring a family.",
+   "t": "UNRESOLVED CONFLICT: two numbers are in circulation for this agency, 828-254-1529 and 828-254-0471. Call both and delete the dead one before referring a family., Kids / 0-5, LGBTQ+ affirming",
    "lv": "",
    "vb": "",
    "sec": "VIII",
@@ -9435,7 +8866,7 @@
     "VIII:*",
     "VIII:7a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; merged 17 Nov 2026 from 2 rows (western-carolina-rescue-ministries, western-carolina-rescue-ministries-2)",
    "note": "",
    "new": false
   },
@@ -9637,38 +9068,6 @@
    "new": false
   },
   {
-   "id": "catholic-charities-4",
-   "n": "Catholic Charities",
-   "pp": "",
-   "sp": "🟡 Bilingual staff",
-   "spd": "Spanish-speaking staff, DOJ-accredited immigration, bilingual counseling",
-   "ph": "828-255-0146",
-   "em": "",
-   "w": "",
-   "d": "50 Orange St, 828-255-0146. Adult diapers, emergency assistance, Mon-Thu 9:30am-4pm.",
-   "a": "50 Orange St",
-   "h": "Mon-Thu 9:30am-4pm",
-   "os": "4.2 Baby Gear, Clothing, School Supplies",
-   "t": "",
-   "lv": "",
-   "vb": "",
-   "sec": "VIII",
-   "needs": [
-    "ESPANOL:*",
-    "ESPANOL:personal-bilingue-bili",
-    "V:*",
-    "V:6a",
-    "VIII:*",
-    "VIII:15a",
-    "VIII:5a",
-    "X:*",
-    "X:10"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
-   "new": false
-  },
-  {
    "id": "clothing-closets-multiple-sites",
    "n": "Clothing closets (multiple sites)",
    "pp": "",
@@ -9797,31 +9196,6 @@
     "VIII:5a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; phone and services from church and food directory listings and a Buncombe County resource sheet via web search, 8 Nov 2026; Crisis Ministry hours and items from the WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; extension from the WNC Financial Support Resources community list (companion to the food guide), shared by Skylar Belt 17 Nov 2026",
-   "note": "",
-   "new": false
-  },
-  {
-   "id": "foster-and-kinship-closets-giving-tree-foste-2",
-   "n": "Foster and kinship closets: Giving Tree, Foster Pantry, Kaylee's Closet",
-   "pp": "",
-   "sp": "⚪ Not listed - ask",
-   "spd": "Not stated in the source. Ask when you call.",
-   "ph": "",
-   "em": "",
-   "w": "",
-   "d": "Giving Tree of WNC, Foster Pantry, Kaylee's Closet, and Buncombe HHS's own clothing closet: free clothes, gear, hygiene supplies for foster and kinship families.",
-   "a": "",
-   "h": "",
-   "os": "4.2 Baby Gear, Clothing, School Supplies",
-   "t": "Free",
-   "lv": "",
-   "vb": "",
-   "sec": "VIII",
-   "needs": [
-    "VIII:*",
-    "VIII:12a"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
    "new": false
   },
@@ -10377,34 +9751,6 @@
    "new": false
   },
   {
-   "id": "crisis-intervention-program-cip-2",
-   "n": "Crisis Intervention Program (CIP)",
-   "pp": "",
-   "sp": "⚪ Not listed - ask",
-   "spd": "Not stated in the source. Ask when you call.",
-   "ph": "828-250-6330 / 828-250-5500",
-   "em": "",
-   "w": "buncombenc.gov/395/Crisis-Intervention-Program",
-   "d": "year-round, up to ~$600 for heating/cooling emergencies with a disconnection notice; income ~150% FPL. For households below 150% of the poverty level in a heating or cooling emergency. Covers electric bills, deposits, fuel oil, kerosene, natural gas, propane, wood, coal, heaters, furnace repairs and fans; not rent, mortgage or water. Apply by phone at 828-250-6330, online at epass.nc.gov, or in person at 40 Coxe Ave. 828-250-5500 is the county's Economic Services line.",
-   "a": "40 Coxe Ave, Asheville (or apply at epass.nc.gov)",
-   "h": "Mon-Fri 8am-5pm",
-   "os": "5.2 Rent, Mortgage, Utility Assistance",
-   "t": "",
-   "lv": "2026-11-08",
-   "vb": "SB (web search)",
-   "sec": "VIII",
-   "needs": [
-    "VIII:*",
-    "VIII:14a",
-    "X:*",
-    "X:12"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; eligibility, coverage, phones and how to apply from Buncombe County's Crisis Intervention Program and Help in an Emergency pages via web search, 8 Nov 2026; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
-   "note": "",
-   "new": false,
-   "alt": "Eblen Charities (828-255-3066) or ABCCM Crisis Ministry (828-259-5300); 211 knows other utility help."
-  },
-  {
    "id": "duke-energy",
    "n": "Duke Energy",
    "pp": "",
@@ -10426,34 +9772,6 @@
     "VIII:14a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; assistance routes from Duke Energy releases via web search, 8 Nov 2026; moratorium and Share the Light phone not confirmed",
-   "note": "",
-   "new": false
-  },
-  {
-   "id": "eblen-charities-2",
-   "n": "Eblen Charities",
-   "pp": "",
-   "sp": "⚪ Not listed - ask",
-   "spd": "Not stated in the source. Ask when you call.",
-   "ph": "828-255-3066",
-   "em": "",
-   "w": "eblencharities.org",
-   "d": "52 Westgate Pkwy, 828-255-3066. Emergency rent, mortgage, utilities, prescriptions, gas vouchers for medical trips, eyeglasses. Administers LIEAP/CIP intake for Buncombe. Book appointment online at eblencharities.org and submit documents at least 3 business days ahead.",
-   "a": "52 Westgate Pkwy",
-   "h": "",
-   "os": "5.2 Rent, Mortgage, Utility Assistance",
-   "t": "Verified 8/2026. CONFLICT: an older internal guide lists 52 Westgate Pkwy. Confirm the address before sending a family.",
-   "lv": "2026-08-01",
-   "vb": "SB",
-   "sec": "VIII",
-   "needs": [
-    "VIII:*",
-    "VIII:10a",
-    "VIII:12a",
-    "VIII:14a",
-    "VIII:1a"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
    "new": false
   },
@@ -10664,7 +9982,7 @@
   },
   {
    "id": "liheap",
-   "n": "LIHEAP",
+   "n": "LIHEAP (heating)",
    "pp": "",
    "sp": "🟠 Interpreter available",
    "spd": "Federally or publicly funded: a free qualified interpreter must be provided on request. Ask for one when you call.",
@@ -10681,11 +9999,17 @@
    "sec": "VIII",
    "needs": [
     "VIII:*",
-    "VIII:14a"
+    "VIII:14a",
+    "X:*",
+    "X:12"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; 2026-27 windows from a grants-tracking blog (unconfirmed), phone line from Buncombe County's Help in an Emergency page, via web search, 8 Nov 2026; season dates from the NC LIHEAP state plan and benefit guides via web search, 17 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; phone, website and address copied from the main LIHEAP row; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; 2026-27 windows from a grants-tracking blog (unconfirmed), phone line from Buncombe County's Help in an Emergency page, via web search, 8 Nov 2026; season dates from the NC LIHEAP state plan and benefit guides via web search, 17 Nov 2026; merged 17 Nov 2026 from 2 rows (liheap-heating, liheap)",
    "note": "The winter guide gives Saturday Jan 2 for the general window; two benefit guides give Monday Jan 4, 2027, because Jan 1 is a holiday. The state plan confirms Dec 1, 2026 to Mar 31, 2027 overall.",
-   "new": false
+   "new": false,
+   "secs": [
+    "VIII",
+    "X"
+   ]
   },
   {
    "id": "legal-aid-nc-disaster-relief-project",
@@ -10763,31 +10087,6 @@
    "new": false
   },
   {
-   "id": "nc-disaster-case-management-2",
-   "n": "NC Disaster Case Management",
-   "pp": "",
-   "sp": "⚪ Not listed - ask",
-   "spd": "Not stated in the source. Ask when you call.",
-   "ph": "844-746-2326 / 828-250-6100",
-   "em": "",
-   "w": "",
-   "d": "844-746-2326. One Buncombe Call Center: 828-250-6100.",
-   "a": "",
-   "h": "",
-   "os": "5.4 Hurricane Helene Recovery",
-   "t": "",
-   "lv": "",
-   "vb": "",
-   "sec": "VIII",
-   "needs": [
-    "X:*",
-    "X:1"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
-   "new": false
-  },
-  {
    "id": "nc-homeowner-assistance-fund",
    "n": "NC Homeowner Assistance Fund",
    "pp": "",
@@ -10809,31 +10108,6 @@
     "VIII:6a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
-   "new": false
-  },
-  {
-   "id": "operation-fan-heat-relief-2",
-   "n": "Operation Fan/Heat Relief",
-   "pp": "",
-   "sp": "⚪ Not listed - ask",
-   "spd": "Not stated in the source. Ask when you call.",
-   "ph": "828-251-6622 (Land of Sky Area Agency on Aging) / 919-855-3400 (NCDHHS)",
-   "em": "",
-   "w": "landofsky.org",
-   "d": "free fans for older adults May-Oct via Area Agencies on Aging. Also for adults with disabilities.",
-   "a": "",
-   "h": "",
-   "os": "5.2 Rent, Mortgage, Utility Assistance",
-   "t": "Free",
-   "lv": "",
-   "vb": "",
-   "sec": "VIII",
-   "needs": [
-    "X:*",
-    "X:12"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; eligibility and NCDHHS line from NCDHHS releases, Land of Sky phone from an older NCDHHS notice, via web search, 8 Nov 2026",
    "note": "",
    "new": false
   },
@@ -10940,35 +10214,6 @@
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
-   "new": false
-  },
-  {
-   "id": "safe-shelter-2",
-   "n": "Safe Shelter",
-   "pp": "",
-   "sp": "🟠 Interpreter available",
-   "spd": "Federally or publicly funded: a free qualified interpreter must be provided on request. Ask for one when you call.",
-   "ph": "",
-   "em": "",
-   "w": "safeshelterasheville.org",
-   "d": "(LGBTQ+ affirming, families): 27 Balm Grove Ave, West Asheville. Explicitly welcomes BIPOC and LGBTQ+ individuals and families; keeps families together regardless of composition; non-congregate privacy. Walk in Mon-Fri 11am-2pm, or send a referral through the website. Men's winter shelter: 91 New Leicester Hwy. An older source said it also runs a safe parking program for families living in vehicles; that could not be confirmed in November 2026, so check before telling a family. About 20 beds at the West Asheville Community Hub, with families with minor children first. It was the Code Purple site for women in 2025-26.",
-   "a": "27 Balm Grove Ave",
-   "h": "Walk-in Mon-Fri 11am-2pm, or referral through the website",
-   "os": "5.1 Emergency Shelter",
-   "t": "Walk-in, Referral required, LGBTQ+ affirming",
-   "lv": "2026-11-08",
-   "vb": "SB (web search)",
-   "sec": "VIII",
-   "needs": [
-    "VII:*",
-    "VII:7a",
-    "VIII:*",
-    "VIII:7a",
-    "X:*",
-    "X:9"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; beds, hours and referral route from Safe Shelter's own site and WLOS via web search, 8 Nov 2026; safe parking claim not confirmed; nightly season and walk-in hours as given in the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026",
-   "note": "The winter guide says both sites open every night Nov 1 to Mar 31 regardless of weather, with walk-in resource help Mon-Fri 1-2pm; this row keeps 11am-2pm until the shelter confirms.",
    "new": false
   },
   {
@@ -11138,36 +10383,6 @@
    "readFirst": true
   },
   {
-   "id": "true-ridge-3",
-   "n": "True Ridge",
-   "pp": "",
-   "sp": "🟢 Spanish-first / Latino-led",
-   "spd": "Bilingual court accompaniment, apostilles, notarized translations",
-   "ph": "828-205-1170",
-   "em": "info@trueridge.org",
-   "w": "",
-   "d": "(Henderson): bilingual Helene case management (828-205-1170).",
-   "a": "",
-   "h": "",
-   "os": "5.4 Hurricane Helene Recovery",
-   "t": "Spanish / bilingual",
-   "lv": "",
-   "vb": "",
-   "sec": "VIII",
-   "needs": [
-    "ESPANOL:*",
-    "ESPANOL:servicios-en-espanol-p",
-    "V:*",
-    "V:6a",
-    "V:7a",
-    "VIII:*",
-    "VIII:15a"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
-   "new": false
-  },
-  {
    "id": "wnc-repair-cafe",
    "n": "WNC Repair Cafe",
    "pp": "",
@@ -11189,31 +10404,6 @@
     "VIII:13a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; email, venues and calendar from the Repair Cafe's own site via web search, 8 Nov 2026",
-   "note": "",
-   "new": false
-  },
-  {
-   "id": "western-carolina-rescue-ministries-2",
-   "n": "Western Carolina Rescue Ministries",
-   "pp": "",
-   "sp": "⚪ Not listed - ask",
-   "spd": "Not stated in the source. Ask when you call.",
-   "ph": "828-254-1529",
-   "em": "",
-   "w": "",
-   "d": "225 Patton Ave, 828-254-1529. Emergency shelter for men, women, children. Intakes Mon-Thu (men 9-11am, women 11am-1pm). Abba's House women's recovery. Note: congregate, gendered, conservative theology; assess LGBTQ+ safety first.",
-   "a": "225 Patton Ave",
-   "h": "Mon-Thu (men 9-11am, women 11am-1pm)",
-   "os": "5.1 Emergency Shelter",
-   "t": "Kids / 0-5, LGBTQ+ affirming | UNRESOLVED CONFLICT: two numbers are in circulation for this agency, 828-254-1529 and 828-254-0471. Call both and delete the dead one before referring a family.",
-   "lv": "",
-   "vb": "",
-   "sec": "VIII",
-   "needs": [
-    "VIII:*",
-    "VIII:7a"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
    "note": "",
    "new": false
   },
@@ -11602,33 +10792,6 @@
    "new": false
   },
   {
-   "id": "vecinos-farmworker-health-program-2",
-   "n": "Vecinos Farmworker Health Program",
-   "pp": "",
-   "sp": "🟢 Spanish-first / Latino-led",
-   "spd": "Fully bilingual, regardless of status",
-   "ph": "828-293-2274",
-   "em": "",
-   "w": "vecinos.org",
-   "d": "828-293-2274, vecinos.org. Mobile clinics for migrant and seasonal farmworkers across WNC; fully bilingual primary care, diabetes education, behavioral health, pharmacy; regardless of status. Tue/Wed/Thu 10am-9pm.",
-   "a": "",
-   "h": "Tue/Wed/Thu 10am-9pm",
-   "os": "6.1 Free and Low-Cost Clinics",
-   "t": "Free, Spanish / bilingual, Evening / weekend, Mobile / delivery",
-   "lv": "",
-   "vb": "",
-   "sec": "VI",
-   "needs": [
-    "III:*",
-    "III:1a",
-    "VI:*",
-    "VI:1a"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
-   "new": false
-  },
-  {
    "id": "wnc-community-health-services-minnie-jones-h",
    "n": "WNC Community Health Services / Minnie Jones Health Center",
    "pp": "",
@@ -11715,7 +10878,7 @@
    "ph": "828-676-3618 / 828-257-4745",
    "em": "",
    "w": "",
-   "d": "7 McDowell St, Suite 200. 828-676-3618 or 828-257-4745. Mon-Thu 8am-5pm, Fri 8am-12pm. Fillings, cleanings, x-rays, extractions, crowns, bridges, dentures, limited root canals; sliding scale for anything not covered. How to get in: call the FIRST MONDAY of each month right at opening. Walk-in urgent care Mon-Thu from 8am for pain or swelling (not guaranteed).",
+   "d": "7 McDowell St, Suite 200. 828-676-3618 or 828-257-4745. Mon-Thu 8am-5pm, Fri 8am-12pm. Fillings, cleanings, x-rays, extractions, crowns, bridges, dentures, limited root canals; sliding scale for anything not covered. How to get in: call the FIRST MONDAY of each month right at opening. Walk-in urgent care Mon-Thu from 8am for pain or swelling (not guaranteed). (FQHC): 7 McDowell St #200, 828-257-4745. Sees special-needs patients; new-patient openings noted Nov 2025, verify.",
    "a": "7 McDowell St, Suite 200",
    "h": "Mon-Thu 8am-5pm, Fri 8am-12pm",
    "os": "7.1 Adult Dental with Medicaid (Buncombe)",
@@ -11731,34 +10894,13 @@
     "VI:*",
     "VI:1a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; merged 17 Nov 2026 from 2 rows (appalachian-mountain-health-amh-dental, appalachian-mountain-health-dental)",
    "note": "",
-   "new": false
-  },
-  {
-   "id": "appalachian-mountain-health-dental",
-   "n": "Appalachian Mountain Health Dental",
-   "pp": "",
-   "sp": "🟠 Interpreter available",
-   "spd": "Federally or publicly funded: a free qualified interpreter must be provided on request. Ask for one when you call.",
-   "ph": "828-257-4745",
-   "em": "",
-   "w": "",
-   "d": "(FQHC): 7 McDowell St #200, 828-257-4745. Sees special-needs patients; new-patient openings noted Nov 2025, verify.",
-   "a": "7 McDowell St #200",
-   "h": "",
-   "os": "7.2 Pediatric Dental with Medicaid",
-   "t": "Medicaid",
-   "lv": "",
-   "vb": "",
-   "sec": "III",
-   "needs": [
-    "III:*",
-    "III:3a"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
-   "new": false
+   "new": false,
+   "secs": [
+    "VI",
+    "III"
+   ]
   },
   {
    "id": "autism-experienced-dentists-community-recomm",
@@ -12737,33 +11879,6 @@
    "new": false
   },
   {
-   "id": "mountain-child-advocacy-center-3",
-   "n": "Mountain Child Advocacy Center",
-   "pp": "",
-   "sp": "🟡 Bilingual staff",
-   "spd": "Multilingual trauma therapists",
-   "ph": "828-213-9824",
-   "em": "",
-   "w": "mtncac.org",
-   "d": "PCIT and CPP for children 0-18 who've experienced abuse, neglect, or trauma (at the Family Justice Center).",
-   "a": "Mission Children's Hospital, 3rd floor",
-   "h": "",
-   "os": "8.3 Child and Family Mental Health",
-   "t": "Kids / 0-5 | Verified 8/2026. Forensic interviews, medical eval, TF-CBT and PCIT.",
-   "lv": "2026-08-01",
-   "vb": "SB",
-   "sec": "II",
-   "needs": [
-    "ESPANOL:*",
-    "ESPANOL:personal-bilingue-bili",
-    "II:*",
-    "II:5a"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
-   "new": false
-  },
-  {
    "id": "national-deaf-therapy-deaf-counseling-center",
    "n": "National Deaf Therapy / Deaf Counseling Center / My Deaf Therapy",
    "pp": "",
@@ -12926,7 +12041,7 @@
    "em": "projectcara@mahec.net",
    "w": "mahec.net",
    "d": "perinatal substance-use treatment, 119 Hendersonville Rd, 828-255-5542, projectcara@mahec.net. Has supported 2,500+ pregnant and parenting people since 2014. Non-punitive. Prenatal and postpartum medical care plus SUD treatment for people with a history of substance use disorder; serves people who are pregnant or less than a year postpartum and in recovery or seeking it. Refer by calling 828-255-5542 or through the online referral form on MAHEC's Project CARA page; self-referral is fine. Point person Caitlin Hettich (caitlin.hettich@mahec.net, direct 828-708-8560) welcomes collaboration and can connect partners with MAHEC meetings. Patients come from across WNC, not only Buncombe.",
-   "a": "119 Hendersonville Rd",
+   "a": "119 Hendersonville Rd, Asheville 28803 (MAHEC Ob/Gyn Specialists)",
    "h": "MAHEC Ob/Gyn hours: Mon-Thu 8am-4:30pm, Fri 9am-4:30pm (closed 12-1)",
    "os": "8.4 Substance Use and Recovery",
    "t": "Verified 8/2026. Dental 828-252-4290. Psychiatry 828-398-3601.",
@@ -12946,9 +12061,13 @@
     "X:*",
     "X:2"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; referral route and point person from Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes); eligibility from MAHEC and NC Health News coverage via web search, 6 Nov 2026; hours of MAHEC Ob/Gyn Specialists, where Project CARA is based, from mahec.net via web search, 6 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; referral route and point person from Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes); eligibility from MAHEC and NC Health News coverage via web search, 6 Nov 2026; hours of MAHEC Ob/Gyn Specialists, where Project CARA is based, from mahec.net via web search, 6 Nov 2026; merged 17 Nov 2026 from 2 rows (project-cara-mahec, project-cara)",
    "note": "",
-   "new": false
+   "new": false,
+   "secs": [
+    "VII",
+    "X"
+   ]
   },
   {
    "id": "rha-child-first",
@@ -13719,35 +12838,6 @@
    "new": false
   },
   {
-   "id": "project-cara",
-   "n": "Project CARA",
-   "pp": "Caitlin Hettich",
-   "sp": "⚪ Not listed - ask",
-   "spd": "Not stated in the source. Ask when you call.",
-   "ph": "828-255-5542",
-   "em": "projectcara@mahec.net",
-   "w": "mahec.net",
-   "d": "perinatal substance use treatment at MAHEC (see 8.4): prenatal and postpartum care plus SUD treatment. Refer at 828-255-5542 or through MAHEC's online referral form. Point person Caitlin Hettich.",
-   "a": "119 Hendersonville Rd, Asheville 28803 (MAHEC Ob/Gyn Specialists)",
-   "h": "MAHEC Ob/Gyn hours: Mon-Thu 8am-4:30pm, Fri 9am-4:30pm (closed 12-1)",
-   "os": "PART 9: PREGNANCY, BIRTH, POSTPARTUM",
-   "t": "",
-   "lv": "2026-11-06",
-   "vb": "SB",
-   "sec": "X",
-   "needs": [
-    "VI:*",
-    "VI:3a",
-    "VII:*",
-    "VII:6a",
-    "X:*",
-    "X:2"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; referral route and point person from Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes); hours of MAHEC Ob/Gyn Specialists, where Project CARA is based, from mahec.net via web search, 6 Nov 2026",
-   "note": "",
-   "new": false
-  },
-  {
    "id": "project-dignity-of-wnc",
    "n": "Project Dignity of WNC",
    "pp": "",
@@ -13769,39 +12859,6 @@
     "X:2"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Idealist, Mountain Xpress and MANNA coverage via web search, 6 Nov 2026",
-   "note": "",
-   "new": false
-  },
-  {
-   "id": "sistas-caring-4-sistas-2",
-   "n": "Sistas Caring 4 Sistas",
-   "pp": "Co-kema King",
-   "sp": "🟢 Spanish-first / Latino-led",
-   "spd": "Built for Spanish-speaking families",
-   "ph": "828-575-0488",
-   "em": "doulaup@sistascaring4sistas.org",
-   "w": "sc4s.org",
-   "d": "BIPOC community doulas providing free birth and postpartum doula support to Black families and other families of color; grassroots birth justice; connected to MAHEC. Nov 2026: limited openings for families due in December, January, and February. Support includes prenatal visits and childbirth education, continuous labor support, postpartum visits, newborn feeding support, and connections to local resources, subject to eligibility and scheduling. Doula support contact named at the 6 Nov NFP partner meeting: Co-kema King (role and referral steps to be confirmed).",
-   "a": "50 S French Broad Ave, Suite 212, Asheville 28801",
-   "h": "",
-   "os": "PART 9: PREGNANCY, BIRTH, POSTPARTUM",
-   "t": "Free | Verified 8/2026. Free community doula care by and for people of color. Birth, postpartum, lactation, and partner support, plus in-home and after-hours care. Grew out of Mothering Asheville with MAHEC.",
-   "lv": "2026-08-01",
-   "vb": "SB",
-   "sec": "X",
-   "needs": [
-    "ESPANOL:*",
-    "ESPANOL:servicios-en-espanol-p",
-    "II:*",
-    "II:1a",
-    "II:3a",
-    "VI:*",
-    "VI:3a",
-    "X:*",
-    "X:2",
-    "X:8"
-   ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; winter openings from an SC4S availability post in Facebook groups, 5 Nov 2026; Co-kema King from Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes)",
    "note": "",
    "new": false
   },

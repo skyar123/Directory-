@@ -1,6 +1,6 @@
 import { useState, useMemo, useRef, useEffect } from "react";
 import {
-  META, SECTIONS, SECBY, NEEDS, NEEDBY, BASE, PEOPLE, PEOPLE_META,
+  META, SECTIONS, SECBY, NEEDS, NEEDBY, BASE, MERGED, PEOPLE, PEOPLE_META,
   CRA, CRA_SECTIONS, CHANGELOG, FOOD, EVENTS, EVENTS_META, TODAY, norm, telHref, loadCalendar,
 } from "./data.js";
 import { useStore } from "./storage.js";
@@ -106,7 +106,10 @@ export default function App() {
 
   const resources = useMemo(() => {
     const all = [...BASE, ...(state.added || [])];
-    return all.map((r) => (state.edits[r.id] ? { ...r, ...state.edits[r.id] } : r));
+    /* edits saved under a merged-away id carry over to the kept row */
+    const edits = { ...state.edits };
+    for (const [old, kept] of Object.entries(MERGED)) if (edits[old] && !edits[kept]) edits[kept] = edits[old];
+    return all.map((r) => (edits[r.id] ? { ...r, ...edits[r.id] } : r));
   }, [state]);
 
   const terms = useMemo(() => norm(q).split(" ").filter(Boolean), [q]);
@@ -115,7 +118,7 @@ export default function App() {
   const index = useMemo(() => buildIndex(resources, NEEDS), [resources]);
   const results = useMemo(() => {
     const list = searchResources(resources, q, index.rank)
-      .filter((x) => !secFilter || x.r.sec === secFilter)
+      .filter((x) => !secFilter || x.r.sec === secFilter || (x.r.secs || []).includes(secFilter))
       .filter((x) => !onlyGaps || !x.r.phone || !x.r.web || !x.r.verified);
     list.sort((a, b) =>
       b.s - a.s
@@ -226,6 +229,7 @@ export default function App() {
       ...(r.startHere && { start: true }),
       ...(r.readFirst && { readFirst: true }),
       ...(r.backup && { alt: r.backup }),
+      ...(r.secs && r.secs.length > 1 && { secs: r.secs }),
     })),
   }, null, 1) + "\n"); /* data/resources.json ends with a newline too */
 
@@ -332,7 +336,11 @@ export default function App() {
   const evPast = evPlan.past.filter((e) => !e.status);
   const evShown = evPlan.months.reduce((n, m) => n + m.items.length, 0);
   const evSig = [evKind, evAge, evOrg, evTerms.join(" ")].join("|");
-  const resById = useMemo(() => new Map(resources.map((r) => [r.id, r])), [resources]);
+  const resById = useMemo(() => {
+    const m = new Map(resources.map((r) => [r.id, r]));
+    for (const [old, kept] of Object.entries(MERGED)) if (!m.has(old) && m.has(kept)) m.set(old, m.get(kept));
+    return m;
+  }, [resources]);
 
   /* an event's "Open in the directory": the resource it links, found and
      opened in the Find view with nothing else filtering it out */
