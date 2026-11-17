@@ -3,7 +3,23 @@ import { SECBY, NEEDBY, FIELDS, telHref } from "../data.js";
 import { VerifyBadge, MissingBits, Field } from "./bits.jsx";
 import Icon from "./Icon.jsx";
 
-export default function ResourceCard({ r, open, onToggle, onEdit, onVerify, showGaps }) {
+/* What a family can be sent: only the public contact facts. Staff notes,
+   details and sources stay out, because they are written for the team. */
+export function familyText(r) {
+  const facts = [
+    r.name,
+    r.phone && `Call: ${r.phone}`,
+    r.address && `Where: ${r.address}`,
+    r.hours && `When: ${r.hours}`,
+    r.web && `Website: ${r.web}`,
+    r.email && `Email: ${r.email}`,
+    r.backup && `If that doesn't work: ${r.backup}`,
+  ].filter(Boolean);
+  return facts.join("\n") + "\n\nBefore you go, it helps to call and ask: are you open and taking people this week, "
+    + "what should I bring, can my children come with me, is there an interpreter, and what is the easiest way to get there?";
+}
+
+export default function ResourceCard({ r, open, onToggle, onEdit, onVerify, onCopy, inPlan, onPlan, showGaps }) {
   const s = SECBY[r.sec] || SECBY.X;
   const [editing, setEditing] = useState(false);
   const tel = r.phone ? r.phone.split(/[/,]/)[0].trim() : "";
@@ -59,6 +75,9 @@ export default function ResourceCard({ r, open, onToggle, onEdit, onVerify, show
         <div className="card-body">
           {r.note && <p className="callout">{r.note}</p>}
           {r.detail && <p className="detail">{r.detail}</p>}
+          {r.backup && (
+            <p className="backup"><strong>If this doesn't work:</strong> {r.backup}</p>
+          )}
           {r.tags && (
             <p className="tags">
               {r.tags.split(/\s*[|,]\s*/).filter(Boolean).map((t, i) => <span key={i}>{t}</span>)}
@@ -81,6 +100,16 @@ export default function ResourceCard({ r, open, onToggle, onEdit, onVerify, show
               {editing ? "Close editor" : "Edit"}
             </button>
             <button className="btn ok-btn" onClick={onVerify}>Mark verified today</button>
+            {onPlan && (
+              <button className={"btn" + (inPlan ? " in-plan" : "")} onClick={onPlan} aria-pressed={inPlan ? "true" : "false"}>
+                {inPlan ? "In the visit plan (remove)" : "Add to visit plan"}
+              </button>
+            )}
+            {onCopy && (
+              <button className="btn" onClick={() => onCopy(familyText(r), "Copied for a family: contact details and what to ask before going.")}>
+                Copy for a family
+              </button>
+            )}
           </div>
 
           {editing && (

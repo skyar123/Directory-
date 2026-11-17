@@ -154,6 +154,66 @@
    "label": "ADDED THIS ROUND",
    "entries": [
     {
+     "date": "Nov 17 2026",
+     "what": "Visit plan, need-first Find tab, and backup routes",
+     "detail": "Find now opens on the crisis lines and a list of needs, each going straight to its list. 31 rows gained an \"If this doesn't work\" backup route, shown on the card and in anything copied for a family. A new Visit plan tab gathers resources and dates for one family, with questions to ask before going, to copy or print; it stays in this browser and takes no names.",
+     "source": "scripts/apply-backup-routes-2026-11-17.mjs"
+    },
+    {
+     "date": "Nov 17 2026",
+     "what": "From the OK Computer navigator build: Dream Center holiday dates, Bounty & Soul schedule, intake details",
+     "detail": "New Asheville Dream Center holiday row and two events (Nov 21, Dec 12). Bounty & Soul's full weekly market schedule, also added to Food by day. Intake details for Kaleidoscope (now registration only), CDSA, Our VOICE, Pisgah Legal, Working Wheels, Mountain Mobility, AHOPE and MANNA. Conflicts kept visible: UNETE's address and the Steady Collective schedule.",
+     "source": "scripts/apply-okc-build-2026-11-17.mjs"
+    },
+    {
+     "date": "Nov 16 2026",
+     "what": "Mountain Strong Free Clinic (Burnsville) open houses",
+     "detail": "New row and two calendar events (Nov 21 and Dec 17) from the English and Spanish flyers: a free clinic open house with a nurse to ask, medication assistance information and a free first aid kit. No appointments or treatment at the event.",
+     "source": "scripts/apply-mountain-strong-2026-11-16.mjs"
+    },
+    {
+     "date": "Nov 16 2026",
+     "what": "Facebook holiday sweep: ABCCM application link, Thanksgiving meals, full programs",
+     "detail": "ABCCM Christmas Angel now has its family application form and shop dates. Calendar: Horse Shoe Thanksgiving lunch (Nov 20), Radiant Church dinner (Nov 26), IAM holiday boxes, a MANNA pop-up, free gift wrapping (Dec 8 and 22). Eblen's Thanksgiving giveaway is marked full. New Grace Covenant no-ID free food row. Holiday assistance flags the programs that need no documents.",
+     "source": "scripts/apply-fb-holiday-sweep-2026-11-16.mjs"
+    },
+    {
+     "date": "Nov 16 2026",
+     "what": "Holiday gift help made clear: Eblen sign-up link, ABCCM for families",
+     "detail": "Eblen's Saint Nicholas Project sign-up opened today: the row, Holiday assistance and a calendar entry carry the sign-up link (name, email and ages only). New ABCCM Christmas Angel row for families applying for gifts (the old link was the sponsor page). Holiday assistance rewritten as numbered steps.",
+     "source": "scripts/apply-holiday-signup-2026-11-16.mjs"
+    },
+    {
+     "date": "Nov 16 2026",
+     "what": "Flyers: Community Closet, food distribution, free haircuts",
+     "detail": "New row for the City's monthly Community Closet at Murphy-Oakley (Nov 18, Dec 9). Calendar: Restoration House free haircuts (Nov 17), Carolina Complete Health and YMCA food distribution at 150 Tunnel Rd (Nov 19, reserve a spot).",
+     "source": "scripts/apply-flyers-2026-11-16.mjs"
+    },
+    {
+     "date": "Nov 16 2026",
+     "what": "Holiday help brought up to date",
+     "detail": "The Holiday assistance row now leads with Eblen's Saint Nicholas Project (sign-up open now), ABCCM's Christmas Angel and WNC Toys for Tots, with Thanksgiving help, and says why the Salvation Army Angel Tree is not a first referral. New Toys for Tots row. Calendar: Eblen's turkey sign-up confirmed for November 20, the Angel Tree entry updated with its 2026 rules, and the Eblen store entry linked to its row.",
+     "source": "scripts/apply-holiday-refresh-2026-11-16.mjs"
+    },
+    {
+     "date": "Nov 16 2026",
+     "what": "Code Purple 2026-27 rules, and Eblen's Christmas toy store",
+     "detail": "Code Purple now has the official 2026-27 sheet: sites, bus routes, 5-8pm entry, when it is called, and the right numbers (828-398-6011 recorded message; 828-442-7597 is the coordinator, not a status line). New row for Eblen's Saint Nicholas Project toy store, with its sign-up page.",
+     "source": "scripts/apply-holiday-codepurple-2026-11-16.mjs"
+    },
+    {
+     "date": "Nov 13 2026",
+     "what": "Food guide cross-check: 39 new food sources, Code Purple sites, Salvation Army flagged",
+     "detail": "From the WNC Free Food & Supplies guide (Oct 2026): new rows for Asheville meals, pantries and fridges, Barnardsville, Black Mountain, Leicester and Weaverville sites, free firewood, and the main food sources in Henderson, Madison, McDowell, Haywood, Transylvania and Yancey. Corrected Food Connection's times, Swannanoa Communities Together's hours and Budgie's Bakeshop. Code Purple now lists this winter's sites and status line (828-442-7597). Salvation Army rows say Skylar does not refer there first, because of how much personal detail it asks for. Calendar: Code Purple Nov 13-14, Eblen's turkey giveaway (Nov 20), the Christmas Blessings Event in Candler (Nov 21) and Bounty & Soul's market changes.",
+     "source": "scripts/apply-food-guide-2026-11-13.mjs"
+    },
+    {
+     "date": "Nov 8 2026",
+     "what": "Gap fill: phones, websites and addresses for about 70 rows",
+     "detail": "Contact details filled for rows that had none, among them Burton Street Community Center, Just Economics, Mountain BizWorks, BCS Language Services, CMARC's Buncombe referral line, the Lavender Fund, Youth Villages, ECAC, NAMI Western Carolina, the WNC Farmers Market, Read to Succeed, Literacy Together and all six Carolina Pediatric Therapy rows. Corrections: the Estes Resource Center is the Estes Elementary family resource center on Overlook Rd, Brandy Colvin's office is on N French Broad, and USCRI and Hispanic Federation have no Asheville office. Nine local resources that exist by word of mouth, with no online listing, are now marked that way.",
+     "source": "scripts/apply-gap-fill-2026-11-08.mjs"
+    },
+    {
      "date": "Nov 8 2026",
      "what": "Concrete Needs check: a dangerous mix-up fixed, the Salvation Army shelter pause flagged",
      "detail": "ABBA's House was described as domestic violence safe housing; it is a recovery residence for mothers, so the row now says so and points survivors to Helpmate. The Salvation Army's 65-bed shelter is paused until April 30, 2027. The NC Diaper Bank row's Houston number and walk-in description were removed. Modivcare now lists each plan's ride line, with WellCare's corrected to One Call, and it and Mountain Mobility lost a stray \"Toys or books\" tag. 12 Baskets, ART, Mountain Mobility, BEAR Closets and Safe Shelter had wrong or cut-off hours. Code Purple now lists last season's sites and rules. Confirmed against official or the organizations' own sources: ART, Mountain Mobility, Trailblazer, Modivcare, both MANNA helpline rows, both CIP rows, the Salvation Army shelter and rent help, Safe Shelter, love is respect and the Trevor Project.",
@@ -255,6 +315,12 @@
    "id": "open-questions",
    "label": "STILL OPEN",
    "entries": [
+    {
+     "date": "OPEN",
+     "what": "Is Field & Kitchen in Hendersonville still open?",
+     "detail": "Its operator, Caja, posted an undated survey saying it is closing this location \"this fall\" to consolidate at the farm. Confirm with Field & Kitchen or Caja, then mark the row closed or clear its note.",
+     "source": "Gap fill, web search 8 Nov 2026"
+    },
     {
      "date": "OPEN",
      "what": "Concrete Needs details to confirm before relying on them",

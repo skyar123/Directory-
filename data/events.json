@@ -83,26 +83,14 @@
   {
    "id": "eblen-ingles-thanksgiving-giveaway-2026-11",
    "date": "2026-11-01",
-   "end": "2026-11-30",
+   "end": "2026-11-19",
    "kind": "signup",
-   "what": "Eblen and Ingles Thanksgiving meal giveaway",
-   "detail": "Eblen Charities and Ingles run a Thanksgiving meal giveaway each November, for about 800 families in recent years.",
-   "note": "The 2026 sign-up had not been confirmed by 6 November. Call Eblen now rather than wait for an announcement.",
+   "what": "Sign up: Eblen Giving Thanks Turkey Giveaway (Nov 20)",
+   "detail": "Advance sign-up is required to get everything for a Thanksgiving meal at the Friday, November 20 giveaway, with Ingles and iHeart Media.",
+   "note": "Reported FULLY REGISTERED on November 16 (Friends of Swannanoa comment). Do not send new families; try the meals listed for Nov 20 to 26 or NC 211.",
    "ph": "828-255-3066",
    "rid": "eblen-charities",
-   "src": "Past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026, as recorded on the Holiday assistance row"
-  },
-  {
-   "id": "salvation-army-angel-tree-registration-2026-11",
-   "date": "2026-11-01",
-   "end": "2026-11-30",
-   "kind": "signup",
-   "what": "Salvation Army Angel Tree registration",
-   "detail": "Families register in November, and gifts are given out on 21 and 22 December.",
-   "note": "The directory gives the month, not the days. Call to confirm when and where to register.",
-   "ph": "828-253-4723",
-   "rid": "holiday-assistance",
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab (Holiday assistance row)"
+   "src": "Past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026, as recorded on the Holiday assistance row; confirmed by Eblen's Giving Thanks flyer, shared by Skylar Belt 13 Nov 2026; full status from the Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026"
   },
   {
    "id": "ymca-mobile-market-2026-11-06",
@@ -313,6 +301,18 @@
    "src": "Facebook event listings, Facebook deep scrape, 6 Nov 2026; phone from YMCA WNC mobile market schedule PDFs via web search, 6 Nov 2026"
   },
   {
+   "id": "code-purple-2026-11-13",
+   "date": "2026-11-13",
+   "end": "2026-11-14",
+   "time": "Check-in 5-8pm",
+   "kind": "event",
+   "what": "Code Purple called: emergency overnight shelter",
+   "detail": "Women and children: ABCCM Transformation Village, 30 Olin Haven Way. Men, couples and people with pets: Center of Hope, 204 Haywood St. No ID or sobriety required; free ART rides to the shelters. Recorded message on whether it is called: 828-398-6011; coordinator 828-442-7597.",
+   "ph": "828-398-6011",
+   "rid": "code-purple",
+   "src": "Flyer shared by Skylar Belt, 13 Nov 2026 (Asheville-Buncombe Continuum of Care)"
+  },
+  {
    "id": "christmas-on-main-marshall-2026-11-14",
    "date": "2026-11-14",
    "time": "From 9am",
@@ -389,15 +389,60 @@
    "src": "Facebook event listing, Facebook deep scrape part 1, 6 Nov 2026"
   },
   {
+   "id": "salvation-army-angel-tree-registration-2026-11",
+   "date": "2026-11-16",
+   "end": "2026-11-30",
+   "kind": "signup",
+   "what": "Salvation Army Angel Tree registration",
+   "detail": "A registration link goes up the morning of November 16 with limited spots, for children 0 to 12 (siblings to 17) in Buncombe; families get an appointment to shop.",
+   "note": "Skylar does not refer here: it asks for photo ID, birth certificates or custody papers and proof of income, and bars families who asked anyone else for Christmas help. Offer Eblen, ABCCM or a Toys for Tots partner first.",
+   "ph": "828-253-4723",
+   "rid": "holiday-assistance",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab (Holiday assistance row); 2026 dates and rules from the Salvation Army Angel Tree flyer, shared by Skylar Belt 13 Nov 2026"
+  },
+  {
    "id": "eblen-saint-nicholas-signup-2026-11-16",
    "date": "2026-11-16",
+   "end": "2026-12-18",
    "kind": "signup",
-   "what": "Eblen Saint Nicholas Project online sign-up opens",
-   "detail": "Sign-up for the Saint Nicholas Project holiday store, where more than 1,900 families shop for toys and clothing.",
-   "note": "Unverified: this date is from a family-events guide, and in past years registration opened in early October. Confirm with Eblen before telling a family to wait.",
+   "what": "Sign up now: Eblen Saint Nicholas Project free Christmas toy shop",
+   "detail": "Book a free in-person shopping appointment for children birth to 18. Needs only a name, email and each child's age. Slots fill fast.",
+   "tags": [
+    "Free"
+   ],
+   "w": "signup.com/mobileweb/2.0/vspot.html?activitykey=3603962089",
    "ph": "828-255-3066",
-   "rid": "holiday-assistance",
-   "src": "A family-events guide, as recorded on the Holiday assistance row with past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026"
+   "rid": "eblen-saint-nicholas-project-christmas",
+   "note": "Bring proof of custody or guardianship when picking up (asked in past years).",
+   "src": "A family-events guide, as recorded on the Holiday assistance row with past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026; confirmed by Eblen's Saint Nicholas page via web search, 16 Nov 2026; sign-up link shared with Skylar Belt, 16 Nov 2026"
+  },
+  {
+   "id": "manna-popup-skyland-umc-2026-11-16",
+   "date": "2026-11-16",
+   "time": "3:30-4:30pm",
+   "kind": "event",
+   "what": "MANNA free groceries pop-up",
+   "where": "Skyland United Methodist Church, 1984 Hendersonville Rd, Asheville",
+   "detail": "One-time free grocery mobile market.",
+   "tags": [
+    "Free"
+   ],
+   "src": "Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026 (Nov 16 digest)"
+  },
+  {
+   "id": "iam-holiday-meal-boxes-2026-11-16",
+   "date": "2026-11-16",
+   "end": "2026-11-25",
+   "kind": "event",
+   "what": "IAM holiday meal boxes (Hendersonville)",
+   "where": "IAM, 310 Freeman St, Hendersonville",
+   "detail": "Holiday meal boxes given out through Thanksgiving week.",
+   "note": "How to sign up and who qualifies were not stated; call IAM first.",
+   "tags": [
+    "Free"
+   ],
+   "rid": "iam-pantry-hendersonville",
+   "src": "Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026 (Nov 16 digest)"
   },
   {
    "id": "sk8way-food-drive-free-night-2026-11-17",
@@ -435,6 +480,19 @@
    "src": "Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes)"
   },
   {
+   "id": "restoration-house-haircuts-2026-11-17",
+   "date": "2026-11-17",
+   "kind": "event",
+   "what": "Free haircut clinic at Restoration House",
+   "detail": "Local stylists Brooke Shipman and Cat Raybon Burns give free haircuts.",
+   "tags": [
+    "Free"
+   ],
+   "note": "The flyer gives no time; call or stop by to ask.",
+   "src": "Flyer shared by Skylar Belt, 16 Nov 2026 (Restoration House); address confirmed by Skylar Belt, 16 Nov 2026",
+   "where": "Restoration House WNC, 81 Academy St, Bryson City"
+  },
+  {
    "id": "ymca-mobile-market-2026-11-18",
    "date": "2026-11-18",
    "time": "11am",
@@ -452,6 +510,22 @@
    "w": "ymcawnc.org/schedules-7",
    "rid": "ymca-wnc-mobile-food-markets",
    "src": "Facebook event listings, Facebook deep scrape, 6 Nov 2026; phone from YMCA WNC mobile market schedule PDFs via web search, 6 Nov 2026"
+  },
+  {
+   "id": "community-closet-murphy-oakley-2026-11-18",
+   "date": "2026-11-18",
+   "time": "1-2pm",
+   "kind": "event",
+   "what": "Community Closet: free stuff at Murphy-Oakley",
+   "where": "Murphy-Oakley Community Center, 749 Fairview Rd, Asheville 28803",
+   "detail": "Take what you need, leave what you can.",
+   "tags": [
+    "Free"
+   ],
+   "ph": "828-232-4529",
+   "w": "avlrec.com",
+   "rid": "community-closet-murphy-oakley",
+   "src": "Flyer shared by Skylar Belt, 16 Nov 2026 (City of Asheville Parks & Recreation)"
   },
   {
    "id": "narcan-training-2026-11-19",
@@ -486,6 +560,19 @@
    "src": "Facebook event listings, Facebook deep scrape, 6 Nov 2026; phone from YMCA WNC mobile market schedule PDFs via web search, 6 Nov 2026"
   },
   {
+   "id": "cch-ymca-food-distribution-2026-11-19",
+   "date": "2026-11-19",
+   "time": "11am-12pm",
+   "kind": "event",
+   "what": "Free food distribution: Carolina Complete Health and YMCA",
+   "where": "150 Tunnel Rd, Asheville 28805 (bus stop #443 on WE1)",
+   "detail": "Fresh groceries, free, everyone welcome. Reserve a spot on the Eventbrite listing (Carolina Complete Health - Asheville).",
+   "tags": [
+    "Free"
+   ],
+   "src": "Eventbrite listing shared by Skylar Belt, 16 Nov 2026"
+  },
+  {
    "id": "biltmore-park-tree-lighting-2026-11-20",
    "date": "2026-11-20",
    "time": "4pm",
@@ -515,6 +602,36 @@
    "src": "Facebook event listings, Facebook deep scrape, 6 Nov 2026; phone from YMCA WNC mobile market schedule PDFs via web search, 6 Nov 2026"
   },
   {
+   "id": "eblen-turkey-giveaway-2026-11-20",
+   "date": "2026-11-20",
+   "kind": "event",
+   "what": "Eblen Charities Giving Thanks Turkey Giveaway",
+   "detail": "Everything for a Thanksgiving meal, with Ingles and iHeart Media. Sign up in advance; the flyer says sign-ups are still open.",
+   "tags": [
+    "Free"
+   ],
+   "ph": "828-255-3066",
+   "w": "eblencharities.org",
+   "rid": "eblen-charities",
+   "src": "Flyer shared by Skylar Belt, 13 Nov 2026; full status from the Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026",
+   "note": "Reported FULLY REGISTERED on November 16 (Friends of Swannanoa comment). Do not send new families; try the meals listed for Nov 20 to 26 or NC 211."
+  },
+  {
+   "id": "horse-shoe-feed-u-friday-2026-11-20",
+   "date": "2026-11-20",
+   "time": "11:30am-1pm",
+   "kind": "event",
+   "what": "Free Thanksgiving lunch: Horse Shoe Community Church \"Feed U Friday\"",
+   "where": "Horse Shoe Community Church, 3 Banner Farm Rd, Horse Shoe 28742 (Henderson County)",
+   "detail": "Free sit-down Thanksgiving lunch (turkey, homemade sides and desserts), with take-out dinners. Open to everyone, no requirements stated.",
+   "note": "RSVP was due Monday, November 16: call 828-714-1670 and ask if there is still room.",
+   "ph": "828-714-1670",
+   "tags": [
+    "Free"
+   ],
+   "src": "Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026 (Hendersonville, NC group, Nov 10)"
+  },
+  {
    "id": "fandom-fusion-2026-11-21",
    "date": "2026-11-21",
    "time": "From 10am",
@@ -527,6 +644,66 @@
    ],
    "w": "facebook.com/events/1632604424889148",
    "src": "Facebook event listing, Facebook deep scrape part 3, 6 Nov 2026"
+  },
+  {
+   "id": "christmas-blessings-candler-2026-11-21",
+   "date": "2026-11-21",
+   "time": "10am-2pm",
+   "kind": "event",
+   "what": "3rd Annual Christmas Blessings Event: free toys, food and clothing",
+   "where": "Maple Ridge Baptist, 133 Medford Branch Rd, Candler 28715",
+   "detail": "Free Christmas toy shop with new toys, a hot meal, a free used-clothing store, pantry staple boxes, and bookbags and school supplies. Everyone welcome. Hosted by Woodland Terrace Baptist Church.",
+   "tags": [
+    "Free"
+   ],
+   "w": "hoperidgechristianministries.org",
+   "src": "Flyer shared by Skylar Belt, 13 Nov 2026",
+   "note": "Walk-in: no sign-up, income test or documents stated."
+  },
+  {
+   "id": "bounty-soul-artspace-moved-2026-11-21",
+   "date": "2026-11-21",
+   "time": "10-11:30am",
+   "kind": "event",
+   "what": "Bounty & Soul ArtSpace market moves for one day",
+   "where": "Black Mountain Machine & Tool, 2988 US Hwy 70, Black Mountain 28711",
+   "detail": "The Saturday ArtSpace market meets here this week only.",
+   "tags": [
+    "Free"
+   ],
+   "rid": "bounty-soul",
+   "src": "Flyer shared by Skylar Belt, 13 Nov 2026"
+  },
+  {
+   "id": "mountain-strong-open-house-2026-11-21",
+   "date": "2026-11-21",
+   "time": "11am-2pm",
+   "kind": "event",
+   "what": "Free clinic open house: Get Connected to Care (Mountain Strong, Burnsville)",
+   "where": "371 W US Hwy 19E, Burnsville 28714",
+   "detail": "Tour the clinic, meet the team, ask a nurse general health questions, learn about free medical services and medication assistance, and take home a free first aid kit (while supplies last). Everyone welcome; no registration. No appointments or treatment at this event. The flyer is also in Spanish.",
+   "tags": [
+    "Free"
+   ],
+   "ph": "828-380-9219",
+   "w": "mountainstrong828.org",
+   "rid": "mountain-strong-free-clinic",
+   "src": "Mountain Strong Free Clinic flyers (English and Spanish), shared by Skylar Belt, 16 Nov 2026"
+  },
+  {
+   "id": "dream-center-thanksgiving-outreach-2026-11-21",
+   "date": "2026-11-21",
+   "kind": "event",
+   "what": "Asheville Dream Center Thanksgiving Outreach",
+   "detail": "Seasonal Thanksgiving outreach from Love Our City.",
+   "note": "Details forthcoming: call 828-674-2989 before planning.",
+   "tags": [
+    "Free"
+   ],
+   "ph": "828-674-2989",
+   "w": "ashevilledreamcenter.org/love-our-city",
+   "rid": "asheville-dream-center-holiday",
+   "src": "OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)"
   },
   {
    "id": "shepherds-table-donations-close-2026-11-22",
@@ -572,6 +749,33 @@
    "src": "Facebook event listings, Facebook deep scrape, 6 Nov 2026; phone from YMCA WNC mobile market schedule PDFs via web search, 6 Nov 2026"
   },
   {
+   "id": "bounty-soul-thanksgiving-week-2026-11-25",
+   "date": "2026-11-25",
+   "end": "2026-11-28",
+   "kind": "event",
+   "what": "Bounty & Soul Thanksgiving week market changes",
+   "detail": "Bi-Lo market moves to Wednesday, Nov 25, 3:30-4:30pm (not Thursday). Cancelled: Beacon Community Center and Fairview Reynolds (Wed Nov 25), Grant Center (Fri Nov 27) and ArtSpace (Sat Nov 28). Regular markets resume Monday, Nov 30.",
+   "tags": [
+    "Free"
+   ],
+   "rid": "bounty-soul",
+   "src": "Flyer shared by Skylar Belt, 13 Nov 2026"
+  },
+  {
+   "id": "radiant-church-feed-the-828-2026-11-26",
+   "date": "2026-11-26",
+   "time": "11am-2pm",
+   "kind": "event",
+   "what": "Free Thanksgiving dinner: Radiant Church \"Feed the 828\" (Arden)",
+   "where": "Radiant Church Arden campus, Radiant Cafe at the back, 3839 Sweeten Creek Rd, Arden",
+   "detail": "Free Thanksgiving dinner, dine in or take out. Free to the community; no RSVP or requirements stated.",
+   "w": "radiant828.com",
+   "tags": [
+    "Free"
+   ],
+   "src": "Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026 (Hendersonville group, Nov 15; Asheville Free, Nov 13)"
+  },
+  {
    "id": "santa-in-the-square-2026-12-05",
    "date": "2026-12-05",
    "time": "3pm",
@@ -607,6 +811,19 @@
    "src": "Facebook event listings, Facebook deep scrape, 6 Nov 2026; venue name from a feedam.org pantry listing via web search, 6 Nov 2026"
   },
   {
+   "id": "hot-mess-express-gift-wrapping-2026-12-08",
+   "date": "2026-12-08",
+   "kind": "event",
+   "what": "Free gift wrapping for families (Hot Mess Express Asheville)",
+   "detail": "Volunteers wrap families' gifts for free. Location given when you sign up.",
+   "w": "forms.gle/yjoGnCTgb1wXEHML7",
+   "note": "Sign up on the form or email tyonnahoward@hotmessexpressaffiliate.co. Also December 22.",
+   "tags": [
+    "Free"
+   ],
+   "src": "Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026 (Asheville Mamas, Nov 12)"
+  },
+  {
    "id": "story-time-woodfin-2026-12-09",
    "date": "2026-12-09",
    "time": "9:30am",
@@ -617,6 +834,22 @@
    "note": "The listing does not name the host or say what it costs.",
    "w": "facebook.com/events/1559344555531776",
    "src": "Facebook event listing, Facebook deep scrape part 2, 6 Nov 2026"
+  },
+  {
+   "id": "community-closet-murphy-oakley-2026-12-09",
+   "date": "2026-12-09",
+   "time": "1-2pm",
+   "kind": "event",
+   "what": "Community Closet: free stuff at Murphy-Oakley",
+   "where": "Murphy-Oakley Community Center, 749 Fairview Rd, Asheville 28803",
+   "detail": "Take what you need, leave what you can.",
+   "tags": [
+    "Free"
+   ],
+   "ph": "828-232-4529",
+   "w": "avlrec.com",
+   "rid": "community-closet-murphy-oakley",
+   "src": "Flyer shared by Skylar Belt, 16 Nov 2026 (City of Asheville Parks & Recreation)"
   },
   {
    "id": "origami-fun-for-kids-2026-12-11",
@@ -671,6 +904,21 @@
    "src": "Facebook event listing, Facebook deep scrape, 6 Nov 2026"
   },
   {
+   "id": "dream-center-toy-giveaway-2026-12-12",
+   "date": "2026-12-12",
+   "kind": "event",
+   "what": "Asheville Dream Center Dream Christmas Toy Giveaway",
+   "detail": "Free Christmas toy giveaway.",
+   "note": "Details forthcoming: call 828-674-2989 or email info@ashevilledreamcenter.org.",
+   "tags": [
+    "Free"
+   ],
+   "ph": "828-674-2989",
+   "w": "ashevilledreamcenter.org/love-our-city",
+   "rid": "asheville-dream-center-holiday",
+   "src": "OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)"
+  },
+  {
    "id": "marketplace-open-enrollment-deadline-2026-12-15",
    "date": "2026-12-15",
    "kind": "deadline",
@@ -686,18 +934,6 @@
    "src": "NFP community partner meeting, 6 Nov 2026; enrollment guides via web search, 6 Nov 2026"
   },
   {
-   "id": "eblen-saint-nicholas-store-2026-12-17",
-   "date": "2026-12-17",
-   "end": "2026-12-22",
-   "kind": "event",
-   "what": "Eblen Saint Nicholas Project holiday store",
-   "detail": "Families who signed up shop for toys and clothing; more than 1,900 families use it.",
-   "note": "Unverified: these dates are from a family-events guide. The workbook gave about 10 to 19 December, and the 2025 store opened 9 December at 23 Hamilton St. Confirm with Eblen before telling a family when to go.",
-   "ph": "828-255-3066",
-   "rid": "holiday-assistance",
-   "src": "A family-events guide, as recorded on the Holiday assistance row with past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026"
-  },
-  {
    "id": "narcan-training-2026-12-17",
    "date": "2026-12-17",
    "kind": "event",
@@ -709,6 +945,22 @@
    ],
    "w": "facebook.com/events/1292731676324870",
    "src": "Facebook event listings, Facebook deep scrape part 2, 6 Nov 2026"
+  },
+  {
+   "id": "mountain-strong-open-house-2026-12-17",
+   "date": "2026-12-17",
+   "time": "5-8pm",
+   "kind": "event",
+   "what": "Free clinic open house: Get Connected to Care (Mountain Strong, Burnsville)",
+   "where": "371 W US Hwy 19E, Burnsville 28714",
+   "detail": "Tour the clinic, meet the team, ask a nurse general health questions, learn about free medical services and medication assistance, and take home a free first aid kit (while supplies last). Everyone welcome; no registration. No appointments or treatment at this event. The flyer is also in Spanish.",
+   "tags": [
+    "Free"
+   ],
+   "ph": "828-380-9219",
+   "w": "mountainstrong828.org",
+   "rid": "mountain-strong-free-clinic",
+   "src": "Mountain Strong Free Clinic flyers (English and Spanish), shared by Skylar Belt, 16 Nov 2026"
   },
   {
    "id": "sk8way-holiday-night-market-2026-12-18",
@@ -725,6 +977,18 @@
    "src": "Facebook post in What's Happening Asheville, 2 Nov 2026 (Facebook deep scrape part 2, 6 Nov 2026)"
   },
   {
+   "id": "eblen-saint-nicholas-store-2026-12-17",
+   "date": "2026-12-20",
+   "end": "2026-12-24",
+   "kind": "event",
+   "what": "Eblen Saint Nicholas Project toy store (about Dec 20 to 24)",
+   "detail": "Families who signed up shop for toys and clothing; more than 1,900 families use it.",
+   "note": "Eblen says the store is open the 5 days before Christmas; exact 2026 days and address are not published. Families need a booked appointment.",
+   "ph": "828-255-3066",
+   "rid": "eblen-saint-nicholas-project-christmas",
+   "src": "A family-events guide, as recorded on the Holiday assistance row with past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026; timing from Eblen's own page via web search, 16 Nov 2026"
+  },
+  {
    "id": "salvation-army-angel-tree-distribution-2026-12-21",
    "date": "2026-12-21",
    "end": "2026-12-22",
@@ -733,7 +997,8 @@
    "detail": "For families who registered in November.",
    "ph": "828-253-4723",
    "rid": "holiday-assistance",
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab (Holiday assistance row)"
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab (Holiday assistance row)",
+   "note": "Not a first referral (see the registration entry)."
   },
   {
    "id": "between-heartbeats-2026-12-22",
@@ -748,6 +1013,19 @@
    ],
    "w": "facebook.com/events/979473671731878",
    "src": "Facebook event listing, Facebook deep scrape part 2, 6 Nov 2026"
+  },
+  {
+   "id": "hot-mess-express-gift-wrapping-2026-12-22",
+   "date": "2026-12-22",
+   "kind": "event",
+   "what": "Free gift wrapping for families (Hot Mess Express Asheville)",
+   "detail": "Volunteers wrap families' gifts for free. Location given when you sign up.",
+   "w": "forms.gle/yjoGnCTgb1wXEHML7",
+   "note": "Sign up on the form or email tyonnahoward@hotmessexpressaffiliate.co.",
+   "tags": [
+    "Free"
+   ],
+   "src": "Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026 (Asheville Mamas, Nov 12)"
   },
   {
    "id": "mars-hill-library-tech-help-2027-01-05",
