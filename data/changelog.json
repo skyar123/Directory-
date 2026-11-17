@@ -155,6 +155,12 @@
    "entries": [
     {
      "date": "Nov 17 2026",
+     "what": "Community food, medical and financial lists, and free family outings",
+     "detail": "76 new rows and 16 rows updated. Food: the rest of the WNC Free Food guide, by county (Haywood, Henderson, McDowell, Madison, Mitchell, Rutherford, Jackson, Swain, Yancey, Macon and the High Country), plus Asheville's East Asheville Welcome Table and UATE Feed the People. Medical: SVCM NeighborCare, The Free Clinics, Black Mountain Counseling Center, Blue Ridge Free Dental, Dispensary of Hope and more. Money and holidays: NCCARE360, The Arc's Operation Santa, SVCM's Christmas Cheer, Hearts with Hands and USPS Operation Santa. Outings: Hands On! (free with WIC or EBT), Museums for All, free museums and more. Salvation Army rows say Skylar does not refer there first. NC HOPE is left out because it has been closed since 2022.",
+     "source": "scripts/apply-community-guides-2026-11-17.mjs"
+    },
+    {
+     "date": "Nov 17 2026",
      "what": "Visit plan, need-first Find tab, and backup routes",
      "detail": "Find now opens on the crisis lines and a list of needs, each going straight to its list. 31 rows gained an \"If this doesn't work\" backup route, shown on the card and in anything copied for a family. A new Visit plan tab gathers resources and dates for one family, with questions to ask before going, to copy or print; it stays in this browser and takes no names.",
      "source": "scripts/apply-backup-routes-2026-11-17.mjs"

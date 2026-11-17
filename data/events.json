@@ -490,7 +490,8 @@
    ],
    "note": "The flyer gives no time; call or stop by to ask.",
    "src": "Flyer shared by Skylar Belt, 16 Nov 2026 (Restoration House); address confirmed by Skylar Belt, 16 Nov 2026",
-   "where": "Restoration House WNC, 81 Academy St, Bryson City"
+   "where": "Restoration House WNC, 81 Academy St, Bryson City",
+   "rid": "restoration-house-bryson-city"
   },
   {
    "id": "ymca-mobile-market-2026-11-18",
@@ -1074,6 +1075,17 @@
    "note": "Cost is not in the listing.",
    "w": "facebook.com/events/787458757116698",
    "src": "Facebook event listing, Facebook deep scrape part 4, 6 Nov 2026"
+  },
+  {
+   "id": "usps-operation-santa-letters-2026-12-05",
+   "date": "2026-12-05",
+   "kind": "deadline",
+   "what": "USPS Operation Santa: letters postmarked by today can be adopted",
+   "detail": "Children's letters to Santa Claus, 123 Elf Rd, North Pole 88888, postmarked by December 5 can be adopted by vetted members of the public. Adoption is not guaranteed.",
+   "ph": "",
+   "w": "uspsoperationsanta.com",
+   "rid": "usps-operation-santa",
+   "src": "WNC Financial Support Resources community list (companion to the food guide), shared by Skylar Belt 17 Nov 2026 (holiday list); 2026 dates from national news reports via web search, 17 Nov 2026"
   }
  ]
 }
