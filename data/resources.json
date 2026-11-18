@@ -27,11 +27,12 @@
    "Winter 2026-27 holiday guide cross-check, 17 Nov 2026 (see scripts/apply-winter-guide-2026-11-17.mjs)",
    "Food by day update, 211 phone fix and Skylar's food map, 17 Nov 2026 (see scripts/apply-food-schedule-2026-11-17.mjs)",
    "SNIFF tag fixes from a name and description audit, 17 Nov 2026 (see scripts/apply-tag-fixes-2026-11-17.mjs)",
-   "Duplicate rows merged, 17 Nov 2026 (see scripts/apply-merge-duplicates-2026-11-17.mjs); meta.merged maps old ids to kept ones"
+   "Duplicate rows merged, 17 Nov 2026 (see scripts/apply-merge-duplicates-2026-11-17.mjs); meta.merged maps old ids to kept ones",
+   "Ceremonial Beauty Collective pay-what-you-can haircuts, 18 Nov 2026 (see scripts/apply-ceremonial-haircuts-2026-11-18.mjs)"
   ],
   "file": "resources.json",
   "note": "One object per resource. `needs` are SNIFF question keys, `src` names where the fact came from. `alt` is an optional backup route, shown as \"If this doesn't work\".",
-  "count": 708,
+  "count": 709,
   "merged": {
    "kaleidoscope-play-learn-2": "kaleidoscope-play-learn",
    "asheville-city-schools-2": "asheville-city-schools",
@@ -14279,7 +14280,7 @@
    "ph": "828-329-9391 / 828-298-2887",
    "em": "",
    "w": "",
-   "d": "Westside Shears, Casey Smith and Veronica Coit (828-329-9391). Custom Cuts and Color, Sandy (828-298-2887).",
+   "d": "Westside Shears, Casey Smith and Veronica Coit (828-329-9391). Custom Cuts and Color, Sandy (828-298-2887). For the holidays, Ceremonial Beauty Collective in Asheville offers pay-what-you-can haircuts (828-550-7357; see its row).",
    "a": "",
    "h": "",
    "os": "IX. Autism & Neurodivergence",
@@ -14291,7 +14292,7 @@
     "IX:*",
     "IX:9a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, IX. Autism & Neurodivergence tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, IX. Autism & Neurodivergence tab; pay-what-you-can mention from Ceremonial Beauty Collective's Facebook post in the Friends of Swannanoa NC group, shared by Skylar Belt 18 Nov 2026",
    "note": "Community recommendations from other parents, not a formal list. Call ahead and say what the child needs.",
    "new": true
   },
@@ -20052,6 +20053,31 @@
    "note": "Checked against the directory on 17 Nov 2026 from Skylar's pasted listings; the map itself could not be opened from the build environment. Most listings were not independently verified, as the map says.",
    "new": true,
    "start": true
+  },
+  {
+   "id": "ceremonial-beauty-collective-pay-what-you-can",
+   "n": "Ceremonial Beauty Collective: pay-what-you-can haircuts (Asheville)",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you book.",
+   "ph": "828-550-7357",
+   "em": "",
+   "w": "",
+   "d": "Pay-what-you-can haircuts for the holiday season: pay what you comfortably can, with no judgment and no explanation needed, for anyone in a tough season financially or who needs a little self-care. Appointments are limited. Book through the salon's Google business listing or at 828-550-7357, and send a message when booking to say it is for the Pay What You Can special.",
+   "a": "Asheville (ask for the address when booking)",
+   "h": "By appointment; limited holiday-season spots",
+   "os": "Everyday life",
+   "t": "Pay what you can",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*",
+    "X:12"
+   ],
+   "src": "Ceremonial Beauty Collective's Facebook post in the Friends of Swannanoa NC group, shared by Skylar Belt 18 Nov 2026",
+   "note": "The post gives no end date or street address; a web listing places the salon downtown near Pack Square and another in West Asheville, so ask when booking.",
+   "new": true
   }
  ]
 }

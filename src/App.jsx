@@ -31,6 +31,14 @@ const VIEWS = [
   ["data", "Data and repo"],
 ];
 
+/* the bottom bar on phones: [view, label, icon] */
+const BOTTOM = [
+  ["find", "Find", "search"],
+  ["food", "Food", "bowl"],
+  ["events", "Events", "calendar"],
+  ["plan", "Plan", "clipboard"],
+];
+
 /* "RESPONSIVE? is the column that matters", per the file's own note */
 const RESP = {
   "⚡ Very responsive": ["Very responsive", "resp-fast"],
@@ -59,6 +67,10 @@ export default function App() {
   const [evAge, setEvAge] = useState("any");
   const [evOrg, setEvOrg] = useState("");
   const [evQ, setEvQ] = useState("");
+  /* the home screen shows the need tiles; the full list waits for a search, a section or this */
+  const [browseAll, setBrowseAll] = useState(false);
+  /* the "More" sheet of the bottom bar on phones */
+  const [moreOpen, setMoreOpen] = useState(false);
   const [cal, setCal] = useState(null);
   const [ask, setAsk] = useState({ text: "", n: 0 });
 
@@ -116,6 +128,7 @@ export default function App() {
 
   /* the same search engine Ask AI uses on the server, built once per change */
   const index = useMemo(() => buildIndex(resources, NEEDS), [resources]);
+  const home = !q.trim() && !secFilter && !onlyGaps;
   const results = useMemo(() => {
     const list = searchResources(resources, q, index.rank)
       .filter((x) => !secFilter || x.r.sec === secFilter || (x.r.secs || []).includes(secFilter))
@@ -392,11 +405,41 @@ export default function App() {
         </nav>
       </header>
 
+      {/* phones: the four views used most, and the rest under More */}
+      <nav className="bottom-nav" aria-label="Main">
+        {BOTTOM.map(([id, label, icon]) => (
+          <button key={id} className={"bn" + (view === id ? " bn-on" : "")}
+            aria-current={view === id ? "page" : undefined}
+            onClick={() => { setView(id); setMoreOpen(false); window.scrollTo(0, 0); }}>
+            <Icon name={icon} size={20} />
+            <span>{label}{id === "plan" && plan.items.length ? ` (${plan.items.length})` : ""}</span>
+          </button>
+        ))}
+        <button className={"bn" + (moreOpen || !BOTTOM.some(([id]) => id === view) ? " bn-on" : "")}
+          aria-expanded={moreOpen ? "true" : "false"} onClick={() => setMoreOpen((v) => !v)}>
+          <Icon name="grid" size={20} /><span>More</span>
+        </button>
+      </nav>
+      {moreOpen && (
+        <div className="more-sheet" role="dialog" aria-label="More views">
+          <button className="more-backdrop" aria-label="Close" onClick={() => setMoreOpen(false)} />
+          <div className="more-panel">
+            {VIEWS.filter(([id]) => !BOTTOM.some(([b]) => b === id)).map(([id, label]) => (
+              <button key={id} className={"more-item" + (view === id ? " more-on" : "")}
+                onClick={() => { setView(id); setMoreOpen(false); window.scrollTo(0, 0); }}>
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
       {!ready && <p className="loading">Opening your saved edits</p>}
 
       {view === "find" && (
-        <section className="pane">
-          {!q.trim() && !secFilter && !onlyGaps && <NeedStart resById={resById} onGo={goNeed} />}
+        <section className="pane find">
+          {home && <NeedStart resById={resById} onGo={goNeed} />}
+          {home && <h2 className="browse-title">Or browse the directory</h2>}
           <div className="filters">
             <Chip active={!secFilter} onClick={() => setSecFilter("")}>All sections</Chip>
             {SECTIONS.map((s) => (
@@ -410,6 +453,11 @@ export default function App() {
               Needs work only
             </Chip>
           </div>
+          {home && !browseAll ? (
+            <button className="btn browse-all" onClick={() => setBrowseAll(true)}>
+              Show all {resources.length} resources
+            </button>
+          ) : (<>
           <p className="count">{results.length} showing</p>
           {terms.length >= 4 && (
             <button className="ask-hint" onClick={() => openAsk(q)}>
@@ -427,6 +475,7 @@ export default function App() {
           {results.length > 260 && (
             <p className="count">Showing the first 260. Keep typing to narrow it down.</p>
           )}
+          </>)}
         </section>
       )}
 
@@ -570,8 +619,12 @@ export default function App() {
           </p>
           <p className="handling">
             Most of these have never been verified, and pantry hours move. Call before you send
-            anyone. {FOOD.meta.src}
+            anyone.
           </p>
+          <details className="src-details">
+            <summary>Where this list comes from</summary>
+            <p className="tiny">{FOOD.meta.src}</p>
+          </details>
           {resById.get("wnc-free-food-map") && (
             <p>
               <a className="act link" href={"https://" + resById.get("wnc-free-food-map").web.replace(/^https?:\/\//, "")}
@@ -609,7 +662,7 @@ export default function App() {
                     <div className="card-badges">
                       {s.lv
                         ? <span className="badge ok">Verified {s.lv}</span>
-                        : <span className="badge warn">Never verified</span>}
+                        : <span className="badge muted">Not verified yet</span>}
                       {s.goodToKnow && <span className="badge sp">{s.goodToKnow}</span>}
                     </div>
                   </article>

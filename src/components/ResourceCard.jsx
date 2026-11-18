@@ -19,6 +19,12 @@ export function familyText(r) {
     + "what should I bring, can my children come with me, is there an interpreter, and what is the easiest way to get there?";
 }
 
+/* a website as people say it: no https:// or www., and a long address cut to one line */
+const shortWeb = (w) => {
+  const s = String(w || "").replace(/^https?:\/\//, "").replace(/^www\./, "").replace(/\/$/, "");
+  return s.length > 34 ? s.slice(0, 32) + "…" : s;
+};
+
 export default function ResourceCard({ r, open, onToggle, onEdit, onVerify, onCopy, inPlan, onPlan, showGaps }) {
   const s = SECBY[r.sec] || SECBY.X;
   const [editing, setEditing] = useState(false);
@@ -47,7 +53,8 @@ export default function ResourceCard({ r, open, onToggle, onEdit, onVerify, onCo
         {r.readFirst && <span className="badge warn">Read the note first</span>}
         {r.isNew && <span className="badge new">New</span>}
         <VerifyBadge r={r} />
-        {r.spanish && <span className="badge sp">{r.spanish.replace(/^[^\w]+/, "")}</span>}
+        {/* "Not listed - ask" is the default and says nothing, so only real language access shows */}
+        {r.spanish && !/^⚪/u.test(r.spanish) && <span className="badge sp">{r.spanish.replace(/^[^\w]+/, "")}</span>}
         {showGaps && <MissingBits r={r} />}
       </div>
 
@@ -59,7 +66,7 @@ export default function ResourceCard({ r, open, onToggle, onEdit, onVerify, onCo
         )}
         {url && (
           <a className="act link" href={url} target="_blank" rel="noreferrer">
-            <Icon name="link" size={14} />{r.web}
+            <Icon name="link" size={14} /><span className="act-label">{shortWeb(r.web)}</span>
           </a>
         )}
         {r.email && (

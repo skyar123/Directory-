@@ -34,7 +34,7 @@ a firewall as it does outside one.
 
 | File | What it holds |
 |---|---|
-| `data/resources.json` | 708 resources. Each carries `needs` (SNIFF question keys), `sec` (section), and `src` (where the fact came from). A program the workbook filed in several sections is one row with `secs` (every section it repeats under) and every section's `needs`; `meta.merged` maps the old ids of merged copies to the kept row. |
+| `data/resources.json` | 709 resources. Each carries `needs` (SNIFF question keys), `sec` (section), and `src` (where the fact came from). A program the workbook filed in several sections is one row with `secs` (every section it repeats under) and every section's `needs`; `meta.merged` maps the old ids of merged copies to the kept row. |
 | `data/sniff.json` | The 13 sections and the 119 SNIFF questions the directory is ordered by. |
 | `data/point-people.json` | 114 named humans, with how fast each one answers. |
 | `data/community-resource-assessment.json` | The 84 rows of the Child First Community Resource Assessment, crosswalked to SNIFF questions. |
@@ -85,7 +85,14 @@ tonight, not safe at home, rent, utilities, childcare, development, a ride,
 counseling, legal help, Christmas help, and not sure. Each opens the SNIFF
 question that holds the list, the day's Food by day schedule, or a search. The
 numbers come from the rows themselves, so fixing a row fixes the strip. The
-list is in `src/components/NeedStart.jsx`.
+list is in `src/components/NeedStart.jsx`. Each need is a colored tile with an
+icon, and the full directory waits behind **Show all 709 resources** below
+them, so the page opens short; typing a search or picking a section shows the
+cards as before.
+
+**On a phone** the tabs move to a bar along the bottom of the screen: Find,
+Food, Events, Plan (with its count), and More for everything else. The crisis
+lines sit two across so the need tiles start on the first screen.
 
 **If this doesn't work.** Some rows carry a backup route (`alt` in
 `resources.json`, shown as "If this doesn't work" on the card and in anything
@@ -175,7 +182,7 @@ directory files under each need, through the same code. On 17 Nov 2026: the sear
 box finds 99% (it was 25%), Ask AI's shortlist 91%. It fails below 95% or 80%. Run
 it after an import, and add any search someone reports as coming up short.
 
-**Search first.** Gemini does not read all 708 resources for each question. The
+**Search first.** Gemini does not read all 709 resources for each question. The
 function indexes the directory once when it starts (`src/shortlist.js`), and each
 question sends Gemini only the closest 120 or so:
 - resources that share words with the question,
@@ -330,6 +337,7 @@ remove them before sharing outside the team. `point-people.json` exports stamp
 - Food by day update and Skylar's free food map, 17 Nov 2026 (`scripts/apply-food-schedule-2026-11-17.mjs`): Food by day was still the August workbook's 51 entries, so 29 entries for the October food guide's weekly Buncombe sites were added; the NC 211 food row's phone (MATCH's McDowell number) was corrected; Skylar's map got a row and a link on Food by day and in Ask AI food answers, and her map listings flagged the Blessing Barn as possibly paused, Tranzmission's restarted Saturday pantry and BeLoved's Weaverville pantry location
 - SNIFF tag fixes, 17 Nov 2026 (`scripts/apply-tag-fixes-2026-11-17.mjs`): 22 need tags that rows' own names or descriptions plainly call for, found by a search audit (food providers such as Swannanoa Communities Together, the Haywood Street Welcome Table and BeLoved's street pantries under Food pantry; two dental clinics; two rent programs; four counseling practices)
 - Duplicate rows merged, 17 Nov 2026 (`scripts/apply-merge-duplicates-2026-11-17.mjs`): 34 programs the workbook filed once per SNIFF section (72 rows) are one row each, which still repeats under every SNIFF section and question its copies did. The kept row has the fullest description plus what the others added (Spanish copies marked "En español"), the newest verification and every source; a different phone or address from a copy is in `note`. Old ids still resolve, so saved plans and edits find the program
+- Ceremonial Beauty Collective's pay-what-you-can haircuts, a Friends of Swannanoa post shared 18 Nov 2026 (`scripts/apply-ceremonial-haircuts-2026-11-18.mjs`): one row with the post's phone, booking steps (book by phone or the business's Google listing, and say it is for the Pay What You Can special) and holiday-season limit. The post gives no address or end date, and listings online disagree on downtown or West Asheville, so the row says to ask when booking
 - The owner's Google Drive, read 7 Nov 2026 under the Drive merge prompt's rules (metadata first, only family-resource files, no client details; `scripts/apply-drive-merge-2026-11-07.mjs`). The v19 workbook there is the same version this app was built from, and most topic guides predate it, so most of what they name was already here. They added 9 rows (MountainCare adult day, A-B Tech phlebotomy, STEP / More Than a Job NC, Finish Line grants, Trans Lifeline, LGBT National Help Center, National Runaway Safeline, Biltmore Avenue Family Dentistry, Irene Wortham Early Learning Center) and details on 19 others, with every conflict in `note`. Weekend-guide events went in only with a second source: four, checked by web search, and three of those had the venue, time or website wrong in the guide
 - A second Drive pass the same day (`scripts/apply-drive-followup-2026-11-07.mjs`) over the family-resource files the first left as candidates: kinship care benefits, the March 2026 caregiver guide, respite options, a caregiver therapy handout and drop-in movement options. Most of it was already here; it added 6 rows (CMARC care management, Botanical Gardens, Folk Art Center, WNC Farmers Market, The Incredible Years, free nature play) and details on 12, including what relatives raising a child in DSS custody can be paid and which therapists are certified in Child-Parent Psychotherapy
 - Buncombe County Family Resource Directory, Public Edition, event sheets (`scripts/import-public-edition-calendar.cjs`): its curated family and caregiver calendar of 1,354 occurrences (one, Fire Safety for Kids in Fairview, was already in `events.json`, which kept it and gained the library's details), its recurring series, annual leads and monitored calendars. The full library feed's 74 adult-interest programs stay out, as the Public Edition keeps them out of its family calendar

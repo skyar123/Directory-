@@ -154,6 +154,12 @@
    "label": "ADDED THIS ROUND",
    "entries": [
     {
+     "date": "Nov 18 2026",
+     "what": "Pay-what-you-can haircuts, and an easier-to-use app on phones",
+     "detail": "New row: Ceremonial Beauty Collective's pay-what-you-can holiday haircuts in Asheville (book at 828-550-7357 and say it is for the special). The app: Find opens on colored need tiles with icons, and the full list waits for a search, a section or Show all; phones get a bottom bar for Find, Food, Events and Plan, with the rest under More; cards drop the empty language badge, show Not verified yet quietly and shorten long web addresses.",
+     "source": "scripts/apply-ceremonial-haircuts-2026-11-18.mjs; src/components/NeedStart.jsx, src/App.jsx, src/styles.css"
+    },
+    {
      "date": "Nov 17 2026",
      "what": "Duplicate listings merged into one per program",
      "detail": "34 programs were listed two to four times, once per SNIFF section they serve (72 rows). Each is now one listing (708 resources in all) that still shows under every SNIFF section and question its copies did, with the fullest description, the others' extra details (Spanish ones marked), the newest verification and every source. Examples: Catholic Charities, Safe Shelter, MANNA Food Helpline, NC 211, Mountain Child Advocacy Center, True Ridge, The Arc.",
