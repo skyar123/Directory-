@@ -25,12 +25,26 @@ const shortWeb = (w) => {
   return s.length > 34 ? s.slice(0, 32) + "…" : s;
 };
 
+/* The workbook put short tags and a staff note in one field, split by "|"
+   ("Free, Kids / 0-5 | Verified 8/2026. Applications open in January").
+   Tags become chips; a note (a sentence) is shown as a sentence, not chopped
+   into chips at every comma. */
+const splitTags = (t) => {
+  const chips = [], notes = [];
+  String(t || "").split(/\s*\|\s*/).filter(Boolean).forEach((seg) => {
+    if (seg.length > 30 && /[.:]\s|\.$/.test(seg)) notes.push(seg);
+    else chips.push(...seg.split(/\s*,\s*/).filter(Boolean));
+  });
+  return { chips, notes };
+};
+
 export default function ResourceCard({ r, open, onToggle, onEdit, onVerify, onCopy, inPlan, onPlan, showGaps }) {
   const s = SECBY[r.sec] || SECBY.X;
   const [editing, setEditing] = useState(false);
   const tel = r.phone ? r.phone.split(/[/,]/)[0].trim() : "";
   const url = r.web ? (r.web.startsWith("http") ? r.web : "https://" + r.web) : "";
   const answers = r.needs.filter((k) => NEEDBY[k]);
+  const { chips: tagChips, notes: tagNotes } = splitTags(r.tags);
 
   return (
     <article className="card" data-open={open ? "true" : "false"} style={{ "--sec": s.deep }}>
@@ -85,10 +99,9 @@ export default function ResourceCard({ r, open, onToggle, onEdit, onVerify, onCo
           {r.backup && (
             <p className="backup"><strong>If this doesn't work:</strong> {r.backup}</p>
           )}
-          {r.tags && (
-            <p className="tags">
-              {r.tags.split(/\s*[|,]\s*/).filter(Boolean).map((t, i) => <span key={i}>{t}</span>)}
-            </p>
+          {!!tagNotes.length && tagNotes.map((t, i) => <p key={i} className="tiny tag-note">{t}</p>)}
+          {!!tagChips.length && (
+            <p className="tags">{tagChips.map((t, i) => <span key={i}>{t}</span>)}</p>
           )}
           {r.spanishDetail && <p className="tiny"><strong>Spanish:</strong> {r.spanishDetail}</p>}
           {r.point && <p className="tiny"><strong>Point person:</strong> {r.point}</p>}

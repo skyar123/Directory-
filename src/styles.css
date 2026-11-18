@@ -1046,3 +1046,6 @@ ul.plan-list { padding-left: 0; list-style: none; }
 @media (max-width: 720px) {
   .crisis-strip li:last-child:nth-child(odd) { grid-column: 1 / -1; }
 }
+
+/* a workbook note that used to be split into tag chips */
+.tag-note { margin: 6px 0; padding-left: 10px; border-left: 2px solid var(--line-strong); }

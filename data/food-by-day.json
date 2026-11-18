@@ -2,7 +2,7 @@
  "meta": {
   "file": "food-by-day.json",
   "note": "Weekly pantry and free-meal schedule. A site appears on every day it serves. Most rows are unverified: call before sending a family.",
-  "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, Food - By Day tab; weekly Buncombe sites from the October 2026 WNC Free Food guide added 17 Nov 2026 (scripts/apply-food-schedule-2026-11-17.mjs)"
+  "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, Food - By Day tab; weekly Buncombe sites from the October 2026 WNC Free Food guide added 17 Nov 2026 (scripts/apply-food-schedule-2026-11-17.mjs); the Blessing Barn removed 18 Nov 2026 (closed, per Skylar Belt)"
  },
  "days": [
   {
@@ -87,13 +87,6 @@
      "place": "Trinity of Fairview",
      "when": "9am-1pm (646 Concord Rd, Fletcher, 828-628-1188)",
      "goodToKnow": "",
-     "lv": "",
-     "vb": ""
-    },
-    {
-     "place": "Blessing Barn",
-     "when": "10am-2pm (2492 US-70, Swannanoa)",
-     "goodToKnow": "May be paused or closed (Skylar's food map); the Blessing Bus is its mobile successor. Confirm first",
      "lv": "",
      "vb": ""
     },
@@ -321,13 +314,6 @@
      "place": "Beverly Hills Baptist",
      "when": "2nd/4th Thu (777 Tunnel Rd)",
      "goodToKnow": "",
-     "lv": "",
-     "vb": ""
-    },
-    {
-     "place": "Blessing Barn",
-     "when": "10am-2pm",
-     "goodToKnow": "May be paused or closed (Skylar's food map); the Blessing Bus is its mobile successor. Confirm first",
      "lv": "",
      "vb": ""
     },
