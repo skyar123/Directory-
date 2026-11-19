@@ -154,6 +154,12 @@
    "label": "ADDED THIS ROUND",
    "entries": [
     {
+     "date": "Nov 19 2026",
+     "what": "Free food flyers: YWAM's food truck, Bountiful Cities Share Markets, MANNA at Shiloh",
+     "detail": "YWAM's Friday hot meal is a food truck that runs until the food is gone (this Friday, Nov 20, a Thanksgiving casserole at 12:30pm). New: Bountiful Cities' free vegetable and fruit Share Markets, every 1st Wednesday at 391 S French Broad Ave and 2nd and 4th Wednesdays at 90 Montford Ave, with all 35 dates for 2027 on the Events tab; and MANNA's Community Market at Rock Hill Missionary Baptist in Shiloh, about monthly on Wednesdays 3-5pm. Food by day notes the Bounty & Soul ArtSpace market's one-day move to Black Mountain on Nov 21.",
+     "source": "scripts/apply-food-flyers-2026-11-19.mjs"
+    },
+    {
      "date": "Nov 18 2026",
      "what": "The Blessing Barn is closed; Sistas Caring 4 Sistas and BeLoved relabelled",
      "detail": "The Blessing Barn in Swannanoa is not running (Skylar, 18 Nov). It is off Food by day and the Tuesday and Thursday lists, and its row now says CLOSED and points to the Blessing Bus. Sistas Caring 4 Sistas was labelled Spanish-first and Latino-led and filed under Spanish services; it is a doula collective founded by Black women, for Black families and other families of color, and no source mentions Spanish, so it now says to ask about a Spanish-speaking doula. Its address was another group's (ABIPA in Fletcher) and is now 50 S French Broad Ave. BeLoved is BIPOC-led, with Asheville en Espanol as one of its programs, so its Asheville in Black and street pantry rows lose the Latino-led label. Long workbook notes on cards now read as a sentence instead of a row of tags.",

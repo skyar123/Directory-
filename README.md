@@ -34,7 +34,7 @@ a firewall as it does outside one.
 
 | File | What it holds |
 |---|---|
-| `data/resources.json` | 709 resources. Each carries `needs` (SNIFF question keys), `sec` (section), and `src` (where the fact came from). A program the workbook filed in several sections is one row with `secs` (every section it repeats under) and every section's `needs`; `meta.merged` maps the old ids of merged copies to the kept row. |
+| `data/resources.json` | 711 resources. Each carries `needs` (SNIFF question keys), `sec` (section), and `src` (where the fact came from). A program the workbook filed in several sections is one row with `secs` (every section it repeats under) and every section's `needs`; `meta.merged` maps the old ids of merged copies to the kept row. |
 | `data/sniff.json` | The 13 sections and the 119 SNIFF questions the directory is ordered by. |
 | `data/point-people.json` | 114 named humans, with how fast each one answers. |
 | `data/community-resource-assessment.json` | The 84 rows of the Child First Community Resource Assessment, crosswalked to SNIFF questions. |
@@ -86,7 +86,7 @@ counseling, legal help, Christmas help, and not sure. Each opens the SNIFF
 question that holds the list, the day's Food by day schedule, or a search. The
 numbers come from the rows themselves, so fixing a row fixes the strip. The
 list is in `src/components/NeedStart.jsx`. Each need is a colored tile with an
-icon, and the full directory waits behind **Show all 709 resources** below
+icon, and the full directory waits behind **Show all 711 resources** below
 them, so the page opens short; typing a search or picking a section shows the
 cards as before.
 
@@ -182,7 +182,7 @@ directory files under each need, through the same code. On 17 Nov 2026: the sear
 box finds 99% (it was 25%), Ask AI's shortlist 91%. It fails below 95% or 80%. Run
 it after an import, and add any search someone reports as coming up short.
 
-**Search first.** Gemini does not read all 709 resources for each question. The
+**Search first.** Gemini does not read all 711 resources for each question. The
 function indexes the directory once when it starts (`src/shortlist.js`), and each
 question sends Gemini only the closest 120 or so:
 - resources that share words with the question,
@@ -339,6 +339,7 @@ remove them before sharing outside the team. `point-people.json` exports stamp
 - Duplicate rows merged, 17 Nov 2026 (`scripts/apply-merge-duplicates-2026-11-17.mjs`): 34 programs the workbook filed once per SNIFF section (72 rows) are one row each, which still repeats under every SNIFF section and question its copies did. The kept row has the fullest description plus what the others added (Spanish copies marked "En español"), the newest verification and every source; a different phone or address from a copy is in `note`. Old ids still resolve, so saved plans and edits find the program
 - Ceremonial Beauty Collective's pay-what-you-can haircuts, a Friends of Swannanoa post shared 18 Nov 2026 (`scripts/apply-ceremonial-haircuts-2026-11-18.mjs`): one row with the post's phone, booking steps (book by phone or the business's Google listing, and say it is for the Pay What You Can special) and holiday-season limit. The post gives no address or end date, and listings online disagree on downtown or West Asheville, so the row says to ask when booking
 - Blessing Barn closed, and Sistas Caring 4 Sistas and BeLoved relabelled, 18 Nov 2026 (`scripts/apply-blessing-barn-sc4s-2026-11-18.mjs`): Skylar confirmed the Blessing Barn is not running, so its row says CLOSED and it is off Food by day. Web search found SC4S is a doula collective founded by Black women, for Black families and other families of color, with no mention of Spanish services, so it lost the Spanish-first label and the Spanish services filing; its address had been ABIPA's office and is now 50 S French Broad Ave. BeLoved is BIPOC-led with Asheville en Espanol as one program, so two of its rows lost the Latino-led label
+- Food flyers shared 19 Nov 2026 (`scripts/apply-food-flyers-2026-11-19.mjs`): YWAM's Friday hot meal is a food truck that runs until the food is gone (its Nov 20 flyer says 12:30pm, the October guide 12pm); Bountiful Cities' free vegetable and fruit Share Markets, a new row with all 35 dates for 2027 on the Events tab and in Food by day (1st Wednesdays at 391 S French Broad Ave, 2nd and 4th Wednesdays at 90 Montford Ave); MANNA's Community Market at Rock Hill Missionary Baptist in Shiloh, a new row (Wednesdays 3-5pm, about monthly: MANNA's January 2026 list and the Nov 18 flyer both fall on third Wednesdays); and Bounty & Soul's one-day move of the ArtSpace market to Black Mountain on Nov 21, noted in Food by day
 - The owner's Google Drive, read 7 Nov 2026 under the Drive merge prompt's rules (metadata first, only family-resource files, no client details; `scripts/apply-drive-merge-2026-11-07.mjs`). The v19 workbook there is the same version this app was built from, and most topic guides predate it, so most of what they name was already here. They added 9 rows (MountainCare adult day, A-B Tech phlebotomy, STEP / More Than a Job NC, Finish Line grants, Trans Lifeline, LGBT National Help Center, National Runaway Safeline, Biltmore Avenue Family Dentistry, Irene Wortham Early Learning Center) and details on 19 others, with every conflict in `note`. Weekend-guide events went in only with a second source: four, checked by web search, and three of those had the venue, time or website wrong in the guide
 - A second Drive pass the same day (`scripts/apply-drive-followup-2026-11-07.mjs`) over the family-resource files the first left as candidates: kinship care benefits, the March 2026 caregiver guide, respite options, a caregiver therapy handout and drop-in movement options. Most of it was already here; it added 6 rows (CMARC care management, Botanical Gardens, Folk Art Center, WNC Farmers Market, The Incredible Years, free nature play) and details on 12, including what relatives raising a child in DSS custody can be paid and which therapists are certified in Child-Parent Psychotherapy
 - Buncombe County Family Resource Directory, Public Edition, event sheets (`scripts/import-public-edition-calendar.cjs`): its curated family and caregiver calendar of 1,354 occurrences (one, Fire Safety for Kids in Fairview, was already in `events.json`, which kept it and gained the library's details), its recurring series, annual leads and monitored calendars. The full library feed's 74 adult-interest programs stay out, as the Public Edition keeps them out of its family calendar

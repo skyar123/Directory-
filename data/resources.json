@@ -29,11 +29,12 @@
    "SNIFF tag fixes from a name and description audit, 17 Nov 2026 (see scripts/apply-tag-fixes-2026-11-17.mjs)",
    "Duplicate rows merged, 17 Nov 2026 (see scripts/apply-merge-duplicates-2026-11-17.mjs); meta.merged maps old ids to kept ones",
    "Ceremonial Beauty Collective pay-what-you-can haircuts, 18 Nov 2026 (see scripts/apply-ceremonial-haircuts-2026-11-18.mjs)",
-   "Blessing Barn closed, SC4S and BeLoved relabelled, 18 Nov 2026 (see scripts/apply-blessing-barn-sc4s-2026-11-18.mjs)"
+   "Blessing Barn closed, SC4S and BeLoved relabelled, 18 Nov 2026 (see scripts/apply-blessing-barn-sc4s-2026-11-18.mjs)",
+   "Food flyers of 19 Nov 2026: YWAM food truck, Bounty & Soul one-day move, Bountiful Cities 2027 Share Markets, MANNA Community Market at Shiloh (see scripts/apply-food-flyers-2026-11-19.mjs)"
   ],
   "file": "resources.json",
   "note": "One object per resource. `needs` are SNIFF question keys, `src` names where the fact came from. `alt` is an optional backup route, shown as \"If this doesn't work\".",
-  "count": 709,
+  "count": 711,
   "merged": {
    "kaleidoscope-play-learn-2": "kaleidoscope-play-learn",
    "asheville-city-schools-2": "asheville-city-schools",
@@ -8102,7 +8103,7 @@
     "VIII:5a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; not listed online (nothing found by web search, 8 Nov 2026); exists by word of mouth, per Skylar Belt, 8 Nov 2026; Share Markets from WLOS",
-   "note": "Word of mouth: a local resource with no online listing (Skylar Belt, 8 Nov 2026). The details come from local contacts, so confirm them before referring. Bountiful Cities also runs free Share Markets (WLOS listed one on October 28 at William Randolph School, 3-5pm).",
+   "note": "Word of mouth: a local resource with no online listing (Skylar Belt, 8 Nov 2026). The details come from local contacts, so confirm them before referring. Bountiful Cities also runs free Share Markets on Wednesdays: see that row.",
    "new": false
   },
   {
@@ -16911,16 +16912,16 @@
   },
   {
    "id": "ywam-friday-hot-meal",
-   "n": "YWAM free hot meal (downtown)",
+   "n": "YWAM free food truck hot meal (downtown, Fridays)",
    "pp": "",
    "sp": "⚪ Not listed - ask",
    "spd": "Not stated in the source. Ask when you call.",
    "ph": "",
    "em": "",
-   "w": "",
-   "d": "Free hot meal served on the street corner every Friday.",
+   "w": "ywamasheville.org",
+   "d": "Free hot meal from YWAM Asheville's food truck on the street corner every Friday, until the food runs out.",
    "a": "Corner of Aston St and Lexington Ave, Asheville",
-   "h": "Fridays 12pm",
+   "h": "Fridays at midday, until food runs out",
    "os": "Community food guide (Oct 2026)",
    "t": "Free",
    "lv": "",
@@ -16930,8 +16931,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; food truck, website, 12:30pm and \"until food runs out\" from YWAM's flyer for 20 Nov 2026, shared by Skylar Belt 19 Nov 2026",
+   "note": "The October food guide says 12pm; YWAM's flyer for Friday 20 Nov 2026 says 12:30pm. Go early: it ends when the food runs out.",
    "new": true
   },
   {
@@ -20076,6 +20077,56 @@
    ],
    "src": "Ceremonial Beauty Collective's Facebook post in the Friends of Swannanoa NC group, shared by Skylar Belt 18 Nov 2026",
    "note": "The post gives no end date or street address; a web listing places the salon downtown near Pack Square and another in West Asheville, so ask when booking.",
+   "new": true
+  },
+  {
+   "id": "bountiful-cities-share-markets",
+   "n": "Bountiful Cities Share Markets (free vegetables and fruit, Wednesdays)",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "The 2027 flyer is in English and Spanish; ask about Spanish at the market.",
+   "ph": "",
+   "em": "",
+   "w": "bountifulcities.org/share-market",
+   "d": "No-cost vegetables and fruit, year-round, from Bountiful Cities with MANNA FoodBank, the Southside United Neighborhood Association (SUNA) and Asheville City Schools. 2027 dates: at Self-Help Credit Union, 391 S French Broad Ave, 3:30-5:30pm on Jan 6, Feb 3, Mar 3, Apr 7, May 5, Jun 2, Jul 7, Aug 4, Sep 1, Oct 6, Nov 3 and Dec 1; at the William Randolph campus gym, 90 Montford Ave, 3-5pm on Jan 13 and 27, Feb 10 and 24, Mar 10 and 24, Apr 14 and 28, May 12 and 26, Jun 9 and 23, Jul 14 and 28, Aug 11 and 25, Sep 8 and 22, Oct 13 and 27, Nov 10 and 24, and Dec 8. Gardeners can bring produce to share, and the markets take volunteers.",
+   "a": "Self-Help Credit Union, 391 S French Broad Ave (1st Wednesdays); William Randolph campus gym, 90 Montford Ave (2nd and 4th Wednesdays)",
+   "h": "1st Wednesdays 3:30-5:30pm; 2nd and 4th Wednesdays 3-5pm",
+   "os": "Share Market flyer (2027 dates)",
+   "t": "Free",
+   "lv": "",
+   "vb": "",
+   "sec": "VIII",
+   "needs": [
+    "VIII:*",
+    "VIII:5a"
+   ],
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026",
+   "note": "The flyer gives 2027 dates only (no market on Dec 22, 2027; more in 2028). For December 2026, check bountifulcities.org/share-market; WLOS listed a market on Wednesday, 28 Oct 2026 at William Randolph, 3-5pm.",
+   "new": true
+  },
+  {
+   "id": "manna-community-market-shiloh",
+   "n": "MANNA Community Market at Rock Hill Missionary Baptist (Shiloh)",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "828-290-9749",
+   "em": "",
+   "w": "mannafoodbank.org/manna-community-market",
+   "d": "Free groceries and supplies from MANNA's mobile market: open to everyone, no questions asked. MANNA posts each month's market dates; the phone is the MANNA Food Helpline. Bounty & Soul's Monday produce market meets at the same church.",
+   "a": "Rock Hill Missionary Baptist Church, 486 Caribou Rd, Asheville 28803",
+   "h": "Wednesdays 3-5pm, about monthly (third Wednesday on 21 Jan and 18 Nov 2026)",
+   "os": "MANNA Community Market flyer",
+   "t": "Free, Walk-in",
+   "lv": "",
+   "vb": "",
+   "sec": "VIII",
+   "needs": [
+    "VIII:*",
+    "VIII:5a"
+   ],
+   "src": "MANNA Community Market flyer for 18 Nov 2026, shared by Skylar Belt 19 Nov 2026; January 2026 MANNA Community Markets list (mannafoodbank.org), via web search 19 Nov 2026; phone from the directory's MANNA Food Helpline row",
+   "note": "Only two dates are known, both third Wednesdays, so check MANNA's list or call the helpline for the next one before sending a family.",
    "new": true
   }
  ]
