@@ -154,6 +154,12 @@
    "label": "ADDED THIS ROUND",
    "entries": [
     {
+     "date": "Nov 20 2026",
+     "what": "Search understands more everyday words",
+     "detail": "The search box and Ask AI now know the directory's words for things families ask about in their own words: \"free vegetables\", \"produce\" and \"fruit\" find the produce markets and pantries (they found 3 rows before); \"tampons\" and \"toothpaste\" the period pantries and hygiene closets; \"pet food\" and \"dog food\" the pet programs, not every food pantry; \"fathers\" and \"dads group\" the fatherhood programs (\"dad\" and \"mom\" were ignored as filler); \"roof\" and \"mold\" the home repair programs; \"birth certificate\" the Register of Deeds; \"turkey\" and \"Thanksgiving\" the holiday meals; \"food stamps\" the SNAP rows first. A program filed under many needs (a diaper bank filed under domestic violence because Helpmate hands out its diapers) now ranks after the programs that are about the need. Community Engagement Markets moved from Toys or books to Food pantry, the Monday to Thursday food schedules and the Family Resource Center at Emma joined Food pantry, and the Wednesday schedule left GED, ESL, job training and substance use.",
+     "source": "scripts/apply-search-tags-2026-11-20.mjs; src/shortlist.js, scripts/search-check.mjs"
+    },
+    {
      "date": "Nov 19 2026",
      "what": "Free food flyers: YWAM's food truck, Bountiful Cities Share Markets, MANNA at Shiloh",
      "detail": "YWAM's Friday hot meal is a food truck that runs until the food is gone (this Friday, Nov 20, a Thanksgiving casserole at 12:30pm). New: Bountiful Cities' free vegetable and fruit Share Markets, every 1st Wednesday at 391 S French Broad Ave and 2nd and 4th Wednesdays at 90 Montford Ave, with all 35 dates for 2027 on the Events tab; and MANNA's Community Market at Rock Hill Missionary Baptist in Shiloh, about monthly on Wednesdays 3-5pm. Food by day notes the Bounty & Soul ArtSpace market's one-day move to Black Mountain on Nov 21.",

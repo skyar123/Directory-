@@ -30,7 +30,8 @@
    "Duplicate rows merged, 17 Nov 2026 (see scripts/apply-merge-duplicates-2026-11-17.mjs); meta.merged maps old ids to kept ones",
    "Ceremonial Beauty Collective pay-what-you-can haircuts, 18 Nov 2026 (see scripts/apply-ceremonial-haircuts-2026-11-18.mjs)",
    "Blessing Barn closed, SC4S and BeLoved relabelled, 18 Nov 2026 (see scripts/apply-blessing-barn-sc4s-2026-11-18.mjs)",
-   "Food flyers of 19 Nov 2026: YWAM food truck, Bounty & Soul one-day move, Bountiful Cities 2027 Share Markets, MANNA Community Market at Shiloh (see scripts/apply-food-flyers-2026-11-19.mjs)"
+   "Food flyers of 19 Nov 2026: YWAM food truck, Bounty & Soul one-day move, Bountiful Cities 2027 Share Markets, MANNA Community Market at Shiloh (see scripts/apply-food-flyers-2026-11-19.mjs)",
+   "SNIFF tags corrected from a search audit, 20 Nov 2026 (see scripts/apply-search-tags-2026-11-20.mjs)"
   ],
   "file": "resources.json",
   "note": "One object per resource. `needs` are SNIFF question keys, `src` names where the fact came from. `alt` is an optional backup route, shown as \"If this doesn't work\".",
@@ -5978,10 +5979,12 @@
     "IV:*",
     "IV:5a",
     "IV:7a",
+    "VIII:*",
+    "VIII:5a",
     "X:*",
     "X:1"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; SNIFF tags corrected 20 Nov 2026 from the row's own text or workbook section (search audit; scripts/apply-search-tags-2026-11-20.mjs)",
    "note": "",
    "new": false
   },
@@ -8206,9 +8209,9 @@
    "sec": "VIII",
    "needs": [
     "VIII:*",
-    "VIII:10a"
+    "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; cut-off hours completed from the detail, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Pisgah View schedule from the county's 2025 market flyer via web search, 17 Nov 2026; cancellation from the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; cut-off hours completed from the detail, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Pisgah View schedule from the county's 2025 market flyer via web search, 17 Nov 2026; cancellation from the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026; SNIFF tags corrected 20 Nov 2026 from the row's own text or workbook section (search audit; scripts/apply-search-tags-2026-11-20.mjs)",
    "note": "Pisgah View Apartments is a regular stop (2nd and 4th Wednesdays on the county's 2025 flyer). The winter guide says the Nov 25, 2026 Pisgah View market is canceled; not confirmed online, so check the county's market calendar.",
    "new": false
   },
@@ -8417,9 +8420,11 @@
    "sec": "VIII",
    "needs": [
     "ESPANOL:*",
-    "ESPANOL:personal-bilingue-bili"
+    "ESPANOL:personal-bilingue-bili",
+    "VIII:*",
+    "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address and hours replaced: they named one of the listed sites, 6 Nov 2026; WNC Free Food & Supplies community guide (updated 2 Oct 2026), as recorded on each site's row",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address and hours replaced: they named one of the listed sites, 6 Nov 2026; WNC Free Food & Supplies community guide (updated 2 Oct 2026), as recorded on each site's row; SNIFF tags corrected 20 Nov 2026 from the row's own text or workbook section (search audit; scripts/apply-search-tags-2026-11-20.mjs)",
    "note": "",
    "new": false
   },
@@ -8750,9 +8755,10 @@
     "ESPANOL:personal-bilingue-bili",
     "VIII:*",
     "VIII:11a",
-    "VIII:4a"
+    "VIII:4a",
+    "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address and hours replaced: they named one of the listed sites, 6 Nov 2026; WNC Free Food & Supplies community guide (updated 2 Oct 2026), as recorded on each site's row; Blessing Barn removed (closed), 18 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address and hours replaced: they named one of the listed sites, 6 Nov 2026; WNC Free Food & Supplies community guide (updated 2 Oct 2026), as recorded on each site's row; Blessing Barn removed (closed), 18 Nov 2026; SNIFF tags corrected 20 Nov 2026 from the row's own text or workbook section (search audit; scripts/apply-search-tags-2026-11-20.mjs)",
    "note": "",
    "new": false
   },
@@ -8777,9 +8783,10 @@
     "ESPANOL:*",
     "ESPANOL:personal-bilingue-bili",
     "VIII:*",
-    "VIII:11a"
+    "VIII:11a",
+    "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address and hours replaced: they named one of the listed sites, 6 Nov 2026; WNC Free Food & Supplies community guide (updated 2 Oct 2026), as recorded on each site's row; Blessing Barn removed (closed), 18 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address and hours replaced: they named one of the listed sites, 6 Nov 2026; WNC Free Food & Supplies community guide (updated 2 Oct 2026), as recorded on each site's row; Blessing Barn removed (closed), 18 Nov 2026; SNIFF tags corrected 20 Nov 2026 from the row's own text or workbook section (search audit; scripts/apply-search-tags-2026-11-20.mjs)",
    "note": "",
    "new": false
   },
@@ -8834,15 +8841,10 @@
    "needs": [
     "ESPANOL:*",
     "ESPANOL:personal-bilingue-bili",
-    "V:*",
-    "V:1a",
-    "V:2a",
-    "V:4a",
-    "V:7a",
-    "VII:*",
-    "VII:6a"
+    "VIII:*",
+    "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address and hours replaced: they named one of the listed sites, 6 Nov 2026; WNC Free Food & Supplies community guide (updated 2 Oct 2026), as recorded on each site's row",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address and hours replaced: they named one of the listed sites, 6 Nov 2026; WNC Free Food & Supplies community guide (updated 2 Oct 2026), as recorded on each site's row; SNIFF tags corrected 20 Nov 2026 from the row's own text or workbook section (search audit; scripts/apply-search-tags-2026-11-20.mjs)",
    "note": "",
    "new": false
   },
