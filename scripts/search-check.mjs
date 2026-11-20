@@ -1,6 +1,8 @@
 /*
- * Search check: 40 everyday searches, each measured against what the
- * directory files under the matching SNIFF need. It runs the same code the
+ * Search check: everyday searches, each measured against what the
+ * directory files under the matching SNIFF need, and searches for things no
+ * SNIFF question covers (period products, pet food, home repair), each of
+ * which must show named programs near the top. It runs the same code the
  * search box (src/search.js) and Ask AI's search (src/shortlist.js) run.
  *
  *   npm run search-check
@@ -58,6 +60,24 @@ const SEARCHES = [
   ["ride to appointment", ["VIII:17a"]], ["bus", ["VIII:17a"]], ["lawyer", ["VIII:16a"]], ["immigration", ["VIII:15a"]],
   ["spanish", ["ESPANOL:servicios-en-espanol-p", "ESPANOL:personal-bilingue-bili"]], ["furniture", ["VIII:13a"]],
   ["job training", ["V:4a", "V:8a"]], ["GED", ["V:1a"]], ["respite", ["IV:6a"]], ["parenting class", ["IV:4a"]],
+  ["free vegetables", ["VIII:5a"]], ["fresh produce", ["VIII:5a"]], ["turkey", ["VIII:5a"]], ["dads group", ["IV:4a"]],
+];
+
+/* searches whose answer is a few named programs: each must be in the top N
+   of the search box (added 20 Nov 2026 from a search audit) */
+const MUST = [
+  ["free vegetables", ["bountiful-cities-share-markets", "bounty-soul", "root-cause-farm-free-market"], 6],
+  ["tampons", ["period-pantry-locations", "project-dignity-of-wnc"], 5],
+  ["pet food", ["community-partnership-for-pets", "cherokee-animal-care-pet-food-distribution-w"], 6],
+  ["dog food", ["community-partnership-for-pets"], 6],
+  ["fathers", ["my-daddy-taught-me-that", "free-monthly-dads-group-early-childhood"], 5],
+  ["birth certificate", ["buncombe-county-register-of-deeds"], 3],
+  ["glasses", ["eblen-charities"], 3],
+  ["roof", ["habitat-critical-home-repair"], 5],
+  ["mold", ["habitat-critical-home-repair"], 5],
+  ["turkey", ["garren-creek-thanksgiving-boxes-swannanoa"], 6],
+  ["food stamps", ["snap"], 3],
+  ["domestic violence", ["helpmate-domestic-violence-hotline"], 6],
 ];
 
 let filed = 0, boxFound = 0, aiFound = 0, top20 = 0;
@@ -74,8 +94,18 @@ for (const [q, keys] of SEARCHES) {
 console.log(rows.join("\n"));
 const box = boxFound / filed, ai = aiFound / filed;
 console.log(`\nsearch box finds ${(100 * box).toFixed(0)}% | Ask AI's shortlist ${(100 * ai).toFixed(0)}% | top 20 relevant on average ${(100 * top20 / SEARCHES.length).toFixed(0)}%`);
-if (box < 0.95 || ai < 0.8) {
-  console.error("search check FAILED: below 95% (search box) or 80% (Ask AI)");
+const missed = [];
+for (const [q, ids, n] of MUST) {
+  const top = searchBox(q).slice(0, n).map((r) => r.id);
+  for (const id of ids) {
+    if (!resources.some((r) => r.id === id)) missed.push(`${q}: no resource ${id} in the data`);
+    else if (!top.includes(id)) missed.push(`${q}: ${id} not in the top ${n}`);
+  }
+}
+console.log(`named programs near the top: ${MUST.length - new Set(missed.map((m) => m.split(":")[0])).size} of ${MUST.length} searches`);
+if (missed.length) console.error(missed.join("\n"));
+if (box < 0.95 || ai < 0.8 || missed.length) {
+  console.error("search check FAILED: below 95% (search box) or 80% (Ask AI), or a named program missing");
   process.exit(1);
 }
 console.log("search check passed");

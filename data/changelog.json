@@ -154,6 +154,30 @@
    "label": "ADDED THIS ROUND",
    "entries": [
     {
+     "date": "Nov 20 2026",
+     "what": "Search understands more everyday words",
+     "detail": "The search box and Ask AI now know the directory's words for things families ask about in their own words: \"free vegetables\", \"produce\" and \"fruit\" find the produce markets and pantries (they found 3 rows before); \"tampons\" and \"toothpaste\" the period pantries and hygiene closets; \"pet food\" and \"dog food\" the pet programs, not every food pantry; \"fathers\" and \"dads group\" the fatherhood programs (\"dad\" and \"mom\" were ignored as filler); \"roof\" and \"mold\" the home repair programs; \"birth certificate\" the Register of Deeds; \"turkey\" and \"Thanksgiving\" the holiday meals; \"food stamps\" the SNAP rows first. A program filed under many needs (a diaper bank filed under domestic violence because Helpmate hands out its diapers) now ranks after the programs that are about the need. Community Engagement Markets moved from Toys or books to Food pantry, the Monday to Thursday food schedules and the Family Resource Center at Emma joined Food pantry, and the Wednesday schedule left GED, ESL, job training and substance use.",
+     "source": "scripts/apply-search-tags-2026-11-20.mjs; src/shortlist.js, scripts/search-check.mjs"
+    },
+    {
+     "date": "Nov 19 2026",
+     "what": "Free food flyers: YWAM's food truck, Bountiful Cities Share Markets, MANNA at Shiloh",
+     "detail": "YWAM's Friday hot meal is a food truck that runs until the food is gone (this Friday, Nov 20, a Thanksgiving casserole at 12:30pm). New: Bountiful Cities' free vegetable and fruit Share Markets, every 1st Wednesday at 391 S French Broad Ave and 2nd and 4th Wednesdays at 90 Montford Ave, with all 35 dates for 2027 on the Events tab; and MANNA's Community Market at Rock Hill Missionary Baptist in Shiloh, about monthly on Wednesdays 3-5pm. Food by day notes the Bounty & Soul ArtSpace market's one-day move to Black Mountain on Nov 21.",
+     "source": "scripts/apply-food-flyers-2026-11-19.mjs"
+    },
+    {
+     "date": "Nov 18 2026",
+     "what": "The Blessing Barn is closed; Sistas Caring 4 Sistas and BeLoved relabelled",
+     "detail": "The Blessing Barn in Swannanoa is not running (Skylar, 18 Nov). It is off Food by day and the Tuesday and Thursday lists, and its row now says CLOSED and points to the Blessing Bus. Sistas Caring 4 Sistas was labelled Spanish-first and Latino-led and filed under Spanish services; it is a doula collective founded by Black women, for Black families and other families of color, and no source mentions Spanish, so it now says to ask about a Spanish-speaking doula. Its address was another group's (ABIPA in Fletcher) and is now 50 S French Broad Ave. BeLoved is BIPOC-led, with Asheville en Espanol as one of its programs, so its Asheville in Black and street pantry rows lose the Latino-led label. Long workbook notes on cards now read as a sentence instead of a row of tags.",
+     "source": "scripts/apply-blessing-barn-sc4s-2026-11-18.mjs; src/components/ResourceCard.jsx"
+    },
+    {
+     "date": "Nov 18 2026",
+     "what": "Pay-what-you-can haircuts, and an easier-to-use app on phones",
+     "detail": "New row: Ceremonial Beauty Collective's pay-what-you-can holiday haircuts in Asheville (book at 828-550-7357 and say it is for the special). The app: Find opens on colored need tiles with icons, and the full list waits for a search, a section or Show all; phones get a bottom bar for Find, Food, Events and Plan, with the rest under More; cards drop the empty language badge, show Not verified yet quietly and shorten long web addresses.",
+     "source": "scripts/apply-ceremonial-haircuts-2026-11-18.mjs; src/components/NeedStart.jsx, src/App.jsx, src/styles.css"
+    },
+    {
      "date": "Nov 17 2026",
      "what": "Duplicate listings merged into one per program",
      "detail": "34 programs were listed two to four times, once per SNIFF section they serve (72 rows). Each is now one listing (708 resources in all) that still shows under every SNIFF section and question its copies did, with the fullest description, the others' extra details (Spanish ones marked), the newest verification and every source. Examples: Catholic Charities, Safe Shelter, MANNA Food Helpline, NC 211, Mountain Child Advocacy Center, True Ridge, The Arc.",

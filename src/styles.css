@@ -940,3 +940,112 @@ ul.plan-list { padding-left: 0; list-style: none; }
 .ask-more p { margin: 0 0 8px; font-size: 14px; max-width: 72ch; }
 .ask-more .row-btns { flex-wrap: wrap; }
 .ask-more a.btn { text-decoration: none; }
+
+/* =================================================== visual refresh, Nov 2026
+   The Find home is a set of need tiles; phones get a bottom bar instead of a
+   ten-tab row that ran off the screen; cards say less that does not help. */
+
+/* need tiles: an icon in a colored circle, two across on a phone */
+.need-grid { grid-template-columns: repeat(auto-fill, minmax(158px, 1fr)); gap: 10px; }
+.need-btn {
+  flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 8px;
+  padding: 12px 12px 13px; min-height: 118px; border-radius: 14px;
+  background: var(--tile-bg, var(--surface)); border-color: var(--tile-line, var(--line));
+  transition: transform .08s ease, box-shadow .15s ease, border-color .15s ease;
+}
+.need-btn:hover { background: var(--tile-bg, var(--surface)); border-color: var(--tile-ink, var(--accent)); box-shadow: var(--shadow-lift); }
+.need-btn:active { transform: scale(.98); }
+.need-btn:focus-visible { outline: 2px solid var(--tile-ink, var(--accent)); outline-offset: 2px; }
+.need-ic {
+  width: 38px; height: 38px; border-radius: 50%; flex: 0 0 auto;
+  display: grid; place-items: center; background: var(--tile-ink, var(--accent));
+}
+.need-btn .need-ic svg { color: #fff; }
+.need-txt { display: flex; flex-direction: column; gap: 2px; }
+.need-btn strong { font-size: 14.5px; line-height: 1.3; }
+.need-btn small { font-size: 12px; color: var(--ink-2); }
+.tone-0 { --tile-bg: #F2F4F7; --tile-line: #DDE1E7; --tile-ink: #4A5363; }
+.tone-1 { --tile-bg: #EFF6E9; --tile-line: #D4E6C6; --tile-ink: #4C7628; }
+.tone-2 { --tile-bg: #FDF2E8; --tile-line: #F3D8C0; --tile-ink: #A9551B; }
+.tone-3 { --tile-bg: #EBF2FB; --tile-line: #CBDCF2; --tile-ink: #2D5CA3; }
+.tone-4 { --tile-bg: #F7EEF6; --tile-line: #E6D0E4; --tile-ink: #833E7B; }
+.tone-5 { --tile-bg: #E9F4F4; --tile-line: #C8E2E2; --tile-ink: #1D6C70; }
+.tone-6 { --tile-bg: #FCF5E4; --tile-line: #EEDDB1; --tile-ink: #8C640A; }
+.need-title { font-size: 18px; margin: 4px 0 12px; }
+
+/* below the tiles: browse by section, or the whole list on request */
+.browse-title { font-size: 16px; margin: 26px 0 10px; color: var(--ink-2); font-weight: 600; }
+.btn.browse-all {
+  display: block; width: 100%; margin-top: 10px; padding: 12px;
+  font-weight: 600; color: var(--accent-ink); border-color: var(--line-strong); border-radius: 12px;
+}
+.btn.browse-all:hover { background: var(--accent-tint); border-color: var(--accent); }
+
+/* quieter "not verified yet": most rows are, so Verified is what should stand out */
+.badge.muted { background: transparent; color: var(--ink-3); border: 1px dashed var(--line-strong); font-weight: 500; }
+
+/* a long website stays on one line */
+.act.link { max-width: 100%; min-width: 0; }
+.act-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+
+/* where a list comes from, tucked into small print */
+.src-details { margin: -4px 0 14px; }
+.src-details summary { cursor: pointer; font-size: 13px; color: var(--ink-3); }
+.src-details p { margin: 6px 0 0; }
+
+/* the bottom bar and its More sheet: phones only */
+.bottom-nav, .more-sheet { display: none; }
+@media (max-width: 720px) {
+  .tabs { display: none; }
+  .top { padding-bottom: 10px; }
+  .bottom-nav {
+    display: grid; grid-template-columns: repeat(5, 1fr);
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
+    background: rgba(255, 255, 255, .97); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+    border-top: 1px solid var(--line);
+    padding: 6px 4px calc(6px + env(safe-area-inset-bottom));
+  }
+  .bn {
+    display: flex; flex-direction: column; align-items: center; gap: 3px;
+    background: none; border: 0; font: inherit; font-size: 11.5px; line-height: 1.2;
+    color: var(--ink-3); padding: 5px 2px; border-radius: 10px; cursor: pointer;
+  }
+  .bn-on { color: var(--accent); font-weight: 650; background: var(--accent-tint); }
+  .wnc { padding-bottom: calc(86px + env(safe-area-inset-bottom)); }
+  .more-sheet { display: block; position: fixed; inset: 0; z-index: 39; }
+  .more-backdrop { position: absolute; inset: 0; width: 100%; border: 0; background: rgba(20, 24, 31, .35); cursor: pointer; }
+  .more-panel {
+    position: absolute; left: 10px; right: 10px; bottom: calc(74px + env(safe-area-inset-bottom));
+    background: var(--surface); border-radius: 16px; padding: 8px;
+    box-shadow: 0 12px 32px rgba(16, 24, 40, .22); display: grid; gap: 2px;
+  }
+  .more-item {
+    text-align: left; font: inherit; font-size: 15.5px; background: none; border: 0;
+    padding: 13px 14px; border-radius: 10px; color: var(--ink); cursor: pointer;
+  }
+  .more-item:hover, .more-on { background: var(--accent-tint); color: var(--accent-ink); font-weight: 600; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .need-btn { transition: none; }
+  .need-btn:active { transform: none; }
+}
+
+/* phones: the crisis lines two across, so the need tiles start on the first
+   screen, and a slimmer header (the count is on the browse button below) */
+@media (max-width: 720px) {
+  .crisis-strip { padding: 10px; margin-bottom: 14px; }
+  .crisis-strip-911 { margin-bottom: 6px; font-size: 14.5px; }
+  .crisis-strip ul { grid-template-columns: 1fr 1fr; gap: 6px; }
+  .crisis-strip li a { padding: 7px 9px; }
+  .crisis-strip li strong { font-size: 14.5px; }
+  .crisis-strip li span { font-size: 11.5px; }
+  .brand p { font-size: 0; margin: 0; }
+  .brand p em { font-size: 12px; }
+  .internal-tag { font-size: 9.5px; padding: 1px 6px; }
+}
+@media (max-width: 720px) {
+  .crisis-strip li:last-child:nth-child(odd) { grid-column: 1 / -1; }
+}
+
+/* a workbook note that used to be split into tag chips */
+.tag-note { margin: 6px 0; padding-left: 10px; border-left: 2px solid var(--line-strong); }

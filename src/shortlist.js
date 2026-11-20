@@ -92,11 +92,13 @@ export const queryStems = (text) => stems(text);
 /* Everyday words for SNIFF questions, so "behind on rent" reaches the
    housing programs even where their write-up never says "behind". Each
    regex runs on the normalized text. */
+/* a search about fathers, not one that mentions a dad in passing */
+const FATHERS = /^\s*(fathers?|dads?|daddy)(\s+(groups?|programs?|support|class\w*))?\s*$|\b(fatherhood|father engagement|(dads?|fathers?) groups?|for (dads|fathers)|single (dads?|fathers?))\b/;
 export const NEED_WORDS = [
   [/\b(rent|evict\w*|landlords?|housing|apartments?|deposits?|section 8|homeless\w*|couch surf\w*|motel|place to live)\b/, ["VIII:6a", "VIII:7a"]],
   [/\bshelters?\b/, ["VIII:7a", "VIII:8a"]],
   [/\b(electric\w*|power bill|utilit\w*|heat|heating|gas bill|water bill|lights? (cut|off|shut)|propane|firewood|duke energy)\b/, ["VIII:14a"]],
-  [/\b(food(?! stamps?| benefits)|grocer\w*|hungry|pantr\w*|meals?|fridges?|lunch|dinner|breakfast)\b/, ["VIII:5a"]],
+  [/\b((?<!\b(?:pet|dog|cat) )food(?! stamps?| benefits)|grocer\w*|hungry|pantr\w*|meals?|fridges?|lunch|dinner|breakfast|produce|vegetables?|veggies?|fruits?|(farmers?|share|mobile|food|produce) markets?|thanksgiving|turkeys?)\b/, ["VIII:5a"]],
   [/\b(snap|food stamps?|ebt|food benefits)\b/, ["VIII:3a"]],
   [/\b(wic|formula|breast ?feed\w*|lactation|baby food)\b/, ["VIII:4a", "III:4a"]],
   [/\b(diapers?|wipes|pull ?ups)\b/, ["VIII:4a", "VIII:11a"]],
@@ -111,7 +113,9 @@ export const NEED_WORDS = [
   [/\b(immigra\w*|undocumented|citizenship|green card|daca|asylum|refugees?|newcomers?|visas?)\b/, ["VIII:15a", "V:6a", "X:10"]],
   [/\b(lawyers?|legal|custody|court|divorce|child support|attorneys?)\b/, ["VIII:16a", "X:3"]],
   [/\b(interpret\w*|translat\w*)\b/, ["VIII:18a", "ESPANOL:interprete-disponible-"]],
-  [/\b(pregnan\w*|prenatal|newborns?|postpartum|birth|doulas?|midwi\w*|infants?|nursing)\b/, ["X:2", "VI:3a"]],
+  [/\b(pregnan\w*|prenatal|newborns?|postpartum|birth(?! certificates?)|doulas?|midwi\w*|infants?|nursing)\b/, ["X:2", "VI:3a"]],
+  [/\bsafe sleep\b/, ["VIII:11a"]],
+  [FATHERS, ["IV:4a", "II:5a"]],
   [UNSAFE, ["VII:7a", "VIII:8a"]],
   [/\b(therap\w*|counsel\w*|mental health|depress\w*|anxi\w*|stress\w*|trauma\w*|grief|grieving)\b/, ["VII:2a", "VII:1a", "II:7a", "II:6a"]],
   [/\b(substance|addict\w*|recovery|sober\w*|opioids?|alcohol\w*|drinking|drugs?|narcan|meth)\b/, ["VII:6a"]],
@@ -137,7 +141,7 @@ export const NEED_WORDS = [
   [SELF_HARM, ["CRISIS:*", "VII:1a", "VII:2a"]],
   [CRISIS, ["CRISIS:*"]],
   /* the same needs in everyday Spanish (accents are already gone after norm) */
-  [/\b(comidas?|despensas?|alimentos?|hambre|almuerzos?|cenas?|desayunos?|mercadito)\b/, ["VIII:5a"]],
+  [/\b(comidas?|despensas?|alimentos?|hambre|almuerzos?|cenas?|desayunos?|mercadito|mercados?|verduras|frutas)\b/, ["VIII:5a"]],
   [/\b(cupones de alimentos|estampillas)\b/, ["VIII:3a"]],
   [/\b(renta|alquiler|desalojo\w*|vivienda|apartamentos?|sin hogar)\b/, ["VIII:6a", "VIII:7a"]],
   [/\b(refugios?|albergues?)\b/, ["VIII:7a", "VIII:8a"]],
@@ -164,10 +168,33 @@ export const NEED_WORDS = [
 /* phrases whose first word, alone, would point at another need */
 const PHRASE_HEADS = [
   [/\bfood (stamps?|benefits)\b/, "food"],
+  [/\b(pet|dog|cat) food\b/, "food"],
   [/\bcar seats?\b/, "car"],
   [/\bhigh chairs?\b/, "high"],
   [/\bchild support\b/, "support"],
+  [/\bbirth certificates?\b/, "birth"],
+  [/\bsafe sleep\b/, "safe"],
 ];
+
+/* Everyday words for things no SNIFF question covers, and the words the
+   directory itself uses for them, so "tampons" finds the period pantries
+   and "roof" the home repair programs. The added words count like typed
+   ones. "Dad" and "mom" are filler in most searches ("food for my kids'
+   dad"), so they count only in a search about fathers or mothers. */
+const SAME_AS = [
+  [/\b(produce|vegetables?|veggies?|fruits?|farmers? markets?|fresh food|verduras|frutas)\b/, "produce vegetable fruit market farm"],
+  [/\b(tampons?|pads|menstrua\w*|period products?|feminine (hygiene|products?))\b/, "menstrual period tampon hygiene toiletries dignity"],
+  [/\b(hygiene|toiletries|toothpaste|toothbrush\w*|soap|shampoo|deodorant|toilet paper|personal care)\b/, "hygiene toiletries soap toothbrush shower laundry"],
+  [/\b(pets?|dogs?|cats?|pupp(y|ies)|kittens?|veterinar\w*|spay\w*|neuter\w*)\b/, "pet animal veterinary dog cat"],
+  [/\b(glasses|eyeglasses|vision|eye exams?|eye doctors?|optometr\w*)\b/, "eyeglasses glasses vision eye"],
+  [/\bbirth certificates?\b/, "register deeds certificate"],
+  [/\b(roofs?|mold|mould|leaks?|leaking|plumbing|home repairs?|house repairs?|weatheriz\w*)\b/, "home repair roof weatherization"],
+  [/\b(thanksgiving|turkeys?)\b/, "thanksgiving turkey holiday"],
+  [/\bsafe sleep\b/, "crib bassinet"],
+  [/\b(snap|food stamps?|ebt|food benefits|cupones de alimentos|estampillas)\b/, "snap ebt"],
+];
+SAME_AS.push([FATHERS, "father dad daddy fatherhood"]);
+SAME_AS.push([/^\s*(mothers?|moms?|mommy)(\s+(groups?|programs?|support))?\s*$|\b((moms?|mothers?) groups?|single (moms?|mothers?))\b/, "mom mother mommy"]);
 
 /* text written in Spanish, or asking for Spanish: Spanish-capable programs
    move up inside each need */
@@ -223,6 +250,14 @@ export function buildIndex(resources, needs) {
   });
   const vocab = makeVocab(posting);
   const keysOf = resources.map((r) => new Set(r.needs));
+  /* A row filed under many needs (a diaper bank filed under domestic
+     violence because Helpmate hands out its diapers) counts a little less
+     for each, so rows that are about the need come first. Most rows carry
+     one to four needs and count in full. */
+  const focus = resources.map((r) => {
+    const n = r.needs.filter((k) => !k.endsWith(":*")).length;
+    return n <= 4 ? 1 : Math.sqrt(4 / n);
+  });
   const spanish = resources.map((r) => /^[🟢🟡🟠]/u.test(r.spanish || ""));
   const notFirst = resources.map((r) => NOT_FIRST.test(r.detail || ""));
   /* a program the directory keeps only to say it closed ("CLOSED May 2022") */
@@ -260,7 +295,11 @@ export function buildIndex(resources, needs) {
     /* a word that is part of a phrase meaning something else ("food" in
        "food stamps", "car" in "car seat") does not count on its own */
     const phraseWords = new Set(PHRASE_HEADS.filter(([re]) => re.test(flat)).map(([, w]) => stem(w)));
-    const q = stems(text).filter((t) => !placeWords.has(t) && !phraseWords.has(t)).slice(0, 400);
+    /* the directory's own words for what the text asks about (not run
+       through the filler list: "dad" counts here) */
+    const same = SAME_AS.filter(([re]) => re.test(flat)).flatMap(([, w]) => w.split(" ").map(stem));
+    const q = [...new Set(stems(text).concat(same))].filter((t) => !placeWords.has(t) && !phraseWords.has(t)).slice(0, 400);
+    const typed = new Set(stems(text));
 
     /* the SNIFF questions the text raises */
     const spotted = new Set();
@@ -276,7 +315,8 @@ export function buildIndex(resources, needs) {
       for (const w of expand(vocab, t)) for (const [i, weight] of posting.get(w)) hits.set(i, Math.max(hits.get(i) || 0, weight));
       /* a word in four resources in ten tells nothing apart */
       if (!hits.size || hits.size > N * 0.4) continue;
-      const idf = Math.log((N + 1) / hits.size);
+      /* an added word counts a little less than a typed one */
+      const idf = Math.log((N + 1) / hits.size) * (typed.has(t) ? 1 : 0.6);
       for (const [i, weight] of hits) score[i] += idf * weight;
     }
     const wantsSpanish = SPANISH_TEXT.test(flat);
@@ -284,8 +324,8 @@ export function buildIndex(resources, needs) {
     for (let i = 0; i < N; i++) {
       let k = 0;
       for (const key of spotted) if (keysOf[i].has(key)) k++;
-      score[i] += 10 * Math.min(k, 2);
-      score[i] += Math.max(0, ...urgent.map((key) => (keysOf[i].has(key) ? URGENT[key] : 0)));
+      score[i] += 10 * Math.min(k, 2) * focus[i];
+      score[i] += Math.max(0, ...urgent.map((key) => (keysOf[i].has(key) ? URGENT[key] : 0))) * focus[i];
     }
     /* Spanish and a named town reorder what the text matched; they bring in
        rows of their own only when nothing else matched ("en espanol",

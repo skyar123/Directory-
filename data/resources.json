@@ -27,11 +27,15 @@
    "Winter 2026-27 holiday guide cross-check, 17 Nov 2026 (see scripts/apply-winter-guide-2026-11-17.mjs)",
    "Food by day update, 211 phone fix and Skylar's food map, 17 Nov 2026 (see scripts/apply-food-schedule-2026-11-17.mjs)",
    "SNIFF tag fixes from a name and description audit, 17 Nov 2026 (see scripts/apply-tag-fixes-2026-11-17.mjs)",
-   "Duplicate rows merged, 17 Nov 2026 (see scripts/apply-merge-duplicates-2026-11-17.mjs); meta.merged maps old ids to kept ones"
+   "Duplicate rows merged, 17 Nov 2026 (see scripts/apply-merge-duplicates-2026-11-17.mjs); meta.merged maps old ids to kept ones",
+   "Ceremonial Beauty Collective pay-what-you-can haircuts, 18 Nov 2026 (see scripts/apply-ceremonial-haircuts-2026-11-18.mjs)",
+   "Blessing Barn closed, SC4S and BeLoved relabelled, 18 Nov 2026 (see scripts/apply-blessing-barn-sc4s-2026-11-18.mjs)",
+   "Food flyers of 19 Nov 2026: YWAM food truck, Bounty & Soul one-day move, Bountiful Cities 2027 Share Markets, MANNA Community Market at Shiloh (see scripts/apply-food-flyers-2026-11-19.mjs)",
+   "SNIFF tags corrected from a search audit, 20 Nov 2026 (see scripts/apply-search-tags-2026-11-20.mjs)"
   ],
   "file": "resources.json",
   "note": "One object per resource. `needs` are SNIFF question keys, `src` names where the fact came from. `alt` is an optional backup route, shown as \"If this doesn't work\".",
-  "count": 708,
+  "count": 711,
   "merged": {
    "kaleidoscope-play-learn-2": "kaleidoscope-play-learn",
    "asheville-city-schools-2": "asheville-city-schools",
@@ -3285,7 +3289,7 @@
    "a": "Mission Children's Hospital, 3rd floor",
    "h": "",
    "os": "13.2 Support for Foster, Adoptive, and Kinship Caregivers",
-   "t": "Kids / 0-5, Verified 8/2026. Forensic interviews, medical eval, TF-CBT and PCIT.",
+   "t": "Kids / 0-5 | Verified 8/2026. Forensic interviews, medical eval, TF-CBT and PCIT.",
    "lv": "2026-08-01",
    "vb": "SB",
    "sec": "IV",
@@ -4767,8 +4771,8 @@
    "id": "beloved-asheville-asheville-in-black-and-kid",
    "n": "BeLoved Asheville \"Asheville in Black\" and \"Kids & Youth\"",
    "pp": "",
-   "sp": "🟢 Spanish-first / Latino-led",
-   "spd": "Asheville en Espanol program, 15+ 24/7 street pantries",
+   "sp": "⚪ Not listed - ask",
+   "spd": "BeLoved is BIPOC-led, not a Spanish-first program. Its Asheville en Espanol program is a network of Latinx leaders and a youth arts program; ask about Spanish for these programs.",
    "ph": "828-571-0766",
    "em": "",
    "w": "belovedasheville.com",
@@ -4792,7 +4796,7 @@
     "X:*",
     "X:8"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Latino-led label removed 18 Nov 2026: BeLoved is BIPOC- and low-wealth-led, with Asheville en Espanol as one program (BeLoved's own page, via web search)",
    "note": "",
    "new": false
   },
@@ -5202,7 +5206,7 @@
    "a": "528 Emma Rd",
    "h": "",
    "os": "19.2 Latinx and Spanish-Speaking Families",
-   "t": "Free, Spanish / bilingual, Mobile / delivery, Kids / 0-5, Verified 8/2026. Umbrella for PODER Emma, CIMA, Raices Emma-Erwin and El Telar. Casa de Apoyo Mutuo / Mercadito Wed, Fri and Sun 12-5pm. Consulta Tu Compa gives case management in Spanish and English.",
+   "t": "Free, Spanish / bilingual, Mobile / delivery, Kids / 0-5 | Verified 8/2026. Umbrella for PODER Emma, CIMA, Raices Emma-Erwin and El Telar. Casa de Apoyo Mutuo / Mercadito Wed, Fri and Sun 12-5pm. Consulta Tu Compa gives case management in Spanish and English.",
    "lv": "2026-08-01",
    "vb": "SB",
    "sec": "ESPANOL",
@@ -5614,22 +5618,20 @@
    "id": "sistas-caring-4-sistas",
    "n": "Sistas Caring 4 Sistas",
    "pp": "Co-kema King",
-   "sp": "🟢 Spanish-first / Latino-led",
-   "spd": "Built for Spanish-speaking families",
+   "sp": "⚪ Not listed - ask",
+   "spd": "No source mentions Spanish services: it is a doula collective founded by Black women, for Black families and other families of color. Ask whether a Spanish-speaking doula or an interpreter is available.",
    "ph": "828-575-0488",
    "em": "doulaup@sistascaring4sistas.org",
    "w": "sc4s.org",
-   "d": "BIPOC doula care. Umoja and ABIPA (Asheville Buncombe Institute of Parity Achievement, 220 Continuum Dr, Fletcher) run health equity programs, community markets, and the Free Sunday Shop. Nov 2026: limited openings for families due in December, January, and February. Support includes prenatal visits and childbirth education, continuous labor support, postpartum visits, newborn feeding support, and connections to local resources, subject to eligibility and scheduling. Doula support contact named at the 6 Nov NFP partner meeting: Co-kema King (role and referral steps to be confirmed).",
-   "a": "220 Continuum Dr",
+   "d": "Free community doula care from a collective founded by Black women in Asheville, for Black families and other families of color: birth, postpartum, lactation and partner support, plus in-home and after-hours care. Grew out of Mothering Asheville with MAHEC. Nov 2026: limited openings for families due in December, January, and February. Support includes prenatal visits and childbirth education, continuous labor support, postpartum visits, newborn feeding support, and connections to local resources, subject to eligibility and scheduling. Doula support contact named at the 6 Nov NFP partner meeting: Co-kema King (role and referral steps to be confirmed).",
+   "a": "50 S French Broad Ave, Suite 212, Asheville 28801",
    "h": "",
    "os": "19.1 Black Families",
-   "t": "Free, Evening / weekend, Verified 8/2026. Free community doula care by and for people of color. Birth, postpartum, lactation, and partner support, plus in-home and after-hours care. Grew out of Mothering Asheville with MAHEC.",
+   "t": "Free, Evening / weekend",
    "lv": "2026-08-01",
    "vb": "SB",
    "sec": "X",
    "needs": [
-    "ESPANOL:*",
-    "ESPANOL:servicios-en-espanol-p",
     "II:*",
     "II:1a",
     "II:3a",
@@ -5639,8 +5641,8 @@
     "X:2",
     "X:8"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; winter openings from an SC4S availability post in Facebook groups, 5 Nov 2026; Co-kema King from Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes); also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; merged 17 Nov 2026 from 2 rows (sistas-caring-4-sistas, sistas-caring-4-sistas-2)",
-   "note": "Another listing of this program gave the address 50 S French Broad Ave, Suite 212, Asheville 28801.",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; winter openings from an SC4S availability post in Facebook groups, 5 Nov 2026; Co-kema King from Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes); also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; merged 17 Nov 2026 from 2 rows (sistas-caring-4-sistas, sistas-caring-4-sistas-2); Spanish label, Spanish-services filing, address and description corrected 18 Nov 2026 by web search (Asheville Chamber nonprofit listing, The Urban News, NC Health News, Buncombe County 2022 grant filing): no source mentions Spanish services, and 220 Continuum Dr is ABIPA's office",
+   "note": "Listings give different addresses: 50 S French Broad Ave (the Asheville Chamber's nonprofit listing; Suite 212 in the workbook), 121 Hendersonville Rd (a local directory) and 9 Canterbury Rd (the NPI registry). A 2022 county grant filing gives the phone 828-620-9828 and the site sistascaring4sistas.org. Doula visits happen at home or the birth, so confirm by phone before sending anything by mail.",
    "new": false
   },
   {
@@ -5977,10 +5979,12 @@
     "IV:*",
     "IV:5a",
     "IV:7a",
+    "VIII:*",
+    "VIII:5a",
     "X:*",
     "X:1"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; SNIFF tags corrected 20 Nov 2026 from the row's own text or workbook section (search audit; scripts/apply-search-tags-2026-11-20.mjs)",
    "note": "",
    "new": false
   },
@@ -8054,8 +8058,8 @@
    "id": "beloved-asheville-street-pantries",
    "n": "BeLoved Asheville Street Pantries",
    "pp": "",
-   "sp": "🟢 Spanish-first / Latino-led",
-   "spd": "Asheville en Espanol program, 15+ 24/7 street pantries",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Unstaffed and open around the clock, so no conversation, ID or intake is needed. BeLoved also runs Asheville en Espanol, its Latinx network; the Spanish listing is Despensas callejeras BeLoved.",
    "ph": "828-571-0766",
    "em": "",
    "w": "belovedasheville.com",
@@ -8076,7 +8080,7 @@
     "VIII:4a",
     "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; pantry sites as given in the WNC Free Food & Supplies guide (Oct 2026), from BeLoved's street pantry PDF; VIII:5a tag added 17 Nov 2026 from the row's own name or description (tag audit)",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; pantry sites as given in the WNC Free Food & Supplies guide (Oct 2026), from BeLoved's street pantry PDF; VIII:5a tag added 17 Nov 2026 from the row's own name or description (tag audit); Latino-led label removed 18 Nov 2026: BeLoved is BIPOC- and low-wealth-led, with Asheville en Espanol as one program (BeLoved's own page, via web search)",
    "note": "The October food guide, linking BeLoved's own street pantry list, puts the Weaverville pantry in front of Hardee's on Weaver Blvd, not at 16 N Main St, and the Tunnel Rd pantry in front of Azalea Church past Zaxby's, before exit 55. It also lists Black Mountain (Hwy 9 near the railroad tracks, across from the old Bilo), Candler (Smokey Park Hwy between the Shell and BP) and Swannanoa (2299 US 70). Check the current list before sending a family.",
    "new": false
   },
@@ -8102,7 +8106,7 @@
     "VIII:5a"
    ],
    "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; not listed online (nothing found by web search, 8 Nov 2026); exists by word of mouth, per Skylar Belt, 8 Nov 2026; Share Markets from WLOS",
-   "note": "Word of mouth: a local resource with no online listing (Skylar Belt, 8 Nov 2026). The details come from local contacts, so confirm them before referring. Bountiful Cities also runs free Share Markets (WLOS listed one on October 28 at William Randolph School, 3-5pm).",
+   "note": "Word of mouth: a local resource with no online listing (Skylar Belt, 8 Nov 2026). The details come from local contacts, so confirm them before referring. Bountiful Cities also runs free Share Markets on Wednesdays: see that row.",
    "new": false
   },
   {
@@ -8205,9 +8209,9 @@
    "sec": "VIII",
    "needs": [
     "VIII:*",
-    "VIII:10a"
+    "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; cut-off hours completed from the detail, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Pisgah View schedule from the county's 2025 market flyer via web search, 17 Nov 2026; cancellation from the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; cut-off hours completed from the detail, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Pisgah View schedule from the county's 2025 market flyer via web search, 17 Nov 2026; cancellation from the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026; SNIFF tags corrected 20 Nov 2026 from the row's own text or workbook section (search audit; scripts/apply-search-tags-2026-11-20.mjs)",
    "note": "Pisgah View Apartments is a regular stop (2nd and 4th Wednesdays on the county's 2025 flyer). The winter guide says the Nov 25, 2026 Pisgah View market is canceled; not confirmed online, so check the county's market calendar.",
    "new": false
   },
@@ -8416,9 +8420,11 @@
    "sec": "VIII",
    "needs": [
     "ESPANOL:*",
-    "ESPANOL:personal-bilingue-bili"
+    "ESPANOL:personal-bilingue-bili",
+    "VIII:*",
+    "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address and hours replaced: they named one of the listed sites, 6 Nov 2026; WNC Free Food & Supplies community guide (updated 2 Oct 2026), as recorded on each site's row",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address and hours replaced: they named one of the listed sites, 6 Nov 2026; WNC Free Food & Supplies community guide (updated 2 Oct 2026), as recorded on each site's row; SNIFF tags corrected 20 Nov 2026 from the row's own text or workbook section (search audit; scripts/apply-search-tags-2026-11-20.mjs)",
    "note": "",
    "new": false
   },
@@ -8736,7 +8742,7 @@
    "ph": "828-684-6098",
    "em": "",
    "w": "",
-   "d": "12 Baskets 11am-1pm | Montmorenci UMC 10am-2pm (89 Old Candler Town Rd, Candler) | St. Vincent de Paul at St. Barnabas 11am-2pm (109 Crescent Hill Dr, Arden, 828-684-6098) | Beverly Hills Baptist 2nd/4th Thu (777 Tunnel Rd) | Blessing Barn 10am-2pm | Food Connection Candler 3-5pm (Francis Asbury UMC, 725 Asbury Rd) | Asheville Christian Refugee Ministry by appointment 10am-6pm (104 Eastside Dr #308, Black Mountain; diapers, formula, household supplies; welcoming to Latino families) | Covenant Community Church SNAP Gap pantry 9am (11 Rocket Dr) | Big Ivy Community Club pantry 9am-12pm (540 Dillingham Rd, Barnardsville) | Grace Covenant free food 11am-1pm (789 Merrimon Ave; confirm) | Lunch at the Crossroads 12pm (First Baptist, 5 Oak St) | Zephyr Hills Free Will Baptist pantry 12-2pm (283 Shelburne Rd) | A-B Tech student food pantry 1-5pm (340 Victoria Rd) | East Asheville Welcome Table 5-6:15pm (Groce UMC, 954 Tunnel Rd) | Grant Center free fridge 9am-9pm (285 Livingston St)",
+   "d": "12 Baskets 11am-1pm | Montmorenci UMC 10am-2pm (89 Old Candler Town Rd, Candler) | St. Vincent de Paul at St. Barnabas 11am-2pm (109 Crescent Hill Dr, Arden, 828-684-6098) | Beverly Hills Baptist 2nd/4th Thu (777 Tunnel Rd) | Food Connection Candler 3-5pm (Francis Asbury UMC, 725 Asbury Rd) | Asheville Christian Refugee Ministry by appointment 10am-6pm (104 Eastside Dr #308, Black Mountain; diapers, formula, household supplies; welcoming to Latino families) | Covenant Community Church SNAP Gap pantry 9am (11 Rocket Dr) | Big Ivy Community Club pantry 9am-12pm (540 Dillingham Rd, Barnardsville) | Grace Covenant free food 11am-1pm (789 Merrimon Ave; confirm) | Lunch at the Crossroads 12pm (First Baptist, 5 Oak St) | Zephyr Hills Free Will Baptist pantry 12-2pm (283 Shelburne Rd) | A-B Tech student food pantry 1-5pm (340 Victoria Rd) | East Asheville Welcome Table 5-6:15pm (Groce UMC, 954 Tunnel Rd) | Grant Center free fridge 9am-9pm (285 Livingston St)",
    "a": "Several sites, listed below",
    "h": "Times vary by site, listed below",
    "os": "3.3 Weekly Pantry Schedule (by day)",
@@ -8749,9 +8755,10 @@
     "ESPANOL:personal-bilingue-bili",
     "VIII:*",
     "VIII:11a",
-    "VIII:4a"
+    "VIII:4a",
+    "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address and hours replaced: they named one of the listed sites, 6 Nov 2026; WNC Free Food & Supplies community guide (updated 2 Oct 2026), as recorded on each site's row",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address and hours replaced: they named one of the listed sites, 6 Nov 2026; WNC Free Food & Supplies community guide (updated 2 Oct 2026), as recorded on each site's row; Blessing Barn removed (closed), 18 Nov 2026; SNIFF tags corrected 20 Nov 2026 from the row's own text or workbook section (search audit; scripts/apply-search-tags-2026-11-20.mjs)",
    "note": "",
    "new": false
   },
@@ -8764,7 +8771,7 @@
    "ph": "828-274-2014 / 828-628-1188",
    "em": "",
    "w": "",
-   "d": "12 Baskets 11am-1pm | Foster Adventist Church breakfast + pantry 8:30-10am (375 Hendersonville Rd, 828-274-2014) | Trinity of Fairview 9am-1pm (646 Concord Rd, Fletcher, 828-628-1188) | Blessing Barn 10am-2pm (2492 US-70, Swannanoa) | UNETE / Bounty & Soul Latino market 3:30-5pm (55 Adams Hill Rd) | Blunt Kitchen hot meals 4-6pm (120 Alexander Pl, Swannanoa) | Food Connection Fairview 3-5pm (Food Lion, 1350 Charlotte Hwy) | Bethel Seventh-day Adventist food pantry 10am-1pm (238 S French Broad Ave) | Big Ivy Community Club pantry 1-6pm, hot meal at 1pm (540 Dillingham Rd, Barnardsville) | Weaverville First Baptist food and supply pantry 10am-2pm (63 N Main St, Weaverville) | Garren Creek free food and supply store 4:30-6:30pm (1198 Garren Creek Rd, Fairview) | The Whale free groceries 4:30pm until gone (507 Haywood Rd #10) | MANNA distribution, Leicester 3rd Tuesday only, 2:30-3:30pm (Leicester Community Center, 1561 Alexander Rd) | Grant Center free fridge 9am-9pm (285 Livingston St)",
+   "d": "12 Baskets 11am-1pm | Foster Adventist Church breakfast + pantry 8:30-10am (375 Hendersonville Rd, 828-274-2014) | Trinity of Fairview 9am-1pm (646 Concord Rd, Fletcher, 828-628-1188) | UNETE / Bounty & Soul Latino market 3:30-5pm (55 Adams Hill Rd) | Blunt Kitchen hot meals 4-6pm (120 Alexander Pl, Swannanoa) | Food Connection Fairview 3-5pm (Food Lion, 1350 Charlotte Hwy) | Bethel Seventh-day Adventist food pantry 10am-1pm (238 S French Broad Ave) | Big Ivy Community Club pantry 1-6pm, hot meal at 1pm (540 Dillingham Rd, Barnardsville) | Weaverville First Baptist food and supply pantry 10am-2pm (63 N Main St, Weaverville) | Garren Creek free food and supply store 4:30-6:30pm (1198 Garren Creek Rd, Fairview) | The Whale free groceries 4:30pm until gone (507 Haywood Rd #10) | MANNA distribution, Leicester 3rd Tuesday only, 2:30-3:30pm (Leicester Community Center, 1561 Alexander Rd) | Grant Center free fridge 9am-9pm (285 Livingston St)",
    "a": "Several sites, listed below",
    "h": "Times vary by site, listed below",
    "os": "3.3 Weekly Pantry Schedule (by day)",
@@ -8776,9 +8783,10 @@
     "ESPANOL:*",
     "ESPANOL:personal-bilingue-bili",
     "VIII:*",
-    "VIII:11a"
+    "VIII:11a",
+    "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address and hours replaced: they named one of the listed sites, 6 Nov 2026; WNC Free Food & Supplies community guide (updated 2 Oct 2026), as recorded on each site's row",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address and hours replaced: they named one of the listed sites, 6 Nov 2026; WNC Free Food & Supplies community guide (updated 2 Oct 2026), as recorded on each site's row; Blessing Barn removed (closed), 18 Nov 2026; SNIFF tags corrected 20 Nov 2026 from the row's own text or workbook section (search audit; scripts/apply-search-tags-2026-11-20.mjs)",
    "note": "",
    "new": false
   },
@@ -8833,15 +8841,10 @@
    "needs": [
     "ESPANOL:*",
     "ESPANOL:personal-bilingue-bili",
-    "V:*",
-    "V:1a",
-    "V:2a",
-    "V:4a",
-    "V:7a",
-    "VII:*",
-    "VII:6a"
+    "VIII:*",
+    "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address and hours replaced: they named one of the listed sites, 6 Nov 2026; WNC Free Food & Supplies community guide (updated 2 Oct 2026), as recorded on each site's row",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address and hours replaced: they named one of the listed sites, 6 Nov 2026; WNC Free Food & Supplies community guide (updated 2 Oct 2026), as recorded on each site's row; SNIFF tags corrected 20 Nov 2026 from the row's own text or workbook section (search audit; scripts/apply-search-tags-2026-11-20.mjs)",
    "note": "",
    "new": false
   },
@@ -9458,27 +9461,27 @@
   },
   {
    "id": "the-blessing-barn",
-   "n": "The Blessing Barn",
+   "n": "The Blessing Barn (CLOSED as of Nov 2026)",
    "pp": "",
    "sp": "⚪ Not listed - ask",
    "spd": "Not stated in the source. Ask when you call.",
    "ph": "",
    "em": "",
    "w": "theblessingproject.org",
-   "d": "2492 US-70, Swannanoa. Tue and Thu 10am-2pm (some Saturdays). Diapers, baby supplies, household items. The Birthday Barn next door gives free age-appropriate birthday gifts to kids 2-12 during their birthday month.",
-   "a": "112 Lytle Cove Rd, Swannanoa (mailing 230 Varden Pl)",
-   "h": "Tue and Thu 10am-2pm (some Saturdays)",
+   "d": "CLOSED. Not running as of November 2026. It gave diapers, baby supplies and household items at 2492 US-70, Swannanoa, on Tuesdays and Thursdays, and its Birthday Barn gave birthday gifts to kids 2-12. The Blessing Project's Blessing Bus is its mobile successor: see that row.",
+   "a": "",
+   "h": "",
    "os": "4.2 Baby Gear, Clothing, School Supplies",
-   "t": "Free, Evening / weekend, Kids / 0-5 | Verified 8/2026. Tue and Thu 10-2.",
-   "lv": "2026-08-01",
+   "t": "Closed",
+   "lv": "2026-11-18",
    "vb": "SB",
    "sec": "VIII",
    "needs": [
     "VIII:*",
     "VIII:11a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Skylar Belt's free food map listings, pasted 17 Nov 2026",
-   "note": "Skylar's food map (17 Nov 2026) says the fixed Blessing Barn is paused or closed and the Blessing Bus (theblessingproject.org) is its mobile successor; the hours here are from August. Confirm before sending anyone.",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Skylar Belt's free food map listings, pasted 17 Nov 2026; closed per Skylar Belt, 18 Nov 2026",
+   "note": "Skylar confirmed on 18 Nov 2026 that the Blessing Barn is not running (her food map had it as paused or closed). Ask The Blessing Project whether the Birthday Barn still runs anywhere.",
    "new": false
   },
   {
@@ -14279,7 +14282,7 @@
    "ph": "828-329-9391 / 828-298-2887",
    "em": "",
    "w": "",
-   "d": "Westside Shears, Casey Smith and Veronica Coit (828-329-9391). Custom Cuts and Color, Sandy (828-298-2887).",
+   "d": "Westside Shears, Casey Smith and Veronica Coit (828-329-9391). Custom Cuts and Color, Sandy (828-298-2887). For the holidays, Ceremonial Beauty Collective in Asheville offers pay-what-you-can haircuts (828-550-7357; see its row).",
    "a": "",
    "h": "",
    "os": "IX. Autism & Neurodivergence",
@@ -14291,7 +14294,7 @@
     "IX:*",
     "IX:9a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, IX. Autism & Neurodivergence tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, IX. Autism & Neurodivergence tab; pay-what-you-can mention from Ceremonial Beauty Collective's Facebook post in the Friends of Swannanoa NC group, shared by Skylar Belt 18 Nov 2026",
    "note": "Community recommendations from other parents, not a formal list. Call ahead and say what the child needs.",
    "new": true
   },
@@ -16911,16 +16914,16 @@
   },
   {
    "id": "ywam-friday-hot-meal",
-   "n": "YWAM free hot meal (downtown)",
+   "n": "YWAM free food truck hot meal (downtown, Fridays)",
    "pp": "",
    "sp": "⚪ Not listed - ask",
    "spd": "Not stated in the source. Ask when you call.",
    "ph": "",
    "em": "",
-   "w": "",
-   "d": "Free hot meal served on the street corner every Friday.",
+   "w": "ywamasheville.org",
+   "d": "Free hot meal from YWAM Asheville's food truck on the street corner every Friday, until the food runs out.",
    "a": "Corner of Aston St and Lexington Ave, Asheville",
-   "h": "Fridays 12pm",
+   "h": "Fridays at midday, until food runs out",
    "os": "Community food guide (Oct 2026)",
    "t": "Free",
    "lv": "",
@@ -16930,8 +16933,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; food truck, website, 12:30pm and \"until food runs out\" from YWAM's flyer for 20 Nov 2026, shared by Skylar Belt 19 Nov 2026",
+   "note": "The October food guide says 12pm; YWAM's flyer for Friday 20 Nov 2026 says 12:30pm. Go early: it ends when the food runs out.",
    "new": true
   },
   {
@@ -20052,6 +20055,81 @@
    "note": "Checked against the directory on 17 Nov 2026 from Skylar's pasted listings; the map itself could not be opened from the build environment. Most listings were not independently verified, as the map says.",
    "new": true,
    "start": true
+  },
+  {
+   "id": "ceremonial-beauty-collective-pay-what-you-can",
+   "n": "Ceremonial Beauty Collective: pay-what-you-can haircuts (Asheville)",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you book.",
+   "ph": "828-550-7357",
+   "em": "",
+   "w": "",
+   "d": "Pay-what-you-can haircuts for the holiday season: pay what you comfortably can, with no judgment and no explanation needed, for anyone in a tough season financially or who needs a little self-care. Appointments are limited. Book through the salon's Google business listing or at 828-550-7357, and send a message when booking to say it is for the Pay What You Can special.",
+   "a": "Asheville (ask for the address when booking)",
+   "h": "By appointment; limited holiday-season spots",
+   "os": "Everyday life",
+   "t": "Pay what you can",
+   "lv": "",
+   "vb": "",
+   "sec": "X",
+   "needs": [
+    "X:*",
+    "X:12"
+   ],
+   "src": "Ceremonial Beauty Collective's Facebook post in the Friends of Swannanoa NC group, shared by Skylar Belt 18 Nov 2026",
+   "note": "The post gives no end date or street address; a web listing places the salon downtown near Pack Square and another in West Asheville, so ask when booking.",
+   "new": true
+  },
+  {
+   "id": "bountiful-cities-share-markets",
+   "n": "Bountiful Cities Share Markets (free vegetables and fruit, Wednesdays)",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "The 2027 flyer is in English and Spanish; ask about Spanish at the market.",
+   "ph": "",
+   "em": "",
+   "w": "bountifulcities.org/share-market",
+   "d": "No-cost vegetables and fruit, year-round, from Bountiful Cities with MANNA FoodBank, the Southside United Neighborhood Association (SUNA) and Asheville City Schools. 2027 dates: at Self-Help Credit Union, 391 S French Broad Ave, 3:30-5:30pm on Jan 6, Feb 3, Mar 3, Apr 7, May 5, Jun 2, Jul 7, Aug 4, Sep 1, Oct 6, Nov 3 and Dec 1; at the William Randolph campus gym, 90 Montford Ave, 3-5pm on Jan 13 and 27, Feb 10 and 24, Mar 10 and 24, Apr 14 and 28, May 12 and 26, Jun 9 and 23, Jul 14 and 28, Aug 11 and 25, Sep 8 and 22, Oct 13 and 27, Nov 10 and 24, and Dec 8. Gardeners can bring produce to share, and the markets take volunteers.",
+   "a": "Self-Help Credit Union, 391 S French Broad Ave (1st Wednesdays); William Randolph campus gym, 90 Montford Ave (2nd and 4th Wednesdays)",
+   "h": "1st Wednesdays 3:30-5:30pm; 2nd and 4th Wednesdays 3-5pm",
+   "os": "Share Market flyer (2027 dates)",
+   "t": "Free",
+   "lv": "",
+   "vb": "",
+   "sec": "VIII",
+   "needs": [
+    "VIII:*",
+    "VIII:5a"
+   ],
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026",
+   "note": "The flyer gives 2027 dates only (no market on Dec 22, 2027; more in 2028). For December 2026, check bountifulcities.org/share-market; WLOS listed a market on Wednesday, 28 Oct 2026 at William Randolph, 3-5pm.",
+   "new": true
+  },
+  {
+   "id": "manna-community-market-shiloh",
+   "n": "MANNA Community Market at Rock Hill Missionary Baptist (Shiloh)",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you call.",
+   "ph": "828-290-9749",
+   "em": "",
+   "w": "mannafoodbank.org/manna-community-market",
+   "d": "Free groceries and supplies from MANNA's mobile market: open to everyone, no questions asked. MANNA posts each month's market dates; the phone is the MANNA Food Helpline. Bounty & Soul's Monday produce market meets at the same church.",
+   "a": "Rock Hill Missionary Baptist Church, 486 Caribou Rd, Asheville 28803",
+   "h": "Wednesdays 3-5pm, about monthly (third Wednesday on 21 Jan and 18 Nov 2026)",
+   "os": "MANNA Community Market flyer",
+   "t": "Free, Walk-in",
+   "lv": "",
+   "vb": "",
+   "sec": "VIII",
+   "needs": [
+    "VIII:*",
+    "VIII:5a"
+   ],
+   "src": "MANNA Community Market flyer for 18 Nov 2026, shared by Skylar Belt 19 Nov 2026; January 2026 MANNA Community Markets list (mannafoodbank.org), via web search 19 Nov 2026; phone from the directory's MANNA Food Helpline row",
+   "note": "Only two dates are known, both third Wednesdays, so check MANNA's list or call the helpline for the next one before sending a family.",
+   "new": true
   }
  ]
 }

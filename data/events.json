@@ -3,7 +3,7 @@
   "file": "events.json",
   "generated": "2026-11-06",
   "note": "Events, deadlines and sign-ups for families. `date` and `end` are calendar days (YYYY-MM-DD); `end` is the last day of a run of days or a sign-up window. `kind` is event, deadline or signup. Past entries stay in the file and fold away at the bottom of the Events tab. Every entry carries `src`, and `rid` links the matching row in resources.json where there is one.",
-  "src": "Pulled from the v19 workbook, the 6 Nov 2026 Nurse-Family Partnership partner meeting, the 6 Nov 2026 Facebook deep scrape (parts 1 to 4, including mutual aid) and family weekend guides, and FFA-NC and FEMA notices. Each card names its source."
+  "src": "Pulled from the v19 workbook, the 6 Nov 2026 Nurse-Family Partnership partner meeting, the 6 Nov 2026 Facebook deep scrape (parts 1 to 4, including mutual aid) and family weekend guides, and FFA-NC and FEMA notices. Each card names its source.; food flyers of 19 Nov 2026 (scripts/apply-food-flyers-2026-11-19.mjs)"
  },
  "events": [
   {
@@ -668,12 +668,12 @@
    "kind": "event",
    "what": "Bounty & Soul ArtSpace market moves for one day",
    "where": "Black Mountain Machine & Tool, 2988 US Hwy 70, Black Mountain 28711",
-   "detail": "The Saturday ArtSpace market meets here this week only.",
+   "detail": "The Saturday ArtSpace market meets here this week only, same time. There is no ArtSpace market on Nov 28.",
    "tags": [
     "Free"
    ],
    "rid": "bounty-soul",
-   "src": "Flyer shared by Skylar Belt, 13 Nov 2026"
+   "src": "Flyer shared by Skylar Belt, 13 Nov 2026; Bounty & Soul's market update flyer (English and Spanish), shared again 19 Nov 2026"
   },
   {
    "id": "mountain-strong-open-house-2026-11-21",
@@ -1308,6 +1308,525 @@
     "Free"
    ],
    "src": "FCC Public Notice DA 26-989, released 16 Sep 2026 (page 1), shared by Skylar Belt 17 Nov 2026"
+  },
+  {
+   "id": "ywam-food-truck-thanksgiving-2026-11-20",
+   "date": "2026-11-20",
+   "time": "12:30pm",
+   "kind": "event",
+   "what": "YWAM free food truck: Thanksgiving casserole",
+   "where": "Corner of Aston St and Lexington Ave, downtown Asheville",
+   "detail": "Free hot meal from YWAM Asheville's food truck, until the food runs out.",
+   "tags": [
+    "Free"
+   ],
+   "w": "ywamasheville.org",
+   "rid": "ywam-friday-hot-meal",
+   "src": "Flyer shared by Skylar Belt, 19 Nov 2026"
+  },
+  {
+   "id": "manna-community-market-shiloh-2026-11-18",
+   "date": "2026-11-18",
+   "time": "3-5pm",
+   "kind": "event",
+   "what": "MANNA Community Market: free groceries and supplies",
+   "where": "Rock Hill Missionary Baptist-Shiloh, 486 Caribou Rd, Asheville 28803",
+   "detail": "Open to everyone, no questions asked.",
+   "tags": [
+    "Free"
+   ],
+   "rid": "manna-community-market-shiloh",
+   "src": "Flyer shared by Skylar Belt, 19 Nov 2026"
+  },
+  {
+   "id": "share-market-self-help-2027-01-06",
+   "date": "2027-01-06",
+   "time": "3:30-5:30pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "Self-Help Credit Union, 391 S French Broad Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-self-help-2027-02-03",
+   "date": "2027-02-03",
+   "time": "3:30-5:30pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "Self-Help Credit Union, 391 S French Broad Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-self-help-2027-03-03",
+   "date": "2027-03-03",
+   "time": "3:30-5:30pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "Self-Help Credit Union, 391 S French Broad Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-self-help-2027-04-07",
+   "date": "2027-04-07",
+   "time": "3:30-5:30pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "Self-Help Credit Union, 391 S French Broad Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-self-help-2027-05-05",
+   "date": "2027-05-05",
+   "time": "3:30-5:30pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "Self-Help Credit Union, 391 S French Broad Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-self-help-2027-06-02",
+   "date": "2027-06-02",
+   "time": "3:30-5:30pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "Self-Help Credit Union, 391 S French Broad Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-self-help-2027-07-07",
+   "date": "2027-07-07",
+   "time": "3:30-5:30pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "Self-Help Credit Union, 391 S French Broad Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-self-help-2027-08-04",
+   "date": "2027-08-04",
+   "time": "3:30-5:30pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "Self-Help Credit Union, 391 S French Broad Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-self-help-2027-09-01",
+   "date": "2027-09-01",
+   "time": "3:30-5:30pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "Self-Help Credit Union, 391 S French Broad Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-self-help-2027-10-06",
+   "date": "2027-10-06",
+   "time": "3:30-5:30pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "Self-Help Credit Union, 391 S French Broad Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-self-help-2027-11-03",
+   "date": "2027-11-03",
+   "time": "3:30-5:30pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "Self-Help Credit Union, 391 S French Broad Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-self-help-2027-12-01",
+   "date": "2027-12-01",
+   "time": "3:30-5:30pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "Self-Help Credit Union, 391 S French Broad Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-william-randolph-2027-01-13",
+   "date": "2027-01-13",
+   "time": "3-5pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "William Randolph campus gym, 90 Montford Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-william-randolph-2027-01-27",
+   "date": "2027-01-27",
+   "time": "3-5pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "William Randolph campus gym, 90 Montford Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-william-randolph-2027-02-10",
+   "date": "2027-02-10",
+   "time": "3-5pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "William Randolph campus gym, 90 Montford Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-william-randolph-2027-02-24",
+   "date": "2027-02-24",
+   "time": "3-5pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "William Randolph campus gym, 90 Montford Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-william-randolph-2027-03-10",
+   "date": "2027-03-10",
+   "time": "3-5pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "William Randolph campus gym, 90 Montford Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-william-randolph-2027-03-24",
+   "date": "2027-03-24",
+   "time": "3-5pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "William Randolph campus gym, 90 Montford Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-william-randolph-2027-04-14",
+   "date": "2027-04-14",
+   "time": "3-5pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "William Randolph campus gym, 90 Montford Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-william-randolph-2027-04-28",
+   "date": "2027-04-28",
+   "time": "3-5pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "William Randolph campus gym, 90 Montford Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-william-randolph-2027-05-12",
+   "date": "2027-05-12",
+   "time": "3-5pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "William Randolph campus gym, 90 Montford Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-william-randolph-2027-05-26",
+   "date": "2027-05-26",
+   "time": "3-5pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "William Randolph campus gym, 90 Montford Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-william-randolph-2027-06-09",
+   "date": "2027-06-09",
+   "time": "3-5pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "William Randolph campus gym, 90 Montford Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-william-randolph-2027-06-23",
+   "date": "2027-06-23",
+   "time": "3-5pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "William Randolph campus gym, 90 Montford Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-william-randolph-2027-07-14",
+   "date": "2027-07-14",
+   "time": "3-5pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "William Randolph campus gym, 90 Montford Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-william-randolph-2027-07-28",
+   "date": "2027-07-28",
+   "time": "3-5pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "William Randolph campus gym, 90 Montford Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-william-randolph-2027-08-11",
+   "date": "2027-08-11",
+   "time": "3-5pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "William Randolph campus gym, 90 Montford Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-william-randolph-2027-08-25",
+   "date": "2027-08-25",
+   "time": "3-5pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "William Randolph campus gym, 90 Montford Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-william-randolph-2027-09-08",
+   "date": "2027-09-08",
+   "time": "3-5pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "William Randolph campus gym, 90 Montford Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-william-randolph-2027-09-22",
+   "date": "2027-09-22",
+   "time": "3-5pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "William Randolph campus gym, 90 Montford Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-william-randolph-2027-10-13",
+   "date": "2027-10-13",
+   "time": "3-5pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "William Randolph campus gym, 90 Montford Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-william-randolph-2027-10-27",
+   "date": "2027-10-27",
+   "time": "3-5pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "William Randolph campus gym, 90 Montford Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-william-randolph-2027-11-10",
+   "date": "2027-11-10",
+   "time": "3-5pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "William Randolph campus gym, 90 Montford Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-william-randolph-2027-11-24",
+   "date": "2027-11-24",
+   "time": "3-5pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "William Randolph campus gym, 90 Montford Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "share-market-william-randolph-2027-12-08",
+   "date": "2027-12-08",
+   "time": "3-5pm",
+   "kind": "event",
+   "what": "Bountiful Cities Share Market: free vegetables and fruit",
+   "where": "William Randolph campus gym, 90 Montford Ave, Asheville",
+   "tags": [
+    "Free"
+   ],
+   "w": "bountifulcities.org/share-market",
+   "rid": "bountiful-cities-share-markets",
+   "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
   }
  ]
 }
