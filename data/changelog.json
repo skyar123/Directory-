@@ -154,6 +154,12 @@
    "label": "ADDED THIS ROUND",
    "entries": [
     {
+     "date": "Nov 22 2026",
+     "what": "ABIPA's Thanksgiving Sunday Shop and the EMOTE Clothing Swap",
+     "detail": "ABIPA's free Thanksgiving Sunday Shop is today, Nov 22, 3-6pm at the Friendship Center, 142 Shiloh Rd (fresh food, household essentials, health resources; sign kids up there for ABIPA's Christmas event). Food by day and the Sunday list now give that place and ABIPA's phone. New: the free EMOTE Clothing Swap at 444 Haywood Rd, one Sunday a month 12-4pm; Nov 29 and Dec 27 are on the Events tab.",
+     "source": "scripts/apply-abipa-emote-2026-11-22.mjs"
+    },
+    {
      "date": "Nov 20 2026",
      "what": "Search understands more everyday words",
      "detail": "The search box and Ask AI now know the directory's words for things families ask about in their own words: \"free vegetables\", \"produce\" and \"fruit\" find the produce markets and pantries (they found 3 rows before); \"tampons\" and \"toothpaste\" the period pantries and hygiene closets; \"pet food\" and \"dog food\" the pet programs, not every food pantry; \"fathers\" and \"dads group\" the fatherhood programs (\"dad\" and \"mom\" were ignored as filler); \"roof\" and \"mold\" the home repair programs; \"birth certificate\" the Register of Deeds; \"turkey\" and \"Thanksgiving\" the holiday meals; \"food stamps\" the SNAP rows first. A program filed under many needs (a diaper bank filed under domestic violence because Helpmate hands out its diapers) now ranks after the programs that are about the need. Community Engagement Markets moved from Toys or books to Food pantry, the Monday to Thursday food schedules and the Family Resource Center at Emma joined Food pantry, and the Wednesday schedule left GED, ESL, job training and substance use.",

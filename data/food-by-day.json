@@ -2,7 +2,7 @@
  "meta": {
   "file": "food-by-day.json",
   "note": "Weekly pantry and free-meal schedule. A site appears on every day it serves. Most rows are unverified: call before sending a family.",
-  "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, Food - By Day tab; weekly Buncombe sites from the October 2026 WNC Free Food guide added 17 Nov 2026 (scripts/apply-food-schedule-2026-11-17.mjs); the Blessing Barn removed 18 Nov 2026 (closed, per Skylar Belt); YWAM, Bounty & Soul, Bountiful Cities Share Market and MANNA Shiloh flyers, 19 Nov 2026"
+  "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, Food - By Day tab; weekly Buncombe sites from the October 2026 WNC Free Food guide added 17 Nov 2026 (scripts/apply-food-schedule-2026-11-17.mjs); the Blessing Barn removed 18 Nov 2026 (closed, per Skylar Belt); YWAM, Bounty & Soul, Bountiful Cities Share Market and MANNA Shiloh flyers, 19 Nov 2026; ABIPA Sunday Shop flyer, 22 Nov 2026"
  },
  "days": [
   {
@@ -585,9 +585,9 @@
      "vb": ""
     },
     {
-     "place": "ABIPA Free",
-     "when": "Sunday Shop 4th Sunday 3-6pm (220 Continuum Dr, Fletcher)",
-     "goodToKnow": "Evening, Weekend",
+     "place": "ABIPA Free Sunday Shop",
+     "when": "4th Sunday 3-6pm (Friendship Center, 142 Shiloh Rd on 22 Nov 2026)",
+     "goodToKnow": "Fresh food, household essentials, health resources; 828-785-3470, abipa.org. The place may change, so check the month's flyer",
      "lv": "",
      "vb": ""
     },

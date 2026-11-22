@@ -1827,6 +1827,50 @@
    "w": "bountifulcities.org/share-market",
    "rid": "bountiful-cities-share-markets",
    "src": "Bountiful Cities 2027 Share Market flyers (English and Spanish), shared by Skylar Belt 19 Nov 2026"
+  },
+  {
+   "id": "abipa-thanksgiving-sunday-shop-2026-11-22",
+   "date": "2026-11-22",
+   "time": "3-6pm",
+   "kind": "event",
+   "what": "ABIPA free Thanksgiving Sunday Shop",
+   "where": "Friendship Center, 142 Shiloh Rd, Asheville",
+   "detail": "Fresh food, household essentials, health resources and community care. At the sign-in table, sign kids up for ABIPA's annual Christmas event.",
+   "ph": "828-785-3470",
+   "w": "abipa.org",
+   "tags": [
+    "Free"
+   ],
+   "rid": "sunday",
+   "src": "Flyer shared by Skylar Belt, 22 Nov 2026"
+  },
+  {
+   "id": "emote-clothing-swap-2026-11-29",
+   "date": "2026-11-29",
+   "time": "12-4pm",
+   "kind": "event",
+   "what": "EMOTE Clothing Swap (free)",
+   "where": "444 Haywood Rd, Asheville",
+   "detail": "Masks required and provided.",
+   "tags": [
+    "Free"
+   ],
+   "rid": "emote-clothing-swap",
+   "src": "Flyer shared by Skylar Belt, 22 Nov 2026"
+  },
+  {
+   "id": "emote-clothing-swap-2026-12-27",
+   "date": "2026-12-27",
+   "time": "12-4pm",
+   "kind": "event",
+   "what": "EMOTE Clothing Swap (free)",
+   "where": "444 Haywood Rd, Asheville",
+   "detail": "Masks required and provided.",
+   "tags": [
+    "Free"
+   ],
+   "rid": "emote-clothing-swap",
+   "src": "Flyer shared by Skylar Belt, 22 Nov 2026"
   }
  ]
 }

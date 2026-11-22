@@ -31,11 +31,12 @@
    "Ceremonial Beauty Collective pay-what-you-can haircuts, 18 Nov 2026 (see scripts/apply-ceremonial-haircuts-2026-11-18.mjs)",
    "Blessing Barn closed, SC4S and BeLoved relabelled, 18 Nov 2026 (see scripts/apply-blessing-barn-sc4s-2026-11-18.mjs)",
    "Food flyers of 19 Nov 2026: YWAM food truck, Bounty & Soul one-day move, Bountiful Cities 2027 Share Markets, MANNA Community Market at Shiloh (see scripts/apply-food-flyers-2026-11-19.mjs)",
-   "SNIFF tags corrected from a search audit, 20 Nov 2026 (see scripts/apply-search-tags-2026-11-20.mjs)"
+   "SNIFF tags corrected from a search audit, 20 Nov 2026 (see scripts/apply-search-tags-2026-11-20.mjs)",
+   "ABIPA Thanksgiving Sunday Shop and EMOTE Clothing Swap flyers, 22 Nov 2026 (see scripts/apply-abipa-emote-2026-11-22.mjs)"
   ],
   "file": "resources.json",
   "note": "One object per resource. `needs` are SNIFF question keys, `src` names where the fact came from. `alt` is an optional backup route, shown as \"If this doesn't work\".",
-  "count": 711,
+  "count": 712,
   "merged": {
    "kaleidoscope-play-learn-2": "kaleidoscope-play-learn",
    "asheville-city-schools-2": "asheville-city-schools",
@@ -8717,7 +8718,7 @@
    "ph": "",
    "em": "",
    "w": "",
-   "d": "12 Baskets brunch 10am-12pm | Haywood Street breakfast 8:30-10:30am | Emmanuel Lutheran 11am-1pm (51 Wilburn Pl) | The Red Door (Church of the Advocate) meal 2pm + basics/shoes closet 2-3pm (60 Church St) | ABIPA Free Sunday Shop 4th Sunday 3-6pm (220 Continuum Dr, Fletcher) | Streetside community potluck Aston Park, 300 Hilliard Ave",
+   "d": "12 Baskets brunch 10am-12pm | Haywood Street breakfast 8:30-10:30am | Emmanuel Lutheran 11am-1pm (51 Wilburn Pl) | The Red Door (Church of the Advocate) meal 2pm + basics/shoes closet 2-3pm (60 Church St) | ABIPA Free Sunday Shop 4th Sunday 3-6pm (Friendship Center, 142 Shiloh Rd on 22 Nov 2026; 828-785-3470) | Streetside community potluck Aston Park, 300 Hilliard Ave",
    "a": "Several sites, listed below",
    "h": "Times vary by site, listed below",
    "os": "3.3 Weekly Pantry Schedule (by day)",
@@ -8729,7 +8730,7 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address and hours replaced: they named one of the listed sites, 6 Nov 2026; WNC Free Food & Supplies community guide (updated 2 Oct 2026), as recorded on each site's row",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address and hours replaced: they named one of the listed sites, 6 Nov 2026; WNC Free Food & Supplies community guide (updated 2 Oct 2026), as recorded on each site's row; ABIPA Sunday Shop place and phone from ABIPA's Thanksgiving flyer, 22 Nov 2026",
    "note": "",
    "new": false
   },
@@ -20129,6 +20130,31 @@
    ],
    "src": "MANNA Community Market flyer for 18 Nov 2026, shared by Skylar Belt 19 Nov 2026; January 2026 MANNA Community Markets list (mannafoodbank.org), via web search 19 Nov 2026; phone from the directory's MANNA Food Helpline row",
    "note": "Only two dates are known, both third Wednesdays, so check MANNA's list or call the helpline for the next one before sending a family.",
+   "new": true
+  },
+  {
+   "id": "emote-clothing-swap",
+   "n": "EMOTE Clothing Swap (free, monthly, Haywood Rd)",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source. Ask when you go.",
+   "ph": "",
+   "em": "",
+   "w": "",
+   "d": "Free clothing swap at 444 Haywood Rd, West Asheville, on a Sunday near the end of each month, 12-4pm. Masks are required and provided. 2026 dates: Jan 25, Feb 22, Mar 29, Apr 26, May 31, Jun 28, Jul 26, Aug 30, Sep 27, Oct 25, Nov 29 and Dec 27.",
+   "a": "444 Haywood Rd, Asheville",
+   "h": "One Sunday a month, 12-4pm",
+   "os": "EMOTE Clothing Swap flyer",
+   "t": "Free, Evening / weekend",
+   "lv": "",
+   "vb": "",
+   "sec": "VIII",
+   "needs": [
+    "VIII:*",
+    "VIII:12a"
+   ],
+   "src": "EMOTE Clothing Swap 2026 flyer, shared by Skylar Belt 22 Nov 2026",
+   "note": "The flyer gives 2026 dates only; ask whether it continues in 2027.",
    "new": true
   }
  ]
