@@ -1654,5 +1654,688 @@
   "r": "partly",
   "note": "Camp Lakey Gap is a week-long overnight camp for autistic campers of all ages at Christmount in Black Mountain with 1:1 or 1:2 staff; 2026 sessions ran June 14 to July 31 at $2,400 a session (camplakeygap.org). The only Camp Tall Tree found online is in Ann Arbor, Michigan.",
   "src": "KidVoyage and Macaroni KID listings for Camp Lakey Gap; Beaming Health listing for Camp Tall Tree"
+ },
+ {
+  "id": "olson-huff-center",
+  "r": "confirmed",
+  "src": "NPI registry and Mission Health provider profiles (Olson Huff Center, 11 Vanderbilt Park Dr, 828-213-1780)"
+ },
+ {
+  "id": "weighted-blankets-project-linus",
+  "r": "nocheck"
+ },
+ {
+  "id": "written-guides-moving-with-an-autistic-child",
+  "r": "nocheck"
+ },
+ {
+  "id": "when-the-school-will-not-put-it-in-writing-i",
+  "r": "nocheck"
+ },
+ {
+  "id": "haircuts",
+  "r": "nocheck"
+ },
+ {
+  "id": "asl-teletherapy",
+  "r": "nocheck"
+ },
+ {
+  "id": "catherine-faherty",
+  "r": "nocheck"
+ },
+ {
+  "id": "inclusive-childrens-books-autism-neurodiversity",
+  "r": "nocheck"
+ },
+ {
+  "id": "100-toward-home-safety-equipment-simply-home",
+  "r": "nocheck"
+ },
+ {
+  "id": "vaya-pays-for-the-ged-exam-fees-included-ged",
+  "r": "nocheck"
+ },
+ {
+  "id": "campfire-behavioral-health-campfire-aba-no-w",
+  "r": "nocheck"
+ },
+ {
+  "id": "sensory-friendly-santa-tanger-2026-12-11",
+  "r": "nocheck"
+ },
+ {
+  "id": "feeding-difficulties-and-food-refusal-where",
+  "r": "nocheck"
+ },
+ {
+  "id": "ncworks-pass-to-earn-a-laptop",
+  "r": "nocheck"
+ },
+ {
+  "id": "a-b-tech-phlebotomy-certificate",
+  "r": "nocheck"
+ },
+ {
+  "id": "finish-line-grants-community-college-emergency-grants",
+  "r": "nocheck"
+ },
+ {
+  "id": "healthy-blue-extra-benefits-school-supplies",
+  "r": "nocheck"
+ },
+ {
+  "id": "healthy-blue-extra-benefits-sensory-asthma-e",
+  "r": "nocheck"
+ },
+ {
+  "id": "beacon-community-center-english-class",
+  "r": "partly",
+  "note": "The schedule was posted for October 2026; ask the center whether the classes continue in November and December.",
+  "src": "date review 23 Nov 2026: the listed month has passed"
+ },
+ {
+  "id": "child-find-age-3-and-over",
+  "r": "nocheck"
+ },
+ {
+  "id": "already-autism-health",
+  "r": "nocheck"
+ },
+ {
+  "id": "step-more-than-a-job-nc-mtaj-nc-at-a-b-tech",
+  "r": "nocheck"
+ },
+ {
+  "id": "teacch-autism-program",
+  "r": "partly",
+  "note": "TEACCH's own site gives the Asheville center's main line as 919-445-7020 (Spanish 919-445-0349) and does not list 828-251-6319. Referrals start with the intake forms on the center's Referral page.",
+  "src": "teacch.com Asheville TEACCH Center pages and referral process page"
+ },
+ {
+  "id": "under-age-3",
+  "r": "confirmed",
+  "note": "Referrals can be made by phone, fax, in writing or in person.",
+  "src": "NCDHHS CDSA directory and Find Your CDSA page (2500 Heart Dr, Suite 100, 828-250-3400)"
+ },
+ {
+  "id": "my-village-asheville-voluntary-child-hosting",
+  "r": "partly",
+  "note": "My Village Ministries describes a church network with a referral line that connects families in crisis with short-term host families; a web search did not confirm this phone. Eckerd's Angel's Watch (ages 0-10, licensed host homes up to 90 days) is a similar option in Asheville.",
+  "src": "My Village Ministries mission page; eckerd.org Angel's Watch pages"
+ },
+ {
+  "id": "children-first-cis-learning-centers",
+  "r": "partly",
+  "note": "Children First/Communities In Schools runs after-school enrichment, student support specialists and family resource centers for K-6 students; a web search did not confirm the current learning center schedule, so call.",
+  "src": "MapQuest and Idealist listings; Buncombe County Schools Children First/CIS page; United Way community schools pages"
+ },
+ {
+  "id": "buncombe-county-democratic-party",
+  "r": "nocheck"
+ },
+ {
+  "id": "jmpro-community-media",
+  "r": "nocheck"
+ },
+ {
+  "id": "la-esperanza-co-op",
+  "r": "nocheck"
+ },
+ {
+  "id": "language-justice-spanish-language-media-and",
+  "r": "nocheck"
+ },
+ {
+  "id": "regional-bilingual-community-hubs",
+  "r": "nocheck"
+ },
+ {
+  "id": "the-emma-neighborhood-cooperative-ecosystem",
+  "r": "nocheck"
+ },
+ {
+  "id": "duke-energy-share-the-light-and-winter-morat",
+  "r": "nocheck"
+ },
+ {
+  "id": "deaf-community-organizations-nc-association",
+  "r": "nocheck"
+ },
+ {
+  "id": "asl-learning-asl-university-blue-ridge-cc-cs",
+  "r": "nocheck"
+ },
+ {
+  "id": "hands-voices-nc-guide-by-your-side",
+  "r": "nocheck"
+ },
+ {
+  "id": "linea-de-salud-mental-vaya",
+  "r": "confirmed",
+  "src": "vayahealth.com contact page: Member and Recipient Services 1-800-962-9003"
+ },
+ {
+  "id": "legal-aid-nc",
+  "r": "confirmed",
+  "src": "legalaidnc.org: helpline 1-866-219-LANC (5262)"
+ },
+ {
+  "id": "audiology-unc-pediatric-carolina-hearing-tin",
+  "r": "confirmed",
+  "src": "uncchildrens.org pediatric audiology page (scheduling 984-974-4479)"
+ },
+ {
+  "id": "salud-mental-bilingue",
+  "r": "nocheck"
+ },
+ {
+  "id": "bilingual-health-and-mental-health-providers",
+  "r": "nocheck"
+ },
+ {
+  "id": "crisis-24-7",
+  "r": "confirmed",
+  "note": "RHA Crisis Móvil cubre Buncombe, Henderson, Madison, McDowell, Mitchell, Polk, Rutherford, Transylvania, Yancey y otros; no se necesita seguro y no cuesta nada.",
+  "src": "NCDHHS Find a Mobile Crisis Team (Buncombe: RHA Health Services West, 888-573-1006); rhahealthservices.org mobile crisis page"
+ },
+ {
+  "id": "linea-de-comida-manna",
+  "r": "confirmed",
+  "src": "mannafoodbank.org MANNA Food Helpline page: call or text 828-290-9749, weekdays 9am-4pm"
+ },
+ {
+  "id": "vecinos-farmworker-health-program",
+  "r": "partly",
+  "note": "Vecinos runs mobile clinics, diabetes and nutrition classes, a food pantry and a car seat program for farmworker families; an older listing says the mobile clinic runs about three days a week May to November. A web search did not confirm this phone, so check vecinos.org.",
+  "src": "NC Farmworker Health Program spotlight on Vecinos; NCFH outreach profile (2025); Jackson County LocalWiki"
+ },
+ {
+  "id": "vecinos-farmworker-health",
+  "r": "partly",
+  "note": "Una búsqueda en internet no confirmó este teléfono; revise vecinos.org. La clínica móvil funciona sobre todo de mayo a noviembre.",
+  "src": "NC Farmworker Health Program spotlight on Vecinos; Jackson County LocalWiki"
+ },
+ {
+  "id": "crossnore-communities-for-children",
+  "r": "partly",
+  "note": "Crossnore's respite foster care (a few hours up to 30 days) is described for children already placed with a Crossnore foster family; its western office is in Hendersonville. A web search did not confirm the 866 number.",
+  "src": "Crossnore Foster Care and Adoptions brochure (2022), crossnore.org about and foster care pages"
+ },
+ {
+  "id": "cula-centro-unido-latino-americano",
+  "r": "partly",
+  "note": "The address is confirmed (walk-ins accepted) but a web search did not confirm the phone; it focuses on language access, food security and health care for the Latino community.",
+  "src": "WhyHunger listing (79 Academy St, Marion), New Profit partner page, UNC Building Integrated Communities (Marion)"
+ },
+ {
+  "id": "el-centro-of-henderson-county",
+  "r": "confirmed",
+  "src": "Henderson County community resources guide (Nov 2025) and Immigration Advocates directory (508 N Grove St, 828-290-7134)"
+ },
+ {
+  "id": "true-ridge",
+  "r": "confirmed",
+  "note": "Its Family Immigration Program offers low-bono attorney help (asylum, DACA, family petitions, citizenship, T visas, TPS) for Western NC, with mobile outreach.",
+  "src": "Immigration Advocates national directory (204 6th Ave W, 828-205-1170); Hendersonville Lightning"
+ },
+ {
+  "id": "true-ridge-programa-de-inmigracion-familiar",
+  "r": "confirmed",
+  "src": "Immigration Advocates national directory: True Ridge Family Immigration Program, 828-205-1170"
+ },
+ {
+  "id": "identificacion-faithaction",
+  "r": "partly",
+  "note": "Una búsqueda en internet no encontró una jornada de FaithAction ID en Marion para 2026; llame antes de ir.",
+  "src": "FaithAction ID Network pages; no 2026 Marion listing found"
+ },
+ {
+  "id": "cenzontle-language-justice-cooperative",
+  "r": "partly",
+  "note": "The row gives two phones (828-490-7643 in the phone field and 828-551-0550 in the write-up) and a web search confirmed neither; contact the cooperative through cenzontle.coop. It offers simultaneous interpretation in person and online.",
+  "src": "Explore Asheville supplier listing; WNC Health Policy podcast on language access (2023)"
+ },
+ {
+  "id": "blue-ridge-health-arden",
+  "r": "partly",
+  "setIfEmpty": {
+   "a": "303 Airport Rd, Arden"
+  },
+  "note": "One directory gives 828-698-2979 at 303 Airport Rd, another 828-388-7500 for pediatric neurology there; Blue Ridge Health's main line is 828-692-4289 and its pediatric dental surgery line 828-233-2257.",
+  "src": "Black Health clinic listing, brchs.com Rainbow Pediatrics Neurology and pediatric oral surgery pages, Henderson County resource guide (Nov 2025)"
+ },
+ {
+  "id": "despensas-callejeras-beloved-24-7",
+  "r": "confirmed",
+  "src": "belovedasheville.com street pantries page and pantry instructions (828-571-0766)"
+ },
+ {
+  "id": "beginnings-of-nc",
+  "r": "confirmed",
+  "note": "Free for NC parents and caregivers of a child birth to 21 who is deaf or hard of hearing; toll-free in NC 1-800-541-4327, voice and TTY.",
+  "src": "NIDCD directory and NC newborn hearing referral form (ncbegin.org, 919-715-4092)"
+ },
+ {
+  "id": "food-spanish-first-sites-no-id-required",
+  "r": "nocheck"
+ },
+ {
+  "id": "bilingual-legal-and-immigration-help",
+  "r": "nocheck"
+ },
+ {
+  "id": "bilingual-early-childhood-literacy-and-adult",
+  "r": "nocheck"
+ },
+ {
+  "id": "caring-for-children-respite-scholarship",
+  "r": "nocheck"
+ },
+ {
+  "id": "la-promesa-true-ridge",
+  "r": "nocheck"
+ },
+ {
+  "id": "true-ridge-la-promesa",
+  "r": "nocheck"
+ },
+ {
+  "id": "buncombe-county-kinship-support-group",
+  "r": "nocheck"
+ },
+ {
+  "id": "a-b-tech",
+  "r": "nocheck"
+ },
+ {
+  "id": "buncombe-county-dss-respite-foster-homes",
+  "r": "partly",
+  "note": "828-250-5868 is the county's foster licensing line (familiesforkids@buncombecounty.org); the licensing workers are listed at 35 Woodfin St.",
+  "src": "Buncombe County foster home licensure brochure and getting-started page"
+ },
+ {
+  "id": "interpreting-rights-in-hospitals-and-schools",
+  "r": "nocheck"
+ },
+ {
+  "id": "immigration-legal-services-pisgah-legal-cath",
+  "r": "nocheck"
+ },
+ {
+  "id": "lgbtqia-family-law-attorneys",
+  "r": "nocheck"
+ },
+ {
+  "id": "pro-se-self-filing-court-tools-ecourts-guide",
+  "r": "nocheck"
+ },
+ {
+  "id": "unbundled-limited-scope-legal-help",
+  "r": "nocheck"
+ },
+ {
+  "id": "lifeline",
+  "r": "nocheck"
+ },
+ {
+  "id": "low-income-internet",
+  "r": "nocheck"
+ },
+ {
+  "id": "pcs-for-people",
+  "r": "nocheck"
+ },
+ {
+  "id": "westngn-land-of-sky",
+  "r": "nocheck"
+ },
+ {
+  "id": "dance-music-and-theater-programs-several-wit",
+  "r": "nocheck"
+ },
+ {
+  "id": "family-yoga-sliding-scale-west-asheville-yog",
+  "r": "nocheck"
+ },
+ {
+  "id": "gymnastics-programs-several-with-sliding-sca",
+  "r": "nocheck"
+ },
+ {
+  "id": "live-calendars-to-follow",
+  "r": "nocheck"
+ },
+ {
+  "id": "affirming-healthcare",
+  "r": "nocheck"
+ },
+ {
+  "id": "black-hair-care-for-foster-adoptive-transrac",
+  "r": "nocheck"
+ },
+ {
+  "id": "building-bridges-of-asheville",
+  "r": "nocheck"
+ },
+ {
+  "id": "d-snap-and-fema-in-spanish",
+  "r": "nocheck"
+ },
+ {
+  "id": "note-shelter-safety-for-trans-and-non-binary",
+  "r": "nocheck"
+ },
+ {
+  "id": "pflag-asheville",
+  "r": "nocheck"
+ },
+ {
+  "id": "peace-gardens-market",
+  "r": "nocheck"
+ },
+ {
+  "id": "shiloh-community-association",
+  "r": "nocheck"
+ },
+ {
+  "id": "southside-community-farm",
+  "r": "nocheck"
+ },
+ {
+  "id": "findhelp-org",
+  "r": "nocheck"
+ },
+ {
+  "id": "appalachian-mountain-health-fair-nc-medassis",
+  "r": "nocheck"
+ },
+ {
+  "id": "cherokee-animal-care-pet-food-distribution-w",
+  "r": "nocheck"
+ },
+ {
+  "id": "duke-energy-winter-moratorium",
+  "r": "nocheck"
+ },
+ {
+  "id": "ffa-nc-kinship-conference",
+  "r": "nocheck"
+ },
+ {
+  "id": "fiesta-de-la-herencia-hispana",
+  "r": "nocheck"
+ },
+ {
+  "id": "foster-family-alliance-teaming-with-teens-se",
+  "r": "nocheck"
+ },
+ {
+  "id": "healthy-heroes-kids-carnival-grace-lutheran",
+  "r": "nocheck"
+ },
+ {
+  "id": "nc-pre-k-head-start-applications",
+  "r": "nocheck"
+ },
+ {
+  "id": "one-time-and-rotating-events-verify-dates-th",
+  "r": "nocheck"
+ },
+ {
+  "id": "recurring-annual-windows-to-plan-around",
+  "r": "nocheck"
+ },
+ {
+  "id": "samaritan-s-feet-senior-shoe-distribution-sy",
+  "r": "nocheck"
+ },
+ {
+  "id": "to-find-current-one-time-events",
+  "r": "nocheck"
+ },
+ {
+  "id": "deaflead",
+  "r": "nocheck"
+ },
+ {
+  "id": "pregnancy-birth-postpartum-circle-forming",
+  "r": "nocheck"
+ },
+ {
+  "id": "between-heartbeats-pregnancy-infant-loss-group",
+  "r": "nocheck"
+ },
+ {
+  "id": "little-smiles-day-with-santa-arden-2026-12-12",
+  "r": "nocheck"
+ },
+ {
+  "id": "botanical-gardens-at-asheville",
+  "r": "nocheck"
+ },
+ {
+  "id": "folk-art-center-southern-highland-craft-guild",
+  "r": "nocheck"
+ },
+ {
+  "id": "free-outdoor-and-nature-play-for-young-children",
+  "r": "nocheck"
+ },
+ {
+  "id": "hands-on-childrens-museum-hendersonville",
+  "r": "nocheck"
+ },
+ {
+  "id": "museums-for-all-wnc",
+  "r": "nocheck"
+ },
+ {
+  "id": "free-museums-hendersonville",
+  "r": "nocheck"
+ },
+ {
+  "id": "carl-sandburg-home-flat-rock",
+  "r": "nocheck"
+ },
+ {
+  "id": "beaver-lake-bird-sanctuary",
+  "r": "nocheck"
+ },
+ {
+  "id": "center-for-craft-asheville",
+  "r": "nocheck"
+ },
+ {
+  "id": "asheville-museum-of-history",
+  "r": "nocheck"
+ },
+ {
+  "id": "vance-birthplace-weaverville",
+  "r": "nocheck"
+ },
+ {
+  "id": "thomas-wolfe-memorial",
+  "r": "nocheck"
+ },
+ {
+  "id": "mountain-gateway-museum-old-fort",
+  "r": "nocheck"
+ },
+ {
+  "id": "kid-senses-museum-rutherfordton",
+  "r": "nocheck"
+ },
+ {
+  "id": "splasheville-pack-square",
+  "r": "nocheck"
+ },
+ {
+  "id": "free-skate-parks-wnc",
+  "r": "nocheck"
+ },
+ {
+  "id": "family-basketball-stephens-lee",
+  "r": "nocheck"
+ },
+ {
+  "id": "buncombe-library-wifi",
+  "r": "nocheck"
+ },
+ {
+  "id": "ceremonial-beauty-collective-pay-what-you-can",
+  "r": "nocheck"
+ },
+ {
+  "id": "sliding-scale-legal-representation-nc-legal",
+  "r": "nocheck"
+ },
+ {
+  "id": "endaya-law",
+  "r": "partly",
+  "note": "Una búsqueda en internet no encontró este despacho; confirme en el directorio del NC State Bar antes de enviar a alguien.",
+  "src": "no online listing found for Endaya Law"
+ },
+ {
+  "id": "hora-del-cuento-bilingue",
+  "r": "partly",
+  "note": "El condado anuncia Hora del Cuento en Skyland/South Buncombe los viernes 10:30am (y en otros años en Oakley, Pack y Weaverville); no se encontró la sesión de Enka-Candler. Revise buncombe.librarycalendar.com.",
+  "src": "Buncombe County news releases on bilingual story time; Buncombe library calendar event pages"
+ },
+ {
+  "id": "faithaction-id",
+  "r": "partly",
+  "note": "A web search found no 2026 FaithAction ID drive in Marion; call before going.",
+  "src": "FaithAction ID Network pages; no 2026 Marion listing found"
+ },
+ {
+  "id": "cula-labor-advocacy",
+  "r": "partly",
+  "note": "A web search did not confirm this phone for CULA (79 Academy St, Marion); walk-ins are listed as accepted.",
+  "src": "WhyHunger listing for Centro Unido Latino Americano"
+ },
+ {
+  "id": "madco-herbal-collective-free-herbal-pantry-m",
+  "r": "partly",
+  "note": "These days were posted for the 2025-26 season; ask Ginny Lou's whether the pantry runs this winter.",
+  "src": "date review 23 Nov 2026: the listed season has passed"
+ },
+ {
+  "id": "ssi-ssdi",
+  "r": "confirmed",
+  "src": "SSA office directories (800 Centre Park Dr, Asheville 28805, Mon-Fri 9am-4pm; 866-572-8361 and national 800-772-1213)"
+ },
+ {
+  "id": "social-security-administration",
+  "r": "confirmed",
+  "src": "SSA office directories (800 Centre Park Dr, Asheville 28805, Mon-Fri 9am-4pm; 866-572-8361 and national 800-772-1213)"
+ },
+ {
+  "id": "ncba-lawyer-referral-service",
+  "r": "partly",
+  "note": "Calling and getting a referral is free; the first 30-minute consult is capped at $50. The NC Bar's own page gives the call center as 919-677-8574 (nccourts.gov still lists 1-800-662-7660), so try that if the 800 number does not connect.",
+  "src": "ncbar.org Lawyer Referral Service page and FAQ; nccourts.gov Find an Attorney"
+ },
+ {
+  "id": "ncworks-career-center",
+  "r": "confirmed",
+  "note": "In-person and virtual appointments; email ncworks.1700@nccommerce.com.",
+  "src": "A-B Tech NCWorks Career Center page (48 Grove St, 828-251-6200, Mon-Fri 8:30am-5pm)"
+ },
+ {
+  "id": "ontrack-wnc",
+  "r": "confirmed",
+  "note": "The office is on the second floor of the United Way building, 50 S French Broad Ave, Suite 227.",
+  "src": "OnTrack WNC contact page (255-5166); BBB profile (800-737-5485)"
+ },
+ {
+  "id": "custody-mediation-and-supervised-visitation",
+  "r": "partly",
+  "note": "The Mediation Center (mediatewnc.org, info@mediatewnc.org) runs supervised visitation and safe exchange for families affected by domestic violence; one listing gives 40 N French Broad Ave, Suite B. A court referral form gives the Buncombe court custody mediator as 828-259-6505. A web search did not confirm 828-251-6089 or the Suite 258 address.",
+  "src": "OurFamilyWizard listing for The Mediation Center; Buncombe County grant report (2022-23); nccourts.gov local form 599 and custody mediation page"
+ },
+ {
+  "id": "one-buncombe-call-center",
+  "r": "partly",
+  "note": "County notices give the call center's hours as Mon-Fri 9am-5pm; the Helene Resource Center at 94 Coxe Ave was listed 8am-5pm. These are 2025 notices, so check buncombeready.org for 2026.",
+  "src": "Buncombe County Helene one-pagers (2025) and disaster assistance page"
+ },
+ {
+  "id": "nc-disaster-case-management",
+  "r": "confirmed",
+  "note": "Intake is also online at ncdps.gov/helene/dcm.",
+  "src": "Buncombe County notices and NC DPS Helene disaster case management page (844-746-2326)"
+ },
+ {
+  "id": "blue-ridge-pride-center",
+  "r": "partly",
+  "note": "The phone is confirmed by the CenterLink directory; a web search did not confirm the Biltmore Ave address, so ask before visiting.",
+  "src": "CenterLink LGBT community center directory (828-820-3993)"
+ },
+ {
+  "id": "postpartum-support-international-psi",
+  "r": "confirmed",
+  "note": "Call 1-800-944-4773 (press 1 for Spanish), or text 800-944-4773 in English or 971-203-7773 in Spanish; volunteers return messages. For a 24/7 line, the National Maternal Mental Health Hotline is 1-833-TLC-MAMA (1-833-852-6262).",
+  "src": "postpartum.net PSI HelpLine page; Minnesota Department of Health PMAD contacts"
+ },
+ {
+  "id": "campaign-for-southern-equality",
+  "r": "confirmed",
+  "note": "Its LGBTQ+ Resource Center has been open at 20 Oak St one day a month, 11am-5pm (2025); mail goes to PO Box 364, Asheville 28802.",
+  "src": "southernequality.org contact page and resource center page"
+ },
+ {
+  "id": "12-baskets-tech-help-tuesdays",
+  "r": "partly",
+  "note": "A web search did not confirm the tech help hour; 12 Baskets is listed giving free to-go meals and groceries Tuesdays and Fridays 11am-1pm. Buncombe libraries also offer free tech help.",
+  "src": "Mountain Xpress and WLOS (2026) on 12 Baskets Cafe"
+ },
+ {
+  "id": "asheville-christian-refugee-ministry",
+  "r": "partly",
+  "note": "A web search found no listing for this ministry at 104 Eastside Dr; confirm on acrnc.org before sending anyone. Swannanoa Valley Christian Ministry (101 N Ridgeway Ave, 828-669-9404) also helps with household needs in Black Mountain.",
+  "src": "United Way of Asheville and Buncombe article on ACR (Black Mountain warehouse); community resource list"
+ },
+ {
+  "id": "rha-deaf-and-hard-of-hearing-services",
+  "r": "confirmed",
+  "note": "Staff are fluent in English and ASL (most are Deaf, Hard of Hearing or DeafBlind); serves all 100 counties in person and online, weekdays 8am-5pm. A web search did not confirm the Sweeten Creek address.",
+  "src": "rhahealthservices.org NC Deaf and Hard of Hearing program page; NCDHHS Deaf and Hard of Hearing services page"
+ },
+ {
+  "id": "vaya-health-member-line",
+  "r": "confirmed",
+  "src": "vayahealth.com contact page: Member and Recipient Services 1-800-962-9003, Mon-Sat 7am-6pm"
+ },
+ {
+  "id": "family-resource-center-at-emma",
+  "r": "changed",
+  "expect": {
+   "a": "175 Bingham Rd",
+   "d": "(Children First/CIS): 175 Bingham Rd, Asheville. 828-259-9717 / 828-779-4549. info@childrenfirstbc.org. Pantry, emergency financial help, school supplies, referrals, parent workshops."
+  },
+  "set": {
+   "a": "37 Brickyard Rd, Asheville (Emma Elementary campus)",
+   "d": "(Children First/CIS): 37 Brickyard Rd, Asheville (Emma Elementary campus). 828-259-9717 / 828-779-4549. info@childrenfirstbc.org. Pantry, emergency financial help, school supplies, referrals, parent workshops."
+  },
+  "note": "175 Bingham Rd is listed for the Buncombe County Schools Foundation, not this center.",
+  "src": "NLD and Idealist listings (37 Brickyard Rd, 828-259-9717); Asheville Chamber directory (175 Bingham Rd is the BCS Foundation)"
+ },
+ {
+  "id": "pregnancy-medicaid-and-wic",
+  "r": "partly",
+  "note": "The county's WIC clinic is at 40 Coxe Ave, weekdays 8am-5pm, reached through the main line 828-250-5000; a web search did not confirm 828-250-5795.",
+  "src": "buncombecounty.org Nutrition (WIC) page and HHS brochure"
+ },
+ {
+  "id": "buncombe-county-health-human-services",
+  "r": "confirmed",
+  "src": "buncombecounty.org clinical services, nutrition and foster care pages (main 828-250-5000; Economic and Social Work Services 828-250-5500)"
+ },
+ {
+  "id": "pisgah-legal-children-s-law-program",
+  "r": "confirmed",
+  "note": "Apply online or by phone, Mon-Fri 8:30am-5pm. Pisgah Legal does not take custody cases except for domestic violence survivors and grandparents raising grandchildren.",
+  "src": "pisgahlegal.org contact page, child custody and legal guardianship page and Legal Aid brochure (Aug 2025)"
  }
 ]
