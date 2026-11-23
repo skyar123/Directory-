@@ -1218,3 +1218,14 @@ ul.plan-list { padding-left: 0; list-style: none; }
 .home { grid-template-columns: minmax(0, 1fr); }
 .strip { max-width: 100%; }
 .goto-row { min-width: 0; }
+
+/* Back and Home, on every screen but the home screen */
+.home-link { background: none; border: 0; padding: 0; cursor: pointer; color: inherit; font: inherit; text-align: left; }
+.title-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+.crumbs { position: sticky; top: var(--top-h, 0); z-index: 15; max-width: none; margin: 0; padding: 8px 16px;
+  background: var(--surface); border-bottom: 1px solid var(--line); display: flex; align-items: center; gap: 10px; }
+.crumbs span[aria-current] { flex: 1; min-width: 0; text-align: center; font-size: 14.5px; }
+.crumb-back, .crumb-home { flex: none; display: inline-flex; align-items: center; gap: 5px; border: 1px solid var(--line-strong);
+  background: #fff; color: var(--accent); border-radius: 999px; padding: 6px 12px; font-weight: 650; font-size: 14px;
+  cursor: pointer; min-height: 36px; }
+.crumb-back:hover, .crumb-home:hover { border-color: var(--accent); background: var(--accent-tint); }

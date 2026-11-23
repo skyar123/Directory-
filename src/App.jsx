@@ -27,7 +27,7 @@ import { factsOf, FACETS, FACET_LABEL } from "./facets.js";
 /* Four places, the same on a phone and a computer: the everyday tools,
    and More for the rest (research: 2 to 6 top-level choices). */
 const TOP = [
-  ["find", "Find", "search"],
+  ["find", "Home", "house"],
   ["today", "Today", "calendar"],
   ["plan", "Plan", "clipboard"],
   ["more", "More", "grid"],
@@ -118,6 +118,16 @@ export default function App() {
   };
   const [toast, setToast] = useState("");
   const tabsRef = useRef(null);
+  /* the header's height, so the Back and Home bar can stay pinned under it */
+  const topRef = useRef(null);
+  const [topH, setTopH] = useState(0);
+  useEffect(() => {
+    const el = topRef.current;
+    if (!el || typeof ResizeObserver === "undefined") return undefined;
+    const ro = new ResizeObserver(() => setTopH(el.offsetHeight));
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
 
   /* a need tapped in an Ask AI answer opens its SNIFF question, with
      everything the directory files under it */
@@ -239,8 +249,9 @@ export default function App() {
     const onlyTyping = prev.view === route.view && prev.id === route.id && prev.sec === route.sec
       && prev.gaps === route.gaps && prev.f.join() === route.f.join();
     if (onlyTyping) { window.history.replaceState(window.history.state, "", h); return; }
-    window.history.replaceState({ ...(window.history.state || {}), y: window.scrollY }, "", window.location.hash || "#/find");
-    window.history.pushState({ y: 0 }, "", h);
+    const idx = (window.history.state && window.history.state.idx) || 0;
+    window.history.replaceState({ ...(window.history.state || {}), y: window.scrollY, idx }, "", window.location.hash || "#/find");
+    window.history.pushState({ y: 0, idx: idx + 1 }, "", h);
   }, [view, pageId, q, secFilter, onlyGaps, facets.join()]); // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => {
     const onPop = (e) => {
@@ -256,6 +267,17 @@ export default function App() {
   }, []);
   /* go somewhere new, at the top of the page */
   const go = (v) => { setView(v); setFilterOpen(false); window.scrollTo(0, 0); };
+  /* Home: the home screen, with the search and filters cleared, from anywhere */
+  const goHome = () => {
+    setQ(""); setFacets([]); setSecFilter(""); setOnlyGaps(false); setBrowseAll(false); setPageId(""); setOpenId("");
+    go("find");
+  };
+  /* Back: the screen you came from inside the app; on a page opened from a
+     link (nothing to go back to), the screen above it */
+  const goBack = () => {
+    if (window.history.state && window.history.state.idx > 0) { window.history.back(); return; }
+    if (view === "find") goHome(); else go(PARENT[view] || "find");
+  };
   const openPage = (id) => { setPageId(id); noteRecent(id); go("resource"); };
 
   const edit = (id, key, value) => {
@@ -499,13 +521,15 @@ export default function App() {
   };
 
   return (
-    <div className="wnc">
-      <header className="top">
+    <div className="wnc" style={{ "--top-h": topH + "px" }}>
+      <header className="top" ref={topRef}>
         <div className="brand">
           <button className="crisis-btn" onClick={() => setCrisisOpen(true)} aria-haspopup="dialog">Crisis lines</button>
-          <span className="mark"><Logo /></span>
+          <button className="home-link" onClick={goHome} aria-label="Home screen">
+            <span className="mark"><Logo /></span>
+          </button>
           <div>
-            <h1>WNC Family Resource Directory <span className="internal-tag">Internal use only</span></h1>
+            <h1><button className="home-link title-link" onClick={goHome}>WNC Family Resource Directory</button> <span className="internal-tag">Internal use only</span></h1>
             <p>
               {resources.length} resources, in the order the SNIFF asks.{" "}
               {saving && <em>{saving}</em>}
@@ -536,7 +560,7 @@ export default function App() {
           {TOP.map(([id, label]) => {
             const on = view === id || PARENT[view] === id;
             return (
-              <button key={id} className={"tab" + (on ? " tab-on" : "")} onClick={() => go(id)}
+              <button key={id} className={"tab" + (on ? " tab-on" : "")} onClick={() => (id === "find" ? goHome() : go(id))}
                 aria-current={on ? "page" : undefined}>
                 {label}{id === "plan" && plan.items.length ? ` (${plan.items.length})` : ""}
               </button>
@@ -551,7 +575,7 @@ export default function App() {
           const on = view === id || PARENT[view] === id;
           return (
             <button key={id} className={"bn" + (on ? " bn-on" : "")} aria-current={on ? "page" : undefined}
-              onClick={() => go(id)}>
+              onClick={() => (id === "find" ? goHome() : go(id))}>
               <Icon name={icon} size={20} />
               <span>{label}{id === "plan" && plan.items.length ? ` (${plan.items.length})` : ""}</span>
             </button>
@@ -559,13 +583,16 @@ export default function App() {
         })}
       </nav>
 
-      {/* where you are, and the way back up, for anything below the four places */}
-      {PARENT[view] && view !== "ask" && (
+      {/* on every screen but the home screen: Back to where you were, and Home */}
+      {!(view === "find" && home) && (
         <nav className="crumbs" aria-label="You are here">
-          <button className="linkish" onClick={() => (view === "resource" && window.history.length > 1 ? window.history.back() : go(PARENT[view]))}>
-            ‹ {view === "resource" ? "Back" : TOP.find(([id]) => id === PARENT[view])[1]}
-          </button>
-          <span aria-current="page">{view === "resource" ? (resById.get(pageId)?.name || "Program") : TITLE[view]}</span>
+          <button className="crumb-back" onClick={goBack} aria-label="Back">‹ Back</button>
+          <span aria-current="page">
+            {view === "resource" ? (resById.get(pageId)?.name || "Program")
+              : view === "find" ? (q.trim() ? `Results for “${q.trim()}”` : "The whole directory")
+              : TITLE[view] || TOP.find(([id]) => id === view)?.[1]}
+          </span>
+          <button className="crumb-home" onClick={goHome}><Icon name="house" size={15} />Home</button>
         </nav>
       )}
 

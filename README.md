@@ -86,6 +86,11 @@ a call button each; saved and recently opened programs; then the need tiles. The
 crisis lines are behind the red **Crisis lines** button in the header, on every
 screen.
 
+**Back and Home.** Every screen but the home screen has a bar pinned under the
+header: **‹ Back** returns to the screen you came from (on a page opened from a
+link, the screen above it) and **Home** returns to the home screen with the search
+and filters cleared. The Home tab and the app's name in the header do the same.
+
 **Getting around.** Four places, the same on a phone (along the bottom) and a
 computer (along the top): **Find**, **Today** (food open today, how many
 programs list hours for today, and the next seven days of events), **Plan**, and
