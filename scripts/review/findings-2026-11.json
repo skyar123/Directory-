@@ -1374,5 +1374,285 @@
   "r": "partly",
   "note": "The address is confirmed (indoor gym and play space), but a web search found no listing of a Wild Things free play session; call to check the day and time.",
   "src": "ClassCub and Macaroni KID listings for Asheville Community Movement, 812 Riverside Dr"
+ },
+ {
+  "id": "pathways-org-milestone-handouts",
+  "r": "nocheck"
+ },
+ {
+  "id": "what-a-young-person-can-consent-to-on-their",
+  "r": "nocheck"
+ },
+ {
+  "id": "in-lieu-of-services-the-alternatives-to-resi",
+  "r": "nocheck"
+ },
+ {
+  "id": "recommended-listening-and-reading-for-foster",
+  "r": "nocheck"
+ },
+ {
+  "id": "asheville-community-movement",
+  "r": "nocheck"
+ },
+ {
+  "id": "samaritan-s-feet-senior-shoe-distributions",
+  "r": "nocheck"
+ },
+ {
+  "id": "mckinney-vento",
+  "r": "confirmed",
+  "note": "The district page says to call or text 828-775-1898 in a homeless crisis; Student Services is 828-255-5918.",
+  "src": "buncombeschools.org homeless education page (McKinney-Vento and Foster Care Coordinator, 828-775-1898)"
+ },
+ {
+  "id": "verner-center-for-resilience",
+  "r": "partly",
+  "note": "Directories list 566 N Louisiana Ave and 828-348-7540 as Verner Central, a site of the Verner Center for Early Learning (Verner East is 2586 Riceville Rd, 828-298-0808).",
+  "src": "Feedam listing (Verner Central), Asheville Chamber directory and Idealist (Verner Center for Early Learning)"
+ },
+ {
+  "id": "irene-wortham-early-learning-center",
+  "r": "partly",
+  "note": "The child care licensing directory lists the center (five-star, 115 children) with 828-274-6066; if 274-7518 does not reach the early learning center, try that.",
+  "src": "childcarecenter.us and Winnie listings for 916 W Chapel Rd"
+ },
+ {
+  "id": "council-on-aging-of-buncombe-county",
+  "r": "confirmed",
+  "note": "Also lists Call A Ride volunteer senior transportation, an in-home aide waitlist and an Elder Justice Navigator for people 60 and over.",
+  "src": "NCDHHS Information and Options Counseling provider directories (FY26, FY27); Buncombe County aging services descriptions; BenefitsCheckUp"
+ },
+ {
+  "id": "access-family-services",
+  "r": "partly",
+  "setIfEmpty": {
+   "a": "1100 Ridgefield Blvd, Suite 190, Asheville"
+  },
+  "note": "Clarvida now lists this office and phone (1100 Ridgefield Blvd, Suite 190) with intensive in-home services; Access Family Services appears to operate as Clarvida. Most clients use Medicaid.",
+  "src": "Clarvida Asheville Ridgefield page (828-670-7723), CARF provider listing, FSU College of Social Work agency page"
+ },
+ {
+  "id": "vaya-access-family-services",
+  "r": "partly",
+  "note": "The office and phone are now listed under Clarvida (1100 Ridgefield Blvd, Suite 190). Vaya announced the autism-specific foster homes with Access Family Services in 2021; ask whether the network is still taking placements.",
+  "src": "Clarvida Asheville page; Vaya news release (Feb 2021)"
+ },
+ {
+  "id": "aspire-youth-family",
+  "r": "partly",
+  "note": "A web search did not confirm 828-236-2877 for Children's Hope Alliance or Aspire; Children's Hope Alliance lists 1-800-320-4157 and an Asheville office at 60 Livingston St, Suite 100.",
+  "src": "Teaching-Family Association listing (2020), Datanyze company profile"
+ },
+ {
+  "id": "private-foster-care-licensing-agencies",
+  "r": "partly",
+  "note": "A web search did not confirm 828-236-2877 for Children's Hope Alliance; its listed number is 1-800-320-4157 (Asheville office 60 Livingston St, Suite 100).",
+  "src": "Teaching-Family Association listing (2020), Datanyze company profile"
+ },
+ {
+  "id": "caring-for-children-outpatient-mental-health",
+  "r": "partly",
+  "note": "CARING for Children is now part of Eckerd Connects; listings give 225 E Chestnut St, Asheville, 828-450-3943, and a web search did not find 828-785-1590.",
+  "src": "NPI listings for Caring For Children Inc; eckerd.org CARING for Children services page"
+ },
+ {
+  "id": "clearway-autism-services",
+  "r": "partly",
+  "note": "Clearway is listed as a clinician-owned ABA provider based in Arden serving Asheville, Hendersonville, Waynesville, Sylva and Cherokee. A web search did not confirm the 919 phone or its Vaya contract; ask both when calling.",
+  "src": "Beaming Health provider listing, Career.com job posting (Apr 2026)"
+ },
+ {
+  "id": "warrior-wellness-center-blue-ridge-health-sb",
+  "r": "confirmed",
+  "note": "Students at any school in the Erwin district, their teachers and families can use it; students must be registered with Blue Ridge Health first.",
+  "src": "Buncombe County Schools Erwin Middle community school page; Mountain Xpress and United Way releases on the opening"
+ },
+ {
+  "id": "connected-circles",
+  "r": "confirmed",
+  "note": "Its own site lists BEAR workshops with Buncombe Partnership for Children and Raising Resilience WNC, reflective coaching, and resource navigation and IEP coaching for families, in English and Spanish.",
+  "src": "ConnectEd Circles website (self-reported; no independent listing found)"
+ },
+ {
+  "id": "foster-family-alliance-of-nc-ffa-nc",
+  "r": "confirmed",
+  "note": "Support groups include regional, foster dad, single parent, kinship and medically complex groups, plus monthly Zoom groups.",
+  "src": "Fostering Perspectives (FFA-NC pages), NCDHHS kinship care page"
+ },
+ {
+  "id": "nc-kinship-relative-care",
+  "r": "partly",
+  "note": "NCDHHS now points kinship caregivers to KinshipKonnectNC@dhhs.nc.gov for resources (not case questions; those go to the county DSS) and to ncdhhs.gov/kinshipcare. KinGAP is for licensed kinship caregivers. A web search did not confirm the 888 number.",
+  "src": "ncdhhs.gov kinship/relative care pages and 2026 child welfare letters"
+ },
+ {
+  "id": "eliada-homes",
+  "r": "confirmed",
+  "note": "Referrals to the Vaya and Eliada emergency respite (ages 6-17) go through Vaya, starting with Member and Recipient Services, 1-800-962-9003; the Eliada counseling center takes Medicaid.",
+  "src": "Vaya news story on the Vaya and Eliada care facilities (2023); eliada.org (2 Compton Dr, 828-254-5356); WLOS on the Eliada counseling center"
+ },
+ {
+  "id": "land-of-sky-regional-council-area-agency-on",
+  "r": "confirmed",
+  "setIfEmpty": {
+   "a": "339 New Leicester Hwy, Suite 140, Asheville"
+  },
+  "note": "Ask for the Family Caregiver Specialist. Project C.A.R.E. dementia respite for Buncombe has its own line, 828-251-7432.",
+  "src": "NCDHHS Area Agency on Aging roster (Aug and Nov 2025) and Project C.A.R.E. directory"
+ },
+ {
+  "id": "buncombe-county-hhs-public-agency",
+  "r": "partly",
+  "note": "To become a foster parent, the county's licensing workers are at 828-250-5868 or familiesforkids@buncombecounty.org (35 Woodfin St, Mon-Fri 8am-5pm); 828-250-5500 is the general services line. Licensing starts with MAPP training.",
+  "src": "Buncombe County foster home licensure brochure and getting-started page"
+ },
+ {
+  "id": "vaya-system-of-care-family-partners",
+  "r": "partly",
+  "note": "Vaya's Family Partners page confirms peer parents with lived experience who help with advocacy; a web search did not confirm the SystemofCare email, so start with 1-800-962-9003.",
+  "src": "vayahealth.com Family Partners and System of Care pages"
+ },
+ {
+  "id": "vaya-family-partners",
+  "r": "partly",
+  "note": "Vaya's Family Partners page confirms peer parents with lived experience who help with advocacy; a web search did not confirm the SystemofCare email, so start with 1-800-962-9003.",
+  "src": "vayahealth.com Family Partners and System of Care pages"
+ },
+ {
+  "id": "free-monthly-dads-group-early-childhood",
+  "r": "changed",
+  "expect": {
+   "h": "Monthly; next meeting 11 Nov 2026"
+  },
+  "set": {
+   "h": "Monthly (the November meeting was 11 Nov 2026; ask the poster for the next date)"
+  },
+  "src": "date review 23 Nov 2026: the posted meeting date has passed"
+ },
+ {
+  "id": "healthy-blue-care-together-different-plan-di",
+  "r": "partly",
+  "note": "Member Services 833-777-3611 is confirmed on the plan's member page; a web search found no public listing of 833-597-3985, so check the member card for the crisis line and use 988 or 911 in an emergency.",
+  "src": "healthybluenc.com Children and Families Specialty Plan member page"
+ },
+ {
+  "id": "medical-diagnostic-evaluation-age-3-medicaid",
+  "r": "nocheck"
+ },
+ {
+  "id": "autistic-voices-worth-following",
+  "r": "nocheck"
+ },
+ {
+  "id": "hair-stylists-experienced-with-autistic-kids",
+  "r": "nocheck"
+ },
+ {
+  "id": "occupational-therapy-independent-pediatric-o",
+  "r": "nocheck"
+ },
+ {
+  "id": "unc-teacch-video-changes-in-schedules",
+  "r": "nocheck"
+ },
+ {
+  "id": "early-childhood-transitions-guide",
+  "r": "nocheck"
+ },
+ {
+  "id": "senior-centers-and-programming",
+  "r": "nocheck"
+ },
+ {
+  "id": "transportation",
+  "r": "nocheck"
+ },
+ {
+  "id": "sunshine-project",
+  "r": "nocheck"
+ },
+ {
+  "id": "senior-law-project",
+  "r": "changed",
+  "expect": {
+   "ph": "1-866-219-5262"
+  },
+  "set": {
+   "ph": "1-877-579-7562 / 1-866-219-5262"
+  },
+  "note": "People 60 and over call the Senior Legal Helpline, 1-877-579-7562 (listed Mon-Fri 9-11am and 1-3pm); 1-866-219-5262 is Legal Aid NC's general helpline.",
+  "src": "legalaidnc.org Senior Law Project page and Senior Legal Helpline flyer (Mar 2025); UNC School of Government adult protection page"
+ },
+ {
+  "id": "working-wheels-senior-repair-program",
+  "r": "partly",
+  "note": "Working Wheels's discounted repairs are for people who cannot afford to fix a car they already own; eligibility is by income, not age, and repairs go through its mechanic network. A web search did not confirm this phone; check workingwheelswnc.org.",
+  "src": "Buncombe County strategic partnership report (2024-25), WLOS (Helene car program), National Consumer Law Center car program directory (July 2026)"
+ },
+ {
+  "id": "the-incredible-years-parenting-program",
+  "r": "partly",
+  "note": "A web search found no 2026 Incredible Years group in Buncombe; an Incredible Years sign-up form updated Feb 2026 says the parent program is not available at this time. Buncombe Partnership for Children's current family groups are Kaleidoscope Play and Learn.",
+  "src": "Google Forms Incredible Years parent group update (Feb 2026, organization not named); Buncombe Partnership for Children Eventbrite page"
+ },
+ {
+  "id": "grandis-evaluation-center",
+  "r": "partly",
+  "setIfEmpty": {
+   "a": "1011 Tunnel Rd, Asheville"
+  },
+  "note": "Listed at 1011 Tunnel Rd; a web search did not confirm the phone. An older document says it does not diagnose specific learning disabilities but recommends next steps.",
+  "src": "MapQuest listing, Grandis client consent form, Forensic Resources document"
+ },
+ {
+  "id": "asheville-testing",
+  "r": "confirmed",
+  "setIfEmpty": {
+   "a": "64 Merrimon Ave, Asheville"
+  },
+  "note": "Evaluations for ADHD, learning disability or giftedness, and custody; starts with an hour-long intake.",
+  "src": "NPI registry and Healthline (Asheville Testing PLLC, 64 Merrimon Ave, 828-515-1379); Psychology Today listing"
+ },
+ {
+  "id": "additional-testing-providers-create-roots-ps",
+  "r": "partly",
+  "note": "CReATE is listed online as the Center for Research, Assessment, and Treatment Efficacy (psychological, neuropsychological and psychoeducational evaluations); a web search did not confirm its phone.",
+  "src": "MapQuest directory listing for CReATE"
+ },
+ {
+  "id": "dr-melissa-thingvoll-developmental-pediatric",
+  "r": "partly",
+  "note": "A web search did not find 828-774-5068. Listings place her at the Olson Huff Center (828-213-1780) and at her own practice at 7 Yorkshire St, Suite 101; ask which office takes new patients and which plans.",
+  "src": "Doximity, NPI Finder and Everyday Health listings"
+ },
+ {
+  "id": "speech-therapy-play-talk-grow-firstwnc-indep",
+  "r": "partly",
+  "note": "Play Talk and Grow is listed at 18A Regent Park Blvd, open Tue-Thu 8am-6pm (an unclaimed listing); its registry record gives another address, so confirm before going.",
+  "src": "Birdeye listing (Play Talk and Grow), NPI registry"
+ },
+ {
+  "id": "aba-autism-services",
+  "r": "confirmed",
+  "src": "stgerardhouse.org contact block (620 Oakland St, Hendersonville, 828-693-4223) and resource page; Beaming Health listing for Key Autism Services, Asheville area"
+ },
+ {
+  "id": "isaac-dickson-elementary-acs-preschool-nc-pr",
+  "r": "partly",
+  "note": "Isaac Dickson Elementary itself is at 125 Hill St, main office 828-350-6800; 441 Haywood Rd is the Asheville City Schools Preschool at Asheville Primary.",
+  "src": "SchoolDigger and allk12 listings for Isaac Dickson; MapQuest listing for the ACS Preschool Program"
+ },
+ {
+  "id": "free-school-district-evaluation-age-3-5-or-s",
+  "r": "partly",
+  "note": "Buncombe County Schools serves preschoolers with disabilities from age 3 through an IEP team, in a range of settings (not regular child care); a web search did not confirm the two phone numbers, so ask the district's preschool or Exceptional Children office if they do not answer.",
+  "src": "buncombeschools.org Preschool Services and Special Services pages"
+ },
+ {
+  "id": "neurodiverse-friendly-camps-lakey-gap-tall-t",
+  "r": "partly",
+  "note": "Camp Lakey Gap is a week-long overnight camp for autistic campers of all ages at Christmount in Black Mountain with 1:1 or 1:2 staff; 2026 sessions ran June 14 to July 31 at $2,400 a session (camplakeygap.org). The only Camp Tall Tree found online is in Ann Arbor, Michigan.",
+  "src": "KidVoyage and Macaroni KID listings for Camp Lakey Gap; Beaming Health listing for Camp Tall Tree"
  }
 ]
