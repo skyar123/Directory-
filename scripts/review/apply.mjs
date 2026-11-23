@@ -1,7 +1,8 @@
 /*
  * Apply the web-check findings of the November 2026 review
  * (scripts/review/findings-2026-11.json) to data/. Each finding:
- *   r: confirmed | partly | changed | notfound
+ *   r: confirmed | partly | changed | notfound | nocheck (advice or a
+ *      community list with no facts a web search can settle; left as is)
  *   expect / set: field values to replace (the old value must match)
  *   setIfEmpty: fields to fill only where the row has none
  *   note: a sentence added to the row's note
@@ -32,6 +33,7 @@ for (const f of F) {
     if (m.length !== 1) throw new Error(`no single row for ${f.id} (${m.length})`);
     r = m[0];
   }
+  if (f.r === "nocheck") { done.add(f.id); continue; }
   for (const [k, v] of Object.entries(f.expect || {})) if ((r[k] || "") !== v) throw new Error(`${f.id}.${k} is "${r[k]}", expected "${v}"`);
   for (const [k, v] of Object.entries(f.set || {})) r[k] = v;
   for (const [k, v] of Object.entries(f.setIfEmpty || {})) if (!(r[k] || "").trim()) r[k] = v;
