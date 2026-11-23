@@ -50,7 +50,7 @@ export default function EventCard({ e, soon, resource, onOpen, inPlan, onPlan })
             </span>
           : e.lv
             ? <span className="badge ok">Verified {e.lv}</span>
-            : <span className="badge warn">Never verified</span>}
+            : <span className="badge muted">Not verified yet</span>}
       </div>
 
       {e.note && <p className="callout">{e.note}</p>}

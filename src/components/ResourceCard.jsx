@@ -19,35 +19,78 @@ export function familyText(r) {
     + "what should I bring, can my children come with me, is there an interpreter, and what is the easiest way to get there?";
 }
 
-export default function ResourceCard({ r, open, onToggle, onEdit, onVerify, onCopy, inPlan, onPlan, showGaps }) {
+/* a website as people say it: no https:// or www., and a long address cut to one line */
+const shortWeb = (w) => {
+  const s = String(w || "").replace(/^https?:\/\//, "").replace(/^www\./, "").replace(/\/$/, "");
+  return s.length > 34 ? s.slice(0, 32) + "…" : s;
+};
+
+/* The workbook put short tags and a staff note in one field, split by "|"
+   ("Free, Kids / 0-5 | Verified 8/2026. Applications open in January").
+   Tags become chips; a note (a sentence) is shown as a sentence, not chopped
+   into chips at every comma. */
+const splitTags = (t) => {
+  const chips = [], notes = [];
+  String(t || "").split(/\s*\|\s*/).filter(Boolean).forEach((seg) => {
+    if (seg.length > 30 && /[.:]\s|\.$/.test(seg)) notes.push(seg);
+    else chips.push(...seg.split(/\s*,\s*/).filter(Boolean));
+  });
+  return { chips, notes };
+};
+
+/* one line saying what the program is: the first sentence of its write-up,
+   without a leading "(regional diaper bank):" style aside */
+export const summaryOf = (r) => {
+  const d = String(r.detail || "").replace(/^\([^)]*\):?\s*/, "");
+  const sentences = d.match(/[^.!?]+(?:[.!?](?=\s|$)|$)/g) || [];
+  /* skip sentences that only repeat an address, a phone, a website or an email */
+  const contact = (t) => /^\s*\d+\s+\w/.test(t) || /\b\d{3}[-.)\s]\d{3}[-.\s]\d{4}\b/.test(t) && t.length < 60
+    || /^\s*[\w.-]+\.(org|com|net|gov|coop|edu)\b/i.test(t) || /@/.test(t) && t.length < 60;
+  const first = (sentences.find((t) => t.trim().length > 15 && !contact(t)) || "").trim();
+  if (!first) return "";
+  const cap = first.charAt(0).toUpperCase() + first.slice(1);
+  return cap.length > 120 ? cap.slice(0, 117).replace(/\s+\S*$/, "") + "…" : cap;
+};
+
+export default function ResourceCard({ r, open, onToggle, onEdit, onVerify, onCopy, inPlan, onPlan, showGaps,
+  today, starred, onStar, onPage, page }) {
   const s = SECBY[r.sec] || SECBY.X;
   const [editing, setEditing] = useState(false);
   const tel = r.phone ? r.phone.split(/[/,]/)[0].trim() : "";
   const url = r.web ? (r.web.startsWith("http") ? r.web : "https://" + r.web) : "";
   const answers = r.needs.filter((k) => NEEDBY[k]);
+  const { chips: tagChips, notes: tagNotes } = splitTags(r.tags);
+  const sum = summaryOf(r);
+  /* closed: name, one line, call; open (or on its own page): everything */
+  const full = open || page;
 
   return (
-    <article className="card" data-open={open ? "true" : "false"} style={{ "--sec": s.deep }}>
-      <button className="card-head" onClick={onToggle} aria-expanded={open ? "true" : "false"}>
+    <article className={"card" + (full ? "" : " compact")} data-open={full ? "true" : "false"} style={{ "--sec": s.deep }}>
+      <button className="card-head" onClick={onToggle} aria-expanded={full ? "true" : "false"}>
         <span className="card-title">
           <strong>{r.name}</strong>
-          <span className="card-sub">
-            <span className="dot" style={{ background: s.deep }} />
-            {s.id}. {s.name}
-            {r.origSection && r.origSection.toLowerCase() !== s.name.toLowerCase()
-              && !r.origSection.toLowerCase().startsWith(s.id.toLowerCase() + ".")
-              && <span className="card-orig">{r.origSection}</span>}
-          </span>
+          {sum && !full && <span className="card-sum">{sum}</span>}
+          {full && (
+            <span className="card-sub">
+              <span className="dot" style={{ background: s.deep }} />
+              {s.id}. {s.name}
+              {r.origSection && r.origSection.toLowerCase() !== s.name.toLowerCase()
+                && !r.origSection.toLowerCase().startsWith(s.id.toLowerCase() + ".")
+                && <span className="card-orig">{r.origSection}</span>}
+            </span>
+          )}
         </span>
-        <span className="card-caret"><Icon name={open ? "minus" : "plus"} /></span>
+        {!page && <span className="card-caret"><Icon name={open ? "minus" : "plus"} /></span>}
       </button>
 
       <div className="card-badges">
+        {today && <span className="badge today-b">Open today</span>}
         {r.startHere && <span className="badge start">Start here</span>}
         {r.readFirst && <span className="badge warn">Read the note first</span>}
         {r.isNew && <span className="badge new">New</span>}
-        <VerifyBadge r={r} />
-        {r.spanish && <span className="badge sp">{r.spanish.replace(/^[^\w]+/, "")}</span>}
+        {(full || r.verified) && <VerifyBadge r={r} />}
+        {/* "Not listed - ask" is the default and says nothing, so only real language access shows */}
+        {r.spanish && !/^⚪/u.test(r.spanish) && <span className="badge sp">{r.spanish.replace(/^[^\w]+/, "")}</span>}
         {showGaps && <MissingBits r={r} />}
       </div>
 
@@ -57,31 +100,30 @@ export default function ResourceCard({ r, open, onToggle, onEdit, onVerify, onCo
             <Icon name="phone" size={14} />{r.phone}
           </a>
         )}
-        {url && (
+        {full && url && (
           <a className="act link" href={url} target="_blank" rel="noreferrer">
-            <Icon name="link" size={14} />{r.web}
+            <Icon name="link" size={14} /><span className="act-label">{shortWeb(r.web)}</span>
           </a>
         )}
-        {r.email && (
+        {full && r.email && (
           <a className="act link" href={"mailto:" + r.email}>
             <Icon name="mail" size={14} />{r.email}
           </a>
         )}
-        {r.address && <span className="act loc"><Icon name="pin" size={14} />{r.address}</span>}
-        {r.hours && <span className="act loc"><Icon name="clock" size={14} />{r.hours}</span>}
+        {full && r.address && <span className="act loc"><Icon name="pin" size={14} />{r.address}</span>}
+        {full && r.hours && <span className="act loc"><Icon name="clock" size={14} />{r.hours}</span>}
       </div>
 
-      {open && (
+      {full && (
         <div className="card-body">
           {r.note && <p className="callout">{r.note}</p>}
           {r.detail && <p className="detail">{r.detail}</p>}
           {r.backup && (
             <p className="backup"><strong>If this doesn't work:</strong> {r.backup}</p>
           )}
-          {r.tags && (
-            <p className="tags">
-              {r.tags.split(/\s*[|,]\s*/).filter(Boolean).map((t, i) => <span key={i}>{t}</span>)}
-            </p>
+          {!!tagNotes.length && tagNotes.map((t, i) => <p key={i} className="tiny tag-note">{t}</p>)}
+          {!!tagChips.length && (
+            <p className="tags">{tagChips.map((t, i) => <span key={i}>{t}</span>)}</p>
           )}
           {r.spanishDetail && <p className="tiny"><strong>Spanish:</strong> {r.spanishDetail}</p>}
           {r.point && <p className="tiny"><strong>Point person:</strong> {r.point}</p>}
@@ -96,6 +138,12 @@ export default function ResourceCard({ r, open, onToggle, onEdit, onVerify, onCo
           </p>
 
           <div className="row-btns">
+            {onStar && (
+              <button className={"btn" + (starred ? " in-plan" : "")} onClick={onStar} aria-pressed={starred ? "true" : "false"}>
+                {starred ? "★ Saved" : "☆ Save"}
+              </button>
+            )}
+            {onPage && !page && <button className="btn" onClick={onPage}>Open its page</button>}
             <button className="btn" onClick={() => setEditing((v) => !v)}>
               {editing ? "Close editor" : "Edit"}
             </button>

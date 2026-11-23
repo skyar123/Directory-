@@ -34,7 +34,7 @@ a firewall as it does outside one.
 
 | File | What it holds |
 |---|---|
-| `data/resources.json` | 708 resources. Each carries `needs` (SNIFF question keys), `sec` (section), and `src` (where the fact came from). A program the workbook filed in several sections is one row with `secs` (every section it repeats under) and every section's `needs`; `meta.merged` maps the old ids of merged copies to the kept row. |
+| `data/resources.json` | 712 resources. Each carries `needs` (SNIFF question keys), `sec` (section), and `src` (where the fact came from). A program the workbook filed in several sections is one row with `secs` (every section it repeats under) and every section's `needs`; `meta.merged` maps the old ids of merged copies to the kept row. |
 | `data/sniff.json` | The 13 sections and the 119 SNIFF questions the directory is ordered by. |
 | `data/point-people.json` | 114 named humans, with how fast each one answers. |
 | `data/community-resource-assessment.json` | The 84 rows of the Child First Community Resource Assessment, crosswalked to SNIFF questions. |
@@ -78,6 +78,38 @@ it, export the next edition of the workbook and rerun the script.
 
 ## Working with a family
 
+**The home screen** (Find, before anything is typed) puts the most-used links first:
+the free food map, food open today, this week and the visit plan as large cards;
+the next events starting this week (the team's own picks first) in a strip that
+scrolls sideways; the go-to programs (`GO_TO` in `src/components/Home.jsx`) with
+a call button each; saved and recently opened programs; then the need tiles. The
+crisis lines are behind the red **Crisis lines** button in the header, on every
+screen.
+
+**Getting around.** Four places, the same on a phone (along the bottom) and a
+computer (along the top): **Find**, **Today** (food open today, how many
+programs list hours for today, and the next seven days of events), **Plan**, and
+**More** (SNIFF questions, Food by day, all events, the assessment, point people,
+and upkeep: what changed, what is missing, data). Anything below the four shows a
+back link. The address bar follows you (`#/find?q=food&f=free,today`, `#/r/<id>`,
+`#/today`), so Back steps back through searches and filters, and a search or a
+program can be sent to a teammate.
+
+**Filters.** On Find, **Filters** opens a panel: open today, evenings or weekends,
+free, no ID, walk-in, Spanish, ages 0-5, delivery or mobile, Buncombe only, SNIFF
+section and needs work. Each shows how many results it would leave, and active
+filters show as chips to tap off. Open today, Free and Spanish also sit under the
+search box. These are read from each program's own fields (`src/facets.js`): "open
+today" reads the hours text ("Mon-Fri", "Tue and Thu", "2nd and 4th Wednesdays"),
+so a program whose hours say nothing about days never shows as open today.
+
+**Results.** A broad search is grouped by the SNIFF needs it raises ("Food pantry
+136"), the best four first and **See all**. A card shows the name, one line about
+the program and the call button; tap it for the rest. Each program has its own page
+(**Open its page**), with a link to copy. **Save** keeps a program on Find's
+Saved list, and Find also lists the last eight opened (both in this browser only).
+`docs/usability-test.md` is a short script for testing all this with the team.
+
 **The Find tab opens on the need.** Before anything is typed, it shows the
 crisis lines (911, then 988, Helpmate, Our VOICE, 211 and Code Purple's
 recorded message) and a short list of needs: food today, diapers, a safe place
@@ -85,7 +117,14 @@ tonight, not safe at home, rent, utilities, childcare, development, a ride,
 counseling, legal help, Christmas help, and not sure. Each opens the SNIFF
 question that holds the list, the day's Food by day schedule, or a search. The
 numbers come from the rows themselves, so fixing a row fixes the strip. The
-list is in `src/components/NeedStart.jsx`.
+list is in `src/components/NeedStart.jsx`. Each need is a colored tile with an
+icon, and the full directory waits behind **Show all 712 resources** below
+them, so the page opens short; typing a search or picking a section shows the
+cards as before.
+
+**On a phone** the tabs move to a bar along the bottom of the screen: Find,
+Food, Events, Plan (with its count), and More for everything else. The crisis
+lines sit two across so the need tiles start on the first screen.
 
 **If this doesn't work.** Some rows carry a backup route (`alt` in
 `resources.json`, shown as "If this doesn't work" on the card and in anything
@@ -170,12 +209,27 @@ refer to first, and rows kept only to say a program closed, sort last. The Event
 search folds accents, matches plurals ("markets", "storytimes") and ignores filler
 words ("free events for kids" looks for free events).
 
-**Checking it.** `npm run search-check` runs 40 everyday searches against what the
-directory files under each need, through the same code. On 17 Nov 2026: the search
-box finds 99% (it was 25%), Ask AI's shortlist 91%. It fails below 95% or 80%. Run
-it after an import, and add any search someone reports as coming up short.
+**Everyday words for things no SNIFF question covers.** `SAME_AS` in
+`src/shortlist.js` adds the directory's own words to a search: "tampons" also looks
+for menstrual and hygiene, "pet food" for pet and veterinary (and is not counted as
+food), "roof" or "mold" for home repair, "glasses" for vision, "birth certificate"
+for the Register of Deeds, "fathers" for dad and fatherhood. Added words count a
+little less than typed ones. "Dad" and "mom" are filler in most searches ("food for
+my kids' dad"), so they count only in a search about fathers or mothers ("dads
+group", "single moms"). A program filed under many needs counts a little less for
+each, so a diaper bank filed under domestic violence ranks after the programs that
+are about it.
 
-**Search first.** Gemini does not read all 708 resources for each question. The
+**Checking it.** `npm run search-check` runs 44 everyday searches against what the
+directory files under each need, through the same code, and 12 searches whose answer
+is a few named programs, which must be near the top ("tampons" must show the period
+pantries in the top 5). On 20 Nov 2026: the search box finds 99% (it was 25% before
+17 Nov), Ask AI's shortlist 91% (its cap of 120 rows is below the 136 food pantry
+rows), and all 12 named-program searches pass. It fails below 95% or 80%, or when a
+named program drops out. Run it after an import, and add any search someone reports
+as coming up short.
+
+**Search first.** Gemini does not read all 712 resources for each question. The
 function indexes the directory once when it starts (`src/shortlist.js`), and each
 question sends Gemini only the closest 120 or so:
 - resources that share words with the question,
@@ -330,6 +384,12 @@ remove them before sharing outside the team. `point-people.json` exports stamp
 - Food by day update and Skylar's free food map, 17 Nov 2026 (`scripts/apply-food-schedule-2026-11-17.mjs`): Food by day was still the August workbook's 51 entries, so 29 entries for the October food guide's weekly Buncombe sites were added; the NC 211 food row's phone (MATCH's McDowell number) was corrected; Skylar's map got a row and a link on Food by day and in Ask AI food answers, and her map listings flagged the Blessing Barn as possibly paused, Tranzmission's restarted Saturday pantry and BeLoved's Weaverville pantry location
 - SNIFF tag fixes, 17 Nov 2026 (`scripts/apply-tag-fixes-2026-11-17.mjs`): 22 need tags that rows' own names or descriptions plainly call for, found by a search audit (food providers such as Swannanoa Communities Together, the Haywood Street Welcome Table and BeLoved's street pantries under Food pantry; two dental clinics; two rent programs; four counseling practices)
 - Duplicate rows merged, 17 Nov 2026 (`scripts/apply-merge-duplicates-2026-11-17.mjs`): 34 programs the workbook filed once per SNIFF section (72 rows) are one row each, which still repeats under every SNIFF section and question its copies did. The kept row has the fullest description plus what the others added (Spanish copies marked "En español"), the newest verification and every source; a different phone or address from a copy is in `note`. Old ids still resolve, so saved plans and edits find the program
+- Ceremonial Beauty Collective's pay-what-you-can haircuts, a Friends of Swannanoa post shared 18 Nov 2026 (`scripts/apply-ceremonial-haircuts-2026-11-18.mjs`): one row with the post's phone, booking steps (book by phone or the business's Google listing, and say it is for the Pay What You Can special) and holiday-season limit. The post gives no address or end date, and listings online disagree on downtown or West Asheville, so the row says to ask when booking
+- Blessing Barn closed, and Sistas Caring 4 Sistas and BeLoved relabelled, 18 Nov 2026 (`scripts/apply-blessing-barn-sc4s-2026-11-18.mjs`): Skylar confirmed the Blessing Barn is not running, so its row says CLOSED and it is off Food by day. Web search found SC4S is a doula collective founded by Black women, for Black families and other families of color, with no mention of Spanish services, so it lost the Spanish-first label and the Spanish services filing; its address had been ABIPA's office and is now 50 S French Broad Ave. BeLoved is BIPOC-led with Asheville en Espanol as one program, so two of its rows lost the Latino-led label
+- Food flyers shared 19 Nov 2026 (`scripts/apply-food-flyers-2026-11-19.mjs`): YWAM's Friday hot meal is a food truck that runs until the food is gone (its Nov 20 flyer says 12:30pm, the October guide 12pm); Bountiful Cities' free vegetable and fruit Share Markets, a new row with all 35 dates for 2027 on the Events tab and in Food by day (1st Wednesdays at 391 S French Broad Ave, 2nd and 4th Wednesdays at 90 Montford Ave); MANNA's Community Market at Rock Hill Missionary Baptist in Shiloh, a new row (Wednesdays 3-5pm, about monthly: MANNA's January 2026 list and the Nov 18 flyer both fall on third Wednesdays); and Bounty & Soul's one-day move of the ArtSpace market to Black Mountain on Nov 21, noted in Food by day
+- SNIFF tags corrected from a search audit, 20 Nov 2026 (`scripts/apply-search-tags-2026-11-20.mjs`): Community Engagement Markets (free produce) moved from Toys or books to Food pantry; the Monday to Thursday food schedules and the Family Resource Center at Emma (its own description lists a pantry) joined Food pantry; the Wednesday schedule lost GED, ESL, job training, college and substance use tags that nothing in it supports
+- ABIPA Thanksgiving Sunday Shop and EMOTE Clothing Swap flyers, 22 Nov 2026 (`scripts/apply-abipa-emote-2026-11-22.mjs`): the Sunday Shop on Nov 22 at the Friendship Center, 142 Shiloh Rd, with ABIPA's phone; a new EMOTE Clothing Swap row (444 Haywood Rd, monthly Sundays 12-4pm) and its two remaining 2026 dates
+- Cowboy Christmas Toy Giveaway flyer, shared 23 Nov 2026 (`scripts/apply-cowboy-christmas-2026-11-23.mjs`): Blue Ridge Cowboy Church, Fairview, Dec 5, 10am-2pm, as an event
 - The owner's Google Drive, read 7 Nov 2026 under the Drive merge prompt's rules (metadata first, only family-resource files, no client details; `scripts/apply-drive-merge-2026-11-07.mjs`). The v19 workbook there is the same version this app was built from, and most topic guides predate it, so most of what they name was already here. They added 9 rows (MountainCare adult day, A-B Tech phlebotomy, STEP / More Than a Job NC, Finish Line grants, Trans Lifeline, LGBT National Help Center, National Runaway Safeline, Biltmore Avenue Family Dentistry, Irene Wortham Early Learning Center) and details on 19 others, with every conflict in `note`. Weekend-guide events went in only with a second source: four, checked by web search, and three of those had the venue, time or website wrong in the guide
 - A second Drive pass the same day (`scripts/apply-drive-followup-2026-11-07.mjs`) over the family-resource files the first left as candidates: kinship care benefits, the March 2026 caregiver guide, respite options, a caregiver therapy handout and drop-in movement options. Most of it was already here; it added 6 rows (CMARC care management, Botanical Gardens, Folk Art Center, WNC Farmers Market, The Incredible Years, free nature play) and details on 12, including what relatives raising a child in DSS custody can be paid and which therapists are certified in Child-Parent Psychotherapy
 - Buncombe County Family Resource Directory, Public Edition, event sheets (`scripts/import-public-edition-calendar.cjs`): its curated family and caregiver calendar of 1,354 occurrences (one, Fire Safety for Kids in Fairview, was already in `events.json`, which kept it and gained the library's details), its recurring series, annual leads and monitored calendars. The full library feed's 74 adult-interest programs stay out, as the Public Edition keeps them out of its family calendar

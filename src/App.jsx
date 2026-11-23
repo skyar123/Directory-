@@ -17,19 +17,56 @@ import EventMonth from "./components/EventMonth.jsx";
 import CalendarNotes from "./components/CalendarNotes.jsx";
 import PlanView from "./components/PlanView.jsx";
 import NeedStart from "./components/NeedStart.jsx";
+import FilterSheet from "./components/FilterSheet.jsx";
+import CrisisSheet from "./components/CrisisSheet.jsx";
+import Home from "./components/Home.jsx";
+import TodayView from "./components/TodayView.jsx";
+import MoreView, { MORE_TITLE } from "./components/MoreView.jsx";
+import { factsOf, FACETS, FACET_LABEL } from "./facets.js";
 
-const VIEWS = [
-  ["find", "Find"],
-  ["plan", "Visit plan"],
-  ["sniff", "By SNIFF question"],
-  ["assessment", "Community assessment"],
-  ["food", "Food by day"],
-  ["events", "Events"],
-  ["changed", "What changed"],
-  ["gaps", "What is missing"],
-  ["people", "Point people"],
-  ["data", "Data and repo"],
+/* Four places, the same on a phone and a computer: the everyday tools,
+   and More for the rest (research: 2 to 6 top-level choices). */
+const TOP = [
+  ["find", "Find", "search"],
+  ["today", "Today", "calendar"],
+  ["plan", "Plan", "clipboard"],
+  ["more", "More", "grid"],
 ];
+/* where each other view lives, for the highlighted tab and the back link */
+const PARENT = {
+  resource: "find", ask: "find", food: "today", events: "today",
+  sniff: "more", assessment: "more", changed: "more", gaps: "more", people: "more", data: "more",
+};
+const TITLE = { ...MORE_TITLE, food: "Food by day", events: "All events", resource: "Program", ask: "Ask AI" };
+const ALL_VIEWS = ["find", "today", "plan", "more", ...Object.keys(PARENT)];
+const FACET_KEYS = FACETS.map(([k]) => k);
+
+/* The address bar holds where you are, so Back steps back through searches
+   and a program or a search can be shared: #/find?q=food&f=free,today&sec=VIII,
+   #/r/<id>, #/today. */
+export function parseHash(hash) {
+  const h = String(hash || "").replace(/^#\/?/, "");
+  const [path, qs] = h.split("?");
+  const p = new URLSearchParams(qs || "");
+  const [v, id] = path.split("/");
+  const view = v === "r" ? "resource" : ALL_VIEWS.includes(v) ? v : "find";
+  return {
+    view, id: v === "r" ? decodeURIComponent(id || "") : "",
+    q: p.get("q") || "", sec: p.get("sec") || "", gaps: p.get("gaps") === "1",
+    f: (p.get("f") || "").split(",").filter((k) => FACET_KEYS.includes(k)),
+  };
+}
+export function buildHash({ view, id, q, sec, gaps, f }) {
+  if (view === "resource") return "#/r/" + encodeURIComponent(id || "");
+  if (view !== "find") return "#/" + view;
+  const p = new URLSearchParams();
+  if (q) p.set("q", q);
+  if (f.length) p.set("f", f.join(","));
+  if (sec) p.set("sec", sec);
+  if (gaps) p.set("gaps", "1");
+  const qs = p.toString();
+  return "#/find" + (qs ? "?" + qs : "");
+}
 
 /* "RESPONSIVE? is the column that matters", per the file's own note */
 const RESP = {
@@ -47,10 +84,18 @@ function RespBadge({ value }) {
 
 export default function App() {
   const { state, setState, ready, saving, clear } = useStore();
-  const [view, setView] = useState("find");
-  const [q, setQ] = useState("");
-  const [secFilter, setSecFilter] = useState("");
-  const [onlyGaps, setOnlyGaps] = useState(false);
+  const start = useMemo(() => parseHash(typeof window === "undefined" ? "" : window.location.hash), []);
+  const [view, setView] = useState(start.view);
+  const [q, setQ] = useState(start.q);
+  const [secFilter, setSecFilter] = useState(start.sec);
+  const [onlyGaps, setOnlyGaps] = useState(start.gaps);
+  /* the Filter panel's choices, and the program shown on its own page */
+  const [facets, setFacets] = useState(start.f);
+  const [pageId, setPageId] = useState(start.id);
+  const [filterOpen, setFilterOpen] = useState(false);
+  const [crisisOpen, setCrisisOpen] = useState(false);
+  /* result groups opened past their first few ("See all 23") */
+  const [moreOf, setMoreOf] = useState([]);
   const [openId, setOpenId] = useState("");
   const [openNeed, setOpenNeed] = useState("");
   const [craSec, setCraSec] = useState("I");
@@ -59,6 +104,8 @@ export default function App() {
   const [evAge, setEvAge] = useState("any");
   const [evOrg, setEvOrg] = useState("");
   const [evQ, setEvQ] = useState("");
+  /* the home screen shows the need tiles; the full list waits for a search, a section or this */
+  const [browseAll, setBrowseAll] = useState(false);
   const [cal, setCal] = useState(null);
   const [ask, setAsk] = useState({ text: "", n: 0 });
 
@@ -96,7 +143,7 @@ export default function App() {
 
   /* the Public Edition calendar, fetched once, the first time it is needed */
   useEffect(() => {
-    if (cal || (view !== "events" && view !== "ask")) return undefined;
+    if (cal || !["events", "ask", "today", "find"].includes(view)) return undefined;
     let live = true;
     loadCalendar()
       .then((c) => live && setCal(c))
@@ -116,16 +163,100 @@ export default function App() {
 
   /* the same search engine Ask AI uses on the server, built once per change */
   const index = useMemo(() => buildIndex(resources, NEEDS), [resources]);
-  const results = useMemo(() => {
+  const home = !q.trim() && !secFilter && !onlyGaps && !facets.length;
+  /* each program's filter facts, worked out once a day */
+  const dayKey = new Date().toDateString();
+  const facts = useMemo(() => {
+    const d = new Date();
+    return new Map(resources.map((r) => [r.id, factsOf(r, d)]));
+  }, [resources, dayKey]); // eslint-disable-line react-hooks/exhaustive-deps
+  /* the search and the gaps switch; the section and the Filter panel's
+     choices come after, so each choice can say how many it would leave */
+  const searched = useMemo(() => {
     const list = searchResources(resources, q, index.rank)
-      .filter((x) => !secFilter || x.r.sec === secFilter || (x.r.secs || []).includes(secFilter))
       .filter((x) => !onlyGaps || !x.r.phone || !x.r.web || !x.r.verified);
     list.sort((a, b) =>
       b.s - a.s
       || (b.r.startHere ? 1 : 0) - (a.r.startHere ? 1 : 0)
       || a.r.name.localeCompare(b.r.name));
     return list.map((x) => x.r);
-  }, [resources, q, index, secFilter, onlyGaps]);
+  }, [resources, q, index, onlyGaps]);
+  const inSec = (r, sec) => !sec || r.sec === sec || (r.secs || []).includes(sec);
+  const passes = (r, fs) => fs.every((k) => facts.get(r.id)?.[k]);
+  const results = useMemo(() => searched.filter((r) => inSec(r, secFilter) && passes(r, facets)),
+    [searched, secFilter, facets, facts]); // eslint-disable-line react-hooks/exhaustive-deps
+  const facetCounts = useMemo(() => {
+    const base = searched.filter((r) => inSec(r, secFilter));
+    return Object.fromEntries(FACET_KEYS.map((k) => [k,
+      base.filter((r) => passes(r, facets.includes(k) ? facets : [...facets, k])).length]));
+  }, [searched, secFilter, facets, facts]); // eslint-disable-line react-hooks/exhaustive-deps
+  const secCounts = useMemo(() => {
+    const base = searched.filter((r) => passes(r, facets));
+    return Object.fromEntries(SECTIONS.map((sct) => [sct.id, base.filter((r) => inSec(r, sct.id)).length]));
+  }, [searched, facets, facts]); // eslint-disable-line react-hooks/exhaustive-deps
+  const toggleFacet = (k) => setFacets((fs) => (fs.includes(k) ? fs.filter((x) => x !== k) : [...fs, k]));
+  const clearFilters = () => { setFacets([]); setSecFilter(""); setOnlyGaps(false); };
+
+  /* A broad search is grouped by the SNIFF needs it raises ("Food pantry 23,
+     see all"), each need's best few first, so it is not one long scroll. A
+     name, a phone number or a narrow search stays one list. */
+  const groups = useMemo(() => {
+    if (!q.trim() || secFilter || results.length <= 12) return null;
+    const keys = (index(q).needs || []).filter((k) => /^(I|II|III|IV|V|VI|VII|VIII|IX|X):/.test(k) && NEEDBY[k]);
+    if (!keys.length) return null;
+    const taken = new Set();
+    const out = keys.map((k) => {
+      const items = results.filter((r) => !taken.has(r.id) && r.needs.includes(k));
+      items.forEach((r) => taken.add(r.id));
+      return { key: k, label: NEEDBY[k].label, items };
+    }).filter((g) => g.items.length);
+    const rest = results.filter((r) => !taken.has(r.id));
+    if (rest.length) out.push({ key: "other", label: "Other matches", items: rest });
+    return out.length > 1 ? out : null;
+  }, [q, secFilter, results, index]);
+  useEffect(() => { setMoreOf([]); }, [q, secFilter, facets]);
+
+  /* saved programs and recently opened ones, kept in this browser */
+  const stars = state.stars || [];
+  const recent = state.recent || [];
+  const toggleStar = (id) => setState({ ...state, stars: stars.includes(id) ? stars.filter((x) => x !== id) : [id, ...stars] });
+  const noteRecent = (id) => {
+    if (recent[0] === id) return;
+    setState({ ...state, recent: [id, ...recent.filter((x) => x !== id)].slice(0, 8) });
+  };
+
+  /* keep the address bar in step: a new place is a new history entry (so Back
+     returns to it); typing in the search box only updates the current one */
+  const route = { view, id: pageId, q, sec: secFilter, gaps: onlyGaps, f: facets };
+  const fromHistory = useRef(false);
+  const lastRoute = useRef(route);
+  useEffect(() => {
+    const h = buildHash(route);
+    const prev = lastRoute.current;
+    lastRoute.current = route;
+    if (fromHistory.current) { fromHistory.current = false; return; }
+    if (h === window.location.hash) return;
+    const onlyTyping = prev.view === route.view && prev.id === route.id && prev.sec === route.sec
+      && prev.gaps === route.gaps && prev.f.join() === route.f.join();
+    if (onlyTyping) { window.history.replaceState(window.history.state, "", h); return; }
+    window.history.replaceState({ ...(window.history.state || {}), y: window.scrollY }, "", window.location.hash || "#/find");
+    window.history.pushState({ y: 0 }, "", h);
+  }, [view, pageId, q, secFilter, onlyGaps, facets.join()]); // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => {
+    const onPop = (e) => {
+      const r = parseHash(window.location.hash);
+      if (buildHash(r) !== buildHash(lastRoute.current)) fromHistory.current = true;
+      setView(r.view); setPageId(r.id); setQ(r.q); setSecFilter(r.sec); setOnlyGaps(r.gaps); setFacets(r.f);
+      setFilterOpen(false);
+      const y = (e.state && e.state.y) || 0;
+      requestAnimationFrame(() => requestAnimationFrame(() => window.scrollTo(0, y)));
+    };
+    window.addEventListener("popstate", onPop);
+    return () => window.removeEventListener("popstate", onPop);
+  }, []);
+  /* go somewhere new, at the top of the page */
+  const go = (v) => { setView(v); setFilterOpen(false); window.scrollTo(0, 0); };
+  const openPage = (id) => { setPageId(id); noteRecent(id); go("resource"); };
 
   const edit = (id, key, value) => {
     const prev = state.edits[id] || {};
@@ -175,11 +306,9 @@ export default function App() {
   const toggleAsk = (a) => setPlan({ asks: plan.asks.includes(a) ? plan.asks.filter((x) => x !== a) : [...plan.asks, a] });
 
   /* a need tapped on the Find view's start panel */
-  const goNeed = (go) => {
+  const goNeed = (go) => { /* eslint-disable-line no-shadow */
     if (go.food) {
-      const today = new Date().toLocaleDateString("en-US", { weekday: "long" });
-      if (FOOD.days.some((d) => d.day === today)) setFoodDay(today);
-      setView("food");
+      setView("today");
     } else if (go.need) {
       showNeed(go.need);
     } else if (go.q) {
@@ -345,14 +474,35 @@ export default function App() {
   /* an event's "Open in the directory": the resource it links, found and
      opened in the Find view with nothing else filtering it out */
   const openResource = (r) => {
-    setQ(r.name); setSecFilter(""); setOnlyGaps(false); setOpenId(r.id); setView("find");
-    window.scrollTo(0, 0);
+    if (r) openPage(r.id);
+  };
+
+  /* a program card in a result list: opening it also counts as recently opened */
+  const card = (r) => (
+    <ResourceCard key={r.id} r={r} open={openId === r.id} showGaps={onlyGaps} today={facts.get(r.id)?.today}
+      onToggle={() => { if (openId !== r.id) noteRecent(r.id); setOpenId(openId === r.id ? "" : r.id); }}
+      onEdit={(k, v) => edit(r.id, k, v)} onVerify={() => verify(r.id)} onCopy={copyText}
+      inPlan={inPlan("r", r.id)} onPlan={() => togglePlanResource(r)}
+      starred={stars.includes(r.id)} onStar={() => toggleStar(r.id)} onPage={() => openPage(r.id)} />
+  );
+  const todayCount = useMemo(() => [...facts.values()].filter((f) => f.today).length, [facts]);
+  /* the next seven days of events, for Today */
+  const weekEnd = (() => { const d = new Date(evToday + "T12:00:00"); d.setDate(d.getDate() + 6); return d.toISOString().slice(0, 10); })();
+  const weekEvents = allEvents.filter((e) => e.date <= weekEnd && (e.end || e.date) >= evToday)
+    .sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
+  /* how many each need tile on Find leads to */
+  const tileCount = (g) => {
+    if (g.food) { const t = new Date().toLocaleDateString("en-US", { weekday: "long" }); return FOOD.days.find((d) => d.day === t)?.sites.length || 0; }
+    if (g.need) return resources.filter((r) => r.needs.includes(g.need)).length;
+    if (g.q) return index.rank(g.q).size;
+    return 0;
   };
 
   return (
     <div className="wnc">
       <header className="top">
         <div className="brand">
+          <button className="crisis-btn" onClick={() => setCrisisOpen(true)} aria-haspopup="dialog">Crisis lines</button>
           <span className="mark"><Logo /></span>
           <div>
             <h1>WNC Family Resource Directory <span className="internal-tag">Internal use only</span></h1>
@@ -382,50 +532,178 @@ export default function App() {
             <Icon name="spark" size={15} />Ask AI
           </button>
         </div>
-        <nav className="tabs" ref={tabsRef}>
-          {VIEWS.map(([id, label]) => (
-            <button key={id} className={"tab" + (view === id ? " tab-on" : "")} onClick={() => setView(id)}
-              aria-current={view === id ? "page" : undefined}>
-              {label}{id === "plan" && plan.items.length ? ` (${plan.items.length})` : ""}
-            </button>
-          ))}
+        <nav className="tabs" ref={tabsRef} aria-label="Main">
+          {TOP.map(([id, label]) => {
+            const on = view === id || PARENT[view] === id;
+            return (
+              <button key={id} className={"tab" + (on ? " tab-on" : "")} onClick={() => go(id)}
+                aria-current={on ? "page" : undefined}>
+                {label}{id === "plan" && plan.items.length ? ` (${plan.items.length})` : ""}
+              </button>
+            );
+          })}
         </nav>
       </header>
+
+      {/* phones: the same four places along the bottom */}
+      <nav className="bottom-nav" aria-label="Main">
+        {TOP.map(([id, label, icon]) => {
+          const on = view === id || PARENT[view] === id;
+          return (
+            <button key={id} className={"bn" + (on ? " bn-on" : "")} aria-current={on ? "page" : undefined}
+              onClick={() => go(id)}>
+              <Icon name={icon} size={20} />
+              <span>{label}{id === "plan" && plan.items.length ? ` (${plan.items.length})` : ""}</span>
+            </button>
+          );
+        })}
+      </nav>
+
+      {/* where you are, and the way back up, for anything below the four places */}
+      {PARENT[view] && view !== "ask" && (
+        <nav className="crumbs" aria-label="You are here">
+          <button className="linkish" onClick={() => (view === "resource" && window.history.length > 1 ? window.history.back() : go(PARENT[view]))}>
+            ‹ {view === "resource" ? "Back" : TOP.find(([id]) => id === PARENT[view])[1]}
+          </button>
+          <span aria-current="page">{view === "resource" ? (resById.get(pageId)?.name || "Program") : TITLE[view]}</span>
+        </nav>
+      )}
 
       {!ready && <p className="loading">Opening your saved edits</p>}
 
       {view === "find" && (
-        <section className="pane">
-          {!q.trim() && !secFilter && !onlyGaps && <NeedStart resById={resById} onGo={goNeed} />}
-          <div className="filters">
-            <Chip active={!secFilter} onClick={() => setSecFilter("")}>All sections</Chip>
-            {SECTIONS.map((s) => (
-              <Chip key={s.id} dot={s.deep} active={secFilter === s.id}
-                onClick={() => setSecFilter(secFilter === s.id ? "" : s.id)}>
-                {s.id}. {s.name}
-              </Chip>
+        <section className="pane find">
+          {home && (
+            <Home date={new Date()} today={evToday} resById={resById} foodToday={tileCount({ food: true })} weekEvents={weekEvents}
+              eventsLoading={!cal} planCount={plan.items.length} onGo={goNeed} countOf={tileCount} go={go}
+              openPage={openPage} onEvent={(e) => { setEvQ(e.what); go("events"); }}
+              mine={(<>
+            {(!!stars.length || !!recent.length) && (
+            <div className="mine">
+              {[["Saved", stars], ["Recently opened", recent]].filter(([, ids]) => ids.length).map(([label, ids]) => (
+                <div key={label} className="mine-row">
+                  <h2 className="mine-title">{label}</h2>
+                  <div className="mine-list">
+                    {ids.map((id) => resById.get(id)).filter(Boolean).slice(0, 8).map((r) => (
+                      <button key={r.id} className="mine-item" onClick={() => openPage(r.id)}>{r.name}</button>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+              </>)} />
+          )}
+          {home && <h2 className="browse-title">Browse the whole directory</h2>}
+
+          <div className="find-tools">
+            <button className={"btn filter-btn" + (facets.length || secFilter || onlyGaps ? " on" : "")}
+              onClick={() => setFilterOpen(true)} aria-haspopup="dialog">
+              <Icon name="grid" size={15} />Filters
+              {(facets.length + (secFilter ? 1 : 0) + (onlyGaps ? 1 : 0)) > 0
+                && <span className="filter-n">{facets.length + (secFilter ? 1 : 0) + (onlyGaps ? 1 : 0)}</span>}
+            </button>
+            {[["today", "Open today"], ["free", "Free"], ["spanish", "Spanish"]].map(([k, label]) => (
+              <Chip key={k} active={facets.includes(k)} onClick={() => toggleFacet(k)}>{label}</Chip>
             ))}
-            <Chip active={onlyGaps} onClick={() => setOnlyGaps((v) => !v)}
-              title="Only entries missing a phone or website, or never verified">
-              Needs work only
-            </Chip>
           </div>
-          <p className="count">{results.length} showing</p>
+          {(facets.length > 0 || secFilter || onlyGaps) && (
+            <div className="active-filters" aria-label="Filters on">
+              {facets.map((k) => (
+                <button key={k} className="af" onClick={() => toggleFacet(k)} aria-label={"Remove " + FACET_LABEL[k]}>
+                  {FACET_LABEL[k]} <span aria-hidden="true">×</span>
+                </button>
+              ))}
+              {secFilter && (
+                <button className="af" onClick={() => setSecFilter("")}>
+                  {secFilter}. {SECBY[secFilter]?.name} <span aria-hidden="true">×</span>
+                </button>
+              )}
+              {onlyGaps && <button className="af" onClick={() => setOnlyGaps(false)}>Needs work only <span aria-hidden="true">×</span></button>}
+              <button className="linkish" onClick={clearFilters}>Clear all</button>
+            </div>
+          )}
+
+          {home && !browseAll ? (
+            <button className="btn browse-all" onClick={() => setBrowseAll(true)}>
+              Show all {resources.length} resources
+            </button>
+          ) : (<>
+          <p className="count">{results.length} {results.length === 1 ? "result" : "results"}</p>
           {terms.length >= 4 && (
             <button className="ask-hint" onClick={() => openAsk(q)}>
               <Icon name="spark" size={14} />Ask AI about “{q.trim()}”
             </button>
           )}
-          <div className="cards">
-            {results.slice(0, 260).map((r) => (
-              <ResourceCard key={r.id} r={r} open={openId === r.id} showGaps={onlyGaps}
-                onToggle={() => setOpenId(openId === r.id ? "" : r.id)}
-                onEdit={(k, v) => edit(r.id, k, v)} onVerify={() => verify(r.id)} onCopy={copyText}
-                inPlan={inPlan("r", r.id)} onPlan={() => togglePlanResource(r)} />
-            ))}
-          </div>
-          {results.length > 260 && (
-            <p className="count">Showing the first 260. Keep typing to narrow it down.</p>
+          {groups ? groups.map((g) => {
+            const all = moreOf.includes(g.key);
+            const shown = all ? g.items : g.items.slice(0, 4);
+            return (
+              <div key={g.key} className="result-group">
+                <h2 className="group-title">{g.label} <span className="need-n">{g.items.length}</span></h2>
+                <div className="cards">{shown.map(card)}</div>
+                {g.items.length > shown.length && (
+                  <button className="btn see-all" onClick={() => setMoreOf((m) => [...m, g.key])}>
+                    See all {g.items.length} for {g.label.toLowerCase()}
+                  </button>
+                )}
+              </div>
+            );
+          }) : (
+            <div className="cards">{results.slice(0, 260).map(card)}</div>
+          )}
+          {!groups && results.length > 260 && (
+            <p className="count">Showing the first 260. Keep typing or add a filter to narrow it down.</p>
+          )}
+          {!results.length && (
+            <p className="empty">
+              Nothing matches{facets.length || secFilter || onlyGaps ? " with these filters" : ""}.
+              {(facets.length > 0 || secFilter || onlyGaps) && <> <button className="linkish" onClick={clearFilters}>Clear the filters</button></>}
+              {" "}Or <button className="linkish" onClick={() => openAsk(q)}>ask Ask AI</button>.
+            </p>
+          )}
+          </>)}
+          <FilterSheet open={filterOpen} onClose={() => setFilterOpen(false)} facets={facets} toggle={toggleFacet}
+            counts={facetCounts} total={results.length} sections={SECTIONS} sec={secFilter} setSec={setSecFilter}
+            secCounts={secCounts} gaps={onlyGaps} setGaps={setOnlyGaps} onClear={clearFilters} />
+        </section>
+      )}
+
+      {view === "today" && (
+        <TodayView date={new Date()} openCount={todayCount}
+          onOpenToday={() => { setQ(""); setSecFilter(""); setOnlyGaps(false); setFacets(["today"]); setBrowseAll(true); go("find"); }}
+          onWeek={() => {
+            const t = new Date().toLocaleDateString("en-US", { weekday: "long" });
+            if (FOOD.days.some((d) => d.day === t)) setFoodDay(t);
+            go("food");
+          }}
+          onEvents={() => go("events")} events={weekEvents} eventsLoading={!cal}
+          renderEvent={(e) => (
+            <EventCard key={e.id} e={e} soon={soon(e, evToday)} resource={resById.get(e.rid)}
+              onOpen={() => openResource(resById.get(e.rid))}
+              inPlan={inPlan("e", e.id)} onPlan={() => togglePlanEvent(e)} />
+          )} />
+      )}
+
+      {view === "more" && <MoreView go={go} />}
+
+      {view === "resource" && (
+        <section className="pane resource-page">
+          {resById.get(pageId) ? (
+            <>
+              <ResourceCard r={resById.get(pageId)} page open today={facts.get(resById.get(pageId).id)?.today}
+                starred={stars.includes(resById.get(pageId).id)} onStar={() => toggleStar(resById.get(pageId).id)}
+                onEdit={(k, v) => edit(resById.get(pageId).id, k, v)} onVerify={() => verify(resById.get(pageId).id)}
+                onCopy={copyText} inPlan={inPlan("r", resById.get(pageId).id)}
+                onPlan={() => togglePlanResource(resById.get(pageId))} onToggle={() => {}} />
+              <div className="row-btns">
+                <button className="btn" onClick={() => copyText(window.location.href, "Link copied. It opens this program for anyone on the team.")}>
+                  Copy a link to this page
+                </button>
+              </div>
+            </>
+          ) : (
+            <p className="empty">That program is not in the directory any more. <button className="linkish" onClick={() => go("find")}>Go to Find</button></p>
           )}
         </section>
       )}
@@ -570,8 +848,12 @@ export default function App() {
           </p>
           <p className="handling">
             Most of these have never been verified, and pantry hours move. Call before you send
-            anyone. {FOOD.meta.src}
+            anyone.
           </p>
+          <details className="src-details">
+            <summary>Where this list comes from</summary>
+            <p className="tiny">{FOOD.meta.src}</p>
+          </details>
           {resById.get("wnc-free-food-map") && (
             <p>
               <a className="act link" href={"https://" + resById.get("wnc-free-food-map").web.replace(/^https?:\/\//, "")}
@@ -609,7 +891,7 @@ export default function App() {
                     <div className="card-badges">
                       {s.lv
                         ? <span className="badge ok">Verified {s.lv}</span>
-                        : <span className="badge warn">Never verified</span>}
+                        : <span className="badge muted">Not verified yet</span>}
                       {s.goodToKnow && <span className="badge sp">{s.goodToKnow}</span>}
                     </div>
                   </article>
@@ -888,6 +1170,7 @@ export default function App() {
         </section>
       )}
 
+      <CrisisSheet open={crisisOpen} onClose={() => setCrisisOpen(false)} resById={resById} />
       {toast && <div className="toast">{toast}</div>}
     </div>
   );

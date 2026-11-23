@@ -10,7 +10,8 @@ export function Chip({ children, dot, onClick, active, title }) {
 
 export function VerifyBadge({ r }) {
   if (r.verified) return <span className="badge ok">Verified {r.verified}</span>;
-  return <span className="badge warn">Never verified</span>;
+  /* most rows are not verified yet, so this stays quiet; Verified is what stands out */
+  return <span className="badge muted">Not verified yet</span>;
 }
 
 export function MissingBits({ r }) {

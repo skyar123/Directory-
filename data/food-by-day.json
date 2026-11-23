@@ -2,7 +2,7 @@
  "meta": {
   "file": "food-by-day.json",
   "note": "Weekly pantry and free-meal schedule. A site appears on every day it serves. Most rows are unverified: call before sending a family.",
-  "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, Food - By Day tab; weekly Buncombe sites from the October 2026 WNC Free Food guide added 17 Nov 2026 (scripts/apply-food-schedule-2026-11-17.mjs)"
+  "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, Food - By Day tab; weekly Buncombe sites from the October 2026 WNC Free Food guide added 17 Nov 2026 (scripts/apply-food-schedule-2026-11-17.mjs); the Blessing Barn removed 18 Nov 2026 (closed, per Skylar Belt); YWAM, Bounty & Soul, Bountiful Cities Share Market and MANNA Shiloh flyers, 19 Nov 2026; ABIPA Sunday Shop flyer, 22 Nov 2026"
  },
  "days": [
   {
@@ -87,13 +87,6 @@
      "place": "Trinity of Fairview",
      "when": "9am-1pm (646 Concord Rd, Fletcher, 828-628-1188)",
      "goodToKnow": "",
-     "lv": "",
-     "vb": ""
-    },
-    {
-     "place": "Blessing Barn",
-     "when": "10am-2pm (2492 US-70, Swannanoa)",
-     "goodToKnow": "May be paused or closed (Skylar's food map); the Blessing Bus is its mobile successor. Confirm first",
      "lv": "",
      "vb": ""
     },
@@ -290,6 +283,27 @@
      "goodToKnow": "Fridge",
      "lv": "",
      "vb": ""
+    },
+    {
+     "place": "Bountiful Cities Share Market, Self-Help Credit Union",
+     "when": "1st Wed 3:30-5:30pm (391 S French Broad Ave)",
+     "goodToKnow": "Free vegetables and fruit; 2027 dates on the flyer, check bountifulcities.org/share-market for December",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "Bountiful Cities Share Market, William Randolph gym",
+     "when": "2nd and 4th Wed 3-5pm (90 Montford Ave)",
+     "goodToKnow": "Free vegetables and fruit; 2027 dates on the flyer, check bountifulcities.org/share-market for December",
+     "lv": "",
+     "vb": ""
+    },
+    {
+     "place": "MANNA Community Market, Rock Hill Missionary Baptist (Shiloh)",
+     "when": "3rd Wed 3-5pm (486 Caribou Rd)",
+     "goodToKnow": "Monthly; third Wednesday on the Jan and Nov 2026 dates, so confirm with the MANNA Food Helpline",
+     "lv": "",
+     "vb": ""
     }
    ]
   },
@@ -321,13 +335,6 @@
      "place": "Beverly Hills Baptist",
      "when": "2nd/4th Thu (777 Tunnel Rd)",
      "goodToKnow": "",
-     "lv": "",
-     "vb": ""
-    },
-    {
-     "place": "Blessing Barn",
-     "when": "10am-2pm",
-     "goodToKnow": "May be paused or closed (Skylar's food map); the Blessing Bus is its mobile successor. Confirm first",
      "lv": "",
      "vb": ""
     },
@@ -456,9 +463,9 @@
      "vb": ""
     },
     {
-     "place": "YWAM free hot meal",
-     "when": "12pm (corner of Aston St and Lexington Ave)",
-     "goodToKnow": "",
+     "place": "YWAM free food truck hot meal",
+     "when": "12-12:30pm (corner of Aston St and Lexington Ave)",
+     "goodToKnow": "Until food runs out; the 20 Nov flyer says 12:30pm",
      "lv": "",
      "vb": ""
     },
@@ -519,7 +526,7 @@
     {
      "place": "Bounty & Soul market, ArtSpace",
      "when": "10-11:30am (2030 US 70, Swannanoa)",
-     "goodToKnow": "Free; check bountyandsoul.org or 828-585-7835 for weather changes",
+     "goodToKnow": "Free; check bountyandsoul.org or 828-585-7835 for weather changes; Nov 21, 2026 only: at Black Mountain Machine & Tool, 2988 US 70, Black Mountain, same time. No market Nov 28",
      "lv": "",
      "vb": ""
     },
@@ -578,9 +585,9 @@
      "vb": ""
     },
     {
-     "place": "ABIPA Free",
-     "when": "Sunday Shop 4th Sunday 3-6pm (220 Continuum Dr, Fletcher)",
-     "goodToKnow": "Evening, Weekend",
+     "place": "ABIPA Free Sunday Shop",
+     "when": "4th Sunday 3-6pm (Friendship Center, 142 Shiloh Rd on 22 Nov 2026)",
+     "goodToKnow": "Fresh food, household essentials, health resources; 828-785-3470, abipa.org. The place may change, so check the month's flyer",
      "lv": "",
      "vb": ""
     },
