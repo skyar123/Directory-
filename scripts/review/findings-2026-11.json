@@ -1,0 +1,317 @@
+[
+ {
+  "id": "shepherds-table-marion-thanksgiving",
+  "r": "notfound",
+  "src": "no 2026 listing found online"
+ },
+ {
+  "id": "bridge-meals-crowdfeeding",
+  "r": "confirmed",
+  "set": {
+   "w": "bridgemeals.com"
+  },
+  "src": "Prism News and Good News Asheville (May 2026): donors fund free meals at Asheville restaurants (Rosettas, Gypsy Queen Cuisine, Finest) that people pick up in person; site bridgemeals.com"
+ },
+ {
+  "id": "lady-gloria-ridge-community-pantry",
+  "r": "notfound",
+  "src": "no online listing found"
+ },
+ {
+  "id": "southside-community-farm-fridges",
+  "r": "confirmed",
+  "src": "Mountain Xpress lists the Southside Community Farm free fridge at 133 Livingston St; the City of Asheville says the farm also stocks the Grant Center fridge at 285 Livingston St"
+ },
+ {
+  "id": "lunch-at-the-crossroads-first-baptist",
+  "r": "partly",
+  "setIfEmpty": {
+   "ph": "828-252-3234"
+  },
+  "note": "No listing uses the name Lunch at the Crossroads; MANNA lists a First Baptist Church homeless outreach meal on Thursdays 12-1:30pm. Call the church (828-252-3234) to confirm.",
+  "src": "MANNA agency listing and church directory (828-252-3234)"
+ },
+ {
+  "id": "free-pizza-wednesdays-craggy-ave",
+  "r": "notfound",
+  "src": "no online listing found"
+ },
+ {
+  "id": "sand-hill-kitchen-bagged-lunches",
+  "r": "partly",
+  "note": "No online listing mentions free bagged lunches; the restaurant itself (inside the BP at Sardis and Sand Hill Rd) is real. Call 828-633-6868 before sending anyone.",
+  "src": "restaurant listings via web search"
+ },
+ {
+  "id": "bethel-sda-pantry",
+  "r": "changed",
+  "set": {
+   "h": "2nd and 4th Tuesdays 10am-1pm"
+  },
+  "expect": {
+   "h": "Tuesdays 10am-1pm"
+  },
+  "food": {
+   "day": "Tuesday",
+   "match": "Bethel",
+   "when": "2nd and 4th Tue 10am-1pm"
+  },
+  "note": "MANNA lists distribution on the 2nd and 4th Tuesdays, 10am-1pm, not every Tuesday.",
+  "src": "MANNA Buncombe agency listing"
+ },
+ {
+  "id": "ab-tech-student-pantry",
+  "r": "changed",
+  "set": {
+   "h": "Mon-Thu 8:30am-5pm, Fri 8:30am-2pm (Bailey Student Services, room 093)"
+  },
+  "expect": {
+   "h": "Thursdays 1-5pm"
+  },
+  "food": {
+   "day": "Thursday",
+   "match": "A-B Tech",
+   "when": "Mon-Thu 8:30am-5pm, Fri 8:30am-2pm (Bailey Student Services, 340 Victoria Rd)"
+  },
+  "note": "A-B Tech says the pantry at Bailey Student Services is open to students and employees Mon-Thu 8:30am-5pm and Fri 8:30am-2pm.",
+  "src": "A-B Tech food pantry page (abtech.edu/food)"
+ },
+ {
+  "id": "covenant-community-church-snap-gap",
+  "r": "partly",
+  "note": "A web search could not confirm a Thursday pantry here; one directory lists a Wednesday 4-5pm hurricane relief distribution at other addresses. Call 828-298-8955 first.",
+  "src": "Plentiful directory"
+ },
+ {
+  "id": "emma-umc-pantry",
+  "r": "notfound",
+  "src": "no online listing found for an Emma UMC pantry at 55 Adams Hill Rd"
+ },
+ {
+  "id": "little-free-corner-store",
+  "r": "confirmed",
+  "src": "WLOS: a 24-hour community fridge and free mini market on Haywood Rd in West Asheville, no eligibility rules (address not given)"
+ },
+ {
+  "id": "little-free-bodega-haywood",
+  "r": "partly",
+  "note": "The Little Free Pantry map gives the Little Free Bodega at 32 Blue Ridge Ave, off the Haywood Rd corridor, serving since 2020; confirm which spot is current.",
+  "src": "Little Free Pantry map listing"
+ },
+ {
+  "id": "zephyr-hills-fwb-pantry",
+  "r": "partly",
+  "note": "Listings disagree on the day: one says the 2nd and 4th Tuesdays 12-2pm, a 2020 MANNA list the 2nd Thursday, this row Thursdays 12-2pm. Call before going.",
+  "src": "WhyHunger and MANNA (2020) listings"
+ },
+ {
+  "id": "deaverview-community-pantry",
+  "r": "partly",
+  "note": "A 2025 county flyer lists a free community market at Deaverview Apartments on the 1st and 3rd Mondays, 3-4:30pm; whether the planned Deaverview little pantry was built is unclear.",
+  "src": "Buncombe County Community Markets flyer (2025), Feed America and Mountain Xpress"
+ },
+ {
+  "id": "east-end-pantry",
+  "r": "partly",
+  "note": "A county release names a community pantry at St. James AME Church in the East End, built with Bountiful Cities; no listing gives its hours.",
+  "src": "Buncombe County news release on the St. James AME and Shiloh Peace Garden pantries"
+ },
+ {
+  "id": "shiloh-pantry",
+  "r": "confirmed",
+  "src": "Feed America and Plentiful list the Shiloh Community Outdoor Food Pantry at 49 Hampton St, free, walk-in"
+ },
+ {
+  "id": "the-whale-free-groceries",
+  "r": "notfound",
+  "src": "no online listing of free groceries at The Whale (507 Haywood Rd) found"
+ },
+ {
+  "id": "streetside-community-potluck",
+  "r": "notfound",
+  "src": "no online listing found"
+ },
+ {
+  "id": "big-ivy-community-club-pantry",
+  "r": "changed",
+  "set": {
+   "h": "Tue 1-6pm, Wed and Thu 11am-4pm (call first)"
+  },
+  "food": {
+   "match": "Big Ivy",
+   "whenByDay": {
+    "Tuesday": "1-6pm (540 Dillingham Rd, Barnardsville)",
+    "Wednesday": "11am-4pm (540 Dillingham Rd, Barnardsville)",
+    "Thursday": "11am-4pm (540 Dillingham Rd, Barnardsville)"
+   }
+  },
+  "note": "The center's current site gives Tue 1-6pm and Wed and Thu 11am-4pm, and says hours can shift week to week; older listings differ. Call 828-626-3438.",
+  "src": "Big Ivy Community Center site (bigivy.org) and older directory listings"
+ },
+ {
+  "id": "appalachian-community-relief",
+  "r": "confirmed",
+  "src": "WLOS and 105.9 The Mountain: a free grocery store in Black Mountain for the Swannanoa Valley, shopping by appointment with online registration; 828-545-1579 is its listed number"
+ },
+ {
+  "id": "black-mountain-open-tables",
+  "r": "partly",
+  "note": "MANNA lists Black Mountain Open Table on Wednesdays 11:30am-1pm; one directory gives 100 Flat Creek Rd rather than the two church sites here. Confirm where this week's meal is.",
+  "src": "MANNA agency listing and Plentiful"
+ },
+ {
+  "id": "leicester-library-pantry-manna",
+  "r": "partly",
+  "note": "The Leicester Community Center's own page puts its MANNA distributions at 2979 New Leicester Hwy on the 1st and 3rd Tuesdays; confirm which applies before sending anyone.",
+  "src": "Leicester Community Center site"
+ },
+ {
+  "id": "weaverville-first-baptist-pantry",
+  "r": "partly",
+  "note": "Listings name the First Baptist Weaverville food and supplies pantry at 63 N Main St but give no days; Tuesdays and Fridays could not be confirmed online.",
+  "src": "school district community resource page"
+ },
+ {
+  "id": "black-mountain-little-pantries",
+  "r": "partly",
+  "note": "The 117 Montreat Rd blessing box (Black Mountain Presbyterian) is in the October 2026 food guide; the 201 Blue Ridge Rd pantry could not be found online.",
+  "src": "WNC Free Food & Supplies guide (Oct 2026)"
+ },
+ {
+  "id": "blessing-bus",
+  "r": "confirmed",
+  "src": "Good News Asheville (16 Jul 2026): The Blessing Project took its services on the road with mobile drop-offs"
+ },
+ {
+  "id": "grace-covenant-free-food",
+  "r": "partly",
+  "note": "Online sources describe the church's large weekday distribution after Helene (2024) but give no current Thursday hours; confirm before sending anyone.",
+  "src": "Presbyterian News Service (Oct 2024)"
+ },
+ {
+  "id": "east-asheville-welcome-table-groce",
+  "r": "partly",
+  "note": "MANNA lists the East Asheville Welcome Table on Thursdays 5-6:30pm (this row says 5-6:15pm) and does not name the host church.",
+  "src": "MANNA agency listing"
+ },
+ {
+  "id": "uate-feed-the-people-wednesday",
+  "r": "notfound",
+  "src": "no online listing found"
+ },
+ {
+  "id": "iam-pantry-hendersonville",
+  "r": "confirmed",
+  "note": "IAM serves Henderson County residents only and asks for proof of address, ID for adults and birth certificates for children, with an interview to set needs.",
+  "src": "Henderson County food distribution list (hours match) and IAM listings"
+ },
+ {
+  "id": "loves-kitchen-hendersonville",
+  "r": "changed",
+  "set": {
+   "h": "Thursdays 11am-12:30pm"
+  },
+  "expect": {
+   "h": "Thursdays 11:30am-1pm"
+  },
+  "food": {
+   "day": "Thursday",
+   "match": "Love",
+   "when": "11am-12:30pm (312 5th Ave W, Hendersonville)"
+  },
+  "note": "Henderson County's 2024 list gives Thursdays 11am-12:30pm at First Baptist Church; older listings say 11:30am-1pm.",
+  "src": "Henderson County food distribution list (Sept 2024)"
+ },
+ {
+  "id": "the-storehouse-hendersonville",
+  "r": "changed",
+  "set": {
+   "h": "By referral (2024 county list); older lists give Wed-Fri 9am-2pm by appointment"
+  },
+  "expect": {
+   "h": "Wed-Fri 9am-2pm"
+  },
+  "note": "Henderson County's September 2024 list says The Storehouse serves by referral, at 828-692-8360; other listings give 828-692-8300. Call before sending anyone.",
+  "src": "Henderson County food distribution lists (Sept 2024 and earlier)"
+ },
+ {
+  "id": "beacon-of-hope-marshall",
+  "r": "confirmed",
+  "setIfEmpty": {
+   "ph": "828-649-3470",
+   "w": "bohmarshall.org"
+  },
+  "note": "Families who meet TEFAP income guidelines get weekly food. Listings disagree on days (Mon-Fri or Wed and Fri, 12-4pm), so call 828-649-3470.",
+  "src": "local news (at 5111 US 25-70 since Sept 2025), NC State Extension Madison County list and FoodPantries.org"
+ },
+ {
+  "id": "roar-mutual-aid-hub-marshall",
+  "r": "confirmed",
+  "src": "Madison County resource page: ROAR Mutual Aid Hub open Saturdays 10am-4pm at 798 Walnut Creek Rd, Marshall"
+ },
+ {
+  "id": "foothills-food-hub",
+  "r": "partly",
+  "note": "One listing puts the Jacktown distribution at Parkers Chapel (220 Parkers Chapel Rd), a drive-thru every other Tuesday, entering from Parkers Chapel Rd; another gives 608 Jacktown Rd. Confirm before sending anyone.",
+  "src": "Feed America and Plentiful listings"
+ },
+ {
+  "id": "bear-closet-of-marion",
+  "r": "notfound",
+  "src": "no online listing for a BEAR Closet at 337 Garden Creek Rd, Marion; BEAR Closets list their sites at bearcloset.org"
+ },
+ {
+  "id": "haywood-christian-ministry-market",
+  "r": "partly",
+  "setIfEmpty": {
+   "ph": "828-456-4838",
+   "w": "hcmnc.org"
+  },
+  "note": "The ministry's 2025 report describes a full-choice community pantry in downtown Waynesville; older county lists give weekday hours and an office interview first. Call 828-456-4838 for this week's days.",
+  "src": "Haywood County resource sheets and the ministry's 2025 annual report"
+ },
+ {
+  "id": "bread-of-life-brevard",
+  "r": "partly",
+  "note": "Its phone, 828-877-3577, is consistent across listings, but no current pantry or meal hours were found online; call before sending anyone.",
+  "src": "FoodPantries.org and Feed America listings"
+ },
+ {
+  "id": "sharing-house-brevard",
+  "r": "changed",
+  "set": {
+   "ph": "828-884-2866"
+  },
+  "expect": {
+   "ph": "828-844-2866"
+  },
+  "setIfEmpty": {
+   "w": "sharinghouse.org"
+  },
+  "note": "Every listing found gives 828-884-2866 (this row had 828-844-2866); no current hours were published, so call first.",
+  "src": "Feed America, WhyHunger and Plentiful listings (Transylvania Christian Ministries, The Sharing House, 164 Duckworth Ave)"
+ },
+ {
+  "id": "reconciliation-house-burnsville",
+  "r": "confirmed",
+  "setIfEmpty": {
+   "w": "rec-house.org"
+  },
+  "src": "WhyHunger (Mon, Wed, Fri 9am-12pm) and Plentiful (Wed and Fri 9am-12pm) listings at 20 Academy St; a MANNA partner"
+ },
+ {
+  "id": "wecan-community-garden",
+  "r": "notfound",
+  "src": "no online listing found"
+ },
+ {
+  "id": "feed-a-family-grocery-delivery",
+  "r": "notfound",
+  "src": "no online listing found for Feed A Family or feed-a-family.org"
+ },
+ {
+  "id": "match-mcdowell-food-box-delivery",
+  "r": "notfound",
+  "src": "no online listing found for MATCH food box delivery or 828-659-5289"
+ }
+]
