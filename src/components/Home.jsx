@@ -3,6 +3,7 @@ import { shortDate } from "../events.js";
 import Icon from "./Icon.jsx";
 import NeedStart from "./NeedStart.jsx";
 import { summaryOf } from "./ResourceCard.jsx";
+import { COLLECTIONS } from "../collections.js";
 
 /* The programs staff reach for most, on the home screen with a call button */
 export const GO_TO = ["wnc-free-food-map", "nc-211", "manna-food-helpline", "code-purple",
@@ -14,7 +15,7 @@ export const GO_TO = ["wnc-free-food-map", "nc-211", "manna-food-helpline", "cod
  * tiles. The crisis lines are one tap away in the header on every screen.
  */
 export default function Home({ date, today, resById, foodToday, weekEvents, eventsLoading, planCount, onGo, countOf,
-  go, openPage, onEvent, mine }) {
+  go, openPage, onEvent, mine, openCollection }) {
   const map = resById.get("wnc-free-food-map");
   const mapUrl = map && map.web ? "https://" + map.web.replace(/^https?:\/\//, "") : "";
   /* what starts this week, the team's own picks before calendar listings;
@@ -66,6 +67,22 @@ export default function Home({ date, today, resById, foodToday, weekEvents, even
       </section>
 
       <section className="home-sec">
+        <NeedStart resById={resById} onGo={onGo} countOf={countOf} crisis={false} />
+      </section>
+
+      <section className="home-sec">
+        <div className="home-sec-head"><h2>Autism and development</h2></div>
+        <div className="quick collections">
+          {Object.entries(COLLECTIONS).map(([id, c]) => (
+            <button key={id} className={"quick-card tone-" + c.tone} onClick={() => openCollection(id)}>
+              <span className="quick-ic"><Icon name={c.icon} size={22} /></span>
+              <span className="quick-txt"><strong>{c.title}</strong><small>{c.sub}</small></span>
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <section className="home-sec">
         <div className="home-sec-head"><h2>Go-to programs</h2></div>
         <div className="goto">
           {goTo.map((r) => {
@@ -85,10 +102,6 @@ export default function Home({ date, today, resById, foodToday, weekEvents, even
       </section>
 
       {mine}
-
-      <section className="home-sec">
-        <NeedStart resById={resById} onGo={onGo} countOf={countOf} crisis={false} />
-      </section>
     </div>
   );
 }

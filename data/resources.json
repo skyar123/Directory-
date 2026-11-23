@@ -3805,12 +3805,12 @@
    "pp": "",
    "sp": "🟠 Interpreter available",
    "spd": "Federally or publicly funded: a free qualified interpreter must be provided on request. Ask for one when you call.",
-   "ph": "828-649-0729 / 828-652-2919",
+   "ph": "828-698-8571 (Apple Country) / 828-649-0729 (Madison) / 828-652-2919 (McDowell)",
    "em": "",
    "w": "mcdowelltransit.org",
    "d": "(Henderson): free fixed routes Mon-Fri 6:30am-7:30pm. Madison County Transit: 828-649-0729 (60+ free; $5 round-trip in-county). McDowell Transit: mcdowelltransit.org, 828-652-2919. Peers on the Move: 828-301-4989.",
    "a": "",
-   "h": "Mon-Fri 6:30am-7:30pm",
+   "h": "Mon-Fri 6:30am-7pm",
    "os": "PART 15: TRANSPORTATION",
    "t": "Free",
    "lv": "",
@@ -3822,8 +3822,8 @@
     "VIII:*",
     "VIII:17a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; review 23 Nov 2026: Henderson County Apple Country Public Transit pages and 2026 brochure",
+   "note": "Apple Country's own line is 828-698-8571 (the two numbers listed before belong to Madison County and McDowell transit), and its 2026 brochure gives bus service Mon-Fri 6:30am-7pm.",
    "new": false
   },
   {
@@ -7352,8 +7352,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "Facebook post in You know You're From Marion, NC, 29 Oct 2026 (Facebook deep scrape part 4, 6 Nov 2026)",
-   "note": "The post is a donation drive and does not say how a family gets on the list. Ask through the post.",
+   "src": "Facebook post in You know You're From Marion, NC, 29 Oct 2026 (Facebook deep scrape part 4, 6 Nov 2026); review 23 Nov 2026: not found online",
+   "note": "The post is a donation drive and does not say how a family gets on the list. Ask through the post. A web search (23 Nov 2026) found no online listing for this; confirm by phone or with the community food guide before sending anyone.",
    "new": true
   },
   {
@@ -8162,7 +8162,7 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; review 23 Nov 2026: Prism News and Good News Asheville (May 2026): donors fund free meals at Asheville restaurants (Rosettas, Gypsy Queen Cuisine, Finest) that people pick up in person; site bridgemeals.com",
    "note": "",
    "new": false
   },
@@ -8399,7 +8399,7 @@
     "VIII:*",
     "VIII:3a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; MANNA's website, as on the MANNA helpline rows",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; MANNA's website, as on the MANNA helpline rows; review 23 Nov 2026: MANNA FoodBank pages: weekend food bags sent home every Friday through schools in 16 WNC counties, with school staff such as counselors referring families",
    "note": "",
    "new": false
   },
@@ -8479,8 +8479,8 @@
     "VIII:5a",
     "VIII:13a"
    ],
-   "src": "Facebook post in Buy Nothing: West Asheville / Candler, 9 Oct 2026 (Facebook deep scrape part 4, 6 Nov 2026)",
-   "note": "The post gives no address or hours. Message through the post before sending a family.",
+   "src": "Facebook post in Buy Nothing: West Asheville / Candler, 9 Oct 2026 (Facebook deep scrape part 4, 6 Nov 2026); review 23 Nov 2026: not found online",
+   "note": "The post gives no address or hours. Message through the post before sending a family. A web search (23 Nov 2026) found no online listing for this; confirm by phone or with the community food guide before sending anyone.",
    "new": true
   },
   {
@@ -8656,7 +8656,7 @@
     "X:*",
     "X:8"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; review 23 Nov 2026: Mountain Xpress lists the Southside Community Farm free fridge at 133 Livingston St; the City of Asheville says the farm also stocks the Grant Center fridge at 285 Livingston St",
    "note": "",
    "new": false
   },
@@ -8871,8 +8871,8 @@
     "VIII:*",
     "VIII:7a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; merged 17 Nov 2026 from 2 rows (western-carolina-rescue-ministries, western-carolina-rescue-ministries-2)",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; merged 17 Nov 2026 from 2 rows (western-carolina-rescue-ministries, western-carolina-rescue-ministries-2); review 23 Nov 2026: Homeless Shelter Directory (Apr 2023) and MANNA listings",
+   "note": "A 2023 listing gives lunch Mon-Fri 12-12:40pm (breakfast 6-6:30am, dinner 4:30-5:30pm); call 828-254-0471 to confirm current meal times.",
    "new": false
   },
   {
@@ -8924,8 +8924,8 @@
     "VIII:11a",
     "VIII:13a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; review 23 Nov 2026: ABCCM FAQ and Crisis Ministry pages",
+   "note": "No source ties 828-412-5322 to ABCCM; ABCCM says furniture and household help comes through its Crisis Ministry, 828-259-5300.",
    "new": false
   },
   {
@@ -8948,8 +8948,8 @@
    "needs": [
     "VIII:*"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; review 23 Nov 2026: Homeward Bound listings (Mon, Tue, Thu, Fri 8am-1pm; Wed 8-11am) and WLOS on 2026-27 Code Purple",
+   "note": "WLOS reports that for 2026-27 the Code Purple overnight shelter runs at the Salvation Army Center of Hope rather than AHOPE; AHOPE stays a day center.",
    "new": false
   },
   {
@@ -9240,7 +9240,7 @@
    "w": "ashevillehabitat.org",
    "d": "(reduced cost, open to everyone): 31 Meadow Rd, Asheville (828-254-6706); 61 Weaver Blvd, Weaverville (828-484-9432). Mon-Sat 9am-6pm.",
    "a": "31 Meadow Rd",
-   "h": "Mon-Sat 9am-6pm",
+   "h": "Tue-Sat 9am-6pm",
    "os": "4.3 Beds and Furniture",
    "t": "Evening / weekend | Verified 8/2026. Home Repair and post-Helene Disaster Repairs for low-income Buncombe and Madison homeowners. Habitat is the backbone org for ARCHR, so one call reaches the whole home-repair coalition. ReStore is 31 Meadow Rd, 828-254-6706.",
    "lv": "2026-08-01",
@@ -9250,8 +9250,8 @@
     "VIII:*",
     "VIII:13a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; review 23 Nov 2026: Asheville Habitat for Humanity ReStore page",
+   "note": "Asheville Habitat lists the ReStore as open Tuesday through Saturday, 9am-6pm (closed Mondays).",
    "new": false
   },
   {
@@ -9278,7 +9278,7 @@
     "VIII:6a",
     "VIII:7a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; review 23 Nov 2026: Homeward Bound volunteer listing (Nov 2025): Welcome Home Donation Center warehouse at 205 Elk Park Dr, Woodfin, furnishing clients moving into housing",
    "note": "",
    "new": false
   },
@@ -9354,8 +9354,8 @@
     "VIII:*",
     "VIII:4a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; review 23 Nov 2026: Mission Health contact page",
+   "note": "828-213-1111 is the hospital's main line; ask the operator for social work or case management.",
    "new": false
   },
   {
@@ -9457,8 +9457,8 @@
     "VIII:*",
     "VIII:11a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; review 23 Nov 2026: Sleep in Heavenly Peace application page",
+   "note": "Families apply at shpbeds.org (children 3-17; a guardian or an agency referral). Beds go only to zip codes an active chapter serves, and no Asheville chapter could be confirmed online.",
    "new": false
   },
   {
@@ -9593,7 +9593,7 @@
     "VIII:*",
     "VIII:6a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; review 23 Nov 2026: Asheville Habitat and WLOS (2025-26): Habitat-led coalition for Buncombe and Madison, 189 repair jobs completed in 2025, fundraising drives in 2026",
    "note": "",
    "new": false
   },
@@ -9672,8 +9672,8 @@
     "VIII:*",
     "VIII:7a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; 2025-26 rules, sites and transit from Buncombe County, the City of Asheville and WLOS via web search, 8 Nov 2026; 2026-27 sites, check-in and status line from the Asheville-Buncombe Continuum of Care flyer for Nov 13-14, 2026, shared by Skylar Belt; 2026-27 sites, rules, routes and contacts from the Asheville-Buncombe Continuum of Care, Code Purple 2026-2027 sheet, shared by Skylar Belt 16 Nov 2026; corrects the coordinator number labelled as the status line on 13 Nov; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory; coordinator line from the city's 2025-26 Code Purple page via web search, 17 Nov 2026; guide details from the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026; recorded-message number checked against City of Asheville posts, via web search 23 Nov 2026",
-   "note": "The winter guide and the city's 2025-26 Code Purple page give 828-785-4855 for the winter shelter coordinators; the official 2026-27 sheet gives 828-442-7597, which this row keeps. The guide also gives 6pm-7am hours and lists storm overflow at First Presbyterian (20 beds) and Trinity UMC (50 beds); the sheet's 5-8pm entry stands, and the overflow sites are not confirmed. The City of Asheville gave 828-398-6011 as the recorded message for an earlier season; no 2026-27 announcement was found on 23 Nov 2026, so if it does not answer, call 211.",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; 2025-26 rules, sites and transit from Buncombe County, the City of Asheville and WLOS via web search, 8 Nov 2026; 2026-27 sites, check-in and status line from the Asheville-Buncombe Continuum of Care flyer for Nov 13-14, 2026, shared by Skylar Belt; 2026-27 sites, rules, routes and contacts from the Asheville-Buncombe Continuum of Care, Code Purple 2026-2027 sheet, shared by Skylar Belt 16 Nov 2026; corrects the coordinator number labelled as the status line on 13 Nov; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory; coordinator line from the city's 2025-26 Code Purple page via web search, 17 Nov 2026; guide details from the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026; recorded-message number checked against City of Asheville posts, via web search 23 Nov 2026; review 23 Nov 2026: WLOS (2026-27 Code Purple at the Salvation Army Center of Hope)",
+   "note": "The winter guide and the city's 2025-26 Code Purple page give 828-785-4855 for the winter shelter coordinators; the official 2026-27 sheet gives 828-442-7597, which this row keeps. The guide also gives 6pm-7am hours and lists storm overflow at First Presbyterian (20 beds) and Trinity UMC (50 beds); the sheet's 5-8pm entry stands, and the overflow sites are not confirmed. The City of Asheville gave 828-398-6011 as the recorded message for an earlier season; no 2026-27 announcement was found on 23 Nov 2026, so if it does not answer, call 211. WLOS reports the 2026-27 Code Purple overnight shelter is at the Salvation Army Center of Hope rather than AHOPE.",
    "new": false,
    "alt": "Call 211, or Homeward Bound's AHOPE Day Center, 828-252-8883."
   },
@@ -9700,7 +9700,7 @@
     "VIII:*",
     "VIII:15a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; review 23 Nov 2026: Idealist listing: La Milpa members are PODER Emma, CIMA, Raices Emma-Erwin and an Indigenous language project, based in Emma; current details at colaborativalamilpa.org",
    "note": "",
    "new": false
   },
@@ -9751,8 +9751,8 @@
     "IV:*",
     "IV:6a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; review 23 Nov 2026: Buncombe County aging services program descriptions and affordable housing page",
+   "note": "County program listings describe minor repairs, ramps and grab bars for households with someone 60 or older, with bigger jobs referred to Habitat; the phone could not be confirmed online.",
    "new": false
   },
   {
@@ -9804,8 +9804,8 @@
     "VIII:1a",
     "VIII:6a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; VIII:6a tag added 17 Nov 2026 from the row's own name or description (tag audit)",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; VIII:6a tag added 17 Nov 2026 from the row's own name or description (tag audit); review 23 Nov 2026: WFAE (2024) and Renew NC program pages (2025-26)",
+   "note": "No 2026 announcement of an Eblen Helene rebuilding program was found; state Renew NC programs (1-888-791-0207) cover Helene repairs, and Eblen's general rent help continues by phone, 828-255-3066.",
    "new": false
   },
   {
@@ -9829,8 +9829,8 @@
     "VIII:*",
     "VIII:6a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; review 23 Nov 2026: not found online",
+   "note": "A web search (23 Nov 2026) found no online listing for this; confirm by phone or with the community food guide before sending anyone.",
    "new": false
   },
   {
@@ -9854,8 +9854,8 @@
     "VIII:*",
     "VIII:6a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; review 23 Nov 2026: NC Division of Aging AAA roster (Nov 2025) and frcnc.gov",
+   "note": "The state Area Agency on Aging roster lists Foothills Regional Commission's aging office at PO Box 841, Rutherfordton, 828-287-2281 or 1-800-331-9891, serving Cleveland, McDowell, Polk and Rutherford counties; confirm the phone and address here.",
    "new": false
   },
   {
@@ -9879,8 +9879,8 @@
     "VIII:*",
     "VIII:6a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; review 23 Nov 2026: not found online",
+   "note": "A web search (23 Nov 2026) found no online listing for this; confirm by phone or with the community food guide before sending anyone.",
    "new": false
   },
   {
@@ -9904,8 +9904,8 @@
     "VIII:*",
     "VIII:6a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; review 23 Nov 2026: Buncombe County rental and utility assistance handouts, Asheville.com, The Urban News, WFAE",
+   "note": "Its rent help paused for lack of funds at one point; in July 2025 the church launched the Grace in Action Fund for rent, mortgage and utility help. Applicants call ahead (under threat of eviction, income below 80% of area median per the county handout); no citizenship requirement, with Spanish interpreters.",
    "new": false
   },
   {
@@ -10037,8 +10037,8 @@
     "ESPANOL:*",
     "ESPANOL:personal-bilingue-bili"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; review 23 Nov 2026: Legal Aid NC disaster pages and WUNC (Dec 2025)",
+   "note": "Helpline 1-866-219-5262, Mon-Fri 9am-3pm; people who do not qualify are matched with volunteer lawyers. WUNC reported in Dec 2025 that a state funding freeze closed nine Legal Aid offices, so waits may be long.",
    "new": false
   },
   {
@@ -10087,8 +10087,8 @@
     "VIII:*",
     "VIII:6a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; review 23 Nov 2026: Buncombe County homeowner resources page and NC Housing Finance Agency 2026-27 Urgent Repair awards",
+   "note": "For households at or below 50% of area median income; repairs for accessibility and urgent health and safety hazards.",
    "new": false
   },
   {
@@ -10102,7 +10102,7 @@
    "w": "nchaf.gov",
    "d": "1-855-696-2423, nchaf.gov. HUD mortgage help: 888-995-4673.",
    "a": "",
-   "h": "",
+   "h": "Closed to new applications",
    "os": "5.2 Rent, Mortgage, Utility Assistance",
    "t": "",
    "lv": "",
@@ -10112,8 +10112,8 @@
     "VIII:*",
     "VIII:6a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; review 23 Nov 2026: nchaf.gov and NC 211 program page",
+   "note": "The program is closed to new applications; applicants with complete files can still check status in the portal or call 1-855-696-2423.",
    "new": false
   },
   {
@@ -10167,7 +10167,7 @@
     "VI:*",
     "VI:4a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; review 23 Nov 2026: Pisgah Legal contact page: 62 Charlotte St, 828-253-0406 or 800-489-6144, Mon-Fri 8:30am-5pm",
    "note": "",
    "new": false
   },
@@ -10192,8 +10192,8 @@
     "VIII:*",
     "VIII:6a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; review 23 Nov 2026: Buncombe County news release on Reduce to Rebuild",
+   "note": "Buncombe County's Reduce to Rebuild cuts planning and permit fees 50% for Helene-damaged homes rated destroyed or major damage; check with Permits and Inspections whether it is still running, as the county announcement gives an end in December.",
    "new": false
   },
   {
@@ -16895,7 +16895,7 @@
    "pp": "",
    "sp": "⚪ Not listed - ask",
    "spd": "Not stated in the source. Ask when you call.",
-   "ph": "",
+   "ph": "828-252-3234",
    "em": "",
    "w": "",
    "d": "Free community lunch at First Baptist Church of Asheville.",
@@ -16910,8 +16910,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: MANNA agency listing and church directory (828-252-3234)",
+   "note": "No listing uses the name Lunch at the Crossroads; MANNA lists a First Baptist Church homeless outreach meal on Thursdays 12-1:30pm. Call the church (828-252-3234) to confirm.",
    "new": true
   },
   {
@@ -16960,8 +16960,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: not found online",
+   "note": "A web search (23 Nov 2026) found no online listing for this; confirm by phone or with the community food guide before sending anyone.",
    "new": true
   },
   {
@@ -16985,8 +16985,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: restaurant listings via web search",
+   "note": "No online listing mentions free bagged lunches; the restaurant itself (inside the BP at Sardis and Sand Hill Rd) is real. Call 828-633-6868 before sending anyone.",
    "new": true
   },
   {
@@ -17000,7 +17000,7 @@
    "w": "",
    "d": "Food pantry.",
    "a": "238 S French Broad Ave, Asheville 28801",
-   "h": "Tuesdays 10am-1pm",
+   "h": "2nd and 4th Tuesdays 10am-1pm",
    "os": "Community food guide (Oct 2026)",
    "t": "Free",
    "lv": "",
@@ -17010,8 +17010,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: MANNA Buncombe agency listing",
+   "note": "MANNA lists distribution on the 2nd and 4th Tuesdays, 10am-1pm, not every Tuesday.",
    "new": true
   },
   {
@@ -17025,7 +17025,7 @@
    "w": "",
    "d": "Food pantry for A-B Tech students, useful for student parents.",
    "a": "340 Victoria Rd, Asheville 28801",
-   "h": "Thursdays 1-5pm",
+   "h": "Mon-Thu 8:30am-5pm, Fri 8:30am-2pm (Bailey Student Services, room 093)",
    "os": "Community food guide (Oct 2026)",
    "t": "Free",
    "lv": "",
@@ -17035,8 +17035,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: A-B Tech food pantry page (abtech.edu/food)",
+   "note": "A-B Tech says the pantry at Bailey Student Services is open to students and employees Mon-Thu 8:30am-5pm and Fri 8:30am-2pm.",
    "new": true
   },
   {
@@ -17085,8 +17085,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: Plentiful directory",
+   "note": "A web search could not confirm a Thursday pantry here; one directory lists a Wednesday 4-5pm hurricane relief distribution at other addresses. Call 828-298-8955 first.",
    "new": true
   },
   {
@@ -17110,8 +17110,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: Buncombe County Community Markets flyer (2025), Feed America and Mountain Xpress",
+   "note": "A 2025 county flyer lists a free community market at Deaverview Apartments on the 1st and 3rd Mondays, 3-4:30pm; whether the planned Deaverview little pantry was built is unclear.",
    "new": true
   },
   {
@@ -17135,8 +17135,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: Buncombe County news release on the St. James AME and Shiloh Peace Garden pantries",
+   "note": "A county release names a community pantry at St. James AME Church in the East End, built with Bountiful Cities; no listing gives its hours.",
    "new": true
   },
   {
@@ -17160,8 +17160,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: not found online",
+   "note": "A web search (23 Nov 2026) found no online listing for this; confirm by phone or with the community food guide before sending anyone.",
    "new": true
   },
   {
@@ -17185,8 +17185,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: Little Free Pantry map listing",
+   "note": "The Little Free Pantry map gives the Little Free Bodega at 32 Blue Ridge Ave, off the Haywood Rd corridor, serving since 2020; confirm which spot is current.",
    "new": true
   },
   {
@@ -17210,7 +17210,7 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: WLOS: a 24-hour community fridge and free mini market on Haywood Rd in West Asheville, no eligibility rules (address not given)",
    "note": "",
    "new": true
   },
@@ -17260,7 +17260,7 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: Feed America and Plentiful list the Shiloh Community Outdoor Food Pantry at 49 Hampton St, free, walk-in",
    "note": "",
    "new": true
   },
@@ -17285,8 +17285,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: WhyHunger and MANNA (2020) listings",
+   "note": "Listings disagree on the day: one says the 2nd and 4th Tuesdays 12-2pm, a 2020 MANNA list the 2nd Thursday, this row Thursdays 12-2pm. Call before going.",
    "new": true
   },
   {
@@ -17335,8 +17335,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: not found online",
+   "note": "A web search (23 Nov 2026) found no online listing for this; confirm by phone or with the community food guide before sending anyone.",
    "new": true
   },
   {
@@ -17360,8 +17360,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "The guide says they may take photos and post them on social media; tell families who would rather not be pictured.",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: not found online",
+   "note": "The guide says they may take photos and post them on social media; tell families who would rather not be pictured. A web search (23 Nov 2026) found no online listing for this; confirm by phone or with the community food guide before sending anyone.",
    "new": true
   },
   {
@@ -17375,7 +17375,7 @@
    "w": "",
    "d": "Food pantry with hot meals at 1pm.",
    "a": "540 Dillingham Rd, Barnardsville 28709",
-   "h": "Tue 1-6pm, Wed 11am-2pm, Thu 9am-12pm; hot meals 1pm",
+   "h": "Tue 1-6pm, Wed and Thu 11am-4pm (call first)",
    "os": "Community food guide (Oct 2026)",
    "t": "Free",
    "lv": "",
@@ -17385,8 +17385,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: Big Ivy Community Center site (bigivy.org) and older directory listings",
+   "note": "The center's current site gives Tue 1-6pm and Wed and Thu 11am-4pm, and says hours can shift week to week; older listings differ. Call 828-626-3438.",
    "new": true
   },
   {
@@ -17410,7 +17410,7 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: WLOS and 105.9 The Mountain: a free grocery store in Black Mountain for the Swannanoa Valley, shopping by appointment with online registration; 828-545-1579 is its listed number",
    "note": "",
    "new": true
   },
@@ -17435,8 +17435,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: MANNA agency listing and Plentiful",
+   "note": "MANNA lists Black Mountain Open Table on Wednesdays 11:30am-1pm; one directory gives 100 Flat Creek Rd rather than the two church sites here. Confirm where this week's meal is.",
    "new": true
   },
   {
@@ -17460,8 +17460,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: WNC Free Food & Supplies guide (Oct 2026)",
+   "note": "The 117 Montreat Rd blessing box (Black Mountain Presbyterian) is in the October 2026 food guide; the 201 Blue Ridge Rd pantry could not be found online.",
    "new": true
   },
   {
@@ -17485,8 +17485,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: Leicester Community Center site",
+   "note": "The Leicester Community Center's own page puts its MANNA distributions at 2979 New Leicester Hwy on the 1st and 3rd Tuesdays; confirm which applies before sending anyone.",
    "new": true
   },
   {
@@ -17510,7 +17510,7 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; Skylar Belt's free food map listings, pasted 17 Nov 2026",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; Skylar Belt's free food map listings, pasted 17 Nov 2026; review 23 Nov 2026: Good News Asheville (16 Jul 2026): The Blessing Project took its services on the road with mobile drop-offs",
    "note": "",
    "new": true
   },
@@ -17535,8 +17535,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: school district community resource page",
+   "note": "Listings name the First Baptist Weaverville food and supplies pantry at 63 N Main St but give no days; Tuesdays and Fridays could not be confirmed online.",
    "new": true
   },
   {
@@ -17610,8 +17610,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; phone, email and financial help from the WNC Financial Support Resources community list (companion to the food guide), shared by Skylar Belt 17 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; phone, email and financial help from the WNC Financial Support Resources community list (companion to the food guide), shared by Skylar Belt 17 Nov 2026; review 23 Nov 2026: Henderson County food distribution list (hours match) and IAM listings",
+   "note": "IAM serves Henderson County residents only and asks for proof of address, ID for adults and birth certificates for children, with an interview to set needs.",
    "new": true
   },
   {
@@ -17625,7 +17625,7 @@
    "w": "",
    "d": "Free hot meal every Thursday.",
    "a": "312 5th Ave W, Hendersonville 28739",
-   "h": "Thursdays 11:30am-1pm",
+   "h": "Thursdays 11am-12:30pm",
    "os": "Community food guide (Oct 2026)",
    "t": "Free",
    "lv": "",
@@ -17635,8 +17635,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: Henderson County food distribution list (Sept 2024)",
+   "note": "Henderson County's 2024 list gives Thursdays 11am-12:30pm at First Baptist Church; older listings say 11:30am-1pm.",
    "new": true
   },
   {
@@ -17650,7 +17650,7 @@
    "w": "",
    "d": "Food, hygiene items and cold-weather clothing. At Christmas it gets names of children in need from schools and DSS, so a family's route in is through the school or DSS.",
    "a": "1049 Spartanburg Hwy, Hendersonville",
-   "h": "Wed-Fri 9am-2pm",
+   "h": "By referral (2024 county list); older lists give Wed-Fri 9am-2pm by appointment",
    "os": "Community food guide (Oct 2026)",
    "t": "Free",
    "lv": "",
@@ -17660,8 +17660,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026 (Hendersonville group, Nov 11)",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026 (Hendersonville group, Nov 11); review 23 Nov 2026: Henderson County food distribution lists (Sept 2024 and earlier)",
+   "note": "Henderson County's September 2024 list says The Storehouse serves by referral, at 828-692-8360; other listings give 828-692-8300. Call before sending anyone.",
    "new": true
   },
   {
@@ -17685,7 +17685,7 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; phone, email and deliveries from the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; phone, email and deliveries from the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026; review 23 Nov 2026: Madison County resource page: ROAR Mutual Aid Hub open Saturdays 10am-4pm at 798 Walnut Creek Rd, Marshall",
    "note": "",
    "new": true
   },
@@ -17695,7 +17695,7 @@
    "pp": "",
    "sp": "⚪ Not listed - ask",
    "spd": "Not stated in the source. Ask when you call.",
-   "ph": "",
+   "ph": "828-649-3470",
    "em": "",
    "w": "bohmarshall.org",
    "d": "Weekday food distribution in Madison County.",
@@ -17710,8 +17710,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: local news (at 5111 US 25-70 since Sept 2025), NC State Extension Madison County list and FoodPantries.org",
+   "note": "Families who meet TEFAP income guidelines get weekly food. Listings disagree on days (Mon-Fri or Wed and Fri, 12-4pm), so call 828-649-3470.",
    "new": true
   },
   {
@@ -17735,8 +17735,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: Feed America and Plentiful listings",
+   "note": "One listing puts the Jacktown distribution at Parkers Chapel (220 Parkers Chapel Rd), a drive-thru every other Tuesday, entering from Parkers Chapel Rd; another gives 608 Jacktown Rd. Confirm before sending anyone.",
    "new": true
   },
   {
@@ -17760,8 +17760,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: not found online",
+   "note": "A web search (23 Nov 2026) found no online listing for this; confirm by phone or with the community food guide before sending anyone.",
    "new": true
   },
   {
@@ -17770,9 +17770,9 @@
    "pp": "",
    "sp": "⚪ Not listed - ask",
    "spd": "Not stated in the source. Ask when you call.",
-   "ph": "",
+   "ph": "828-456-4838",
    "em": "",
-   "w": "",
+   "w": "hcmnc.org",
    "d": "Community market and food pantry.",
    "a": "150 Branner Ave, Waynesville",
    "h": "Mon 12-4pm, Wed 9am-1pm, Fri 11am-4pm",
@@ -17785,8 +17785,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: Haywood County resource sheets and the ministry's 2025 annual report",
+   "note": "The ministry's 2025 report describes a full-choice community pantry in downtown Waynesville; older county lists give weekday hours and an office interview first. Call 828-456-4838 for this week's days.",
    "new": true
   },
   {
@@ -17810,8 +17810,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: FoodPantries.org and Feed America listings",
+   "note": "Its phone, 828-877-3577, is consistent across listings, but no current pantry or meal hours were found online; call before sending anyone.",
    "new": true
   },
   {
@@ -17820,7 +17820,7 @@
    "pp": "",
    "sp": "⚪ Not listed - ask",
    "spd": "Not stated in the source. Ask when you call.",
-   "ph": "828-844-2866",
+   "ph": "828-884-2866",
    "em": "",
    "w": "sharinghouse.org/food-access",
    "d": "Food access in Transylvania County.",
@@ -17835,8 +17835,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: Feed America, WhyHunger and Plentiful listings (Transylvania Christian Ministries, The Sharing House, 164 Duckworth Ave)",
+   "note": "Every listing found gives 828-884-2866 (this row had 828-844-2866); no current hours were published, so call first.",
    "new": true
   },
   {
@@ -17860,7 +17860,7 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: WhyHunger (Mon, Wed, Fri 9am-12pm) and Plentiful (Wed and Fri 9am-12pm) listings at 20 Academy St; a MANNA partner",
    "note": "",
    "new": true
   },
@@ -17997,8 +17997,8 @@
     "VIII:5a",
     "ESPANOL:*"
    ],
-   "src": "WNC Free Food & Supplies community guide (Oct 2026); Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026 (LGBTQ Women of Asheville, Nov 11)",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (Oct 2026); Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026 (LGBTQ Women of Asheville, Nov 11); review 23 Nov 2026: Presbyterian News Service (Oct 2024)",
+   "note": "Online sources describe the church's large weekday distribution after Helene (2024) but give no current Thursday hours; confirm before sending anyone.",
    "new": true
   },
   {
@@ -18076,8 +18076,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; also in the Low-Cost & Free Things to do in the Asheville Area, October 2026 (updated 7 Oct 2026, facebook.com/AVLAreaHappenings), shared by Skylar Belt 17 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; also in the Low-Cost & Free Things to do in the Asheville Area, October 2026 (updated 7 Oct 2026, facebook.com/AVLAreaHappenings), shared by Skylar Belt 17 Nov 2026; review 23 Nov 2026: MANNA agency listing",
+   "note": "MANNA lists the East Asheville Welcome Table on Thursdays 5-6:30pm (this row says 5-6:15pm) and does not name the host church.",
    "new": true
   },
   {
@@ -18102,8 +18102,8 @@
     "VIII:5a",
     "VIII:12a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; review 23 Nov 2026: not found online",
+   "note": "A web search (23 Nov 2026) found no online listing for this; confirm by phone or with the community food guide before sending anyone.",
    "new": true
   },
   {
@@ -18127,8 +18127,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; review 23 Nov 2026: not found online",
+   "note": "A web search (23 Nov 2026) found no online listing for this; confirm by phone or with the community food guide before sending anyone.",
    "new": true
   },
   {
@@ -18152,8 +18152,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; review 23 Nov 2026: not found online",
+   "note": "A web search (23 Nov 2026) found no online listing for this; confirm by phone or with the community food guide before sending anyone.",
    "new": true
   },
   {
@@ -18177,8 +18177,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; review 23 Nov 2026: not found online",
+   "note": "A web search (23 Nov 2026) found no online listing for this; confirm by phone or with the community food guide before sending anyone.",
    "new": true
   },
   {
@@ -18254,8 +18254,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; review 23 Nov 2026: Haywood County resource sheets",
+   "note": "A Haywood County sheet gives Saturdays 8-11am for hot breakfast and lunch (showers 8-10am), and an older one a Saturday drive-up pantry 8-10am. Call 828-456-9475 to confirm this week.",
    "new": true
   },
   {
@@ -18269,7 +18269,7 @@
    "w": "",
    "d": "Church food pantry; the guide gives no hours, so call first.",
    "a": "394 N Haywood St, Waynesville 28786 (in the driveway off Miller St)",
-   "h": "",
+   "h": "Mon-Fri 10-11am",
    "os": "Community food guide (Oct 2026)",
    "t": "Free",
    "lv": "",
@@ -18279,7 +18279,7 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; review 23 Nov 2026: Grace Church in the Mountains food pantry page: open Mon-Fri 10-11am at 394 N Haywood St, walk-ins accepted",
    "note": "",
    "new": true
   },
@@ -18294,7 +18294,7 @@
    "w": "",
    "d": "Community food pantry; the guide gives no hours, so call first.",
    "a": "664 Sonoma Rd, Waynesville 28786",
-   "h": "",
+   "h": "2nd Wednesday of the month, about 9:30-11am",
    "os": "Community food guide (Oct 2026)",
    "t": "Free",
    "lv": "",
@@ -18304,8 +18304,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; review 23 Nov 2026: Bethel Rural Community Organization pantry page and Haywood County lists",
+   "note": "It distributes on the 2nd Wednesday of the month at Bethel Presbyterian Church (Bethel Middle School lot); the organization says anyone who self-declares need is served. Listings give different phones, so confirm.",
    "new": true
   },
   {
@@ -18329,8 +18329,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; review 23 Nov 2026: Feed America (Apr 2026 record), Haywood County sheet, Smoky Mountain News",
+   "note": "Listings disagree on where it serves: a 2026 directory record gives Saturdays 6-8pm at 32 Commerce St, while a county sheet lists hot lunch Mon-Fri 11:30am-12:30pm at St. John's Catholic Church, 234 Church St. Call 828-452-3846.",
    "new": true
   },
   {
@@ -18344,7 +18344,7 @@
    "w": "haywoodpathwayscenter.org",
    "d": "Free hot meals from a food truck linked to Haywood Pathways Center: Tuesday to Saturday evenings on Hemlock St in Waynesville, and Tuesday evenings at Cruso United Methodist.",
    "a": "179 Hemlock St, Waynesville; Cruso UMC, 11653 Cruso Rd, Canton",
-   "h": "Waynesville Tue-Sat 6:30-7:30pm; Cruso Tuesdays 4:30-6:30pm",
+   "h": "Truck paused (June 2026); Pathways To-Go meals: Cruso UMC Thu 4:30-5pm, Fines Creek Community Center Wed 4:30-5pm, Pathways dining hall nightly 6:30pm",
    "os": "Community food guide (Oct 2026)",
    "t": "Free, Evening / weekend",
    "lv": "",
@@ -18354,8 +18354,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; review 23 Nov 2026: Haywood Pathways Center post (June 2026) and Smoky Mountain News",
+   "note": "Haywood Pathways said in June 2026 that the Holy Cow truck is getting a reset with no return date; its free to-go meals continue at Cruso UMC (Thu 4:30-5pm), Fines Creek Community Center (Wed 4:30-5pm) and nightly at 6:30pm at the Pathways dining hall, no questions asked.",
    "new": true
   },
   {
@@ -18419,7 +18419,7 @@
    "w": "",
    "d": "Church food pantry; call for hours.",
    "a": "4192 Soco Rd, Maggie Valley 28751",
-   "h": "",
+   "h": "Mon and Wed 10am-12pm (use the side entrance)",
    "os": "Community food guide (Oct 2026)",
    "t": "Free",
    "lv": "",
@@ -18429,7 +18429,7 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; review 23 Nov 2026: Haywood County list, Vivery and WhyHunger: pantry Mon and Wed 10am-12pm at 4192 Soco Rd",
    "note": "",
    "new": true
   },
@@ -18454,8 +18454,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; review 23 Nov 2026: Haywood County resource sheets and the NC Division of Aging provider directory",
+   "note": "For people 60 and older, dine-in or to go, weekdays 8:30am-12:30pm; reserve a day ahead at 828-356-2838. Sites have included the Waynesville Armory (44 Boundary St) and High Street Baptist in Canton. Main office 828-452-1447.",
    "new": true
   },
   {
@@ -18531,8 +18531,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; review 23 Nov 2026: Salvation Army Waynesville pages and directory listings",
+   "note": "Its main number, 828-456-7111, is consistent, but listings give different hours (social services Mon-Fri 9am-4pm on its own page); call before going.",
    "new": true,
    "alt": "Haywood Christian Ministry's community market and pantry, 150 Branner Ave (Mon 12-4pm, Wed 9am-1pm, Fri 11am-4pm)."
   },
@@ -18542,7 +18542,7 @@
    "pp": "",
    "sp": "⚪ Not listed - ask",
    "spd": "Not stated in the source. Ask when you call.",
-   "ph": "",
+   "ph": "828-697-6846",
    "em": "",
    "w": "",
    "d": "A free hot meal every Tuesday evening.",
@@ -18557,7 +18557,7 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; review 23 Nov 2026: Henderson County community resources page: Welcome Table at Hope UMC, Tuesdays 4:30-6pm, a MANNA partner",
    "note": "",
    "new": true
   },
@@ -18567,12 +18567,12 @@
    "pp": "",
    "sp": "⚪ Not listed - ask",
    "spd": "Not stated in the source. Ask when you call.",
-   "ph": "",
+   "ph": "828-642-4749",
    "em": "",
-   "w": "",
+   "w": "communityfoodpantrync.com",
    "d": "Weekly neighbor-choice shopping, so families pick their own food.",
    "a": "3685 Chimney Rock Rd, Hendersonville",
-   "h": "Mondays and Thursdays 2-5:30pm",
+   "h": "Thursdays 2-5:30pm",
    "os": "Community food guide (Oct 2026)",
    "t": "Free",
    "lv": "",
@@ -18582,8 +18582,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; review 23 Nov 2026: Henderson County community resources page and communityfoodpantrync.com",
+   "note": "The Community Food Pantry at 3685 Chimney Rock Rd lists Thursdays 2-5:30pm on its own site (a 2024 county list also gave Mondays). A separate Community Food Pantry at Edneyville is listed at 3779B Chimney Rock Rd, 828-243-1008.",
    "new": true
   },
   {
@@ -18607,8 +18607,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; review 23 Nov 2026: not found online",
+   "note": "A web search (23 Nov 2026) found no online listing for this; confirm by phone or with the community food guide before sending anyone.",
    "new": true
   },
   {
@@ -18632,8 +18632,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; review 23 Nov 2026: not found online",
+   "note": "A web search (23 Nov 2026) found no online listing for this; confirm by phone or with the community food guide before sending anyone.",
    "new": true
   },
   {
@@ -18642,7 +18642,7 @@
    "pp": "",
    "sp": "⚪ Not listed - ask",
    "spd": "Not stated in the source. Ask when you call.",
-   "ph": "",
+   "ph": "828-674-5738",
    "em": "",
    "w": "saludapantry.com",
    "d": "Food pantry in Saluda.",
@@ -18657,8 +18657,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; review 23 Nov 2026: Tryon Daily Bulletin (Apr 2025: back at 54 Carolina St, Tue and Thu 10am-4pm, Sat 10am-2pm) and Blue Ridge CC resource page (Nov 2025)",
+   "note": "Saturday hours differ between listings (10am-2pm or 10am-1pm).",
    "new": true
   },
   {
@@ -18684,8 +18684,8 @@
     "VIII:6a",
     "VIII:14a"
    ],
-   "src": "WNC Financial Support Resources community list (companion to the food guide), shared by Skylar Belt 17 Nov 2026; food pantry hours and Brevard site from the WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026",
-   "note": "",
+   "src": "WNC Financial Support Resources community list (companion to the food guide), shared by Skylar Belt 17 Nov 2026; food pantry hours and Brevard site from the WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; review 23 Nov 2026: Henderson County food distribution list and Salvation Army pages",
+   "note": "Henderson County's lists give the pantry as Mon-Fri 9am-12pm; one directory says Fridays only. Call 828-693-4181.",
    "new": true,
    "alt": "In Henderson County, IAM (828-697-7029). In Transylvania, The Sharing House (828-844-2866) or The Bread of Life (828-877-3577)."
   },
@@ -18695,7 +18695,7 @@
    "pp": "",
    "sp": "⚪ Not listed - ask",
    "spd": "Not stated in the source. Ask when you call.",
-   "ph": "",
+   "ph": "828-475-1920",
    "em": "",
    "w": "",
    "d": "Free hot meals, pantry staples, produce boxes and household supplies.",
@@ -18711,8 +18711,8 @@
     "VIII:5a",
     "VIII:13a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; review 23 Nov 2026: NASEN directory, Disability Rights NC directory and WLOS",
+   "note": "Listings give 3261 Georgia Rd, but a 2026 WLOS story puts the group at 66 Harrison Ave, Franklin; confirm before going.",
    "new": true
   },
   {
@@ -18738,8 +18738,8 @@
     "X:*",
     "X:9"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; review 23 Nov 2026: not found online",
+   "note": "A web search (23 Nov 2026) found no online listing for this; confirm by phone or with the community food guide before sending anyone.",
    "new": true
   },
   {
@@ -18763,8 +18763,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; review 23 Nov 2026: Madison County Helene resource list",
+   "note": "23 Barnard Church Rd is listed as the Barnard General Store (Mon-Sat 9am-5pm); no online source confirms free supplies there now.",
    "new": true
   },
   {
@@ -18788,8 +18788,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; review 23 Nov 2026: not found online",
+   "note": "A web search (23 Nov 2026) found no online listing for this; confirm by phone or with the community food guide before sending anyone.",
    "new": true
   },
   {
@@ -18813,8 +18813,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; review 23 Nov 2026: not found online",
+   "note": "A web search (23 Nov 2026) found no online listing for this; confirm by phone or with the community food guide before sending anyone.",
    "new": true
   },
   {
@@ -18865,7 +18865,7 @@
     "X:*",
     "X:10"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; review 23 Nov 2026: Vivery listing: Service Center for Latinos food distribution in the 431 Oak Ave parking lot, first Friday 9:30am-12pm",
    "note": "",
    "new": true
   },
@@ -18917,8 +18917,8 @@
     "VIII:6a",
     "VIII:14a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; financial help from the WNC Financial Support Resources community list (companion to the food guide), shared by Skylar Belt 17 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; financial help from the WNC Financial Support Resources community list (companion to the food guide), shared by Skylar Belt 17 Nov 2026; review 23 Nov 2026: UCM 2025 annual report, Feed America and a 2021 Cherokee elder services guide",
+   "note": "For Jackson County residents; households can visit every two weeks (2025 annual report). Listings disagree on days, so call 828-586-8228.",
    "new": true
   },
   {
@@ -18952,7 +18952,7 @@
    "pp": "",
    "sp": "⚪ Not listed - ask",
    "spd": "Not stated in the source. Ask when you call.",
-   "ph": "",
+   "ph": "828-538-4540",
    "em": "",
    "w": "",
    "d": "A Blessing Box outside that anyone can take from at any hour, a food pantry, and a free 24/7 public health vending machine with healthy snacks, meal kits, hygiene products and recovery resources.",
@@ -18969,8 +18969,8 @@
     "VII:*",
     "VII:6a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; past event taken out, review of 23 Nov 2026 (scripts/apply-review-2026-11-23.mjs)",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; past event taken out, review of 23 Nov 2026 (scripts/apply-review-2026-11-23.mjs); review 23 Nov 2026: Southwestern CC Swain food resources sheet (Jan 2024), EBCI food resource guide, Plentiful",
+   "note": "Its phone is 828-538-4540; listings give different pantry hours (one says Tue-Fri 9am-1pm), and none mention the Blessing Box, so call first.",
    "new": true
   },
   {
@@ -18994,8 +18994,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; review 23 Nov 2026: Plentiful and MANNA event listings, NC BioNetwork Swain Center page",
+   "note": "Listings describe pop-up and mobile food distributions at the Swain Center rather than a pantry with set hours; call 828-366-2005 for the next date.",
    "new": true
   },
   {
@@ -19598,8 +19598,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "Low-Cost & Free Things to do in the Asheville Area, October 2026 (updated 7 Oct 2026, facebook.com/AVLAreaHappenings), shared by Skylar Belt 17 Nov 2026; address from the directory's Food by day schedule (v19 workbook)",
-   "note": "",
+   "src": "Low-Cost & Free Things to do in the Asheville Area, October 2026 (updated 7 Oct 2026, facebook.com/AVLAreaHappenings), shared by Skylar Belt 17 Nov 2026; address from the directory's Food by day schedule (v19 workbook); review 23 Nov 2026: K-LOVE (Nov 2024) and Valley Echo",
+   "note": "A 2024 story says the church served hot meals after Helene; no current listing confirms a Monday meal, so call before sending anyone.",
    "new": true
   },
   {

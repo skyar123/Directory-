@@ -20,6 +20,7 @@ import NeedStart from "./components/NeedStart.jsx";
 import FilterSheet from "./components/FilterSheet.jsx";
 import CrisisSheet from "./components/CrisisSheet.jsx";
 import Home from "./components/Home.jsx";
+import { COLLECTIONS, collect } from "./collections.js";
 import TodayView from "./components/TodayView.jsx";
 import MoreView, { MORE_TITLE } from "./components/MoreView.jsx";
 import { factsOf, FACETS, FACET_LABEL } from "./facets.js";
@@ -34,7 +35,7 @@ const TOP = [
 ];
 /* where each other view lives, for the highlighted tab and the back link */
 const PARENT = {
-  resource: "find", ask: "find", food: "today", events: "today",
+  resource: "find", ask: "find", collection: "find", food: "today", events: "today",
   sniff: "more", assessment: "more", changed: "more", gaps: "more", people: "more", data: "more",
 };
 const TITLE = { ...MORE_TITLE, food: "Food by day", events: "All events", resource: "Program", ask: "Ask AI" };
@@ -49,15 +50,16 @@ export function parseHash(hash) {
   const [path, qs] = h.split("?");
   const p = new URLSearchParams(qs || "");
   const [v, id] = path.split("/");
-  const view = v === "r" ? "resource" : ALL_VIEWS.includes(v) ? v : "find";
+  const view = v === "r" ? "resource" : v === "c" ? "collection" : ALL_VIEWS.includes(v) ? v : "find";
   return {
-    view, id: v === "r" ? decodeURIComponent(id || "") : "",
+    view, id: v === "r" || v === "c" ? decodeURIComponent(id || "") : "",
     q: p.get("q") || "", sec: p.get("sec") || "", gaps: p.get("gaps") === "1",
     f: (p.get("f") || "").split(",").filter((k) => FACET_KEYS.includes(k)),
   };
 }
 export function buildHash({ view, id, q, sec, gaps, f }) {
   if (view === "resource") return "#/r/" + encodeURIComponent(id || "");
+  if (view === "collection") return "#/c/" + encodeURIComponent(id || "");
   if (view !== "find") return "#/" + view;
   const p = new URLSearchParams();
   if (q) p.set("q", q);
@@ -589,6 +591,7 @@ export default function App() {
           <button className="crumb-back" onClick={goBack} aria-label="Back">‹ Back</button>
           <span aria-current="page">
             {view === "resource" ? (resById.get(pageId)?.name || "Program")
+              : view === "collection" ? (COLLECTIONS[pageId]?.title || "Collection")
               : view === "find" ? (q.trim() ? `Results for “${q.trim()}”` : "The whole directory")
               : TITLE[view] || TOP.find(([id]) => id === view)?.[1]}
           </span>
@@ -604,6 +607,7 @@ export default function App() {
             <Home date={new Date()} today={evToday} resById={resById} foodToday={tileCount({ food: true })} weekEvents={weekEvents}
               eventsLoading={!cal} planCount={plan.items.length} onGo={goNeed} countOf={tileCount} go={go}
               openPage={openPage} onEvent={(e) => { setEvQ(e.what); go("events"); }}
+              openCollection={(id) => { setPageId(id); go("collection"); }}
               mine={(<>
             {(!!stars.length || !!recent.length) && (
             <div className="mine">
@@ -713,6 +717,19 @@ export default function App() {
       )}
 
       {view === "more" && <MoreView go={go} />}
+
+      {view === "collection" && COLLECTIONS[pageId] && (
+        <section className="pane collection">
+          <h2 className="today-title">{COLLECTIONS[pageId].title}</h2>
+          <p className="lede">{COLLECTIONS[pageId].sub}. Grouped by the SNIFF question each program answers.</p>
+          {collect(COLLECTIONS[pageId], resources, NEEDBY).map((g) => (
+            <div key={g.key} className="result-group">
+              <h2 className="group-title">{g.label} <span className="need-n">{g.items.length}</span></h2>
+              <div className="cards">{g.items.map(card)}</div>
+            </div>
+          ))}
+        </section>
+      )}
 
       {view === "resource" && (
         <section className="pane resource-page">
