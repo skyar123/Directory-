@@ -2,7 +2,8 @@
  * Apply the web-check findings of the November 2026 review
  * (scripts/review/findings-2026-11.json) to data/. Each finding:
  *   r: confirmed | partly | changed | notfound | nocheck (advice or a
- *      community list with no facts a web search can settle; left as is)
+ *      community list with no facts a web search can settle, or a row
+ *      added from a web search in the last month; left as is)
  *   expect / set: field values to replace (the old value must match)
  *   setIfEmpty: fields to fill only where the row has none
  *   note: a sentence added to the row's note

@@ -1063,5 +1063,316 @@
   "r": "partly",
   "note": "Uplifting Deals (formerly The Price is Right Discount Warehouse) is at 198 Weaverville Rd, next to Centreville Luncheonette; a web search did not confirm current hours for these stores.",
   "src": "Mitchell News on the Uplifting Deals rename"
+ },
+ {
+  "id": "best-bites-dental",
+  "r": "partly",
+  "note": "One listing gives Fridays 8am-4:30pm too; a web search did not confirm whether it takes Medicaid, so ask when calling.",
+  "src": "Superpages and New Patients practice listings for Joshua Paynich DDS, 11 Yorkshire St Ste C, 828-274-4744"
+ },
+ {
+  "id": "blue-ridge-pediatric-dentistry",
+  "r": "confirmed",
+  "src": "Yellow Pages and NPI listings: 218 Elkwood Ave, 828-575-2345, brpedo.com"
+ },
+ {
+  "id": "smile-starters",
+  "r": "partly",
+  "note": "The phone matches listings, but one directory says this office does not take Medicaid; confirm Medicaid when calling.",
+  "src": "WebMD and Vitals listings for Smile Starters, 247 Biltmore Ave"
+ },
+ {
+  "id": "great-smiles-pediatric-dentistry-orthodontic",
+  "r": "partly",
+  "note": "Listings tie 828-274-9220 at 10 Yorkshire St to Great Beginnings Pediatric and Adolescent Dental Specialists, and give Great Smiles at 15 Yorkshire St, Suite 302, 828-407-4024. Confirm which office and number before booking.",
+  "src": "Superpages (Great Beginnings, 10 Yorkshire St, 828-274-9220), Venture Asheville directory (Great Smiles, 15 Yorkshire St Ste 302)"
+ },
+ {
+  "id": "mahec-dental",
+  "r": "confirmed",
+  "setIfEmpty": {
+   "h": "Mon-Thu 8am-5pm (closed 12-1), Fri until 3pm"
+  },
+  "src": "mahec.net Dental Health Center at Biltmore page and contact page: 123 Hendersonville Rd, 828-252-4290"
+ },
+ {
+  "id": "pediatric-dentists-worth-the-drive-flossy-mo",
+  "r": "partly",
+  "note": "One online listing gives Flossy Mountain's days as Wed-Fri (7:30am-7pm), not Tue-Thu; call to check the day.",
+  "src": "Birdeye listing for Flossy Mountain Dental, 600 Hospital Dr Ste 4, Clyde (unclaimed)"
+ },
+ {
+  "id": "mission-children-s-specialists-olson-huff-ce",
+  "r": "confirmed",
+  "src": "WebMD and Vitals (828-213-1740, weekdays 8-5); NPI registry and Mission provider profile (Olson Huff Center 828-213-1780)"
+ },
+ {
+  "id": "huff-center-therapies-pediatric-rehabilitati",
+  "r": "partly",
+  "note": "Mission says all outpatient pediatric therapies need a referral from a doctor. A web search did not confirm either phone number, and the cell number may be a person's, so use the main Mission Children's line if they do not answer.",
+  "src": "missionhealth.org pediatric rehabilitation page (Reuters Outpatient Center, 11 Vanderbilt Park Dr)"
+ },
+ {
+  "id": "free-nurse-line-at-3am-both-medicaid-plans",
+  "r": "confirmed",
+  "src": "healthybluenc.com contact page (NurseLine 844-545-1427, Spanish 844-545-1428); vayahealth.com contact page (Nurse Advice Line 1-800-290-1623, 24/7)"
+ },
+ {
+  "id": "10-for-a-flu-or-covid-shot-25-for-a-well-chi",
+  "r": "confirmed",
+  "src": "vayahealth.com vaccinations page: $10 gift card per flu or COVID shot, two per plan year, Vaya Total Care members; $25 for an Innovations child or adolescent wellness visit"
+ },
+ {
+  "id": "healthy-blue-extra-benefits-pregnancy-and-ne",
+  "r": "partly",
+  "note": "Healthy Blue's extras page (subject to change) lists rewards for doctor visits up to $50, a Baby Essentials catalog (stroller, safe sleep kit, breastfeeding kit), a community baby shower and doula support in some areas after at least one prenatal visit. Rewards are redeemed in the Benefit Reward Hub.",
+  "src": "healthybluenc.com/medicaid/extras; Blue Cross NC blog on doulas; Healthy Blue pregnancy quick start guide"
+ },
+ {
+  "id": "1915-i-services-medicaid-respite-without-wai",
+  "r": "confirmed",
+  "note": "Needs full NC Medicaid and an independent 1915(i) assessment (new version from 1 Oct 2026); ages 3 and up; Standard Plan members are not eligible, so a child may need to move to the Tailored Plan first.",
+  "src": "medicaid.ncdhhs.gov 1915(i) pages and FAQ"
+ },
+ {
+  "id": "advance-instruction-for-mental-health-treatm",
+  "r": "partly",
+  "note": "To register it with the state, the form is notarized and mailed with a $10 fee to the NC Secretary of State, PO Box 29622, Raleigh, NC 27626-0622. A web search did not confirm the phone number listed here.",
+  "src": "sosnc.gov advance health care directive registry form, brochure and FAQ; GS 130A Article 21"
+ },
+ {
+  "id": "pansy-collective-test-strips",
+  "r": "partly",
+  "note": "A web search found no listing for this group. For free test strips in Asheville, the Steady Collective and the Western NC AIDS Project are listed by Buncombe County as harm reduction partners.",
+  "src": "no listing found online; Mountain Xpress and Buncombe County harm reduction partner list"
+ },
+ {
+  "id": "how-fast-the-plan-is-required-to-get-you-see",
+  "r": "nocheck"
+ },
+ {
+  "id": "epsdt-the-rule-that-overturns-a-no-for-anyon",
+  "r": "nocheck"
+ },
+ {
+  "id": "river-of-hope-mat",
+  "r": "partly",
+  "note": "See River of Hope Behavioral Health and Wings of Flight for what a web search found; 828-407-0880 is Wings of Flight in Old Fort.",
+  "src": "see the River of Hope and Wings of Flight rows (CARF, NPI listings)"
+ },
+ {
+  "id": "abccm-medical-ministry",
+  "r": "partly",
+  "note": "ABCCM's own page gives a split schedule (Mon 9am-1pm and 2-6pm; Tue and Thu 9am-1pm and 5:30-6pm; Wed 9am-1pm), first come, first served with limited space; arrive early. Refill line 828-398-6687.",
+  "src": "abccm.org Medical Ministry and Get Help pages (undated), Vitals listing"
+ },
+ {
+  "id": "may-s-clinic-wnc-rescue-mission",
+  "r": "partly",
+  "note": "Online it is listed as May's Care Center, run by Appalachian Mountain Community Health Centers at 225 Patton Ave Suite 200, sliding scale by income. Listings give 828-412-5315 and weekday hours that do not match; call first.",
+  "src": "freeclinics.us (AMCHC May's Care Center), Cortico and Solv listings"
+ },
+ {
+  "id": "nc-medassist",
+  "r": "partly",
+  "note": "Free mailed prescriptions are for uninsured NC residents with incomes up to 300% of the federal poverty level; approval lasts one year. A web search did not confirm the toll-free number, so check medassist.org.",
+  "src": "Direct Relief (Nov 2026), NCDHHS Medication Assistance Program page, ECU Physicians, WBTV (Dec 2025)"
+ },
+ {
+  "id": "appalachian-mountain-health-amh-dental",
+  "r": "partly",
+  "note": "A listing shows it taking new patients with the same hours; a web search did not confirm the first-Monday call rule, so ask how new patients get in. Some listings say 77 McDowell St.",
+  "src": "New Patients and Yobi dental listings for 7 McDowell St Ste 200; CDC NPIN listing"
+ },
+ {
+  "id": "hot-springs-health-program",
+  "r": "partly",
+  "note": "Madison County lists Mars Hill Medical Center at 119 Mountain View Rd, the Laurel center at 80 Guntertown Rd, Hot Springs at 66 NW US 25/70 Hwy, and an after-hours line for all four clinics, 828-689-9713. Hours differ between listings (Mars Hill is open evenings and Sundays).",
+  "src": "Madison County Hot Springs Health Program page, Town of Mars Hill medical services page, NC Medical Board, Feedam/211"
+ },
+ {
+  "id": "wncap",
+  "r": "confirmed",
+  "src": "CDC GetTested listing (554 Fairview Rd), GiveOutDay profile and HRSA 340B record (828-252-7489)"
+ },
+ {
+  "id": "buncombe-county-hhs-clinic",
+  "r": "partly",
+  "note": "Open Mon-Fri 8am-5pm. Immunization appointments have their own line, 828-250-5096. Family planning is now called Reproductive Health.",
+  "src": "buncombecounty.org Clinical Services and Immunizations pages"
+ },
+ {
+  "id": "food-burnsville-more",
+  "r": "partly",
+  "note": "The Micaville market is run by Feed My Sheep with MANNA, second Wednesdays 10-11:30am; MANNA lists 9 Dec 2026, 13 Jan and 10 Feb 2027. A web search found no current listing for the No Empty Tables fridge.",
+  "src": "MANNA partner spotlight on Feed My Sheep and MANNA Micaville events page"
+ },
+ {
+  "id": "recovery-meetings-mcdowell-county",
+  "r": "partly",
+  "note": "East Marion Baptist is at 660 Baldwin Ave, Marion; the latest listing found (Nov 2024) has a meal at 5:30pm and the large group at 6:10pm Thursdays. Confirm with the church that it still meets.",
+  "src": "The Light FM event listing (Nov 2024), East Marion Baptist Celebrate Recovery page, church directory"
+ },
+ {
+  "id": "abccm-crisis-dental",
+  "r": "partly",
+  "note": "A web search found no current listing of a Friday crisis dental clinic; Mountain Xpress reported ABCCM reviving its dental clinic with volunteer dentists. Call 828-259-5339 to ask how dental slots work now.",
+  "src": "Mountain Xpress on ABCCM's dental clinic (undated)"
+ },
+ {
+  "id": "pediatric-hearing",
+  "r": "partly",
+  "note": "UNC's pediatric audiology is in Chapel Hill and Raleigh (scheduling 984-974-4479). For closer testing, NCDHHS keeps a list of approved infant hearing diagnostic sites and pediatric audiologists by region.",
+  "src": "uncchildrens.org pediatric audiology page; NCDHHS Early Hearing Detection and Intervention pediatric audiologists page"
+ },
+ {
+  "id": "before-you-call-tips-that-save-time",
+  "r": "nocheck"
+ },
+ {
+  "id": "keeping-the-provider-you-already-trust-when",
+  "r": "nocheck"
+ },
+ {
+  "id": "never-leave-the-pharmacy-without-the-medicin",
+  "r": "nocheck"
+ },
+ {
+  "id": "dental-on-livingston-wncchs-abccm",
+  "r": "nocheck"
+ },
+ {
+  "id": "biltmore-avenue-family-dentistry",
+  "r": "nocheck"
+ },
+ {
+  "id": "asheville-free-clinic-mahec",
+  "r": "nocheck"
+ },
+ {
+  "id": "buladean-health-clinic",
+  "r": "nocheck"
+ },
+ {
+  "id": "wncchs-dental-urgent-care",
+  "r": "partly",
+  "note": "WNCCHS's dental page says it cannot take new routine dental patients because of a long waitlist; urgent slots (abscess, tooth pain) are booked by calling at 3pm Mon-Fri.",
+  "src": "WNCCHS dental page (mirror copy; one copy prints the line as 828-252-0622 ext 8903)"
+ },
+ {
+  "id": "blue-ridge-health-mobile-dental-bus",
+  "r": "partly",
+  "note": "Blue Ridge Health runs mobile dental buses (it took over Mission Children's Dental) with sliding-scale rates; a web search did not confirm this phone or a school schedule, so ask the child's school whether the bus visits.",
+  "src": "brchs.com dental bus and dentistry pages; Mountain Xpress and Becker's on the Mission Children's Dental transition"
+ },
+ {
+  "id": "mountain-strong-free-clinic",
+  "r": "partly",
+  "note": "WUNC (Sept 2026) reports Mountain Strong: Yancey and Mitchell Relief Team running a free mental health clinic in Burnsville since June 2026, mostly for Yancey, Mitchell and Avery residents.",
+  "src": "WUNC (23 Sept 2026), Yancey County EMS post (June 2026), NC Center for Nonprofits listing"
+ },
+ {
+  "id": "nc-medicaid-enrollment-broker-which-plan-is",
+  "r": "partly",
+  "note": "Listings disagree on its hours: the NC Medicaid fact sheet says Mon-Fri 7am-7pm, others Mon-Sat 7am-5pm, with longer hours during open enrollment. TTY 711. Plans can also be checked or changed at ncmedicaidplans.gov.",
+  "src": "NC Medicaid fact sheet on changing health plans; UHC and Healthy Blue enrollment pages"
+ },
+ {
+  "id": "big-ivy-free-healthcare-barnardsville",
+  "r": "nocheck"
+ },
+ {
+  "id": "wnc-mask-bloc",
+  "r": "nocheck"
+ },
+ {
+  "id": "campfire-community-school-opens-20-aug-2026",
+  "r": "changed",
+  "expect": {
+   "n": "Campfire Community School - opens 20 Aug 2026, read the funding note first",
+   "d": "A new private school in Asheville for neurodivergent students, first day 20 AUGUST 2026, enrolling now. Every student gets a 1:1 behaviour technician and an individual learning plan built by special education consultants and BCBAs. Learning is built around movement, sensory activity and games rather than desk work. Term dates published: parent reviews 6 Nov 2026 and 5 Feb 2027, breaks 23-27 Nov and 21 Dec to 1 Jan, spring break 5-9 Apr 2027, last day 11 Jun 2027. Email info@campfireaba.com to ask about enrolment. No street address, grade range, class size or tuition figure is published anywhere on their site. Ask for all four in writing."
+  },
+  "set": {
+   "n": "Campfire Community School (opened 20 Aug 2026), read the funding note first",
+   "d": "A new private school in Asheville for neurodivergent students, which opened on 20 August 2026. Every student gets a 1:1 behaviour technician and an individual learning plan built by special education consultants and BCBAs. Learning is built around movement, sensory activity and games rather than desk work. Term dates published: parent reviews 6 Nov 2026 and 5 Feb 2027, breaks 23-27 Nov and 21 Dec to 1 Jan, spring break 5-9 Apr 2027, last day 11 Jun 2027. Email info@campfireaba.com to ask about enrolment. No street address, grade range, class size or tuition figure is published anywhere on their site. Ask for all four in writing."
+  },
+  "src": "date review 23 Nov 2026: the school's first day has passed; wording updated from the row's own term dates"
+ },
+ {
+  "id": "christine-w-avery-learning-center",
+  "r": "partly",
+  "setIfEmpty": {
+   "a": "135 Hill St, Asheville"
+  },
+  "note": "Directories list it at 135 Hill St, open 7am-5:30pm year-round for about ages 2 to 10, and one gives 828-423-3154; a web search did not find 828-232-7433, so try both.",
+  "src": "childcarecenter.us, Winnie and CareLuLu listings; Buncombe County early childhood grant reports (2024-25)"
+ },
+ {
+  "id": "el-telar",
+  "r": "partly",
+  "note": "El Telar is listed as Colaborativa La Milpa's bilingual home child care network (24 members in 2023); a web search found no 2026 update. cenzontle.coop is a separate interpretation co-op, not El Telar's site.",
+  "src": "Impala grant profile for Colaborativa La Milpa (2023), Third Wave Fund grantee page, Mountain Xpress on the Emma co-op network"
+ },
+ {
+  "id": "healing-hearts-medical-family-therapy-associ",
+  "r": "partly",
+  "note": "A web search found the practice (Healing Hearts: Medical Family Therapy Associates, PLLC) but not its address or phones; confirm on healingheartsmedft.com.",
+  "src": "Vaia company listing"
+ },
+ {
+  "id": "functional-dentistry-of-asheville",
+  "r": "partly",
+  "note": "NPI confirms 3 Doctors Park Ste C and 828-617-0380 and the practice is taking new patients; the insurance listed is private plans, and Medicaid was not confirmed. A Fairview office (Functional Dentistry of Fairview) is planned.",
+  "src": "NPI registry, New Patients listing, WLOS Ask 13"
+ },
+ {
+  "id": "eliada-child-development-center",
+  "r": "confirmed",
+  "note": "NC Pre-K slots are free for families who qualify through Buncombe County Smart Start.",
+  "src": "childcarecenter.us (2 Compton Dr, 828-254-5356), eliada.org child care and Pre-K page"
+ },
+ {
+  "id": "ywca-early-learning-program",
+  "r": "confirmed",
+  "src": "YWCA of Asheville Early Learning Program page and press releases (828-254-7206), Buncombe County early childhood grant reports (2024-25)"
+ },
+ {
+  "id": "head-start-operator",
+  "r": "confirmed",
+  "note": "Applications are taken any time of year, and staff help parents fill them in; ages 3-5, Buncombe and Madison counties.",
+  "src": "Buncombe County Schools Head Start pages (CAO, 25 Gaston St, 828-252-2495)"
+ },
+ {
+  "id": "tiny-tykes-playgroups",
+  "r": "partly",
+  "note": "The city lists Tiny Tykes play dates Wednesdays at Stephens-Lee and Fridays at Grant Southside (fall 2026 club from 16 Sept); an Oct 2025 listing gives $5 a visit or 5 for $20, so ask about the fee and the SOAR scholarship.",
+  "src": "ashevillenc.gov news (Feb and Sept 2026), Happening Next event listing (Oct 2025)"
+ },
+ {
+  "id": "we-rock-care",
+  "r": "partly",
+  "note": "A web search did not confirm this phone or the drop-off service; it found a Rockin'the Spectrum respite page (group respite at a clubhouse, an in-home respite waitlist and scholarships) that may be a different group. Call before planning on it.",
+  "src": "rockinthespectrum.com respite care page; no listing found for We Rock Care"
+ },
+ {
+  "id": "ymca-after-school",
+  "r": "partly",
+  "note": "The Y's 2025-26 Excel After the Bell handbook covers enrollment; income-based rates and financial assistance are first come, first served, and families apply for a child care voucher first.",
+  "src": "YMCA of WNC parent handbook 2025-26 and Y-Access page; Asheville Chamber (2024)"
+ },
+ {
+  "id": "first-presbyterian-child-care-center",
+  "r": "partly",
+  "setIfEmpty": {
+   "a": "40 Church St, Asheville"
+  },
+  "note": "Full-time care for 6 weeks to 5 years at 40 Church St; listings disagree on hours, so ask.",
+  "src": "city-data, Care.com and Appalachian Grown listings for the Child Care Center of First Presbyterian Church"
+ },
+ {
+  "id": "asheville-community-movement-wild-things-fre",
+  "r": "partly",
+  "note": "The address is confirmed (indoor gym and play space), but a web search found no listing of a Wild Things free play session; call to check the day and time.",
+  "src": "ClassCub and Macaroni KID listings for Asheville Community Movement, 812 Riverside Dr"
  }
 ]
