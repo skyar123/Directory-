@@ -1007,8 +1007,8 @@
     "VIII:*",
     "VIII:10a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Literacy Together's phone from Idealist and a regional directory via web search, 8 Nov 2026",
-   "note": "Sources disagree on the sign-up page: this row points to Literacy Together (lit-together.org), while the Public Edition (7 Nov 2026) points to Buncombe Partnership for Children's page, buncombepfc.org/dpil.",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Literacy Together's phone from Idealist and a regional directory via web search, 8 Nov 2026; Spectrum News (Aug 2026) and earlier coverage of the BPFC and Literacy Together partnership; conflict checked by web search, 23 Nov 2026 (scripts/apply-conflicts-2026-11-23.mjs)",
+   "note": "Both are right: Buncombe Partnership for Children and Literacy Together brought the program to Buncombe together, and BPFC reported 4,341 children enrolled in 2026. Families can sign up through either (lit-together.org or buncombepfc.org/dpil) or at imaginationlibrary.com.",
    "new": false
   },
   {
@@ -3594,8 +3594,8 @@
     "X:*",
     "X:3"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Legal Aid of North Carolina official office listing (legalaidnc.org), checked 7 Nov 2026",
-   "note": "Sources disagree on the office: the Public Edition (7 Nov 2026, from Legal Aid of NC's office list) names the Morganton office (211 E Union St, 828-437-8280 or 800-849-5195) as the one serving Buncombe, while this row lists an Asheville office at 20 Artful Way. Call the helpline to confirm which office takes the case.",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Legal Aid of North Carolina official office listing (legalaidnc.org), checked 7 Nov 2026; Legal Aid of NC office list (legalaidnc.org/offices); conflict checked by web search, 23 Nov 2026 (scripts/apply-conflicts-2026-11-23.mjs)",
+   "note": "The Asheville office (20 Artful Way, Suite 210) is home to Legal Aid's statewide Senior Law Project for people 60 and older (877-579-7562), per Legal Aid's own office list. Other cases start with the helpline, 1-866-219-5262; the Public Edition names the Morganton office (211 E Union St, 828-437-8280 or 800-849-5195) as the one that serves Buncombe.",
    "new": false
   },
   {
@@ -3994,7 +3994,7 @@
     "X:*",
     "X:4"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Drive: Phlebotomy Training & Workforce Stipends Guide, Buncombe County (30 Aug 2026)",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Drive: Phlebotomy Training & Workforce Stipends Guide, Buncombe County (30 Aug 2026); 828-250-5500 confirmed as the main line by the NC DHHS county directory, via web search 23 Nov 2026",
    "note": "",
    "new": false
   },
@@ -9511,8 +9511,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory; NCCARE360 form, Arden address and North phone from the WNC Financial Support Resources community list (companion to the food guide), shared by Skylar Belt 17 Nov 2026; chamber listing via web search, 17 Nov 2026",
-   "note": "The October 2026 financial list gives ABCCM's address as 1845 Brevard Rd, Arden (a chamber listing agrees) and a North Buncombe number of 828-645-6141 at 403 Weaverville Hwy, not 828-259-5303. Confirm which is current.",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory; NCCARE360 form, Arden address and North phone from the WNC Financial Support Resources community list (companion to the food guide), shared by Skylar Belt 17 Nov 2026; chamber listing via web search, 17 Nov 2026; ABCCM Crisis Ministry page; conflict checked by web search, 23 Nov 2026 (scripts/apply-conflicts-2026-11-23.mjs)",
+   "note": "The October 2026 financial list gives ABCCM's address as 1845 Brevard Rd, Arden (a chamber listing agrees) and a North Buncombe number of 828-645-6141 at 403 Weaverville Hwy, not 828-259-5303. Confirm which is current. Checked 23 Nov 2026: ABCCM's own Crisis Ministry page gives the South site (10 Buck Shoals Rd, Arden) as 828-684-3872, not 828-259-5302, and Hominy Valley as 828-259-5301; one map listing marks the North site (403 Weaverville Rd) closed; no source was found for 1845 Brevard Rd. Call 828-259-5300 to ask which sites are open before sending anyone.",
    "new": false,
    "alt": "For food: MANNA's food helpline, 828-290-9749. For a money crisis: Buncombe DSS emergency assistance (828-250-6330) or Eblen Charities (828-255-3066)."
   },
@@ -9672,8 +9672,8 @@
     "VIII:*",
     "VIII:7a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; 2025-26 rules, sites and transit from Buncombe County, the City of Asheville and WLOS via web search, 8 Nov 2026; 2026-27 sites, check-in and status line from the Asheville-Buncombe Continuum of Care flyer for Nov 13-14, 2026, shared by Skylar Belt; 2026-27 sites, rules, routes and contacts from the Asheville-Buncombe Continuum of Care, Code Purple 2026-2027 sheet, shared by Skylar Belt 16 Nov 2026; corrects the coordinator number labelled as the status line on 13 Nov; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory; coordinator line from the city's 2025-26 Code Purple page via web search, 17 Nov 2026; guide details from the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026",
-   "note": "The winter guide and the city's 2025-26 Code Purple page give 828-785-4855 for the winter shelter coordinators; the official 2026-27 sheet gives 828-442-7597, which this row keeps. The guide also gives 6pm-7am hours and lists storm overflow at First Presbyterian (20 beds) and Trinity UMC (50 beds); the sheet's 5-8pm entry stands, and the overflow sites are not confirmed.",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; 2025-26 rules, sites and transit from Buncombe County, the City of Asheville and WLOS via web search, 8 Nov 2026; 2026-27 sites, check-in and status line from the Asheville-Buncombe Continuum of Care flyer for Nov 13-14, 2026, shared by Skylar Belt; 2026-27 sites, rules, routes and contacts from the Asheville-Buncombe Continuum of Care, Code Purple 2026-2027 sheet, shared by Skylar Belt 16 Nov 2026; corrects the coordinator number labelled as the status line on 13 Nov; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory; coordinator line from the city's 2025-26 Code Purple page via web search, 17 Nov 2026; guide details from the Buncombe County Winter 2026-2027 Holiday Stabilization and Resource Guide, shared by Skylar Belt 17 Nov 2026; recorded-message number checked against City of Asheville posts, via web search 23 Nov 2026",
+   "note": "The winter guide and the city's 2025-26 Code Purple page give 828-785-4855 for the winter shelter coordinators; the official 2026-27 sheet gives 828-442-7597, which this row keeps. The guide also gives 6pm-7am hours and lists storm overflow at First Presbyterian (20 beds) and Trinity UMC (50 beds); the sheet's 5-8pm entry stands, and the overflow sites are not confirmed. The City of Asheville gave 828-398-6011 as the recorded message for an earlier season; no 2026-27 announcement was found on 23 Nov 2026, so if it does not answer, call 211.",
    "new": false,
    "alt": "Call 211, or Homeward Bound's AHOPE Day Center, 828-252-8883."
   },
@@ -10817,8 +10817,8 @@
     "VI:*",
     "VI:1a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; request form and interpretation from the WNC Free Medical Support Resources community list (companion to the food guide), shared by Skylar Belt 17 Nov 2026",
-   "note": "Sources disagree on the address: listings show both 154 and 257 Biltmore Ave. Confirm before sending a family. The October 2026 medical list gives 356 Biltmore Ave, the same address it gives for ABCCM's 356 Pharmacy; this row keeps 257.",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; request form and interpretation from the WNC Free Medical Support Resources community list (companion to the food guide), shared by Skylar Belt 17 Nov 2026; CDC GetTested and Feed America listings; conflict checked by web search, 23 Nov 2026 (scripts/apply-conflicts-2026-11-23.mjs)",
+   "note": "257 Biltmore Ave is the address in the CDC's and Feed America's listings and the county's own directory; the 154 and 356 Biltmore Ave addresses in some lists look like errors.",
    "new": false
   },
   {
@@ -11284,8 +11284,8 @@
     "VI:*",
     "VI:1a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: Medicaid Dental Providers Guide, Buncombe County (30 Aug 2026)",
-   "note": "Sources disagree on the address: listings show both 154 and 257 Biltmore Ave. Confirm before sending a family.",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; Drive: Medicaid Dental Providers Guide, Buncombe County (30 Aug 2026); CDC GetTested and Feed America listings; conflict checked by web search, 23 Nov 2026 (scripts/apply-conflicts-2026-11-23.mjs)",
+   "note": "257 Biltmore Ave is the address in the CDC's and Feed America's listings and the county's own directory; the 154 and 356 Biltmore Ave addresses in some lists look like errors.",
    "new": false
   },
   {
@@ -16042,8 +16042,8 @@
     "IV:*",
     "IV:3a"
    ],
-   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details; Drive: My Village Respite Care Guide, Asheville & WNC (30 Aug 2026)",
-   "note": "Sources disagree: the Drive respite guide (Aug 2026) gives Alongside Families as the former name of My Village Asheville, the church-based child-hosting ministry, while the Public Edition (Nov 2026) describes it as home visiting for immigrant and refugee families. Check alongsidefamilies.org before referring.",
+   "src": "Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Directory-listed; confirm current details; Drive: My Village Respite Care Guide, Asheville & WNC (30 Aug 2026); web search for Alongside Families; conflict checked by web search, 23 Nov 2026 (scripts/apply-conflicts-2026-11-23.mjs)",
+   "note": "Sources disagree, and a web search found only a Charlotte nonprofit by this name (founded 2017) that works to keep children out of unnecessary foster care, with nothing tying it to Asheville. The Drive respite guide calls it the former name of My Village Asheville; the Public Edition describes home visiting for immigrant and refugee families. Check alongsidefamilies.org before referring.",
    "new": true
   },
   {
