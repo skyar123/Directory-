@@ -714,5 +714,354 @@
   "r": "partly",
   "note": "One listed site is a pink pantry outside Palm + Pine, 178 Westwood Pl; Period Nirvana (315 Haywood Rd) collects donations for it. Buncombe County Schools also stock free products at every school.",
   "src": "free period product directories and Mountain Xpress"
+ },
+ {
+  "id": "helpmate-confidential-dv-shelter",
+  "r": "confirmed",
+  "note": "Helpmate opened Joy's House, a 43-bed emergency shelter for survivors in Buncombe County; reach it through the 24-hour line, 828-254-0516.",
+  "src": "City of Asheville and Buncombe County pages (24-hour line) and WLOS (Joy's House)"
+ },
+ {
+  "id": "vaya-total-care-perks-12-non-medical-rides-a",
+  "r": "confirmed",
+  "note": "Vaya describes this perk as up to 24 one-way non-medical trips a year through Modivcare (1-888-621-2084, Mon-Sat 7am-6pm), booked at least two days ahead; not for people in congregate or institutional care.",
+  "src": "Vaya Total Care Perks and transportation pages"
+ },
+ {
+  "id": "why-medicaid-rides-get-suspended-the-rules-n",
+  "r": "confirmed",
+  "src": "Vaya provider guide: Modivcare manages NEMT for Vaya Total Care at 1-888-621-2084"
+ },
+ {
+  "id": "free-meals-delivered-after-a-hospital-stay-m",
+  "r": "confirmed",
+  "src": "Vaya member and recipient service line 1-800-962-9003 confirmed on Vaya pages"
+ },
+ {
+  "id": "free-interpreter-asl-braille-and-large-print",
+  "r": "confirmed",
+  "src": "Vaya (1-800-962-9003) and Healthy Blue (844-594-5070) member lines confirmed on the plans' pages"
+ },
+ {
+  "id": "healthy-blue-extra-benefits-food-a-phone-hot",
+  "r": "confirmed",
+  "note": "Healthy Blue Member Services, 844-594-5070 (TTY 711), Mon-Sat 7am-6pm, has the current list of extras.",
+  "src": "Healthy Blue NC member pages"
+ },
+ {
+  "id": "when-the-plan-denies-something-the-clock-and",
+  "r": "confirmed",
+  "note": "The NC Medicaid Ombudsman (877-201-3750, Mon-Fri 8am-5pm) helps with plan disputes, appeals and fair hearings; Healthy Blue gives 60 days from the written notice to appeal, 72 hours for an expedited appeal.",
+  "src": "NC Medicaid Ombudsman page and Healthy Blue grievances page"
+ },
+ {
+  "id": "diapers-and-pull-ups-on-medicaid-age-3-and-u",
+  "r": "confirmed",
+  "note": "NC Medicaid covers incontinence supplies under the State Plan (policy 5A-3, section 5.3.9), and federal EPSDT rules require medically necessary diapers for eligible children over about 3; the prescription should give the diagnosis and a daily quantity.",
+  "src": "NCTracks provider announcement, NC Medicaid policy 5A-3, and EPSDT guidance"
+ },
+ {
+  "id": "casa-de-apoyo-mutuo-mercadito-colaborativa-l",
+  "r": "partly",
+  "note": "No online listing of the Mercadito's hours was found; La Milpa itself is active (colaborativalamilpa.org), so confirm days with them.",
+  "src": "web search found La Milpa's listing but no Mercadito hours"
+ },
+ {
+  "id": "free-firewood-wnc",
+  "r": "partly",
+  "note": "Swannanoa Valley Christian Ministry's heating help runs through its Fuel Fund (828-669-9404, svcmblackmountain.org); no 2026-27 free firewood or propane giveaway was confirmed online yet.",
+  "src": "Valley Echo and WNC Magazine (Deck the Trees for the SVCM Fuel Fund), WNC Times (Dec 2025 propane drive)"
+ },
+ {
+  "id": "community-closet-murphy-oakley",
+  "r": "partly",
+  "note": "The Murphy-Oakley Community Center (749 Fairview Rd, 828-232-4529) is real, but no online source mentions a community clothing closet there; call first.",
+  "src": "City of Asheville Murphy-Oakley page"
+ },
+ {
+  "id": "medicaid-rides-to-appointments-nemt-who-to-c",
+  "r": "partly",
+  "note": "No source ties 828-552-5486 to Medicaid rides; Buncombe County schedules all Medicaid trips through its Non-Emergency Medicaid Transportation office, and Mountain Mobility's rider guide gives 828-250-6750. For plan members, Modivcare books rides (Vaya 1-888-621-2084).",
+  "src": "Buncombe County transportation pages and Mountain Mobility rider guide"
+ },
+ {
+  "id": "grant-center-free-fridge",
+  "r": "confirmed",
+  "setIfEmpty": {
+   "ph": "828-259-5483"
+  },
+  "src": "City of Asheville: the free fridge inside the Grant Southside Center (285 Livingston St) is open during center hours and stocked by Southside Community Farm"
+ },
+ {
+  "id": "haycopride-little-free-queer-store",
+  "r": "notfound",
+  "src": "no online listing found for a HayCo Pride Little Free Queer Store"
+ },
+ {
+  "id": "biltmore-church-of-christ-pantry",
+  "r": "partly",
+  "note": "Listings confirm a walk-in pantry at 823 Fairview St but give no day; Wednesdays could not be confirmed online (the Wednesday 4:30-6pm pantry in some lists is Biltmore Church of God on Sweeten Creek Rd). An older number is 828-274-2829.",
+  "src": "Feed America, Plentiful and a 2020 newsletter"
+ },
+ {
+  "id": "north-asheville-little-free-pantry",
+  "r": "confirmed",
+  "note": "The Little Free Pantry map lists a North Asheville pantry at 871 Merrimon Ave (corner of Ottari Rd), kept by a Girl Scout troop; BeLoved also has a street pantry at Beaverdam Rd and Merrimon Ave by the Ingles.",
+  "src": "Little Free Pantry map and BeLoved street pantry list"
+ },
+ {
+  "id": "free-food-wnc-shared-calendar",
+  "r": "partly",
+  "note": "Linked from the WNC Free Food & Supplies guide (tiny.cc/freeinwnc) as its calendar of free food distributions; the calendar itself could not be opened from here.",
+  "src": "the guide's links section (Oct 2026 edition)"
+ },
+ {
+  "id": "library-wifi-works-in-parking-lots-24-7-for",
+  "r": "partly",
+  "note": "The county says free WiFi (network LibraryGuest) reaches outside every library building; it does not state 24/7, and an older notice gave 7am-10pm, so 24/7 is unconfirmed. Library line 828-250-4700.",
+  "src": "Buncombe County library WiFi notices"
+ },
+ {
+  "id": "retro-coffee-pantry",
+  "r": "notfound",
+  "src": "Retro Coffee (2619 Sweeten Creek Rd) is real, but no listing of a little pantry there was found"
+ },
+ {
+  "id": "formula-manufacturer-sample-programs-similac",
+  "r": "confirmed",
+  "note": "Enfamil Family Beginnings and MySimilac rewards still send samples and coupons; Gerber samples mostly come through a doctor. Posts claiming the state sends free formula if you call a manufacturer are false.",
+  "src": "Enfamil offers page, sample-program roundups (Oct 2026) and PolitiFact"
+ },
+ {
+  "id": "summer-meals",
+  "r": "confirmed",
+  "note": "2026 SUN Bucks paid $120 per eligible child (automatic for SNAP, TANF and free or reduced-price school meal households); to find summer meal sites, text FOOD to 304-304.",
+  "src": "NC Governor and NCDHHS releases (June and Aug 2026) and NC DPI summer meals page"
+ },
+ {
+  "id": "clothing-closets-multiple-sites",
+  "r": "partly",
+  "note": "The 225 Patton Ave closet is Western Carolina Rescue Ministries' (828-254-0471), listed Tue and Fri about 9-10:30am (a 2023 listing says Mon and Thu). The Salvation Army (828-253-4723) gives clothing and furniture vouchers rather than a walk-in closet. Call before going.",
+  "src": "community resource PDF, Asheville homelessness guide (2021), Homeless Shelter Directory (2023), Salvation Army Asheville page"
+ },
+ {
+  "id": "canton-food-pantries",
+  "r": "partly",
+  "note": "Hours found online (call to confirm): Beulah Baptist is a drive-through pantry Tuesdays 11am-2pm; Feeding the Multitudes hands out food boxes by drive-through Mon-Thu 11am-1pm and posts extras on Facebook.",
+  "src": "Haywood County resource list and WhyHunger listing (Beulah Baptist Tue 11-2); Haywood County list (Feeding the Multitudes Mon-Thu 11-1, single source)"
+ },
+ {
+  "id": "sylva-food-pantries",
+  "r": "partly",
+  "setIfEmpty": {},
+  "note": "The Community Table is at 23 Central St, Sylva (next to the pool, across from Poteet Park), 828-586-6782. Online listings disagree on its hours: hot meals Mon, Tue, Thu and Fri about 4-5:30pm, pantry listed 9am-3pm the same days; pantry groceries are for Jackson County residents every two weeks. Call first.",
+  "src": "Plentiful (meals Mon/Tue/Thu/Fri 4-5:30pm), AmpleHarvest (Mar 2026, pantry 9-3), NC Hometown Strong (2024)"
+ },
+ {
+  "id": "soup-kitchens-rutherford-county",
+  "r": "partly",
+  "note": "Listings disagree, so call first: the county list (2023) gives Jericho Road Wednesdays 11am-2pm and Welcome Table at First United Methodist, 264 N Main St, Rutherfordton, 828-287-3704, free meals Mondays 5-6:30pm; Plentiful lists Oak Grove Missionary Baptist Wednesdays 12-1pm. First Baptist Forest City began a free community meal in Jan 2025 (hours not found). 211 has current hours.",
+  "src": "Rutherford County community resource list (Sept 2023), Plentiful, Rutherford Weekly (Jan 2025)"
+ },
+ {
+  "id": "trans-lifeline",
+  "r": "changed",
+  "expect": {
+   "h": "24/7; operators guaranteed 10am-4am Eastern"
+  },
+  "set": {
+   "h": "Mon-Fri 1-9pm Eastern (press 2 for Spanish)"
+  },
+  "note": "Not a 24/7 line since January 2024; outside its hours use 988 (press 3 for LGBTQ+ youth).",
+  "src": "translifeline.org hotline page; Wikipedia (hours cut to Mon-Fri after the Dec 2023 budget shortfall). Older directories still say 24/7"
+ },
+ {
+  "id": "lgbt-national-help-center",
+  "r": "partly",
+  "note": "Listings disagree on the hours (one gives Mon-Fri 2-11pm and Sat noon-5pm Eastern); the youth talkline (800-246-7743) is for ages 25 and under. Check lgbthotline.org for today's hours.",
+  "src": "UNC CARE, NJ and PA 211 listings, Dallas County sheet; numbers confirmed, hours differ by source"
+ },
+ {
+  "id": "healthy-blue-behavioral-health-crisis-line",
+  "r": "confirmed",
+  "src": "healthybluenc.com contact page: Behavioral Health Crisis Line 844-594-5076, 24/7, TTY 711"
+ },
+ {
+  "id": "healthy-blue-care-together-crisis-line",
+  "r": "partly",
+  "note": "A web search found no public listing of 833-597-3985. Care Together (the Children and Families Specialty Plan, since Dec 2025) member services is 833-777-3611, 7am-6pm; check the member card for the crisis number, and use 988 or 911 in an emergency.",
+  "src": "healthybluenc.com Children and Families Specialty Plan member page; NCDHHS release (Dec 2025)"
+ },
+ {
+  "id": "national-runaway-safeline",
+  "r": "confirmed",
+  "setIfEmpty": {
+   "h": "24/7 by call, text or online chat"
+  },
+  "src": "1800runaway.org get-help page and NRS outreach card (Dec 2025): call or text 1-800-786-2929, chat on the site, 24/7, free"
+ },
+ {
+  "id": "clyde-food-pantries",
+  "r": "partly",
+  "note": "A web search found the 384 Jones Cove Rd address listed under another name with no hours, and no listing for the pantry itself; call before sending anyone.",
+  "src": "Feedam pantry report (384 Jones Cove Rd, no hours); Plentiful Clyde list"
+ },
+ {
+  "id": "food-mitchell-county",
+  "r": "partly",
+  "note": "Shepherd's Staff hours match its online listing (mcshepherdstaff.org), but listings give other addresses (6565 NC-226 and 14 Jacksontown Rd, across from the car wash before Penland); confirm the address by phone.",
+  "src": "WhyHunger and Plentiful listings for Mitchell County Shepherd's Staff"
+ },
+ {
+  "id": "food-avery-ashe-counties",
+  "r": "partly",
+  "note": "Online listings disagree on Feeding Avery Families (weekly Fridays about 12:30-2:15pm, or monthly), so call 828-783-8506 first. Also in Newland: Volunteer Avery County Emergency Food Program, 47 Minneapolis School Rd, Mon, Tue and Thu 11am-2pm. RAM is listed as the county's only pantry open five days a week.",
+  "src": "Plentiful Newland listings, Feedam, foodpantries.org"
+ },
+ {
+  "id": "food-supplies-boone-watauga",
+  "r": "partly",
+  "note": "High Country Mutual Aid's free store works by appointment for anyone who applies; a web search found no 2026 update, so email before sending anyone.",
+  "src": "The Appalachian (undated): appointment-based free store; no 2026 listing found"
+ },
+ {
+  "id": "acaps-appalachian-counseling-and-psychologic",
+  "r": "partly",
+  "note": "The phone matches online listings, but they give different addresses (600A Centrepark Dr, 1 Oak Plaza and 29 College Pl in Asheville, plus Spruce Pine); ask which office. It also does psychological and neuropsychological testing and speech therapy.",
+  "src": "Psychology Today practice profile, NPI listing"
+ },
+ {
+  "id": "adatc",
+  "r": "partly",
+  "note": "NCDHHS lists Julian F. Keith ADATC at 201 Tabernacle Rd, Black Mountain, main line 828-257-6200 and admissions 828-257-6230; referrals usually come through the LME/MCO (Vaya) or a provider. A web search could not confirm whether it is still at Broughton, so ask when calling.",
+  "src": "NCDHHS Alcohol and Drug Abuse Treatment Centers page and admission information"
+ },
+ {
+  "id": "jewish-family-services-healing-solutions",
+  "r": "changed",
+  "expect": {
+   "ph": "828-255-0146"
+  },
+  "set": {
+   "ph": "828-253-2900",
+   "d": "Healing Solutions Counseling at Jewish Family Services of WNC: in-person or virtual therapy with licensed clinical social workers, for adults of all faiths; insurance accepted, sliding scale. Catholic Charities also offers counseling (bilingual clinicians, EMDR, trauma, anger management; sliding scale; 828-255-0146 ext 23)."
+  },
+  "note": "The workbook ran this together with Catholic Charities: 828-255-0146 ext 23 is the Catholic Charities line, and Jewish Family Services is 828-253-2900. Listings give two addresses (Pippen Ln and S French Broad Ave), so ask.",
+  "src": "JFS of WNC donation page (2026 campaign), Psychology Today Healing Solutions profile, ThrivingCampus"
+ },
+ {
+  "id": "fasd-united",
+  "r": "confirmed",
+  "setIfEmpty": {
+   "ph": "202-785-4585",
+   "h": "Family Navigator Mon-Fri 9am-10pm Eastern"
+  },
+  "note": "Its Family Navigators give free one-on-one support and referrals by phone or online form (no treatment or legal help).",
+  "src": "fasdunited.org Family Navigator page and 2025 annual report (2026)"
+ },
+ {
+  "id": "mahec-center-for-psychiatry-and-mental-welln",
+  "r": "confirmed",
+  "src": "MAHEC locations page: 125 Hendersonville Rd, 828-398-3601"
+ },
+ {
+  "id": "mahec-psychiatry",
+  "r": "partly",
+  "note": "Same clinic as MAHEC Center for Psychiatry and Mental Wellness, which MAHEC lists at 125 Hendersonville Rd, 828-398-3601.",
+  "src": "MAHEC locations page"
+ },
+ {
+  "id": "october-road-inc",
+  "r": "partly",
+  "note": "Online listings give 828-350-1000 as the main line, at 119 Tunnel Rd, Suite E; it is now part of Pyramid Healthcare.",
+  "src": "Feedam and NPI listings for October Road, Inc."
+ },
+ {
+  "id": "river-of-hope-behavioral-health",
+  "r": "partly",
+  "note": "CARF lists it at 79 Woodfin Pl, Suite 208, accredited in 2025 for an adult substance use and mental health program; ask about MAT, which the listing does not mention.",
+  "src": "CARF provider directory"
+ },
+ {
+  "id": "open-path-collective",
+  "r": "changed",
+  "expect": {
+   "ph": "828-592-2517",
+   "d": "sliding-scale therapist directory ($30-80 sessions)."
+  },
+  "set": {
+   "ph": "",
+   "d": "National sliding-scale therapist network: a one-time $65 membership fee, then individual sessions $40-70, couples and family $40-80, student interns about $30. For people without insurance coverage that works for them."
+  },
+  "note": "Open Path is joined online; the old phone number did not match it anywhere online.",
+  "src": "openpathcollective.org, ChoosingTherapy review (Jan 2026)"
+ },
+ {
+  "id": "whole-family-therapy-center",
+  "r": "partly",
+  "setIfEmpty": {
+   "a": "4 Northcrest Rd, Weaverville"
+  },
+  "note": "The practice is in Weaverville and also lists occupational therapy, therapy from age 3, co-parenting and parent coaching; sliding scale.",
+  "src": "ThrivingCampus listing for Whole Family Therapy (828-575-6460)"
+ },
+ {
+  "id": "24-7-crisis-lines",
+  "r": "nocheck"
+ },
+ {
+  "id": "domestic-violence-and-family-safety-services",
+  "r": "nocheck"
+ },
+ {
+  "id": "cost-note-pmhnp-vs-psychiatrist-and-asking-f",
+  "r": "nocheck"
+ },
+ {
+  "id": "dental-healthy-habits-and-toothbrushing-song",
+  "r": "nocheck"
+ },
+ {
+  "id": "phone-scripts-for-calling-a-dental-office",
+  "r": "nocheck"
+ },
+ {
+  "id": "pediatricians-community-recommended-list",
+  "r": "nocheck"
+ },
+ {
+  "id": "autism-experienced-dentists-community-recomm",
+  "r": "nocheck"
+ },
+ {
+  "id": "haywood-little-free-pantries",
+  "r": "nocheck"
+ },
+ {
+  "id": "port-post-overdose-response-team-buncombe-co",
+  "r": "partly",
+  "note": "The county says the team is sent through 911 (and 252-HELP connects people to support); a web search did not find the two direct numbers listed here, so check them before giving them out.",
+  "src": "Buncombe County news releases on the community paramedic team; NCDHHS PORT toolkit"
+ },
+ {
+  "id": "quit-for-life-free-coaching-and-free-nicotin",
+  "r": "partly",
+  "note": "Vaya's page says Quit For Life is for Vaya Total Care (Tailored Plan) Medicaid members and lists 1-866-427-6845 for the program; anyone in NC can use QuitlineNC, 1-800-QUIT-NOW.",
+  "src": "vayahealth.com tobacco cessation page"
+ },
+ {
+  "id": "wings-of-flight-center-for-change",
+  "r": "partly",
+  "setIfEmpty": {
+   "a": "118 Ebenezer Rd, Old Fort"
+  },
+  "note": "The practice is in Old Fort (McDowell County) and sees children, teens and adults.",
+  "src": "NPI registry and McDowell Chamber listings for Wings of Flight Center for Change PLLC"
+ },
+ {
+  "id": "discount-grocery-outlets",
+  "r": "partly",
+  "note": "Uplifting Deals (formerly The Price is Right Discount Warehouse) is at 198 Weaverville Rd, next to Centreville Luncheonette; a web search did not confirm current hours for these stores.",
+  "src": "Mitchell News on the Uplifting Deals rename"
  }
 ]
