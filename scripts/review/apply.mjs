@@ -25,8 +25,13 @@ const NOTFOUND = `A web search (${DATE}) found no online listing for this; confi
 let n = 0;
 for (const f of F) {
   if (done.has(f.id)) continue;
-  const r = res.resources.find((x) => x.id === f.id);
-  if (!r) throw new Error(`no row ${f.id}`);
+  /* ids copied from a shortened list are matched by a unique prefix */
+  let r = res.resources.find((x) => x.id === f.id);
+  if (!r) {
+    const m = res.resources.filter((x) => x.id.startsWith(f.id));
+    if (m.length !== 1) throw new Error(`no single row for ${f.id} (${m.length})`);
+    r = m[0];
+  }
   for (const [k, v] of Object.entries(f.expect || {})) if ((r[k] || "") !== v) throw new Error(`${f.id}.${k} is "${r[k]}", expected "${v}"`);
   for (const [k, v] of Object.entries(f.set || {})) r[k] = v;
   for (const [k, v] of Object.entries(f.setIfEmpty || {})) if (!(r[k] || "").trim()) r[k] = v;
