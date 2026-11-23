@@ -3,7 +3,7 @@ import Icon from "./Icon.jsx";
 
 /* The lines a family may need before anything else. Numbers come from the
    directory's own rows, so a fix to a row fixes this strip too. */
-const LINES = [
+export const LINES = [
   ["988-suicide-crisis-lifeline", "988", "Suicide or mental health crisis, call or text"],
   ["helpmate-domestic-violence-hotline", "Helpmate", "Domestic violence, 24/7"],
   ["our-voice-sexual-violence-hotline", "Our VOICE", "Sexual violence or trafficking, 24/7"],
@@ -29,11 +29,11 @@ export const NEED_ROUTES = [
   { label: "Not sure where to start", sub: "The call-first lines", go: { need: "X:1" }, icon: "compass", tone: 0 },
 ];
 
-export default function NeedStart({ resById, onGo, countOf }) {
+export default function NeedStart({ resById, onGo, countOf, crisis = true }) {
   const lines = LINES.map(([id, short, sub]) => [resById.get(id), short, sub]).filter(([r]) => r && r.phone);
   return (
     <div className="need-start">
-      <aside className="crisis-strip" aria-label="Help right now">
+      {crisis && <aside className="crisis-strip" aria-label="Help right now">
         <p className="crisis-strip-911">In danger right now? Call <a href="tel:911">911</a>.</p>
         <ul>
           {lines.map(([r, short, sub]) => (
@@ -45,7 +45,7 @@ export default function NeedStart({ resById, onGo, countOf }) {
             </li>
           ))}
         </ul>
-      </aside>
+      </aside>}
 
       <h2 className="need-title">What does the family need first?</h2>
       <div className="need-grid">

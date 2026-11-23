@@ -18,6 +18,8 @@ import CalendarNotes from "./components/CalendarNotes.jsx";
 import PlanView from "./components/PlanView.jsx";
 import NeedStart from "./components/NeedStart.jsx";
 import FilterSheet from "./components/FilterSheet.jsx";
+import CrisisSheet from "./components/CrisisSheet.jsx";
+import Home from "./components/Home.jsx";
 import TodayView from "./components/TodayView.jsx";
 import MoreView, { MORE_TITLE } from "./components/MoreView.jsx";
 import { factsOf, FACETS, FACET_LABEL } from "./facets.js";
@@ -91,6 +93,7 @@ export default function App() {
   const [facets, setFacets] = useState(start.f);
   const [pageId, setPageId] = useState(start.id);
   const [filterOpen, setFilterOpen] = useState(false);
+  const [crisisOpen, setCrisisOpen] = useState(false);
   /* result groups opened past their first few ("See all 23") */
   const [moreOf, setMoreOf] = useState([]);
   const [openId, setOpenId] = useState("");
@@ -140,7 +143,7 @@ export default function App() {
 
   /* the Public Edition calendar, fetched once, the first time it is needed */
   useEffect(() => {
-    if (cal || (view !== "events" && view !== "ask" && view !== "today")) return undefined;
+    if (cal || !["events", "ask", "today", "find"].includes(view)) return undefined;
     let live = true;
     loadCalendar()
       .then((c) => live && setCal(c))
@@ -499,6 +502,7 @@ export default function App() {
     <div className="wnc">
       <header className="top">
         <div className="brand">
+          <button className="crisis-btn" onClick={() => setCrisisOpen(true)} aria-haspopup="dialog">Crisis lines</button>
           <span className="mark"><Logo /></span>
           <div>
             <h1>WNC Family Resource Directory <span className="internal-tag">Internal use only</span></h1>
@@ -569,8 +573,12 @@ export default function App() {
 
       {view === "find" && (
         <section className="pane find">
-          {home && <NeedStart resById={resById} onGo={goNeed} countOf={tileCount} />}
-          {home && (!!stars.length || !!recent.length) && (
+          {home && (
+            <Home date={new Date()} today={evToday} resById={resById} foodToday={tileCount({ food: true })} weekEvents={weekEvents}
+              eventsLoading={!cal} planCount={plan.items.length} onGo={goNeed} countOf={tileCount} go={go}
+              openPage={openPage} onEvent={(e) => { setEvQ(e.what); go("events"); }}
+              mine={(<>
+            {(!!stars.length || !!recent.length) && (
             <div className="mine">
               {[["Saved", stars], ["Recently opened", recent]].filter(([, ids]) => ids.length).map(([label, ids]) => (
                 <div key={label} className="mine-row">
@@ -584,7 +592,9 @@ export default function App() {
               ))}
             </div>
           )}
-          {home && <h2 className="browse-title">Or browse the directory</h2>}
+              </>)} />
+          )}
+          {home && <h2 className="browse-title">Browse the whole directory</h2>}
 
           <div className="find-tools">
             <button className={"btn filter-btn" + (facets.length || secFilter || onlyGaps ? " on" : "")}
@@ -1160,6 +1170,7 @@ export default function App() {
         </section>
       )}
 
+      <CrisisSheet open={crisisOpen} onClose={() => setCrisisOpen(false)} resById={resById} />
       {toast && <div className="toast">{toast}</div>}
     </div>
   );

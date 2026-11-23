@@ -78,6 +78,14 @@ it, export the next edition of the workbook and rerun the script.
 
 ## Working with a family
 
+**The home screen** (Find, before anything is typed) puts the most-used links first:
+the free food map, food open today, this week and the visit plan as large cards;
+the next events starting this week (the team's own picks first) in a strip that
+scrolls sideways; the go-to programs (`GO_TO` in `src/components/Home.jsx`) with
+a call button each; saved and recently opened programs; then the need tiles. The
+crisis lines are behind the red **Crisis lines** button in the header, on every
+screen.
+
 **Getting around.** Four places, the same on a phone (along the bottom) and a
 computer (along the top): **Find**, **Today** (food open today, how many
 programs list hours for today, and the next seven days of events), **Plan**, and
