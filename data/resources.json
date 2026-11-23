@@ -6137,8 +6137,8 @@
     "X:*",
     "X:1"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; VIII:5a tag added 17 Nov 2026 from the row's own name or description (tag audit)",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; VIII:5a tag added 17 Nov 2026 from the row's own name or description (tag audit); review 23 Nov 2026: NC DPS and DPI announcements (2020) and NC DPI summer meals page",
+   "note": "The FOODNC text line (COMIDA in Spanish) launched in 2020 for children's meal sites, and no 2026 notice confirms it still runs; in summer, text FOOD to 304-304. Calling 211 always works.",
    "new": false
   },
   {
@@ -7377,8 +7377,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "Facebook post in Friends of Swannanoa, NC, 2 Nov 2026 (Facebook deep scrape part 4, 6 Nov 2026); weekly store from the WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026 (Friends of Swannanoa, Oct 28 and Nov 2)",
-   "note": "Requests already outnumber the boxes. Ask before telling a family they can get one.",
+   "src": "Facebook post in Friends of Swannanoa, NC, 2 Nov 2026 (Facebook deep scrape part 4, 6 Nov 2026); weekly store from the WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026 (Friends of Swannanoa, Oct 28 and Nov 2); review 23 Nov 2026: Facebook holiday sweep (16 Nov 2026), as recorded on the holiday assistance row",
+   "note": "Requests already outnumber the boxes. Ask before telling a family they can get one. Most Swannanoa Thanksgiving boxes were reported spoken for in mid November 2026; NC 211 is the fallback.",
    "new": true
   },
   {
@@ -8238,8 +8238,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; review 23 Nov 2026: not found online",
+   "note": "A web search (23 Nov 2026) found no online listing for this; confirm by phone or with the community food guide before sending anyone.",
    "new": false
   },
   {
@@ -8453,8 +8453,8 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; phone corrected 17 Nov 2026 against the WNC Free Food & Supplies guide (MATCH entry) and the NC 211 row",
-   "note": "The August workbook printed 828-659-5289 beside Feed-a-Family; the October food guide gives that number for MATCH, McDowell County's food box delivery, so it moved off this row.",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; phone corrected 17 Nov 2026 against the WNC Free Food & Supplies guide (MATCH entry) and the NC 211 row; review 23 Nov 2026: NC DPS and DPI announcements (2020) and NC DPI summer meals page",
+   "note": "The August workbook printed 828-659-5289 beside Feed-a-Family; the October food guide gives that number for MATCH, McDowell County's food box delivery, so it moved off this row. The FOODNC text line (COMIDA in Spanish) launched in 2020 for children's meal sites, and no 2026 notice confirms it still runs; in summer, text FOOD to 304-304. Calling 211 always works.",
    "new": false
   },
   {
@@ -9120,8 +9120,8 @@
     "VIII:14a",
     "VIII:1a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; review 23 Nov 2026: WLOS (2026 Winter Coat Giveaway) and Eblen's assistance appointment form",
+   "note": "Eblen's 13th Winter Coat Giveaway (2026) is first come, first served with no registration. For appointment-based help Eblen asks for all documents 3 business days before the appointment and household income for everyone.",
    "new": false
   },
   {
@@ -9538,8 +9538,8 @@
     "VIII:13a",
     "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; review 23 Nov 2026: ABCCM VRQ page and VA news (Aug 2026)",
+   "note": "Veterans' intake line 828-398-6622 (ABCCM's get-help page gives 828-398-6609). Helene damaged the building, and a rebuild broke ground in August 2026, so ask where veterans are housed now.",
    "new": false
   },
   {
@@ -9929,8 +9929,8 @@
     "VIII:*",
     "VIII:6a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; hours moved out of the address field, 6 Nov 2026",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; hours moved out of the address field, 6 Nov 2026; review 23 Nov 2026: Asheville Habitat home repair page (828-251-5702, low-income Buncombe homeowners) and City of Asheville home repair page",
+   "note": "The City of Asheville's separate 2026 home repair program closed applications on 19 Oct 2026.",
    "new": false
   },
   {
@@ -10207,7 +10207,7 @@
    "w": "renewnc.org",
    "d": "888-791-0207, renewnc.org. Repairs, reconstruction, manufactured home replacement across 29 counties. The Jan 31, 2026 application deadline has passed, but the Helene Resource Center at 94 Coxe Ave (Mon-Fri 8am-5pm) remains the in-person navigation point for recovery programs.",
    "a": "94 Coxe Ave",
-   "h": "Mon-Fri 8am-5pm) remains the in-pers",
+   "h": "Closed to new applications (deadline was 31 Jan 2026)",
    "os": "5.4 Hurricane Helene Recovery",
    "t": "",
    "lv": "",
@@ -10217,8 +10217,8 @@
     "VIII:*",
     "VIII:6a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; review 23 Nov 2026: NC Commerce and Renew NC releases (Jan, Feb and Aug 2026)",
+   "note": "The Single-Family Housing Program stopped taking applications on 31 Jan 2026; families who applied can check status with Renew NC (888-791-0207). Renew NC's open programs now are for multi-family properties and community infrastructure.",
    "new": false
   },
   {
@@ -10382,7 +10382,7 @@
     "VIII:*",
     "VIII:7a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; closure already recorded in the WHAT CHANGED dead ends (Eckerd Connects media statement; WLOS), flagged on the row 6 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; closure already recorded in the WHAT CHANGED dead ends (Eckerd Connects media statement; WLOS), flagged on the row 6 Nov 2026; review 23 Nov 2026: kept only to say it closed in May 2022",
    "note": "Closed permanently in May 2022. findhelp and other aggregators still list it. Do not refer. For a youth in crisis use RHA Mobile Crisis 1-888-573-1006.",
    "new": false,
    "readFirst": true
@@ -12996,8 +12996,8 @@
     "VIII:*",
     "VIII:12a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; review 23 Nov 2026: Tribune Papers (2024), 828newsNOW and Macaroni KID listings",
+   "note": "Wee Trade is a twice-yearly children's consignment sale at the WNC Agricultural Center; foster families shop free in a set window with paperwork (registration has been required). Dates change each season: check weetradecarolinas.com.",
    "new": false
   },
   {
@@ -14911,8 +14911,8 @@
     "X:*",
     "X:12"
    ],
-   "src": "Facebook event listing, Facebook deep scrape, 6 Nov 2026; event time moved into the hours field, 6 Nov 2026",
-   "note": "",
+   "src": "Facebook event listing, Facebook deep scrape, 6 Nov 2026; event time moved into the hours field, 6 Nov 2026; review 23 Nov 2026: date check",
+   "note": "This meal was Saturday 14 Nov 2026 and has passed.",
    "new": true
   },
   {
@@ -16935,7 +16935,7 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; food truck, website, 12:30pm and \"until food runs out\" from YWAM's flyer for 20 Nov 2026, shared by Skylar Belt 19 Nov 2026",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; food truck, website, 12:30pm and \"until food runs out\" from YWAM's flyer for 20 Nov 2026, shared by Skylar Belt 19 Nov 2026; review 23 Nov 2026: YWAM flyer for 20 Nov 2026",
    "note": "The October food guide says 12pm; YWAM's flyer for Friday 20 Nov 2026 says 12:30pm. Go early: it ends when the food runs out.",
    "new": true
   },
@@ -17560,8 +17560,8 @@
     "VIII:*",
     "VIII:13a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
-   "note": "",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; review 23 Nov 2026: free period product directories and Mountain Xpress",
+   "note": "One listed site is a pink pantry outside Palm + Pine, 178 Westwood Pl; Period Nirvana (315 Haywood Rd) collects donations for it. Buncombe County Schools also stock free products at every school.",
    "new": true
   },
   {
@@ -20154,7 +20154,7 @@
     "VIII:*",
     "VIII:12a"
    ],
-   "src": "EMOTE Clothing Swap 2026 flyer, shared by Skylar Belt 22 Nov 2026",
+   "src": "EMOTE Clothing Swap 2026 flyer, shared by Skylar Belt 22 Nov 2026; review 23 Nov 2026: EMOTE 2026 flyer, 22 Nov 2026",
    "note": "The flyer gives 2026 dates only; ask whether it continues in 2027.",
    "new": true
   },
