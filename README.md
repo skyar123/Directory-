@@ -91,6 +91,13 @@ header: **‹ Back** returns to the screen you came from (on a page opened from 
 link, the screen above it) and **Home** returns to the home screen with the search
 and filters cleared. The Home tab and the app's name in the header do the same.
 
+**Collections.** The home screen links two compiled collections (`src/collections.js`):
+**Autism resources** (every Autism & Neurodivergence SNIFF question, plus programs whose
+names say autism, ABA or sensory) and **Evaluations and developmental concerns**
+(developmental screening, early intervention, speech, OT and feeding therapy,
+developmental and autism evaluations). Each opens a page grouped by SNIFF question,
+built from the tags, so a new listing joins its collection on its own.
+
 **Getting around.** Four places, the same on a phone (along the bottom) and a
 computer (along the top): **Find**, **Today** (food open today, how many
 programs list hours for today, and the next seven days of events), **Plan**, and
