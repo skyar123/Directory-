@@ -5,7 +5,7 @@ import NeedStart from "./NeedStart.jsx";
 import { summaryOf } from "./ResourceCard.jsx";
 
 /* The programs staff reach for most, on the home screen with a call button */
-export const GO_TO = ["wnc-free-food-map", "nc-211", "manna-food-helpline", "babies-need-bottoms",
+export const GO_TO = ["wnc-free-food-map", "nc-211", "manna-food-helpline", "code-purple",
   "crisis-intervention-program-cip", "pisgah-legal-services", "buncombe-dss", "eblen-charities"];
 
 /*

@@ -155,6 +155,12 @@
    "entries": [
     {
      "date": "Nov 23 2026",
+     "what": "Diaper routing corrected, passed dates cleared, the free food guide added",
+     "detail": "Babies Need Bottoms does not give diapers to families: it supplies partner agencies. Its listed \"diaper line\" was NC 211's number, so its call button called 211 under its name; the row now says to call 211 for the nearest partner, and it is off the home screen (Code Purple took its place). The Register of Deeds offers its diapers at birth certificate visits, per the county. Sixteen rows with November dates that have passed were updated (Thanksgiving events, open houses, mobile market stops), and Root Cause Farm's impossible 2026 end date came out. New: the WNC Free Food & Supplies guide (tiny.cc/freeinwnc) and a public free resource Signal group.",
+     "source": "scripts/apply-review-2026-11-23.mjs"
+    },
+    {
+     "date": "Nov 23 2026",
      "what": "Cowboy Christmas Toy Giveaway, Fairview, Dec 5",
      "detail": "Blue Ridge Cowboy Church, 49 Saxon Hill, Fairview: free toys for struggling families, a free chuckwagon lunch and pictures with Santa, Saturday Dec 5, 10am-2pm. On the Events tab.",
      "source": "scripts/apply-cowboy-christmas-2026-11-23.mjs"
