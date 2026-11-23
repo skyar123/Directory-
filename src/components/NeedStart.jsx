@@ -29,7 +29,7 @@ export const NEED_ROUTES = [
   { label: "Not sure where to start", sub: "The call-first lines", go: { need: "X:1" }, icon: "compass", tone: 0 },
 ];
 
-export default function NeedStart({ resById, onGo }) {
+export default function NeedStart({ resById, onGo, countOf }) {
   const lines = LINES.map(([id, short, sub]) => [resById.get(id), short, sub]).filter(([r]) => r && r.phone);
   return (
     <div className="need-start">
@@ -53,6 +53,7 @@ export default function NeedStart({ resById, onGo }) {
           <button key={n.label} className={"need-btn tone-" + n.tone} onClick={() => onGo(n.go)}>
             <span className="need-ic"><Icon name={n.icon} size={20} /></span>
             <span className="need-txt"><strong>{n.label}</strong><small>{n.sub}</small></span>
+            {countOf && <span className="need-count">{countOf(n.go)}</span>}
           </button>
         ))}
       </div>

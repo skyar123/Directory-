@@ -211,6 +211,8 @@ const OUTSIDE = new RegExp("\\b(hendersonville|waynesville|canton|clyde|maggie v
   + "cherokee|whittier|charlotte)\\b" + ROAD + "|\\b(haywood|henderson|madison|mcdowell|mitchell|rutherford|jackson|swain|"
   + "yancey|macon|avery|ashe|watauga|transylvania|polk) county\\b");
 const OUTSIDE_WEIGHT = 0.75;
+/* outside Buncombe, by its name or address (for the Area filter) */
+export const isOutside = (r) => OUTSIDE.test(norm(`${r.name} ${r.address}`));
 
 /* SNIFF keys typed out, as in a pasted SNIFF: "VIII:12a" */
 const KEY_RE = /\b(I|II|III|IV|V|VI|VII|VIII|IX|X):(\d+a?)\b/g;

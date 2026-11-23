@@ -154,6 +154,12 @@
    "label": "ADDED THIS ROUND",
    "entries": [
     {
+     "date": "Nov 23 2026",
+     "what": "Easier to get around: four places, filters, grouped results, a page for each program",
+     "detail": "The app now has four places, the same on a phone and a computer: Find, Today (food open today and the week's events), Plan and More (SNIFF questions, the assessment, point people and upkeep). Find has a Filters button (open today, evenings or weekends, free, no ID, walk-in, Spanish, ages 0-5, delivery, Buncombe only, SNIFF section, needs work), each with how many it leaves, and quick Open today, Free and Spanish buttons. A broad search is grouped by need with the best few first and See all. Cards show the name, one line about the program and the phone; tap for the rest. Each program has its own page and link, programs can be saved, and Find lists saved and recently opened ones. The address bar follows you, so Back steps back through searches and a search or a program can be shared with a teammate.",
+     "source": "src/App.jsx, src/facets.js, src/components/FilterSheet.jsx, TodayView.jsx, MoreView.jsx"
+    },
+    {
      "date": "Nov 22 2026",
      "what": "ABIPA's Thanksgiving Sunday Shop and the EMOTE Clothing Swap",
      "detail": "ABIPA's free Thanksgiving Sunday Shop is today, Nov 22, 3-6pm at the Friendship Center, 142 Shiloh Rd (fresh food, household essentials, health resources; sign kids up there for ABIPA's Christmas event). Food by day and the Sunday list now give that place and ABIPA's phone. New: the free EMOTE Clothing Swap at 444 Haywood Rd, one Sunday a month 12-4pm; Nov 29 and Dec 27 are on the Events tab.",

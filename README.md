@@ -78,6 +78,30 @@ it, export the next edition of the workbook and rerun the script.
 
 ## Working with a family
 
+**Getting around.** Four places, the same on a phone (along the bottom) and a
+computer (along the top): **Find**, **Today** (food open today, how many
+programs list hours for today, and the next seven days of events), **Plan**, and
+**More** (SNIFF questions, Food by day, all events, the assessment, point people,
+and upkeep: what changed, what is missing, data). Anything below the four shows a
+back link. The address bar follows you (`#/find?q=food&f=free,today`, `#/r/<id>`,
+`#/today`), so Back steps back through searches and filters, and a search or a
+program can be sent to a teammate.
+
+**Filters.** On Find, **Filters** opens a panel: open today, evenings or weekends,
+free, no ID, walk-in, Spanish, ages 0-5, delivery or mobile, Buncombe only, SNIFF
+section and needs work. Each shows how many results it would leave, and active
+filters show as chips to tap off. Open today, Free and Spanish also sit under the
+search box. These are read from each program's own fields (`src/facets.js`): "open
+today" reads the hours text ("Mon-Fri", "Tue and Thu", "2nd and 4th Wednesdays"),
+so a program whose hours say nothing about days never shows as open today.
+
+**Results.** A broad search is grouped by the SNIFF needs it raises ("Food pantry
+136"), the best four first and **See all**. A card shows the name, one line about
+the program and the call button; tap it for the rest. Each program has its own page
+(**Open its page**), with a link to copy. **Save** keeps a program on Find's
+Saved list, and Find also lists the last eight opened (both in this browser only).
+`docs/usability-test.md` is a short script for testing all this with the team.
+
 **The Find tab opens on the need.** Before anything is typed, it shows the
 crisis lines (911, then 988, Helpmate, Our VOICE, 211 and Code Purple's
 recorded message) and a short list of needs: food today, diapers, a safe place
