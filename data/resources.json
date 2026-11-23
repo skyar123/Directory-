@@ -32,11 +32,12 @@
    "Blessing Barn closed, SC4S and BeLoved relabelled, 18 Nov 2026 (see scripts/apply-blessing-barn-sc4s-2026-11-18.mjs)",
    "Food flyers of 19 Nov 2026: YWAM food truck, Bounty & Soul one-day move, Bountiful Cities 2027 Share Markets, MANNA Community Market at Shiloh (see scripts/apply-food-flyers-2026-11-19.mjs)",
    "SNIFF tags corrected from a search audit, 20 Nov 2026 (see scripts/apply-search-tags-2026-11-20.mjs)",
-   "ABIPA Thanksgiving Sunday Shop and EMOTE Clothing Swap flyers, 22 Nov 2026 (see scripts/apply-abipa-emote-2026-11-22.mjs)"
+   "ABIPA Thanksgiving Sunday Shop and EMOTE Clothing Swap flyers, 22 Nov 2026 (see scripts/apply-abipa-emote-2026-11-22.mjs)",
+   "Review of 23 Nov 2026: diaper routing, passed dates, the free food guide and a public Signal group (see scripts/apply-review-2026-11-23.mjs)"
   ],
   "file": "resources.json",
   "note": "One object per resource. `needs` are SNIFF question keys, `src` names where the fact came from. `alt` is an optional backup route, shown as \"If this doesn't work\".",
-  "count": 712,
+  "count": 714,
   "merged": {
    "kaleidoscope-play-learn-2": "kaleidoscope-play-learn",
    "asheville-city-schools-2": "asheville-city-schools",
@@ -2261,7 +2262,7 @@
    "ph": "828-665-8733 / 828-665-8737",
    "em": "DSDHH.Information@dhhs.nc.gov",
    "w": "ncdhhs.gov/divisions/services-deaf-and-hard-hearing/regional-centers-deaf-and-hard-hearing",
-   "d": "Voice 828-665-8733, TTY 828-665-8737, toll-free 800-681-7998 / 800-681-8035. Equipment, advocacy, community connection. Regional contact: Ruth Anne Everett, 828-432-5352 (phone/TTY). Open house Thu Nov 12, 2026, 1:30 to 3pm at the Asheville Regional Center: resources for Deaf, DeafBlind, and hard of hearing adults and children, ASL interpreter provided. Free. Serves Buncombe, Cherokee, Clay, Graham, Haywood, Henderson, Jackson, Macon, Madison, Mitchell, Polk, Swain, Transylvania and Yancey counties. Video phone 828-333-5830. Community connections, per the March 2026 guide: Asheville Deaf Chat, first Tuesdays 5:30-8pm at the Starbucks at 211 River Ford Pkwy, for Deaf and hard-of-hearing people, ASL learners and families; HLAA Asheville, third Saturdays at CarePartners' Seymour Auditorium (hlaa.asheville@gmail.com); free statewide virtual ASL classes (ask the regional center for the calendar); MyDeafChild.org gives families of a deaf child 0-3 free Sign It ASL. The guide found no regular in-person ASL storytime or DHH playgroup for ages 1-5 in Asheville, so virtual storytimes plus the regional center are the best current route.",
+   "d": "Voice 828-665-8733, TTY 828-665-8737, toll-free 800-681-7998 / 800-681-8035. Equipment, advocacy, community connection. Regional contact: Ruth Anne Everett, 828-432-5352 (phone/TTY). Serves Buncombe, Cherokee, Clay, Graham, Haywood, Henderson, Jackson, Macon, Madison, Mitchell, Polk, Swain, Transylvania and Yancey counties. Video phone 828-333-5830. Community connections, per the March 2026 guide: Asheville Deaf Chat, first Tuesdays 5:30-8pm at the Starbucks at 211 River Ford Pkwy, for Deaf and hard-of-hearing people, ASL learners and families; HLAA Asheville, third Saturdays at CarePartners' Seymour Auditorium (hlaa.asheville@gmail.com); free statewide virtual ASL classes (ask the regional center for the calendar); MyDeafChild.org gives families of a deaf child 0-3 free Sign It ASL. The guide found no regular in-person ASL storytime or DHH playgroup for ages 1-5 in Asheville, so virtual storytimes plus the regional center are the best current route.",
    "a": "12 Barbetta Dr, Asheville 28806",
    "h": "Mon-Fri 8am-5pm",
    "os": "11.6 Deaf and Hard of Hearing",
@@ -2279,7 +2280,7 @@
     "IX:*",
     "IX:10a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; open house from a Facebook event listing, Facebook deep scrape, 6 Nov 2026; website, counties and video phone from NCDHHS's regional centers page and brochure via web search, 6 Nov 2026; Drive: Free Events and Programs for Caregivers of Children Ages 1-5, WNC Caregiver Resource Guide (compiled 6 Mar 2026)",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; open house from a Facebook event listing, Facebook deep scrape, 6 Nov 2026; website, counties and video phone from NCDHHS's regional centers page and brochure via web search, 6 Nov 2026; Drive: Free Events and Programs for Caregivers of Children Ages 1-5, WNC Caregiver Resource Guide (compiled 6 Mar 2026); past open house taken out, review of 23 Nov 2026 (scripts/apply-review-2026-11-23.mjs)",
    "note": "",
    "new": false
   },
@@ -4810,7 +4811,7 @@
    "ph": "828-250-4700",
    "em": "",
    "w": "",
-   "d": "library bilingual storytimes (La Hora del Cuento at Enka-Candler Wed 10:30am and Skyland Fri 10:30am; Bilingual Birdies at Pack Memorial 1st Friday 10:30am, 828-250-4700); Fiesta de la Herencia Hispana at Pack Memorial (Nov 8, folklórico, Mexican puppetry by Edwin Salas, bilingual storytelling with Carolina Quiroga-Hurtado); El Telar cooperative childcare (Emma); McDowell DSS childcare subsidy; Dolly Parton's Imagination Library Spanish registration (via Literacy Together); adult Spanish/ESL through A-B Tech (8-week Beginning/Intermediate/Advanced), Asheville Spanish Club at Pack Memorial (Tue/Thu conversational), AmeriHealth Caritas conversation group (216 Asheland Ave, Wed 3pm, childcare provided), Language In Action (Peri Social House, Black Mountain, Wed 6pm), and free ESL/GED at El Centro and East Marion IPHC. Curated bilingual book lists and neurodiversity-affirming \"Autismo: ¡Tiene Sentido!\" trainings support families and educators (see Part 11).",
+   "d": "library bilingual storytimes (La Hora del Cuento at Enka-Candler Wed 10:30am and Skyland Fri 10:30am; Bilingual Birdies at Pack Memorial 1st Friday 10:30am, 828-250-4700); El Telar cooperative childcare (Emma); McDowell DSS childcare subsidy; Dolly Parton's Imagination Library Spanish registration (via Literacy Together); adult Spanish/ESL through A-B Tech (8-week Beginning/Intermediate/Advanced), Asheville Spanish Club at Pack Memorial (Tue/Thu conversational), AmeriHealth Caritas conversation group (216 Asheland Ave, Wed 3pm, childcare provided), Language In Action (Peri Social House, Black Mountain, Wed 6pm), and free ESL/GED at El Centro and East Marion IPHC. Curated bilingual book lists and neurodiversity-affirming \"Autismo: ¡Tiene Sentido!\" trainings support families and educators (see Part 11).",
    "a": "216 Asheland Ave",
    "h": "Wed 10:30am and Skyland Fri 10:30am",
    "os": "19.2 Latinx and Spanish-Speaking Families",
@@ -4839,7 +4840,7 @@
     "VIII:1a",
     "VIII:3a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; past event taken out, review of 23 Nov 2026 (scripts/apply-review-2026-11-23.mjs)",
    "note": "",
    "new": false
   },
@@ -7100,9 +7101,9 @@
    "ph": "828-259-5300 (ABCCM) / 828-255-3066 (Eblen)",
    "em": "",
    "w": "signup.com/mobileweb/2.0/vspot.html?activitykey=3603962089",
-   "d": "Christmas gifts for children, 2026. Start here, in this order: 1) EBLEN SAINT NICHOLAS PROJECT, sign up now. Free in-person toy shop for children birth to 18, open the 5 days before Christmas. Online sign-up opened November 16 and needs only a name, email and each child's age: signup.com/mobileweb/2.0/vspot.html?activitykey=3603962089 (see the Eblen Saint Nicholas row). Slots fill fast. 2) ABCCM CHRISTMAS ANGEL. Parents apply online at act.abccm.org/page/103314/survey/1 or at an ABCCM Crisis Ministry (828-259-5300) and make a wish list for each child; gifts are picked up at the Christmas Angel Shop (see the ABCCM Christmas Angel row). 3) WNC TOYS FOR TOTS. Families sign up through one local partner program, not with Toys for Tots itself (see that row). 4) Christmas Blessings Event, Saturday November 21, 10am-2pm, Maple Ridge Baptist, 133 Medford Branch Rd, Candler: free toys, clothing and food, everyone welcome. THANKSGIVING: Eblen's turkey giveaway is Friday, November 20, with advance sign-up (828-255-3066). NOT A FIRST REFERRAL: the Salvation Army Angel Tree asks for photo ID, birth certificates or custody papers and proof of income, and turns away families who asked anyone else for Christmas help. NO PAPERWORK NEEDED: the Christmas Blessings Event (Nov 21), Radiant Church's Thanksgiving dinner (Nov 26) and Horse Shoe Community Church's lunch (Nov 20) state no documents at all, which matters for families who have lost birth certificates. FULL: Eblen's Thanksgiving giveaway was reported fully registered on November 16, and most Swannanoa Thanksgiving boxes (Ingles drive, Meadowbrook FWB Church) are spoken for; NC 211 is the fallback. ALSO: Asheville Dream Center's Dream Christmas Toy Giveaway is December 12 and its Thanksgiving Outreach November 21 (details forthcoming; 828-674-2989). Also: The Arc's Operation Santa, SVCM's Johnny Raines Christmas Cheer for the Swannanoa Valley, Hearts with Hands' Hope for the Holidays (full in 2025, with a waitlist) and USPS Operation Santa letters (postmarked by December 5); each has its own row.",
+   "d": "Christmas gifts for children, 2026. Start here, in this order: 1) EBLEN SAINT NICHOLAS PROJECT, sign up now. Free in-person toy shop for children birth to 18, open the 5 days before Christmas. Online sign-up opened November 16 and needs only a name, email and each child's age: signup.com/mobileweb/2.0/vspot.html?activitykey=3603962089 (see the Eblen Saint Nicholas row). Slots fill fast. 2) ABCCM CHRISTMAS ANGEL. Parents apply online at act.abccm.org/page/103314/survey/1 or at an ABCCM Crisis Ministry (828-259-5300) and make a wish list for each child; gifts are picked up at the Christmas Angel Shop (see the ABCCM Christmas Angel row). 3) WNC TOYS FOR TOTS. Families sign up through one local partner program, not with Toys for Tots itself (see that row). 4) Cowboy Christmas Toy Giveaway, Saturday December 5, 10am-2pm, Blue Ridge Cowboy Church, 49 Saxon Hill, Fairview: free toys, a free lunch and pictures with Santa (see Events). NOT A FIRST REFERRAL: the Salvation Army Angel Tree asks for photo ID, birth certificates or custody papers and proof of income, and turns away families who asked anyone else for Christmas help. NO PAPERWORK NEEDED: Radiant Church's Thanksgiving dinner (Nov 26) states no documents at all, which matters for families who have lost birth certificates. Eblen's Thanksgiving giveaway and most Swannanoa Thanksgiving boxes filled up in mid November; NC 211 is the fallback. ALSO: Asheville Dream Center plans a Dream Christmas Toy Giveaway on December 12 (not confirmed online; 828-674-2989). Also: The Arc's Operation Santa, SVCM's Johnny Raines Christmas Cheer for the Swannanoa Valley, Hearts with Hands' Hope for the Holidays (full in 2025, with a waitlist) and USPS Operation Santa letters (postmarked by December 5); each has its own row.",
    "a": "",
-   "h": "Sign-ups open now (mid November 2026); gifts given out in December",
+   "h": "Sign-ups open at most programs now; gifts given out in December",
    "os": "PART 22: TIME-LIMITED AND SEASONAL PROGRAMS",
    "t": "",
    "lv": "",
@@ -7115,8 +7116,8 @@
     "X:*",
     "X:12"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; 2026 timing from past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026; Angel Tree 2026 requirements from the Salvation Army flyer, stance from Skylar Belt, 13 Nov 2026; Eblen's Christmas gift assistance page, its 2024 release and WLOS (Dec 2025), via web search, 16 Nov 2026; rewritten from Eblen's Saint Nicholas Project page and Giving Thanks flyer, WNC Toys for Tots, WLOS on ABCCM's 2025 Christmas Angel Shop, and the Salvation Army 2026 Angel Tree flyer, via web search, 16 Nov 2026; rewritten 16 Nov 2026 from Eblen's and ABCCM's pages via web search, 16 Nov 2026 and the sign-up message shared with Skylar Belt; Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026; Dream Center dates from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026); more programs from the WNC Financial Support Resources community list (companion to the food guide), shared by Skylar Belt 17 Nov 2026, checked via web search, 17 Nov 2026",
-   "note": "Updated 16 Nov 2026. Eblen sign-up is open now; ABCCM's 2026 deadline and Eblen's store address were not published yet.",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; 2026 timing from past Eblen announcements (Mountain Xpress, WLOS) via web search, 6 Nov 2026; Angel Tree 2026 requirements from the Salvation Army flyer, stance from Skylar Belt, 13 Nov 2026; Eblen's Christmas gift assistance page, its 2024 release and WLOS (Dec 2025), via web search, 16 Nov 2026; rewritten from Eblen's Saint Nicholas Project page and Giving Thanks flyer, WNC Toys for Tots, WLOS on ABCCM's 2025 Christmas Angel Shop, and the Salvation Army 2026 Angel Tree flyer, via web search, 16 Nov 2026; rewritten 16 Nov 2026 from Eblen's and ABCCM's pages via web search, 16 Nov 2026 and the sign-up message shared with Skylar Belt; Facebook holiday sweep shared by Skylar Belt, 16 Nov 2026; Dream Center dates from the OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026); more programs from the WNC Financial Support Resources community list (companion to the food guide), shared by Skylar Belt 17 Nov 2026, checked via web search, 17 Nov 2026; review of 23 Nov 2026 (scripts/apply-review-2026-11-23.mjs)",
+   "note": "Updated 23 Nov 2026: past November events taken out. Eblen's sign-up opened Nov 16 and its slots have filled within days in past years, so check before promising one. ABCCM's 2026 deadline and Eblen's store address were not published yet.",
    "new": false
   },
   {
@@ -7215,8 +7216,8 @@
     "X:*",
     "X:12"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; dates, eligibility and NCDHHS line from NCDHHS releases, Land of Sky phone from an older NCDHHS notice, via web search, 8 Nov 2026; eligibility and NCDHHS line from NCDHHS releases, Land of Sky phone from an older NCDHHS notice, via web search, 8 Nov 2026; merged 17 Nov 2026 from 2 rows (operation-fan-heat-relief, operation-fan-heat-relief-2)",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; dates, eligibility and NCDHHS line from NCDHHS releases, Land of Sky phone from an older NCDHHS notice, via web search, 8 Nov 2026; eligibility and NCDHHS line from NCDHHS releases, Land of Sky phone from an older NCDHHS notice, via web search, 8 Nov 2026; merged 17 Nov 2026 from 2 rows (operation-fan-heat-relief, operation-fan-heat-relief-2); review of 23 Nov 2026 (scripts/apply-review-2026-11-23.mjs)",
+   "note": "Out of season now: it runs May 1 to October 31. Ask again in late April 2027.",
    "new": false,
    "secs": [
     "X",
@@ -8516,7 +8517,7 @@
    "ph": "828-276-1156",
    "em": "",
    "w": "rootcausefarm.org/calendar",
-   "d": "Fairview; calendar online. Free produce, no questions asked, run with Bounty & Soul; bring a bag. The 2025 market ran April 1 to November 11, so expect a winter break. Older listings give other times, so call first. The last market of 2026 is Tuesday, November 25; it reopens in spring.",
+   "d": "Fairview; calendar online. Free produce, no questions asked, run with Bounty & Soul; bring a bag. The 2025 market ran April 1 to November 11, so expect a winter break. Older listings give other times, so call first. No 2026 end date is published, so call 828-276-1156 before sending anyone in late fall or winter; it reopens in spring.",
    "a": "26 Joe Jenkins Rd, Fairview",
    "h": "Share Market Tuesdays 3-4:30pm in season (about April to November)",
    "os": "3.5 Fresh Produce Markets (free)",
@@ -8528,7 +8529,7 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address, phone, market time and season from farm directory listings and WLOS via web search, 8 Nov 2026; website and season end from the WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address, phone, market time and season from farm directory listings and WLOS via web search, 8 Nov 2026; website and season end from the WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared by Skylar Belt 13 Nov 2026; impossible 2026 end date (Nov 25, 2026 is a Wednesday) taken out; Tuesday 3-4:30pm and phone confirmed by local listings via web search, review of 23 Nov 2026 (scripts/apply-review-2026-11-23.mjs)",
    "note": "",
    "new": false
   },
@@ -8883,7 +8884,7 @@
    "ph": "828-775-7081",
    "em": "",
    "w": "ymcawnc.org/schedules-7",
-   "d": "farmers-market style, free, no questions, no limits, Spanish-speaking staff; dozens of sites in 5 counties. ymcawnc.org. November 2026 stops listed as Facebook events (confirm before sending anyone): Fri Nov 13 noon Crowell Apartments, 10 Coleys Cir, and 1pm Mission Hospital pop-up, 509 Biltmore Ave; Wed Nov 18 11am Oakley/South Asheville Library; Thu Nov 19 11am Carolina Complete Health, 150 Tunnel Rd, and 2pm Woodfin YMCA; Fri Nov 20 noon Haywood Pediatrics; Tue Nov 24 1pm Hendersonville Family YMCA. The YMCA posts a schedule PDF each month (English and Spanish) and stop announcements on its Facebook page, @ymcawnccommunityhealth. Regular stops have included the Ferguson Family YMCA in Candler, Woodfin YMCA, Hendersonville Family YMCA, Haywood Pediatrics in Clyde, Mills River Park and Madison County Cooperative Extension in Marshall.",
+   "d": "farmers-market style, free, no questions, no limits, Spanish-speaking staff; dozens of sites in 5 counties. ymcawnc.org. Its last listed November 2026 stop is Tue Nov 24, 1pm, Hendersonville Family YMCA; check the December schedule before sending anyone. The YMCA posts a schedule PDF each month (English and Spanish) and stop announcements on its Facebook page, @ymcawnccommunityhealth. Regular stops have included the Ferguson Family YMCA in Candler, Woodfin YMCA, Hendersonville Family YMCA, Haywood Pediatrics in Clyde, Mills River Park and Madison County Cooperative Extension in Marshall.",
    "a": "Rotating stops; see the monthly schedule",
    "h": "Varies by stop; see the monthly schedule",
    "os": "3.5 Fresh Produce Markets (free)",
@@ -8897,7 +8898,7 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; November stops from Facebook event listings, Facebook deep scrape, 6 Nov 2026; phone, schedule page and stops from YMCA WNC mobile market schedule PDFs via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; November stops from Facebook event listings, Facebook deep scrape, 6 Nov 2026; phone, schedule page and stops from YMCA WNC mobile market schedule PDFs via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; past November stops taken out, review of 23 Nov 2026 (scripts/apply-review-2026-11-23.mjs)",
    "note": "",
    "new": false
   },
@@ -8983,11 +8984,11 @@
    "pp": "Meagan",
    "sp": "⚪ Not listed - ask",
    "spd": "Not stated in the source. Ask when you call.",
-   "ph": "1-888-892-1162 (diaper line) / 211",
+   "ph": "",
    "em": "meagan@babiesneedbottoms.org",
    "w": "babiesneedbottoms.org",
-   "d": "(regional diaper bank): serves 400-475 children monthly, ages 0-3, across Buncombe, Haywood, Henderson, Madison, McDowell, Transylvania. No central warehouse; pick up through 14+ partner agencies including MANNA mobile markets, ABCCM, Helpmate, YWCA MotherLove, BEAR Closets, Children First/CIS sites. Emergency assistance form online. Contact: meagan@babiesneedbottoms.org, 828-250-4315, or dial 211. Practice tip: any family visiting a partner agency with an infant should be offered diapers on the same visit.",
-   "a": "205 College St (Register of Deeds pickup site) Mailing: PO Box 5171, Asheville NC 28813.",
+   "d": "Families cannot get diapers from Babies Need Bottoms directly. It is the regional diaper bank: it supplies partner agencies, and families pick diapers up there. Partners have included MANNA mobile markets, ABCCM, Helpmate, YWCA MotherLove, BEAR Closets and Children First/CIS sites. To find the nearest partner, call 211 (or 1-888-892-1162, NC 211's toll-free line) or use nc211.org. Serves children 0-3 across Buncombe, Haywood, Henderson, Madison, McDowell and Transylvania. Practice tip: any family visiting a partner agency with an infant should be offered diapers on the same visit.",
+   "a": "",
    "h": "",
    "os": "4.1 Diapers and Formula",
    "t": "Mobile / delivery, Kids / 0-5 | Verified 8/2026. HOW A FAMILY ACTUALLY GETS DIAPERS: there is no walk-in warehouse. Point them to nc211.org or 1-888-892-1162 and 211 connects them to the partner agency nearest them for diapers, wipes and other supplies. Staff: Meagan Lyon Leimena MSW MPH (she/her), Co-Executive Director, meagan@babiesneedbottoms.org. Second contact alicia@babiesneedbottoms.org. To DONATE diapers use the Amazon wish list at a.co/aYtGxjI. Mailing address is a PO Box, not a pickup site.",
@@ -9013,8 +9014,8 @@
     "VIII:4a",
     "VIII:8a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; backup route adapted from the OK Computer navigator build (shared 17 Nov 2026), phones from this directory; partner-only model from a Buncombe County release and grant reports (via web search, 23 Nov 2026); review of 23 Nov 2026 (scripts/apply-review-2026-11-23.mjs)",
+   "note": "The 1-888-892-1162 number listed here before as a diaper line is NC 211's. Babies Need Bottoms' own office (828-250-4315, meagan@babiesneedbottoms.org; mailing address PO Box 5171, Asheville 28813) is for agencies and donors, not diaper requests. Its partner list changes; 211 has the current one.",
    "new": false,
    "alt": "Ask any agency the family already uses whether it hands out diapers, or call 211."
   },
@@ -9027,7 +9028,7 @@
    "ph": "",
    "em": "",
    "w": "buncombenc.gov/m/NewsFlash/Home/Detail/204",
-   "d": "205 College St, 1st floor. Mon-Fri 8am-5pm. Free diapers, wipes, and formula, walk-in, take what you need (partnership with Babies Need Bottoms).",
+   "d": "205 College St, 1st floor. Mon-Fri 8am-5pm. Diapers, wipes and formula from Babies Need Bottoms for parents and relatives who come in for a child's birth certificate.",
    "a": "205 College St",
    "h": "Mon-Fri 8am-5pm",
    "os": "4.1 Diapers and Formula",
@@ -9040,8 +9041,8 @@
     "VIII:11a",
     "VIII:4a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026",
-   "note": "",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Buncombe County news release on the Babies Need Bottoms partnership (undated), via web search 23 Nov 2026; review of 23 Nov 2026 (scripts/apply-review-2026-11-23.mjs)",
+   "note": "The county's announcement of this partnership is undated and ties the supplies to birth certificate visits. Call the Register of Deeds before sending a family only for diapers.",
    "new": false
   },
   {
@@ -14728,7 +14729,7 @@
    "ph": "828-254-7206",
    "em": "tangela.bowman@ywcaofasheville.org",
    "w": "ywcaofasheville.org",
-   "d": "For women working toward economic security and well-being: free Empowerment Child Care, MotherLove (mentoring and support for teen parents), and Getting Ahead in a Just Gettin' By World. Clients call 828-254-7206 ext. 104. Director Tangie Ballard Bowman (email under Tangela) shared an upcoming event: TD Bank at the YWCA, Tue Nov 17, 2026, 6pm; the topic was not given. Empowerment Child Care, per the family guide checked Aug 2026: up to 12 free hours a week with income verification for parents in transition, in school or looking for work, at most 4 hours a day, Mon-Thu 8am-6pm; ext. 113 or ecc@ywcaofasheville.org; 185 S French Broad Ave. Pay-by-the-hour care is open to anyone, and staff help with case management and links to jobs, housing and school.",
+   "d": "For women working toward economic security and well-being: free Empowerment Child Care, MotherLove (mentoring and support for teen parents), and Getting Ahead in a Just Gettin' By World. Clients call 828-254-7206 ext. 104. Empowerment Child Care, per the family guide checked Aug 2026: up to 12 free hours a week with income verification for parents in transition, in school or looking for work, at most 4 hours a day, Mon-Thu 8am-6pm; ext. 113 or ecc@ywcaofasheville.org; 185 S French Broad Ave. Pay-by-the-hour care is open to anyone, and staff help with case management and links to jobs, housing and school.",
    "a": "185 S French Broad Ave",
    "h": "",
    "os": "PART 16: MONEY, WORK, BENEFITS, TAXES",
@@ -14747,7 +14748,7 @@
     "X:2",
     "X:4"
    ],
-   "src": "Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes) (contacts, extension, event); program components from the YWCA of Asheville site and Mountain Xpress via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Drive: Free & Low-Cost Childcare in Leicester & Buncombe County (family guide, checked Aug 2026); Drive: Free Childcare Leicester NC (14 Aug 2026)",
+   "src": "Nurse-Family Partnership community partner meeting, 6 Nov 2026 (Skylar's notes) (contacts, extension, event); program components from the YWCA of Asheville site and Mountain Xpress via web search, 6 Nov 2026; also listed in the Buncombe County Family Resource Directory, Public Edition: Buncombe Partnership for Children family-resource directory (buncombepfc.org/for-families/family-resources), checked 7 Nov 2026; Drive: Free & Low-Cost Childcare in Leicester & Buncombe County (family guide, checked Aug 2026); Drive: Free Childcare Leicester NC (14 Aug 2026); past event taken out, review of 23 Nov 2026 (scripts/apply-review-2026-11-23.mjs)",
    "note": "Details differ: the August family guide says up to 12 free hours a week at ext. 113; an earlier Drive guide said 12 to 20 hours; this row's client line is ext. 104. Ask which applies.",
    "new": true
   },
@@ -17872,9 +17873,9 @@
    "ph": "828-255-3066",
    "em": "",
    "w": "signup.com/mobileweb/2.0/vspot.html?activitykey=3603962089",
-   "d": "A free toy store: parents shop in person for new toys for their children, birth through 18, at no cost. SIGN UP NOW: online appointments opened Monday, November 16, 2026, and slots fill quickly. The sign-up link (signup.com/mobileweb/2.0/vspot.html?activitykey=3603962089) asks only for a name, email and each child's age. Eblen's page is eblencharities.org/christmas-gift-assistance (its \"Sign Up to Shop\" button). For families in or near poverty and Hurricane Helene survivors. In past years Eblen asked for proof of custody or guardianship when picking up (for example the children's Social Security cards, Medicaid cards or passports), so tell families to bring one. If slots are full, ask Eblen about a waiting list. Help a family sign up if they need it.",
+   "d": "A free toy store: parents shop in person for new toys for their children, birth through 18, at no cost. Online appointments opened Monday, November 16, 2026; in past years every slot filled within days, so check whether any remain before promising one. The sign-up link (signup.com/mobileweb/2.0/vspot.html?activitykey=3603962089) asks only for a name, email and each child's age. Eblen's page is eblencharities.org/christmas-gift-assistance (its \"Sign Up to Shop\" button). For families in or near poverty and Hurricane Helene survivors. In past years Eblen asked for proof of custody or guardianship when picking up (for example the children's Social Security cards, Medicaid cards or passports), so tell families to bring one. If slots are full, ask Eblen about a waiting list. Help a family sign up if they need it.",
    "a": "Store location changes each year (2025: 23 Hamilton St, Asheville)",
-   "h": "Sign-up opened Mon Nov 16, 2026; store open the 5 days before Christmas, by appointment",
+   "h": "Sign-up opened Nov 16, 2026 (may be full); store open the 5 days before Christmas, by appointment",
    "os": "Holiday help",
    "t": "Free, Kids / 0-5",
    "lv": "",
@@ -17887,7 +17888,7 @@
     "X:*",
     "X:12"
    ],
-   "src": "Eblen's Christmas gift assistance page, its 2024 release and WLOS (Dec 2025), via web search, 16 Nov 2026; sign-up timing from Eblen's own Saint Nicholas Project page via web search, 16 Nov 2026; sign-up date and 5-day store from Eblen's Saint Nicholas page, pickup documents and waitlist from Mountain Xpress (2024), via web search, 16 Nov 2026; sign-up link and fields from a message shared with Skylar Belt, 16 Nov 2026; backup route from Skylar Belt's referral stance, Nov 2026",
+   "src": "Eblen's Christmas gift assistance page, its 2024 release and WLOS (Dec 2025), via web search, 16 Nov 2026; sign-up timing from Eblen's own Saint Nicholas Project page via web search, 16 Nov 2026; sign-up date and 5-day store from Eblen's Saint Nicholas page, pickup documents and waitlist from Mountain Xpress (2024), via web search, 16 Nov 2026; sign-up link and fields from a message shared with Skylar Belt, 16 Nov 2026; backup route from Skylar Belt's referral stance, Nov 2026; Eblen's page and WLOS coverage of past years' fast-filling slots, via web search 23 Nov 2026; review of 23 Nov 2026 (scripts/apply-review-2026-11-23.mjs)",
    "note": "The sign-up link was shared with Skylar on 16 Nov 2026 for a free in-person Christmas shop that opened that day; it matches Eblen's own schedule, but the page could not be opened from here, so confirm the organizer when you use it.",
    "new": true,
    "alt": "ABCCM Christmas Angel, a WNC Toys for Tots partner program, or the Asheville Dream Center toy giveaway on December 12."
@@ -18009,9 +18010,9 @@
    "ph": "828-380-9219",
    "em": "",
    "w": "mountainstrong828.org",
-   "d": "A free clinic in Burnsville. Its Get Connected to Care open house (Saturday Nov 21, 11am-2pm, and Thursday Dec 17, 5-8pm) lets anyone tour the clinic, meet the team, ask a nurse general health questions, learn about upcoming FREE medical services and medication assistance, get a free first aid kit (while supplies last) and get connected as a future patient. Everyone is welcome and no registration is needed. No medical appointments or treatment are given at the open house, so it is for getting connected, not for being seen that day.",
+   "d": "A free clinic in Burnsville. Its Get Connected to Care open house (next: Thursday Dec 17, 5-8pm) lets anyone tour the clinic, meet the team, ask a nurse general health questions, learn about upcoming FREE medical services and medication assistance, get a free first aid kit (while supplies last) and get connected as a future patient. Everyone is welcome and no registration is needed. No medical appointments or treatment are given at the open house, so it is for getting connected, not for being seen that day.",
    "a": "371 W US Hwy 19E, Burnsville 28714",
-   "h": "Open house Sat Nov 21 11am-2pm and Thu Dec 17 5-8pm; call for other times",
+   "h": "Open house Thu Dec 17 5-8pm; call for other times",
    "os": "Flyers",
    "t": "Free, No ID, Spanish / bilingual",
    "lv": "",
@@ -18022,7 +18023,7 @@
     "VI:4a",
     "ESPANOL:*"
    ],
-   "src": "Mountain Strong Free Clinic flyers (English and Spanish), shared by Skylar Belt, 16 Nov 2026",
+   "src": "Mountain Strong Free Clinic flyers (English and Spanish), shared by Skylar Belt, 16 Nov 2026; past open house date taken out, review of 23 Nov 2026 (scripts/apply-review-2026-11-23.mjs)",
    "note": "Clinic hours and which services are free were not on the flyers; call 828-380-9219.",
    "new": true
   },
@@ -18035,9 +18036,9 @@
    "ph": "828-674-2989",
    "em": "info@ashevilledreamcenter.org",
    "w": "ashevilledreamcenter.org/love-our-city",
-   "d": "Seasonal outreach: a Thanksgiving Outreach on Saturday, November 21, 2026 and a Dream Christmas Toy Giveaway on Saturday, December 12, 2026. Its page says more details are coming, so call or email before making a firm plan.",
+   "d": "Seasonal outreach: a Dream Christmas Toy Giveaway on Saturday, December 12, 2026 (its Thanksgiving Outreach was Nov 21). Its page says more details are coming, so call or email before making a firm plan.",
    "a": "",
-   "h": "Thanksgiving Outreach Nov 21; Christmas Toy Giveaway Dec 12 (2026)",
+   "h": "Christmas Toy Giveaway Sat Dec 12, 2026 (not confirmed online)",
    "os": "Holiday help",
    "t": "Free",
    "lv": "",
@@ -18050,8 +18051,8 @@
     "X:*",
     "X:12"
    ],
-   "src": "OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026)",
-   "note": "Times, place and sign-up were not published yet.",
+   "src": "OK Computer Buncombe Family Navigator build, shared by Skylar Belt 17 Nov 2026 (cites official pages checked 14 Nov 2026); review of 23 Nov 2026 (scripts/apply-review-2026-11-23.mjs)",
+   "note": "Times, place and sign-up were not published yet, and a web search on 23 Nov 2026 found no announcement of the Dec 12 giveaway. Call 828-674-2989 first.",
    "new": true
   },
   {
@@ -18954,7 +18955,7 @@
    "ph": "",
    "em": "",
    "w": "",
-   "d": "A Blessing Box outside that anyone can take from at any hour, a food pantry, and a free 24/7 public health vending machine with healthy snacks, meal kits, hygiene products and recovery resources. It also hosted the free haircut clinic on November 17, 2026 (see Events).",
+   "d": "A Blessing Box outside that anyone can take from at any hour, a food pantry, and a free 24/7 public health vending machine with healthy snacks, meal kits, hygiene products and recovery resources.",
    "a": "81 Academy St, Bryson City",
    "h": "Pantry Mon, Tue, Thu, Fri 10am-3pm; Wed 1-6pm; Blessing Box and vending machine 24/7",
    "os": "Community food guide (Oct 2026)",
@@ -18968,7 +18969,7 @@
     "VII:*",
     "VII:6a"
    ],
-   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026",
+   "src": "WNC Free Food & Supplies community guide (tiny.cc/freeinwnc, updated 2 Oct 2026), shared again by Skylar Belt 17 Nov 2026; past event taken out, review of 23 Nov 2026 (scripts/apply-review-2026-11-23.mjs)",
    "note": "",
    "new": true
   },
@@ -20155,6 +20156,56 @@
    ],
    "src": "EMOTE Clothing Swap 2026 flyer, shared by Skylar Belt 22 Nov 2026",
    "note": "The flyer gives 2026 dates only; ask whether it continues in 2027.",
+   "new": true
+  },
+  {
+   "id": "wnc-free-food-supplies-guide",
+   "n": "WNC Free Food & Supplies guide (community list, tiny.cc/freeinwnc)",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source.",
+   "ph": "",
+   "em": "freefoodhelene@proton.me",
+   "w": "tiny.cc/freeinwnc",
+   "d": "A volunteer-kept list of free food across Western North Carolina, county by county: pantries, free meals, free fridges, home deliveries and supplies. It links companion lists of free clinics and medical help, financial help and pet pantries, a calendar of free food distributions and free food zines. Corrections and additions go to freefoodhelene@proton.me or @FreeFoodWnc on Signal. Much of this directory's food data comes from its October 2026 edition.",
+   "a": "",
+   "h": "",
+   "os": "Community guide",
+   "t": "Free",
+   "lv": "",
+   "vb": "",
+   "sec": "VIII",
+   "needs": [
+    "VIII:*",
+    "VIII:5a"
+   ],
+   "src": "The guide's own header (updated 2 Oct 2026), from the copies Skylar Belt shared 13 and 17 Nov 2026; link shared again 23 Nov 2026",
+   "note": "The edition this directory used is dated 2 Oct 2026; the live guide may have changed since. It is a different list from the Buncombe Food Resource Guide (bit.ly/BuncombeFoodResourceGuide), which has its own row.",
+   "new": true
+  },
+  {
+   "id": "free-resource-signal-group",
+   "n": "Free resource group chat (public Signal group)",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source.",
+   "ph": "",
+   "em": "",
+   "w": "https://signal.group/#CjQKIDdYw3PJN-yAMxqxqgZlpMDqJa-nMd23zEaswuw6wyXiEhDYWpTz_8BL50RoTKfSfvTj",
+   "d": "A public Signal group chat where people share free resources. Open the link on a phone with the Signal app installed to join. Useful for finding out about giveaways and distributions as they happen.",
+   "a": "",
+   "h": "",
+   "os": "Community group chats",
+   "t": "Free",
+   "lv": "",
+   "vb": "",
+   "sec": "VIII",
+   "needs": [
+    "VIII:*",
+    "VIII:5a"
+   ],
+   "src": "Link shared by Skylar Belt, 23 Nov 2026, who describes it as a public free resource group chat",
+   "note": "The group's name and moderators could not be checked from here: Signal group links only open in the app. Members can see each other's Signal names, so a family may want a profile name they are comfortable sharing.",
    "new": true
   }
  ]
