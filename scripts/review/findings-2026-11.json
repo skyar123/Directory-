@@ -631,5 +631,88 @@
   "r": "partly",
   "note": "No 2026 announcement of an Eblen Helene rebuilding program was found; state Renew NC programs (1-888-791-0207) cover Helene repairs, and Eblen's general rent help continues by phone, 828-255-3066.",
   "src": "WFAE (2024) and Renew NC program pages (2025-26)"
+ },
+ {
+  "id": "garren-creek-thanksgiving-boxes-swannanoa",
+  "r": "partly",
+  "note": "Most Swannanoa Thanksgiving boxes were reported spoken for in mid November 2026; NC 211 is the fallback.",
+  "src": "Facebook holiday sweep (16 Nov 2026), as recorded on the holiday assistance row"
+ },
+ {
+  "id": "community-thanksgiving-marion-2026-11-14",
+  "r": "partly",
+  "note": "This meal was Saturday 14 Nov 2026 and has passed.",
+  "src": "date check"
+ },
+ {
+  "id": "trinity-place-youth-shelter",
+  "r": "confirmed",
+  "src": "kept only to say it closed in May 2022"
+ },
+ {
+  "id": "ywam-friday-hot-meal",
+  "r": "confirmed",
+  "src": "YWAM flyer for 20 Nov 2026"
+ },
+ {
+  "id": "emote-clothing-swap",
+  "r": "confirmed",
+  "src": "EMOTE 2026 flyer, 22 Nov 2026"
+ },
+ {
+  "id": "community-food-guide-maintained-by-runda-ala",
+  "r": "notfound",
+  "src": "no online trace of the bit.ly Buncombe Food Resource Guide"
+ },
+ {
+  "id": "nc-211-text-foodnc-to-877-877-findhelp-org-f",
+  "r": "partly",
+  "note": "The FOODNC text line (COMIDA in Spanish) launched in 2020 for children's meal sites, and no 2026 notice confirms it still runs; in summer, text FOOD to 304-304. Calling 211 always works.",
+  "src": "NC DPS and DPI announcements (2020) and NC DPI summer meals page"
+ },
+ {
+  "id": "text-foodnc-to-877-877",
+  "r": "partly",
+  "note": "The FOODNC text line (COMIDA in Spanish) launched in 2020 for children's meal sites, and no 2026 notice confirms it still runs; in summer, text FOOD to 304-304. Calling 211 always works.",
+  "src": "NC DPS and DPI announcements (2020) and NC DPI summer meals page"
+ },
+ {
+  "id": "eblen-charities-free-store",
+  "r": "partly",
+  "note": "Eblen's 13th Winter Coat Giveaway (2026) is first come, first served with no registration. For appointment-based help Eblen asks for all documents 3 business days before the appointment and household income for everyone.",
+  "src": "WLOS (2026 Winter Coat Giveaway) and Eblen's assistance appointment form"
+ },
+ {
+  "id": "abccm-veterans-restoration-quarters",
+  "r": "confirmed",
+  "note": "Veterans' intake line 828-398-6622 (ABCCM's get-help page gives 828-398-6609). Helene damaged the building, and a rebuild broke ground in August 2026, so ask where veterans are housed now.",
+  "src": "ABCCM VRQ page and VA news (Aug 2026)"
+ },
+ {
+  "id": "habitat-critical-home-repair",
+  "r": "confirmed",
+  "note": "The City of Asheville's separate 2026 home repair program closed applications on 19 Oct 2026.",
+  "src": "Asheville Habitat home repair page (828-251-5702, low-income Buncombe homeowners) and City of Asheville home repair page"
+ },
+ {
+  "id": "renew-nc-single-family-housing",
+  "r": "changed",
+  "set": {
+   "h": "Closed to new applications (deadline was 31 Jan 2026)"
+  },
+  "note": "The Single-Family Housing Program stopped taking applications on 31 Jan 2026; families who applied can check status with Renew NC (888-791-0207). Renew NC's open programs now are for multi-family properties and community infrastructure.",
+  "src": "NC Commerce and Renew NC releases (Jan, Feb and Aug 2026)"
+ },
+ {
+  "id": "wee-trade-carolinas-foster-family-free-shop",
+  "r": "partly",
+  "note": "Wee Trade is a twice-yearly children's consignment sale at the WNC Agricultural Center; foster families shop free in a set window with paperwork (registration has been required). Dates change each season: check weetradecarolinas.com.",
+  "src": "Tribune Papers (2024), 828newsNOW and Macaroni KID listings"
+ },
+ {
+  "id": "period-pantry-locations",
+  "r": "partly",
+  "note": "One listed site is a pink pantry outside Palm + Pine, 178 Westwood Pl; Period Nirvana (315 Haywood Rd) collects donations for it. Buncombe County Schools also stock free products at every school.",
+  "src": "free period product directories and Mountain Xpress"
  }
 ]
