@@ -33,11 +33,12 @@
    "Food flyers of 19 Nov 2026: YWAM food truck, Bounty & Soul one-day move, Bountiful Cities 2027 Share Markets, MANNA Community Market at Shiloh (see scripts/apply-food-flyers-2026-11-19.mjs)",
    "SNIFF tags corrected from a search audit, 20 Nov 2026 (see scripts/apply-search-tags-2026-11-20.mjs)",
    "ABIPA Thanksgiving Sunday Shop and EMOTE Clothing Swap flyers, 22 Nov 2026 (see scripts/apply-abipa-emote-2026-11-22.mjs)",
-   "Review of 23 Nov 2026: diaper routing, passed dates, the free food guide and a public Signal group (see scripts/apply-review-2026-11-23.mjs)"
+   "Review of 23 Nov 2026: diaper routing, passed dates, the free food guide and a public Signal group (see scripts/apply-review-2026-11-23.mjs)",
+   "Two public mutual aid Signal groups, 24 Nov 2026 (see scripts/apply-signal-mutual-aid-2026-11-24.mjs)"
   ],
   "file": "resources.json",
   "note": "One object per resource. `needs` are SNIFF question keys, `src` names where the fact came from. `alt` is an optional backup route, shown as \"If this doesn't work\".",
-  "count": 714,
+  "count": 716,
   "merged": {
    "kaleidoscope-play-learn-2": "kaleidoscope-play-learn",
    "asheville-city-schools-2": "asheville-city-schools",
@@ -8719,7 +8720,7 @@
    "ph": "",
    "em": "",
    "w": "",
-   "d": "12 Baskets brunch 10am-12pm | Haywood Street breakfast 8:30-10:30am | Emmanuel Lutheran 11am-1pm (51 Wilburn Pl) | The Red Door (Church of the Advocate) meal 2pm + basics/shoes closet 2-3pm (60 Church St) | ABIPA Free Sunday Shop 4th Sunday 3-6pm (Friendship Center, 142 Shiloh Rd on 22 Nov 2026; 828-785-3470) | Streetside community potluck Aston Park, 300 Hilliard Ave",
+   "d": "12 Baskets brunch 10am-12pm | Haywood Street breakfast 8:30-10:30am | Emmanuel Lutheran 11am-1pm (51 Wilburn Pl) | The Red Door (Church of the Advocate) meal 2pm + basics/shoes closet 2-3pm (60 Church St) | ABIPA Free Sunday Shop 4th Sunday 3-6pm (next 27 Dec 2026; the place changes, so check the month's flyer or call 828-785-3470) | Streetside community potluck Aston Park, 300 Hilliard Ave",
    "a": "Several sites, listed below",
    "h": "Times vary by site, listed below",
    "os": "3.3 Weekly Pantry Schedule (by day)",
@@ -8731,7 +8732,7 @@
     "VIII:*",
     "VIII:5a"
    ],
-   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address and hours replaced: they named one of the listed sites, 6 Nov 2026; WNC Free Food & Supplies community guide (updated 2 Oct 2026), as recorded on each site's row; ABIPA Sunday Shop place and phone from ABIPA's Thanksgiving flyer, 22 Nov 2026",
+   "src": "WNC_Family_Resources_SNIFF_v19_Aug2026.xlsx, ALL RESOURCES tab; address and hours replaced: they named one of the listed sites, 6 Nov 2026; WNC Free Food & Supplies community guide (updated 2 Oct 2026), as recorded on each site's row; ABIPA Sunday Shop place and phone from ABIPA's Thanksgiving flyer, 22 Nov 2026; date review 24 Nov 2026 (scripts/apply-dates-2026-11-24.mjs)",
    "note": "",
    "new": false
   },
@@ -14926,7 +14927,7 @@
    "w": "facebook.com/events/1664551961336856",
    "d": "Free naloxone training sessions listed for Thu Nov 19, Tue Dec 8 (at 216 Asheland Ave, Asheville), and Thu Dec 17, 2026. The host was not named in the listings; a food pantry finder lists 216 Asheland Ave as the Asheville Wellness and Opportunities Center. For naloxone itself on a weekday, WNCAP gives it out free (see Harm reduction).",
    "a": "216 Asheland Ave (Dec 8 session)",
-   "h": "Thu Nov 19, Tue Dec 8 and Thu Dec 17, 2026 (times on each listing)",
+   "h": "Tue Dec 8 and Thu Dec 17, 2026 (times on each listing; the Nov 19 session has passed)",
    "os": "8.4 Substance Use and Recovery",
    "t": "Free",
    "lv": "",
@@ -14938,7 +14939,7 @@
     "X:*",
     "X:12"
    ],
-   "src": "Facebook event listings, Facebook deep scrape, 6 Nov 2026; venue name from a feedam.org pantry listing via web search, 6 Nov 2026; event time moved into the hours field, 6 Nov 2026",
+   "src": "Facebook event listings, Facebook deep scrape, 6 Nov 2026; venue name from a feedam.org pantry listing via web search, 6 Nov 2026; event time moved into the hours field, 6 Nov 2026; date review 24 Nov 2026 (scripts/apply-dates-2026-11-24.mjs)",
    "note": "",
    "new": true
   },
@@ -20205,6 +20206,56 @@
     "VIII:5a"
    ],
    "src": "Link shared by Skylar Belt, 23 Nov 2026, who describes it as a public free resource group chat",
+   "note": "The group's name and moderators could not be checked from here: Signal group links only open in the app. Members can see each other's Signal names, so a family may want a profile name they are comfortable sharing.",
+   "new": true
+  },
+  {
+   "id": "mutual-aid-signal-group-a",
+   "n": "Mutual aid group chat A (public Signal group)",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source.",
+   "ph": "",
+   "em": "",
+   "w": "https://signal.group/#CjQKIF2Is5nUWSY4ObZjnTscYPthzJCNIbe9a4s_5HURQr34EhDoUQdGrrNm5WA4kZ9zp4kQ",
+   "d": "A public Signal group chat for mutual aid that anyone can join: neighbors posting what they need and what they can share. Open the link on a phone with the Signal app installed to join. There are two such chats in this directory (A and B) and a separate free resource chat.",
+   "a": "",
+   "h": "",
+   "os": "Community group chats",
+   "t": "Free",
+   "lv": "",
+   "vb": "",
+   "sec": "VIII",
+   "needs": [
+    "VIII:*",
+    "VIII:5a"
+   ],
+   "src": "Link shared by Skylar Belt, 23 Nov 2026; described by Skylar on 24 Nov 2026 as a public mutual aid group chat anyone can join",
+   "note": "The group's name and moderators could not be checked from here: Signal group links only open in the app. Members can see each other's Signal names, so a family may want a profile name they are comfortable sharing.",
+   "new": true
+  },
+  {
+   "id": "mutual-aid-signal-group-b",
+   "n": "Mutual aid group chat B (public Signal group)",
+   "pp": "",
+   "sp": "⚪ Not listed - ask",
+   "spd": "Not stated in the source.",
+   "ph": "",
+   "em": "",
+   "w": "https://signal.group/#CjQKICn2yWgaYYkI-UEe8pWPeJxlCefx3jCqYndw3jlE-VcwEhCgu2nrpG59PMMslIUUGiXh",
+   "d": "A public Signal group chat for mutual aid that anyone can join: neighbors posting what they need and what they can share. Open the link on a phone with the Signal app installed to join. There are two such chats in this directory (A and B) and a separate free resource chat.",
+   "a": "",
+   "h": "",
+   "os": "Community group chats",
+   "t": "Free",
+   "lv": "",
+   "vb": "",
+   "sec": "VIII",
+   "needs": [
+    "VIII:*",
+    "VIII:5a"
+   ],
+   "src": "Link shared by Skylar Belt, 23 Nov 2026; described by Skylar on 24 Nov 2026 as a public mutual aid group chat anyone can join",
    "note": "The group's name and moderators could not be checked from here: Signal group links only open in the app. Members can see each other's Signal names, so a family may want a profile name they are comfortable sharing.",
    "new": true
   }
