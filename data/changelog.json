@@ -154,6 +154,12 @@
    "label": "ADDED THIS ROUND",
    "entries": [
     {
+     "date": "Nov 24 2026",
+     "what": "Two public mutual aid group chats added",
+     "detail": "The two other Signal links shared on 23 Nov are public mutual aid group chats that anyone can join. They are listed as Mutual aid group chat A and B, next to the free resource group chat, under Food and basic needs. Each opens in the Signal app.",
+     "source": "scripts/apply-signal-mutual-aid-2026-11-24.mjs"
+    },
+    {
      "date": "Nov 23 2026",
      "what": "Every listing checked against the web",
      "detail": "Every listing with a phone, address, hours or website that had not been checked this month was web-checked (323 in all). 88 matched what is online. 148 partly matched, and each now has a note saying what differs or could not be confirmed, so look for that note before giving a number out. 19 were corrected, including: Trans Lifeline is no longer 24/7 (Mon-Fri 1-9pm Eastern); the Jewish Family Services row carried Catholic Charities' phone; Open Path has no phone line and costs $65 to join; Legal Aid's Senior Law Project has its own helpline, 1-877-579-7562; the Family Resource Center at Emma is at 37 Brickyard Rd; and Campfire Community School, the dads' group and other rows with passed dates were updated. 21 could not be found online and say so. WNCCHS is not taking new routine dental patients (urgent slots only). The full log is docs/review-2026-11.md.",
