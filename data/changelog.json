@@ -154,6 +154,12 @@
    "label": "ADDED THIS ROUND",
    "entries": [
     {
+     "date": "Nov 25 2026",
+     "what": "Free Christmas toys, Pinnacle Apothecary, Candler, Nov 29",
+     "detail": "Pinnacle Apothecary, 1388 Sand Hill Rd, Candler: free toys and pencils, no purchase needed and everyone welcome, Sunday Nov 29, 2-5pm. On the Events tab. The three Signal group chats now say how to invite someone.",
+     "source": "scripts/apply-pinnacle-christmas-2026-11-25.mjs"
+    },
+    {
      "date": "Nov 24 2026",
      "what": "Two public mutual aid group chats added",
      "detail": "The two other Signal links shared on 23 Nov are public mutual aid group chats that anyone can join. They are listed as Mutual aid group chat A and B, next to the free resource group chat, under Food and basic needs. Each opens in the Signal app.",
