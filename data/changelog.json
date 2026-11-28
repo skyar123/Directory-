@@ -154,6 +154,12 @@
    "label": "ADDED THIS ROUND",
    "entries": [
     {
+     "date": "Nov 28 2026",
+     "what": "Two free markets and a kids' Christmas gift event",
+     "detail": "On the Events tab: WAVL Really Really Free Market, Sat Nov 28, 1-4pm, 27 Balm Grove Ave (back pavilion), West Asheville; ROAR Really Really Free Market book, music and art swap, Sun Dec 13, 2-5pm, Mal's Bar, 121 S Main St, Marshall; Candler Church Mega Harvest Kids Christmas Event, Sun Dec 20, 10:30am, 1945 Smokey Park Hwy, Candler, where children 1 to 12 pick out their own gift.",
+     "source": "scripts/apply-free-markets-kids-christmas-2026-11-28.mjs"
+    },
+    {
      "date": "Nov 25 2026",
      "what": "Free Christmas toys, Pinnacle Apothecary, Candler, Nov 29",
      "detail": "Pinnacle Apothecary, 1388 Sand Hill Rd, Candler: free toys and pencils, no purchase needed and everyone welcome, Sunday Nov 29, 2-5pm. On the Events tab. The three Signal group chats now say how to invite someone.",
